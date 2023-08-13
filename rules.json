@@ -1,0 +1,14 @@
+{
+    "Collections": [
+        { 
+            "sheetName": "Herbs and spices",
+            "startColumn": "A",
+            "endColumn": "H",
+            "startRow": "2", // Ingredient Name
+            "endRow": "26", 
+            "comment": "",
+            "rule": "Individual: @A*\nTypes: Leave\nFacts: hasDescriptions @H*, isUsedFor @K*",
+            "active": true
+        }
+    ]
+}
