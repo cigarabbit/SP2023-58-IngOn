@@ -3,11 +3,11 @@
         { 
             "sheetName": "Herbs and spices",
             "startColumn": "A",
-            "endColumn": "H",
-            "startRow": "2", // Ingredient Name
+            "endColumn": "N",
+            "startRow": "2",
             "endRow": "26", 
             "comment": "",
-            "rule": "Individual: @A*\nTypes: Leave\nFacts: hasDescriptions @H*, isUsedFor @K*",
+            "rule": "Individual: @A*\nTypes: Leave\nFacts: hasDescription @G*, hasScientificName @D*, hasEnglishName @C*, isUsedFor @L*",
             "active": true
         }
     ]

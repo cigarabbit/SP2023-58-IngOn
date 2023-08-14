@@ -81,12 +81,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/acer/ontologies/2023/7/untitled-ontology-7#hasDescriptions -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/7/untitled-ontology-7#hasDescriptions"/>
-    
-
-
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasDescription -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasDescription">
@@ -98,6 +92,14 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasEnglishName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasEnglishName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasScientificName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#hasScientificName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -214,6 +216,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Rhizome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Rhizome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Plantae"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Root -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Root">
@@ -240,11 +250,21 @@
                     <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Flower"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Fruit"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Rhizome"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Root"/>
                     <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Seed"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Stem"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Stem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Stem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Plantae"/>
     </owl:Class>
     
 
@@ -268,7 +288,6 @@
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:hasTaste rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Sweet"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
-        <untitled-ontology-7:hasDescriptions>Bai Bua Bok is characterized by its tender and succulent leaves and stems. When cooked, it releases a pleasant and inviting aroma that enhances the sensory appeal of the dish. Its tender texture contributes to the overall mouthfeel of the meal.</untitled-ontology-7:hasDescriptions>
         <ThaiIngredients:hasDescription>Water Mimosa offers a unique flavor profile. Its taste is reminiscent of fresh, mild grassiness with subtle hints of nuttiness. This delicate flavor complements a wide range of Thai dishes, adding depth to the overall taste experience.</ThaiIngredients:hasDescription>
         <ThaiIngredients:hasEnglishName>Centella asiatica Indian pennywort</ThaiIngredients:hasEnglishName>
     </owl:NamedIndividual>
@@ -280,7 +299,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#BaiToei">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#HealthPotential"/>
-        <untitled-ontology-7:hasDescriptions>The leaves of Bai Toei are relatively sturdy, yet they become more pliable when heated. This property makes them ideal for wrapping and enclosing other ingredients, often used in dishes like &quot;Miang Kham.&quot; When crushed or torn, the leaves release a pleasing herbal fragrance that enhances the sensory experience.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -289,7 +307,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#BaiYanang">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The leaves of Bai Yanang are tender and delicate, yet they possess a resilient quality that allows them to retain their shape during cooking. When crushed or torn, the leaves release a burst of aromatic citrus fragrance, enhancing the olfactory experience of the dish.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -336,7 +353,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Horapha">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The leaves of Horapha are tender and aromatic, releasing a captivating fragrance when crushed. They are highly aromatic and hold their flavor well when cooked, contributing to the overall aroma of a dish.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -345,7 +361,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kaphrao">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The tender leaves of Holy Basil release a captivating fragrance when crushed. They are highly aromatic and retain their flavor well when cooked, contributing to the overall aroma of a dish.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -354,7 +369,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kha">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The root of Kha is woody and aromatic, emitting a fragrant aroma that is both citrusy and spicy. It is typically used in slices, crushed, or grated forms to infuse its unique flavors into dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -363,7 +377,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khamin">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The firm and dense rhizome of Khamin is commonly grated or ground to infuse dishes with its characteristic color and flavor. It releases a fragrant and earthy aroma when used, enhancing the sensory experience.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -372,7 +385,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khing">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The woody and aromatic root of Khing emits a fragrant aroma that is both citrusy and spicy. It is often used in slices, crushed, or grated forms to infuse its unique flavors into dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -381,7 +393,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krachai">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The rhizome of Krachai has a firm texture and is often sliced, grated, or chopped for culinary use. When used in cooking, it releases a fragrant aroma that combines citrusy and peppery notes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -390,7 +401,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krathiam">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>Garlic cloves are small, firm, and contain a strong aroma that intensifies when minced or crushed. They release a characteristic smell and flavor that is essential in various culinary creations.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -399,7 +409,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kuichai">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The leaves and stalks of Kuichai are crisp and succulent, offering a satisfying crunch when raw. When cooked, they soften while retaining their flavor. Kuichai&apos;s ability to hold up well to cooking methods such as stir-frying and steaming makes it a versatile ingredient in various recipes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -408,7 +417,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Maenglak">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The tender leaves of Lemon Basil release a distinct lemon fragrance when crushed. This aromatic quality lends itself well to various dishes and culinary applications.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -417,7 +425,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Makrut">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>Makrut lime leaves are highly aromatic and release a potent citrus scent when crushed or torn. They are often used whole or sliced thinly and added to dishes to infuse a burst of flavor.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -426,7 +433,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChi">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The tender and delicate coriander leaves release a refreshing aroma when torn or chopped. They are commonly used as a garnish or incorporated into dishes to infuse a burst of flavor.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -435,7 +441,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiFarang">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The robust leaves of culantro release a strong aroma when crushed. They are commonly used to impart a distinctive flavor to Thai dishes, particularly in soups, curries, and sauces.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -444,7 +449,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiLao">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>Dill has a unique and refreshing flavor, with a combination of tangy, citrusy, and slightly sweet notes. Its taste is distinctive and contributes a pleasant herbal essence to Thai dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -453,7 +457,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakPhai">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The leaves of Vietnamese Coriander release a refreshing aroma with hints of both citrus and spice when crushed. They are commonly used to enhance the flavor and appearance of various Vietnamese and Thai dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -462,7 +465,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikChiFa">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The slender peppers of Chilli Spur Pepper release a spicy and aromatic scent when sliced or chopped. They are commonly used to add both heat and visual appeal to Thai dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -471,7 +473,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNu">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The small and potent Phrik Khi Nu chilies release a strong and pungent aroma when sliced or crushed. They are a staple ingredient in Thai cuisine and are used to add bold spiciness to dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -480,7 +481,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNuSuan">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The small and potent Phrik Khi Nu Suan chilies release a strong aroma and heat when sliced or crushed. They are commonly used to add intense spiciness and flavor to Thai dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -489,7 +489,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikThaiOn">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>Fresh peppercorns are commonly used to add a burst of flavor and mild spiciness to Thai dishes. They are versatile and can be used in various stages of ripeness to achieve different flavor profiles.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -498,7 +497,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#RakPhakChi">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The sturdy leaves of Rak Phak Chi release a captivating aroma when crushed. They are highly aromatic and retain their flavor well when cooked, adding depth to the overall aroma of a dish.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -513,7 +511,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Saranae">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The Saranae plant is known for its distinctive heart-shaped leaves and is used primarily for its unique flavor profile. While it is not as commonly used as some other Thai herbs, it adds a distinctive touch to certain dishes.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -530,7 +527,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Takhrai">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>The tough outer layers of lemongrass are typically removed, and the tender inner portions are sliced or minced before use. Lemongrass releases a strong and invigorating aroma when crushed, and it is often used to infuse dishes with its distinct flavor.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
     
 
@@ -539,7 +535,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Phrikyuak;PhrikWan">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
-        <untitled-ontology-7:hasDescriptions>Wax peppers are commonly used for their versatility and ability to add color and sweetness to dishes. They can be consumed raw in salads, sliced for dipping, or cooked in various recipes to add a touch of sweetness.</untitled-ontology-7:hasDescriptions>
     </owl:NamedIndividual>
 </rdf:RDF>
 
