@@ -3,11 +3,11 @@
         {
             "sheetName": "Herbs and spices",
             "startColumn": "A",
-            "endColumn": "O",
+            "endColumn": "N",
             "startRow": "2",
             "endRow": "26",
             "comment": "",
-            "rule": "Individual: @A*\nTypes: @N*\nFacts: hasEnglishName @C*, hasScientificName @D*, hasColor @F*, hasDescription @G*, isUsedFor @L*",
+            "rule": "Individual: @A*\nTypes: @O*\nFacts: hasEnglishName @C*, hasScientificName @D*, hasColor @F*, hasDescription @G*, isUsedFor @L*",
             "active": true
         }
     ]

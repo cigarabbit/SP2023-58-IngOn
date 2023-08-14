@@ -285,7 +285,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#BaiBuaBok">
         <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
-        <ThaiIngredients:hasTaste rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Sweet"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Water Mimosa offers a unique flavor profile. Its taste is reminiscent of fresh, mild grassiness with subtle hints of nuttiness. This delicate flavor complements a wide range of Thai dishes, adding depth to the overall taste experience.</ThaiIngredients:hasDescription>
         <ThaiIngredients:hasEnglishName>Centella asiatica or Indian pennywort</ThaiIngredients:hasEnglishName>
@@ -379,7 +378,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Horapha -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Horapha">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>The taste of Horapha is both aromatic and peppery, with notes of clove and anise. It delivers a delightful combination of sweet and savory flavors, making it a distinctive and essential component of Thai cuisine.</ThaiIngredients:hasDescription>
@@ -392,7 +390,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kaphrao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kaphrao">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Holy Basil has an aromatic and peppery taste with notes of clove and anise. It offers a unique combination of sweet and savory flavors, making it a distinctive and essential component of Thai cuisine.</ThaiIngredients:hasDescription>
@@ -405,10 +402,8 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kha -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Kha">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
-        <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#HealthPotential"/>
         <ThaiIngredients:hasDescription>The taste of Kha is bold and distinct, with a unique combination of spicy, citrusy, and slightly peppery flavors. It carries a sharper taste compared to ginger, with a tangy undertone that contributes depth to Thai dishes.</ThaiIngredients:hasDescription>
         <ThaiIngredients:hasEnglishName>Galangal</ThaiIngredients:hasEnglishName>
         <ThaiIngredients:hasScientificName>Alpinia galanga</ThaiIngredients:hasScientificName>
@@ -419,7 +414,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khamin -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khamin">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#OrangeAndYellow"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Khamin boasts a warm and earthy flavor profile with subtle bitter undertones. Its taste is accompanied by hints of peppery notes, contributing depth and complexity to dishes.</ThaiIngredients:hasDescription>
@@ -432,7 +426,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khing -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Khing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Yellow"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Offering a unique combination of spicy, citrusy, and slightly peppery flavors. It provides a sharper taste compared to ginger, with a tangy undertone that adds depth to Thai dishes.</ThaiIngredients:hasDescription>
@@ -445,7 +438,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krachai -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krachai">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#BrownAndYellow"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Krachai offers a flavor profile that is both spicy and slightly bitter, with hints of citrus and woodiness. Its taste is unique and contributes complexity to Thai dishes.</ThaiIngredients:hasDescription>
@@ -458,7 +450,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krathiam -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Krathiam">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Brown"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Garlic is well-known for its pungent and strong flavor. It imparts a distinct, savory taste with a hint of sweetness when cooked.</ThaiIngredients:hasDescription>
@@ -484,7 +475,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Maenglak -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Maenglak">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Lemon Basil lives up to its name with a delightful citrusy aroma and flavor. It offers a unique blend of lemony and sweet notes, making it a refreshing addition to Thai cuisine.</ThaiIngredients:hasDescription>
@@ -497,7 +487,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Makrut -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Makrut">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Makrut lime leaves have an intense and aromatic citrusy flavor, with strong notes of lime and a slightly bitter undertone. Their taste is distinctive and adds a bold and refreshing element to Thai cuisine.</ThaiIngredients:hasDescription>
@@ -516,7 +505,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Coriander leaves have a fresh and citrusy flavor, with hints of both sweetness and a mild peppery note. The taste is invigorating and adds a unique zing to various Thai dishes.</ThaiIngredients:hasDescription>
@@ -529,7 +517,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiFarang -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiFarang">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Culantro has a bold and intense flavor profile, often described as a blend of parsley and cilantro with an earthy undertone. Its taste is stronger and more pungent than cilantro, adding a unique depth to dishes.</ThaiIngredients:hasDescription>
@@ -542,7 +529,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiLao -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakChiLao">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Dill has a unique and refreshing flavor, with a combination of tangy, citrusy, and slightly sweet notes. Its taste is distinctive and contributes a pleasant herbal essence to Thai dishes.</ThaiIngredients:hasDescription>
@@ -555,7 +541,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakPhai -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhakPhai">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Vietnamese Coriander has a unique and distinct flavor profile, combining citrusy and peppery notes with a hint of cilantro. Its taste is refreshing and adds a tangy and slightly spicy element to dishes.</ThaiIngredients:hasDescription>
@@ -568,7 +553,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikChiFa -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikChiFa">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Red"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Chilli Spur Pepper offers a distinctive taste that is both moderately spicy and slightly sweet. It has a pleasant heat level that adds a kick of flavor without overwhelming the palate.</ThaiIngredients:hasDescription>
@@ -581,7 +565,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNu">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Red"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Phrik Khi Nu is renowned for its intense spiciness. It delivers a fiery and pungent heat that can vary in intensity, depending on the variety and individual preference.</ThaiIngredients:hasDescription>
@@ -594,7 +577,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNuSuan -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikKhiNuSuan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#GreenAndRed"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Phrik Khi Nu Suan offers an intense and fiery spiciness, similar to its mature red counterpart. It delivers a pungent heat that can add a bold kick to dishes.</ThaiIngredients:hasDescription>
@@ -607,7 +589,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikThaiOn -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#PhrikThaiOn">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Red"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Fresh peppercorns have a unique and complex flavor. When green, they can be slightly tangy and citrusy, while red or black peppercorns offer a more robust and pungent taste.</ThaiIngredients:hasDescription>
@@ -620,7 +601,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#RakPhakChi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#RakPhakChi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Rak Phak Chi has a distinctive and robust flavor with notes of anise, clove, and a hint of pepperiness. Its taste is both aromatic and slightly spicy, contributing a unique dimension to Thai cuisine.</ThaiIngredients:hasDescription>
@@ -645,7 +625,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Saranae -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Saranae">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Saranae has a unique taste that combines bitterness with a slightly peppery and herbal flavor. Its taste is distinct and contributes an interesting element to Thai cuisine.</ThaiIngredients:hasDescription>
@@ -666,7 +645,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Takhrai -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Takhrai">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Green"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#CulinaryAndHealthPotential"/>
         <ThaiIngredients:hasDescription>Lemongrass has a refreshing and citrusy flavor, with strong lemon-like notes and a hint of herbal freshness. Its taste is vibrant and contributes a unique zing to Thai cuisine.</ThaiIngredients:hasDescription>
@@ -685,7 +663,6 @@
     <!-- http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Phrikyuak;PhrikWan -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Phrikyuak;PhrikWan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Leave"/>
         <ThaiIngredients:hasColor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#RedAndYellow"/>
         <ThaiIngredients:isUsedFor rdf:resource="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#Culinary"/>
         <ThaiIngredients:hasDescription>Wax peppers have a mild and sweet flavor, with a crisp and crunchy texture. The taste is refreshing and slightly fruity, making them a versatile ingredient in both raw and cooked dishes.</ThaiIngredients:hasDescription>
