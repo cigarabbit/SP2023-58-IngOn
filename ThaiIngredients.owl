@@ -8,7 +8,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ThaiIngredients="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients#"
      xmlns:untitled-ontology-7="http://www.semanticweb.org/acer/ontologies/2023/7/untitled-ontology-7#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/seniorProject/ontologies/2023/7/ThaiIngredients">
+        <rdfs:comment>This is an ontology of Thai local ingredients which are generally used in culinary and health potential improvement. Each ingredient is categorized by its kingdom, i.e., Animalia, Plantae, and Fungi.</rdfs:comment>
+    </owl:Ontology>
     
 
 
