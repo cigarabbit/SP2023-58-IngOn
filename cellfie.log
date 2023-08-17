@@ -2635,3 +2635,839 @@ Individual: Makrut  # Generated from value "Makrut" located at cell 'Herbs and s
    Types: 
 
 ===========================================================================================================
+Date: 2023-08-17 14:34:58
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Downloads/SNProject_ThaiLocalIngredients-Ontology Structure.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/rules.json
+
+# Cell range: (Sheet1!A2:N26) Comment: ""
+# Class: @B*
+
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+
+===========================================================================================================
+Date: 2023-08-17 14:35:23
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Downloads/SNProject_ThaiLocalIngredients-Ontology Structure.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/rules.json
+
+# Cell range: (Sheet1!A2:N60) Comment: ""
+# Class: @B*
+
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+Class: Flavor  # Generated from value "Flavor" located at cell 'Sheet1'!B2.
+Class: Color  # Generated from value "Color" located at cell 'Sheet1'!B8.
+Class: Benefit  # Generated from value "Benefit" located at cell 'Sheet1'!B17.
+Class: CookingType  # Generated from value "CookingType" located at cell 'Sheet1'!B20.
+Class: Plantae  # Generated from value "Plantae" located at cell 'Sheet1'!B27.
+Class: Animalia  # Generated from value "Animalia" located at cell 'Sheet1'!B37.
+Class: Fungi  # Generated from value "Fungi" located at cell 'Sheet1'!B48.
+Class: Process  # Generated from value "Process" located at cell 'Sheet1'!B54.
+
+===========================================================================================================
+Date: 2023-08-17 14:55:18
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Downloads/SNProject_ThaiLocalIngredients-Ontology Structure.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/rules.json
+
+# Cell range: (Sheet1!A8:N15) Comment: ""
+# Individual: @C*
+# Types: @B*
+
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: 
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: 
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: 
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: 
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: 
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: 
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: 
+
+===========================================================================================================
+Date: 2023-08-17 14:55:34
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Downloads/SNProject_ThaiLocalIngredients-Ontology Structure.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/rules.json
+
+# Cell range: (Sheet1!A8:N15) Comment: ""
+# Individual: @C*
+# Types: Color
+
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+Individual: Green  # Generated from value "Green" located at cell 'Sheet1'!C8.
+   Types: Color
+Individual: Orange  # Generated from value "Orange" located at cell 'Sheet1'!C9.
+   Types: Color
+Individual: Yellow  # Generated from value "Yellow" located at cell 'Sheet1'!C10.
+   Types: Color
+Individual: Brown  # Generated from value "Brown" located at cell 'Sheet1'!C11.
+   Types: Color
+Individual: Red  # Generated from value "Red" located at cell 'Sheet1'!C12.
+   Types: Color
+Individual: Pinl  # Generated from value "Pinl" located at cell 'Sheet1'!C13.
+   Types: Color
+Individual: White  # Generated from value "White" located at cell 'Sheet1'!C14.
+   Types: Color
+Individual: Black  # Generated from value "Black" located at cell 'Sheet1'!C15.
+   Types: Color
+
+===========================================================================================================
+Date: 2023-08-17 15:29:54
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/Thai Local Ingredient.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/rules-v2.json
+
+# Cell range: (Herbs and spices!A2:A+) Comment: ""
+# Class: @A*
+# SubClassOf: Plantae
+
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Herbs and spices'!A2.
+   SubClassOf: Plantae
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Herbs and spices'!A3.
+   SubClassOf: Plantae
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Herbs and spices'!A4.
+   SubClassOf: Plantae
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Herbs and spices'!A5.
+   SubClassOf: Plantae
+Class: Horapha  # Generated from value "Horapha" located at cell 'Herbs and spices'!A6.
+   SubClassOf: Plantae
+Class: Kha  # Generated from value "Kha" located at cell 'Herbs and spices'!A7.
+   SubClassOf: Plantae
+Class: Khamin  # Generated from value "Khamin" located at cell 'Herbs and spices'!A8.
+   SubClassOf: Plantae
+Class: Khing   # Generated from value "Khing " located at cell 'Herbs and spices'!A9.
+   SubClassOf: Plantae
+Class: Krachai  # Generated from value "Krachai" located at cell 'Herbs and spices'!A10.
+   SubClassOf: Plantae
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Herbs and spices'!A11.
+   SubClassOf: Plantae
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Herbs and spices'!A12.
+   SubClassOf: Plantae
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Herbs and spices'!A13.
+   SubClassOf: Plantae
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Herbs and spices'!A14.
+   SubClassOf: Plantae
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Herbs and spices'!A15.
+   SubClassOf: Plantae
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Herbs and spices'!A16.
+   SubClassOf: Plantae
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Herbs and spices'!A17.
+   SubClassOf: Plantae
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Herbs and spices'!A18.
+   SubClassOf: Plantae
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Herbs and spices'!A19.
+   SubClassOf: Plantae
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Herbs and spices'!A20.
+   SubClassOf: Plantae
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Herbs and spices'!A21.
+   SubClassOf: Plantae
+Class: Phrik yuak; phrik wan  # Generated from value "Phrik yuak; phrik wan" located at cell 'Herbs and spices'!A22.
+   SubClassOf: Plantae
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Herbs and spices'!A23.
+   SubClassOf: Plantae
+Class: Saranae  # Generated from value "Saranae" located at cell 'Herbs and spices'!A24.
+   SubClassOf: Plantae
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Herbs and spices'!A25.
+   SubClassOf: Plantae
+Class: Makrut  # Generated from value "Makrut" located at cell 'Herbs and spices'!A26.
+   SubClassOf: Plantae
+Class: Dried herbs and spices  # Generated from value "Dried herbs and spices" located at cell 'Herbs and spices'!A27.
+   SubClassOf: Plantae
+Class: Dipli  # Generated from value "Dipli" located at cell 'Herbs and spices'!A28.
+   SubClassOf: Plantae
+Class: Dok ngio  # Generated from value "Dok ngio" located at cell 'Herbs and spices'!A29.
+   SubClassOf: Plantae
+Class: Kanphlu  # Generated from value "Kanphlu" located at cell 'Herbs and spices'!A30.
+   SubClassOf: Plantae
+Class: Luk chan thet  # Generated from value "Luk chan thet" located at cell 'Herbs and spices'!A31.
+   SubClassOf: Plantae
+Class: Makhwaen  # Generated from value "Makhwaen" located at cell 'Herbs and spices'!A32.
+   SubClassOf: Plantae
+Class: Nga  # Generated from value "Nga" located at cell 'Herbs and spices'!A33.
+   SubClassOf: Plantae
+Class: Opchoei  # Generated from value "Opchoei" located at cell 'Herbs and spices'!A34.
+   SubClassOf: Plantae
+Class: Phong kari  # Generated from value "Phong kari" located at cell 'Herbs and spices'!A35.
+   SubClassOf: Plantae
+Class: Phong phalo  # Generated from value "Phong phalo" located at cell 'Herbs and spices'!A36.
+   SubClassOf: Plantae
+Class: Phrik haeng  # Generated from value "Phrik haeng" located at cell 'Herbs and spices'!A37.
+   SubClassOf: Plantae
+Class: Phrik lap  # Generated from value "Phrik lap" located at cell 'Herbs and spices'!A38.
+   SubClassOf: Plantae
+Class: Phrik pon  # Generated from value "Phrik pon" located at cell 'Herbs and spices'!A39.
+   SubClassOf: Plantae
+Class: Phrik thai dam  # Generated from value "Phrik thai dam" located at cell 'Herbs and spices'!A40.
+   SubClassOf: Plantae
+Class: Phrik thai khao  # Generated from value "Phrik thai khao" located at cell 'Herbs and spices'!A41.
+   SubClassOf: Plantae
+Class: Thian khao plueak  # Generated from value "Thian khao plueak" located at cell 'Herbs and spices'!A42.
+   SubClassOf: Plantae
+
+# Cell range: (Herbs and spices!C2:C+) Comment: ""
+# Class: @C*
+# SubClassOf: EnglishName
+
+Class: Centella asiatica or Indian pennywort  # Generated from value "Centella asiatica or Indian pennywort" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+Class: Pandan or screwpine leaves  # Generated from value "Pandan or screwpine leaves" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+Class: Allium tuberosum Chinese chives  # Generated from value "Allium tuberosum Chinese chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+Class: Coriander/cilantro leaves  # Generated from value "Coriander/cilantro leaves" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+Class: Wax pepper; sweet pepper; bell pepper  # Generated from value "Wax pepper; sweet pepper; bell pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+Class: coriander/cilantro root  # Generated from value "coriander/cilantro root" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+Class: Makrut lime, kaffir lime, Thai lime  # Generated from value "Makrut lime, kaffir lime, Thai lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+Class: Bombax ceiba Cotton tree flowers  # Generated from value "Bombax ceiba Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+
+===========================================================================================================
