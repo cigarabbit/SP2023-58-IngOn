@@ -1,0 +1,12 @@
+# List of flavor-related words
+flavor_words = [
+    'taste', 'slightly', 'flavor', 'unique', 'Thai',
+    'flavor.', 'dishes.', 'spicy', 'peppery', 'cuisine.',
+    'offers', 'hints', 'depth', 'contributes', 'refreshing',
+    'distinctive', 'sweet', 'pungent', 'combination', 'adds',
+    'aromatic', 'notes', 'hint', 'citrusy', 'flavor,', 'citrusy,',
+    'bold', 'mild', 'subtle', 'complex', 'delivers', 'element',
+    'making', 'tangy', 'intense', 'heat', 'Phrik', 'sweet,', 'blend',
+    'flavors,', 'bitter', 'notes,', 'delightful', 'contributing',
+    'savory', 'spicy,', 'compared', 'earthy', 'strong', 'herbal'
+]
