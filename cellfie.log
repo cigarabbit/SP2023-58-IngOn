@@ -4246,3 +4246,1630 @@ Class: Foeniculum vulgare  # Generated from value "Foeniculum vulgare" located a
    SubClassOf: ScientificName
 
 ===========================================================================================================
+Date: 2023-08-29 12:41:55
+Ontology source: /C:/Users/Acer/Documents/GitHub/ThaiLocalIngredients/ThaiIngredients-v2.owl
+Worksheet source: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\Thai Local Ingredient.xlsx
+Transformation rules: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\rules-v2.json
+
+# Cell range: (Herbs and spices!C2:F+) Comment: ""
+# Class: @C*
+# SubClassOf: EnglishName
+# EquivalentTo: @F*
+
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+
+===========================================================================================================
+Date: 2023-08-29 12:42:25
+Ontology source: /C:/Users/Acer/Documents/GitHub/ThaiLocalIngredients/ThaiIngredients-v2.owl
+Worksheet source: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\Thai Local Ingredient.xlsx
+Transformation rules: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\rules-v2.json
+
+# Cell range: (Herbs and spices!C2:F+) Comment: ""
+# Class: @C*
+# SubClassOf: EnglishName
+# EquivalentTo: @F*
+
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+
+===========================================================================================================
+Date: 2023-08-29 12:47:28
+Ontology source: /C:/Users/Acer/Documents/GitHub/ThaiLocalIngredients/ThaiIngredients-v2.owl
+Worksheet source: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\Thai Local Ingredient.xlsx
+Transformation rules: C:\Users\Acer\Documents\GitHub\ThaiLocalIngredients\rules-v2.json
+
+# Cell range: (Herbs and spices!D2:D+) Comment: ""
+# Class: @D*
+# SubClassOf: ScientificName
+
+Class: Indian pennywort  # Generated from value "Indian pennywort" located at cell 'Herbs and spices'!D2.
+   SubClassOf: ScientificName
+Class: Screwpine leaves  # Generated from value "Screwpine leaves" located at cell 'Herbs and spices'!D3.
+   SubClassOf: ScientificName
+Class: Chinese chives  # Generated from value "Chinese chives" located at cell 'Herbs and spices'!D5.
+   SubClassOf: ScientificName
+Class: Cilantro leaves  # Generated from value "Cilantro leaves" located at cell 'Herbs and spices'!D14.
+   SubClassOf: ScientificName
+Class: Sweet pepper  # Generated from value "Sweet pepper" located at cell 'Herbs and spices'!D22.
+   SubClassOf: ScientificName
+Class: Cilantro root  # Generated from value "Cilantro root" located at cell 'Herbs and spices'!D23.
+   SubClassOf: ScientificName
+Class: Kaffir lime  # Generated from value "Kaffir lime" located at cell 'Herbs and spices'!D26.
+   SubClassOf: ScientificName
+
+# Cell range: (Herbs and spices!C2:F+) Comment: ""
+# Class: @C*
+# SubClassOf: EnglishName
+# EquivalentTo: @F*
+
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Herbs and spices'!C2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Herbs and spices'!C3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Herbs and spices'!C4.
+   SubClassOf: EnglishName
+   EquivalentTo: Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Herbs and spices'!C5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Herbs and spices'!C6.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Herbs and spices'!C7.
+   SubClassOf: EnglishName
+   EquivalentTo: Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Herbs and spices'!C8.
+   SubClassOf: EnglishName
+   EquivalentTo: Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Herbs and spices'!C9.
+   SubClassOf: EnglishName
+   EquivalentTo: Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Herbs and spices'!C10.
+   SubClassOf: EnglishName
+   EquivalentTo: Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Herbs and spices'!C11.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Herbs and spices'!C12.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Herbs and spices'!C13.
+   SubClassOf: EnglishName
+   EquivalentTo: Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Herbs and spices'!C15.
+   SubClassOf: EnglishName
+   EquivalentTo: Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Herbs and spices'!C16.
+   SubClassOf: EnglishName
+   EquivalentTo: Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Herbs and spices'!C17.
+   SubClassOf: EnglishName
+   EquivalentTo: Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Herbs and spices'!C18.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Herbs and spices'!C19.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Herbs and spices'!C20.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Herbs and spices'!C21.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Herbs and spices'!C22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Herbs and spices'!C23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Herbs and spices'!C24.
+   SubClassOf: EnglishName
+   EquivalentTo: Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Herbs and spices'!C25.
+   SubClassOf: EnglishName
+   EquivalentTo: Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Herbs and spices'!C26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+Class: Long pepper  # Generated from value "Long pepper" located at cell 'Herbs and spices'!C28.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper longum
+Class: Cotton tree flowers  # Generated from value "Cotton tree flowers" located at cell 'Herbs and spices'!C29.
+   SubClassOf: EnglishName
+   EquivalentTo: Bombax ceiba
+Class: Cloves  # Generated from value "Cloves" located at cell 'Herbs and spices'!C30.
+   SubClassOf: EnglishName
+   EquivalentTo: Syzygium aromaticum
+Class: Nutmeg nut  # Generated from value "Nutmeg nut" located at cell 'Herbs and spices'!C31.
+   SubClassOf: EnglishName
+   EquivalentTo: Myristica fragrans
+Class: Zanthoxylum limonella  # Generated from value "Zanthoxylum limonella" located at cell 'Herbs and spices'!C32.
+   SubClassOf: EnglishName
+   EquivalentTo: Zanthoxylum limonella 
+Class: Sesame seed  # Generated from value "Sesame seed" located at cell 'Herbs and spices'!C33.
+   SubClassOf: EnglishName
+   EquivalentTo: Sesamum indicum
+Class: Cassia cinnamon  # Generated from value "Cassia cinnamon" located at cell 'Herbs and spices'!C34.
+   SubClassOf: EnglishName
+   EquivalentTo: Cinnamomum cassia
+Class: Curry powder  # Generated from value "Curry powder" located at cell 'Herbs and spices'!C35.
+   SubClassOf: EnglishName
+   EquivalentTo: Murraya koenigii
+Class: Five-spice powder  # Generated from value "Five-spice powder" located at cell 'Herbs and spices'!C36.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Dried chillies  # Generated from value "Dried chillies" located at cell 'Herbs and spices'!C37.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annum 
+Class: Ground Dried Chili  # Generated from value "Ground Dried Chili" located at cell 'Herbs and spices'!C38.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Ground Dried Chili Powder  # Generated from value "Ground Dried Chili Powder" located at cell 'Herbs and spices'!C39.
+   SubClassOf: EnglishName
+   EquivalentTo: 
+Class: Black pepper  # Generated from value "Black pepper" located at cell 'Herbs and spices'!C40.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: White pepper  # Generated from value "White pepper" located at cell 'Herbs and spices'!C41.
+   SubClassOf: EnglishName
+   EquivalentTo: Piper nigrum
+Class: Fennel seeds  # Generated from value "Fennel seeds" located at cell 'Herbs and spices'!C42.
+   SubClassOf: EnglishName
+   EquivalentTo: Foeniculum vulgare
+
+# Cell range: (Herbs and spices!A2:A+) Comment: ""
+# Class: @A*
+# SubClassOf: Plantae
+
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Herbs and spices'!A2.
+   SubClassOf: Plantae
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Herbs and spices'!A3.
+   SubClassOf: Plantae
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Herbs and spices'!A4.
+   SubClassOf: Plantae
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Herbs and spices'!A5.
+   SubClassOf: Plantae
+Class: Horapha  # Generated from value "Horapha" located at cell 'Herbs and spices'!A6.
+   SubClassOf: Plantae
+Class: Kha  # Generated from value "Kha" located at cell 'Herbs and spices'!A7.
+   SubClassOf: Plantae
+Class: Khamin  # Generated from value "Khamin" located at cell 'Herbs and spices'!A8.
+   SubClassOf: Plantae
+Class: Khing   # Generated from value "Khing " located at cell 'Herbs and spices'!A9.
+   SubClassOf: Plantae
+Class: Krachai  # Generated from value "Krachai" located at cell 'Herbs and spices'!A10.
+   SubClassOf: Plantae
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Herbs and spices'!A11.
+   SubClassOf: Plantae
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Herbs and spices'!A12.
+   SubClassOf: Plantae
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Herbs and spices'!A13.
+   SubClassOf: Plantae
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Herbs and spices'!A14.
+   SubClassOf: Plantae
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Herbs and spices'!A15.
+   SubClassOf: Plantae
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Herbs and spices'!A16.
+   SubClassOf: Plantae
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Herbs and spices'!A17.
+   SubClassOf: Plantae
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Herbs and spices'!A18.
+   SubClassOf: Plantae
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Herbs and spices'!A19.
+   SubClassOf: Plantae
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Herbs and spices'!A20.
+   SubClassOf: Plantae
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Herbs and spices'!A21.
+   SubClassOf: Plantae
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Herbs and spices'!A22.
+   SubClassOf: Plantae
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Herbs and spices'!A23.
+   SubClassOf: Plantae
+Class: Saranae  # Generated from value "Saranae" located at cell 'Herbs and spices'!A24.
+   SubClassOf: Plantae
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Herbs and spices'!A25.
+   SubClassOf: Plantae
+Class: Makrut  # Generated from value "Makrut" located at cell 'Herbs and spices'!A26.
+   SubClassOf: Plantae
+Class: Dried herbs and spices  # Generated from value "Dried herbs and spices" located at cell 'Herbs and spices'!A27.
+   SubClassOf: Plantae
+Class: Dipli  # Generated from value "Dipli" located at cell 'Herbs and spices'!A28.
+   SubClassOf: Plantae
+Class: Dok ngio  # Generated from value "Dok ngio" located at cell 'Herbs and spices'!A29.
+   SubClassOf: Plantae
+Class: Kanphlu  # Generated from value "Kanphlu" located at cell 'Herbs and spices'!A30.
+   SubClassOf: Plantae
+Class: Luk chan thet  # Generated from value "Luk chan thet" located at cell 'Herbs and spices'!A31.
+   SubClassOf: Plantae
+Class: Makhwaen  # Generated from value "Makhwaen" located at cell 'Herbs and spices'!A32.
+   SubClassOf: Plantae
+Class: Nga  # Generated from value "Nga" located at cell 'Herbs and spices'!A33.
+   SubClassOf: Plantae
+Class: Opchoei  # Generated from value "Opchoei" located at cell 'Herbs and spices'!A34.
+   SubClassOf: Plantae
+Class: Phong kari  # Generated from value "Phong kari" located at cell 'Herbs and spices'!A35.
+   SubClassOf: Plantae
+Class: Phong phalo  # Generated from value "Phong phalo" located at cell 'Herbs and spices'!A36.
+   SubClassOf: Plantae
+Class: Phrik haeng  # Generated from value "Phrik haeng" located at cell 'Herbs and spices'!A37.
+   SubClassOf: Plantae
+Class: Phrik lap  # Generated from value "Phrik lap" located at cell 'Herbs and spices'!A38.
+   SubClassOf: Plantae
+Class: Phrik pon  # Generated from value "Phrik pon" located at cell 'Herbs and spices'!A39.
+   SubClassOf: Plantae
+Class: Phrik thai dam  # Generated from value "Phrik thai dam" located at cell 'Herbs and spices'!A40.
+   SubClassOf: Plantae
+Class: Phrik thai khao  # Generated from value "Phrik thai khao" located at cell 'Herbs and spices'!A41.
+   SubClassOf: Plantae
+Class: Thian khao plueak  # Generated from value "Thian khao plueak" located at cell 'Herbs and spices'!A42.
+   SubClassOf: Plantae
+
+# Cell range: (Herbs and spices!D1:D+) Comment: ""
+# Class: @D*
+# SubClassOf: EnglishName
+# EquivalentTo: @F*
+
+Class: English name 2  # Generated from value "English name 2" located at cell 'Herbs and spices'!D1.
+   SubClassOf: EnglishName
+   EquivalentTo: Scientific name
+Class: Indian pennywort  # Generated from value "Indian pennywort" located at cell 'Herbs and spices'!D2.
+   SubClassOf: EnglishName
+   EquivalentTo: Centella asiatica
+Class: Screwpine leaves  # Generated from value "Screwpine leaves" located at cell 'Herbs and spices'!D3.
+   SubClassOf: EnglishName
+   EquivalentTo: Pandanus amaryllifolius
+Class: Chinese chives  # Generated from value "Chinese chives" located at cell 'Herbs and spices'!D5.
+   SubClassOf: EnglishName
+   EquivalentTo: Allium tuberosum
+Class: Cilantro leaves  # Generated from value "Cilantro leaves" located at cell 'Herbs and spices'!D14.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Sweet pepper  # Generated from value "Sweet pepper" located at cell 'Herbs and spices'!D22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Cilantro root  # Generated from value "Cilantro root" located at cell 'Herbs and spices'!D23.
+   SubClassOf: EnglishName
+   EquivalentTo: Coriandrum sativum
+Class: Kaffir lime  # Generated from value "Kaffir lime" located at cell 'Herbs and spices'!D26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+
+# Cell range: (Herbs and spices!E1:E+) Comment: ""
+# Class: @E*
+# SubClassOf: EnglishName
+# EquivalentTo: @F*
+
+Class: English name 3  # Generated from value "English name 3" located at cell 'Herbs and spices'!E1.
+   SubClassOf: EnglishName
+   EquivalentTo: Scientific name
+Class: Bell pepper  # Generated from value "Bell pepper" located at cell 'Herbs and spices'!E22.
+   SubClassOf: EnglishName
+   EquivalentTo: Capsicum annuum
+Class: Thai lime  # Generated from value "Thai lime" located at cell 'Herbs and spices'!E26.
+   SubClassOf: EnglishName
+   EquivalentTo: Citrus hystrix
+
+===========================================================================================================
