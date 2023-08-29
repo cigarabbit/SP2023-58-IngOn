@@ -112,24 +112,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#BaiBuaBok -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#BaiBuaBok">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica"/>
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:equivalentEnglishNames rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica"/>
-        <owl:equivalentEnglishNames rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Bark -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bark">
@@ -196,16 +178,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Brown">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Color"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ScientificName"/>
     </owl:Class>
     
 
@@ -347,14 +319,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Herb">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Plantae"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
