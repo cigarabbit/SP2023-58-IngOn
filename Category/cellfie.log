@@ -15881,3 +15881,2469 @@ Class: Citrus hystrix  # Generated from value "Citrus hystrix" located at cell '
    SubClassOf: ScientificName
 
 ===========================================================================================================
+Date: 2023-08-29 17:44:25
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/Category/ingredient_info_with_colors_and_flavors.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/Category/IngredientImport.json
+
+# Cell range: (Sheet1!A2:I+) Comment: ""
+# Class: @A*
+# SubClassOf: Plantae, hasColor some @F*, hasColor some @G*, hasColor some @H*, hasColor some @I*
+
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Mild),
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Bitter),
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: Plantae,
+         (hasColor SOME Yellow),
+         (hasColor SOME Earthy),
+         (hasColor SOME Bitter),
+         (hasColor SOME Peppery)
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: Plantae,
+         (hasColor SOME Brown),
+         (hasColor SOME Spicy),
+         (hasColor SOME Bitter),
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         (hasColor SOME Sweet),
+         (hasColor SOME Savory)
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   SubClassOf: Plantae,
+         (hasColor SOME White),
+         (hasColor SOME Pungent),
+         (hasColor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet),
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Mild),
+         (hasColor SOME Peppery)
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   SubClassOf: Plantae,
+         ,
+         (hasColor SOME Earthy),
+         (hasColor SOME Pungent),
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Sweet)
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Peppery),
+         (hasColor SOME Tangy)
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Spicy),
+         (hasColor SOME Sweet),
+         
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Pungent),
+         ,
+         
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Tangy),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Pungent)
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   SubClassOf: Plantae,
+         (hasColor SOME Red),
+         (hasColor SOME Mild),
+         (hasColor SOME Sweet),
+         
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Spicy),
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Peppery),
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   SubClassOf: Plantae,
+         (hasColor SOME Green),
+         (hasColor SOME Citrusy),
+         (hasColor SOME Bitter),
+         
+
+# Cell range: (Sheet1!B2:D+) Comment: ""
+# Class: @B*
+# SubClassOf: EnglishName
+# EquivalentTo: @C*, @D*, @E*
+
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!B2.
+   SubClassOf: EnglishName
+   EquivalentTo: Indian pennywort,
+         ,
+         Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Sheet1'!B3.
+   SubClassOf: EnglishName
+   EquivalentTo: Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!B4.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Sheet1'!B5.
+   SubClassOf: EnglishName
+   EquivalentTo: Chinese chives,
+         ,
+         Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Sheet1'!B6.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Sheet1'!B7.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Sheet1'!B8.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Sheet1'!B9.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Sheet1'!B10.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Sheet1'!B11.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Sheet1'!B12.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Sheet1'!B13.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B14.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Sheet1'!B15.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Sheet1'!B16.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Sheet1'!B17.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Sheet1'!B18.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Sheet1'!B19.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Sheet1'!B20.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Sheet1'!B21.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Sheet1'!B22.
+   SubClassOf: EnglishName
+   EquivalentTo: Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B23.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Sheet1'!B24.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Sheet1'!B25.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Sheet1'!B26.
+   SubClassOf: EnglishName
+   EquivalentTo: Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!B2.
+   SubClassOf: EnglishName
+   EquivalentTo: Indian pennywort,
+         ,
+         Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Sheet1'!B3.
+   SubClassOf: EnglishName
+   EquivalentTo: Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!B4.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Sheet1'!B5.
+   SubClassOf: EnglishName
+   EquivalentTo: Chinese chives,
+         ,
+         Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Sheet1'!B6.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Sheet1'!B7.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Sheet1'!B8.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Sheet1'!B9.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Sheet1'!B10.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Sheet1'!B11.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Sheet1'!B12.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Sheet1'!B13.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B14.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Sheet1'!B15.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Sheet1'!B16.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Sheet1'!B17.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Sheet1'!B18.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Sheet1'!B19.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Sheet1'!B20.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Sheet1'!B21.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Sheet1'!B22.
+   SubClassOf: EnglishName
+   EquivalentTo: Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B23.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Sheet1'!B24.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Sheet1'!B25.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Sheet1'!B26.
+   SubClassOf: EnglishName
+   EquivalentTo: Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!B2.
+   SubClassOf: EnglishName
+   EquivalentTo: Indian pennywort,
+         ,
+         Centella asiatica
+Class: Pandan  # Generated from value "Pandan" located at cell 'Sheet1'!B3.
+   SubClassOf: EnglishName
+   EquivalentTo: Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!B4.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Tiliacora triandra
+Class: Garlic Chives  # Generated from value "Garlic Chives" located at cell 'Sheet1'!B5.
+   SubClassOf: EnglishName
+   EquivalentTo: Chinese chives,
+         ,
+         Allium tuberosum
+Class: Thai sweet basil  # Generated from value "Thai sweet basil" located at cell 'Sheet1'!B6.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Galangal  # Generated from value "Galangal" located at cell 'Sheet1'!B7.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Alpinia galanga
+Class: Turmeric  # Generated from value "Turmeric" located at cell 'Sheet1'!B8.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Curcuma longa
+Class: Ginger  # Generated from value "Ginger" located at cell 'Sheet1'!B9.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Zingiber officinale
+Class: Fingerroot  # Generated from value "Fingerroot" located at cell 'Sheet1'!B10.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Boesenbergia rotunda
+Class: Holy basil  # Generated from value "Holy basil" located at cell 'Sheet1'!B11.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum sanctum
+Class: Garlic  # Generated from value "Garlic" located at cell 'Sheet1'!B12.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Allium sativum
+Class: Lemon basil  # Generated from value "Lemon basil" located at cell 'Sheet1'!B13.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Ocimum × citriodorum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B14.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Culantro  # Generated from value "Culantro" located at cell 'Sheet1'!B15.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Eryngium foetidum
+Class: Dill  # Generated from value "Dill" located at cell 'Sheet1'!B16.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Anethum graveolens
+Class: Vietnamese coriander  # Generated from value "Vietnamese coriander" located at cell 'Sheet1'!B17.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Persicaria odorata
+Class: Chilli spur pepper  # Generated from value "Chilli spur pepper" located at cell 'Sheet1'!B18.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Bird's eye chilli  # Generated from value "Bird's eye chilli" located at cell 'Sheet1'!B19.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Garden mouse dropping chilli  # Generated from value "Garden mouse dropping chilli" located at cell 'Sheet1'!B20.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Capsicum annuum
+Class: Fresh peppercorns  # Generated from value "Fresh peppercorns" located at cell 'Sheet1'!B21.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Piper nigrum
+Class: Wax pepper  # Generated from value "Wax pepper" located at cell 'Sheet1'!B22.
+   SubClassOf: EnglishName
+   EquivalentTo: Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Coriander  # Generated from value "Coriander" located at cell 'Sheet1'!B23.
+   SubClassOf: EnglishName
+   EquivalentTo: Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Spearmint  # Generated from value "Spearmint" located at cell 'Sheet1'!B24.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Mentha spicata
+Class: Lemon grass  # Generated from value "Lemon grass" located at cell 'Sheet1'!B25.
+   SubClassOf: EnglishName
+   EquivalentTo: ,
+         ,
+         Cymbopogon citratus
+Class: Makrut lime  # Generated from value "Makrut lime" located at cell 'Sheet1'!B26.
+   SubClassOf: EnglishName
+   EquivalentTo: Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+
+# Cell range: (Sheet1!B2:D+) Comment: ""
+# Class: @C*
+# SubClassOf: EnglishName
+
+Class: Indian pennywort  # Generated from value "Indian pennywort" located at cell 'Sheet1'!C2.
+   SubClassOf: EnglishName
+Class: Screwpine leaves  # Generated from value "Screwpine leaves" located at cell 'Sheet1'!C3.
+   SubClassOf: EnglishName
+Class: Chinese chives  # Generated from value "Chinese chives" located at cell 'Sheet1'!C5.
+   SubClassOf: EnglishName
+Class: Cilantro leaves  # Generated from value "Cilantro leaves" located at cell 'Sheet1'!C14.
+   SubClassOf: EnglishName
+Class: Sweet pepper  # Generated from value "Sweet pepper" located at cell 'Sheet1'!C22.
+   SubClassOf: EnglishName
+Class: Cilantro root  # Generated from value "Cilantro root" located at cell 'Sheet1'!C23.
+   SubClassOf: EnglishName
+Class: Kaffir lime  # Generated from value "Kaffir lime" located at cell 'Sheet1'!C26.
+   SubClassOf: EnglishName
+Class: Indian pennywort  # Generated from value "Indian pennywort" located at cell 'Sheet1'!C2.
+   SubClassOf: EnglishName
+Class: Screwpine leaves  # Generated from value "Screwpine leaves" located at cell 'Sheet1'!C3.
+   SubClassOf: EnglishName
+Class: Chinese chives  # Generated from value "Chinese chives" located at cell 'Sheet1'!C5.
+   SubClassOf: EnglishName
+Class: Cilantro leaves  # Generated from value "Cilantro leaves" located at cell 'Sheet1'!C14.
+   SubClassOf: EnglishName
+Class: Sweet pepper  # Generated from value "Sweet pepper" located at cell 'Sheet1'!C22.
+   SubClassOf: EnglishName
+Class: Cilantro root  # Generated from value "Cilantro root" located at cell 'Sheet1'!C23.
+   SubClassOf: EnglishName
+Class: Kaffir lime  # Generated from value "Kaffir lime" located at cell 'Sheet1'!C26.
+   SubClassOf: EnglishName
+Class: Indian pennywort  # Generated from value "Indian pennywort" located at cell 'Sheet1'!C2.
+   SubClassOf: EnglishName
+Class: Screwpine leaves  # Generated from value "Screwpine leaves" located at cell 'Sheet1'!C3.
+   SubClassOf: EnglishName
+Class: Chinese chives  # Generated from value "Chinese chives" located at cell 'Sheet1'!C5.
+   SubClassOf: EnglishName
+Class: Cilantro leaves  # Generated from value "Cilantro leaves" located at cell 'Sheet1'!C14.
+   SubClassOf: EnglishName
+Class: Sweet pepper  # Generated from value "Sweet pepper" located at cell 'Sheet1'!C22.
+   SubClassOf: EnglishName
+Class: Cilantro root  # Generated from value "Cilantro root" located at cell 'Sheet1'!C23.
+   SubClassOf: EnglishName
+Class: Kaffir lime  # Generated from value "Kaffir lime" located at cell 'Sheet1'!C26.
+   SubClassOf: EnglishName
+
+# Cell range: (Sheet1!B2:D+) Comment: ""
+# Class: @D*
+# SubClassOf: EnglishName
+
+Class: Bell pepper  # Generated from value "Bell pepper" located at cell 'Sheet1'!D22.
+   SubClassOf: EnglishName
+Class: Thai lime  # Generated from value "Thai lime" located at cell 'Sheet1'!D26.
+   SubClassOf: EnglishName
+Class: Bell pepper  # Generated from value "Bell pepper" located at cell 'Sheet1'!D22.
+   SubClassOf: EnglishName
+Class: Thai lime  # Generated from value "Thai lime" located at cell 'Sheet1'!D26.
+   SubClassOf: EnglishName
+Class: Bell pepper  # Generated from value "Bell pepper" located at cell 'Sheet1'!D22.
+   SubClassOf: EnglishName
+Class: Thai lime  # Generated from value "Thai lime" located at cell 'Sheet1'!D26.
+   SubClassOf: EnglishName
+
+# Cell range: (Sheet1!A2:D+) Comment: ""
+# Class: @A*
+# EquivalentTo: @B*, @C*, @D*, @E*
+
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   EquivalentTo: Centella asiatica,
+         Indian pennywort,
+         ,
+         Centella asiatica
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   EquivalentTo: Pandan,
+         Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   EquivalentTo: Tiliacora triandra,
+         ,
+         ,
+         Tiliacora triandra
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   EquivalentTo: Garlic Chives,
+         Chinese chives,
+         ,
+         Allium tuberosum
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   EquivalentTo: Thai sweet basil,
+         ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   EquivalentTo: Galangal,
+         ,
+         ,
+         Alpinia galanga
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   EquivalentTo: Turmeric,
+         ,
+         ,
+         Curcuma longa
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   EquivalentTo: Ginger,
+         ,
+         ,
+         Zingiber officinale
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   EquivalentTo: Fingerroot,
+         ,
+         ,
+         Boesenbergia rotunda
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   EquivalentTo: Holy basil,
+         ,
+         ,
+         Ocimum sanctum
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   EquivalentTo: Garlic,
+         ,
+         ,
+         Allium sativum
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   EquivalentTo: Lemon basil,
+         ,
+         ,
+         Ocimum × citriodorum
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   EquivalentTo: Coriander,
+         Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   EquivalentTo: Culantro,
+         ,
+         ,
+         Eryngium foetidum
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   EquivalentTo: Dill,
+         ,
+         ,
+         Anethum graveolens
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   EquivalentTo: Vietnamese coriander,
+         ,
+         ,
+         Persicaria odorata
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   EquivalentTo: Chilli spur pepper,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   EquivalentTo: Bird's eye chilli,
+         ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   EquivalentTo: Garden mouse dropping chilli,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   EquivalentTo: Fresh peppercorns,
+         ,
+         ,
+         Piper nigrum
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   EquivalentTo: Wax pepper,
+         Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   EquivalentTo: Coriander,
+         Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   EquivalentTo: Spearmint,
+         ,
+         ,
+         Mentha spicata
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   EquivalentTo: Lemon grass,
+         ,
+         ,
+         Cymbopogon citratus
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   EquivalentTo: Makrut lime,
+         Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   EquivalentTo: Centella asiatica,
+         Indian pennywort,
+         ,
+         Centella asiatica
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   EquivalentTo: Pandan,
+         Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   EquivalentTo: Tiliacora triandra,
+         ,
+         ,
+         Tiliacora triandra
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   EquivalentTo: Garlic Chives,
+         Chinese chives,
+         ,
+         Allium tuberosum
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   EquivalentTo: Thai sweet basil,
+         ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   EquivalentTo: Galangal,
+         ,
+         ,
+         Alpinia galanga
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   EquivalentTo: Turmeric,
+         ,
+         ,
+         Curcuma longa
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   EquivalentTo: Ginger,
+         ,
+         ,
+         Zingiber officinale
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   EquivalentTo: Fingerroot,
+         ,
+         ,
+         Boesenbergia rotunda
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   EquivalentTo: Holy basil,
+         ,
+         ,
+         Ocimum sanctum
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   EquivalentTo: Garlic,
+         ,
+         ,
+         Allium sativum
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   EquivalentTo: Lemon basil,
+         ,
+         ,
+         Ocimum × citriodorum
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   EquivalentTo: Coriander,
+         Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   EquivalentTo: Culantro,
+         ,
+         ,
+         Eryngium foetidum
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   EquivalentTo: Dill,
+         ,
+         ,
+         Anethum graveolens
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   EquivalentTo: Vietnamese coriander,
+         ,
+         ,
+         Persicaria odorata
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   EquivalentTo: Chilli spur pepper,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   EquivalentTo: Bird's eye chilli,
+         ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   EquivalentTo: Garden mouse dropping chilli,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   EquivalentTo: Fresh peppercorns,
+         ,
+         ,
+         Piper nigrum
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   EquivalentTo: Wax pepper,
+         Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   EquivalentTo: Coriander,
+         Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   EquivalentTo: Spearmint,
+         ,
+         ,
+         Mentha spicata
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   EquivalentTo: Lemon grass,
+         ,
+         ,
+         Cymbopogon citratus
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   EquivalentTo: Makrut lime,
+         Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   EquivalentTo: Centella asiatica,
+         Indian pennywort,
+         ,
+         Centella asiatica
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   EquivalentTo: Pandan,
+         Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   EquivalentTo: Tiliacora triandra,
+         ,
+         ,
+         Tiliacora triandra
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   EquivalentTo: Garlic Chives,
+         Chinese chives,
+         ,
+         Allium tuberosum
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   EquivalentTo: Thai sweet basil,
+         ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   EquivalentTo: Galangal,
+         ,
+         ,
+         Alpinia galanga
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   EquivalentTo: Turmeric,
+         ,
+         ,
+         Curcuma longa
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   EquivalentTo: Ginger,
+         ,
+         ,
+         Zingiber officinale
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   EquivalentTo: Fingerroot,
+         ,
+         ,
+         Boesenbergia rotunda
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   EquivalentTo: Holy basil,
+         ,
+         ,
+         Ocimum sanctum
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   EquivalentTo: Garlic,
+         ,
+         ,
+         Allium sativum
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   EquivalentTo: Lemon basil,
+         ,
+         ,
+         Ocimum × citriodorum
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   EquivalentTo: Coriander,
+         Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   EquivalentTo: Culantro,
+         ,
+         ,
+         Eryngium foetidum
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   EquivalentTo: Dill,
+         ,
+         ,
+         Anethum graveolens
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   EquivalentTo: Vietnamese coriander,
+         ,
+         ,
+         Persicaria odorata
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   EquivalentTo: Chilli spur pepper,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   EquivalentTo: Bird's eye chilli,
+         ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   EquivalentTo: Garden mouse dropping chilli,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   EquivalentTo: Fresh peppercorns,
+         ,
+         ,
+         Piper nigrum
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   EquivalentTo: Wax pepper,
+         Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   EquivalentTo: Coriander,
+         Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   EquivalentTo: Spearmint,
+         ,
+         ,
+         Mentha spicata
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   EquivalentTo: Lemon grass,
+         ,
+         ,
+         Cymbopogon citratus
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   EquivalentTo: Makrut lime,
+         Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   EquivalentTo: Centella asiatica,
+         Indian pennywort,
+         ,
+         Centella asiatica
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   EquivalentTo: Pandan,
+         Screwpine leaves,
+         ,
+         Pandanus amaryllifolius
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   EquivalentTo: Tiliacora triandra,
+         ,
+         ,
+         Tiliacora triandra
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   EquivalentTo: Garlic Chives,
+         Chinese chives,
+         ,
+         Allium tuberosum
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   EquivalentTo: Thai sweet basil,
+         ,
+         ,
+         Ocimum basilicum var. thyrsiflora
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   EquivalentTo: Galangal,
+         ,
+         ,
+         Alpinia galanga
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   EquivalentTo: Turmeric,
+         ,
+         ,
+         Curcuma longa
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   EquivalentTo: Ginger,
+         ,
+         ,
+         Zingiber officinale
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   EquivalentTo: Fingerroot,
+         ,
+         ,
+         Boesenbergia rotunda
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   EquivalentTo: Holy basil,
+         ,
+         ,
+         Ocimum sanctum
+Class: Krathiam  # Generated from value "Krathiam" located at cell 'Sheet1'!A12.
+   EquivalentTo: Garlic,
+         ,
+         ,
+         Allium sativum
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A13.
+   EquivalentTo: Lemon basil,
+         ,
+         ,
+         Ocimum × citriodorum
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A14.
+   EquivalentTo: Coriander,
+         Cilantro leaves,
+         ,
+         Coriandrum sativum
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A15.
+   EquivalentTo: Culantro,
+         ,
+         ,
+         Eryngium foetidum
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A16.
+   EquivalentTo: Dill,
+         ,
+         ,
+         Anethum graveolens
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A17.
+   EquivalentTo: Vietnamese coriander,
+         ,
+         ,
+         Persicaria odorata
+Class: Phrik chi fa  # Generated from value "Phrik chi fa" located at cell 'Sheet1'!A18.
+   EquivalentTo: Chilli spur pepper,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik khi nu  # Generated from value "Phrik khi nu" located at cell 'Sheet1'!A19.
+   EquivalentTo: Bird's eye chilli,
+         ,
+         ,
+         Capsicum annuum var. frutescens
+Class: Phrik khi nu suan  # Generated from value "Phrik khi nu suan" located at cell 'Sheet1'!A20.
+   EquivalentTo: Garden mouse dropping chilli,
+         ,
+         ,
+         Capsicum annuum
+Class: Phrik thai on  # Generated from value "Phrik thai on" located at cell 'Sheet1'!A21.
+   EquivalentTo: Fresh peppercorns,
+         ,
+         ,
+         Piper nigrum
+Class: Phrik yuak or  phrik wan  # Generated from value "Phrik yuak or  phrik wan" located at cell 'Sheet1'!A22.
+   EquivalentTo: Wax pepper,
+         Sweet pepper,
+         Bell pepper,
+         Capsicum annuum
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A23.
+   EquivalentTo: Coriander,
+         Cilantro root,
+         ,
+         Coriandrum sativum
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A24.
+   EquivalentTo: Spearmint,
+         ,
+         ,
+         Mentha spicata
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A25.
+   EquivalentTo: Lemon grass,
+         ,
+         ,
+         Cymbopogon citratus
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
+   EquivalentTo: Makrut lime,
+         Kaffir lime,
+         Thai lime,
+         Citrus hystrix
+
+# Cell range: (Sheet1!B2:D+) Comment: ""
+# Class: @E*
+# SubClassOf: ScientificName
+
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!E2.
+   SubClassOf: ScientificName
+Class: Pandanus amaryllifolius  # Generated from value "Pandanus amaryllifolius" located at cell 'Sheet1'!E3.
+   SubClassOf: ScientificName
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!E4.
+   SubClassOf: ScientificName
+Class: Allium tuberosum  # Generated from value "Allium tuberosum" located at cell 'Sheet1'!E5.
+   SubClassOf: ScientificName
+Class: Ocimum basilicum var. thyrsiflora  # Generated from value "Ocimum basilicum var. thyrsiflora" located at cell 'Sheet1'!E6.
+   SubClassOf: ScientificName
+Class: Alpinia galanga  # Generated from value "Alpinia galanga" located at cell 'Sheet1'!E7.
+   SubClassOf: ScientificName
+Class: Curcuma longa  # Generated from value "Curcuma longa" located at cell 'Sheet1'!E8.
+   SubClassOf: ScientificName
+Class: Zingiber officinale  # Generated from value "Zingiber officinale" located at cell 'Sheet1'!E9.
+   SubClassOf: ScientificName
+Class: Boesenbergia rotunda  # Generated from value "Boesenbergia rotunda" located at cell 'Sheet1'!E10.
+   SubClassOf: ScientificName
+Class: Ocimum sanctum  # Generated from value "Ocimum sanctum" located at cell 'Sheet1'!E11.
+   SubClassOf: ScientificName
+Class: Allium sativum  # Generated from value "Allium sativum" located at cell 'Sheet1'!E12.
+   SubClassOf: ScientificName
+Class: Ocimum × citriodorum  # Generated from value "Ocimum × citriodorum" located at cell 'Sheet1'!E13.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E14.
+   SubClassOf: ScientificName
+Class: Eryngium foetidum  # Generated from value "Eryngium foetidum" located at cell 'Sheet1'!E15.
+   SubClassOf: ScientificName
+Class: Anethum graveolens  # Generated from value "Anethum graveolens" located at cell 'Sheet1'!E16.
+   SubClassOf: ScientificName
+Class: Persicaria odorata  # Generated from value "Persicaria odorata" located at cell 'Sheet1'!E17.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E18.
+   SubClassOf: ScientificName
+Class: Capsicum annuum var. frutescens  # Generated from value "Capsicum annuum var. frutescens" located at cell 'Sheet1'!E19.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E20.
+   SubClassOf: ScientificName
+Class: Piper nigrum  # Generated from value "Piper nigrum" located at cell 'Sheet1'!E21.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E22.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E23.
+   SubClassOf: ScientificName
+Class: Mentha spicata  # Generated from value "Mentha spicata" located at cell 'Sheet1'!E24.
+   SubClassOf: ScientificName
+Class: Cymbopogon citratus  # Generated from value "Cymbopogon citratus" located at cell 'Sheet1'!E25.
+   SubClassOf: ScientificName
+Class: Citrus hystrix  # Generated from value "Citrus hystrix" located at cell 'Sheet1'!E26.
+   SubClassOf: ScientificName
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!E2.
+   SubClassOf: ScientificName
+Class: Pandanus amaryllifolius  # Generated from value "Pandanus amaryllifolius" located at cell 'Sheet1'!E3.
+   SubClassOf: ScientificName
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!E4.
+   SubClassOf: ScientificName
+Class: Allium tuberosum  # Generated from value "Allium tuberosum" located at cell 'Sheet1'!E5.
+   SubClassOf: ScientificName
+Class: Ocimum basilicum var. thyrsiflora  # Generated from value "Ocimum basilicum var. thyrsiflora" located at cell 'Sheet1'!E6.
+   SubClassOf: ScientificName
+Class: Alpinia galanga  # Generated from value "Alpinia galanga" located at cell 'Sheet1'!E7.
+   SubClassOf: ScientificName
+Class: Curcuma longa  # Generated from value "Curcuma longa" located at cell 'Sheet1'!E8.
+   SubClassOf: ScientificName
+Class: Zingiber officinale  # Generated from value "Zingiber officinale" located at cell 'Sheet1'!E9.
+   SubClassOf: ScientificName
+Class: Boesenbergia rotunda  # Generated from value "Boesenbergia rotunda" located at cell 'Sheet1'!E10.
+   SubClassOf: ScientificName
+Class: Ocimum sanctum  # Generated from value "Ocimum sanctum" located at cell 'Sheet1'!E11.
+   SubClassOf: ScientificName
+Class: Allium sativum  # Generated from value "Allium sativum" located at cell 'Sheet1'!E12.
+   SubClassOf: ScientificName
+Class: Ocimum × citriodorum  # Generated from value "Ocimum × citriodorum" located at cell 'Sheet1'!E13.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E14.
+   SubClassOf: ScientificName
+Class: Eryngium foetidum  # Generated from value "Eryngium foetidum" located at cell 'Sheet1'!E15.
+   SubClassOf: ScientificName
+Class: Anethum graveolens  # Generated from value "Anethum graveolens" located at cell 'Sheet1'!E16.
+   SubClassOf: ScientificName
+Class: Persicaria odorata  # Generated from value "Persicaria odorata" located at cell 'Sheet1'!E17.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E18.
+   SubClassOf: ScientificName
+Class: Capsicum annuum var. frutescens  # Generated from value "Capsicum annuum var. frutescens" located at cell 'Sheet1'!E19.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E20.
+   SubClassOf: ScientificName
+Class: Piper nigrum  # Generated from value "Piper nigrum" located at cell 'Sheet1'!E21.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E22.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E23.
+   SubClassOf: ScientificName
+Class: Mentha spicata  # Generated from value "Mentha spicata" located at cell 'Sheet1'!E24.
+   SubClassOf: ScientificName
+Class: Cymbopogon citratus  # Generated from value "Cymbopogon citratus" located at cell 'Sheet1'!E25.
+   SubClassOf: ScientificName
+Class: Citrus hystrix  # Generated from value "Citrus hystrix" located at cell 'Sheet1'!E26.
+   SubClassOf: ScientificName
+Class: Centella asiatica  # Generated from value "Centella asiatica" located at cell 'Sheet1'!E2.
+   SubClassOf: ScientificName
+Class: Pandanus amaryllifolius  # Generated from value "Pandanus amaryllifolius" located at cell 'Sheet1'!E3.
+   SubClassOf: ScientificName
+Class: Tiliacora triandra  # Generated from value "Tiliacora triandra" located at cell 'Sheet1'!E4.
+   SubClassOf: ScientificName
+Class: Allium tuberosum  # Generated from value "Allium tuberosum" located at cell 'Sheet1'!E5.
+   SubClassOf: ScientificName
+Class: Ocimum basilicum var. thyrsiflora  # Generated from value "Ocimum basilicum var. thyrsiflora" located at cell 'Sheet1'!E6.
+   SubClassOf: ScientificName
+Class: Alpinia galanga  # Generated from value "Alpinia galanga" located at cell 'Sheet1'!E7.
+   SubClassOf: ScientificName
+Class: Curcuma longa  # Generated from value "Curcuma longa" located at cell 'Sheet1'!E8.
+   SubClassOf: ScientificName
+Class: Zingiber officinale  # Generated from value "Zingiber officinale" located at cell 'Sheet1'!E9.
+   SubClassOf: ScientificName
+Class: Boesenbergia rotunda  # Generated from value "Boesenbergia rotunda" located at cell 'Sheet1'!E10.
+   SubClassOf: ScientificName
+Class: Ocimum sanctum  # Generated from value "Ocimum sanctum" located at cell 'Sheet1'!E11.
+   SubClassOf: ScientificName
+Class: Allium sativum  # Generated from value "Allium sativum" located at cell 'Sheet1'!E12.
+   SubClassOf: ScientificName
+Class: Ocimum × citriodorum  # Generated from value "Ocimum × citriodorum" located at cell 'Sheet1'!E13.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E14.
+   SubClassOf: ScientificName
+Class: Eryngium foetidum  # Generated from value "Eryngium foetidum" located at cell 'Sheet1'!E15.
+   SubClassOf: ScientificName
+Class: Anethum graveolens  # Generated from value "Anethum graveolens" located at cell 'Sheet1'!E16.
+   SubClassOf: ScientificName
+Class: Persicaria odorata  # Generated from value "Persicaria odorata" located at cell 'Sheet1'!E17.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E18.
+   SubClassOf: ScientificName
+Class: Capsicum annuum var. frutescens  # Generated from value "Capsicum annuum var. frutescens" located at cell 'Sheet1'!E19.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E20.
+   SubClassOf: ScientificName
+Class: Piper nigrum  # Generated from value "Piper nigrum" located at cell 'Sheet1'!E21.
+   SubClassOf: ScientificName
+Class: Capsicum annuum  # Generated from value "Capsicum annuum" located at cell 'Sheet1'!E22.
+   SubClassOf: ScientificName
+Class: Coriandrum sativum  # Generated from value "Coriandrum sativum" located at cell 'Sheet1'!E23.
+   SubClassOf: ScientificName
+Class: Mentha spicata  # Generated from value "Mentha spicata" located at cell 'Sheet1'!E24.
+   SubClassOf: ScientificName
+Class: Cymbopogon citratus  # Generated from value "Cymbopogon citratus" located at cell 'Sheet1'!E25.
+   SubClassOf: ScientificName
+Class: Citrus hystrix  # Generated from value "Citrus hystrix" located at cell 'Sheet1'!E26.
+   SubClassOf: ScientificName
+
+===========================================================================================================
