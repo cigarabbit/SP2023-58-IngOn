@@ -79,6 +79,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#hasTexture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -162,6 +174,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Brown">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Bumpy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bumpy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
     </owl:Class>
     
 
@@ -291,6 +311,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Hard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Hard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential">
@@ -353,6 +381,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Prickly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Prickly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Process -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Process"/>
@@ -407,6 +443,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Rough -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Rough">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Savory -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Savory">
@@ -431,6 +475,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Shape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Slippery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slippery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Smooth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Smooth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Soft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Soft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Spicy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spicy">
@@ -443,6 +517,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Plantae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Sticky -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sticky">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
     </owl:Class>
     
 
@@ -471,10 +553,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Texture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Velvety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Velvety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#White -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#White">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Wrinkly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Wrinkly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
     </owl:Class>
     
 
@@ -545,6 +649,21 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Red"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#White"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Yellow"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bumpy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Hard"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Prickly"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Rough"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slippery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Smooth"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Soft"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sticky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Velvety"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Wrinkly"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
