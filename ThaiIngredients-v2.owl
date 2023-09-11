@@ -216,6 +216,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Bumpy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bumpy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Chewy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Chewy">
@@ -901,57 +909,6 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Big"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bulbous"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Circular"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Cubed"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Cylindrical"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Elongated"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Feathery"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Heart-Shaped"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Large"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Linear"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Narrow"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Oval"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Round"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sliced_Strips"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slices_and_Carvings"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Small"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spherical"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Thin"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Tubular"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Wide"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Big"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Circular"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Cubed"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Cylindrical"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Heart-Shaped"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Large"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Linear"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Narrow"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Round"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sliced_Strips"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slices_and_Carvings"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Small"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spherical"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Thin"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Tubular"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Wide"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Black"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Blue"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Brown"/>
@@ -963,31 +920,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Red"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#White"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Yellow"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Brittle"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bubbly"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Chewy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Creamy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Crunchy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fluffy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Gelatinous"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Grainy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Gummy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Juicy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Liquid"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Lumpy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Melting"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Powdery"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Prickly"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Silky"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spongy"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Velvety"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
