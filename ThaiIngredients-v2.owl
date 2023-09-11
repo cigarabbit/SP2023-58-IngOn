@@ -353,6 +353,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Firm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Firm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Flat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Flat">
@@ -772,6 +780,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stem">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Plantae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Sticky -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sticky">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
     </owl:Class>
     
 
