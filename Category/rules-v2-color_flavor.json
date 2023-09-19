@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Sheet1","startColumn":"A","endColumn":"K","startRow":"2","endRow":"+","comment":"","rule":"Class: @A*\nSubClassOf: hasColor some @F*, hasColor some @J*, hasFlavor some @G*, \nhasFlavor some @H*, hasFlavor some @I*, hasFlavor some @K*","active":true}]}

@@ -39598,3 +39598,1478 @@ Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A26.
          )
 
 ===========================================================================================================
+Date: 2023-09-12 16:52:12
+Ontology source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/ThaiIngredients-v2.owl
+Worksheet source: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/Category/ingredientInfo.xlsx
+Transformation rules: /Users/rchn/Desktop/rchn/ICT/seniorProject/file/Category/rules-v2-color_flavor.json
+
+# Cell range: (Sheet1!A2:K+) Comment: ""
+# Class: @A*
+# SubClassOf: hasColor some @F*, hasColor some @J*, hasFlavor some @G*, 
+# hasFlavor some @H*, hasFlavor some @I*, hasFlavor some @K*
+
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai bua bok  # Generated from value "Bai bua bok" located at cell 'Sheet1'!A2.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Mild),
+         ,
+         ,
+         
+Class: Bai toei  # Generated from value "Bai toei" located at cell 'Sheet1'!A3.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Bai yanang   # Generated from value "Bai yanang " located at cell 'Sheet1'!A4.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Kuichai  # Generated from value "Kuichai" located at cell 'Sheet1'!A5.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Pungent),
+         ,
+         ,
+         
+Class: Horapha  # Generated from value "Horapha" located at cell 'Sheet1'!A6.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Kha  # Generated from value "Kha" located at cell 'Sheet1'!A7.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Khamin  # Generated from value "Khamin" located at cell 'Sheet1'!A8.
+   SubClassOf: (hasColor SOME Yellow),
+         ,
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Bitter),
+         (hasFlavor SOME Peppery),
+         
+Class: Khing   # Generated from value "Khing " located at cell 'Sheet1'!A9.
+   SubClassOf: (hasColor SOME Brown),
+         (hasColor SOME Beige),
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy)
+Class: Krachai  # Generated from value "Krachai" located at cell 'Sheet1'!A10.
+   SubClassOf: (hasColor SOME Brown),
+         ,
+         (hasFlavor SOME Spicy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+Class: Kaphrao          # Generated from value "Kaphrao        " located at cell 'Sheet1'!A11.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Sweet),
+         (hasFlavor SOME Savory),
+         
+Class: Maenglak          # Generated from value "Maenglak        " located at cell 'Sheet1'!A12.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         ,
+         
+Class: Phak chi  # Generated from value "Phak chi" located at cell 'Sheet1'!A13.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Mild),
+         (hasFlavor SOME Peppery),
+         
+Class: Phak chi farang  # Generated from value "Phak chi farang" located at cell 'Sheet1'!A14.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Green),
+         (hasFlavor SOME Earthy),
+         (hasFlavor SOME Pungent),
+         ,
+         
+Class: Phak chi lao  # Generated from value "Phak chi lao" located at cell 'Sheet1'!A15.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Sweet),
+         
+Class: Phak phai  # Generated from value "Phak phai" located at cell 'Sheet1'!A16.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Peppery),
+         (hasFlavor SOME Tangy),
+         (hasFlavor SOME Spicy)
+Class: Rak phak chi  # Generated from value "Rak phak chi" located at cell 'Sheet1'!A17.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Spicy),
+         ,
+         ,
+         
+Class: Saranae  # Generated from value "Saranae" located at cell 'Sheet1'!A18.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Peppery),
+         ,
+         ,
+         
+Class: Takhrai  # Generated from value "Takhrai" located at cell 'Sheet1'!A19.
+   SubClassOf: (hasColor SOME Green),
+         (hasColor SOME Yellow),
+         (hasFlavor SOME Citrusy),
+         ,
+         ,
+         
+Class: Makrut  # Generated from value "Makrut" located at cell 'Sheet1'!A20.
+   SubClassOf: (hasColor SOME Green),
+         ,
+         (hasFlavor SOME Citrusy),
+         (hasFlavor SOME Bitter),
+         ,
+         
+
+===========================================================================================================

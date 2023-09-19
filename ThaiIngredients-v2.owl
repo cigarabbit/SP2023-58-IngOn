@@ -77,7 +77,9 @@
 
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#hasNutrition -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#hasNutrition"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#hasNutrition">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:ObjectProperty>
     
 
 
@@ -108,9 +110,197 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients# -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#"/>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Animalia -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Animalia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#BaiBuaBok -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#BaiBuaBok">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fresh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Circular"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Round"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#BaiToei -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#BaiToei">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Pandan"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ScrewpineLeaves"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Infusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Bitter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Linear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Chewy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#BaiYanang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#BaiYanang">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#TiliacoraTriandra"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Boiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Round"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -224,10 +414,57 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Carbohydrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CentellaAsiatica">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Chewy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Chewy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#ChineseChives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#ChineseChives">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#GarlicChives"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Kuichai"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#CilantroLeaves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CilantroLeaves">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Coriander"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#PhakChi"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#CilantroRoot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CilantroRoot">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Coriander"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#RakPhakChi"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -251,15 +488,15 @@
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Color -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Color">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Dark"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Light"/>
-                </owl:oneOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:comment>Colors of local ingredients</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#CommonName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CommonName">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IngredientName"/>
     </owl:Class>
     
 
@@ -268,6 +505,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#CookingType">
         <rdfs:comment>Type of cooking that can use that specific ingredient</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Coriander -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Coriander">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#PhakChi"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#RakPhakChi"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -296,6 +543,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Culantro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Culantro">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#PhakChiFarang"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Culinary -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Culinary">
@@ -308,6 +564,23 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Cylindrical">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#DietaryFibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#DietaryFibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Dill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Dill">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#PhakChiLao"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -331,8 +604,15 @@
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#EnglishName -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ScientificName"/>
-        <rdfs:comment>Represents English common names</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#IngredientName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Fats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
     </owl:Class>
     
 
@@ -349,6 +629,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Fingerroot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fingerroot">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Krachai"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -413,10 +702,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Galangal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Galangal">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Kha"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#GarlicChives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#GarlicChives">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Kuichai"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Gelatinous -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Gelatinous">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Ginger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Ginger">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Khing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -485,6 +801,107 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Herb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Herb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#HolyBasil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#HolyBasil">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Kaphrao"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Horapha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Horapha">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ThaiSweetBasil"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndFresh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Savory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Oval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Chewy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#IndianPennywort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Infusion -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Infusion">
@@ -493,10 +910,442 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#IngredientName -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#IngredientName"/>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Juicy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Juicy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#KaffirLime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#KaffirLime">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Makrut"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#MakrutLime"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ThaiLime"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Kaphrao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Kaphrao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Savory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Oval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Chewy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Kha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Kha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Beige"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Brown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tangy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Khamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Khamin">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Turmeric"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Yellow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Bitter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Earthy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Firm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Khing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Khing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Beige"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Brown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tangy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Krachai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Krachai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Brown"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Bitter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Firm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Kuichai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Kuichai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-fried"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Pungent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Cylindrical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Slender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -513,6 +1362,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Leave">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Plantae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#LemonBasil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#LemonBasil">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Maenglak"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#LemonGrass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#LemonGrass">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Takhrai"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -549,6 +1416,143 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Maenglak -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Maenglak">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndFresh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Oval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sticky"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Makrut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Makrut">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#MakrutLime"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ThaiLime"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fruit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Infusion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Bitter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Bumpy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sticky"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#MakrutLime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#MakrutLime">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ThaiLime"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Melting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Melting">
@@ -565,11 +1569,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Mineral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Mineral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Narrow -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Narrow">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Shape"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Nutrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
     
 
 
@@ -589,10 +1607,284 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Pandan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Pandan">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#ScrewpineLeaves"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Peppery -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Peppery">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#PhakChi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#PhakChi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fresh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Mild"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Small"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#PhakChiFarang -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#PhakChiFarang">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-fried"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Earthy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Pungent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Slender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Firm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#PhakChiLao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#PhakChiLao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-fried"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tangy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Feathery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Long"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#PhakPhai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#PhakPhai">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#VietnameseCoriander"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-fried"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tangy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tender"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -633,6 +1925,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Pungent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Pungent">
@@ -645,6 +1945,63 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Purple">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Color"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#RakPhakChi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#RakPhakChi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Root"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-fried"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Small"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Firm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -690,6 +2047,64 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Saranae -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Saranae">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Spearmint"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Peppery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Oval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Savory -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Savory">
@@ -698,10 +2113,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#ScientificName -->
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#ScrewpineLeaves -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#ScientificName">
-        <rdfs:comment>Represents scientific names of species.</rdfs:comment>
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#ScrewpineLeaves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -725,6 +2140,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Silky">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Slender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slender"/>
     
 
 
@@ -752,10 +2173,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Spearmint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spearmint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Spherical -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spherical">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Spice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Spice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Process"/>
     </owl:Class>
     
 
@@ -784,6 +2221,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Stick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stick"/>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Sticky -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sticky">
@@ -800,10 +2243,85 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndFresh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndFresh"/>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Sweet -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Sweet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Flavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Takhrai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Takhrai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#CommonName"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#canCook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Stir-friedAndBoiled"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Culinary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasBenefit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#HealthPotential"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Green"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasColor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Yellow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasFlavor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Citrusy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasShape"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Tubular"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Fibrous"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Sticky"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -830,10 +2348,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#ThaiLime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#ThaiLime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#ThaiSweetBasil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#ThaiSweetBasil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Thin -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Thin">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Shape"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#TiliacoraTriandra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#TiliacoraTriandra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
     </owl:Class>
     
 
@@ -846,10 +2388,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Turmeric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Turmeric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ThaiLocalIngredients#Velvety -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Velvety">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#VietnameseCoriander -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#VietnameseCoriander">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#EnglishName"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Vitamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ThaiLocalIngredients#Nutrition"/>
     </owl:Class>
     
 
@@ -889,15 +2463,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Dark -->
+    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Slightly -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Dark"/>
-    
-
-
-    <!-- http://www.semanticweb.org/ThaiLocalIngredients#Light -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Light"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Slightly"/>
     
 
 
@@ -909,19 +2477,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Bark"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Flower"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Fruit"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Leave"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Rhizome"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Root"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Seed"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/ThaiLocalIngredients#Stem"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
