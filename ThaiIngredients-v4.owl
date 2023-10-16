@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4/"
+     xml:base="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rfds="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#rfds:">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4">
+        <rdfs:comment>Information retrieved from Food Composition Table of Thai Foods, September 2018, from Bureau of Nutrition, Department of Health, Ministry of Public Health</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#rfds:definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#rfds:definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#canCook -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#canCook"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasBenefit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasBenefit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Benefit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasColor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasFlavor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasFlavor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasMineral -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasMineral"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasNutrient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasNutrient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasShape">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasSugar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasSugar"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasTexture -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasVitamin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#hasVitamin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#useComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#useComponent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Ash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Ash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Benefit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Benefit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Betacarotene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Betacarotene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Bread -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Calcium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Calcium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Carbohydrate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Carbohydrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Cereal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Cereal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Color">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#CookingType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#CookingType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Copper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Copper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Culinary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Culinary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Benefit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Dietary_fibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Dietary_fibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Fat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Fat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Flavor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Flavor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Flour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Flour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#HealthPotential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#HealthPotential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Benefit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Iron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Kernel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Kernel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Magnesium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Magnesium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Niacin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Niacin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Noodle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Noodle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Phosphorus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Potassium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Potassium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Powder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Powder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Protein -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Retinol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Retinol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Riboflavin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Riboflavin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Seed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Seed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory">
+        <rfds:definition>Physical senses</rfds:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Shellfish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Shellfish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sodium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sodium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Spice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Spice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sugar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Texture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Texture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Sensory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Thiamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Thiamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Cereal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#NutrientComposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminC">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Nutrient"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Zinc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Zinc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#lodine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#lodine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Meat,Poultry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Meat,Poultry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Pulse,Seed,Nut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#Pulse,Seed,Nut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#StarchyRoot,Tuber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#StarchyRoot,Tuber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#FoodGroup"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

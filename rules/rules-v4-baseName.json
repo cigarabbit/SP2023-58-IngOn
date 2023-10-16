@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Cereals","startColumn":"B","endColumn":"C","startRow":"2","endRow":"53","comment":"English Name","rule":"Class: @B*\nEquivalentTo: @C*\nSubClassOf: Cereal","active":true}]}
