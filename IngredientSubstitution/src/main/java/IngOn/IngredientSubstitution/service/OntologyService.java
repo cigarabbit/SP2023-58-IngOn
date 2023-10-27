@@ -10,5 +10,6 @@ public class OntologyService {
     @Autowired
     Environment env;
 
-    String ontologyPath =
+
+
 }

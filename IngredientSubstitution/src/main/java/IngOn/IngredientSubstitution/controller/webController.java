@@ -10,4 +10,7 @@ public class webController {
     public String homePage() {
         return "homePage";
     }
+
+    @GetMapping("/aboutus")
+    public String aboutUs() { return "aboutUs"; }
 }
