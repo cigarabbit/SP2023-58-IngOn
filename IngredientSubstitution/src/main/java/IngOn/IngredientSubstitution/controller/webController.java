@@ -13,4 +13,7 @@ public class webController {
 
     @GetMapping("/aboutus")
     public String aboutUs() { return "aboutUs"; }
+
+    @GetMapping("/ingredient")
+    public String ingredient() { return "ingredient"; }
 }
