@@ -37,8 +37,14 @@ const node = svg.selectAll(".node")
 
         console.log("clicked", data.name);
 
-        if (data.name === "Cereal") {
-            
+        if (data.name === "Starchy Root/Tuber") {
+            var conceptList = /*[[${conceptList}]]*/ [];
+            console.log(conceptList);
+
+            d3.select(this).attr('r', 50)
+
+
+
         }
     });
 
