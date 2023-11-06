@@ -8,7 +8,7 @@ public class webController {
 
     @GetMapping("/")
     public String homePage() {
-        return "homePage";
+        return "index";
     }
 
     @GetMapping("/aboutus")

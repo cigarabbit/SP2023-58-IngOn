@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-link.current {
+    border-bottom: 4px solid #00880b;
+}
