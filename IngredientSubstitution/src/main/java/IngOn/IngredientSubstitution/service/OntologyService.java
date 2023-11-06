@@ -1,5 +1,6 @@
 package IngOn.IngredientSubstitution.service;
 
+import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
@@ -43,11 +44,17 @@ public class OntologyService {
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
 
+        reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+
         OWLClass mainClass = getOWLClassByName(ontology, foodGroup);
 
-        for (OWLClass cls : ontology.getClassesInSignature()) {
-            if (reasoner.getSubClasses(mainClass, true).containsEntity(cls)) { // Checks if cls is a subclass of mainClass using the reasoner
-                String className = getShortForm(cls, ontology);
+        Set<OWLClass> directSubclasses = reasoner.getSubClasses(mainClass, false).getFlattened();
+
+        System.out.println("Main Class: " + getShortForm(mainClass, ontology));
+        System.out.println("Direct Subclasses: " + directSubclasses);
+        for (OWLClass cls : directSubclasses) {
+            String className = getShortForm(cls, ontology);
+            if (checkSubclassType(className)) {
                 conceptNames.add(className);
             }
         }
@@ -55,6 +62,19 @@ public class OntologyService {
         return conceptNames;
     }
 
+    public static Boolean checkSubclassType(String className) {
+        if (!className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType") && !className.equals("SpiceType")) {
+            return Boolean.TRUE;
+        }
+        return Boolean.FALSE;
+    }
+
+    /**
+     * Retrieve an owl class from the specific category.
+     * @param ontology
+     * @param className
+     * @return
+     */
     public static OWLClass getOWLClassByName(OWLOntology ontology, String className) {
         for (OWLClass cls : ontology.getClassesInSignature()) {
             if (getShortForm(cls, ontology).equals(className)) {

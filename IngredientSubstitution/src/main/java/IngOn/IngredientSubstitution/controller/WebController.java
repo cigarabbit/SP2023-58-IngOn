@@ -30,6 +30,7 @@ public class WebController {
 
         List<String> conceptList = OntologyService.retrieveConceptName(ontology, selectedId);
 
+        System.out.println(conceptList);
         String formattedConceptList = String.join("\n", conceptList);
 
         model.addAttribute("conceptList", formattedConceptList);
