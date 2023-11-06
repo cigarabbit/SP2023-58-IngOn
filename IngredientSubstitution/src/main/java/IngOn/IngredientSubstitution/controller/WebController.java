@@ -14,7 +14,7 @@ import java.util.List;
 @Controller
 public class WebController {
 
-    private static final File owlFile = new File("IngredientSubstitution/src/main/resources/ontology/ThaiIngredients-v4.owl");
+    private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
 
     @GetMapping("/")
     public String homePage() {

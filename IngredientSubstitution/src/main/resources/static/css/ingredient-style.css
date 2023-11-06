@@ -1,5 +1,5 @@
 .background-container.ingredient {
-    background-color: rgb(255, 255, 255);
+    /*background-image: url("../index-bg2.jpg");*/
+    background: white;
     height: auto;
-    width: auto;
 }
