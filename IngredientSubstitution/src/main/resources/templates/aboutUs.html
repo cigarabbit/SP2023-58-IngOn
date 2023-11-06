@@ -9,25 +9,35 @@
     <link rel="stylesheet" href="css/navbar-style.css">
 </head>
 <body>
-<div class="background-container aboutus">
-    <div class="header">
-        <div class="logo">
-            <!-- <img class="logo-img" src="logo.png"> -->
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">INGREDIENT</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/aboutus" class="nav-link current">ABOUT US</a>
-                </li>
-            </ul>
-        </nav>
+<div class="header">
+    <div class="logo">
+        <!-- <img class="logo-img" src="logo.png"> -->
     </div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="/" class="nav-link active">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">INGREDIENT</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"> Cereal</a></li>
+                    <li><a class="dropdown-item" href="#"> Egg </a></li>
+                    <li><a class="dropdown-item" href="#"> Fruit </a></li>
+                    <li><a class="dropdown-item" href="#"> Insect </a></li>
+                    <li><a class="dropdown-item" href="#"> Meat/Poultry </a></li>
+                    <li><a class="dropdown-item" href="#"> Pulse/Seed/Nut </a></li>
+                    <li><a class="dropdown-item" href="#"> Shellfish </a></li>
+                    <li><a class="dropdown-item" href="#"> Spice </a></li>
+                    <li><a class="dropdown-item" href="#"> Starchy Root/Tuber </a></li>
+                    <li><a class="dropdown-item" href="#"> Vegetable </a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/aboutus" class="nav-link">ABOUT US</a>
+            </li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>

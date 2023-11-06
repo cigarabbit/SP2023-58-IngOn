@@ -14,7 +14,7 @@
     object-fit: cover;
 }
 
-.nav {
+.navbar {
     display: flex;
 }
 
@@ -35,6 +35,27 @@
     font-weight: bold;
 }
 
-.nav-link.current {
+.nav-link:hover {
+    color: #006e2e;
+}
+
+.nav-link.active {
     border-bottom: 4px solid #00880b;
+}
+
+.navbar .nav-item .dropdown-menu {
+    display: none;
+}
+
+/* Make .dropdown-menu has 4 columns */
+.navbar .nav-item:hover .dropdown-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+    top: 100%;
+    z-index: 1000;
 }
