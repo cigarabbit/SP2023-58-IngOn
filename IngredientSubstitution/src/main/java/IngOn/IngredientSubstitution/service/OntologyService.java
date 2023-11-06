@@ -43,10 +43,10 @@ public class OntologyService {
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
         OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
 
-        OWLClass cerealClass = getOWLClassByName(ontology, foodGroup);
+        OWLClass mainClass = getOWLClassByName(ontology, foodGroup);
 
         for (OWLClass cls : ontology.getClassesInSignature()) {
-            if (reasoner.getSubClasses(cerealClass, true).containsEntity(cls)) {
+            if (reasoner.getSubClasses(mainClass, true).containsEntity(cls)) { // Checks if cls is a subclass of mainClass using the reasoner
                 String className = getShortForm(cls, ontology);
                 conceptNames.add(className);
             }
