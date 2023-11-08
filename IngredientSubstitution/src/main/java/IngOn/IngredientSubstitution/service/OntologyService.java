@@ -1,8 +1,7 @@
 package IngOn.IngredientSubstitution.service;
 
+import IngOn.IngredientSubstitution.enumeration.FoodGroupEnum;
 import org.semanticweb.owlapi.reasoner.InferenceType;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
@@ -21,10 +20,17 @@ import java.util.Set;
 
 @Service
 public class OntologyService {
-    @Autowired
-    Environment env;
-
     private static Set<String> processedProperties = new HashSet<>();
+
+    public static OWLReasoner init(OWLOntology ontology) {
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+
+        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
+
+        reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+
+        return reasoner;
+    }
 
     public static OWLOntology prepareOWLFile(File owlFile) {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
@@ -38,32 +44,49 @@ public class OntologyService {
         return ontology;
     }
 
-    public static List<String> retrieveConceptName(OWLOntology ontology, String foodGroup) throws OWLOntologyCreationException {
-        List<String> conceptNames = new ArrayList<>();
+    public static Set<String> retrieveConceptName(OWLOntology ontology, String foodGroup) {
+        Set<String> conceptNames = new HashSet<>();
 
-        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
-        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
-
-        reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
+        OWLReasoner reasoner = init(ontology);
 
         OWLClass mainClass = getOWLClassByName(ontology, foodGroup);
 
         Set<OWLClass> directSubclasses = reasoner.getSubClasses(mainClass, false).getFlattened();
 
-        System.out.println("Main Class: " + getShortForm(mainClass, ontology));
-        System.out.println("Direct Subclasses: " + directSubclasses);
         for (OWLClass cls : directSubclasses) {
             String className = getShortForm(cls, ontology);
             if (checkSubclassType(className)) {
                 conceptNames.add(className);
+
+                // Get equivalent classes of the subclass
+                Set<OWLClassExpression> equivalentClasses = cls.getEquivalentClasses(ontology);
+
+                for (OWLClassExpression equivalentClass : equivalentClasses) {
+                    String equivalentCls = getShortForm(equivalentClass.asOWLClass(), ontology);
+
+                }
             }
         }
 
         return conceptNames;
     }
 
+    public static HashSet<String> retrieveAllConcepts(OWLOntology ontology) {
+        HashSet<String> allConceptNames = new HashSet<>();
+
+        OWLReasoner reasoner = init(ontology);
+
+        // FoddGroup: "Cereal", "Egg", "Fruit", "Insect", "Milk",
+        //    "Meat/Poultry", "Pulse/Seed/Nut", "Shellfish",
+        //    "Spice", "Starchy Root/Tuber", "Vegetable"
+
+
+        return allConceptNames;
+    }
+
     public static Boolean checkSubclassType(String className) {
-        if (!className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType") && !className.equals("SpiceType")) {
+        if (!className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType")
+                && !className.equals("SpiceType") && !className.equals("Nothing")) {
             return Boolean.TRUE;
         }
         return Boolean.FALSE;

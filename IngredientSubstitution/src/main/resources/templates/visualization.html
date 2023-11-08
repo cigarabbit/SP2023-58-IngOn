@@ -18,7 +18,7 @@
                 <a href="/" class="nav-link">HOME</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">INGREDIENT</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">INGREDIENT</a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="/ingredient?id=Cereal"> Cereal</a></li>
                     <li><a class="dropdown-item" href="/ingredient?id=Egg"> Egg </a></li>
@@ -34,7 +34,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a href="/visualization" class="nav-link">VISUALIZATION</a>
+                <a href="/visualization" class="nav-link active">VISUALIZATION</a>
             </li>
             <li class="nav-item">
                 <a href="/aboutus" class="nav-link">ABOUT US</a>
@@ -42,22 +42,10 @@
         </ul>
     </nav>
 </div>
-
-<div class="container mt-3 my-5">
-    <h1 th:text="${foodGroup}" id="foodGroup-title"></h1>
-    <div class="row">
-        <div class="col-md-9">
-            <textarea disabled th:text="${conceptList}" id="concepts" style="width: 250px; height: 450px;"></textarea>
-            <button class="btn btn-primary" id="visualize" onClick="redirectToVisualiazation()">Visualize</button>
-        </div>
-    </div>
-
+<div class="container mt-7">
+    <svg width="700" height="500"></svg>
 </div>
 
-<script>
-    function redirectToVisualiazation() {
-        // window.location.href = "/visualization";
-    }
-</script>
+<script src="javascript/script.js"></script>
 </body>
 </html>

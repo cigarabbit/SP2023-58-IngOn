@@ -1,5 +1,5 @@
 const conceptList = [
-    "Cereal", "Egg", "Fruit", "Insect",
+    "Cereal", "Egg", "Fruit", "Insect", "Milk",
     "Meat/Poultry", "Pulse/Seed/Nut", "Shellfish",
     "Spice", "Starchy Root/Tuber", "Vegetable"
 ];
@@ -33,18 +33,20 @@ const node = svg.selectAll(".node")
     .attr("r", d => d.name === "FoodGroup" ? 20 : 10)
     .attr("fill", d => d.name === "FoodGroup" ? "green" : "steelblue")
     .on('click', function (d) {
-        const data = d3.select(this).datum(); // retrieved clicked element
+        const data = d3.select(this).datum(); // Retrieves clicked element
 
-        console.log("clicked", data.name);
+        var foodGroup = document.getElementById('foodGroup-title').textContent;
+        var conList = document.getElementById('concepts').value;
+        var concepts = conList.split(',');
+
+        console.log(foodGroup);
+        console.log(concepts.toString());
 
         if (data.name === "Starchy Root/Tuber") {
-            var conceptList = /*[[${conceptList}]]*/ [];
-            console.log(conceptList);
+            d3.select(this).attr("fill", "Orange"); // Highlights color to the clicked node
 
-            d3.select(this).attr('r', 50)
-
-
-
+            // Expands the clicked node
+            expandNodes(concepts);
         }
     });
 
@@ -54,8 +56,46 @@ const label = svg.selectAll(".label")
     .attr("class", "label")
     .text(d => d.name)
     .attr("text-anchor", "middle")
-    .attr("font-size", "12px")
+    .attr("font-size", "15px")
     .attr("fill", "black");
+
+function expandNodes(concepts) {
+
+}
+
+function updateVisualization() {
+    const expandedNodes = allNodes.filter(node => node.expanded);
+
+    const updatedLinks = [];
+
+    // Iterate over the nodes and check if they are expanded
+    expandedNodes.forEach(expandedNode => {
+        links.forEach(link => {
+            if (link.target === expandedNode) {
+                updatedLinks.push({ source: centralNode, target: expandedNode });
+            }
+        });
+    });
+
+    // Update the link selection
+    const linkUpdate = svg.selectAll(".link")
+        .data(updatedLinks, d => `${d.source.name}-${d.target.name}`);
+
+    // Remove any links that are no longer needed
+    linkUpdate.exit().remove();
+
+    // Add new links
+    linkUpdate.enter().append("line")
+        .attr("class", "link")
+        .attr("stroke", "yellow");
+
+    // Update the positions of the links
+    linkUpdate.merge(link)
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+}
 
 // Updates the positions of the nodes and links based on the forces applied
 function ticked() {

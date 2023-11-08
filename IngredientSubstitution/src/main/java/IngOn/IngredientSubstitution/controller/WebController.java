@@ -1,6 +1,7 @@
 package IngOn.IngredientSubstitution.controller;
 
 import IngOn.IngredientSubstitution.service.OntologyService;
+import jakarta.servlet.http.HttpSession;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.springframework.stereotype.Controller;
@@ -9,7 +10,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.File;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Controller
 public class WebController {
@@ -25,16 +28,26 @@ public class WebController {
     public String aboutUs() { return "aboutUs"; }
 
     @GetMapping("/ingredient")
-    public String ingredient (@RequestParam("id") String selectedId, Model model) throws OWLOntologyCreationException {
+    public String ingredient (@RequestParam("id") String selectedId, Model model, HttpSession session) throws OWLOntologyCreationException {
         OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
 
-        List<String> conceptList = OntologyService.retrieveConceptName(ontology, selectedId);
+        Set<String> conceptList = OntologyService.retrieveConceptName(ontology, selectedId);
 
-        System.out.println(conceptList);
+        HashSet<String> conceptAll = OntologyService.retrieveAllConcepts(ontology);
+
         String formattedConceptList = String.join("\n", conceptList);
 
         model.addAttribute("conceptList", formattedConceptList);
+        model.addAttribute("foodGroup", selectedId);
+
+        session.setAttribute("conceptList", conceptList);
 
         return "ingredient";
+    }
+
+    @GetMapping("/visualization")
+    public String visualization (HttpSession session) {
+
+        return "visualization";
     }
 }

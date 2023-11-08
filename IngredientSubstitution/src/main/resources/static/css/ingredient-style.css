@@ -1,5 +1,14 @@
 .background-container.ingredient {
-    /*background-image: url("../index-bg2.jpg");*/
     background: white;
     height: auto;
 }
+
+#foodGroup-title {
+    text-align: center;
+}
+
+.container {
+    width: auto;
+}
+
+
