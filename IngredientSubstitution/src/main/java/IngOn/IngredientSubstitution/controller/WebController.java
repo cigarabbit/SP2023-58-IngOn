@@ -27,6 +27,9 @@ public class WebController {
     @GetMapping("/aboutus")
     public String aboutUs() { return "aboutUs"; }
 
+    @GetMapping("/document")
+    public String document() { return "document"; }
+
     @GetMapping("/ingredient")
     public String ingredient (@RequestParam("id") String selectedId, Model model, HttpSession session) throws OWLOntologyCreationException {
         OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
