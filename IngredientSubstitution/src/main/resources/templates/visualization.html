@@ -8,7 +8,10 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/ingredient-style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/charts.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="//cdn.amcharts.com/lib/4/plugins/forceDirected.js"></script>
 </head>
 <body class="background-container ingredient">
 <div class="header">
@@ -45,9 +48,9 @@
         </ul>
     </nav>
 </div>
-<div class="container mt-7">
-    <svg width="700" height="500"></svg>
-</div>
+
+<div id="chartdiv"></div>
+
 
 <script src="javascript/script.js"></script>
 </body>

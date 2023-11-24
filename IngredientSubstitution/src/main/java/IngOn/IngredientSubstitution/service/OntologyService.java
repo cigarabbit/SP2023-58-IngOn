@@ -71,10 +71,19 @@ public class OntologyService {
         return conceptNames;
     }
 
+    /**
+     * Retrieve all concepts exist in Thai ingredients ontology.
+     * @param ontology
+     * @return
+     */
     public static HashSet<String> retrieveAllConcepts(OWLOntology ontology) {
         HashSet<String> allConceptNames = new HashSet<>();
 
         OWLReasoner reasoner = init(ontology);
+
+        for (OWLClass cls : ontology.getClassesInSignature()) {
+            allConceptNames.add(getShortForm(cls, ontology));
+        }
 
         // FoddGroup: "Cereal", "Egg", "Fruit", "Insect", "Milk",
         //    "Meat/Poultry", "Pulse/Seed/Nut", "Shellfish",
@@ -112,7 +121,7 @@ public class OntologyService {
         return shortFormProvider.getShortForm(cls);
     }
 
-    public static void addObjectProperties(OWLOntology ontology, OWLClass owlClass, ShortFormProvider shortFormProvider) {
+    public static void retrieveObjectProperties(OWLOntology ontology, OWLClass owlClass, ShortFormProvider shortFormProvider) {
 
         for (OWLIndividual individual : owlClass.getIndividuals(ontology)) {
             for (OWLObjectPropertyAssertionAxiom axiom : ontology.getObjectPropertyAssertionAxioms(individual)) {

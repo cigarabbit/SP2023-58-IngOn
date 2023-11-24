@@ -50,6 +50,11 @@ public class WebController {
 
     @GetMapping("/visualization")
     public String visualization (HttpSession session) {
+        OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
+        Set<String> conceptList = OntologyService.retrieveAllConcepts(ontology);
+
+        session.setAttribute("conceptList", conceptList);
+
 
         return "visualization";
     }
