@@ -8,7 +8,6 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/ingredient-style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body class="background-container ingredient">
 <div class="header">
@@ -51,15 +50,15 @@
     <div class="row">
         <div class="col-md-9">
             <textarea disabled th:text="${conceptList}" id="concepts" style="width: 250px; height: 450px;"></textarea>
-            <button class="btn btn-primary" id="visualize" onClick="redirectToVisualiazation()">Visualize</button>
+            <button class="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>
         </div>
     </div>
 
 </div>
 
 <script>
-    function redirectToVisualiazation() {
-        // window.location.href = "/visualization";
+    function displayVisualization() {
+
     }
 </script>
 </body>

@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,7 +21,13 @@ public class WebController {
     private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
 
     @GetMapping("/")
-    public String homePage() {
+    public String homePage(HttpSession session) {
+        OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
+
+        HashMap<String, Set<String>> conceptList = OntologyService.retrieveAllConcepts(ontology);
+
+        session.setAttribute("allConceptList", conceptList);
+
         return "index";
     }
 
@@ -31,12 +38,10 @@ public class WebController {
     public String document() { return "document"; }
 
     @GetMapping("/ingredient")
-    public String ingredient (@RequestParam("id") String selectedId, Model model, HttpSession session) throws OWLOntologyCreationException {
-        OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
+    public String ingredient (@RequestParam("id") String selectedId, Model model, HttpSession session) {
+        HashMap<String, Set<String>> concepts = (HashMap<String, Set<String>>) session.getAttribute("allConceptList");
 
-        Set<String> conceptList = OntologyService.retrieveConceptName(ontology, selectedId);
-
-        HashSet<String> conceptAll = OntologyService.retrieveAllConcepts(ontology);
+        Set<String> conceptList = concepts.get(selectedId);
 
         String formattedConceptList = String.join("\n", conceptList);
 
@@ -49,11 +54,8 @@ public class WebController {
     }
 
     @GetMapping("/visualization")
-    public String visualization (HttpSession session) {
-        OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
-        Set<String> conceptList = OntologyService.retrieveAllConcepts(ontology);
+    public String visualization (HttpSession session, Model model) {
 
-        session.setAttribute("conceptList", conceptList);
 
 
         return "visualization";

@@ -1,6 +1,5 @@
 package IngOn.IngredientSubstitution.service;
 
-import IngOn.IngredientSubstitution.enumeration.FoodGroupEnum;
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +12,7 @@ import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Service
 public class OntologyService {
@@ -54,19 +50,20 @@ public class OntologyService {
         Set<OWLClass> directSubclasses = reasoner.getSubClasses(mainClass, false).getFlattened();
 
         for (OWLClass cls : directSubclasses) {
-            String className = getShortForm(cls, ontology);
-            if (checkSubclassType(className)) {
+            String className = getShortForm(cls);
+            if (checkSubclassType(className)) { // Not any types
                 conceptNames.add(className);
 
                 // Get equivalent classes of the subclass
                 Set<OWLClassExpression> equivalentClasses = cls.getEquivalentClasses(ontology);
 
                 for (OWLClassExpression equivalentClass : equivalentClasses) {
-                    String equivalentCls = getShortForm(equivalentClass.asOWLClass(), ontology);
-
+                    String equivalentCls = getShortForm(equivalentClass.asOWLClass());
+                    conceptNames.add(equivalentCls);
                 }
             }
         }
+
 
         return conceptNames;
     }
@@ -76,19 +73,20 @@ public class OntologyService {
      * @param ontology
      * @return
      */
-    public static HashSet<String> retrieveAllConcepts(OWLOntology ontology) {
-        HashSet<String> allConceptNames = new HashSet<>();
+    public static HashMap<String, Set<String>> retrieveAllConcepts(OWLOntology ontology) {
+        HashMap<String, Set<String>> allConceptNames = new HashMap<>();
 
-        OWLReasoner reasoner = init(ontology);
-
-        for (OWLClass cls : ontology.getClassesInSignature()) {
-            allConceptNames.add(getShortForm(cls, ontology));
-        }
-
-        // FoddGroup: "Cereal", "Egg", "Fruit", "Insect", "Milk",
-        //    "Meat/Poultry", "Pulse/Seed/Nut", "Shellfish",
-        //    "Spice", "Starchy Root/Tuber", "Vegetable"
-
+        allConceptNames.put("Cereal", retrieveConceptName(ontology, "Cereal"));
+        allConceptNames.put("Egg", retrieveConceptName(ontology, "Egg"));
+        allConceptNames.put("Fruit", retrieveConceptName(ontology, "Fruit"));
+        allConceptNames.put("Insect", retrieveConceptName(ontology, "Insect"));
+        allConceptNames.put("Milk", retrieveConceptName(ontology, "Milk"));
+        allConceptNames.put("Meat_Poultry", retrieveConceptName(ontology, "Meat_Poultry"));
+        allConceptNames.put("Pulse_Seed_Nut", retrieveConceptName(ontology, "Pulse_Seed_Nut"));
+        allConceptNames.put("Shellfish", retrieveConceptName(ontology, "Shellfish"));
+        allConceptNames.put("Spice_Condiment", retrieveConceptName(ontology, "Spice_Condiment"));
+        allConceptNames.put("StarchyRoot_Tuber", retrieveConceptName(ontology, "StarchyRoot_Tuber"));
+        allConceptNames.put("Vegetable", retrieveConceptName(ontology, "Vegetable"));
 
         return allConceptNames;
     }
@@ -109,28 +107,23 @@ public class OntologyService {
      */
     public static OWLClass getOWLClassByName(OWLOntology ontology, String className) {
         for (OWLClass cls : ontology.getClassesInSignature()) {
-            if (getShortForm(cls, ontology).equals(className)) {
+            if (getShortForm(cls).equals(className)) {
                 return cls;
             }
         }
         return null;
     }
 
-    public static String getShortForm(OWLClass cls, OWLOntology ontology) {
+    public static String getShortForm(OWLClass cls) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(cls);
     }
 
-    public static void retrieveObjectProperties(OWLOntology ontology, OWLClass owlClass, ShortFormProvider shortFormProvider) {
-
-        for (OWLIndividual individual : owlClass.getIndividuals(ontology)) {
-            for (OWLObjectPropertyAssertionAxiom axiom : ontology.getObjectPropertyAssertionAxioms(individual)) {
-                OWLObjectProperty property = axiom.getProperty().asOWLObjectProperty();
-
-                String propertyName = shortFormProvider.getShortForm(property);
-
-                processedProperties.add(propertyName);
-            }
-        }
+    public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {
+        ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
+        return shortFormProvider.getShortForm(objectProperty);
     }
+
+
+
 }

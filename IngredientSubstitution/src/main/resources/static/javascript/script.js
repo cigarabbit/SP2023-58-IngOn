@@ -2,62 +2,102 @@ am4core.useTheme(am4themes_animated);
 
 // Create chart
 var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+
 chart.logo.disabled = true;
+chart.zoomable = true;
 
 // Create series
 var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
 
+series.nodes.template.events.on("hit", function(event) {
+    if (event.target.isActive) {
+        chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
+    }
+    else {
+        chart.zoomOut();
+    }});
 
 // Set data
 series.data = [{
-    "name": "First",
+    "name": "Food Group",
+    "value": 300,
     "children": [{
-        "name": "A1", "value": 100
+        "name": "Cereal", "value": 150
     }, {
-        "name": "A2", "value": 60
+        "name": "Egg", "value": 150
     }, {
-        "name": "A3", "value": 30
-    }]
-}, {
-    "name": "Second",
-    "children": [{
-        "name": "B1", "value": 135
+        "name": "Fruit", "value": 150
     }, {
-        "name": "B2", "value": 98
+        "name": "Insect", "value": 150
     }, {
-        "name": "B3", "value": 56
-    }]
-}, {
-    "name": "Third",
-    "children": [{
-        "name": "C1", "value": 335
+        "name": "Milk", "value": 150
     }, {
-        "name": "C2", "value": 148
+        "name": "Meat_Poultry", "value": 150
     }, {
-        "name": "C3", "value": 126
+        "name": "Pulse_Seed_Nut", "value": 150
     }, {
-        "name": "C4", "value": 26
-    }]
-}, {
-    "name": "Fourth",
-    "children": [{
-        "name": "D1", "value": 415
+        "name": "Shellfish", "value": 150
     }, {
-        "name": "D2", "value": 148
+        "name": "Spice_Condiment", "value": 150
     }, {
-        "name": "D3", "value": 89
+        "name": "StarchyRoot_Tuber", "value": 150
     }, {
-        "name": "D4", "value": 64
-    }, {
-        "name": "D5", "value": 16
-    }]
-}, {
-    "name": "Fifth",
-    "children": [{
-        "name": "E1", "value": 687
-    }, {
-        "name": "E2", "value": 148
-    }]
+        "name": "Vegetable", "value": 150,
+        "children": [
+            {
+                name: "White\nHoly Basil",
+                value: 120,
+                children: [{
+                    name: "canCook",
+                    value: 100,
+                    children: [
+                        {name: "Fried"},
+                        {name: "Stir-Fried"}]
+                },{
+                    name: "hasBenefit",
+                    value: 100,
+                    children: [
+                        {name: "Culinary"},
+                        {name: "Health\nPotential"}]
+                }, {
+                    name: "hasColor",
+                    value: 100,
+                    children: [
+                        {name: "Green"},
+                    ]
+                }, {
+                    name: "hasFlavor",
+                    value: 100,
+                    children: [
+                        {name: "Sweet"},
+                        {name: "Astringent"}
+                    ]
+                }, {
+                    name: "hasShape",
+                    value: 100,
+                    children: [
+                        {name: "Broad"},
+                        {name: "Oval"}
+                    ]
+                }, {
+                    name: "hasTexture",
+                    value: 100,
+                    children: [
+                        {name: "Tender"}]
+                }, {
+                    name: "hasNutrient",
+                    value: 100,
+                    children: [
+                        {name: "Energy "},
+                        {name: "Water"}]
+                }
+                ]
+            },{
+                name:"A2"
+            }
+        ]
+    }
+    ]
 }];
 
 
@@ -66,10 +106,20 @@ series.dataFields.value = "value";
 series.dataFields.name = "name";
 series.dataFields.children = "children";
 
+// Only top and second level nodes are show
+series.maxLevels = 2;
+
 // Add labels
 series.nodes.template.label.text = "{name}";
-series.fontSize = 10;
-series.minRadius = 15;
-series.maxRadius = 40;
+series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 
+// Customize links
+series.links.template.distance = 2;
+series.links.template.strokeWidth = 3;
+
+series.fontSize = 12;
+series.minRadius = 30;
+series.maxRadius = am4core.percent(6);
 series.centerStrength = 0.5;
+
+
