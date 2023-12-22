@@ -17,7 +17,13 @@ import java.util.*;
 @Service
 public class OntologyService {
     private static Set<String> processedProperties = new HashSet<>();
+    private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
 
+    /**
+     * Initialize OWL reasoner.
+     * @param ontology
+     * @return
+     */
     public static OWLReasoner init(OWLOntology ontology) {
         OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
 
@@ -28,6 +34,11 @@ public class OntologyService {
         return reasoner;
     }
 
+    /**
+     * Access to an .owl file and convert it to OWLontology.
+     * @param owlFile
+     * @return
+     */
     public static OWLOntology prepareOWLFile(File owlFile) {
         OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
         OWLOntology ontology = null;
@@ -40,6 +51,12 @@ public class OntologyService {
         return ontology;
     }
 
+    /**
+     * Retrieve a set of string of concept names from the given .owl file.
+     * @param ontology
+     * @param foodGroup
+     * @return
+     */
     public static Set<String> retrieveConceptName(OWLOntology ontology, String foodGroup) {
         Set<String> conceptNames = new HashSet<>();
 
@@ -51,7 +68,9 @@ public class OntologyService {
 
         for (OWLClass cls : directSubclasses) {
             String className = getShortForm(cls);
-            if (checkSubclassType(className)) { // Not any types
+
+            // Not a class that is a type and not a type name
+            if (checkSubclassType(className) && !isSubclassOfSpecificTypes(cls, ontology)) {
                 conceptNames.add(className);
 
                 // Get equivalent classes of the subclass
@@ -63,7 +82,6 @@ public class OntologyService {
                 }
             }
         }
-
 
         return conceptNames;
     }
@@ -92,11 +110,40 @@ public class OntologyService {
     }
 
     public static Boolean checkSubclassType(String className) {
-        if (!className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType")
-                && !className.equals("SpiceType") && !className.equals("Nothing")) {
-            return Boolean.TRUE;
+        return !className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType")
+                && !className.equals("SpiceType") && !className.equals("Nothing");
+    }
+
+    public static Set<OWLClass> getSpecificTypes(OWLOntology ontology) {
+        Set<OWLClass> specificTypes = new HashSet<>();
+
+        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+
+        String[] specificClassNames = {"CerealType", "SeedType", "MeatType", "SpiceType"};
+
+        for (String className : specificClassNames) {
+            IRI classIRI = IRI.create(base_IRI + className);
+
+            OWLClass cls = dataFactory.getOWLClass(classIRI);
+            if (ontology.containsClassInSignature(cls.getIRI())) {
+                specificTypes.add(cls);
+            }
         }
-        return Boolean.FALSE;
+
+        return specificTypes;
+    }
+
+    public static Boolean isSubclassOfSpecificTypes(OWLClass cls, OWLOntology ontology) {
+        Set<OWLClass> specificTypes = getSpecificTypes(ontology);
+
+        OWLReasoner reasoner = init(ontology);
+
+        for (OWLClass type : specificTypes) {
+            if (reasoner.getSuperClasses(cls, false).containsEntity(type)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /**

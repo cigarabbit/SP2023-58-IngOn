@@ -55,7 +55,7 @@ public class WebController {
 
     @GetMapping("/visualization")
     public String visualization (HttpSession session, Model model) {
-
+        
 
 
         return "visualization";

@@ -92,8 +92,6 @@ series.data = [{
                         {name: "Water"}]
                 }
                 ]
-            },{
-                name:"A2"
             }
         ]
     }
@@ -117,9 +115,51 @@ series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 series.links.template.distance = 2;
 series.links.template.strokeWidth = 3;
 
+// If the node is a subclass of the ingredient, using a dash line
+
+
 series.fontSize = 12;
 series.minRadius = 30;
 series.maxRadius = am4core.percent(6);
 series.centerStrength = 0.5;
 
+// Function to find a node by its name recursively
+function findNodeByName(nodes, name) {
+    for (let i = 0; i < nodes.length; i++) {
+        if (nodes[i].name === name) {
+            return nodes[i];
+        } else if (nodes[i].children) {
+            let foundNode = findNodeByName(nodes[i].children, name);
+            if (foundNode) {
+                return foundNode;
+            }
+        }
+    }
+    return null;
+}
 
+function appendChildNode(nodeName, childNode) {
+    // Find the node in the data structure by name
+    let nodes = series.data[0].children;
+    let targetNode = findNodeByName(nodes, nodeName);
+
+    // If the target node is found, append the child node
+    if (targetNode) {
+        // Create a child array for the target node if it does not exist
+        if (!targetNode.children) {
+            targetNode.children = [];
+        }
+        targetNode.children.push(childNode);
+        console.log("Successfully append the child node to ", targetNode.name)
+    }
+}
+
+function generateNewChildNode() {
+    let newChildNode;
+
+
+    return newChildNode;
+}
+
+let newChildNode = { name: "New", value: 120 };
+// appendChildNode("Vegetable", newChildNode);
