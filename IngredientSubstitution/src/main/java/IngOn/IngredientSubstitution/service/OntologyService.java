@@ -16,7 +16,7 @@ import java.util.*;
 
 @Service
 public class OntologyService {
-    private static Set<String> processedProperties = new HashSet<>();
+    private static HashMap<String, Set<String>> processedProperties = new HashMap<>();
     private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
 
     /**
@@ -166,11 +166,15 @@ public class OntologyService {
         return shortFormProvider.getShortForm(cls);
     }
 
+    /**
+     * Retrieve object properties of each OWL class.
+     * @param objectProperty
+     * @return
+     */
     public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(objectProperty);
     }
-
 
 
 }
