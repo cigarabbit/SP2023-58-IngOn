@@ -8,6 +8,9 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/ingredient-style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 </head>
 <body class="background-container ingredient">
 <div class="header">
@@ -47,14 +50,15 @@
 
 <div class="container mt-3 my-5">
     <div class="row">
-        <table>
+
+        <table id="ingredientTable">
             <thead>
             <tr>
                 <th th:text="${foodGroup}" id="foodGroup-title"></th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="formattedConcept : ${conceptList}">
+            <tr th:each="formattedConcept : ${conceptList}" th:style="'font-weight: bold;'">
                 <td th:text="${formattedConcept}"></td>
             </tr>
             </tbody>
@@ -66,9 +70,10 @@
 </div>
 
 <script>
-    function displayVisualization() {
-
-    }
+    $(document).ready(function () {
+        $('#ingredientTable').DataTable();
+    });
 </script>
+
 </body>
 </html>
