@@ -71,7 +71,15 @@
 
 <script>
     $(document).ready(function () {
-        $('#ingredientTable').DataTable();
+        var table = $('#ingredientTable').DataTable();
+
+        // Event handler for row click
+        $('#ingredientTable tbody').on('click', 'tr', function () {
+            var data = table.row(this).data();
+            // Add a new column with additional information
+            var additionalInfo = '<td colspan="1">Additional Info: ' + data[0] + '</td>';
+            $(this).after(additionalInfo);
+        });
     });
 </script>
 
