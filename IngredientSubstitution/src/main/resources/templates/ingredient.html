@@ -46,12 +46,21 @@
 </div>
 
 <div class="container mt-3 my-5">
-    <h1 th:text="${foodGroup}" id="foodGroup-title"></h1>
     <div class="row">
-        <div class="col-md-9">
-            <textarea disabled th:text="${conceptList}" id="concepts" style="width: 250px; height: 450px;"></textarea>
-            <button class="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>
-        </div>
+        <table>
+            <thead>
+            <tr>
+                <th th:text="${foodGroup}" id="foodGroup-title"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="formattedConcept : ${conceptList}">
+                <td th:text="${formattedConcept}"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>
     </div>
 
 </div>
