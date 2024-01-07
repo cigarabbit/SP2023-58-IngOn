@@ -6,6 +6,8 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
@@ -26,7 +28,9 @@ public class WebController {
     public String homePage(HttpSession session) {
         OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
 
-        HashMap<String, Set<String>> conceptList = OntologyService.retrieveAllConcepts(ontology);
+        ConceptListManager.loadConceptList(ontology);
+
+        HashMap<String, Set<String>> conceptList = ConceptListManager.getConceptList();
 
         session.setAttribute("allConceptList", conceptList);
 
