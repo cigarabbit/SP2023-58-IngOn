@@ -25,6 +25,7 @@ public class WebController {
     private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
     @GetMapping("/")
+    @Cacheable
     public String homePage(HttpSession session) {
         OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
 

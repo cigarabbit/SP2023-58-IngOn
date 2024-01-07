@@ -7,6 +7,28 @@
     text-align: center;
 }
 
+#ingredientTable table {
+    paddle
+}
+
+#ingredientTable th {
+    background: #555555;
+    color: #14c25a;
+    font-size: x-large;
+}
+
+#ingredientTable tr {
+    background: #2d2d2d;
+    color: #eeeeee;
+}
+
+
+#ingredientTable tr:hover {
+    background: aliceblue;
+    color: black;
+}
+
+
 .container {
     width: auto;
 }
