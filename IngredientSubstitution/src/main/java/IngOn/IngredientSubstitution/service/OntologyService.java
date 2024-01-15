@@ -17,6 +17,9 @@ import java.util.*;
 @Service
 public class OntologyService {
     private static Set<String> processedProperties = new HashSet<>();
+
+    private static HashMap<String, Set<String>> allConceptNames = new HashMap<>();
+
     private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
 
     /**
@@ -92,7 +95,6 @@ public class OntologyService {
      * @return
      */
     public static HashMap<String, Set<String>> retrieveAllConcepts(OWLOntology ontology) {
-        HashMap<String, Set<String>> allConceptNames = new HashMap<>();
 
         allConceptNames.put("Cereal", retrieveConceptName(ontology, "Cereal"));
         allConceptNames.put("Egg", retrieveConceptName(ontology, "Egg"));
@@ -195,6 +197,11 @@ public class OntologyService {
         // Convert the list to an array
         return formattedConceptList.toArray(new String[0]);
     }
+
+    public static HashMap<String, Set<String>> getAllConceptNames() {
+        return allConceptNames;
+    }
+
     public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(objectProperty);

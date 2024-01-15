@@ -12,6 +12,7 @@
     background: #555555;
     color: #14c25a;
     font-size: x-large;
+    text-align: center;
 }
 
 #ingredientTable tr {
@@ -29,5 +30,19 @@
 .container {
     width: auto;
 }
+
+#ingredientTable th {
+    width: 70%;
+}
+
+#visualize {
+    background: black;
+    color: white;
+}
+
+#visualize:hover {
+    background: #2d2d2d;
+}
+
 
 

@@ -26,20 +26,20 @@ public class WebController {
     @Autowired
     private AsyncService asyncService;
 
-//    private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
-    private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+ private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
+// private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
     @GetMapping("/")
-    public String homePage() {
+    @Cacheable
+    public String homePage(HttpSession session) {
+        asyncService.backgroundTask(session, owlFile);
         return "index";
     }
 
     @GetMapping("/homepage")
-    @Cacheable
-    public String homePage(HttpSession session) {
-        asyncService.backgroundTask(session, owlFile);
+    public String homePage() {
         return "index";
     }
 
@@ -68,8 +68,6 @@ public class WebController {
 
     @GetMapping("/visualization")
     public String visualization (HttpSession session, Model model) {
-        
-
 
         return "visualization";
     }

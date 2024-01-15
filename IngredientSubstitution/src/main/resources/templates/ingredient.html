@@ -72,14 +72,30 @@
     $(document).ready(function () {
         var table = $('#ingredientTable').DataTable();
 
+        // Add initial header
+        var initialHeader = $('#ingredientTable thead tr');
+        initialHeader.append('<th id="additionalInfoHeader">Additional Info</th>');
+
         // Event handler for row click
         $('#ingredientTable tbody').on('click', 'tr', function () {
-            var data = table.row(this).data();
-            // Add a new column with additional information
-            var additionalInfo = '<td colspan="1">Additional Info: ' + data[0] + '</td>';
-            $(this).after(additionalInfo);
+            var row = table.row(this);
+            var data = row.data();
+
+            var additionalColumn = $('#ingredientTable tbody td#additionalInfoCell');
+
+            if (additionalColumn.length) {
+                additionalColumn.toggle();
+            } else {
+                var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">Additional Info: ' + data[0] + '</td>';
+                $('#ingredientTable tbody tr:first').append(additionalInfo);
+            }
+
+            $(this).toggleClass('shown');
+
+            table.draw();
         });
     });
+
 
 
 </script>
