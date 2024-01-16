@@ -70,7 +70,10 @@
 
 <script>
     $(document).ready(function () {
-        var table = $('#ingredientTable').DataTable();
+        var table = $('#ingredientTable').DataTable({
+            pageLength: 10,
+            lengthChange: false
+        });
 
         // Add initial header
         var initialHeader = $('#ingredientTable thead tr');
@@ -95,9 +98,6 @@
             table.draw();
         });
     });
-
-
-
 </script>
 
 </body>
