@@ -20,12 +20,20 @@
     color: #eeeeee;
 }
 
+#ingredientTable tbody tr.shown {
+    background-color: #eeeeee;
+    color: black;
+}
 
 #ingredientTable tr:hover {
     background: aliceblue;
     color: black;
 }
 
+#additionalInfoCell {
+    background-color: #eeeeee;
+    color: black;
+}
 
 .container {
     width: auto;

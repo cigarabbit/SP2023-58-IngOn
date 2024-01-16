@@ -51,7 +51,7 @@
         <input
                 type="search"
                 class="form-control"
-                placeholder="What kind of ingredient you are looking for?"
+                placeholder="What kind of ingredient are you looking for?"
                 aria-label="Search"
                 aria-describedby="search-addon"
                 style="width: 500px; height: 40px;"
@@ -94,21 +94,19 @@
         // Event handler for row click
         $('#ingredientTable tbody').on('click', 'tr', function () {
             var row = table.row(this);
-            var data = row.data();
 
-            var additionalColumn = $('#ingredientTable tbody td#additionalInfoCell');
+            var additionalColumn = $('#additionalInfoCell');
 
-            if (additionalColumn.length) {
-                additionalColumn.toggle();
-            } else {
-                var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">Additional Info: ' + data[0] + '</td>';
-                var visualizeButton = '<button className="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>';
-                $('#ingredientTable tbody tr:first').append(additionalInfo);
-            }
+            additionalColumn.hide();
 
-            $(this).toggleClass('shown');
+            var rowData = row.data();
+            var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">' + rowData[0] + '</td>';
 
-            table.draw();
+            // Remove existing content and toggle 'shown' class
+            $('#ingredientTable tbody tr.shown').removeClass('shown').find('#additionalInfoCell').remove();
+
+            $(this).toggleClass('shown').append(additionalInfo);
+
         });
     });
 </script>
