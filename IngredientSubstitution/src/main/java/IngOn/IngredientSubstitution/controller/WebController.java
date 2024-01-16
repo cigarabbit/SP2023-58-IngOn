@@ -22,12 +22,11 @@ import java.util.*;
 @Controller
 public class WebController {
 
-
     @Autowired
     private AsyncService asyncService;
 
- private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
-// private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+// private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
+ private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
@@ -35,11 +34,6 @@ public class WebController {
     @Cacheable
     public String homePage(HttpSession session) {
         asyncService.backgroundTask(session, owlFile);
-        return "index";
-    }
-
-    @GetMapping("/homepage")
-    public String homePage() {
         return "index";
     }
 

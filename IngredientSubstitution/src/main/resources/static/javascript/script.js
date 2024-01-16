@@ -32,15 +32,15 @@ series.data = [{
     }, {
         "name": "Milk", "value": 150
     }, {
-        "name": "Meat_Poultry", "value": 150
+        "name": "Meat, Poultry", "value": 150
     }, {
-        "name": "Pulse_Seed_Nut", "value": 150
+        "name": "Pulse, Seed, Nut", "value": 150
     }, {
         "name": "Shellfish", "value": 150
     }, {
-        "name": "Spice_Condiment", "value": 150
+        "name": "Spice, Condiment", "value": 150
     }, {
-        "name": "StarchyRoot_Tuber", "value": 150
+        "name": "StarchyRoot, Tuber", "value": 150
     }, {
         "name": "Vegetable", "value": 150,
         "children": [

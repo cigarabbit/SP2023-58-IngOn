@@ -59,3 +59,8 @@
     top: 100%;
     z-index: 1000;
 }
+
+#search-addon {
+    background-color: #2d2d2d;
+    height: 40px;
+}

@@ -8,6 +8,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/ingredient-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
@@ -17,7 +18,7 @@
     <nav class="navbar">
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="/homepage" class="nav-link">HOME</a>
+                <a href="/" class="nav-link">HOME</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">INGREDIENT</a>
@@ -46,6 +47,19 @@
             </li>
         </ul>
     </nav>
+    <form class="d-flex input-group w-auto ms-auto">
+        <input
+                type="search"
+                class="form-control"
+                placeholder="What kind of ingredient you are looking for?"
+                aria-label="Search"
+                aria-describedby="search-addon"
+                style="width: 500px; height: 40px;"
+        />
+        <span class="input-group-text text-white border-0" id="search-addon">
+            <i class="fa fa-search"></i>
+        </span>
+    </form>
 </div>
 
 <div class="container mt-3 my-5">
@@ -63,8 +77,6 @@
             </tr>
             </tbody>
         </table>
-
-        <button class="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>
     </div>
 </div>
 
@@ -90,6 +102,7 @@
                 additionalColumn.toggle();
             } else {
                 var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">Additional Info: ' + data[0] + '</td>';
+                var visualizeButton = '<button className="btn btn-primary" id="visualize" onClick="displayVisualization()">Visualize</button>';
                 $('#ingredientTable tbody tr:first').append(additionalInfo);
             }
 
