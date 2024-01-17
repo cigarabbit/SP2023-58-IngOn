@@ -1,6 +1,7 @@
 am4core.useTheme(am4themes_animated);
 
 var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+chart.legend = new am4charts.Legend();
 chart.logo.disabled = true;
 chart.zoomable = true;
 
@@ -10,28 +11,10 @@ var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries(
 var lastClickedNode = null;
 var lastClickedNodeColor = null;
 
-series.nodes.template.events.on("hit", function(event) {
-    var node = event.target;
-
-    revertColor(lastClickedNode, lastClickedNodeColor);
-
-    lastClickedNode = node;
-    lastClickedNodeColor = node.fill;
-
-    if (event.target.isActive) {
-        chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
-        node.fill = am4core.color("#b62100");
-    }
-    else {
-        revertColorInHierarchy(node.parent);
-        chart.zoomOut();
-    }
-
-});
-
 // Set data
 series.data = [{
     "name": "Food Group",
+    "fixed": true,
     "value": 300,
     "children": [{
         "name": "Cereal", "value": 150
@@ -52,7 +35,10 @@ series.data = [{
     }, {
         "name": "Spice, Condiment", "value": 150
     }, {
-        "name": "StarchyRoot, Tuber", "value": 150
+        "name": "StarchyRoot, Tuber", "value": 150,
+        "children": [
+            {name: "Tester1"}
+        ]
     }, {
         "name": "Vegetable", "value": 150,
         "children": [
@@ -114,22 +100,63 @@ series.data = [{
 series.dataFields.value = "value";
 series.dataFields.name = "name";
 series.dataFields.children = "children";
+series.dataFields.fixed = "fixed";
 
 // Only top and second level nodes are shown
 series.maxLevels = 2;
 
 // Add labels
 series.nodes.template.label.text = "{name}";
+series.nodes.template.tooltipText = "{name}";
+series.nodes.template.expandAll = false; // 1 level at a time
 series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 
 // Customize links
-series.links.template.distance = 2;
-series.links.template.strokeWidth = 3;
+series.links.template.distance = 1.5;
+series.links.template.strokeWidth = 5;
+series.links.template.strokeOpacity = 1;
 
 series.fontSize = 12;
 series.minRadius = 30;
-series.maxRadius = am4core.percent(6);
-series.centerStrength = 0.5;
+series.maxRadius = 70;
+series.centerStrength = 0.1;
+
+series.nodes.template.events.on("hit", function(event) {
+    var targetNode = event.target;
+
+    // revertColor(lastClickedNode, lastClickedNodeColor);
+    //
+    // lastClickedNode = targetNode;
+    // lastClickedNodeColor = targetNode.fill;
+
+    if (targetNode.isActive) {
+        var targetLevel = targetNode.dataItem.level;
+
+        if (targetLevel == 0) {
+            series.nodes.template.expandAll = false;
+        }
+
+        series.nodes.each(function(node) {
+            if (targetNode !== node) {
+                if (targetNode !== node && node.isActive && targetLevel === node.dataItem.level) {
+                    node.isActive = false;
+                }
+                if (targetLevel == 1 && targetLevel === node.dataItem.level) {
+                    node.hide();
+                }
+
+            }
+        });
+
+        chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
+
+    }
+    else {
+        targetNode.show();
+        chart.zoomOut();
+    }
+
+});
 
 // Function to find a node by its name recursively
 function findNodeByName(nodes, name) {
