@@ -44,7 +44,7 @@ public class WebController {
     public String document() { return "document"; }
 
     @GetMapping("/ingredient")
-    public String ingredient (@RequestParam("id") String selectedId, Model model, HttpSession session) {
+    public String ingredient(@RequestParam("id") String selectedId, Model model, HttpSession session) {
         HashMap<String, Set<String>> concepts = (HashMap<String, Set<String>>) session.getAttribute("allConceptList");
 
         Set<String> conceptList = concepts.get(selectedId); // specific category
@@ -61,8 +61,12 @@ public class WebController {
     }
 
     @GetMapping("/visualization")
-    public String visualization (HttpSession session, Model model) {
-
+    public String visualization(HttpSession session, Model model) {
         return "visualization";
+    }
+
+    @GetMapping("/error")
+    public String errorPage() {
+        return "error";
     }
 }
