@@ -18,6 +18,7 @@
 #ingredientTable tr {
     background: #2d2d2d;
     color: #eeeeee;
+    height: 55px;
 }
 
 #ingredientTable tr:hover {
@@ -33,7 +34,7 @@
 #additionalInfoCell {
     background-color: #e1e1e1;
     color: black;
-
+    text-align: center;
 }
 
 .container {

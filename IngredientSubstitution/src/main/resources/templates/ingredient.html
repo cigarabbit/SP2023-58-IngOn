@@ -12,7 +12,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/rowgroup/1.1.4/js/dataTables.rowGroup.min.js"></script>
 </head>
 <body class="background-container ingredient">
 <div class="header">
@@ -88,6 +87,7 @@
             lengthChange: false
         });
 
+
         // Add initial header
         var initialHeader = $('#ingredientTable thead tr');
         initialHeader.append('<th id="additionalInfoHeader">Additional Info</th>');
@@ -96,7 +96,7 @@
         $('#ingredientTable tbody').on('click', 'tr', function () {
             var row = table.row(this);
             var rowData = row.data();
-            var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">' + rowData[0] + '</td>';
+            var additionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '"><h4>' + rowData[0] + '</h4></td>';
 
             $('#ingredientTable tbody tr.clicked').removeClass('clicked');
             $(this).addClass('clicked');
