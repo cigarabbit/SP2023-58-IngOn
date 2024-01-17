@@ -20,18 +20,18 @@
     color: #eeeeee;
 }
 
-#ingredientTable tr.clicked {
-    background-color: #f6d573;
-    color: black;
-}
-
 #ingredientTable tr:hover {
     background-color: #a7eeaf;
     color: black;
 }
 
+#ingredientTable tr.clicked {
+    background-color: #e1e1e1;
+    color: black;
+}
+
 #additionalInfoCell {
-    background-color: #f6d573;
+    background-color: #e1e1e1;
     color: black;
 
 }

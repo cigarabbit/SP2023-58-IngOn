@@ -105,8 +105,15 @@
             var topRow = $('#ingredientTable tbody tr').first();
             topRow.append(additionalInfo).addClass('shown');
 
+            $('#ingredientTable tbody tr:not(.shown)').each(function () {
+                var currentAdditionalInfo = '<td id="additionalInfoCell" colspan="' + table.columns().header().length + '">' + '</td>';
+
+                $(this).append(currentAdditionalInfo).addClass('shown');
+            });
+
         });
     });
+
 </script>
 
 </body>
