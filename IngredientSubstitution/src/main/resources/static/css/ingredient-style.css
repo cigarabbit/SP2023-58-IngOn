@@ -7,12 +7,12 @@
     text-align: center;
 }
 
-
 #ingredientTable th {
     background: #555555;
     color: #14c25a;
     font-size: x-large;
     text-align: center;
+    width: 70%;
 }
 
 #ingredientTable tr {
@@ -20,27 +20,24 @@
     color: #eeeeee;
 }
 
-#ingredientTable tbody tr.shown {
-    background-color: #eeeeee;
+#ingredientTable tr.clicked {
+    background-color: #f6d573;
     color: black;
 }
 
 #ingredientTable tr:hover {
-    background: aliceblue;
+    background-color: #a7eeaf;
     color: black;
 }
 
 #additionalInfoCell {
-    background-color: #eeeeee;
+    background-color: #f6d573;
     color: black;
+
 }
 
 .container {
     width: auto;
-}
-
-#ingredientTable th {
-    width: 70%;
 }
 
 #visualize {
