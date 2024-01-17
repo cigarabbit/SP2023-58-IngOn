@@ -88,8 +88,9 @@ series.data = [{
                     children: [
                         {name: "Energy "},
                         {name: "Water"}]
-                }
-                ]
+                }]
+            }, {
+            name: "Pepper"
             }
         ]
     }
@@ -110,6 +111,7 @@ series.nodes.template.label.text = "{name}";
 series.nodes.template.tooltipText = "{name}";
 series.nodes.template.expandAll = false; // 1 level at a time
 series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
+series.nodes.template.fillOpacity = 1;
 
 // Customize links
 series.links.template.distance = 1.5;
@@ -124,32 +126,26 @@ series.centerStrength = 0.1;
 series.nodes.template.events.on("hit", function(event) {
     var targetNode = event.target;
 
-    // revertColor(lastClickedNode, lastClickedNodeColor);
-    //
-    // lastClickedNode = targetNode;
-    // lastClickedNodeColor = targetNode.fill;
-
     if (targetNode.isActive) {
         var targetLevel = targetNode.dataItem.level;
 
-        if (targetLevel == 0) {
+        if (targetLevel == 0) { // root node
             series.nodes.template.expandAll = false;
+        } else {
+            series.nodes.each(function(node) {
+                if (targetNode !== node) {
+                    if (targetNode !== node && node.isActive && targetLevel === node.dataItem.level) {
+                        node.isActive = false;
+                    }
+                    if (targetLevel == 1 && targetLevel === node.dataItem.level) {
+                        node.hide();
+                    }
+
+                }
+            });
+
+            chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
         }
-
-        series.nodes.each(function(node) {
-            if (targetNode !== node) {
-                if (targetNode !== node && node.isActive && targetLevel === node.dataItem.level) {
-                    node.isActive = false;
-                }
-                if (targetLevel == 1 && targetLevel === node.dataItem.level) {
-                    node.hide();
-                }
-
-            }
-        });
-
-        chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
-
     }
     else {
         targetNode.show();
