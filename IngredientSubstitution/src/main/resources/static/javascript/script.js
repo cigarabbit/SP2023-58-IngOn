@@ -1,21 +1,33 @@
 am4core.useTheme(am4themes_animated);
 
-// Create chart
 var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
-
 chart.logo.disabled = true;
 chart.zoomable = true;
 
-// Create series
-var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries())
+var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
+
+// Store a reference to the last clicked node and its previous color
+var lastClickedNode = null;
+var lastClickedNodeColor = null;
 
 series.nodes.template.events.on("hit", function(event) {
+    var node = event.target;
+
+    revertColor(lastClickedNode, lastClickedNodeColor);
+
+    lastClickedNode = node;
+    lastClickedNodeColor = node.fill;
+
     if (event.target.isActive) {
         chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
+        node.fill = am4core.color("#b62100");
     }
     else {
+        revertColorInHierarchy(node.parent);
         chart.zoomOut();
-    }});
+    }
+
+});
 
 // Set data
 series.data = [{
@@ -98,13 +110,12 @@ series.data = [{
     ]
 }];
 
-
 // Set up data fields
 series.dataFields.value = "value";
 series.dataFields.name = "name";
 series.dataFields.children = "children";
 
-// Only top and second level nodes are show
+// Only top and second level nodes are shown
 series.maxLevels = 2;
 
 // Add labels
@@ -114,9 +125,6 @@ series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 // Customize links
 series.links.template.distance = 2;
 series.links.template.strokeWidth = 3;
-
-// If the node is a subclass of the ingredient, using a dash line
-
 
 series.fontSize = 12;
 series.minRadius = 30;
@@ -138,6 +146,21 @@ function findNodeByName(nodes, name) {
     return null;
 }
 
+// Recursively revert color for all nodes in the hierarchy
+function revertColorInHierarchy(node) {
+    if (node) {
+        revertColor(node, node.fill);
+        revertColorInHierarchy(node.parent);
+    }
+}
+
+// Revert the color of a node to its original color
+function revertColor(node, color) {
+    if (node && color) {
+        node.fill = color;
+    }
+}
+
 function appendChildNode(nodeName, childNode) {
     // Find the node in the data structure by name
     let nodes = series.data[0].children;
@@ -150,13 +173,12 @@ function appendChildNode(nodeName, childNode) {
             targetNode.children = [];
         }
         targetNode.children.push(childNode);
-        console.log("Successfully append the child node to ", targetNode.name)
+        console.log("Successfully append the child node to ", targetNode.name);
     }
 }
 
 function generateNewChildNode() {
     let newChildNode;
-
 
     return newChildNode;
 }
