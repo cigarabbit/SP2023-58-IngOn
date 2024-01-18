@@ -8,8 +8,11 @@ chart.zoomable = true;
 var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
 
 // Store a reference to the last clicked node and its previous color
-var lastClickedNode = null;
-var lastClickedNodeColor = null;
+// var lastClickedNode = null;
+// var lastClickedNodeColor = null;
+
+
+// TODO: square represents properties, dashed line represents relationship
 
 // Set data
 series.data = [{
@@ -35,7 +38,7 @@ series.data = [{
     }, {
         "name": "Spice, Condiment", "value": 150
     }, {
-        "name": "StarchyRoot, Tuber", "value": 150,
+        "name": "Starchy Root, Tuber", "value": 150,
         "children": [
             {name: "Tester1"}
         ]
@@ -43,51 +46,51 @@ series.data = [{
         "name": "Vegetable", "value": 150,
         "children": [
             {
-                name: "White\nHoly Basil",
+                name: "White Holy Basil",
                 value: 120,
                 children: [{
-                    name: "canCook",
+                    name: "can cook",
                     value: 100,
                     children: [
-                        {name: "Fried"},
-                        {name: "Stir-Fried"}]
+                        {name: "Fried", relationship: "forSome"},
+                        {name: "Stir-Fried", relationship: "forSome"}]
                 },{
-                    name: "hasBenefit",
+                    name: "has benefit",
                     value: 100,
                     children: [
-                        {name: "Culinary"},
-                        {name: "Health\nPotential"}]
+                        {name: "Culinary", relationship: "forSome"},
+                        {name: "Health\nPotential", relationship: "forSome"}]
                 }, {
-                    name: "hasColor",
+                    name: "has color",
                     value: 100,
                     children: [
-                        {name: "Green"},
+                        {name: "Green", relationship: "forSome"},
                     ]
                 }, {
-                    name: "hasFlavor",
+                    name: "has flavor",
                     value: 100,
                     children: [
-                        {name: "Sweet"},
-                        {name: "Astringent"}
+                        {name: "Sweet", relationship: "forSome"},
+                        {name: "Astringent", relationship: "forSome"}
                     ]
                 }, {
-                    name: "hasShape",
+                    name: "has shape",
                     value: 100,
                     children: [
-                        {name: "Broad"},
-                        {name: "Oval"}
+                        {name: "Broad", relationship: "forSome"},
+                        {name: "Oval", relationship: "forSome"}
                     ]
                 }, {
-                    name: "hasTexture",
+                    name: "has texture",
                     value: 100,
                     children: [
-                        {name: "Tender"}]
+                        {name: "Tender", relationship: "forSome"}]
                 }, {
-                    name: "hasNutrient",
+                    name: "has nutrient",
                     value: 100,
                     children: [
-                        {name: "Energy "},
-                        {name: "Water"}]
+                        {name: "Energy", relationship: "forSome"},
+                        {name: "Water", relationship: "forSome"}]
                 }]
             }, {
             name: "Pepper"
@@ -108,15 +111,39 @@ series.maxLevels = 2;
 
 // Add labels
 series.nodes.template.label.text = "{name}";
-series.nodes.template.tooltipText = "{name}";
+series.nodes.template.label.truncate = true;
 series.nodes.template.expandAll = false; // 1 level at a time
 series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 series.nodes.template.fillOpacity = 1;
 
+series.nodes.template.adapter.add("tooltipText", function(text, target) {
+    if (target.dataItem) {
+        switch(target.dataItem.level) {
+            case 0:
+                return "";
+            case 1:
+                return "{name}";
+            case 2:
+                return "{name}";
+            case 4:
+                return "{parent.parent.name} {parent.name} as {name}.";
+        }
+    }
+    return text;
+});
+
+series.links.template.adapter.add("strokeDasharray", function(dashArray, target) {
+    switch (target.dataItem.dataContext.relationship) {
+        case "forSome":
+            return "5,5";
+    }
+    return dashArray;
+});
+
 // Customize links
 series.links.template.distance = 1.5;
-series.links.template.strokeWidth = 5;
-series.links.template.strokeOpacity = 1;
+series.links.template.strokeWidth = 8;
+series.links.template.strokeOpacity = 0.5
 
 series.fontSize = 12;
 series.minRadius = 30;
@@ -125,13 +152,15 @@ series.centerStrength = 0.1;
 
 series.nodes.template.events.on("hit", function(event) {
     var targetNode = event.target;
+    var targetLevel = targetNode.dataItem.level;
 
     if (targetNode.isActive) {
-        var targetLevel = targetNode.dataItem.level;
 
-        if (targetLevel == 0) { // root node
+        if (targetLevel === 0) { // root node
             series.nodes.template.expandAll = false;
-        } else {
+        }
+
+        else {
             series.nodes.each(function(node) {
                 if (targetNode !== node) {
                     if (targetNode !== node && node.isActive && targetLevel === node.dataItem.level) {
@@ -140,71 +169,73 @@ series.nodes.template.events.on("hit", function(event) {
                     if (targetLevel == 1 && targetLevel === node.dataItem.level) {
                         node.hide();
                     }
-
                 }
             });
 
-            chart.zoomToDataItem(event.target.dataItem, 2, true) // zoom in
+            series.fontSize = 14;
+
+            chart.zoomToDataItem(targetNode.dataItem, 2, true) // zoom in
         }
     }
     else {
-        targetNode.show();
+        series.fontSize = 12;
+
         chart.zoomOut();
     }
 
 });
 
 // Function to find a node by its name recursively
-function findNodeByName(nodes, name) {
-    for (let i = 0; i < nodes.length; i++) {
-        if (nodes[i].name === name) {
-            return nodes[i];
-        } else if (nodes[i].children) {
-            let foundNode = findNodeByName(nodes[i].children, name);
-            if (foundNode) {
-                return foundNode;
-            }
-        }
-    }
-    return null;
-}
+// function findNodeByName(nodes, name) {
+//     for (let i = 0; i < nodes.length; i++) {
+//         if (nodes[i].name === name) {
+//             return nodes[i];
+//         } else if (nodes[i].children) {
+//             let foundNode = findNodeByName(nodes[i].children, name);
+//             if (foundNode) {
+//                 return foundNode;
+//             }
+//         }
+//     }
+//     return null;
+// }
 
-// Recursively revert color for all nodes in the hierarchy
-function revertColorInHierarchy(node) {
-    if (node) {
-        revertColor(node, node.fill);
-        revertColorInHierarchy(node.parent);
-    }
-}
+// // Recursively revert color for all nodes in the hierarchy
+// function revertColorInHierarchy(node) {
+//     if (node) {
+//         revertColor(node, node.fill);
+//         revertColorInHierarchy(node.parent);
+//     }
+// }
+//
+// // Revert the color of a node to its original color
+// function revertColor(node, color) {
+//     if (node && color) {
+//         node.fill = color;
+//     }
+// }
 
-// Revert the color of a node to its original color
-function revertColor(node, color) {
-    if (node && color) {
-        node.fill = color;
-    }
-}
+// function appendChildNode(nodeName, childNode) {
+//     // Find the node in the data structure by name
+//     let nodes = series.data[0].children;
+//     let targetNode = findNodeByName(nodes, nodeName);
+//
+//     // If the target node is found, append the child node
+//     if (targetNode) {
+//         // Create a child array for the target node if it does not exist
+//         if (!targetNode.children) {
+//             targetNode.children = [];
+//         }
+//         targetNode.children.push(childNode);
+//         console.log("Successfully append the child node to ", targetNode.name);
+//     }
+// }
+//
+// function generateNewChildNode() {
+//     let newChildNode;
+//
+//     return newChildNode;
+// }
 
-function appendChildNode(nodeName, childNode) {
-    // Find the node in the data structure by name
-    let nodes = series.data[0].children;
-    let targetNode = findNodeByName(nodes, nodeName);
-
-    // If the target node is found, append the child node
-    if (targetNode) {
-        // Create a child array for the target node if it does not exist
-        if (!targetNode.children) {
-            targetNode.children = [];
-        }
-        targetNode.children.push(childNode);
-        console.log("Successfully append the child node to ", targetNode.name);
-    }
-}
-
-function generateNewChildNode() {
-    let newChildNode;
-
-    return newChildNode;
-}
-
-let newChildNode = { name: "New", value: 120 };
+// let newChildNode = { name: "New", value: 120 };
 // appendChildNode("Vegetable", newChildNode);
