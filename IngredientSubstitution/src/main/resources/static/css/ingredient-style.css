@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.container {
+    width: auto;
+}
+
 #foodGroup-title {
     text-align: center;
 }
@@ -37,9 +41,6 @@
     text-align: center;
 }
 
-.container {
-    width: auto;
-}
 
 #visualize {
     background: black;

@@ -1,18 +1,21 @@
 am4core.useTheme(am4themes_animated);
 
 var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
+var title = chart.titles.create();
+
+title.text = "Thai Ingredients Visualization";
+title.fontSize = 25;
+title.marginBottom = -30;
+title.fontWeight = 600;
+
 chart.legend = new am4charts.Legend();
 chart.logo.disabled = true;
 chart.zoomable = true;
 
 var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
 
-// Store a reference to the last clicked node and its previous color
-// var lastClickedNode = null;
-// var lastClickedNodeColor = null;
 
-
-// TODO: square represents properties, dashed line represents relationship
+// TODO: square represents properties
 
 // Set data
 series.data = [{
@@ -116,22 +119,25 @@ series.nodes.template.expandAll = false; // 1 level at a time
 series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 series.nodes.template.fillOpacity = 1;
 
+// Customize tooltip style for each level
 series.nodes.template.adapter.add("tooltipText", function(text, target) {
     if (target.dataItem) {
         switch(target.dataItem.level) {
             case 0:
                 return "";
-            case 1:
+            case 1: // Category
                 return "{name}";
-            case 2:
+            case 2: // Ingredient
                 return "{name}";
-            case 4:
+            case 4: // Property
                 return "{parent.parent.name} {parent.name} as {name}.";
         }
     }
     return text;
 });
 
+/* Customize links to illustrate the relationship between concepts.
+Dash-dotted line represents "existential quantification".*/
 series.links.template.adapter.add("strokeDasharray", function(dashArray, target) {
     switch (target.dataItem.dataContext.relationship) {
         case "forSome":
