@@ -3,14 +3,10 @@ package IngOn.IngredientSubstitution.controller;
 import IngOn.IngredientSubstitution.service.AsyncService;
 import IngOn.IngredientSubstitution.service.OntologyService;
 import jakarta.servlet.http.HttpSession;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.cache.annotation.Cacheable;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
@@ -25,8 +21,8 @@ public class WebController {
     @Autowired
     private AsyncService asyncService;
 
-// private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
- private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+ private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
+// private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 

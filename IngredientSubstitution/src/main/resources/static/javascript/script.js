@@ -53,6 +53,7 @@ series.data = [{
                 value: 120,
                 children: [{
                     name: "can cook",
+                    image: "https://img5.pic.in.th/file/secure-sv1/image735564af716a4b6e.md.png",
                     value: 100,
                     children: [
                         {name: "Fried", relationship: "forSome"},
@@ -112,12 +113,41 @@ series.dataFields.fixed = "fixed";
 // Only top and second level nodes are shown
 series.maxLevels = 2;
 
-// Add labels
-series.nodes.template.label.text = "{name}";
+// Label customization
+series.nodes.template.label.text = "[bold]{name}[/]";
 series.nodes.template.label.truncate = true;
+
 series.nodes.template.expandAll = false; // 1 level at a time
 series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
 series.nodes.template.fillOpacity = 1;
+
+// Configure icons
+var icon = series.nodes.template.createChild(am4core.Image);
+
+icon.propertyFields.href = "image";
+icon.horizontalCenter = "middle";
+icon.verticalCenter = "middle";
+icon.width = 80;
+icon.height = 50;
+
+// series.nodes.template.circle.disabled = true;
+// series.nodes.template.outerCircle.disabled = true;
+
+series.nodes.template.adapter.add("", function (event) {
+    series.nodes.template.label.valign = "bottom";
+    series.nodes.template.label.dy = 10;
+    series.nodes.template.label.fill = am4core.color("#000");
+
+    var icon = series.nodes.template.createChild(am4core.Image);
+    icon.propertyFields.href = "image";
+    icon.horizontalCenter = "middle";
+    icon.verticalCenter = "middle";
+    icon.width = 40;
+    icon.height = 40;
+
+    series.nodes.template.circle.disabled = true;
+    series.nodes.template.outerCircle.disabled = true;
+})
 
 // Customize tooltip style for each level
 series.nodes.template.adapter.add("tooltipText", function(text, target) {
@@ -147,14 +177,23 @@ series.links.template.adapter.add("strokeDasharray", function(dashArray, target)
 });
 
 // Customize links
-series.links.template.distance = 1.5;
+series.links.template.distance = 2.0;
 series.links.template.strokeWidth = 8;
-series.links.template.strokeOpacity = 0.5
+series.links.template.strokeOpacity = 1.0
 
 series.fontSize = 12;
 series.minRadius = 30;
 series.maxRadius = 70;
-series.centerStrength = 0.1;
+series.centerStrength = 0.2;
+
+series.nodes.template.events.on("inited", function(event) {
+    var targetNode = event.target;
+    var targetLevel = targetNode.dataItem.level;
+
+    if (targetLevel === 3) {
+        console.log
+    }
+});
 
 series.nodes.template.events.on("hit", function(event) {
     var targetNode = event.target;
@@ -190,6 +229,8 @@ series.nodes.template.events.on("hit", function(event) {
     }
 
 });
+
+
 
 // Function to find a node by its name recursively
 // function findNodeByName(nodes, name) {
