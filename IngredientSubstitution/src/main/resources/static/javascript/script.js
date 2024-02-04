@@ -1,288 +1,293 @@
-am4core.useTheme(am4themes_animated);
-
-var chart = am4core.create("chartdiv", am4plugins_forceDirected.ForceDirectedTree);
-var title = chart.titles.create();
-
-title.text = "Thai Ingredients Visualization";
-title.fontSize = 25;
-title.marginBottom = -30;
-title.fontWeight = 600;
-
-chart.legend = new am4charts.Legend();
-chart.logo.disabled = true;
-chart.zoomable = true;
-
-var series = chart.series.push(new am4plugins_forceDirected.ForceDirectedSeries());
-
-
-// TODO: square represents properties
-
-// Set data
-series.data = [{
+const data = {
     "name": "Food Group",
-    "fixed": true,
-    "value": 300,
     "children": [{
-        "name": "Cereal", "value": 150
+        "name": "Cereal"
     }, {
-        "name": "Egg", "value": 150
+        "name": "Egg"
     }, {
-        "name": "Fruit", "value": 150
+        "name": "Fruit"
     }, {
-        "name": "Insect", "value": 150
+        "name": "Insect"
     }, {
-        "name": "Milk", "value": 150
+        "name": "Milk"
     }, {
-        "name": "Meat, Poultry", "value": 150
+        "name": "Meat, Poultry"
     }, {
-        "name": "Pulse, Seed, Nut", "value": 150
+        "name": "Pulse, Seed, Nut"
     }, {
-        "name": "Shellfish", "value": 150
+        "name": "Shellfish"
     }, {
-        "name": "Spice, Condiment", "value": 150
+        "name": "Spice, Condiment"
     }, {
-        "name": "Starchy Root, Tuber", "value": 150,
+        "name": "Starchy Root, Tuber",
         "children": [
             {name: "Tester1"}
         ]
     }, {
-        "name": "Vegetable", "value": 150,
+        "name": "Vegetable",
         "children": [
             {
                 name: "White Holy Basil",
-                value: 120,
                 children: [{
                     name: "can cook",
                     image: "https://img5.pic.in.th/file/secure-sv1/image735564af716a4b6e.md.png",
-                    value: 100,
                     children: [
                         {name: "Fried", relationship: "forSome"},
                         {name: "Stir-Fried", relationship: "forSome"}]
                 },{
                     name: "has benefit",
-                    value: 100,
                     children: [
                         {name: "Culinary", relationship: "forSome"},
                         {name: "Health\nPotential", relationship: "forSome"}]
                 }, {
                     name: "has color",
-                    value: 100,
                     children: [
                         {name: "Green", relationship: "forSome"},
                     ]
                 }, {
                     name: "has flavor",
-                    value: 100,
                     children: [
                         {name: "Sweet", relationship: "forSome"},
                         {name: "Astringent", relationship: "forSome"}
                     ]
                 }, {
                     name: "has shape",
-                    value: 100,
                     children: [
                         {name: "Broad", relationship: "forSome"},
                         {name: "Oval", relationship: "forSome"}
                     ]
                 }, {
                     name: "has texture",
-                    value: 100,
                     children: [
                         {name: "Tender", relationship: "forSome"}]
                 }, {
                     name: "has nutrient",
-                    value: 100,
                     children: [
                         {name: "Energy", relationship: "forSome"},
                         {name: "Water", relationship: "forSome"}]
                 }]
             }, {
-            name: "Pepper"
+                name: "Pepper"
             }
         ]
     }
     ]
-}];
+}
 
-// Set up data fields
-series.dataFields.value = "value";
-series.dataFields.name = "name";
-series.dataFields.children = "children";
-series.dataFields.fixed = "fixed";
+let i = 0;
 
-// Only top and second level nodes are shown
-series.maxLevels = 2;
+const root = d3.hierarchy(data);
+const transform = d3.zoomIdentity;
+let node, link;
 
-// Label customization
-series.nodes.template.label.text = "[bold]{name}[/]";
-series.nodes.template.label.truncate = true;
+const viewportWidth = window.innerWidth;
+const viewportHeight = window.innerHeight;
 
-series.nodes.template.expandAll = false; // 1 level at a time
-series.nodes.template.outerCircle.filters.push(new am4core.DropShadowFilter());
-series.nodes.template.fillOpacity = 1;
+const svg = d3.select('svg')
+    .call(d3.zoom().scaleExtent([1 / 2, 8]).on('zoom', zoomed))
+    .append('g')
+    .attr('transform', 'translate(40,0)');
 
-// Configure icons
-var icon = series.nodes.template.createChild(am4core.Image);
+const simulation = d3.forceSimulation()
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(400))
+    .force('charge', d3.forceManyBody().strength(-500).distanceMax(300))
+    .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
+    .on('tick', ticked)
 
-icon.propertyFields.href = "image";
-icon.horizontalCenter = "middle";
-icon.verticalCenter = "middle";
-icon.width = 80;
-icon.height = 50;
+function update() {
+    const nodes = flatten(root)
+    const links = root.links()
 
-// series.nodes.template.circle.disabled = true;
-// series.nodes.template.outerCircle.disabled = true;
+    link = svg
+        .selectAll('.link')
+        .data(links, function (d) { return d.target.id })
 
-series.nodes.template.adapter.add("", function (event) {
-    series.nodes.template.label.valign = "bottom";
-    series.nodes.template.label.dy = 10;
-    series.nodes.template.label.fill = am4core.color("#000");
+    link.exit().remove()
 
-    var icon = series.nodes.template.createChild(am4core.Image);
-    icon.propertyFields.href = "image";
-    icon.horizontalCenter = "middle";
-    icon.verticalCenter = "middle";
-    icon.width = 40;
-    icon.height = 40;
+    const linkEnter = link
+        .enter()
+        .append('line')
+        .attr('class', 'link')
+        .style('stroke', '#000')
+        .style('opacity', '0.5')
+        .style('stroke-width', 2)
 
-    series.nodes.template.circle.disabled = true;
-    series.nodes.template.outerCircle.disabled = true;
-})
+    link = linkEnter.merge(link)
 
-// Customize tooltip style for each level
-series.nodes.template.adapter.add("tooltipText", function(text, target) {
-    if (target.dataItem) {
-        switch(target.dataItem.level) {
-            case 0:
-                return "";
-            case 1: // Category
-                return "{name}";
-            case 2: // Ingredient
-                return "{name}";
-            case 4: // Property
-                return "{parent.parent.name} {parent.name} as {name}.";
+    node = svg
+        .selectAll('.node')
+        .data(nodes, function (d) { return d.id })
+
+    node.exit().remove()
+
+    const shape = function(d) {
+        if (d.depth === 3) { // Relationship
+            return "rect";
+        } else {
+            return "circle"
         }
     }
-    return text;
-});
 
-/* Customize links to illustrate the relationship between concepts.
-Dash-dotted line represents "existential quantification".*/
-series.links.template.adapter.add("strokeDasharray", function(dashArray, target) {
-    switch (target.dataItem.dataContext.relationship) {
-        case "forSome":
-            return "5,5";
-    }
-    return dashArray;
-});
+    const nodeEnter = node
+        .enter()
+        .append('g')
+        .attr('class', 'node')
+        .attr('stroke', '#0000')
+        .attr('stroke-width', 2)
+        .style("fill", color)
+        .style('opacity', 1)
+        .on('click', clicked)
+        .call(d3.drag()
+            .on('start', dragstarted)
+            .on('drag', dragged)
+            .on('end', dragended))
 
-// Customize links
-series.links.template.distance = 2.0;
-series.links.template.strokeWidth = 8;
-series.links.template.strokeOpacity = 1.0
 
-series.fontSize = 12;
-series.minRadius = 30;
-series.maxRadius = 70;
-series.centerStrength = 0.2;
+    nodeEnter.append(function(d) {
+        return document.createElementNS('http://www.w3.org/2000/svg', shape(d))})
+        .attr("r", 50)
+        .attr("width", 50)
+        .attr("height", 30)
+        .style('fill', color);
 
-series.nodes.template.events.on("inited", function(event) {
-    var targetNode = event.target;
-    var targetLevel = targetNode.dataItem.level;
+    node = nodeEnter.merge(node)
+    simulation.nodes(nodes)
+    simulation.force('link').links(links)
 
-    if (targetLevel === 3) {
-        console.log
-    }
-});
+    nodeEnter.append('text')
+        .attr('dy', 25)
+        .style("fill", "black")
+        .style('text-anchor', 'middle')
+        .text(function (d) { return d.data.name; });
 
-series.nodes.template.events.on("hit", function(event) {
-    var targetNode = event.target;
-    var targetLevel = targetNode.dataItem.level;
+}
 
-    if (targetNode.isActive) {
+const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
 
-        if (targetLevel === 0) { // root node
-            series.nodes.template.expandAll = false;
+function color(d) {
+    return colorScale(d.depth);
+}
+
+// function color(d) {
+//   return d._children ? "#51A1DC" // collapsed package
+//     : d.children ? "#51A1DC" // expanded package
+//       : "#F94B4C"; // leaf node
+// }
+
+function radius(d) {
+    return d._children ? 8
+        : d.children ? 8
+            : 4
+}
+
+function ticked() {
+    link
+        .attr('x1', function (d) { return d.source.x; })
+        .attr('y1', function (d) { return d.source.y; })
+        .attr('x2', function (d) { return d.target.x; })
+        .attr('y2', function (d) { return d.target.y; })
+
+    node
+        .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
+}
+
+function clicked(d) {
+    if (!d3.event.defaultPrevented) {
+        if (d.children) {
+            d._children = d.children;
+            d.children = null;
+        } else {
+            d.children = d._children;
+            d._children = null;
         }
+        update()
+    }
+}
 
-        else {
-            series.nodes.each(function(node) {
-                if (targetNode !== node) {
-                    if (targetNode !== node && node.isActive && targetLevel === node.dataItem.level) {
-                        node.isActive = false;
-                    }
-                    if (targetLevel == 1 && targetLevel === node.dataItem.level) {
-                        node.hide();
-                    }
-                }
-            });
+function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(0.3).restart()
+    d.fx = d.x
+    d.fy = d.y
+}
 
-            series.fontSize = 14;
+function dragged(d) {
+    d.fx = d3.event.x
+    d.fy = d3.event.y
+}
 
-            chart.zoomToDataItem(targetNode.dataItem, 2, true) // zoom in
+function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(0)
+    d.fx = null
+    d.fy = null
+}
+
+function flatten(root) {
+    const nodes = []
+    function recurse(node) {
+        if (node.children) node.children.forEach(recurse)
+        if (!node.id) node.id = ++i;
+        else ++i;
+        nodes.push(node)
+    }
+    recurse(root)
+    return nodes
+}
+
+function zoomed() {
+    svg.attr('transform', d3.event.transform)
+}
+
+function levenshteinDistance(s1, s2) {
+    if (s1.length === 0) return s2.length;
+    if (s2.length === 0) return s1.length;
+
+    var matrix = [];
+
+    var i;
+    for (i = 0; i <= s2.length; i++) {
+        matrix[i] = [i];
+    }
+
+    var j;
+    for (j = 0; j <= s1.length; j++) {
+        matrix[0][j] = j;
+    }
+
+    for (i = 1; i <= s2.length; i++) {
+        for (j = 1; j <= s1.length; j++) {
+            if (s2.charAt(i - 1) === s1.charAt(j - 1)) {
+                matrix[i][j] = matrix[i - 1][j - 1];
+            } else {
+                matrix[i][j] = Math.min(
+                    matrix[i - 1][j - 1] + 1, // substitution
+                    Math.min(
+                        matrix[i][j - 1] + 1, // insertion
+                        matrix[i - 1][j] + 1
+                    )
+                ); // deletion
+            }
         }
     }
-    else {
-        series.fontSize = 12;
-
-        chart.zoomOut();
-    }
-
-});
+    return matrix[s2.length][s1.length];
+}
 
 
+function findNode() {
+    var itemName = document.getElementById("targetNode").value.toLowerCase();
+    var nodes = d3.selectAll(".node");
 
-// Function to find a node by its name recursively
-// function findNodeByName(nodes, name) {
-//     for (let i = 0; i < nodes.length; i++) {
-//         if (nodes[i].name === name) {
-//             return nodes[i];
-//         } else if (nodes[i].children) {
-//             let foundNode = findNodeByName(nodes[i].children, name);
-//             if (foundNode) {
-//                 return foundNode;
-//             }
-//         }
-//     }
-//     return null;
-// }
+    nodes.style("opacity", function (d) {
+        var distance = levenshteinDistance(d.data.name.toLowerCase(), itemName);
+        var threshold = 2;
+        if (distance <= threshold) {
+            return "1"; // Searched node
+        } else {
+            return "0";
+        }
+    });
 
-// // Recursively revert color for all nodes in the hierarchy
-// function revertColorInHierarchy(node) {
-//     if (node) {
-//         revertColor(node, node.fill);
-//         revertColorInHierarchy(node.parent);
-//     }
-// }
-//
-// // Revert the color of a node to its original color
-// function revertColor(node, color) {
-//     if (node && color) {
-//         node.fill = color;
-//     }
-// }
+    d3.selectAll(".link").style("opacity", "0");
+}
 
-// function appendChildNode(nodeName, childNode) {
-//     // Find the node in the data structure by name
-//     let nodes = series.data[0].children;
-//     let targetNode = findNodeByName(nodes, nodeName);
-//
-//     // If the target node is found, append the child node
-//     if (targetNode) {
-//         // Create a child array for the target node if it does not exist
-//         if (!targetNode.children) {
-//             targetNode.children = [];
-//         }
-//         targetNode.children.push(childNode);
-//         console.log("Successfully append the child node to ", targetNode.name);
-//     }
-// }
-//
-// function generateNewChildNode() {
-//     let newChildNode;
-//
-//     return newChildNode;
-// }
 
-// let newChildNode = { name: "New", value: 120 };
-// appendChildNode("Vegetable", newChildNode);
+update() 
