@@ -8,9 +8,10 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/visualization-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
+<body>
 <div class="header">
     <nav class="navbar">
         <ul class="nav-list">
@@ -45,20 +46,23 @@
         </ul>
     </nav>
 </div>
-<body class="background-container ingredient">
-<!--    <form class="d-flex input-group ms-auto">-->
-        <input
-                type="text"
-                id="targetNode"
-                name="targetNode"
-                oninput="findNode()"
-                class="form-control"
-                placeholder="What kind of ingredient are you looking for?"
-                aria-label="Search"
-                aria-describedby="search-addon"
-                style="width: 500px; height: 40px;"
-        />
-<!--    </form>-->
+<div class="container">
+    <div class="row justify-content-center">
+        <h1>Thai Ingredient Ontology Visualization</h1>
+        <div class="col-md-6">
+            <input
+                    type="text"
+                    id="targetNode"
+                    name="targetNode"
+                    oninput="findNode()"
+                    class="form-control"
+                    placeholder="What ingredient are you looking for?"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+            />
+        </div>
+    </div>
+</div>
     <svg id="svg-visualization"></svg>
     <script src="javascript/script.js"></script>
 </body>
