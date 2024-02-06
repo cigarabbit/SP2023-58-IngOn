@@ -89,90 +89,89 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(40,0)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(400))
-    .force('charge', d3.forceManyBody().strength(-500).distanceMax(300))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(300))
+    .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked)
 
 function update() {
-    const nodes = flatten(root)
-    const links = root.links()
+    const nodes = flatten(root);
+    const links = root.links();
 
-    link = svg
-        .selectAll('.link')
-        .data(links, function (d) { return d.target.id })
+    // Update links
+    link = svg.selectAll('.link')
+        .data(links, function (d) { return d.target.id });
 
-    link.exit().remove()
+    link.exit().remove();
 
-    const linkEnter = link
-        .enter()
+    const linkEnter = link.enter()
         .append('line')
         .attr('class', 'link')
         .style('stroke', '#000')
-        .style('opacity', '0.5')
-        .style('stroke-width', 2)
+        .style('opacity', '1')
+        .style('stroke-width', 3);
 
-    link = linkEnter.merge(link)
+    link = linkEnter.merge(link);
 
-    node = svg
-        .selectAll('.node')
-        .data(nodes, function (d) { return d.id })
+    // Update nodes
+    node = svg.selectAll('.node')
+        .data(nodes, function (d) { return d.id });
 
-    node.exit().remove()
+    node.exit().remove();
 
     const shape = function(d) {
-        if (d.depth === 3) { // Relationship
-            return "rect";
-        } else {
-            return "circle"
-        }
-    }
+        return d.depth === 3 ? "rect" : "circle";
+    };
 
-    const nodeEnter = node
-        .enter()
+    const nodeEnter = node.enter()
         .append('g')
         .attr('class', 'node')
         .attr('stroke', '#0000')
         .attr('stroke-width', 2)
         .style("fill", color)
         .style('opacity', 1)
+        .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.4))')
         .on('click', clicked)
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
-            .on('end', dragended))
-
+            .on('end', dragended));
 
     nodeEnter.append(function(d) {
-        return document.createElementNS('http://www.w3.org/2000/svg', shape(d))})
+        return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
+    })
         .attr("r", 50)
-        .attr("width", 50)
-        .attr("height", 30)
+        .attr("width", 100)
+        .attr("height", 50)
         .style('fill', color);
 
-    node = nodeEnter.merge(node)
-    simulation.nodes(nodes)
-    simulation.force('link').links(links)
+    node = nodeEnter.merge(node);
 
     nodeEnter.append('text')
-        .attr('dy', 25)
+        .attr('dy', 0)
+        .attr('dx', 0)
         .style("fill", "black")
         .style('text-anchor', 'middle')
+        .style("font-weight", "bold")
         .text(function (d) { return d.data.name; });
 
+    svg.selectAll('.node').raise();
+
+    // Update simulation with new nodes and links
+    simulation.nodes(nodes);
+    simulation.force('link').links(links);
+
+    simulation.alpha(1).restart();
 }
 
-const colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
+const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3311'];
+
+const customColorScale = d3.scaleOrdinal().range(customColors);
 
 function color(d) {
-    return colorScale(d.depth);
+    return customColorScale(d.depth);
 }
-
-// function color(d) {
-//   return d._children ? "#51A1DC" // collapsed package
-//     : d.children ? "#51A1DC" // expanded package
-//       : "#F94B4C"; // leaf node
-// }
 
 function radius(d) {
     return d._children ? 8
@@ -200,8 +199,10 @@ function clicked(d) {
             d.children = d._children;
             d._children = null;
         }
+
         update()
     }
+
 }
 
 function dragstarted(d) {
@@ -276,17 +277,25 @@ function findNode() {
     var itemName = document.getElementById("targetNode").value.toLowerCase();
     var nodes = d3.selectAll(".node");
 
+    if (itemName != '') {
     nodes.style("opacity", function (d) {
-        var distance = levenshteinDistance(d.data.name.toLowerCase(), itemName);
+        var nodeName = d.data.name.toLowerCase();
+        var distance = levenshteinDistance(nodeName, itemName);
         var threshold = 2;
-        if (distance <= threshold) {
+        if (distance <= threshold || nodeName.includes(itemName)) {
             return "1"; // Searched node
         } else {
             return "0";
         }
     });
 
-    d3.selectAll(".link").style("opacity", "0");
+        d3.selectAll(".link").style("opacity", "0");
+    } else {
+        nodes.style("opacity", "1");
+
+        d3.selectAll(".link").style("opacity", "1");
+    }
+
 }
 
 
