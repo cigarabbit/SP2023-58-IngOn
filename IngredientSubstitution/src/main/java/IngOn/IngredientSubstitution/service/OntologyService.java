@@ -202,11 +202,30 @@ public class OntologyService {
         return allConceptNames;
     }
 
+    /**
+     * Retrieve all object properties exist in the ontology.
+     * @param ontology
+     * @return
+     */
+    public static Set<String> retrieveAllObjectProperties(OWLOntology ontology) {
+        Set<String> objectProperties = new HashSet<>();
+
+        for (OWLObjectProperty objectProperty : ontology.getObjectPropertiesInSignature()) {
+            String propertyShortForm = getObjectPropertyShortForm(objectProperty);
+            objectProperties.add(propertyShortForm);
+        }
+
+        return objectProperties;
+    }
+
+    /**
+     * Retrieve the short form of an object property.
+     * @param objectProperty
+     * @return
+     */
     public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(objectProperty);
     }
-
-
 
 }
