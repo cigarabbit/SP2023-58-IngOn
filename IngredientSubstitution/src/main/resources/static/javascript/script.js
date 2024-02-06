@@ -282,13 +282,13 @@ function findNode() {
         var nodeName = d.data.name.toLowerCase();
         var distance = levenshteinDistance(nodeName, itemName);
         var threshold = 2;
+
         if (distance <= threshold || nodeName.includes(itemName)) {
             return "1"; // Searched node
         } else {
             return "0";
         }
     });
-
         d3.selectAll(".link").style("opacity", "0");
     } else {
         nodes.style("opacity", "1");

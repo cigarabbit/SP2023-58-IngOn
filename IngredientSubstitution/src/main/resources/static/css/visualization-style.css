@@ -1,5 +1,7 @@
-h1 {
+#header-visualization {
     text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 #svg-visualization {
@@ -16,3 +18,34 @@ h1 {
 .node text {
     text-shadow: #2d2d2d;
 }
+
+.help {
+    bottom: 20px;
+    right: 15px;
+    position: fixed;
+}
+
+.question {
+    height: 40px;
+    width: 40px;
+    background: #ccc;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.help .popup {
+    width: 180px;
+    opacity: 0;
+    color: black;
+    text-align: left;
+}
+
+.help:hover .popup {
+    opacity: 1;
+    background: #a2a2a2;
+}
+
