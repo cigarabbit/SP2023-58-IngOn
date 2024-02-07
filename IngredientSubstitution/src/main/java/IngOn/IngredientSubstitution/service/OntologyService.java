@@ -1,5 +1,7 @@
 package IngOn.IngredientSubstitution.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 @Service
@@ -166,36 +169,6 @@ public class OntologyService {
     public static String getShortForm(OWLClass cls) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(cls);
-    }
-
-    public static String[] separateWord(Set<String> conceptList) {
-        List<String> formattedConceptList = new ArrayList<>();
-
-        for (String name : conceptList) {
-            StringBuilder formattedConcept = new StringBuilder();
-
-            for (int i = 0; i < name.length(); i++) {
-                char currentChar = name.charAt(i);
-
-                // Check if the current character is an uppercase letter
-                if (Character.isUpperCase(currentChar)) {
-                    // Append a space before the uppercase letter
-                    if (i > 0) {
-                        formattedConcept.append(' ');
-                    }
-                    formattedConcept.append(currentChar);
-                } else {
-                    // Append the lowercase or non-alphabetic characters
-                    formattedConcept.append(currentChar);
-                }
-            }
-
-            // Add the formatted string to the list
-            formattedConceptList.add(formattedConcept.toString());
-        }
-
-        // Convert the list to an array
-        return formattedConceptList.toArray(new String[0]);
     }
 
     public static HashMap<String, Set<String>> getAllConceptNames() {

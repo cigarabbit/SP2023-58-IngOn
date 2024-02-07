@@ -1,0 +1,24 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+section {
+    height: 100vh;
+}
+
+.yellow { background-color: lightyellow}
+.green { background-color: lightgreen; }
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+

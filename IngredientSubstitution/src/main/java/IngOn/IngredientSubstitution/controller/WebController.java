@@ -1,10 +1,7 @@
 package IngOn.IngredientSubstitution.controller;
 
-import IngOn.IngredientSubstitution.service.AsyncService;
-import IngOn.IngredientSubstitution.service.OntologyService;
+import IngOn.IngredientSubstitution.service.OntologyConverter;
 import jakarta.servlet.http.HttpSession;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
@@ -13,23 +10,39 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 @Controller
 public class WebController {
 
-    @Autowired
-    private AsyncService asyncService;
-
  private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
 // private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+private static final HashMap<String, Set<String>> concepts;
+    static {
+        try {
+            concepts = OntologyConverter.readJSONfile();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
     @GetMapping("/")
     @Cacheable
-    public String homePage(HttpSession session) {
-        asyncService.backgroundTask(session, owlFile);
+    public String homePage() {
+        return "index";
+    }
+
+    @GetMapping("/ontology-manager")
+    @Cacheable
+    public String ontologyManager() {
+        String directoryPath = "src/main/resources";
+        String fileName = "data.json";
+
+        OntologyConverter.writeAllConceptNamesToFile(directoryPath, fileName);
+
         return "index";
     }
 
@@ -40,18 +53,15 @@ public class WebController {
     public String document() { return "document"; }
 
     @GetMapping("/ingredient")
-    public String ingredient(@RequestParam("id") String selectedId, Model model, HttpSession session) {
-        HashMap<String, Set<String>> concepts = (HashMap<String, Set<String>>) session.getAttribute("allConceptList");
+    public String ingredient(@RequestParam("id") String selectedId, Model model, HttpSession session) throws IOException {
 
         Set<String> conceptList = concepts.get(selectedId); // specific category
-        String[] formattedConceptList = OntologyService.separateWord(conceptList);
 
         // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
 
-        model.addAttribute("conceptList", formattedConceptList);
+        model.addAttribute("conceptList", conceptList);
         model.addAttribute("foodGroup", selectedId);
 
-        session.setAttribute("conceptList", formattedConceptList);
 
         return "ingredient";
     }
