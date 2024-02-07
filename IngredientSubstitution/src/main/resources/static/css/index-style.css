@@ -6,6 +6,7 @@
 
 .row {
     margin-top: 13vh;
+    margin-left: 60px;
     width: auto;
     height: auto;
 }
@@ -46,7 +47,8 @@
 /* Responsive styles for smaller screens */
 @media (max-width: 767px) {
     .row {
-        margin-top: auto;
+        margin: auto;
+
     }
 
     .col-md-3 {
