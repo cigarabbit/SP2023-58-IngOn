@@ -70,7 +70,7 @@
             <div id="sidebar-topic">
                 <ul>
                     <li th:each="concept, iterStat : ${conceptList}">
-                        <a href="#" onclick="showContent(${iterStat.index}); return false;" th:text="${concept}"></a>
+                        <a href="#" onclick="showContent(${iterStat.index})" th:text="${concept}"/>
                     </li>
                 </ul>
             </div>
@@ -81,9 +81,12 @@
                 <p th:text="${foodGroup}"></p>
             </div>
             <div id="content">
-                <div th:each="concept, iterStat : ${conceptList}" data-index="${iterStat.index}" style="display:none;">
-                    <h2 th:text="${concept}"></h2>
+                <div data-index="">
+                    <div th:each="concept, iterStat : ${conceptList}" data-index="${iterStat.index}" style="display:none;">
+                        <h2 th:text="${concept}"></h2>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -91,6 +94,25 @@
 
 <script>
     var currentSortOrder = 'asc';
+    var contentContainer = document.getElementById('content');
+    var sidebarTopic = document.getElementById('sidebar-topic');
+    var indexCounter = 0;
+    var conceptItems = sidebarTopic.querySelectorAll('ul > li');
+    var numberOfConcepts = conceptItems.length;
+
+    function addContent() {
+
+        // Iterate over each concept
+        for (var i = 0; i < numberOfConcepts.length; i++) {
+            var newContent = document.createElement('div');
+
+            newContent.innerHTML = 'CONTENT';
+
+            newContent.setAttribute('data-index', i);
+
+            contentContainer.appendChild(newContent);
+        }
+    }
 
     function showContent(conceptIndex) {
         console.log('showContent function called with index:', conceptIndex);
@@ -131,6 +153,7 @@
     // Sort the topics alphabetically in ascending order initially
     window.addEventListener('load', function () {
         sortTopics();
+        addContent();
     });
 </script>
 
