@@ -47,14 +47,14 @@ const data = {
                 }, {
                     name: "has flavor",
                     children: [
-                        {name: "Sweet", relationship: "forSome"},
-                        {name: "Astringent", relationship: "forSome"}
+                        {name: "Sweet"},
+                        {name: "Astringent"}
                     ]
                 }, {
                     name: "has shape",
                     children: [
-                        {name: "Broad", relationship: "forSome"},
-                        {name: "Oval", relationship: "forSome"}
+                        {name: "Broad"},
+                        {name: "Oval"}
                     ]
                 }, {
                     name: "has texture",
@@ -123,11 +123,20 @@ function update() {
         return d.depth === 3 ? "rect" : "circle";
     };
 
+    const distanceNode = function (d) {
+        if (d.depth === 3) {
+            return d.x -= 10000;
+        } else {
+            return d.x -= 10;
+        }
+    }
+
     const nodeEnter = node.enter()
         .append('g')
         .attr('class', 'node')
         .attr('stroke', '#0000')
         .attr('stroke-width', 2)
+        .attr('dx', distanceNode)
         .style("fill", color)
         .style('opacity', 1)
         .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.4))')
