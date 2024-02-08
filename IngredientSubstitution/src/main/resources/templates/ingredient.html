@@ -70,7 +70,7 @@
             <div id="sidebar-topic">
                 <ul>
                     <li th:each="concept, iterStat : ${conceptList}">
-                        <a href="#" th:text="${concept}" th:onclick="'showContent(\'content' + (iterStat.index + 1) + '\')'"></a>
+                        <a href="#" onclick="showContent(${iterStat.index}); return false;" th:text="${concept}"></a>
                     </li>
                 </ul>
             </div>
@@ -81,28 +81,32 @@
                 <p th:text="${foodGroup}"></p>
             </div>
             <div id="content">
-                <div th:each="concept, iterStat : ${conceptList}" th:id="'content' + ${iterStat.index + 1}" style="display:none;">
+                <div th:each="concept, iterStat : ${conceptList}" data-index="${iterStat.index}" style="display:none;">
                     <h2 th:text="${concept}"></h2>
-<!--                    <p th:text="${concept.description}"></p>-->
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
 <script>
     var currentSortOrder = 'asc';
 
     function showContent(conceptIndex) {
+        console.log('showContent function called with index:', conceptIndex);
         var contents = document.querySelectorAll('#content > div');
+
         for (var i = 0; i < contents.length; i++) {
             contents[i].style.display = 'none';
         }
-        document.getElementById('content' + (conceptIndex)).style.display = 'block';
+
+        var contentToDisplay = document.querySelector('[data-index="' + conceptIndex + '"]');
+
+        if (contentToDisplay) {
+            contentToDisplay.style.display = 'block';
+        }
     }
+
     function sortTopics() {
         var sidebar = document.getElementById("sidebar-topic");
         var list = sidebar.querySelector("ul");
@@ -129,7 +133,6 @@
         sortTopics();
     });
 </script>
-
 
 </body>
 
