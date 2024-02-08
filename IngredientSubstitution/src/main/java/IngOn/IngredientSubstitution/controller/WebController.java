@@ -38,7 +38,8 @@ private static final HashMap<String, Set<String>> concepts;
     @GetMapping("/ontology-manager")
     @Cacheable
     public String ontologyManager() {
-        String directoryPath = "src/main/resources";
+//        String directoryPath = "src/main/resources";
+        String directoryPath = "IngredientSubstitution/src/main/resources";
         String fileName = "data.json";
 
         OntologyConverter.writeAllConceptNamesToFile(directoryPath, fileName);
