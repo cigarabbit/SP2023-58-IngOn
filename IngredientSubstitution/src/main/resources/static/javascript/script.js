@@ -89,7 +89,7 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(40,0)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(200))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(150))
     .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked)
@@ -120,27 +120,35 @@ function update() {
     node.exit().remove();
 
     const shape = function(d) {
-        return d.depth === 3 ? "rect" : "circle";
+        return d.depth === 3 ? 'rect' : 'circle';
     };
 
     const nodeEnter = node.enter()
         .append('g')
         .attr('class', 'node')
-        .style("fill", color)
+        .style('fill', color)
         .style('opacity', 1)
-        // .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.4))')
         .on('click', clicked)
+        .on("mouseover", function(event, d) {
+            d3.select(this)
+                .style("fill", "orange");
+        })
+        .on("mouseout", function(event, d) {
+            // Restore circle fill color on mouseout
+            d3.select(this)
+                .style("fill", color);
+        })
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
-            .on('end', dragended));
+            .on('end', dragended))
 
     nodeEnter.append(function(d) {
         return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
     })
-        .attr("r", 15)
-        .attr("width", 100)
-        .attr("height", 50)
+        .attr('r', 15)
+        .attr('width', 100)
+        .attr('height', 50)
         .style('fill', color);
 
     node = nodeEnter.merge(node);
@@ -148,9 +156,8 @@ function update() {
     nodeEnter.append('text')
         .attr('dy', 30)
         .attr('dx', 0)
-        .style("fill", "black")
+        .style('fill', 'black')
         .style('text-anchor', 'middle')
-        // .style("font-weight", "bold")
         .text(function (d) { return d.data.name; });
 
     svg.selectAll('.node').raise();
@@ -215,12 +222,6 @@ function color(d) {
     return customColorScale(d.depth);
 }
 
-function radius(d) {
-    return d._children ? 8
-        : d.children ? 8
-            : 4
-}
-
 function ticked() {
     link
         .attr('x1', function (d) { return d.source.x; })
@@ -242,6 +243,7 @@ function clicked(d) {
             d._children = null;
         }
 
+        // highlightNode()
         update()
     }
 
@@ -341,4 +343,14 @@ function findNode() {
 }
 
 
-update() 
+update()
+
+function highlightNode() {
+    const nodes = document.querySelectorAll('.node');
+
+    nodes.forEach(node => {
+        node.addEventListener('click', function(event) {
+            node.style('opacity', '0');
+        });
+    });
+}
