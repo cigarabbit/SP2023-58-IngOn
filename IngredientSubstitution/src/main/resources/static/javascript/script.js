@@ -89,7 +89,7 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(40,0)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(300))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(200))
     .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked)
@@ -107,7 +107,7 @@ function update() {
     const linkEnter = link.enter()
         .append('line')
         .attr('class', 'link')
-        .style('stroke', '#000')
+        .style('stroke', '#b4b4b4')
         .style('opacity', '1')
         .style('stroke-width', 3);
 
@@ -123,23 +123,12 @@ function update() {
         return d.depth === 3 ? "rect" : "circle";
     };
 
-    const distanceNode = function (d) {
-        if (d.depth === 3) {
-            return d.x -= 10000;
-        } else {
-            return d.x -= 10;
-        }
-    }
-
     const nodeEnter = node.enter()
         .append('g')
         .attr('class', 'node')
-        .attr('stroke', '#0000')
-        .attr('stroke-width', 2)
-        .attr('dx', distanceNode)
         .style("fill", color)
         .style('opacity', 1)
-        .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.4))')
+        // .style('filter', 'drop-shadow(2px 2px 4px rgba(0,0,0,0.4))')
         .on('click', clicked)
         .call(d3.drag()
             .on('start', dragstarted)
@@ -149,7 +138,7 @@ function update() {
     nodeEnter.append(function(d) {
         return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
     })
-        .attr("r", 50)
+        .attr("r", 15)
         .attr("width", 100)
         .attr("height", 50)
         .style('fill', color);
@@ -157,11 +146,11 @@ function update() {
     node = nodeEnter.merge(node);
 
     nodeEnter.append('text')
-        .attr('dy', 0)
+        .attr('dy', 30)
         .attr('dx', 0)
         .style("fill", "black")
         .style('text-anchor', 'middle')
-        .style("font-weight", "bold")
+        // .style("font-weight", "bold")
         .text(function (d) { return d.data.name; });
 
     svg.selectAll('.node').raise();
@@ -170,7 +159,7 @@ function update() {
     simulation.nodes(nodes);
     simulation.force('link').links(links);
 
-    simulation.alpha(1).restart();
+    // simulation.alpha(1).restart();
 }
 
 const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
@@ -179,6 +168,50 @@ const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3
 const customColorScale = d3.scaleOrdinal().range(customColors);
 
 function color(d) {
+    if (d.depth == 4) {
+        if (d.data.name == "Green") {
+            return '#49d354';
+        } else if (d.data.name == "Red") {
+            return '#a90e24';
+        } else if (d.data.name == "Beige") {
+            return '#dedec3';
+        }else if (d.data.name == "Black") {
+            return '#000000';
+        }else if (d.data.name == "Brown") {
+            return '#56350e';
+        }else if (d.data.name == "Cream") {
+            return '#ded4c3';
+        }
+        else if (d.data.name == "Gold") {
+            return '#b28d1d';
+        }
+        else if (d.data.name == "Gray") {
+            return '#808080';
+        }
+        else if (d.data.name == "Pink") {
+            return '#FFB6C1';
+        }
+        else if (d.data.name == "Purple") {
+            return '#800080';
+        }
+        else if (d.data.name == "RedBrown") {
+            return '#A52A2A';
+        }
+        else if (d.data.name == "Silver") {
+            return '#C0C0C0';
+        }
+        else if (d.data.name == "Silver") {
+            return '#D2B48C';
+        }
+        else if (d.data.name == "White" || d.data.name == "Transparent") {
+            return '#FFFFFF';
+        }
+        else if (d.data.name == "Yellow") {
+            return '#FFFF00';
+        }
+
+
+    }
     return customColorScale(d.depth);
 }
 
