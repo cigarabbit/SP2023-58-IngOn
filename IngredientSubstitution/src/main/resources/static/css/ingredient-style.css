@@ -23,17 +23,15 @@
 #sort-button {
     width: 40px;
     height: 60%;
-    margin-top: 17px;
-    margin-left: 15px;
-    /*position: relative;*/
-    border: rgb(229, 229, 229) solid 1px;
+    margin-top: 15px;
+    /*margin-left: 15px;*/
+    border: 0;
+    background-color: #f4f4f4;
 }
 
 #sidebar {
     width: 320px;
     height: 100%;
-    margin-left: 0;
-    padding: 0;
     background-color: #fbfbfb;
     float: left;
     border-right: rgb(181, 181, 181) solid 2px;
@@ -41,10 +39,10 @@
 
 #sidebar-title{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
     width: 320px;
     height: 75px;
-    padding-left: 10px;
     background-color: #f4f4f4;
     border-right: rgb(181, 181, 181) solid 2px;
     border-bottom: rgb(181, 181, 181) solid 2px;
@@ -53,10 +51,11 @@
 #sidebar-title h2 {
     padding-top: 20px;
     width: max-content;
+    font-size: x-large;
 }
 
 #sidebar-topic {
-    height: 80%;
+    height: 85%;
     overflow-y: auto;
     margin-top: 10px;
 }
@@ -99,10 +98,6 @@
     width: fit-content;
     font-size: 14px;
     font-weight: bold;
-}
-
-#content-category p {
-
 }
 
 

@@ -52,7 +52,7 @@ public class OntologyConverter {
         HashMap<String, Set<String>> concepts = null;
 
         try {
-            File jsonFile = new File("src/main/resources/data.json");
+            File jsonFile = new File("IngredientSubstitution/src/main/resources/data.json");
             concepts = objectMapper.readValue(jsonFile, new TypeReference<HashMap<String, Set<String>>>() {});
 
         } catch (IOException e) {
