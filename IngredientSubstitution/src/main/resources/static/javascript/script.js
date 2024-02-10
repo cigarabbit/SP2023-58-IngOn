@@ -74,6 +74,33 @@ const data = {
     ]
 }
 
+window.addEventListener('load', function () {
+    var nodes = d3.selectAll(".node");
+
+    nodes.style('opacity', function(node) {
+        if (node.depth > 1) {
+            return '0';
+        } else {
+            return '1';
+        }
+    })
+        .style('pointer-events', function(node) {
+        return node.depth > 1 ? 'none' : 'all';
+    })
+
+    var links = d3.selectAll(".link");
+
+    links.style('opacity', function(link) {
+        if (link.source.depth > 1 || link.target.depth > 1) {
+            return '0';
+        } else {
+            return '1';
+        }
+    })
+        .style('pointer-events', function(link) {
+            return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
+        });
+})
 
 let i = 0;
 
@@ -110,6 +137,21 @@ function update() {
             return '0';
         }
     };
+    const nodePointer = function (d) {
+        if (d.depth == 3) {
+            return 'none';
+        } else {
+            return 'all';
+        }
+    }
+
+    const distanceCustomization = function(d) {
+        if ((d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
+            return 100;
+        } else {
+            return 150;
+        }
+    };
 
     // Update links
     link = svg.selectAll('.link')
@@ -138,6 +180,7 @@ function update() {
         .attr('class', 'node')
         .style('fill', color)
         .style('opacity', 1)
+        .style('pointer-events', nodePointer)
         .on('click', clicked)
         .call(d3.drag()
             .on('start', dragstarted)
@@ -164,6 +207,7 @@ function update() {
     // Update simulation with new nodes and links
     simulation.nodes(nodes);
     simulation.force('link').links(links);
+    simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization))
 
     // simulation.alpha(1).restart();
 }
@@ -241,11 +285,8 @@ function clicked(d) {
             d.children = d._children;
             d._children = null;
         }
-
-        // highlightNode()
         update()
     }
-
 }
 
 function dragstarted(d) {
@@ -315,12 +356,20 @@ function levenshteinDistance(s1, s2) {
     return matrix[s2.length][s1.length];
 }
 
-
 function findNode() {
     var itemName = document.getElementById("targetNode").value.toLowerCase();
     var nodes = d3.selectAll(".node");
+    var relationshipList = ['can cook', 'has benefit', 'shape', 'flavor', 'nutrient', 'texture']
+    var isNotInRelationshipList = true;
 
-    if (itemName != '') {
+    for (var i = 0; i < relationshipList.length; i++) {
+        if (relationshipList[i].includes(itemName)) {
+            isNotInRelationshipList = false;
+            break;
+        }
+    }
+
+    if (itemName != '' && isNotInRelationshipList) {
     nodes.style("opacity", function (d) {
         var nodeName = d.data.name.toLowerCase();
         var distance = levenshteinDistance(nodeName, itemName);
@@ -343,13 +392,3 @@ function findNode() {
 
 
 update()
-
-function highlightNode() {
-    const nodes = document.querySelectorAll('.node');
-
-    nodes.forEach(node => {
-        node.addEventListener('click', function(event) {
-            node.style('opacity', '0');
-        });
-    });
-}
