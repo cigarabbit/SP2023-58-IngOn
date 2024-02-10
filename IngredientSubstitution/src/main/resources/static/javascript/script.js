@@ -74,6 +74,7 @@ const data = {
     ]
 }
 
+
 let i = 0;
 
 const root = d3.hierarchy(data);
@@ -97,6 +98,18 @@ const simulation = d3.forceSimulation()
 function update() {
     const nodes = flatten(root);
     const links = root.links();
+    const shape = function(d) {
+        return d.depth === 3 ? 'line' : 'circle';
+    };
+    const dashDottedLine = function (d) {
+        // Display relationship between the ingredient and its properties
+        if ((d.source.depth === 2 && d.target.depth === 3) || (d.source.depth === 3 && d.target.depth === 2) ||
+            (d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
+            return '5,3';
+        } else {
+            return '0';
+        }
+    };
 
     // Update links
     link = svg.selectAll('.link')
@@ -109,7 +122,8 @@ function update() {
         .attr('class', 'link')
         .style('stroke', '#b4b4b4')
         .style('opacity', '1')
-        .style('stroke-width', 3);
+        .style('stroke-width', 3)
+        .style('stroke-dasharray', dashDottedLine);
 
     link = linkEnter.merge(link);
 
@@ -119,25 +133,12 @@ function update() {
 
     node.exit().remove();
 
-    const shape = function(d) {
-        return d.depth === 3 ? 'rect' : 'circle';
-    };
-
     const nodeEnter = node.enter()
         .append('g')
         .attr('class', 'node')
         .style('fill', color)
         .style('opacity', 1)
         .on('click', clicked)
-        .on("mouseover", function(event, d) {
-            d3.select(this)
-                .style("fill", "orange");
-        })
-        .on("mouseout", function(event, d) {
-            // Restore circle fill color on mouseout
-            d3.select(this)
-                .style("fill", color);
-        })
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
@@ -147,8 +148,6 @@ function update() {
         return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
     })
         .attr('r', 15)
-        .attr('width', 100)
-        .attr('height', 50)
         .style('fill', color);
 
     node = nodeEnter.merge(node);
