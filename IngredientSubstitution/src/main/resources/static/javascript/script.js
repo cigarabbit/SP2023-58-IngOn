@@ -231,12 +231,21 @@ function zoomToFocused() {
     var focusedNode = d3.select('.focused').node();
 
     if (focusedNode) {
+        var rect_top = focusedNode.getBoundingClientRect().top;
+
+        let translateX, translateY;
+
+        if (rect_top < 300) {
+            translateX = 100;
+            translateY = 300;
+        } else {
+            translateX = -100;
+            translateY = -300;
+        }
+
         var svg = d3.select('svg');
 
         var zoomScale = 1.1;
-
-        var translateX = -100;
-        var translateY = -300;
 
         svg.transition()
             .duration(750)
@@ -314,7 +323,6 @@ function clicked(clickedNode) {
         return '0';
     });
 }
-
 
 const customColors = ['#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
 const colors = ['#00376b', '#42768a', '#009E9A', '#E08353', '#D8553A', '#7F7F7F', '#444444', '#c1a3de', '#BFA13D', '#00994D', '#86378f'];
