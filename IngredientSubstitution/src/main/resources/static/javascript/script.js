@@ -74,10 +74,6 @@ const data = {
     ]
 }
 
-const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
-const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3311'];
-const customColorScale = d3.scaleOrdinal().range(customColors);
-
 var zoom = d3.zoom()
     .scaleExtent([1 / 2, 8])
     .on('zoom', zoomed);
@@ -91,8 +87,6 @@ let node, link;
 const viewportWidth = window.innerWidth;
 const viewportHeight = window.innerHeight;
 
-console.log(viewportHeight)
-
 const svg = d3.select('svg')
     .call(zoom)
     .append('g')
@@ -105,7 +99,6 @@ const simulation = d3.forceSimulation()
     .on('tick', ticked);
 
 window.addEventListener('load', function () {
-
     var nodes = d3.selectAll(".node");
 
     nodes.style('opacity', function(node) {
@@ -322,8 +315,20 @@ function clicked(clickedNode) {
     });
 }
 
+
+const customColors = ['#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
+const colors = ['#00376b', '#42768a', '#009E9A', '#E08353', '#D8553A', '#7F7F7F', '#444444', '#c1a3de', '#BFA13D', '#00994D', '#86378f'];
+
+const customColorScale = d3.scaleOrdinal().range(customColors);
+
 function color(d) {
-    if (d.depth == 4) {
+    if (d.depth === 0) {
+        return '#9062dd';
+    }
+    if (d.depth === 1) {
+        return colors[d.parent.children.indexOf(d)];
+    }
+    else if (d.depth === 4) {
         if (d.data.name == "Green") {
             return '#49d354';
         } else if (d.data.name == "Red") {
