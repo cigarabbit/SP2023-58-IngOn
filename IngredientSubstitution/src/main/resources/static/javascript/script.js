@@ -235,7 +235,7 @@ function zoomToFocused() {
 
         let translateX, translateY;
 
-        if (rect_top < 300) {
+        if (rect_top < 400) {
             translateX = 100;
             translateY = 300;
         } else {
