@@ -239,7 +239,9 @@ function clicked(d) {
         nodes.on('click', function(clickedNode) {
             console.log(clickedNode.data.name);
 
-            if (clickedNode.data.name != 'Food Group') {
+            if (clickedNode.data.name == 'Food Group') {
+                window.location.reload();
+            }
                 // d3.select(this).append('div');
 
                 var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node
@@ -260,7 +262,7 @@ function clicked(d) {
                     return node.depth === 0 || childrenNodes.includes(node) && node != clickedNode.depth + 2 || node === clickedNode ? '1' : '0'; // Show children nodes and the clicked node
                 })
                     .style('pointer-events', function(node) {
-                        if (node.depth != 3) {
+                        if (node.depth < 3) {
                             return 'all';
                         } else return  'none';
                     })
@@ -268,10 +270,6 @@ function clicked(d) {
                 links.style('opacity', function(link) {
                     return (link.source === clickedNode || link.target === clickedNode || childrenNodes.includes(link.source) || childrenNodes.includes(link.target) || link.target.depth === 0) ? '1' : '0';
                 });
-            }
-            else {
-                window.location.reload();
-            }
 
 
         });
