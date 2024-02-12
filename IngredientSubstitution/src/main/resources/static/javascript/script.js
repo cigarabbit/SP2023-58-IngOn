@@ -78,7 +78,9 @@ const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
 const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3311'];
 const customColorScale = d3.scaleOrdinal().range(customColors);
 
-let clicked_node;
+var zoom = d3.zoom()
+    .scaleExtent([1 / 2, 8]) // Set the scale extent
+    .on('zoom', zoomed);
 
 let i = 0;
 
@@ -90,7 +92,7 @@ const viewportWidth = window.innerWidth;
 const viewportHeight = window.innerHeight;
 
 const svg = d3.select('svg')
-    .call(d3.zoom().scaleExtent([1 / 2, 8]).on('zoom', zoomed))
+    .call(zoom)
     .append('g')
     .attr('transform', 'translate(40,0)');
 
@@ -105,11 +107,7 @@ window.addEventListener('load', function () {
     var nodes = d3.selectAll(".node");
 
     nodes.style('opacity', function(node) {
-        if (node.depth > 1) {
-            return '0';
-        } else {
-            return '1';
-        }
+        return node.depth > 1 ? '0' : '1';
     })
         .style('pointer-events', function(node) {
             return node.depth > 1 ? 'none' : 'all';
@@ -145,7 +143,7 @@ function update() {
         }
     };
     const nodePointer = function (d) {
-        if (d.depth == 3) {
+        if (d.depth > 2) {
             return 'none';
         } else {
             return 'all';
@@ -230,51 +228,65 @@ function ticked() {
         .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
 }
 
+function clicked(clickedNode) {
+    var nodes = d3.selectAll(".node");
+    var links = d3.selectAll(".link");
 
-function clicked(d) {
-    if (!d3.event.defaultPrevented) {
-        var nodes = d3.selectAll(".node");
-        var links = d3.selectAll(".link");
+    console.log(clickedNode.data.name);
 
-        nodes.on('click', function(clickedNode) {
-            console.log(clickedNode.data.name);
-
-            if (clickedNode.data.name == 'Food Group') {
-                window.location.reload();
-            }
-                // d3.select(this).append('div');
-
-                var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node
-                var rootNode = d3.select(this).datum();
-                var childrenNodes = rootNode.descendants().filter(function(d) {
-                    return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
-                });
-
-                if (!clickedNode.children) {
-                    clickedNode._children = clickedNode.children;
-                    clickedNode.children = null;
-                } else {
-                    clickedNode.children = clickedNode._children;
-                    clickedNode._children = null;
-                }
-
-                nodes.style('opacity', function(node) {
-                    return node.depth === 0 || childrenNodes.includes(node) && node != clickedNode.depth + 2 || node === clickedNode ? '1' : '0'; // Show children nodes and the clicked node
-                })
-                    .style('pointer-events', function(node) {
-                        if (node.depth < 3) {
-                            return 'all';
-                        } else return  'none';
-                    })
-
-                links.style('opacity', function(link) {
-                    return (link.source === clickedNode || link.target === clickedNode || childrenNodes.includes(link.source) || childrenNodes.includes(link.target) || link.target.depth === 0) ? '1' : '0';
-                });
-
-
-        });
-        update()
+    if (clickedNode.data.name == 'Food Group') {
+        window.location.reload();
     }
+
+    var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node
+    var rootNode = d3.select(this).datum();
+    var childrenNodes = rootNode.descendants().filter(function (d) {
+        return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
+    });
+
+    console.log(childrenNodes)
+
+    if (!clickedNode.children) {
+        clickedNode._children = clickedNode.children;
+        clickedNode.children = null;
+    } else {
+        clickedNode.children = clickedNode._children;
+        clickedNode._children = null;
+    }
+
+    nodes.style('opacity', function (node) {
+        if (node.depth === 0 || node === clickedNode ||
+            node.parent === clickedNode || clickedNode.parent === node) {
+            return '1';
+        } else if (clickedNode.depth === 2 && (node.depth === 3 || node.depth === 4)) {
+            if (childrenNodes.includes(node)) {
+                return '1';
+            }
+        }
+        return '0';
+    })
+        .style('pointer-events', function (node) {
+            if (node.depth != 3) {
+                return 'all';
+            } else return 'none';
+        })
+
+    links.style('opacity', function (link) {
+        if (link.source === clickedNode || link.target === clickedNode) {
+            return '1';
+        } else if (clickedNode.depth === 1) { // Category selected
+            if (childrenNodes.includes(link.source)) {
+                if (link.source.depth === 1 || link.target.depth === 2) {
+                    return '1';
+                }
+            }
+        } else if (clickedNode.depth === 2) { // Ingredient selected
+            if (clickedNode.parent === link.source && link.source.depth === 1 && link.target.depth === 0) {
+                return '1';
+            }
+        }
+        return '0';
+    });
 }
 
 
