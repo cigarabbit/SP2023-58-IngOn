@@ -229,6 +229,7 @@ function ticked() {
 }
 
 function clicked(clickedNode) {
+
     var nodes = d3.selectAll(".node");
     var links = d3.selectAll(".link");
 
@@ -254,19 +255,22 @@ function clicked(clickedNode) {
         clickedNode._children = null;
     }
 
+    d3.selectAll('.node').classed('focused', false);
+    d3.select(this).classed('focused', true);
+
     nodes.style('opacity', function (node) {
         if (node.depth === 0 || node === clickedNode ||
             node.parent === clickedNode || clickedNode.parent === node) {
             return '1';
-        } else if (clickedNode.depth === 2 && (node.depth === 3 || node.depth === 4)) {
-            if (childrenNodes.includes(node)) {
+        } else if (clickedNode.depth === 2 && childrenNodes.includes(node)) {
+            if (node.depth === 3 || node.depth === 4) {
                 return '1';
             }
         }
         return '0';
     })
         .style('pointer-events', function (node) {
-            if (node.depth != 3) {
+            if (node.depth < 3) {
                 return 'all';
             } else return 'none';
         })
@@ -281,14 +285,16 @@ function clicked(clickedNode) {
                 }
             }
         } else if (clickedNode.depth === 2) { // Ingredient selected
-            if (clickedNode.parent === link.source && link.source.depth === 1 && link.target.depth === 0) {
+            if (link.source.depth === 0 && (link.target.depth === 1 && link.target === clickedNode.parent)) {
+                return '1';
+            }
+            if (clickedNode.children && link.source.depth === 3 || link.target.depth === 4) {
                 return '1';
             }
         }
         return '0';
     });
 }
-
 
 function color(d) {
     if (d.depth == 4) {
