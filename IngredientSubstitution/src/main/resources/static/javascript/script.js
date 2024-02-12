@@ -74,34 +74,11 @@ const data = {
     ]
 }
 
-window.addEventListener('load', function () {
+const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
+const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3311'];
+const customColorScale = d3.scaleOrdinal().range(customColors);
 
-    var nodes = d3.selectAll(".node");
-
-    nodes.style('opacity', function(node) {
-        if (node.depth > 1) {
-            return '0';
-        } else {
-            return '1';
-        }
-    })
-        .style('pointer-events', function(node) {
-        return node.depth > 1 ? 'none' : 'all';
-    })
-
-    var links = d3.selectAll(".link");
-
-    links.style('opacity', function(link) {
-        if (link.source.depth > 1 || link.target.depth > 1) {
-            return '0';
-        } else {
-            return '1';
-        }
-    })
-        .style('pointer-events', function(link) {
-            return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
-        });
-})
+let clicked_node;
 
 let i = 0;
 
@@ -122,6 +99,35 @@ const simulation = d3.forceSimulation()
     .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked)
+
+window.addEventListener('load', function () {
+
+    var nodes = d3.selectAll(".node");
+
+    nodes.style('opacity', function(node) {
+        if (node.depth > 1) {
+            return '0';
+        } else {
+            return '1';
+        }
+    })
+        .style('pointer-events', function(node) {
+            return node.depth > 1 ? 'none' : 'all';
+        })
+
+    var links = d3.selectAll(".link");
+
+    links.style('opacity', function(link) {
+        if (link.source.depth > 1 || link.target.depth > 1) {
+            return '0';
+        } else {
+            return '1';
+        }
+    })
+        .style('pointer-events', function(link) {
+            return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
+        });
+})
 
 function update() {
     const nodes = flatten(root);
@@ -213,10 +219,66 @@ function update() {
     // simulation.alpha(1).restart();
 }
 
-const customColors = ['#9062dd', '#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
-const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3311'];
+function ticked() {
+    link
+        .attr('x1', function (d) { return d.source.x; })
+        .attr('y1', function (d) { return d.source.y; })
+        .attr('x2', function (d) { return d.target.x; })
+        .attr('y2', function (d) { return d.target.y; })
 
-const customColorScale = d3.scaleOrdinal().range(customColors);
+    node
+        .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
+}
+
+
+function clicked(d) {
+    if (!d3.event.defaultPrevented) {
+        var nodes = d3.selectAll(".node");
+        var links = d3.selectAll(".link");
+
+        nodes.on('click', function(clickedNode) {
+            console.log(clickedNode.data.name);
+
+            if (clickedNode.data.name != 'Food Group') {
+                // d3.select(this).append('div');
+
+                var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node
+                var rootNode = d3.select(this).datum();
+                var childrenNodes = rootNode.descendants().filter(function(d) {
+                    return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
+                });
+
+                if (!clickedNode.children) {
+                    clickedNode._children = clickedNode.children;
+                    clickedNode.children = null;
+                } else {
+                    clickedNode.children = clickedNode._children;
+                    clickedNode._children = null;
+                }
+
+                nodes.style('opacity', function(node) {
+                    return node.depth === 0 || childrenNodes.includes(node) && node != clickedNode.depth + 2 || node === clickedNode ? '1' : '0'; // Show children nodes and the clicked node
+                })
+                    .style('pointer-events', function(node) {
+                        if (node.depth != 3) {
+                            return 'all';
+                        } else return  'none';
+                    })
+
+                links.style('opacity', function(link) {
+                    return (link.source === clickedNode || link.target === clickedNode || childrenNodes.includes(link.source) || childrenNodes.includes(link.target) || link.target.depth === 0) ? '1' : '0';
+                });
+            }
+            else {
+                window.location.reload();
+            }
+
+
+        });
+        update()
+    }
+}
+
 
 function color(d) {
     if (d.depth == 4) {
@@ -260,103 +322,10 @@ function color(d) {
         else if (d.data.name == "Yellow") {
             return '#FFFF00';
         }
-
-
     }
     return customColorScale(d.depth);
 }
 
-function ticked() {
-    link
-        .attr('x1', function (d) { return d.source.x; })
-        .attr('y1', function (d) { return d.source.y; })
-        .attr('x2', function (d) { return d.target.x; })
-        .attr('y2', function (d) { return d.target.y; })
-
-    node
-        .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
-}
-
-function clicked(d) {
-    if (!d3.event.defaultPrevented) {
-        // if (d.children) {
-        //     d._children = d.children;
-        //     d.children = null;
-        // } else {
-        //     d.children = d._children;
-        //     d._children = null;
-        // }
-
-        var nodes = d3.selectAll(".node");
-        var links = d3.selectAll(".link");
-
-        nodes.on('click', function(clickedNode) {
-            var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node
-            var rootNode = d3.select(this).datum();
-            var childrenNodes = rootNode.descendants().filter(function(d) {
-                return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
-            });
-
-            if (!clickedNode.children && !clickedNode._children) {
-                // If the clicked node has no children, expand it to show its children (depth 1)
-                clickedNode.children = clickedNode._children || clickedNode.data.children;
-                clickedNode._children = null;
-            } else if (clickedNode.children) {
-                // If the clicked node has children, collapse it
-                clickedNode._children = clickedNode.children;
-                clickedNode.children = null;
-            } else {
-                // If the clicked node has collapsed children, expand it again
-                clickedNode.children = clickedNode._children;
-                clickedNode._children = null;
-            }
-
-            nodes.style('opacity', function(node) {
-                return node.depth === 0 || childrenNodes.includes(node) && node != clickedNode.depth + 2 || node === clickedNode ? '1' : '0'; // Show children nodes and the clicked node
-            })
-                .style('pointer-events', function(node) {
-                    return 'all';
-                })
-                .style('fill', function (node) {
-                    return node === clickedNode ? '#880808' : color;
-                })
-
-            links.style('opacity', function(link) {
-                return (link.source === clickedNode || link.target === clickedNode || childrenNodes.includes(link.source) || childrenNodes.includes(link.target) || link.target.depth === 0) ? '1' : '0';
-            });
-
-        });
-
-
-
-        //
-        // nodes.style('opacity', function(node) {
-        //     if (node == rootNode || node == clickedNode || node == clickedNode.children) {
-        //         return '1';
-        //     } else {
-        //         return '0';
-        //     }
-        // })
-        //     .style('pointer-events', function(node) {
-        //         return node.depth >= 1 || node.children ? 'all' : 'none';
-        //     });
-        //
-        // var links = d3.selectAll(".link");
-        // links.style('opacity', function(link) {
-        //     if ((link.source.depth >= 1 || link.source.children) &&
-        //         (link.target.depth >= 1 || link.target.children)) {
-        //         return '1';
-        //     } else {
-        //         return '0';
-        //     }
-        // })
-        //     .style('pointer-events', function(link) {
-        //         return ((link.source.depth >= 1 || link.source.children) &&
-        //             (link.target.depth >= 1 || link.target.children)) ? 'all' : 'none';
-        //     });
-        update()
-    }
-}
 
 function dragstarted(d) {
     if (!d3.event.active) simulation.alphaTarget(0.3).restart()
