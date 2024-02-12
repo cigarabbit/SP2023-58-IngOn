@@ -79,7 +79,7 @@ const customColors_Blinders = ['#0077BB', '#33BBEE', '#009988', '#ec7633', '#Cc3
 const customColorScale = d3.scaleOrdinal().range(customColors);
 
 var zoom = d3.zoom()
-    .scaleExtent([1 / 2, 8]) // Set the scale extent
+    .scaleExtent([1 / 2, 8])
     .on('zoom', zoomed);
 
 let i = 0;
@@ -91,16 +91,18 @@ let node, link;
 const viewportWidth = window.innerWidth;
 const viewportHeight = window.innerHeight;
 
+console.log(viewportHeight)
+
 const svg = d3.select('svg')
     .call(zoom)
     .append('g')
-    .attr('transform', 'translate(40,0)');
+    .attr('transform', 'translate(150,50)');
 
 const simulation = d3.forceSimulation()
     .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(150))
     .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
-    .on('tick', ticked)
+    .on('tick', ticked);
 
 window.addEventListener('load', function () {
 
@@ -195,13 +197,13 @@ function update() {
     nodeEnter.append(function(d) {
         return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
     })
-        .attr('r', 15)
+        .attr('r', 20)
         .style('fill', color);
 
     node = nodeEnter.merge(node);
 
     nodeEnter.append('text')
-        .attr('dy', 30)
+        .attr('dy', 35)
         .attr('dx', 0)
         .style('fill', 'black')
         .style('text-anchor', 'middle')
@@ -214,7 +216,6 @@ function update() {
     simulation.force('link').links(links);
     simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization))
 
-    // simulation.alpha(1).restart();
 }
 
 function ticked() {
@@ -226,6 +227,30 @@ function ticked() {
 
     node
         .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
+}
+
+function focusNode(node) {
+    d3.selectAll('.node').classed('focused', false);
+    d3.select(node).classed('focused', true);
+}
+
+function zoomToFocused() {
+    var focusedNode = d3.select('.focused').node();
+
+    if (focusedNode) {
+        var svg = d3.select('svg');
+
+        var zoomScale = 1.1;
+
+        var translateX = -100;
+        var translateY = -300;
+
+        svg.transition()
+            .duration(750)
+            .call(zoom.transform, d3.zoomIdentity
+                .translate(translateX, translateY)
+                .scale(zoomScale));
+    }
 }
 
 function clicked(clickedNode) {
@@ -255,8 +280,9 @@ function clicked(clickedNode) {
         clickedNode._children = null;
     }
 
-    d3.selectAll('.node').classed('focused', false);
-    d3.select(this).classed('focused', true);
+    focusNode(this);
+    zoomToFocused();
+
 
     nodes.style('opacity', function (node) {
         if (node.depth === 0 || node === clickedNode ||
@@ -430,19 +456,19 @@ function findNode() {
         var threshold = 2;
 
         if (distance <= threshold || nodeName.includes(itemName)) {
+            focusNode(this);
+            zoomToFocused();
+
             return "1"; // Searched node
         } else {
             return "0";
         }
     });
         d3.selectAll(".link").style("opacity", "0");
-    } else {
-        nodes.style("opacity", "1");
-
-        d3.selectAll(".link").style("opacity", "1");
+    } else if (itemName == '') {
+        window.location.reload();
     }
 
 }
-
 
 update()

@@ -1,3 +1,8 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
 #header-visualization {
     text-align: center;
     font-weight: bolder;
@@ -6,7 +11,7 @@
 
 #svg-visualization {
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
 }
 
 .node {
@@ -14,37 +19,6 @@
     cursor: pointer;
     z-index: 1000;
     stroke: black;
-}
-
-.help {
-    bottom: 20px;
-    right: 15px;
-    position: fixed;
-}
-
-.question {
-    height: 40px;
-    width: 40px;
-    background: #ccc;
-    font-size: 32px;
-    font-weight: bolder;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.help .popup {
-    padding: 20px;
-    width: 180px;
-    opacity: 0;
-    color: black;
-    text-align: left;
-}
-
-.help:hover .popup {
-    opacity: 1;
-    background: #a2a2a2;
 }
 
 .focused circle {
