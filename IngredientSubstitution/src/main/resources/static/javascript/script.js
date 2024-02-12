@@ -452,8 +452,11 @@ function levenshteinDistance(s1, s2) {
 function findNode() {
     var itemName = document.getElementById("targetNode").value.toLowerCase();
     var nodes = d3.selectAll(".node");
+    var links = d3.selectAll(".link");
     var relationshipList = ['can cook', 'has benefit', 'shape', 'flavor', 'nutrient', 'texture']
     var isNotInRelationshipList = true;
+
+    let parentNode, rootNode;
 
     for (var i = 0; i < relationshipList.length; i++) {
         if (relationshipList[i].includes(itemName)) {
@@ -463,21 +466,35 @@ function findNode() {
     }
 
     if (itemName != '' && isNotInRelationshipList) {
-    nodes.style("opacity", function (d) {
-        var nodeName = d.data.name.toLowerCase();
-        var distance = levenshteinDistance(nodeName, itemName);
-        var threshold = 2;
+        nodes.style("opacity", function (d) {
+            var nodeName = d.data.name.toLowerCase();
+            var distance = levenshteinDistance(nodeName, itemName);
+            var threshold = 2;
 
-        if (distance <= threshold || nodeName.includes(itemName)) {
-            focusNode(this);
-            zoomToFocused();
+            if (distance <= threshold || nodeName.includes(itemName) || d === parentNode || d === rootNode) {
+                if (d.depth === 4) { // Properties
+                    parentNode = d.parent;
+                    rootNode = parentNode.parent;
+                    console.log('here', parentNode, rootNode)
+                }
+                focusNode(this);
+                zoomToFocused();
 
-            return "1"; // Searched node
-        } else {
-            return "0";
-        }
-    });
-        d3.selectAll(".link").style("opacity", "0");
+                return "1"; // Searched node
+            } else {
+                return "0";
+            }
+        });
+
+        links.style("opacity", function (d) {
+            if (d.source === rootNode && d.target === parentNode ||
+                d.source.data.name.toLowerCase() === itemName ||
+                d.target.data.name.toLowerCase() === itemName) {
+                return "1";
+            } else {
+                return "0";
+            }
+        });
     } else if (itemName == '') {
         window.location.reload();
     }
