@@ -25,7 +25,7 @@ body {
     stroke: #b90000;
     stroke-width: 2px;
     fill: rgb(255, 0, 0) !important;
-    transform: scale(3);
+    transform: scale(2.5);
 }
 
 .focused text {
