@@ -65,6 +65,12 @@
     color: black;
 }
 
+#sidebar-topic a:active {
+    background-color: #6ce774;
+    border-radius: 5px;
+    width: 100%;
+}
+
 #sidebar-topic li:hover {
     background-color: #cfcfcf;
     border-radius: 5px;
