@@ -81,6 +81,7 @@
 }
 
 #content-box {
+    opacity: 0;
     margin-left: 320px;
     padding: 20px;
 }

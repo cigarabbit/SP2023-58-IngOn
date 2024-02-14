@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
     sortTopics();
-
+    retrieveData();
     changeColor();
 });
 
@@ -25,6 +25,26 @@ function sortTopics() {
     });
 
     currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+}
+
+function retrieveData() {
+    var sidebarTopics = document.querySelectorAll('#sidebar-topic ul li a');
+    var contentBox = document.querySelector('#content-box');
+    var contentHeader = document.querySelector('.content-header');
+
+    sidebarTopics.forEach(function(topic) {
+        topic.addEventListener('click', function(event) {
+            var clickedTopic = event.target.textContent;
+            console.log('Clicked:', clickedTopic);
+
+            contentHeader.textContent = clickedTopic;
+
+            if (contentHeader) {
+                contentBox.style.opacity = '1';
+            }
+
+        });
+    });
 }
 
 function changeColor() {
