@@ -33,8 +33,7 @@
                     <li><a class="dropdown-item" href="/ingredient?id=Pulse_Seed_Nut"> Pulse/Seed/Nut </a></li>
                     <li><a class="dropdown-item" href="/ingredient?id=Shellfish"> Shellfish </a></li>
                     <li><a class="dropdown-item" href="/ingredient?id=Spice_Condiment"> Spice </a></li>
-                    <li><a class="dropdown-item" href="/ingredient?id=StarchyRoot_Tuber"> Starchy Root/Tuber </a>
-                    </li>
+                    <li><a class="dropdown-item" href="/ingredient?id=StarchyRoot_Tuber"> Starchy Root/Tuber </a></li>
                     <li><a class="dropdown-item" href="/ingredient?id=Vegetable"> Vegetable </a></li>
                 </ul>
             </li>
@@ -64,7 +63,7 @@
             <div id="sidebar-title">
                 <h2>Ingredient List</h2>
                 <button id="sort-button" onclick="sortTopics()">
-                    <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png"></img>
+                     <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png">
                 </button>
             </div>
             <div id="sidebar-topic">
@@ -77,16 +76,36 @@
         </div>
 
         <div id="content-box">
-            <div id="content-category">
-                <p th:text="${foodGroup}"></p>
+            <div id="head-content">
+                <div id="content-category">
+                    <p id="foodGroupTitle" th:text="${foodGroup}"></p>
+                </div>
+                <button id="print-button" onclick="window.print()">
+                    <img src="img/print_FILL0_wght400_GRAD0_opsz24.png"><
+                </button>
             </div>
             <div id="content">
-                <div data-index="">
-                    <div th:each="concept, iterStat : ${conceptList}" data-index="${iterStat.index}" style="display:none;">
-                        <h2 th:text="${concept}"></h2>
-                    </div>
+                <h1 class="content-header">INGREDIENT NAME</h1>
+                <h2 class="content-headerH2">Properties</h2>
+                <ul>
+                    <li><strong>Color:</strong> </li>
+                    <li><strong>Flavor:</strong> </li>
+                    <li><strong>Shape:</strong> </li>
+                    <li><strong>Texture:</strong> </li>
+                </ul>
+                <h2 class="content-headerH2">Nutrient Composition</h2>
+                <div class="nutrient-composition">
+                    <div class="nutrient-item"></div>
                 </div>
-
+                <h2 class="content-headerH2">Benefits</h2>
+                <div class="property-box" id="benefits"></div>
+                <h2 class="content-headerH2">Cooking Types</h2>
+                <div class="property-box" id="cooking-types"></div>
+                <h2 class="content-headerH2">Possible Substitutions</h2>
+                <div class="property-box" id="possible-substitutions"></div>
+                <div id="foodtype-img">
+                    <img src="img/category/cereal.png" alt="cereals">
+                </div>
             </div>
         </div>
     </div>
@@ -99,35 +118,6 @@
     var indexCounter = 0;
     var conceptItems = sidebarTopic.querySelectorAll('ul > li');
     var numberOfConcepts = conceptItems.length;
-
-    function addContent() {
-
-        // Iterate over each concept
-        for (var i = 0; i < numberOfConcepts.length; i++) {
-            var newContent = document.createElement('div');
-
-            newContent.innerHTML = 'CONTENT';
-
-            newContent.setAttribute('data-index', i);
-
-            contentContainer.appendChild(newContent);
-        }
-    }
-
-    function showContent(conceptIndex) {
-        console.log('showContent function called with index:', conceptIndex);
-        var contents = document.querySelectorAll('#content > div');
-
-        for (var i = 0; i < contents.length; i++) {
-            contents[i].style.display = 'none';
-        }
-
-        var contentToDisplay = document.querySelector('[data-index="' + conceptIndex + '"]');
-
-        if (contentToDisplay) {
-            contentToDisplay.style.display = 'block';
-        }
-    }
 
     function sortTopics() {
         var sidebar = document.getElementById("sidebar-topic");
@@ -150,10 +140,75 @@
         currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
     }
 
-    // Sort the topics alphabetically in ascending order initially
+    function changeColor() {
+        var foodGroup = document.getElementById('foodGroupTitle').textContent;
+
+        var colorBase, colorSub;
+        if (foodGroup === 'Cereal') {
+            colorBase = 'rgb(0, 55, 107)';
+            colorSub = 'rgb(0, 116, 217)';
+        } else if (foodGroup === 'Egg') {
+            colorBase = 'rgb(66, 118, 138)';
+            colorSub = 'rgb(106,176,201)';
+        } else if (foodGroup === 'Fruit') {
+            colorBase = 'rgb(0, 158, 154)';
+            colorSub = 'rgb(110, 197, 193)';
+        } else if (foodGroup === 'Insect') {
+            colorBase = 'rgb(224, 131, 83)';
+            colorSub = 'rgb(232, 165, 132)';
+        } else if (foodGroup === 'Milk') {
+            colorBase = 'rgb(216, 85, 58)';
+            colorSub = 'rgb(225, 122, 101)';
+        } else if (foodGroup === 'Meat_Poultry') {
+            colorBase = 'rgb(127, 127, 127)';
+            colorSub = 'rgb(89, 89,89)';
+        } else if (foodGroup === 'Pulse_Seed_Nut') {
+            colorBase = 'rgb(68, 68, 68)';
+            colorSub = 'rgb(170, 170, 170)';
+        } else if (foodGroup === 'Shellfish') {
+            colorBase = 'rgb(193, 163, 222)';
+            colorSub = 'rgb(201, 163, 205)';
+        } else if (foodGroup === 'Spice_Condiment') {
+            colorBase = 'rgb(191, 161, 61)';
+            colorSub = 'rgb(173, 159, 114)';
+        } else if (foodGroup === 'StarchyRoot_Tuber') {
+            colorBase = 'rgb(0, 153, 77)';
+            colorSub = 'rgb(0, 179, 119)';
+        } else if (foodGroup === 'Vegetable') {
+            colorBase = 'rgb(134, 55, 143)';
+            colorSub = 'rgb(188,94,199)';
+        }
+
+        headerColor(colorBase);
+        contentHeaderColor(colorSub);
+    }
+
+    function headerColor(color) {
+        var content_category = document.getElementById('content-category');
+        var content_header = document.getElementsByClassName('content-header');
+
+        content_category.style.backgroundColor = color;
+        content_category.style.color = '#ffffff';
+
+        [...content_header].forEach(function(header) {
+            header.style.backgroundColor = color;
+            header.style.color = '#ffffff';
+        });
+    }
+
+    function contentHeaderColor(color) {
+        var content_headerH2 = document.getElementsByClassName('content-headerH2');
+
+        [...content_headerH2].forEach(function(headerH2) {
+            headerH2.style.backgroundColor = color;
+        });
+    }
+
+
     window.addEventListener('load', function () {
         sortTopics();
-        addContent();
+
+        changeColor();
     });
 </script>
 
