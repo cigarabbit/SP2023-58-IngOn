@@ -1,7 +1,5 @@
 package IngOn.IngredientSubstitution.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.springframework.stereotype.Service;
 
@@ -14,14 +12,12 @@ import org.semanticweb.owlapi.util.ShortFormProvider;
 import org.semanticweb.owlapi.util.SimpleShortFormProvider;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.*;
 
 @Service
 public class OntologyService {
-    private static Set<String> processedProperties = new HashSet<>();
-
     private static HashMap<String, Set<String>> allConceptNames = new HashMap<>();
+    private static HashMap<String, HashMap<String, Set<String>>> conceptWithValues = new HashMap<>();
 
     private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
 
@@ -175,11 +171,27 @@ public class OntologyService {
         return allConceptNames;
     }
 
-    /**
-     * Retrieve all object properties exist in the ontology.
-     * @param ontology
-     * @return
-     */
+    public static HashMap<String, HashMap<String, Set<String>>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
+
+        for (OWLClassExpression superClass : cls.getSuperClasses(ontology)) {
+            if (superClass instanceof OWLObjectSomeValuesFrom) {
+                OWLObjectSomeValuesFrom someValuesFrom = (OWLObjectSomeValuesFrom) superClass;
+                OWLProperty property = (OWLProperty) someValuesFrom.getProperty();
+                OWLClassExpression filler = someValuesFrom.getFiller();
+
+                String className = getShortForm(cls);
+                String propertyName = getObjectPropertyShortForm((OWLObjectProperty) property);
+                String fillerName = getShortForm((OWLClass) filler);
+
+                System.out.println(className + propertyName + fillerName);
+
+            }
+        }
+
+        return conceptWithValues;
+    }
+
+
     public static Set<String> retrieveAllObjectProperties(OWLOntology ontology) {
         Set<String> objectProperties = new HashSet<>();
 
@@ -191,11 +203,6 @@ public class OntologyService {
         return objectProperties;
     }
 
-    /**
-     * Retrieve the short form of an object property.
-     * @param objectProperty
-     * @return
-     */
     public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {
         ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
         return shortFormProvider.getShortForm(objectProperty);
