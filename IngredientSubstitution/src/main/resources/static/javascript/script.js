@@ -325,7 +325,7 @@ function clicked(clickedNode) {
 }
 
 const customColors = ['#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
-const colors = ['#00376b', '#42768a', '#009E9A', '#E08353', '#D8553A', '#7F7F7F', '#444444', '#c1a3de', '#BFA13D', '#00994D', '#86378f'];
+const colors = ['#00376b', '#42768a', '#009E9A', '#E08353', '#D8553A', '#A11D33FF', '#FB6F92FF', '#c1a3de', '#BFA13D', '#00994D', '#86378f'];
 
 const customColorScale = d3.scaleOrdinal().range(customColors);
 

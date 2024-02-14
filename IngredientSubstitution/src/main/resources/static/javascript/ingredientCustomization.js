@@ -2,6 +2,7 @@ window.addEventListener('load', function () {
     sortTopics();
     retrieveData();
     changeColor();
+
 });
 
 var currentSortOrder = 'asc';
@@ -27,24 +28,37 @@ function sortTopics() {
     currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
 }
 
+function filterProperty() {
+    // Select properties they would like to find
+
+}
+
 function retrieveData() {
     var sidebarTopics = document.querySelectorAll('#sidebar-topic ul li a');
     var contentBox = document.querySelector('#content-box');
     var contentHeader = document.querySelector('.content-header');
 
-    sidebarTopics.forEach(function(topic) {
-        topic.addEventListener('click', function(event) {
-            var clickedTopic = event.target.textContent;
-            console.log('Clicked:', clickedTopic);
-
-            contentHeader.textContent = clickedTopic;
-
-            if (contentHeader) {
-                contentBox.style.opacity = '1';
-            }
-
+    function handleTopicClick(event) {
+        sidebarTopics.forEach(function(topic) {
+            topic.classList.remove('active-topic');
         });
+
+        event.target.classList.add('active-topic');
+
+        var clickedTopic = event.target.textContent;
+
+        contentHeader.textContent = clickedTopic;
+
+        contentBox.style.opacity = '1';
+    }
+
+    sidebarTopics.forEach(function(topic) {
+        topic.addEventListener('click', handleTopicClick);
     });
+
+    if (sidebarTopics.length > 0) {
+        sidebarTopics[0].click();
+    }
 }
 
 function changeColor() {
@@ -79,13 +93,13 @@ function changeColor() {
 
         imgElement.src = 'img/category/milk.png';
     } else if (foodGroup === 'Meat_Poultry') {
-        colorBase = 'rgb(127, 127, 127)';
-        colorSub = 'rgb(89, 89,89)';
+        colorBase = 'rgb(251, 111, 146)';
+        colorSub = 'rgb(255, 143, 171)';
 
         imgElement.src = 'img/category/meat.png';
     } else if (foodGroup === 'Pulse_Seed_Nut') {
-        colorBase = 'rgb(68, 68, 68)';
-        colorSub = 'rgb(170, 170, 170)';
+        colorBase = 'rgb(161,29,51)';
+        colorSub = 'rgb(218, 30, 55)';
 
         imgElement.src = 'img/category/Pulse_Seed_Nut.png';
     } else if (foodGroup === 'Shellfish') {
