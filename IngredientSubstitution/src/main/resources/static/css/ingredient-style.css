@@ -161,16 +161,14 @@
     list-style-type: none;
 }
 
-#foodtype-img {
+#category-imgbox {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: flex-end;
 }
 
-#foodtype-img img {
+#foodtype-img {
     pointer-events: none;
     max-width: 70%;
     max-height: 80%;
-    bottom: 10px;
 }

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ingredient | IngOn: Thai Ingredient Substitution</title>
+    <script src="javascript/ingredientCustomization.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script type="text/javascript" charset="utf8"
             src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
@@ -103,114 +104,13 @@
                 <div class="property-box" id="cooking-types"></div>
                 <h2 class="content-headerH2">Possible Substitutions</h2>
                 <div class="property-box" id="possible-substitutions"></div>
-                <div id="foodtype-img">
-                    <img src="img/category/cereal.png" alt="cereals">
+                <div id="category-imgbox">
+                    <img id="foodtype-img">
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<script>
-    var currentSortOrder = 'asc';
-    var contentContainer = document.getElementById('content');
-    var sidebarTopic = document.getElementById('sidebar-topic');
-    var indexCounter = 0;
-    var conceptItems = sidebarTopic.querySelectorAll('ul > li');
-    var numberOfConcepts = conceptItems.length;
-
-    function sortTopics() {
-        var sidebar = document.getElementById("sidebar-topic");
-        var list = sidebar.querySelector("ul");
-        var items = Array.from(list.getElementsByTagName("li"));
-
-        items.sort(function (a, b) {
-            if (currentSortOrder === 'asc') {
-                return a.textContent.localeCompare(b.textContent);
-            } else {
-                return b.textContent.localeCompare(a.textContent);
-            }
-        });
-
-        list.innerHTML = "";
-        items.forEach(function (item) {
-            list.appendChild(item);
-        });
-
-        currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
-    }
-
-    function changeColor() {
-        var foodGroup = document.getElementById('foodGroupTitle').textContent;
-
-        var colorBase, colorSub;
-        if (foodGroup === 'Cereal') {
-            colorBase = 'rgb(0, 55, 107)';
-            colorSub = 'rgb(0, 116, 217)';
-        } else if (foodGroup === 'Egg') {
-            colorBase = 'rgb(66, 118, 138)';
-            colorSub = 'rgb(106,176,201)';
-        } else if (foodGroup === 'Fruit') {
-            colorBase = 'rgb(0, 158, 154)';
-            colorSub = 'rgb(110, 197, 193)';
-        } else if (foodGroup === 'Insect') {
-            colorBase = 'rgb(224, 131, 83)';
-            colorSub = 'rgb(232, 165, 132)';
-        } else if (foodGroup === 'Milk') {
-            colorBase = 'rgb(216, 85, 58)';
-            colorSub = 'rgb(225, 122, 101)';
-        } else if (foodGroup === 'Meat_Poultry') {
-            colorBase = 'rgb(127, 127, 127)';
-            colorSub = 'rgb(89, 89,89)';
-        } else if (foodGroup === 'Pulse_Seed_Nut') {
-            colorBase = 'rgb(68, 68, 68)';
-            colorSub = 'rgb(170, 170, 170)';
-        } else if (foodGroup === 'Shellfish') {
-            colorBase = 'rgb(193, 163, 222)';
-            colorSub = 'rgb(201, 163, 205)';
-        } else if (foodGroup === 'Spice_Condiment') {
-            colorBase = 'rgb(191, 161, 61)';
-            colorSub = 'rgb(173, 159, 114)';
-        } else if (foodGroup === 'StarchyRoot_Tuber') {
-            colorBase = 'rgb(0, 153, 77)';
-            colorSub = 'rgb(0, 179, 119)';
-        } else if (foodGroup === 'Vegetable') {
-            colorBase = 'rgb(134, 55, 143)';
-            colorSub = 'rgb(188,94,199)';
-        }
-
-        headerColor(colorBase);
-        contentHeaderColor(colorSub);
-    }
-
-    function headerColor(color) {
-        var content_category = document.getElementById('content-category');
-        var content_header = document.getElementsByClassName('content-header');
-
-        content_category.style.backgroundColor = color;
-        content_category.style.color = '#ffffff';
-
-        [...content_header].forEach(function(header) {
-            header.style.backgroundColor = color;
-            header.style.color = '#ffffff';
-        });
-    }
-
-    function contentHeaderColor(color) {
-        var content_headerH2 = document.getElementsByClassName('content-headerH2');
-
-        [...content_headerH2].forEach(function(headerH2) {
-            headerH2.style.backgroundColor = color;
-        });
-    }
-
-
-    window.addEventListener('load', function () {
-        sortTopics();
-
-        changeColor();
-    });
-</script>
 
 </body>
 
