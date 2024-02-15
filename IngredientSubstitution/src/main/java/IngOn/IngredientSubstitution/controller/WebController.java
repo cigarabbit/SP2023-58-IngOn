@@ -1,5 +1,6 @@
 package IngOn.IngredientSubstitution.controller;
 
+import IngOn.IngredientSubstitution.service.DescriptionLogicDisplayService;
 import IngOn.IngredientSubstitution.service.OntologyConverter;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class WebController {
 
 // private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
  private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
-private static final HashMap<String, Set<String>> concepts;
+private static final HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts;
     static {
         try {
             concepts = OntologyConverter.readJSONfile();
@@ -54,15 +55,16 @@ private static final HashMap<String, Set<String>> concepts;
     public String document() { return "document"; }
 
     @GetMapping("/ingredient")
-    public String ingredient(@RequestParam("id") String selectedId, Model model, HttpSession session) throws IOException {
+    public String ingredient(@RequestParam("id") String selectedId, Model model) throws IOException {
 
-        Set<String> conceptList = concepts.get(selectedId); // specific category
+        HashMap<String, HashMap<String, Set<String>>> conceptList = concepts.get(selectedId); // specific category
+        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getColorProperties(conceptList);
 
         // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
 
-        model.addAttribute("conceptList", conceptList);
+        model.addAttribute("conceptList", conceptList.keySet());
+        model.addAttribute("colorProp", colorProperties);
         model.addAttribute("foodGroup", selectedId);
-
 
         return "ingredient";
     }

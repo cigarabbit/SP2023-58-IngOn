@@ -14,6 +14,10 @@ body {
     height: 75vh;
 }
 
+input {
+    text-align: center;
+}
+
 .node {
     pointer-events: all;
     cursor: pointer;

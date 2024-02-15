@@ -16,7 +16,7 @@ import java.util.*;
 
 @Service
 public class OntologyService {
-    private static HashMap<String, Set<String>> allConceptNames = new HashMap<>();
+    private static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> allConceptNames = new HashMap<>();
     private static HashMap<String, HashMap<String, Set<String>>> conceptWithValues = new HashMap<>();
 
     private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
@@ -53,59 +53,63 @@ public class OntologyService {
         return ontology;
     }
 
-    /**
-     * Retrieve a set of string of concept names from the given .owl file.
-     * @param ontology
-     * @param foodGroup
-     * @return
-     */
-    public static Set<String> retrieveConceptName(OWLOntology ontology, String foodGroup) {
-        Set<String> conceptNames = new HashSet<>();
+    public static HashMap<String, HashMap<String, Set<String>>> retrieveConceptName(OWLOntology ontology, String foodGroup) {
 
         OWLReasoner reasoner = init(ontology);
-
         OWLClass mainClass = getOWLClassByName(ontology, foodGroup);
 
         Set<OWLClass> directSubclasses = reasoner.getSubClasses(mainClass, false).getFlattened();
+
+        HashMap<String, HashMap<String, Set<String>>> conceptList = new HashMap<>();
 
         for (OWLClass cls : directSubclasses) {
             String className = getShortForm(cls);
 
             // Not a class that is a type and not a type name
             if (checkSubclassType(className) && !isSubclassOfSpecificTypes(cls, ontology)) {
-                conceptNames.add(className);
 
                 // Get equivalent classes of the subclass
                 Set<OWLClassExpression> equivalentClasses = cls.getEquivalentClasses(ontology);
 
-                for (OWLClassExpression equivalentClass : equivalentClasses) {
-                    String equivalentCls = getShortForm(equivalentClass.asOWLClass());
-                    conceptNames.add(equivalentCls);
-                }
+                // Store the returned value from retrieveConceptValues
+                conceptList.put(className, retrieveConceptValues(ontology, cls));
             }
         }
 
-        return conceptNames;
+        return conceptList;
     }
 
     /**
      * Retrieve all concepts exist in Thai ingredients ontology.
+     * Category: Class Name -> Property with set of values
      * @param ontology
      * @return
      */
-    public static HashMap<String, Set<String>> retrieveAllConcepts(OWLOntology ontology) {
+    public static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> retrieveAllConcepts(OWLOntology ontology) {
 
-        allConceptNames.put("Cereal", retrieveConceptName(ontology, "Cereal"));
-        allConceptNames.put("Egg", retrieveConceptName(ontology, "Egg"));
-        allConceptNames.put("Fruit", retrieveConceptName(ontology, "Fruit"));
-        allConceptNames.put("Insect", retrieveConceptName(ontology, "Insect"));
-        allConceptNames.put("Milk", retrieveConceptName(ontology, "Milk"));
-        allConceptNames.put("Meat_Poultry", retrieveConceptName(ontology, "Meat_Poultry"));
-        allConceptNames.put("Pulse_Seed_Nut", retrieveConceptName(ontology, "Pulse_Seed_Nut"));
-        allConceptNames.put("Shellfish", retrieveConceptName(ontology, "Shellfish"));
-        allConceptNames.put("Spice_Condiment", retrieveConceptName(ontology, "Spice_Condiment"));
-        allConceptNames.put("StarchyRoot_Tuber", retrieveConceptName(ontology, "StarchyRoot_Tuber"));
-        allConceptNames.put("Vegetable", retrieveConceptName(ontology, "Vegetable"));
+        HashMap<String, HashMap<String, Set<String>>> cerealConcepts = retrieveConceptName(ontology, "Cereal");
+        HashMap<String, HashMap<String, Set<String>>> eggConcepts = retrieveConceptName(ontology, "Egg");
+        HashMap<String, HashMap<String, Set<String>>> fruitConcepts = retrieveConceptName(ontology, "Fruit");
+        HashMap<String, HashMap<String, Set<String>>> insectConcepts = retrieveConceptName(ontology, "Insect");
+        HashMap<String, HashMap<String, Set<String>>> milkConcepts = retrieveConceptName(ontology, "Milk");
+        HashMap<String, HashMap<String, Set<String>>> meatPoultryConcepts = retrieveConceptName(ontology, "Meat_Poultry");
+        HashMap<String, HashMap<String, Set<String>>> pulseSeedNutConcepts = retrieveConceptName(ontology, "Pulse_Seed_Nut");
+        HashMap<String, HashMap<String, Set<String>>> shellfishConcepts = retrieveConceptName(ontology, "Shellfish");
+        HashMap<String, HashMap<String, Set<String>>> spiceCondimentConcepts = retrieveConceptName(ontology, "Spice_Condiment");
+        HashMap<String, HashMap<String, Set<String>>> starchyRootTuberConcepts = retrieveConceptName(ontology, "StarchyRoot_Tuber");
+        HashMap<String, HashMap<String, Set<String>>> vegetableConcepts = retrieveConceptName(ontology, "Vegetable");
+
+        allConceptNames.put("Cereal", cerealConcepts);
+        allConceptNames.put("Egg", eggConcepts);
+        allConceptNames.put("Fruit", fruitConcepts);
+        allConceptNames.put("Insect", insectConcepts);
+        allConceptNames.put("Milk", milkConcepts);
+        allConceptNames.put("Meat_Poultry", meatPoultryConcepts);
+        allConceptNames.put("Pulse_Seed_Nut", pulseSeedNutConcepts);
+        allConceptNames.put("Shellfish", shellfishConcepts);
+        allConceptNames.put("Spice_Condiment", spiceCondimentConcepts);
+        allConceptNames.put("StarchyRoot_Tuber", starchyRootTuberConcepts);
+        allConceptNames.put("Vegetable", vegetableConcepts);
 
         return allConceptNames;
     }
@@ -167,13 +171,14 @@ public class OntologyService {
         return shortFormProvider.getShortForm(cls);
     }
 
-    public static HashMap<String, Set<String>> getAllConceptNames() {
+    public static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> getAllConceptNames() {
         return allConceptNames;
     }
 
-    public static HashMap<String, HashMap<String, Set<String>>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
+    public static HashMap<String, Set<String>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
+//        OWLClass cls = ontology.getOWLOntologyManager().getOWLDataFactory().getOWLClass(IRI.create("http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#RawCricket"));
+
         HashMap<String, Set<String>> propertyList = new HashMap<>();
-        String key_className = getShortForm(cls);
 
         for (OWLClassExpression superClass : cls.getSuperClasses(ontology)) {
             if (superClass instanceof OWLObjectSomeValuesFrom) {
@@ -196,22 +201,8 @@ public class OntologyService {
             }
         }
 
-        System.out.println(key_className + ": " + propertyList);
-        conceptWithValues.put(key_className, propertyList);
 
-        return conceptWithValues;
-    }
-
-
-    public static Set<String> retrieveAllObjectProperties(OWLOntology ontology) {
-        Set<String> objectProperties = new HashSet<>();
-
-        for (OWLObjectProperty objectProperty : ontology.getObjectPropertiesInSignature()) {
-            String propertyShortForm = getObjectPropertyShortForm(objectProperty);
-            objectProperties.add(propertyShortForm);
-        }
-
-        return objectProperties;
+        return propertyList;
     }
 
     public static String getObjectPropertyShortForm(OWLObjectProperty objectProperty) {

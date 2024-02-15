@@ -56,6 +56,7 @@ function retrieveData() {
         topic.addEventListener('click', handleTopicClick);
     });
 
+    // Display the first ingredient of that category by default
     if (sidebarTopics.length > 0) {
         sidebarTopics[0].click();
     }
