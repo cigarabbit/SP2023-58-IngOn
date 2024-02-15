@@ -14,7 +14,6 @@ public class OntologyConverter {
 //    private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
     private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 
-
     public static void writeAllConceptNamesToFile(String directoryPath, String fileName) {
         ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -25,37 +24,59 @@ public class OntologyConverter {
         OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
         ConceptListManager.loadConceptList(ontology);
 
-        HashMap<String, Set<String>> conceptList = ConceptListManager.getConceptList();
+        HashMap<String, HashMap<String, HashMap<String, Set<String>>>> conceptList = ConceptListManager.getConceptList();
 
-        // Format the concept list name
-        for (Map.Entry<String, Set<String>> entry : conceptList.entrySet()) {
+        HashMap<String, HashMap<String, HashMap<String, Set<String>>>> separatedKeysConceptList = new HashMap<>();
 
-            Set<String> conceptSet = entry.getValue();
+        for (Map.Entry<String, HashMap<String, HashMap<String, Set<String>>>> entry : conceptList.entrySet()) {
+            String outerKey = entry.getKey();
+            HashMap<String, HashMap<String, Set<String>>> innerMap = entry.getValue();
+            HashMap<String, HashMap<String, Set<String>>> separatedInnerMap = new HashMap<>();
 
-            String[] formattedConcepts = separateWord(conceptSet);
+            for (Map.Entry<String, HashMap<String, Set<String>>> innerEntry : innerMap.entrySet()) {
+                String[] formattedInnerKeyArray = separateWord(Collections.singleton(innerEntry.getKey()));
+                String formattedInnerKey = String.join(" ", formattedInnerKeyArray);
+                System.out.println(formattedInnerKey);
 
-            conceptList.put(entry.getKey(), new HashSet<>(Arrays.asList(formattedConcepts)));
+                HashMap<String, Set<String>> propertyList = innerEntry.getValue();
+                HashMap<String, Set<String>> separatedPropertyList = new HashMap<>();
+
+                for (Map.Entry<String, Set<String>> propertyEntry : propertyList.entrySet()) {
+                    Set<String> conceptSet = propertyEntry.getValue();
+                    Set<String> formattedConcepts = new HashSet<>();
+
+                    for (String concept : conceptSet) {
+                        String[] formattedWords = separateWord(Collections.singleton(concept));
+                        formattedConcepts.addAll(Arrays.asList(formattedWords));
+                    }
+
+                    separatedPropertyList.put(propertyEntry.getKey(), formattedConcepts);
+                }
+
+                separatedInnerMap.put(formattedInnerKey, separatedPropertyList);
+            }
+
+            separatedKeysConceptList.put(outerKey, separatedInnerMap);
         }
 
         try {
-            objectMapper.writeValue(file, conceptList);
-
+            objectMapper.writeValue(file, separatedKeysConceptList);
             System.out.println("JSON data written to " + file.getAbsolutePath());
         } catch (IOException e) {
             e.printStackTrace();
-
             System.err.println("Error writing JSON data to " + file.getAbsolutePath());
         }
     }
 
-    public static HashMap<String, Set<String>> readJSONfile() throws IOException {
+
+    public static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> readJSONfile() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
 
-        HashMap<String, Set<String>> concepts = null;
+        HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts = null;
 
         try {
             File jsonFile = new File("IngredientSubstitution/src/main/resources/data.json");
-            concepts = objectMapper.readValue(jsonFile, new TypeReference<HashMap<String, Set<String>>>() {});
+            concepts = objectMapper.readValue(jsonFile, new TypeReference<HashMap<String, HashMap<String, HashMap<String, Set<String>>>>>() {});
 
         } catch (IOException e) {
             e.printStackTrace();
