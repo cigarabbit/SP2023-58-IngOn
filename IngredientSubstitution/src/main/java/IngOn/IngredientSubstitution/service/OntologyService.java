@@ -111,7 +111,7 @@ public class OntologyService {
     }
 
     public static Boolean checkSubclassType(String className) {
-        return !className.equals("CerealType") && !className.equals("SeedType") && !className.equals("MeatType")
+        return !className.equals("CerealType") && !className.equals("SeedsType") && !className.equals("MeatType")
                 && !className.equals("SpiceType") && !className.equals("Nothing");
     }
 
@@ -120,7 +120,7 @@ public class OntologyService {
 
         OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
 
-        String[] specificClassNames = {"CerealType", "SeedType", "MeatType", "SpiceType"};
+        String[] specificClassNames = {"CerealType", "SeedsType", "MeatType", "SpiceType"};
 
         for (String className : specificClassNames) {
             IRI classIRI = IRI.create(base_IRI + className);
@@ -172,6 +172,8 @@ public class OntologyService {
     }
 
     public static HashMap<String, HashMap<String, Set<String>>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
+        HashMap<String, Set<String>> propertyList = new HashMap<>();
+        String key_className = getShortForm(cls);
 
         for (OWLClassExpression superClass : cls.getSuperClasses(ontology)) {
             if (superClass instanceof OWLObjectSomeValuesFrom) {
@@ -179,14 +181,23 @@ public class OntologyService {
                 OWLProperty property = (OWLProperty) someValuesFrom.getProperty();
                 OWLClassExpression filler = someValuesFrom.getFiller();
 
-                String className = getShortForm(cls);
                 String propertyName = getObjectPropertyShortForm((OWLObjectProperty) property);
                 String fillerName = getShortForm((OWLClass) filler);
 
-                System.out.println(className + propertyName + fillerName);
+                if (propertyList.containsKey(propertyName)) {
+                    Set<String> existingSet = propertyList.get(propertyName);
+                    existingSet.add(fillerName);
+                } else {
+                    Set<String> newSet = new HashSet<>();
+                    newSet.add(fillerName);
 
+                    propertyList.put(propertyName, newSet);
+                }
             }
         }
+
+        System.out.println(key_className + ": " + propertyList);
+        conceptWithValues.put(key_className, propertyList);
 
         return conceptWithValues;
     }
