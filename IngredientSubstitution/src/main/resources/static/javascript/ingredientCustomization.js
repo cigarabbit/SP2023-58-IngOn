@@ -2,10 +2,10 @@ window.addEventListener('load', function () {
     sortTopics();
     retrieveData();
     changeColor();
-
 });
 
 var currentSortOrder = 'asc';
+var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp;
 
 function sortTopics() {
     var sidebar = document.getElementById("sidebar-topic");
@@ -33,26 +33,96 @@ function filterProperty() {
 
 }
 
+function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures) {
+    foodGroup = group;
+    colorProp = colors;
+    flavorProp = flavors;
+    mineralProp = minerals;
+    nutriProp = nutris;
+    vitaProp = vitas;
+    shapeProp = shapes;
+    textureProp = textures;
+}
+
 function retrieveData() {
     var sidebarTopics = document.querySelectorAll('#sidebar-topic ul li a');
     var contentBox = document.querySelector('#content-box');
     var contentHeader = document.querySelector('.content-header');
 
+    var DL_Display = document.querySelector('#DL_Syntax span');
+    var colorPropLi = document.querySelector('#propertyColor span');
+    var flavorPropLi = document.querySelector('#propertyFlavor span');
+    var shapePropLi = document.querySelector('#propertyShape span');
+    var texturePropLi = document.querySelector('#propertyTexture span');
+
+    var mineralPropLi = document.querySelector('#propMineral div');
+    var nutriPropLi = document.querySelector('#propNutrient div');
+    var vitaPropLi = document.querySelector('#propVitamin div');
+
+
     function handleTopicClick(event) {
-        sidebarTopics.forEach(function(topic) {
+        sidebarTopics.forEach(function (topic) {
             topic.classList.remove('active-topic');
         });
 
         event.target.classList.add('active-topic');
 
         var clickedTopic = event.target.textContent;
-
         contentHeader.textContent = clickedTopic;
+
+        var colors = colorProp[clickedTopic].join(', ');
+        var flavors = flavorProp[clickedTopic].join(', ');
+        var shapes = shapeProp[clickedTopic].join(', ');
+        var textures = textureProp[clickedTopic].join(', ');
+        var minerals = mineralProp[clickedTopic].join(', ');
+        var nutris = nutriProp[clickedTopic].join(', ');
+        var vitas = vitaProp[clickedTopic].join(', ');
+
+        var DLSyntax = getDLSyntax(clickedTopic, colors, flavors, shapes, textures, minerals, nutris, vitas);
+
+        DL_Display.innerHTML = '';
+        colorPropLi.innerHTML = '';
+        flavorPropLi.innerHTML = '';
+        shapePropLi.innerHTML = '';
+        texturePropLi.innerHTML = '';
+        mineralPropLi.innerHTML = '';
+        nutriPropLi.innerHTML = '';
+        vitaPropLi.innerHTML = '';
+
+        mineralProp[clickedTopic].forEach(function(mineral) {
+            var span = document.createElement('span');
+            span.textContent = mineral;
+            span.classList.add('nutrient-item');
+
+            mineralPropLi.appendChild(span);
+        });
+
+        nutriProp[clickedTopic].forEach(function(nutri) {
+            var span = document.createElement('span');
+            span.textContent = nutri;
+            span.classList.add('nutrient-item');
+
+            nutriPropLi.appendChild(span);
+        });
+
+        vitaProp[clickedTopic].forEach(function(vita) {
+            var span = document.createElement('span');
+            span.textContent = vita;
+            span.classList.add('nutrient-item');
+
+            vitaPropLi.appendChild(span);
+        });
+
+        DL_Display.append(DLSyntax);
+        colorPropLi.append(colors);
+        flavorPropLi.append(flavors);
+        shapePropLi.append(shapes);
+        texturePropLi.append(textures);
 
         contentBox.style.opacity = '1';
     }
 
-    sidebarTopics.forEach(function(topic) {
+    sidebarTopics.forEach(function (topic) {
         topic.addEventListener('click', handleTopicClick);
     });
 
@@ -61,6 +131,32 @@ function retrieveData() {
         sidebarTopics[0].click();
     }
 }
+
+function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, nutris, vitas) {
+    var syntax = conceptName + " ⊑ " + foodGroup;
+
+    function handleProperty(property, type) {
+        if (property.includes(',')) {
+            var propertyList = property.split(',');
+            propertyList.forEach(function(prop) {
+                syntax += ' ⊓ ∃ ' + type + prop;
+            });
+        } else {
+            syntax += ' ⊓ ∃ ' + type + property;
+        }
+    }
+
+    handleProperty(colors, 'hasColor.');
+    handleProperty(flavors, 'hasFlavor.');
+    handleProperty(shapes, 'hasShape.');
+    handleProperty(textures, 'hasTexture.');
+    handleProperty(minerals, 'hasMineral.');
+    handleProperty(nutris, 'hasNutrient.');
+    handleProperty(vitas, 'hasVitamin.');
+
+    return syntax;
+}
+
 
 function changeColor() {
     var foodGroup = document.getElementById('foodGroupTitle').textContent;

@@ -6,21 +6,29 @@ import java.util.Map;
 import java.util.Set;
 
 public class DescriptionLogicDisplayService {
-    public static HashMap<String, Set<String>> getColorProperties(HashMap<String, HashMap<String, Set<String>>> conceptList) {
-        HashMap<String, Set<String>> colorProperties = new HashMap<>();
+
+    private static HashMap<String, HashMap<String, Set<String>>> conceptList = new HashMap<>();
+
+    public static void setConceptList(HashMap<String, HashMap<String, Set<String>>> concepts) {
+        conceptList = concepts;
+    }
+
+    public static HashMap<String, Set<String>> getProperties(String type) {
+        HashMap<String, Set<String>> properties = new HashMap<>();
 
         for (Map.Entry<String, HashMap<String, Set<String>>> entry : conceptList.entrySet()) {
             String conceptName = entry.getKey();
             HashMap<String, Set<String>> propertyMap = entry.getValue();
 
-            if (propertyMap.containsKey("hasColor")) {
-                Set<String> colorSet = propertyMap.get("hasColor");
+            if (propertyMap.containsKey(type)) {
+                Set<String> propSet = propertyMap.get(type);
 
-                colorProperties.put(conceptName, colorSet);
+                properties.put(conceptName, propSet);
             }
         }
 
-        return colorProperties;
+        return properties;
     }
+
 
 }

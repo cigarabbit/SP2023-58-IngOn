@@ -72,8 +72,8 @@
             </div>
             <div id="sidebar-topic">
                 <ul>
-                    <li th:each="concept, iterStat : ${conceptList}">
-                        <a href="#"  th:text="${concept}"/>
+                    <li th:each="ingredient, iterStat : ${ingredientList}">
+                        <a href="#"  th:text="${ingredient}"/>
                     </li>
                 </ul>
             </div>
@@ -84,30 +84,27 @@
                 <div id="content-category">
                     <p id="foodGroupTitle" th:text="${foodGroup}"></p>
                 </div>
-                <button id="print-button" onclick="window.print()">
-                    <img src="img/print_FILL0_wght400_GRAD0_opsz24.png"><
-                </button>
+<!--                <button id="print-button" onclick="window.print()">-->
+<!--                    <img src="img/print_FILL0_wght400_GRAD0_opsz24.png">-->
+<!--                </button>-->
+                <h1 class="content-header"></h1>
             </div>
             <div id="content">
-                <h1 class="content-header"></h1>
-                <div>
+                <div id="DL_Syntax">
                     <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2>
+                    <span></span>
                 </div>
                 <div>
                     <h2 class="content-headerH2">PROPERTIES</h2>
-                    <ul>
-                        <li><strong><span th:text="${colorProp}"></span></strong></li>
-                        <li><strong>Flavor:</strong> </li>
-                        <li><strong>Shape:</strong> </li>
-                        <li><strong>Texture:</strong> </li>
-                        <li><strong>Type:</strong> </li>
+                    <ul id="content-properties">
+                        <li id="propertyColor">
+                            <strong>Color: <span></span></strong>
+                        </li>
+                        <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
+                        <li id="propertyShape"><strong>Shape: <span></span></strong> </li>
+                        <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
+<!--                        <li><strong><span th:if="$exists">Type: </span></strong> </li>-->
                     </ul>
-                </div>
-                <div>
-                    <h2 class="content-headerH2">NUTRIENT COMPOSITION</h2>
-                    <div class="nutrient-composition">
-                        <div class="nutrient-item"></div>
-                    </div>
                 </div>
                 <div>
                     <h2 class="content-headerH2">BENEFITS</h2>
@@ -117,6 +114,19 @@
                     <h2 class="content-headerH2">COOKING TYPES</h2>
                     <div class="property-box" id="cooking-types"></div>
                 </div>
+                <div>
+                    <h2 class="content-headerH2">NUTRIENT COMPOSITION</h2>
+                    <div class="nutrient-composition">
+                        <ul>
+                            <li id="propMineral"><Strong>Mineral: <div></div></Strong></li>
+                            <li id="propNutrient"><strong>Nutrient: <div></div></strong></li>
+                            <li id="propVitamin"><strong>Vitamin: <div></div></strong></li>
+                        </ul>
+
+<!--                        <div class="nutrient-item"></div>-->
+                    </div>
+                </div>
+
                 <div>
                     <h2 class="content-headerH2">POSSIBLE SUBSTITUTIONS</h2>
                     <div class="property-box" id="possible-substitutions"></div>
@@ -130,6 +140,26 @@
     </div>
 </div>
 
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+    var conceptList = /*[[${conceptList}]]*/ [];
+    var group = /*[[${foodGroup}]]*/ [];
+    var colorProp = /*[[${colorProp}]]*/ [];
+    var flavorProp = /*[[${flavorProp}]]*/ [];
+    var mineralProp = /*[[${mineralProp}]]*/ [];
+    var nutriProp = /*[[${nutriProp}]]*/ [];
+    var vitaProp = /*[[${vitaProp}]]*/ [];
+    var shapeProp = /*[[${shapeProp}]]*/ [];
+    var textureProp = /*[[${textureProp}]]*/ [];
+
+
+    console.log(conceptList)
+
+    setConceptList(group, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp);
+
+    /*]]>*/
+</script>
 </body>
 
 </html>

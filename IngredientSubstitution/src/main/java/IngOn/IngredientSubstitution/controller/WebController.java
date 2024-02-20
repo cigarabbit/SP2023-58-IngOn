@@ -58,13 +58,35 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     public String ingredient(@RequestParam("id") String selectedId, Model model) throws IOException {
 
         HashMap<String, HashMap<String, Set<String>>> conceptList = concepts.get(selectedId); // specific category
-        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getColorProperties(conceptList);
+
+        DescriptionLogicDisplayService.setConceptList(conceptList);
+
+        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getProperties("hasColor");
+        HashMap<String, Set<String>> flavorProperties = DescriptionLogicDisplayService.getProperties("hasFlavor");
+        HashMap<String, Set<String>> shapeProperties = DescriptionLogicDisplayService.getProperties("hasShape");
+        HashMap<String, Set<String>> textureProperties = DescriptionLogicDisplayService.getProperties("hasTexture");
+        HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral");
+        HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient");
+        HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin");
+
+
 
         // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
 
-        model.addAttribute("conceptList", conceptList.keySet());
-        model.addAttribute("colorProp", colorProperties);
         model.addAttribute("foodGroup", selectedId);
+        model.addAttribute("conceptList", conceptList);
+        model.addAttribute("ingredientList", conceptList.keySet());
+
+        // Properties
+        model.addAttribute("colorProp", colorProperties);
+        model.addAttribute("flavorProp", flavorProperties);
+        model.addAttribute("shapeProp", shapeProperties);
+        model.addAttribute("textureProp", textureProperties);
+        model.addAttribute("mineralProp", mineralProperties);
+        model.addAttribute("nutriProp", nutriProperties);
+        model.addAttribute("vitaProp", vitaProperties);
+
+
 
         return "ingredient";
     }

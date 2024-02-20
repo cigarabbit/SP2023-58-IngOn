@@ -3137,6 +3137,7 @@
     "Waxy Corn" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
+      "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Small", "Flat", "Round" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Potassium", "Zinc" ],
@@ -3601,6 +3602,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Chewy" ],
+      "hasColor" : [ "Brown", "Beige" ],
       "hasShape" : [ "Small", "Oval", "Round" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
@@ -3612,6 +3614,7 @@
     "Basmati Polished Rice" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
+      "hasColor" : [ "White" ],
       "hasShape" : [ "Small", "Oval", "Long" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
