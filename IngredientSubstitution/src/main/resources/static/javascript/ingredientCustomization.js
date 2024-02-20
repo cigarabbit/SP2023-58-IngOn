@@ -187,8 +187,8 @@ function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, n
     handleProperty(nutris, 'hasNutrient.');
     handleProperty(vitas, 'hasVitamin.');
 
-    handleProperty(benes, 'hasBenefit');
-    handleProperty(cooks, 'canCook');
+    handleProperty(benes, 'hasBenefit.');
+    handleProperty(cooks, 'canCook.');
 
 
 

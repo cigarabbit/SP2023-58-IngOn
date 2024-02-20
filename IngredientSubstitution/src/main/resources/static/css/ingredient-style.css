@@ -198,12 +198,16 @@
 
 #foodtype-img {
     pointer-events: none;
+    margin: auto;
     max-width: 70%;
     max-height: 80%;
 }
 
-@media screen and (max-width: 768px) {
-    #head-content {
-        width: 40vw;
-    }
+.vizButton {
+    background-color: lightslategray;
+    border-radius: 15px;
+    color: white;
+    position: absolute;
+    top: 15%;
+    right: 19%;
 }
