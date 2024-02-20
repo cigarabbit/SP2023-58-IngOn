@@ -8,7 +8,6 @@
     position: fixed;
 }
 
-
 .container {
     margin-top: 100px;
 }
@@ -94,13 +93,15 @@
     margin-top: 130px;
     margin-left: 40px;
     width: 95%;
+    font-size: 15px;
 }
 
 #head-content {
     position: fixed;
     padding: 20px;
     background-color: #FFFFFF;
-    width: 48vw;
+    margin: auto;
+    width: 43%;
 }
 
 #content-category {
@@ -133,6 +134,7 @@
 
 #content {
     padding-left: 20px;
+    width: 75%;
 }
 
 .content-headerH2 {
@@ -145,7 +147,6 @@
 }
 
 .nutrient-composition {
-
     padding-left: 20px;
 }
 
@@ -189,8 +190,20 @@
     margin-bottom: 20px;
 }
 
+#DL_Syntax span {
+    text-align: justify;
+    display: inline-block;
+    justify-content: center;
+}
+
 #foodtype-img {
     pointer-events: none;
     max-width: 70%;
     max-height: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    #head-content {
+        width: 40vw;
+    }
 }

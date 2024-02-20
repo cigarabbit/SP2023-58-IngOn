@@ -44,6 +44,11 @@
     height: 60vh;
 }
 
+.section-paragraph {
+    text-align: justify;
+    display: inline-block;
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 767px) {
     .row {
@@ -73,5 +78,7 @@
 
     .section-paragraph {
         font-size: 16px;
+        text-align: justify;
+        display: inline-block;
     }
 }

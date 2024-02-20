@@ -17,8 +17,8 @@ import java.util.*;
 @Controller
 public class WebController {
 
-// private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
- private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+ private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
+// private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 private static final HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts;
     static {
         try {

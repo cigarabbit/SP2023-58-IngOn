@@ -90,10 +90,6 @@
                 <h1 class="content-header"></h1>
             </div>
             <div id="content">
-                <div id="DL_Syntax">
-                    <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2>
-                    <span></span>
-                </div>
                 <div>
                     <h2 class="content-headerH2">PROPERTIES</h2>
                     <ul id="content-properties">
@@ -126,11 +122,15 @@
 <!--                        <div class="nutrient-item"></div>-->
                     </div>
                 </div>
-
+                <div id="DL_Syntax">
+                    <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2><br>
+                    <span></span>
+                </div>
                 <div>
                     <h2 class="content-headerH2">POSSIBLE SUBSTITUTIONS</h2>
                     <div class="property-box" id="possible-substitutions"></div>
                 </div>
+
                 <div id="category-imgbox">
                     <img id="foodtype-img">
                 </div>
@@ -141,6 +141,7 @@
 </div>
 
 <script th:inline="javascript">
+
     /*<![CDATA[*/
 
     var conceptList = /*[[${conceptList}]]*/ [];
