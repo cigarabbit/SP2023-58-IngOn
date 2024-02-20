@@ -33,7 +33,7 @@ function filterProperty() {
 
 }
 
-function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures) {
+function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures, benes, cooks) {
     foodGroup = group;
     colorProp = colors;
     flavorProp = flavors;
@@ -42,6 +42,8 @@ function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes,
     vitaProp = vitas;
     shapeProp = shapes;
     textureProp = textures;
+    beneProp = benes;
+    cookProp = cooks;
 }
 
 function retrieveData() {
@@ -59,6 +61,8 @@ function retrieveData() {
     var nutriPropLi = document.querySelector('#propNutrient div');
     var vitaPropLi = document.querySelector('#propVitamin div');
 
+    var benePropLi = document.querySelector('#benefits');
+    var cookPropLi = document.querySelector('#cooking-types');
 
     function handleTopicClick(event) {
         sidebarTopics.forEach(function (topic) {
@@ -81,6 +85,7 @@ function retrieveData() {
         }
 
         var textures = textureProp[clickedTopic].join(', ');
+
         var minerals;
         if (mineralProp[clickedTopic] !== undefined) {
             minerals = mineralProp[clickedTopic].join(', ');
@@ -91,7 +96,10 @@ function retrieveData() {
         var nutris = nutriProp[clickedTopic].join(', ');
         var vitas = vitaProp[clickedTopic].join(', ');
 
-        var DLSyntax = getDLSyntax(clickedTopic, colors, flavors, shapes, textures, minerals, nutris, vitas);
+        var benes = beneProp[clickedTopic].join(', ');
+        var cooks = cookProp[clickedTopic].join(', ');
+
+        var DLSyntax = getDLSyntax(clickedTopic, colors, flavors, shapes, textures, minerals, nutris, vitas, benes, cooks);
 
         DL_Display.innerHTML = '';
         colorPropLi.innerHTML = '';
@@ -101,6 +109,8 @@ function retrieveData() {
         mineralPropLi.innerHTML = '';
         nutriPropLi.innerHTML = '';
         vitaPropLi.innerHTML = '';
+        benePropLi.innerHTML = '';
+        cookPropLi.innerHTML = '';
 
         if (mineralProp[clickedTopic] !== undefined) {
             mineralProp[clickedTopic].forEach(function(mineral) {
@@ -139,6 +149,8 @@ function retrieveData() {
         flavorPropLi.append(flavors);
         shapePropLi.append(shapes);
         texturePropLi.append(textures);
+        benePropLi.append(benes);
+        cookPropLi.append(cooks);
 
         contentBox.style.opacity = '1';
     }
@@ -153,7 +165,7 @@ function retrieveData() {
     }
 }
 
-function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, nutris, vitas) {
+function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, nutris, vitas, benes, cooks) {
     var syntax = conceptName + " ⊑ " + foodGroup;
 
     function handleProperty(property, type) {
@@ -174,6 +186,11 @@ function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, n
     handleProperty(minerals, 'hasMineral.');
     handleProperty(nutris, 'hasNutrient.');
     handleProperty(vitas, 'hasVitamin.');
+
+    handleProperty(benes, 'hasBenefit');
+    handleProperty(cooks, 'canCook');
+
+
 
     return syntax;
 }

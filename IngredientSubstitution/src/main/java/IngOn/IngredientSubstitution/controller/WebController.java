@@ -68,8 +68,10 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral");
         HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient");
         HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin");
+        HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit");
+        HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook");
 
-
+        // TODO: hasType
 
         // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
 
@@ -85,8 +87,8 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         model.addAttribute("mineralProp", mineralProperties);
         model.addAttribute("nutriProp", nutriProperties);
         model.addAttribute("vitaProp", vitaProperties);
-
-
+        model.addAttribute("beneProp", beneProperties);
+        model.addAttribute("cookProp", cookProperties);
 
         return "ingredient";
     }
