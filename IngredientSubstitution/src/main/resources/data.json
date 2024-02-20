@@ -4449,6 +4449,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4464,6 +4465,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Beige" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4476,6 +4478,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4488,6 +4491,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Green" ],
@@ -4501,6 +4505,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Red", "Brown", "Beige" ],
+      "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4512,6 +4517,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Boiled", "Diced", "Friend", "Stir- Fried", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Green" ],
@@ -4527,6 +4533,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Roasted" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Salty" ],
@@ -4539,6 +4546,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Powdery", "Juicy" ],
       "hasColor" : [ "Green" ],
+      "hasShape" : [ "Long", "Powdery" ],
       "canCook" : [ "Boiled", "Fried", "Marinated", "Baked", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4552,6 +4560,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Long" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami" ],
@@ -4565,6 +4574,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Chewy", "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Brown", "White", "Yellow" ],
+      "hasShape" : [ "Liquid", "Long", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Lactonic", "Umami" ],
@@ -4577,6 +4587,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Silky", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Cubed", "Sliced Sips" ],
       "canCook" : [ "Marinated", "Seasoned" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Lactonic", "Umami", "Sulfury" ],
@@ -4588,6 +4599,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Chewy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Tubular" ],
       "canCook" : [ "Roasted", "Baked", "Boilded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4604,6 +4616,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Juicy" ],
       "hasColor" : [ "Green" ],
+      "hasShape" : [ "Long" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Terpenoid" ],
@@ -4615,6 +4628,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Silky", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Cubed", "Sliced Sips" ],
       "canCook" : [ "Boiled", "Fried", "Marinated", "Stir- Fried", "Seasoned", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Salty" ],
@@ -4627,6 +4641,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "White", "Black" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4640,6 +4655,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Black" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4651,6 +4667,7 @@
     "Butterfly Pea" : {
       "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Red" ],
+      "hasShape" : [ "Sliced Sips" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Floral" ],
@@ -4662,6 +4679,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Crunchy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Cubed" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sour" ],
@@ -4674,6 +4692,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4687,6 +4706,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Silky", "Creamy" ],
       "hasColor" : [ "White", "Yellow", "Golden" ],
+      "hasShape" : [ "Cubed", "Sliced Sips" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Marinated", "Sauteed", "Stir- Fried", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Brown", "Lactonic" ],
@@ -4699,6 +4719,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Sliced", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Green" ],
@@ -4708,6 +4729,7 @@
     },
     "Galangal" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Segmented", "Cylindrical", "Thin" ],
       "canCook" : [ "Minced", "Sliced", "Crushed" ],
@@ -4720,6 +4742,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Black" ],
+      "hasShape" : [ "Grainy" ],
       "canCook" : [ "Chopped", "Fried", "Marinated", "Stir- Fried", "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Terpenoid" ],
@@ -4733,6 +4756,7 @@
     "Soy Bean" : {
       "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Marinated", "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4747,6 +4771,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Chopped", "Sliced" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4758,6 +4783,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown", "Green", "Golden" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4772,6 +4798,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Black" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4784,6 +4811,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Black" ],
+      "hasShape" : [ "Grainy" ],
       "canCook" : [ "Roasted", "Fried", "Marinated", "Seasoned", "Raw", "Blanched", "Grounded", "Infused" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Woody" ],
@@ -4800,6 +4828,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy", "Tender" ],
       "hasColor" : [ "White", "Green" ],
+      "hasShape" : [ "Slices", "Cubed" ],
       "canCook" : [ "Grated", "Chopped", "Sliced", "Blended", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4811,6 +4840,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Fresh", "Sliced", "Peeled" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
@@ -4823,6 +4853,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Powdery" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4837,6 +4868,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Beige" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Fresh", "Roasted", "Boiled", "Fried", "Buttered", "Stir- Fried", "Peeled", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Woody", "Umami" ],
@@ -4848,6 +4880,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4859,6 +4892,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Cubed", "Sliced Sips" ],
       "canCook" : [ "Roasted", "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4871,6 +4905,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4883,6 +4918,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4895,6 +4931,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Lactonic" ],
@@ -4907,6 +4944,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Red" ],
+      "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4919,6 +4957,7 @@
   "Vegetable" : {
     "Mung Bean Sprout" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical", "Sprouted" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -4929,6 +4968,7 @@
     },
     "Banana Blossom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Purple" ],
       "hasShape" : [ "Tubular", "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -4939,6 +4979,7 @@
     },
     "Chinese Leek" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Green" ],
       "hasShape" : [ "Small", "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -4949,6 +4990,7 @@
     },
     "Mature Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Tan", "Brown" ],
       "hasShape" : [ "Long", "Segmented" ],
       "canCook" : [ "Grated", "Sliced" ],
@@ -4960,6 +5002,7 @@
     "Milk Wood" : { },
     "Eugenia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -4970,6 +5013,7 @@
     },
     "Chineses Spinach" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -4980,6 +5024,7 @@
     },
     "Young Maskmelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Fresh", "Sliced" ],
@@ -4990,6 +5035,7 @@
     },
     "Red Yard Long Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Singy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Thin" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir- Fried" ],
@@ -5000,6 +5046,7 @@
     },
     "Asparagus Peas" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5010,6 +5057,7 @@
     },
     "Pickled Crataeva" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cubed" ],
       "canCook" : [ "Pickled" ],
@@ -5019,6 +5067,7 @@
     },
     "Ta Loh Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5029,6 +5078,7 @@
     },
     "Bbolete Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Grilled", "Boiled" ],
@@ -5039,6 +5089,7 @@
     },
     "Paco" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5049,6 +5100,7 @@
     },
     "Raw Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical", "Conical" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried", "Sliced" ],
@@ -5059,6 +5111,7 @@
     },
     "Purple Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Purple" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Baked", "Stir- Fried" ],
@@ -5069,6 +5122,7 @@
     },
     "Indian Oyster Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Cream" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5078,6 +5132,7 @@
     },
     "Coconut Heart" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Green" ],
       "hasShape" : [ "Cylindrical", "Conical" ],
       "canCook" : [ "Fresh", "Sliced" ],
@@ -5088,6 +5143,7 @@
     },
     "Red Cabbage" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red", "Purple" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Fried", "Stir- Fried", "Pickled" ],
@@ -5098,6 +5154,7 @@
     },
     "Jews Ear Fresh Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Black" ],
       "hasShape" : [ "Ear Shaped" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5108,6 +5165,7 @@
     },
     "Hog Plum Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Oval", "Pear Shaped" ],
       "canCook" : [ "Fresh" ],
@@ -5118,6 +5176,7 @@
     },
     "Wild Santol" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous", "Juicy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Small", "Oval", "Round" ],
       "canCook" : [ "Fresh", "Boiled", "Pickled" ],
@@ -5128,6 +5187,7 @@
     },
     "Beijing Grass Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Blanched", "Steamed" ],
@@ -5138,6 +5198,7 @@
     },
     "Pie Keral Weed" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5148,6 +5209,7 @@
     },
     "Young Jackfruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Braised", "Stewed", "Simmered" ],
@@ -5158,6 +5220,7 @@
     },
     "Purple Long Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Purple" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Baked", "Stir- Fried" ],
@@ -5168,6 +5231,7 @@
     },
     "Fever Vine" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -5178,6 +5242,7 @@
     },
     "Saang Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy", "Tender" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5187,6 +5252,7 @@
     },
     "Champaca" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Velvety" ],
       "hasColor" : [ "Yellow", "Orange" ],
       "hasShape" : [ "Oval", "Oblong" ],
       "canCook" : [ "Flavored" ],
@@ -5197,6 +5263,7 @@
     },
     "Madan Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow", "Orange" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Fresh", "Boiled", "Blended", "Pickled" ],
@@ -5207,6 +5274,7 @@
     },
     "Raw Long Papaya" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
       "canCook" : [ "Grated", "Sliced" ],
@@ -5217,6 +5285,7 @@
     },
     "Ueang Nam" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Liquid" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Tubular", "Long" ],
       "canCook" : [ "Fresh", "Blanched" ],
@@ -5227,6 +5296,7 @@
     },
     "Japanese Cucumber" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fresh", "Sliced", "Pickled" ],
@@ -5237,6 +5307,7 @@
     },
     "Oyster Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown", "White" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5247,6 +5318,7 @@
     },
     "Carrot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5257,6 +5329,7 @@
     },
     "Thai Bitter Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Curved" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5267,6 +5340,7 @@
     },
     "Golden Neddle Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Gold", "Yellow" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5277,6 +5351,7 @@
     },
     "Thomas Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Pointed", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5287,6 +5362,7 @@
     },
     "Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical", "Conical" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5297,6 +5373,7 @@
     },
     "Broken Bone Tree" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Lance Shaped" ],
       "canCook" : [ "Boiled", "Stewed", "Simmered" ],
@@ -5307,6 +5384,7 @@
     },
     "Lettuce" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Fresh", "Shreded" ],
@@ -5317,6 +5395,7 @@
     },
     "Pak Kee Kweung" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Serrated", "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5327,6 +5406,7 @@
     },
     "Chilli Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red", "Yellow", "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -5337,6 +5417,7 @@
     },
     "Cauliflower" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Cream" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Stir- Fried", "Mashed" ],
@@ -5347,6 +5428,7 @@
     },
     "Cabbage" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Sauteed", "Pickled" ],
@@ -5357,6 +5439,7 @@
     },
     "Sand Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Lance Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5367,6 +5450,7 @@
     },
     "Chinese Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown", "White" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5377,6 +5461,7 @@
     },
     "Pak Meg" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched" ],
@@ -5387,6 +5472,7 @@
     },
     "Small Sweet Hairy Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Sliced" ],
@@ -5399,6 +5485,7 @@
     "Jews Ear" : { },
     "Big Tomato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Diced" ],
@@ -5409,6 +5496,7 @@
     },
     "Bo" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Watery", "Crispy" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Tubular", "Long", "Narrow" ],
       "canCook" : [ "Boiled", "Blanched" ],
@@ -5419,6 +5507,7 @@
     },
     "Choko Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender", "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5429,6 +5518,7 @@
     },
     "Fresh Water Algae" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Gelatinous" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Thin", "Thread" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -5439,6 +5529,7 @@
     },
     "Raw Awlee" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Minced", "Fresh" ],
@@ -5449,6 +5540,7 @@
     },
     "Garlic" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Crushed" ],
@@ -5459,6 +5551,7 @@
     },
     "Bilimbi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Oblong" ],
       "canCook" : [ "Fresh", "Pickled" ],
@@ -5470,6 +5563,7 @@
     "Barometer Earthstars" : { },
     "Scented Star Jasmine Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5480,6 +5574,7 @@
     },
     "Big Sweet Hairy Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5490,6 +5585,7 @@
     },
     "Treebine" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh" ],
@@ -5500,6 +5596,7 @@
     },
     "Santawa Bai Phai" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Yellow" ],
       "hasShape" : [ "Oval", "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Blanched" ],
@@ -5510,6 +5607,7 @@
     },
     "Pak Hi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -5520,6 +5618,7 @@
     },
     "Long Cucumber" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Sliced", "Pickled" ],
@@ -5530,6 +5629,7 @@
     },
     "Choko" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Pear Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5540,6 +5640,7 @@
     },
     "Tamarind Pods" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Black" ],
       "hasShape" : [ "Long", "Curved" ],
       "canCook" : [ "Boiled" ],
@@ -5550,6 +5651,7 @@
     },
     "Young Ladys Finger Pods" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Steamed" ],
@@ -5560,6 +5662,7 @@
     },
     "Galangal" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Segmented", "Cylindrical", "Thin" ],
       "canCook" : [ "Minced", "Sliced", "Crushed" ],
@@ -5570,6 +5673,7 @@
     },
     "Peperomia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Heart Shaped", "Wide" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -5580,6 +5684,7 @@
     },
     "Baegu" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stewed", "Stir- Fried" ],
@@ -5590,6 +5695,7 @@
     },
     "Neem" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5600,6 +5706,7 @@
     },
     "Tree Basil" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5610,6 +5717,7 @@
     },
     "Tender Tips Of Leadee" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched", "Steamed" ],
@@ -5620,6 +5728,7 @@
     },
     "Green Long Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Grilled", "Roasted", "Boiled", "Fried", "Stir- Fried" ],
@@ -5630,6 +5739,7 @@
     },
     "Catjung" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Stewed" ],
@@ -5640,6 +5750,7 @@
     },
     "Bottle Gourd Outer Portion" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Watery", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Bottle Gourd" ],
       "canCook" : [ "Boiled", "Fried", "Stewed", "Stir- Fried" ],
@@ -5650,6 +5761,7 @@
     },
     "Broccoli" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -5660,6 +5772,7 @@
     },
     "Pak Tew Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5670,6 +5783,7 @@
     },
     "Roasted Rattan Palm" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Tubular" ],
       "canCook" : [ "Roasted" ],
@@ -5680,6 +5794,7 @@
     },
     "Khao San" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Yellow" ],
       "hasShape" : [ "Small", "Tubular" ],
       "canCook" : [ "Fresh", "Boiled" ],
@@ -5690,6 +5805,7 @@
     },
     "Winter Melon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Large", "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5700,6 +5816,7 @@
     },
     "Red Sandalwood Tree" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Lance Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Marinated", "Stir- Fried" ],
@@ -5709,6 +5826,7 @@
     },
     "Ma Eok" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -5719,6 +5837,7 @@
     },
     "Creeping Water Primrose" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Small", "Oval", "Pointed" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -5728,6 +5847,7 @@
     },
     "Shiitake Fresh Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -5738,6 +5858,7 @@
     },
     "Chinese Cabbage Flowers" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Boiled", "Garnished", "Fried", "Stir- Fried" ],
@@ -5748,6 +5869,7 @@
     },
     "Dill" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Feathery" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Feathery", "Thin" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -5758,6 +5880,7 @@
     },
     "Juang" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Flat", "Long", "Wide" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -5768,6 +5891,7 @@
     },
     "Water Fern" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched" ],
@@ -5778,6 +5902,7 @@
     },
     "Pak Tew Flower" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "White", "Yellow" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5788,6 +5913,7 @@
     },
     "Crow Daisy Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5798,6 +5924,7 @@
     },
     "Pickled White Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Pickled" ],
@@ -5808,6 +5935,7 @@
     },
     "Water Mimosa" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5818,6 +5946,7 @@
     },
     "White Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5828,6 +5957,7 @@
     },
     "Chinese Cabbage Michili" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5838,6 +5968,7 @@
     },
     "Beijing Grass" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stewed", "Stir- Fried", "Sliced" ],
@@ -5848,6 +5979,7 @@
     },
     "Beijing Grass Stems" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Pickled" ],
@@ -5859,6 +5991,7 @@
     "Hed Lom" : { },
     "Solanum" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Roasted", "Boiled", "Fried", "Stir- Fried" ],
@@ -5870,6 +6003,7 @@
     "Bbolete" : { },
     "Mango Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Long", "Cylindrical", "Narrow" ],
       "canCook" : [ "Fresh", "Sliced", "Pickled" ],
@@ -5880,6 +6014,7 @@
     },
     "Pak Waan Baan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Seasoned" ],
@@ -5890,6 +6025,7 @@
     },
     "Sesbania Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -5900,6 +6036,7 @@
     },
     "Som Poi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Fresh", "Pickled" ],
@@ -5909,6 +6046,7 @@
     },
     "Young Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Spherical", "Small" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -5920,6 +6058,7 @@
     "Shiitake" : { },
     "Sa Lare" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Small", "Star Shaped" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5932,6 +6071,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Cubed", "Sliced Sips" ],
       "canCook" : [ "Roasted", "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -5941,6 +6081,7 @@
     },
     "Cock Roach Berry" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Stewed" ],
@@ -5951,6 +6092,7 @@
     },
     "Red Cotton Tree" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Silky" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Small", "Tubular" ],
       "canCook" : [ "Fresh" ],
@@ -5961,6 +6103,7 @@
     },
     "Nitta Tree Sprout" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -5970,6 +6113,7 @@
     },
     "Sparrow" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Small", "Oval" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -5980,6 +6124,7 @@
     },
     "Chinese Cabbage" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Long" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -5990,6 +6135,7 @@
     },
     "Green Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir- Fried" ],
@@ -6000,6 +6146,7 @@
     },
     "Bitter Cucumber Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6010,6 +6157,7 @@
     },
     "Spring Bitter Cucumber" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -6020,6 +6168,7 @@
     },
     "Bell Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Red", "Yellow", "Green" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Grilled", "Fresh", "Fried", "Stir- Fried" ],
@@ -6030,6 +6179,7 @@
     },
     "Op Aep" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Juicy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Grilled", "Fresh", "Roasted" ],
@@ -6040,6 +6190,7 @@
     },
     "Juice From Ice Vine Leaves" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Liquid" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Liquid" ],
       "canCook" : [ "Flavored", "Drizzled", "Infused" ],
@@ -6049,6 +6200,7 @@
     },
     "Horse Radish Tree" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Grated", "Boiled", "Fried", "Stir- Fried" ],
@@ -6059,6 +6211,7 @@
     },
     "Neem Tree" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Small", "Star Shaped" ],
       "canCook" : [ "Fresh", "Sauteed" ],
@@ -6069,6 +6222,7 @@
     },
     "Sweet Potato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Pointed", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -6079,6 +6233,7 @@
     },
     "Stanleys Watertub Tenders Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6089,6 +6244,7 @@
     },
     "Celery" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fresh", "Boiled", "Seasoned", "Sliced" ],
@@ -6099,6 +6255,7 @@
     },
     "Pak Choi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Steamed" ],
@@ -6109,6 +6266,7 @@
     },
     "Soy Bean Sprout" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical", "Sprouted" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -6119,6 +6277,7 @@
     },
     "Chilli Pepper Tender Tips" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red", "Yellow", "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -6129,6 +6288,7 @@
     },
     "Onion" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy", "Crunchy" ],
       "hasColor" : [ "Brown", "White", "Green" ],
       "hasShape" : [ "Small", "Long", "Round", "Slender" ],
       "canCook" : [ "Fresh", "Roasted", "Boiled", "Garnished", "Sauteed", "Seasoned" ],
@@ -6139,6 +6299,7 @@
     },
     "Pumpkin With Skin" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tougher" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Stewed" ],
@@ -6149,6 +6310,7 @@
     },
     "Coriander" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Leafy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Flat", "Lobed" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -6159,6 +6321,7 @@
     },
     "White Holy Basil" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Oval" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6169,6 +6332,7 @@
     },
     "Ceylon Spinach" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Slimy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -6179,6 +6343,7 @@
     },
     "Pak Fab" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6189,6 +6354,7 @@
     },
     "Red Wild Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Minced", "Grated", "Sliced", "Grounded" ],
@@ -6199,6 +6365,7 @@
     },
     "Chebulic Marobalans" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Dried", "Pickled" ],
@@ -6209,6 +6376,7 @@
     },
     "Shake Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6219,6 +6387,7 @@
     },
     "Green Chilli Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6229,6 +6398,7 @@
     },
     "Sunflower Sprout" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical", "Slender" ],
       "canCook" : [ "Fresh", "Sauteed" ],
@@ -6239,6 +6409,7 @@
     },
     "Madan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Fresh", "Garnished", "Pickled" ],
@@ -6249,6 +6420,7 @@
     },
     "Young Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Canopy", "Tall" ],
       "canCook" : [ "Minced", "Pickled" ],
@@ -6259,6 +6431,7 @@
     },
     "Indian Mulberry" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Pointed", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Poached" ],
@@ -6269,6 +6442,7 @@
     },
     "Boiled Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical", "Conical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6279,6 +6453,7 @@
     },
     "Wildbetal Leafbush" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Heart Shaped" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -6289,6 +6464,7 @@
     },
     "Bitter Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Flat", "Oblong" ],
       "canCook" : [ "Boiled", "Blanched" ],
@@ -6299,6 +6475,7 @@
     },
     "Cucumber" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Watery", "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fresh", "Sliced", "Pickled" ],
@@ -6308,6 +6485,7 @@
     },
     "Green Yard Long Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Singy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Thin" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir- Fried" ],
@@ -6318,6 +6496,7 @@
     },
     "Ice Vine Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Heart Shaped" ],
       "canCook" : [ "Garnished" ],
@@ -6328,6 +6507,7 @@
     },
     "Jute" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Heart Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6338,6 +6518,7 @@
     },
     "Chiang-da" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Lanceolate", "Long", "Narrow" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -6348,6 +6529,7 @@
     },
     "Water Lily" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6357,6 +6539,7 @@
     },
     "Barometer Earthstars Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Star Shaped", "Round" ],
       "canCook" : [ "Grilled", "Roasted" ],
@@ -6367,6 +6550,7 @@
     },
     "Young Watermelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Oblong", "Round" ],
       "canCook" : [ "Fresh", "Sliced" ],
@@ -6378,6 +6562,7 @@
     "Hed Ta Loh" : { },
     "Lasia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Flat" ],
       "canCook" : [ "Boiled", "Fried", "Stewed", "Stir- Fried" ],
@@ -6388,6 +6573,7 @@
     },
     "Indian Pennywort" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Round", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -6397,6 +6583,7 @@
     },
     "Neem Tree Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Long", "Lance Shaped" ],
       "canCook" : [ "Fresh", "Garnished", "Fried", "Sauteed", "Stir- Fried" ],
@@ -6407,6 +6594,7 @@
     "Hed Kamin" : { },
     "Bael Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Blended", "Infused" ],
@@ -6417,6 +6605,7 @@
     },
     "Abalone Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Flat", "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6429,6 +6618,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Chewy" ],
       "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Tubular" ],
       "canCook" : [ "Roasted", "Baked", "Boilded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -6438,6 +6628,7 @@
     },
     "Red Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Garnished", "Fried", "Stir- Fried" ],
@@ -6448,6 +6639,7 @@
     },
     "Spinach" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Leafy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6457,6 +6649,7 @@
     },
     "Talapaeusi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Round", "Wide" ],
       "canCook" : [ "Boiled", "Garnished", "Fried", "Stewed", "Stir- Fried" ],
@@ -6467,6 +6660,7 @@
     },
     "Pakkadnokkao" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Wavy", "Oval", "Round" ],
       "canCook" : [ "Fried", "Stir- Fried", "Blanched" ],
@@ -6477,6 +6671,7 @@
     },
     "Sesbania" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy", "Tender" ],
       "hasColor" : [ "Yellow", "Orange" ],
       "hasShape" : [ "Small", "Tubular", "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -6487,6 +6682,7 @@
     },
     "Pak Hawn Flowers" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Cluster", "Round" ],
       "canCook" : [ "Garnished", "Fried", "Stir- Fried" ],
@@ -6497,6 +6693,7 @@
     },
     "Passion Fruit Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Fried", "Sauteed", "Stir- Fried" ],
@@ -6507,6 +6704,7 @@
     },
     "Pagoda Plant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Flat", "Round" ],
       "canCook" : [ "Infused" ],
@@ -6517,6 +6715,7 @@
     },
     "Pandanus" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Infused" ],
@@ -6526,6 +6725,7 @@
     },
     "Bottle Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Bottle Gourd" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6536,6 +6736,7 @@
     },
     "White Wild Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round", "Cylindrical" ],
       "canCook" : [ "Minced", "Grated", "Sliced", "Grounded" ],
@@ -6546,6 +6747,7 @@
     },
     "Culano" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Leafy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Serrated", "Long" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -6556,6 +6758,7 @@
     },
     "Swamp Algae" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Slippery", "Slimy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Thin", "Thread" ],
       "canCook" : [ "Fresh", "Boiled" ],
@@ -6566,6 +6769,7 @@
     },
     "Giant Fern" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched" ],
@@ -6576,6 +6780,7 @@
     },
     "Green Beans" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6586,6 +6791,7 @@
     },
     "Lemon Basil" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Serrated", "Lance Shaped" ],
       "canCook" : [ "Flavored", "Fresh", "Garnished" ],
@@ -6596,6 +6802,7 @@
     },
     "Lom Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6606,6 +6813,7 @@
     },
     "Cassia Tender Tips Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -6616,6 +6824,7 @@
     },
     "Winged Beans" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical", "Narrow" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6626,6 +6835,7 @@
     },
     "Red Water Spinach" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fried", "Stir- Fried", "Blanched" ],
@@ -6636,6 +6846,7 @@
     },
     "Pak Kee Hood" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Flat", "Long" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -6646,6 +6857,7 @@
     },
     "Red Chilli Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6656,6 +6868,7 @@
     },
     "Water Convolvulus" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fried", "Stir- Fried", "Blanched" ],
@@ -6666,6 +6879,7 @@
     },
     "Green Taro" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Flat", "Wide" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -6676,6 +6890,7 @@
     },
     "Chinese Bitter Cucumber" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6686,6 +6901,7 @@
     },
     "Wild Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Long", "Cylindrical" ],
       "canCook" : [ "Grated", "Sliced", "Grounded", "Infused" ],
@@ -6696,6 +6912,7 @@
     },
     "Wild Bamboo Shoot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Beige" ],
       "hasShape" : [ "Cylindrical", "Conical" ],
       "canCook" : [ "Fresh", "Boiled", "Garnished" ],
@@ -6706,6 +6923,7 @@
     },
     "Water Dropwort" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Narrow" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -6716,6 +6934,7 @@
     },
     "Pumpkin Without Skin" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Stewed" ],
@@ -6726,6 +6945,7 @@
     },
     "Chao Pra Ya Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Oval" ],
       "canCook" : [ "Boiled", "Sauteed" ],
@@ -6736,6 +6956,7 @@
     },
     "Chinese Kale" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -6746,6 +6967,7 @@
     },
     "Look Pra" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fried", "Stir- Fried", "Pickled" ],
@@ -6755,6 +6977,7 @@
     },
     "Hed Kamin Mushroom" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown", "Yellow" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Sliced" ],
@@ -6765,6 +6988,7 @@
     },
     "Small Tomato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Fresh", "Garnished", "Sliced" ],
@@ -6775,6 +6999,7 @@
     },
     "Tamarind Young Pods" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Curved" ],
       "canCook" : [ "Boiled", "Stewed" ],
@@ -6785,6 +7010,7 @@
     },
     "Snow Flake" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Fluffy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Small", "Oval", "Pointed" ],
       "canCook" : [ "Fresh", "Garnished", "Fried", "Stir- Fried" ],
@@ -6795,6 +7021,7 @@
     },
     "Raw Short Papaya" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical", "Pear Shaped" ],
       "canCook" : [ "Fresh", "Grated", "Sliced" ],
@@ -6805,6 +7032,7 @@
     },
     "Chinese White Cabbage" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched" ],
@@ -6816,6 +7044,7 @@
     "Indian Oyster" : { },
     "Malabar" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Slimy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Heart Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6826,6 +7055,7 @@
     },
     "Bottle Gourd Inner Portion" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Green" ],
       "hasShape" : [ "Bottle Gourd" ],
       "canCook" : [ "Boiled", "Stewed" ],
@@ -6836,6 +7066,7 @@
     },
     "Chili Spur Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red", "Green" ],
       "hasShape" : [ "Small", "Long" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6846,6 +7077,7 @@
     },
     "Sponge Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6856,6 +7088,7 @@
     },
     "Baby Corn Kernel" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow", "Cream" ],
       "hasShape" : [ "Small", "Cylindrical" ],
       "canCook" : [ "Fresh", "Garnished", "Fried", "Stir- Fried" ],
@@ -6866,6 +7099,7 @@
     },
     "Ya Nang" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Pointed", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Boiled", "Blanched" ],
@@ -6876,6 +7110,7 @@
     },
     "Red Holy Basil" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Broad", "Oval" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -6886,6 +7121,7 @@
     },
     "Homalomena Rosata Griff" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Lance Shaped" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
@@ -6897,6 +7133,7 @@
     "Brinjal" : { },
     "Pak Hawn Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6907,6 +7144,7 @@
     },
     "Broken Bone Tree Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Fried", "Stewed", "Stir- Fried", "Simmered" ],
@@ -6916,6 +7154,7 @@
     },
     "Pumpkin Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6926,6 +7165,7 @@
     },
     "Banana Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Yellow", "Green" ],
       "hasShape" : [ "Long", "Curved" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Pickled" ],
@@ -6936,6 +7176,7 @@
     },
     "Som Kriap" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Ovate Shaped", "Small", "Long" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Pickled" ],
@@ -6945,6 +7186,7 @@
     },
     "Tender Tips Of Kra-don" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Tapered", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6955,6 +7197,7 @@
     },
     "Cherry Tomato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Roasted", "Garnished" ],
@@ -6965,6 +7208,7 @@
     },
     "Pak Waan Pa" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -6976,6 +7220,7 @@
     "Golden Neddle" : { },
     "Roselle Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Heart Shaped" ],
       "canCook" : [ "Fresh", "Boiled", "Blanched", "Infused" ],
@@ -6986,6 +7231,7 @@
     },
     "Yellow Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Fresh" ],
@@ -6996,6 +7242,7 @@
     },
     "Garden Peas" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7006,6 +7253,7 @@
     },
     "Young Banana Stem" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Tapering", "Long", "Cylindrical" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7016,6 +7264,7 @@
     },
     "Ivy Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Pickled" ],
@@ -7026,6 +7275,7 @@
     },
     "Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Small", "Oval", "Round" ],
       "canCook" : [ "Grilled", "Fresh", "Roasted", "Boiled", "Fried", "Baked", "Sauteed", "Stir- Fried" ],
@@ -7036,6 +7286,7 @@
     },
     "Angled Gourd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Cylindrical", "Narrow" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7046,6 +7297,7 @@
     },
     "Wild Hog Plum Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oblong", "Pod Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7056,6 +7308,7 @@
     },
     "Cowslip Creeper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Small", "Tubular" ],
       "canCook" : [ "Fresh", "Garnished", "Sauteed" ],
@@ -7066,6 +7319,7 @@
     },
     "Queen Sago" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Gelatinous", "Chewy" ],
       "hasColor" : [ "Brown", "Beige" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Boiled", "Steamed" ],
@@ -7076,6 +7330,7 @@
     },
     "Indian Oak Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7086,6 +7341,7 @@
     },
     "Climbing Wattle" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Thin" ],
       "canCook" : [ "Fresh", "Fried", "Stir- Fried" ],
@@ -7096,6 +7352,7 @@
     },
     "Mau Na" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7106,6 +7363,7 @@
     },
     "Fig" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Oval" ],
       "canCook" : [ "Grilled", "Fresh", "Baked" ],
@@ -7116,6 +7374,7 @@
     },
     "Hog Plum Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7126,6 +7385,7 @@
     },
     "Pak Mae" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red", "Green" ],
       "hasShape" : [ "Flat", "Wide" ],
       "canCook" : [ "Boiled", "Fried", "Stewed", "Stir- Fried" ],
@@ -7136,6 +7396,7 @@
     },
     "Mustard Greens" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Serrated" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -7146,6 +7407,7 @@
     },
     "White Water Spinach" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Narrow" ],
       "canCook" : [ "Fried", "Stir- Fried", "Blanched" ],
@@ -7156,6 +7418,7 @@
     },
     "Djenkol Beans" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Fresh", "Roasted", "Boiled", "Simmered" ],
@@ -7166,6 +7429,7 @@
     },
     "Star Gooseberry Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Fresh", "Blanched", "Pickled" ],
@@ -7175,6 +7439,7 @@
     },
     "Coral" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Flat", "Pointed", "Wide" ],
       "canCook" : [ "Fresh", "Garnished" ],
@@ -7185,6 +7450,7 @@
     },
     "Green Pepper" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Slender" ],
       "canCook" : [ "Garnished", "Fried", "Stir- Fried" ],
@@ -7195,6 +7461,7 @@
     },
     "Young Mon Pu" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Oval", "Heart Shaped" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
@@ -7205,6 +7472,7 @@
     },
     "Hatsa Khun" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Steamed" ],
@@ -7215,6 +7483,7 @@
     },
     "Brussels Sprout" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Small", "Round" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
@@ -7225,6 +7494,7 @@
     },
     "Cassia Flower" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Brittle" ],
       "hasColor" : [ "White", "Yellow" ],
       "hasShape" : [ "Small", "Tubular" ],
       "canCook" : [ "Fresh", "Infused" ],
@@ -7235,6 +7505,7 @@
     },
     "Tamarind Young Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Lance Shaped" ],
       "canCook" : [ "Fresh", "Sauteed" ],
@@ -7249,6 +7520,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Dense", "Solid" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Small", "Flat" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -7259,6 +7531,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Smooth", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Creamy" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -7269,6 +7542,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -7279,6 +7553,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -7289,6 +7564,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Mild", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Thiamin", "Retinol" ],
@@ -7298,6 +7574,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Mild", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Astringent", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -7308,6 +7585,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -7318,6 +7596,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -7328,6 +7607,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Thiamin", "Retinol" ],
@@ -7338,6 +7618,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
+      "hasShape" : [ "Rectangular", "Cubed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Sweet", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -7348,6 +7629,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -7358,6 +7640,7 @@
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
       "hasColor" : [ "White" ],
+      "hasShape" : [ "Liquid" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],

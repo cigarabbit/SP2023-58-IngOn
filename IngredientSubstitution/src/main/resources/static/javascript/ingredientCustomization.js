@@ -72,9 +72,22 @@ function retrieveData() {
 
         var colors = colorProp[clickedTopic].join(', ');
         var flavors = flavorProp[clickedTopic].join(', ');
-        var shapes = shapeProp[clickedTopic].join(', ');
+
+        var shapes;
+        if (shapeProp[clickedTopic] !== undefined) {
+            shapes = shapeProp[clickedTopic].join(', ');
+        } else {
+            shapes = "No shapes available because it lacks standard recording methods.";
+        }
+
         var textures = textureProp[clickedTopic].join(', ');
-        var minerals = mineralProp[clickedTopic].join(', ');
+        var minerals;
+        if (mineralProp[clickedTopic] !== undefined) {
+            minerals = mineralProp[clickedTopic].join(', ');
+        } else {
+            minerals = "It does not have any minerals.";
+        }
+
         var nutris = nutriProp[clickedTopic].join(', ');
         var vitas = vitaProp[clickedTopic].join(', ');
 
@@ -89,13 +102,21 @@ function retrieveData() {
         nutriPropLi.innerHTML = '';
         vitaPropLi.innerHTML = '';
 
-        mineralProp[clickedTopic].forEach(function(mineral) {
+        if (mineralProp[clickedTopic] !== undefined) {
+            mineralProp[clickedTopic].forEach(function(mineral) {
+                var span = document.createElement('span');
+                span.textContent = mineral;
+                span.classList.add('nutrient-item');
+
+                mineralPropLi.appendChild(span);
+            });
+        } else {
             var span = document.createElement('span');
-            span.textContent = mineral;
+            span.textContent = minerals;
             span.classList.add('nutrient-item');
 
             mineralPropLi.appendChild(span);
-        });
+        }
 
         nutriProp[clickedTopic].forEach(function(nutri) {
             var span = document.createElement('span');

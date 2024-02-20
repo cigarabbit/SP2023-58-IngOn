@@ -101,7 +101,7 @@
                             <strong>Color: <span></span></strong>
                         </li>
                         <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
-                        <li id="propertyShape"><strong>Shape: <span></span></strong> </li>
+                        <li id="propertyShape" th:if="${shapeProp}"><strong>Shape: <span></span></strong> </li>
                         <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
 <!--                        <li><strong><span th:if="$exists">Type: </span></strong> </li>-->
                     </ul>
