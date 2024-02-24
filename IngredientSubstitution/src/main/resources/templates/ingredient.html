@@ -59,87 +59,87 @@
 </div>
 
 <div class="container">
-    <div class="content-box">
-        <div id="sidebar">
-            <div id="sidebar-title">
-                <button id="filter-button" onclick="filterProperty()">
-                    <img src="img/filter_alt_FILL0_wght400_GRAD0_opsz24.png">
-                </button>
-                <h2>Ingredient List</h2>
-                <button id="sort-button" onclick="sortTopics()">
-                     <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png">
-                </button>
-            </div>
-            <div id="sidebar-topic">
-                <ul>
-                    <li th:each="ingredient, iterStat : ${ingredientList}">
-                        <a href="#"  th:text="${ingredient}"/>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="content-box">
-            <div id="head-content">
-                <div id="content-category">
-                    <p id="foodGroupTitle" th:text="${foodGroup}"></p>
+    <div class="row g-0">
+        <div class="col-md-4 mx-auto">
+            <div class="custom-box bg sidebar">
+                <div id="sidebar-title">
+                    <button id="filter-button" onclick="filterProperty()">
+                        <img src="img/filter_alt_FILL0_wght400_GRAD0_opsz24.png">
+                    </button>
+                    <span>Ingredient List</span>
+                    <button id="sort-button" onclick="sortTopics()">
+                        <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png">
+                    </button>
                 </div>
-<!--                <button id="print-button" onclick="window.print()">-->
-<!--                    <img src="img/print_FILL0_wght400_GRAD0_opsz24.png">-->
-<!--                </button>-->
-                <h1 class="content-header"></h1>
-            </div>
-            <button class="vizButton" onClick="">Visualization</button>
-            <div id="content">
-                <div>
-                    <h2 class="content-headerH2">PROPERTIES</h2>
-                    <ul id="content-properties">
-                        <li id="propertyColor">
-                            <strong>Color: <span></span></strong>
+                <div id="sidebar-ingredient">
+                    <ul>
+                        <li th:each="ingredient, iterStat : ${ingredientList}">
+                            <a href="#" th:text="${ingredient}" />
                         </li>
-                        <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
-                        <li id="propertyShape" th:if="${shapeProp}"><strong>Shape: <span></span></strong> </li>
-                        <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
-<!--                        <li><strong><span th:if="$exists">Type: </span></strong> </li>-->
                     </ul>
                 </div>
-                <div>
-                    <h2 class="content-headerH2">BENEFITS</h2>
-                    <div class="property-box" id="benefits"></div>
+            </div>
+        </div>
+        <div class="col-md-8 mx-auto">
+            <div class="custom-box content">
+                <div id="head-content">
+                    <div id="content-category">
+                        <p id="foodGroupTitle" th:text="${foodGroup}"></p>
+                        <button class="vizButton" onClick="">Visualization</button>
+                    </div>
+                    <h1 id="ingredient-title"></h1> <!-- Display selected ingredient name -->
                 </div>
-                <div>
-                    <h2 class="content-headerH2">COOKING TYPES</h2>
-                    <div class="property-box" id="cooking-types"></div>
-                </div>
-                <div>
-                    <h2 class="content-headerH2">NUTRIENT COMPOSITION</h2>
-                    <div class="nutrient-composition">
-                        <ul>
-                            <li id="propMineral"><Strong>Mineral: <div></div></Strong></li>
-                            <li id="propNutrient"><strong>Nutrient: <div></div></strong></li>
-                            <li id="propVitamin"><strong>Vitamin: <div></div></strong></li>
+                <div id="content">
+                    <div>
+                        <h2 class="content-headerH2">PROPERTIES</h2>
+                        <ul id="content-properties">
+                            <li id="propertyColor">
+                                <strong>Color: <span></span></strong>
+                            </li>
+                            <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
+                            <li id="propertyShape" th:if="${shapeProp}"><strong>Shape: <span></span></strong> </li>
+                            <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
+                            <!--                        <li><strong><span th:if="$exists">Type: </span></strong> </li>-->
                         </ul>
+                    </div>
+                    <div>
+                        <h2 class="content-headerH2">BENEFITS</h2>
+                        <div class="property-box" id="benefits"></div>
+                    </div>
+                    <div>
+                        <h2 class="content-headerH2">COOKING TYPES</h2>
+                        <div class="property-box" id="cooking-types"></div>
+                    </div>
+                    <div>
+                        <h2 class="content-headerH2">NUTRIENT COMPOSITION</h2>
+                        <div class="nutrient-composition">
+                            <ul>
+                                <li id="propMineral"><Strong>Mineral: <div></div></Strong></li>
+                                <li id="propNutrient"><strong>Nutrient: <div></div></strong></li>
+                                <li id="propVitamin"><strong>Vitamin: <div></div></strong></li>
+                            </ul>
 
-<!--                        <div class="nutrient-item"></div>-->
+                            <!--                        <div class="nutrient-item"></div>-->
+                        </div>
+                    </div>
+                    <div id="DL_Syntax">
+                        <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2><br>
+                        <span></span>
+                    </div>
+                    <div>
+                        <h2 class="content-headerH2">POSSIBLE SUBSTITUTIONS</h2>
+                        <div class="property-box" id="possible-substitutions"></div>
+                    </div>
+
+                    <div id="category-imgbox">
+                        <img id="foodtype-img">
                     </div>
                 </div>
-                <div id="DL_Syntax">
-                    <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2><br>
-                    <span></span>
-                </div>
-                <div>
-                    <h2 class="content-headerH2">POSSIBLE SUBSTITUTIONS</h2>
-                    <div class="property-box" id="possible-substitutions"></div>
-                </div>
-
-                <div id="category-imgbox">
-                    <img id="foodtype-img">
-                </div>
-
             </div>
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 <script th:inline="javascript">
 
