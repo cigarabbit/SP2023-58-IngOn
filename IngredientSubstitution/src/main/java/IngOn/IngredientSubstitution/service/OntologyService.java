@@ -71,6 +71,15 @@ public class OntologyService {
                 // Get equivalent classes of the subclass
                 Set<OWLClassExpression> equivalentClasses = cls.getEquivalentClasses(ontology);
 
+                for (OWLClassExpression equivalentClass : equivalentClasses) {
+                    if (equivalentClass instanceof OWLClass) {
+                        OWLClass equivalentCls = (OWLClass) equivalentClass;
+                        String equivalentClassName = getShortForm(equivalentCls);
+
+                        System.out.println(className + ":   " + equivalentClassName);
+                    }
+                }
+
                 // Store the returned value from retrieveConceptValues
                 conceptList.put(className, retrieveConceptValues(ontology, cls));
             }
