@@ -99,7 +99,7 @@ function retrieveData() {
         var benes = beneProp[clickedTopic].join(', ');
         var cooks = cookProp[clickedTopic].join(', ');
 
-        var DLSyntax = getDLSyntax(clickedTopic, colors, flavors, shapes, textures, minerals, nutris, vitas, benes, cooks);
+        var DLSyntax = getDLSyntax(clickedTopic, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes);
 
         DL_Display.innerHTML = '';
         colorPropLi.innerHTML = '';
@@ -165,20 +165,22 @@ function retrieveData() {
     }
 }
 
-function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, nutris, vitas, benes, cooks) {
+function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes) {
     var syntax = conceptName + " ⊑ " + foodGroup;
 
     function handleProperty(property, type) {
         if (property.includes(',')) {
             var propertyList = property.split(',');
             propertyList.forEach(function(prop) {
+                prop = prop.replace(/\s/g, '');
                 syntax += ' ⊓ ∃ ' + type + prop;
             });
         } else {
             syntax += ' ⊓ ∃ ' + type + property;
         }
     }
-
+    handleProperty(cooks, 'canCook.');
+    handleProperty(benes, 'hasBenefit.');
     handleProperty(colors, 'hasColor.');
     handleProperty(flavors, 'hasFlavor.');
     handleProperty(shapes, 'hasShape.');
@@ -187,8 +189,6 @@ function getDLSyntax(conceptName, colors, flavors, shapes, textures, minerals, n
     handleProperty(nutris, 'hasNutrient.');
     handleProperty(vitas, 'hasVitamin.');
 
-    handleProperty(benes, 'hasBenefit.');
-    handleProperty(cooks, 'canCook.');
 
 
 

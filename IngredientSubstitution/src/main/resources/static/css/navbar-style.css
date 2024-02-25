@@ -1,57 +1,17 @@
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 100vw;
-}
-
-.navbar {
-    display: flex;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+.navbar-brand {
+    color: #006e2e;
+    font-weight: bolder;
 }
 
 .nav-item {
-    display: flex;
-}
-
-.nav-link {
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .nav-link:hover {
     color: #006e2e;
 }
 
-.nav-link.active {
-    border-bottom: 4px solid #00880b;
+.active {
+    border-bottom: 3px solid #006e2e;
 }
 
-.navbar .nav-item .dropdown-menu {
-    display: none;
-}
-
-/* Make .dropdown-menu has 4 columns */
-.navbar .nav-item:hover .dropdown-menu {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-
-.navbar .nav-item .dropdown-menu {
-    margin-top: 0;
-    top: 100%;
-    z-index: 1000;
-}
-
-#search-addon {
-    background-color: #2d2d2d;
-    height: 40px;
-}
