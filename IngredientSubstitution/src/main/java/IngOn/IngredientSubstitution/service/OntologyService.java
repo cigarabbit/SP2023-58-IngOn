@@ -76,7 +76,10 @@ public class OntologyService {
                         OWLClass equivalentCls = (OWLClass) equivalentClass;
                         String equivalentClassName = getShortForm(equivalentCls);
 
-                        System.out.println(className + ":   " + equivalentClassName);
+                        if (!equivalentClassName.isEmpty()) {
+                            System.out.println(className + ":   " + equivalentClassName);
+                        }
+
                     }
                 }
 

@@ -3153,7 +3153,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3165,7 +3165,7 @@
       "hasShape" : [ "Flat", "Thin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet", "Salty" ],
+      "hasFlavor" : [ "Umami", "Sweet", "Salty" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Noodle" ]
@@ -3177,7 +3177,7 @@
       "hasShape" : [ "Powder" ],
       "canCook" : [ "Reconstituted" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Lactonic", "Smooth", "Sweet" ],
+      "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Powder" ]
@@ -3216,7 +3216,7 @@
       "hasFlavor" : [ "Brown", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
-      "hasType" : [ "Cereal Bread", "Bread" ]
+      "hasType" : [ "Bread" ]
     },
     "Steamed Polished Rice" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -3225,7 +3225,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Astringent" ],
+      "hasFlavor" : [ "Astringent" ],
       "hasVitamin" : [ "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3249,7 +3249,7 @@
       "hasShape" : [ "Powder" ],
       "canCook" : [ "Mixed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Mild", "Sweet" ],
+      "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Flour" ]
@@ -3261,7 +3261,7 @@
       "hasShape" : [ "Flat", "Wide" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet", "Salty" ],
+      "hasFlavor" : [ "Umami", "Sweet", "Salty" ],
       "hasVitamin" : [ "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Noodle" ]
@@ -3274,7 +3274,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Delicate", "Floral" ],
+      "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3397,7 +3397,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Mild", "Bitter" ],
+      "hasFlavor" : [ "Bitter" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3422,7 +3422,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Sweet", "Floral" ],
+      "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3461,7 +3461,7 @@
       "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
-      "hasType" : [ "Cereal Milk" ]
+      "hasType" : [ "Milk" ]
     },
     "Polished Rice5 Percents" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -3488,14 +3488,14 @@
       "hasType" : [ "Seed" ]
     },
     "Wheat" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasBenefit" : [ "Culinary" ],
       "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Chewy", "Powdery" ],
+      "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Woody", "Sweet" ],
+      "hasFlavor" : [ "Woody", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3510,7 +3510,7 @@
       "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
-      "hasType" : [ "Cereal Milk" ]
+      "hasType" : [ "Milk" ]
     },
     "Munpu Polished Rice" : {
       "hasBenefit" : [ "Culinary" ],
@@ -3531,7 +3531,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Floral" ],
+      "hasFlavor" : [ "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3555,7 +3555,7 @@
       "hasShape" : [ "Round", "Cylindrical" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet", "Salty" ],
+      "hasFlavor" : [ "Umami", "Sweet", "Salty" ],
       "hasVitamin" : [ "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Noodle" ]
@@ -3567,7 +3567,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3593,7 +3593,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Sweet", "Floral" ],
+      "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3606,7 +3606,7 @@
       "hasShape" : [ "Small", "Oval", "Round" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Astringent", "Bitter" ],
+      "hasFlavor" : [ "Astringent", "Bitter" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3666,7 +3666,7 @@
       "hasShape" : [ "Small", "Oval", "Short" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Sweet" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
@@ -3681,6 +3681,13 @@
       "hasFlavor" : [ "Woody", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
+      "hasType" : [ "Seed" ]
+    },
+    "Raw Wheat" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Chewy" ],
+      "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Small", "Oval", "Short" ],
       "hasType" : [ "Seed" ]
     },
     "Jasmine Polished Rice" : {
