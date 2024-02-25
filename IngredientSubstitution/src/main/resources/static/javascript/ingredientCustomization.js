@@ -92,11 +92,23 @@ function retrieveData() {
             minerals = "It does not have any minerals.";
         }
 
-        var nutris = nutriProp[clickedTopic].join(', ');
+        var nutris;
+        if (nutriProp[clickedTopic] !== undefined) {
+            nutris = nutriProp[clickedTopic].join(', ');
+        } else {
+            nutris = "It does not have any nutrients.";
+        }
+
         var vitas = vitaProp[clickedTopic].join(', ');
 
         var benes = beneProp[clickedTopic].join(', ');
-        var cooks = cookProp[clickedTopic].join(', ');
+
+        var cooks;
+        if (cookProp[clickedTopic] !== undefined) {
+            cooks = cookProp[clickedTopic].join(', ');
+        } else {
+            cooks = "It does not have any cooking types.";
+        }
 
         var DLSyntax = getDLSyntax(clickedTopic, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes);
 
@@ -127,13 +139,22 @@ function retrieveData() {
             mineralPropLi.appendChild(span);
         }
 
-        nutriProp[clickedTopic].forEach(function(nutri) {
+        if (nutriProp[clickedTopic] !== undefined) {
+            nutriProp[clickedTopic].forEach(function(nutri) {
+                var span = document.createElement('span');
+                span.textContent = nutri;
+                span.classList.add('nutrient-item');
+
+                nutriPropLi.appendChild(span);
+            });
+        } else {
             var span = document.createElement('span');
-            span.textContent = nutri;
+            span.textContent = nutris;
             span.classList.add('nutrient-item');
 
             nutriPropLi.appendChild(span);
-        });
+        }
+
 
         vitaProp[clickedTopic].forEach(function(vita) {
             var span = document.createElement('span');
@@ -186,9 +207,6 @@ function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, mine
     handleProperty(minerals, 'hasMineral.');
     handleProperty(nutris, 'hasNutrient.');
     handleProperty(vitas, 'hasVitamin.');
-
-
-
 
     return syntax;
 }
