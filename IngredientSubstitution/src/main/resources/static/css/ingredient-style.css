@@ -9,7 +9,7 @@
 .custom-box {
     padding: 20px;
     border: 3px solid grey;
-    height: 80vh;
+    height: 85vh;
 }
 
 .custom-box.bg {
@@ -58,6 +58,12 @@
     background-color: #5be166;
     border-radius: 5px;
     padding: 1px;
+    width: max-content;
+}
+
+.active-topic {
+    background-color: #F3B111;
+    border-radius: 5px;
     width: max-content;
 }
 
