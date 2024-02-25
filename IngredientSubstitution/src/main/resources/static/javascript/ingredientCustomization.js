@@ -8,7 +8,7 @@ var currentSortOrder = 'asc';
 var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp;
 
 function sortTopics() {
-    var sidebar = document.getElementById("sidebar-topic");
+    var sidebar = document.getElementById("sidebar-ingredient");
     var list = sidebar.querySelector("ul");
     var items = Array.from(list.getElementsByTagName("li"));
 
@@ -47,9 +47,8 @@ function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes,
 }
 
 function retrieveData() {
-    var sidebarTopics = document.querySelectorAll('#sidebar-topic ul li a');
-    var contentBox = document.querySelector('#content-box');
-    var contentHeader = document.querySelector('.content-header');
+    var sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
+    var contentHeader = document.querySelector('#ingredient-title');
 
     var DL_Display = document.querySelector('#DL_Syntax span');
     var colorPropLi = document.querySelector('#propertyColor span');
@@ -152,7 +151,6 @@ function retrieveData() {
         benePropLi.append(benes);
         cookPropLi.append(cooks);
 
-        contentBox.style.opacity = '1';
     }
 
     sidebarTopics.forEach(function (topic) {
@@ -264,16 +262,14 @@ function changeColor() {
 }
 
 function headerColor(color) {
-    var content_category = document.getElementById('content-category');
-    var content_header = document.getElementsByClassName('content-header');
-
+    var content_category = document.getElementById('foodGroupTitle');
+    var content_header = document.getElementById('ingredient-title');
     content_category.style.backgroundColor = color;
     content_category.style.color = '#ffffff';
 
-    [...content_header].forEach(function(header) {
-        header.style.backgroundColor = color;
-        header.style.color = '#ffffff';
-    });
+    content_header.style.backgroundColor = color;
+    content_header.style.color = '#ffffff';
+
 }
 
 function contentHeaderColor(color) {
