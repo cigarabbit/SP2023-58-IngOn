@@ -1,3 +1,7 @@
+.nav-item.active {
+    border-bottom: 2px solid darkgreen;
+}
+
 .container {
     margin-top: 20px;
 }
