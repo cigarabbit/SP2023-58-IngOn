@@ -140,7 +140,7 @@
     "Mullet Roe" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Grainy", "Crispy" ],
-      "hasColor" : [ "Red", "Orange" ],
+      "hasColor" : [ "Red" ],
       "hasShape" : [ "Small", "Oblong" ],
       "canCook" : [ "Grated", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
@@ -214,1739 +214,40 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     }
   },
-  "Fruit" : {
-    "Washington Red Apple" : { },
-    "Phuket Pineapple" : { },
-    "Green Cantaloupe" : { },
-    "Durian Cha- Nee Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Phu Lae Pineapple" : { },
-    "Glass Orange" : { },
-    "Madas Tamarind" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Non Sung Egg Banana" : { },
-    "Orange Sai- Nam- Phung Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Seedless Langsat" : { },
-    "Long- Stem Wild Durian" : { },
-    "Water Durian" : { },
-    "Kinnaree" : { },
-    "Jambolan" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Black Grapes" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Kiew- Sa- Weya Variety Ripe" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Mae Hwang Man Mango" : { },
-    "Tamarind" : { },
-    "Indian Gooseberry" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sour" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Pineapple Nang- Lae Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Shogun Orange" : { },
-    "White Dragon Fruit" : { },
-    "Banana Khai Phama Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Seedless Chinese Orange" : { },
-    "Nuan Pearl Banana" : { },
-    "Mangosteen" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "White Watermelon Orange" : { },
-    "Rambai" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Sapodilla Si- Da Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Tulakla Rose Apple" : { },
-    "Ma Yong Chid" : { },
-    "Pummelo Bang- Khunnon Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Papaya" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Torn", "Fresh", "Mixed" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Marfai Mango" : { },
-    "Karanda" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Roasted" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Washington" : { },
-    "Fuji" : { },
-    "Sampa Kaew Lychee" : { },
-    "Burmese Egg Banana" : { },
-    "Jujube" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Thong- Dum Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pineapple Sri- Ra- Cha Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Leb- Muenang Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Musk Melon" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Golden Pillow Durian" : { },
-    "Sweet- Scented Salacca" : { },
-    "Mango Kaew Variety Unripe" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Grated", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Astringent", "Acidic", "Green" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Midday Bark Mango" : { },
-    "Honey Salacca" : { },
-    "Sapodilla Ma- Kok Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Red- Cored Waa Banana" : { },
-    "Watermelon" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C" ]
-    },
-    "Banana Takuy Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Dipped", "Fresh", "Fried" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Khai Nonsung Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Sliced" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Nang Lae Pineapple" : { },
-    "Long- Stem Durian" : { },
-    "Soursop" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Salak Palm" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red", "Brown" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh", "Peeled" ],
-      "hasMineral" : [ "Sodium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Green-leafed Longan" : { },
-    "Lychee" : { },
-    "Mango Num- Dok- Main Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Nam- Tai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Litchi Sampao- Kaew Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin" ]
-    },
-    "Durian" : { },
-    "Papaya Hawaii Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Grainy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Rose Apple Phet Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pomelo Khaw- Namhung Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin" ]
-    },
-    "Sweet Tamarind" : { },
-    "Yellow- Pericarp Langsat" : { },
-    "Ramontchi" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Holland Papaya" : { },
-    "Thai Melon" : { },
-    "Apple Light Red Variety" : {
-      "hasSugar" : [ "Sugar" ],
-      "hasColor" : [ "Red" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Litchi King Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin" ]
-    },
-    "Nutmeg" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasFlavor" : [ "Woody" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Chinese Pear Ham Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Longkong" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Jackfruit Nang Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Irregular", "Long" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Rose Apple Khak- Dum Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Yamuangklam Mango" : { },
-    "Jackfruit La- Mud Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Irregular", "Long" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Mango Pimsen Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Durian Kan- Yow Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Orange Acidless" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Leather Jackfruit" : { },
-    "Orange Som- Keaw Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene" ]
-    },
-    "Snake- Tongue Mango" : { },
-    "Carabao Mango" : { },
-    "Cantaloupe Green Flesh" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Melting", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Clean Green Mango" : { },
-    "Banana Hom Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Jujube Thai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Liquid" ],
-      "hasColor" : [ "Green" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mai Mango" : { },
-    "Wax Jambu" : { },
-    "Chinese Pear Kanyaw Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Sriracha Pineapple" : { },
-    "Passion Fruit Juice" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Rose Apple Tub- Tim- Jun Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Red", "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Snake Fruit" : { },
-    "Guavano Seed Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Burmese Banana" : { },
-    "Mango Kaew Variety Ripe" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Diced", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Tib- Mukdahan Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Fuji Red Apple" : { },
-    "Tang-tai" : { },
-    "Papaya Kak- Dum Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene" ]
-    },
-    "Durian Mon- Thong Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Smooth", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Honey Tangerine" : { },
-    "Carunda" : { },
-    "Mango Ok- Rong Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pineapple Phu- Lae Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Khaom Lychee" : { },
-    "Banana Hak- Mook- Nuon Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Banana Nhachang Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Guava Klom- Sali Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Smooth", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Patterned Fuji Red Apple" : { },
-    "Guava" : { },
-    "Passion Fruit Pulp" : { },
-    "Topido Melon" : { },
-    "Dragon Fruit Red Flesh" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Red", "White" ],
-      "hasShape" : [ "Spherical", "Round" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Takhop" : { },
-    "Papaya Holland Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Betacarotene" ]
-    },
-    "Nang Paya Banana" : { },
-    "Jackfruit Jum- Pa Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Irregular", "Long" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Haew Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pisang Awak Banana" : { },
-    "Salacca" : { },
-    "Pimsen Mango" : { },
-    "Banana Nam Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Cantaloupe Yellow Flesh" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Melting", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Nang- Paya Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Ripe Mango" : { },
-    "Litchi Hong- Houy Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin" ]
-    },
-    "Mango Mun- Khun- Si Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Guava Pan- Si- Thong Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Red Dragon Fruit" : { },
-    "Thai Guava" : { },
-    "Peach Thai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Grainy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Watermelon Yellow Flesh" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Thephrosa Banana" : { },
-    "Banana Nom- Sao Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Ripe Green Mango" : { },
-    "Pummelo Tong- Dee Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Chiang Rai Water Banana" : { },
-    "Orange Cho- Guun Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Golden Mango" : { },
-    "Langsat" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Hom- Short- Body Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Durian Kra- Dum Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Tamarind Sweet Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Orange" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Sawberry" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Longan Kaloke Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Dokong" : { },
-    "Zalacca" : { },
-    "Black- Seeded Papaya" : { },
-    "Banana Nam- Chiangrai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Langsad" : { },
-    "Carambola" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Nung- Klang- Wan Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Prarm Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Watermelon Kinnaree Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Wild Cherry" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Rock Banana" : { },
-    "Banana Hin Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Custard Apple" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Smooth", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pomelo Khaw- Tangkwa Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Jampa Banana" : { },
-    "Waa Banana" : { },
-    "Orange Chinese Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Gandaria" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Cantaloupe" : { },
-    "Marian Plum" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Garnished", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Japanese Melon" : { },
-    "Sugar- Palm" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Guava Sun- Ju Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Smooth", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Rambutan Rong- Rean Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin" ]
-    },
-    "Chinese Pear Hima Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Pink Rambutan" : { },
-    "Sapota" : { },
-    "Sapodilla" : { },
-    "s Finger Wild Durian" : { },
-    "opical Melon" : { },
-    "E-luang Durian" : { },
-    "Naka Rose Apple" : { },
-    "Apple Green Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Lychee With Oar- Shaped Leaves" : { },
-    "Pearl Banana" : { },
-    "Luna Nut" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Grainy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Salty" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Sugar Palm Fruit" : { },
-    "Raw Green Swuay Mango" : { },
-    "Apple Red Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Yellow Cantaloupe" : { },
-    "Water Banana" : { },
-    "Short Fruit Lady Finger Banana" : { },
-    "Mango Rad Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Java Apple" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Thipparot Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Pomelo Khaw- Yai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Banana Khai Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Mashed" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Raw Green Mango" : { },
-    "Mango Kiew- Sa- Weya Variety Unripe" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Grated" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Astringent", "Acidic", "Green" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Longan Beawkeaw Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Sweet Green Orange" : { },
-    "Mango Pimsen- Mun Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Phraong Mango" : { },
-    "Hog Plum" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Irregular", "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Litchi" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Chak Phadid Lychee" : { },
-    "Watermelon Torpedo Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Thiamin" ]
-    },
-    "s Plum" : { },
-    "Takhui Banana" : { },
-    "Banana Nak Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Mameaw" : { },
-    "Date Palm" : { },
-    "Bang Khun Non Orange" : { },
-    "Nam Dok Mai Mango" : { },
-    "Chomphu" : { },
-    "Rose Apple Toon- Klow Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Kiew- Sa- Ard Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Phama- Heak- Kuk Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ]
-    },
-    "Loog Taw" : { },
-    "Large White Watermelon Orange" : { },
-    "Java Plum" : { },
-    "Seedless Durian" : { },
-    "Yellow Melon" : { },
-    "Banana Namwa- Ngaen Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Thai Elephant Ear Banana" : { },
-    "Hong Huai Lychee" : { },
-    "Passion Fruit" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Durian Paste" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Cherry" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Thiamin" ]
-    },
-    "Banana Pisangsusu Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Lady Finger Banana" : { },
-    "Banana Nam- Wa Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Chinese Pear Namphung Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
-    },
-    "Malay Apple" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Grainy", "Juicy", "Crispy" ],
-      "hasColor" : [ "Brown", "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Dragon Fruit White Flesh" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "White" ],
-      "hasShape" : [ "Spherical", "Round" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasFlavor" : [ "Mild", "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Red Grapes  Imported" : { },
-    "Hawaiian Papaya" : { },
-    "Nomsaw Banana" : { },
-    "Golden Odense" : { },
-    "Ma Naw Haw Manao Mango" : { },
-    "Ok Rong Mango" : { },
-    "Jackfruit  Variegated" : { },
-    "Durian Loung Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Riboflavin", "Niacin" ]
-    },
-    "Jampa Jackfruit" : { },
-    "Tiphrosa Banana" : { },
-    "Chanee" : { },
-    "Golden Pillow Wild Durian" : { },
-    "Thai Water Banana" : { },
-    "Snow Salacca" : { },
-    "Fat Pimsen Mango" : { },
-    "Rambutan Pink Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy", "Juicy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ]
-    },
-    "Granadilla" : { },
-    "Green Grapes" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Long- Stemmed Salacca" : { },
-    "Tubemosa Banana" : { },
-    "Banana Hak- Mook Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mango Karabow Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Litchi Kalok Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin" ]
-    },
-    "Longan" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Makham Pom" : { },
-    "Guava Kim- Ju Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Smooth", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Banana Thepparot Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Honey Watermelon Orange" : { },
-    "Banana Hom- Jumpa Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Rade Mango" : { },
-    "Rose Apple" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Mandarin" : { },
-    "Black- Branch Rose Apple" : { },
-    "Silver Waa Banana" : { },
-    "Banana Hom- Thip Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Pisang Su Su" : { },
-    "Mango Yai- Glam Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Long" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Persimmon" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Passion Fruit Yam" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Sour" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Red Grapes" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Crunchy", "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Thai Langsat" : { },
-    "Wild Durian" : { },
-    "School Rambutan" : { },
-    "Ripe Green Swuay Mango" : { },
-    "Mamiew" : { },
-    "Pomegranate Rose Apple" : { },
-    "Litchi Kom Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin C" ]
-    },
-    "Nak Banana" : { },
-    "Clustered Longan" : { },
-    "Green Apple" : { },
-    "Tangerine" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Banana Namwa- Dang Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy", "Juicy" ],
-      "hasColor" : [ "Red", "Yellow" ],
-      "hasShape" : [ "Long", "Curved" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ]
-    },
-    "Raspberry" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Red" ],
-      "hasShape" : [ "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Acidic", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ]
-    },
-    "Pineapple Phu- Ket Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Oval" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Citrus", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Rose Apple Nak Variety" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy", "Crispy" ],
-      "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Oval", "Round" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Cherry  Non- Native" : { },
-    "Duku" : { },
-    "Passion Fruit Seeds" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Oblong" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Crunchy", "Umami" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ]
-    },
-    "Egg Banana" : { }
-  },
+  "Fruit" : { },
   "Shellfish" : {
-    "Tuna In Salad" : { },
+    "Tuna In Salad" : {
+      "hasOtherNames" : [ "Tuna In Mayonnaise" ]
+    },
+    "Pickled Fish" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Flaky", "Tender" ],
+      "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Chameleon Goby" ],
+      "canCook" : [ "Seasoned" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
+      "hasVitamin" : [ "Vitamin A", "Niacin", "Thiamin", "Retinol" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
     "Giant Gourami" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Freshwater Stingray" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Drum Fish" : { },
+    "Drum Fish" : {
+      "hasOtherNames" : [ "Julliens Mud Carp" ]
+    },
     "Fermented Bullfrog" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
+      "hasOtherNames" : [ "Fermented Fish In Jar" ],
       "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fish", "Salty" ],
@@ -1957,6 +258,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Gelatinous" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Mantis Shrimp" ],
       "canCook" : [ "Grilled", "Baked" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -1967,20 +269,23 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Barramundi Liver" ],
       "canCook" : [ "Mixed", "Blanched" ],
       "hasMineral" : [ "Phosphorus" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Yellowtail Scad" : { },
+    "Yellowtail Scad" : {
+      "hasOtherNames" : [ "Black-banded Avally" ]
+    },
     "Saba" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -1988,9 +293,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Walking Catfish" ],
       "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -1998,6 +304,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Black Tiger Shrimp Head" ],
       "canCook" : [ "Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami" ],
@@ -2008,28 +315,31 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray", "White" ],
+      "hasOtherNames" : [ "Daggertooth Pike Conger", "Ricefish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Mixed", "Stir- Fried", "Pan- Fried", "Blanched" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Daggertooth Pike Conger" : { },
+    "Daggertooth Pike Conger" : {
+      "hasOtherNames" : [ "Anchovy" ]
+    },
     "Nile Tilapia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
-      "hasColor" : [ "Gray", "White" ],
+      "hasColor" : [ "White" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
     "Crab Paste" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Brown" ],
-      "canCook" : [ "Sauce", "Seasoned" ],
+      "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -2039,31 +349,38 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Red Lionfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Pufferfish" : { },
+    "Pufferfish" : {
+      "hasOtherNames" : [ "Fresh-water Catfish" ]
+    },
     "Siamese Mud Carp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
+      "hasOtherNames" : [ "Silver Barb" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Soft- Shell Clam" : { },
+    "Soft- Shell Clam" : {
+      "hasOtherNames" : [ "Lamp Shell" ]
+    },
     "River Snail" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Sand Dollar" ],
       "canCook" : [ "Fried", "Stewed", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2071,6 +388,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Fenneropenaeus Merguiensis" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -2081,20 +399,23 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Butter-like" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "King Mackerel" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Freshwater Eel" : { },
+    "Freshwater Eel" : {
+      "hasOtherNames" : [ "Bellied Pacu" ]
+    },
     "Boeseman Croaker" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2102,21 +423,27 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Freshwater Eel" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Skipjack Tuna" : { },
-    "Red Lionfish" : { },
+    "Skipjack Tuna" : {
+      "hasOtherNames" : [ "Grey Feature Back" ]
+    },
+    "Red Lionfish" : {
+      "hasOtherNames" : [ "Snapper" ]
+    },
     "Torpedo Scad" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Spanish Mackerel" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -2124,9 +451,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Snapper Fish Meat" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2135,41 +463,81 @@
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Pink", "Yellow" ],
       "canCook" : [ "Seasoned", "Raw" ],
-      "hasFlavor" : [ "Mild", "Umami", "Salty" ],
+      "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Horse Crab" : { },
-    "Blood Clam" : { },
+    "Horse Crab" : {
+      "hasOtherNames" : [ "Blue Swimming Crab" ]
+    },
+    "Blood Clam" : {
+      "hasOtherNames" : [ "Blood Cockle" ]
+    },
     "Soldier River Barb" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Giant Snakehead" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
+    "Red Flour Fish" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Flaky", "Tender" ],
+      "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Red Flour Beetle" ],
+      "canCook" : [ "Seasoned" ],
+      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
+      "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Tuna" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Pink" ],
+      "hasOtherNames" : [ "Tuna Belly", "Mackerel" ],
       "canCook" : [ "Seasoned", "Raw" ],
-      "hasFlavor" : [ "Mild", "Umami", "Salty" ],
+      "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Soft- Finned Fish" : { },
-    "Pygmy Squid" : { },
-    "Fermented Fish Powder" : { },
+    "Soft- Finned Fish" : {
+      "hasOtherNames" : [ "Whisker Sheatfish" ]
+    },
+    "Pygmy Squid" : {
+      "hasOtherNames" : [ "Spincless Cuttlefish" ]
+    },
+    "Fermented Fish Powder" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasColor" : [ "Brown" ],
+      "canCook" : [ "Seasoned" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
+      "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
+    "Red Tilapia" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Flaky", "Tender" ],
+      "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Spanish Mackerel" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
+      "hasMineral" : [ "Iodine" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
+      "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
     "Spotted Hampala Barb" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Pimelodid Catfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -2177,68 +545,82 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Redtail Catfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Tattoo Fish" : { },
-    "Gourami Fish" : { },
-    "Red Snapper" : { },
+    "Tattoo Fish" : {
+      "hasOtherNames" : [ "Purple Spotted Bigeye" ]
+    },
+    "Gourami Fish" : {
+      "hasOtherNames" : [ "Grouper" ]
+    },
+    "Red Snapper" : {
+      "hasOtherNames" : [ "Orante Threadfin Bream" ]
+    },
     "Orante Threadfin Bream" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Red Snapper" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Whipfin Silver- Biddy" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Flaky", "Tender" ],
-      "hasColor" : [ "Silver" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
-      "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
-      "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
+    "Pike Conger" : {
+      "hasOtherNames" : [ "Abramine" ]
     },
-    "Pike Conger" : { },
     "Shortjawed Barracuda" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasColor" : [ "Colorful" ],
+      "hasOtherNames" : [ "Flowerhorn Cichlid Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Adonis Pleco" : { },
+    "Adonis Pleco" : {
+      "hasOtherNames" : [ "Lined Silver Grunt" ]
+    },
     "Bluespot Gray Mullet" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Barramundi" ],
       "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Barramundi Liver" : { },
+    "Barramundi Liver" : {
+      "hasOtherNames" : [ "Bluespot Gray Mullet Viscera" ]
+    },
     "Julliens Mud Carp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Escolar", "Drum Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Escolar" : { },
-    "Leatherjacket Fish" : { },
+    "Escolar" : {
+      "hasOtherNames" : [ "Julliens Mud Carp" ]
+    },
+    "Leatherjacket Fish" : {
+      "hasOtherNames" : [ "Common Silver Barb" ]
+    },
     "Spotted Babylon" : {
+      "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Sweet Clam" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
@@ -2249,9 +631,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Tilapia", "Siped Snake-head Fish", "Sea Bass" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2259,17 +642,21 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Mullet Fish" ],
       "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Potassium", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Orange Shrimp" : { },
+    "Orange Shrimp" : {
+      "hasOtherNames" : [ "Fermented Shrimp" ]
+    },
     "Blood Cockle" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender", "Crispy" ],
       "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Blood Clam" ],
       "canCook" : [ "Grilled", "Boiled" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -2280,9 +667,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Soft- Shell Clam" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2290,104 +678,126 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
+      "hasOtherNames" : [ "Threadfin Salmon" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Mantis Shrimp" : { },
+    "Mantis Shrimp" : {
+      "hasOtherNames" : [ "Green Mussel" ]
+    },
     "Serrated Mud Crab" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Blue" ],
+      "hasOtherNames" : [ "Blue Crab" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Fermented Fish With Rice" : { },
-    "Tuna Belly" : { },
-    "Bitter Clam" : { },
-    "Fermented Fish Power" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasColor" : [ "Brown" ],
-      "canCook" : [ "Seasoned" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
-      "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    "Fermented Fish With Rice" : {
+      "hasOtherNames" : [ "Rasbora Fish Fermented" ]
+    },
+    "Tuna Belly" : {
+      "hasOtherNames" : [ "Tuna" ]
+    },
+    "Bitter Clam" : {
+      "hasOtherNames" : [ "Pond Snail" ]
     },
     "Blue Swimming Crab" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Horse Crab" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Giant Snakehead" : { },
-    "Sailfish" : { },
-    "Pomelo" : { },
-    "Small Shrimp" : { },
-    "Spanish Mackerel" : { },
+    "Giant Snakehead" : {
+      "hasOtherNames" : [ "Soldier River Barb" ]
+    },
+    "Sailfish" : {
+      "hasOtherNames" : [ "Snake Skin Gourami" ]
+    },
+    "Small Shrimp" : {
+      "hasOtherNames" : [ "Krill" ]
+    },
+    "Spanish Mackerel" : {
+      "hasOtherNames" : [ "Red Tilapia", "Torpedo Scad" ]
+    },
     "Blue Sheartfish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
+      "hasTexture" : [ "Nutty", "Crunchy" ],
+      "hasColor" : [ "Colorful" ],
+      "hasOtherNames" : [ "Parrotfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Sea Bass" : { },
-    "Fenneropenaeus Merguiensis" : { },
+    "Sea Bass" : {
+      "hasOtherNames" : [ "Catfish" ]
+    },
+    "Fenneropenaeus Merguiensis" : {
+      "hasOtherNames" : [ "Lanchester Fresh Water Prawn" ]
+    },
     "Fermented Fish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Flaky", "Tender" ],
-      "hasColor" : [ "Red", "Gray", "Yellow" ],
+      "hasColor" : [ "Gray", "Yellow" ],
+      "hasOtherNames" : [ "Pla-ra", "Snakehead Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Seasoned", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish", "Salty" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
+      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Hairin Anchovy" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Walking Catfish" ],
       "canCook" : [ "Seasoned" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Shark Fin" : {
+      "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Gray" ],
       "canCook" : [ "Simmered" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Wolf Herring" : { },
+    "Wolf Herring" : {
+      "hasOtherNames" : [ "Tongue-sole" ]
+    },
     "Longtail- Tuna" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
+      "hasOtherNames" : [ "Mackerel Scad" ],
       "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Common Silver Barb" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Firm" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Leatherjacket Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2395,9 +805,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Barred Mackerel" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -2405,30 +816,38 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "River Catfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Glass Shrimp" : { },
+    "Glass Shrimp" : {
+      "hasOtherNames" : [ "Small Fermented Shrimp" ]
+    },
     "Abalone" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Surf Clam" ],
       "canCook" : [ "Braised", "Raw", "Steamed" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Saba Fish" : { },
-    "Clown Knifefish" : { },
-    "Flying Fish" : { },
+    "Clown Knifefish" : {
+      "hasOtherNames" : [ "Spotfinned Spiny Eel" ]
+    },
+    "Flying Fish" : {
+      "hasOtherNames" : [ "Macronema Cat Fish" ]
+    },
     "Fresh-water Catfish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Yellow" ],
+      "hasOtherNames" : [ "Pufferfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fish" ],
@@ -2437,6 +856,7 @@
     },
     "Rasbora Fish Fermented" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasOtherNames" : [ "Fermented Fish With Rice" ],
       "canCook" : [ "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami", "Fish", "Salty" ],
@@ -2447,20 +867,24 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Orange Shrimp" ],
       "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Surf Clam" : { },
+    "Surf Clam" : {
+      "hasOtherNames" : [ "Abalone" ]
+    },
     "Siped Snake-head Fish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Catfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2468,20 +892,24 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Soft- Shell Horse Crab" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Mud Crab" : { },
+    "Mud Crab" : {
+      "hasOtherNames" : [ "Ricefield Crabs" ]
+    },
     "Young Serrated Mud Crab" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Blue" ],
+      "hasOtherNames" : [ "Soft- Shell Crab" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2489,9 +917,19 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Small Shrimp" ],
       "canCook" : [ "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
+      "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
+    "Pla-ra" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasOtherNames" : [ "Fermented Fish" ],
+      "canCook" : [ "Seasoned" ],
+      "hasMineral" : [ "Iron" ],
+      "hasFlavor" : [ "Umami", "Fish", "Salty" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2499,13 +937,16 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Clown Knifefish" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Black Tiger Shrimp Head" : { },
+    "Black Tiger Shrimp Head" : {
+      "hasOtherNames" : [ "Giant Tiger Prawn Head" ]
+    },
     "Fish Maw" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
@@ -2520,33 +961,44 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Transparent" ],
+      "hasOtherNames" : [ "Pygmy Squid" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish", "Sweet" ],
+      "hasFlavor" : [ "Umami", "Fish", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Snapper Fish Meat" : { },
+    "Snapper Fish Meat" : {
+      "hasOtherNames" : [ "Sharkminnow" ]
+    },
     "Snake Skin Gourami" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Sailfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Soft- Shell Crab" : { },
-    "Parrotfish" : { },
-    "Tilapia" : { },
+    "Soft- Shell Crab" : {
+      "hasOtherNames" : [ "Young Serrated Mud Crab" ]
+    },
+    "Parrotfish" : {
+      "hasOtherNames" : [ "Blue Sheartfish" ]
+    },
+    "Tilapia" : {
+      "hasOtherNames" : [ "Catfish", "Mekong Giant Catfish" ]
+    },
     "Mekong Giant Catfish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Tilapia" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2554,20 +1006,36 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Transparent" ],
+      "hasOtherNames" : [ "Snakehead Glassfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Black Tiger Shrimp Meat" : { },
-    "Sand Dollar" : { },
+    "Whipfin Silver-biddy" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Flaky", "Tender" ],
+      "hasColor" : [ "Silver" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
+      "hasMineral" : [ "Phosphorus", "Iodine" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
+      "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
+    },
+    "Black Tiger Shrimp Meat" : {
+      "hasOtherNames" : [ "Giant Tiger Prawn Body" ]
+    },
+    "Sand Dollar" : {
+      "hasOtherNames" : [ "River Snail" ]
+    },
     "Horse Mussel" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Clam Hard Clam" ],
       "canCook" : [ "Grilled", "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2575,53 +1043,72 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Bitter Clam" ],
       "canCook" : [ "Fried", "Stewed", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Mackerel Scad" : { },
-    "Clam Hard Clam" : { },
-    "Red Flour Beetle" : { },
-    "Redtail Catfish" : { },
+    "Mackerel Scad" : {
+      "hasOtherNames" : [ "Longtail- Tuna" ]
+    },
+    "Clam Hard Clam" : {
+      "hasOtherNames" : [ "Horse Mussel" ]
+    },
+    "Red Flour Beetle" : {
+      "hasOtherNames" : [ "Red Flour Fish" ]
+    },
+    "Redtail Catfish" : {
+      "hasOtherNames" : [ "Spotted Featherback Fish" ]
+    },
     "Grey Feature Back" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Skipjack Tuna" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Tuna In Mayonnaise" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Pink", "Green" ],
+      "hasOtherNames" : [ "Tuna In Salad" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
-      "hasFlavor" : [ "Mild", "Umami", "Acidic", "Sour" ],
+      "hasFlavor" : [ "Umami", "Acidic", "Sour" ],
       "hasVitamin" : [ "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Dried Small Shrimp" : { },
-    "Chameleon Goby" : { },
+    "Dried Small Shrimp" : {
+      "hasOtherNames" : [ "Dried Shrimp" ]
+    },
+    "Chameleon Goby" : {
+      "hasOtherNames" : [ "Pickled Fish" ]
+    },
     "Giant Tiger Prawn Body" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Black Tiger Shrimp Meat" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Walking Catfish" : { },
+    "Walking Catfish" : {
+      "hasOtherNames" : [ "Hairin Anchovy", "Common Climbing Perch", "Cobia" ]
+    },
     "Macronema Cat Fish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
+      "hasOtherNames" : [ "Flying Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Sodium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2629,32 +1116,46 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Firm" ],
       "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Tuna" ],
       "canCook" : [ "Grilled", "Baked", "Raw", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Salty" ],
+      "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
     "Whisker Sheatfish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
+      "hasColor" : [ "Colorful" ],
+      "hasOtherNames" : [ "Soft- Finned Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Silver Barb" : { },
-    "Threadfin Salmon" : { },
-    "Barramundi" : { },
-    "Blue Crab" : { },
-    "Barred Mackerel" : { },
+    "Silver Barb" : {
+      "hasOtherNames" : [ "Siamese Mud Carp" ]
+    },
+    "Threadfin Salmon" : {
+      "hasOtherNames" : [ "Siped Catfish" ]
+    },
+    "Barramundi" : {
+      "hasOtherNames" : [ "Bluespot Gray Mullet" ]
+    },
+    "Blue Crab" : {
+      "hasOtherNames" : [ "Serrated Mud Crab" ]
+    },
+    "Barred Mackerel" : {
+      "hasOtherNames" : [ "Yellow Queenfish" ]
+    },
     "Apple Snail" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Cockle" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -2662,30 +1163,41 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Walking Catfish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Asian Swamp Eel" : { },
-    "Fermented Fish In Jar" : { },
+    "Asian Swamp Eel" : {
+      "hasOtherNames" : [ "Common Ponyfish" ]
+    },
+    "Fermented Fish In Jar" : {
+      "hasOtherNames" : [ "Fermented Bullfrog" ]
+    },
     "Black-banded Avally" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
+      "hasOtherNames" : [ "Yellowtail Scad" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Soft- Shell Horse Crab" : { },
-    "King Mackerel" : { },
+    "Soft- Shell Horse Crab" : {
+      "hasOtherNames" : [ "Young Blue Swimming Crab" ]
+    },
+    "King Mackerel" : {
+      "hasOtherNames" : [ "Swamp Eel" ]
+    },
     "Dried Shrimp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Orange" ],
+      "hasOtherNames" : [ "Dried Small Shrimp" ],
       "canCook" : [ "Fried", "Stir- Fried", "Soaked" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
@@ -2696,9 +1208,10 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Pike Conger" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -2706,69 +1219,97 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "Banana Squid" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish", "Sweet" ],
+      "hasFlavor" : [ "Umami", "Fish", "Sweet" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Mullet Fish" : { },
-    "Sweet Clam" : { },
-    "Snakehead Fish" : { },
-    "Banana Squid" : { },
-    "River Catfish" : { },
+    "Mullet Fish" : {
+      "hasOtherNames" : [ "Asian Redtail Catfish" ]
+    },
+    "Sweet Clam" : {
+      "hasOtherNames" : [ "Spotted Babylon" ]
+    },
+    "Snakehead Fish" : {
+      "hasOtherNames" : [ "Fermented Fish" ]
+    },
+    "Banana Squid" : {
+      "hasOtherNames" : [ "Splendid Squid" ]
+    },
+    "River Catfish" : {
+      "hasOtherNames" : [ "Giant Catfish" ]
+    },
     "Ricefield Crabs" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender", "Crispy" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Mud Crab" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried" ],
       "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "White Pomfret" : { },
-    "Ricefish" : { },
+    "White Pomfret" : {
+      "hasOtherNames" : [ "Giant Seaperch" ]
+    },
+    "Ricefish" : {
+      "hasOtherNames" : [ "Anchovy" ]
+    },
     "Lined Silver Grunt" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender", "Crispy" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Adonis Pleco" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
-    "Pimelodid Catfish" : { },
-    "Flowerhorn Cichlid Fish" : { },
+    "Pimelodid Catfish" : {
+      "hasOtherNames" : [ "Spotted Hampala Barb" ]
+    },
+    "Flowerhorn Cichlid Fish" : {
+      "hasOtherNames" : [ "Shortjawed Barracuda" ]
+    },
     "Giant Seaperch" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
+      "hasOtherNames" : [ "White Pomfret" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
     "Small Fermented Shrimp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Transparent" ],
+      "hasOtherNames" : [ "Glass Shrimp" ],
       "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Cockle" : { },
-    "Freshwater Stingray" : { },
+    "Cockle" : {
+      "hasOtherNames" : [ "Apple Snail" ]
+    },
+    "Freshwater Stingray" : {
+      "hasOtherNames" : [ "Giant Gourami" ]
+    },
     "Tongue-sole" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Wolf Herring" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -2776,29 +1317,34 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Gourami Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Purple Spotted Bigeye" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Tattoo Fish" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
     "Common Ponyfish" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
+      "hasOtherNames" : [ "Asian Swamp Eel" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir- Fried", "Pan- Fried" ],
-      "hasFlavor" : [ "Mild", "Umami", "Fish" ],
+      "hasFlavor" : [ "Umami", "Fish" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "Snakehead Glassfish" : { }
+    "Snakehead Glassfish" : {
+      "hasOtherNames" : [ "Indian Hilabut" ]
+    }
   },
   "Spice_Condiment" : {
     "Leech Lime Juice" : {
@@ -2851,6 +1397,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Liquid" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Fish Sauce" ],
       "canCook" : [ "Sauteed", "Simmered" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet", "Salty" ],
@@ -2905,7 +1452,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Goat Pepper" : { },
+    "Goat Pepper" : {
+      "hasOtherNames" : [ "Dried Pepper" ]
+    },
     "Cumin Seeds" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
@@ -2922,6 +1471,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Liquid" ],
       "hasColor" : [ "Brown" ],
+      "hasOtherNames" : [ "Fish Sauce" ],
       "canCook" : [ "Glazed", "Simmered" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
@@ -2933,6 +1483,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Grainy" ],
       "hasColor" : [ "Brown", "Red Brown" ],
+      "hasOtherNames" : [ "Ka-pi" ],
       "canCook" : [ "Roasted", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Mild", "Umami", "Salty" ],
@@ -2992,6 +1543,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Long" ],
+      "hasOtherNames" : [ "Goat Pepper" ],
       "canCook" : [ "Sliced", "Rehydrated" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Astringent", "Spicy", "Pungent" ],
@@ -2999,7 +1551,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Fruit" ]
     },
-    "Matsaman" : { },
+    "Matsaman" : {
+      "hasOtherNames" : [ "Chilli Paste" ]
+    },
     "White Turmeric" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous" ],
@@ -3060,7 +1614,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Leaf" ]
     },
-    "Fish Sauce" : { },
+    "Fish Sauce" : {
+      "hasOtherNames" : [ "Salted Budu", "Sweetened Budu" ]
+    },
     "Mace" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Grainy" ],
@@ -3089,6 +1645,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Grainy" ],
       "hasColor" : [ "Brown", "Red Brown" ],
+      "hasOtherNames" : [ "Ka-pi" ],
       "canCook" : [ "Roasted", "Fried", "Stir- Fried", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami", "Sweet", "Salty" ],
@@ -3112,6 +1669,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Gritty" ],
       "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "Matsaman" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Spicy" ],
@@ -3131,7 +1689,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Ka-pi" : { }
+    "Ka-pi" : {
+      "hasOtherNames" : [ "Shrimp Paste First Class Quality", "Shrimp Paste Second Class Quality" ]
+    }
   },
   "Cereal" : {
     "Waxy Corn" : {
@@ -3139,6 +1699,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Small", "Flat", "Round" ],
+      "hasOtherNames" : [ "Sticky Corn" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Lactonic", "Astringent", "Sweet" ],
@@ -3493,6 +2054,7 @@
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Small", "Oval", "Short" ],
+      "hasOtherNames" : [ "Wheat Bran" ],
       "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Woody", "Sweet" ],
@@ -3572,7 +2134,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Sticky Corn" : { },
+    "Sticky Corn" : {
+      "hasOtherNames" : [ "Waxy Corn" ]
+    },
     "Oats" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
@@ -3702,7 +2266,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Wheat Bran" : { },
+    "Wheat Bran" : {
+      "hasOtherNames" : [ "Wheat" ]
+    },
     "Dried Germ Wheat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
@@ -3890,6 +2456,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Muskrat" ],
       "canCook" : [ "Grilled", "Roasted", "Stewed" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
@@ -3910,13 +2477,18 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Monitor Lizard" : { },
-    "Monitor Lizard Eggs" : { },
+    "Monitor Lizard" : {
+      "hasOtherNames" : [ "Ground Lizard" ]
+    },
+    "Monitor Lizard Eggs" : {
+      "hasOtherNames" : [ "Tadpole" ]
+    },
     "Black Chicken Thigh" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Black" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Black Chicken Hip" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fowl" ],
@@ -3941,6 +2513,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Domestic Chicken Leg", "Domestic Chicken Wing" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Mild", "Umami", "Fowl" ],
@@ -3960,18 +2533,31 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Pork Collar" : { },
+    "Pork Collar" : {
+      "hasOtherNames" : [ "Pork Shoulder" ]
+    },
     "Chicken Meat" : { },
-    "Pork Baby Back Ribs" : { },
-    "Honeycomb" : { },
-    "Beef Shoulder" : { },
-    "Black Chicken Hip" : { },
-    "Beef Neck" : { },
+    "Pork Baby Back Ribs" : {
+      "hasOtherNames" : [ "Pork Spare Ribs" ]
+    },
+    "Honeycomb" : {
+      "hasOtherNames" : [ "Beef Placenta" ]
+    },
+    "Beef Shoulder" : {
+      "hasOtherNames" : [ "Beef Hump" ]
+    },
+    "Black Chicken Hip" : {
+      "hasOtherNames" : [ "Black Chicken Thigh" ]
+    },
+    "Beef Neck" : {
+      "hasOtherNames" : [ "Beef Hump" ]
+    },
     "Beef Gill" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Tubular" ],
+      "hasOtherNames" : [ "Beef Thymus Gland", "Sweetbread" ],
       "canCook" : [ "Boiled", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
@@ -3984,6 +2570,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Domestic Chicken Hip" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasFlavor" : [ "Mild", "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -4012,9 +2599,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Wild Chicken Leg" : { },
-    "Wild Chicken Hip" : { },
-    "Lard" : { },
+    "Wild Chicken Leg" : {
+      "hasOtherNames" : [ "Jungle Fowl Drumstick" ]
+    },
+    "Wild Chicken Hip" : {
+      "hasOtherNames" : [ "Jungle Fowl Thigh" ]
+    },
+    "Lard" : {
+      "hasOtherNames" : [ "Pork Fat" ]
+    },
     "Pork Lung" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
@@ -4033,6 +2626,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Wild Chicken Leg" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fowl" ],
@@ -4046,6 +2640,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Beef Shoulder", "Beef Neck" ],
       "canCook" : [ "Grilled", "Roasted", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Umami" ],
@@ -4071,6 +2666,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Junglefowl" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Baked", "Sauteed", "Stir- Fried" ],
       "hasMineral" : [ "Sodium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
@@ -4083,6 +2679,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Chicken Comb" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Mild", "Umami", "Fowl" ],
@@ -4121,6 +2718,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Giblets Meat" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4140,12 +2738,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Tenderloin" : { },
+    "Tenderloin" : {
+      "hasOtherNames" : [ "Pork Tenderloin" ]
+    },
     "Jungle Fowl Thigh" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Wild Chicken Hip" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fowl" ],
@@ -4170,6 +2771,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Domestic Chicken Breast" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Mild", "Umami", "Fowl" ],
@@ -4177,7 +2779,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Chicken Comb" : { },
+    "Chicken Comb" : {
+      "hasOtherNames" : [ "Native Chicken Drumstick" ]
+    },
     "Pork Liver" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
@@ -4191,12 +2795,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Giblets" : { },
+    "Giblets" : {
+      "hasOtherNames" : [ "Frog" ]
+    },
     "Jungle Fowl Breast" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Wild Chicken Breast" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fowl" ],
@@ -4204,21 +2811,32 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Beef Ipe" : { },
+    "Beef Ipe" : {
+      "hasOtherNames" : [ "Beef Placenta" ]
+    },
     "Ground Lizard" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Monitor Lizard" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Duck Meat" : { },
-    "Beef Omasum" : { },
-    "Domestic Chicken Hip" : { },
-    "Domestic Chicken Leg" : { },
+    "Duck Meat" : {
+      "hasOtherNames" : [ "Duck" ]
+    },
+    "Beef Omasum" : {
+      "hasOtherNames" : [ "Beef Rumen" ]
+    },
+    "Domestic Chicken Hip" : {
+      "hasOtherNames" : [ "Native Chicken Thigh" ]
+    },
+    "Domestic Chicken Leg" : {
+      "hasOtherNames" : [ "Native Chicken Wing" ]
+    },
     "Duck Blood" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasColor" : [ "Red" ],
@@ -4229,14 +2847,19 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Junglefowl" : { },
-    "Domestic Chicken Breast" : { },
+    "Junglefowl" : {
+      "hasOtherNames" : [ "Quail" ]
+    },
+    "Domestic Chicken Breast" : {
+      "hasOtherNames" : [ "Native Chicken Breast" ]
+    },
     "Beef Abomasum" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Beef Ipe Stomach" ],
       "canCook" : [ "Boiled", "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
@@ -4244,12 +2867,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Pork Ipe" : { },
+    "Pork Ipe" : {
+      "hasOtherNames" : [ "Pork Stomach" ]
+    },
     "Pork Fat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crispy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Lard" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium" ],
       "hasFlavor" : [ "Mammal", "Umami" ],
@@ -4261,6 +2887,7 @@
       "hasSugar" : [ "Sugar" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Liquid" ],
+      "hasOtherNames" : [ "Beef Ipe", "Honeycomb" ],
       "canCook" : [ "Boiled" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -4273,6 +2900,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Beef Omasum" ],
       "canCook" : [ "Boiled", "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
@@ -4298,6 +2926,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Tenderloin" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Stir- Fried", "Pan- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Umami" ],
@@ -4310,6 +2939,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red", "Green" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Giblets" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Baked", "Stir- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Mild", "Terpenoid", "Umami" ],
@@ -4322,6 +2952,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Monitor Lizard Eggs" ],
       "canCook" : [ "Fried", "Sauteed", "Stir- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
@@ -4329,13 +2960,18 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Muskrat" : { },
-    "Black Chicken Comb" : { },
+    "Muskrat" : {
+      "hasOtherNames" : [ "Rat" ]
+    },
+    "Black Chicken Comb" : {
+      "hasOtherNames" : [ "Black Chicken Gizzard" ]
+    },
     "Jungle Fowl Wing" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Wild Chicken Wing" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Fowl" ],
@@ -4343,14 +2979,19 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Beef Intestines" : { },
-    "Giblets Meat" : { },
+    "Beef Intestines" : {
+      "hasOtherNames" : [ "Beef Intestine" ]
+    },
+    "Giblets Meat" : {
+      "hasOtherNames" : [ "Frog Meat" ]
+    },
     "Pork Shoulder" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Pork Collar" ],
       "canCook" : [ "Roasted", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Umami" ],
@@ -4364,6 +3005,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Tubular" ],
+      "hasOtherNames" : [ "Beef Intestines" ],
       "canCook" : [ "Boiled", "Sauteed", "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
@@ -4376,6 +3018,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Black" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Black Chicken Comb" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Mild", "Umami", "Fowl" ],
@@ -4383,8 +3026,12 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Beef Ipe Stomach" : { },
-    "Beef Thymus Gland" : { },
+    "Beef Ipe Stomach" : {
+      "hasOtherNames" : [ "Beef Abomasum" ]
+    },
+    "Beef Thymus Gland" : {
+      "hasOtherNames" : [ "Beef Gill" ]
+    },
     "Chicken Blood" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasColor" : [ "Red" ],
@@ -4401,18 +3048,22 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Pork Ipe" ],
       "canCook" : [ "Boiled", "Stewed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Mammal", "Mild", "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
-    "Wild Chicken Wing" : { },
+    "Wild Chicken Wing" : {
+      "hasOtherNames" : [ "Jungle Fowl Wing" ]
+    },
     "Duck" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Duck Meat" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Braised", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4420,7 +3071,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Pouly" ]
     },
-    "Domestic Chicken Wing" : { },
+    "Domestic Chicken Wing" : {
+      "hasOtherNames" : [ "Native Chicken Wing" ]
+    },
     "Black Chicken Wing" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
@@ -4433,13 +3086,16 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Wild Chicken Breast" : { },
+    "Wild Chicken Breast" : {
+      "hasOtherNames" : [ "Jungle Fowl Breast" ]
+    },
     "Pork Spare Ribs" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "Pork Baby Back Ribs" ],
       "canCook" : [ "Grilled", "Roasted", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Mammal", "Umami" ],
@@ -4447,16 +3103,23 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Sweetbread" : { }
+    "Sweetbread" : {
+      "hasOtherNames" : [ "Beef Gill" ]
+    }
   },
   "Pulse_Seed_Nut" : {
-    "Wet Rotten Peanuts" : { },
-    "Coconut Residue" : { },
+    "Wet Rotten Peanuts" : {
+      "hasOtherNames" : [ "Soy Bean" ]
+    },
+    "Coconut Residue" : {
+      "hasOtherNames" : [ "Coconut" ]
+    },
     "Ginko" : {
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Mung Bean Noodles" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4464,15 +3127,24 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Rice" ]
     },
-    "Chickpeas" : { },
-    "Rotten Peanuts" : { },
-    "Jackfruit Seeds" : { },
-    "Black Sesame Seeds" : { },
+    "Chickpeas" : {
+      "hasOtherNames" : [ "Rice Bean" ]
+    },
+    "Rotten Peanuts" : {
+      "hasOtherNames" : [ "Soy Bean" ]
+    },
+    "Jackfruit Seeds" : {
+      "hasOtherNames" : [ "Jack Fruit" ]
+    },
+    "Black Sesame Seeds" : {
+      "hasOtherNames" : [ "Perilla", "Sesame" ]
+    },
     "Winged Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Beige" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Winged Bean Seeds" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4480,25 +3152,33 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Lima Bean Seeds" : { },
+    "Lima Bean Seeds" : {
+      "hasOtherNames" : [ "French Bean" ]
+    },
     "Peanut Without Seed Coat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Salted Fried Peanuts" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Nut" ]
     },
-    "Cashew Nuts" : { },
-    "Nigella Seeds" : { },
+    "Cashew Nuts" : {
+      "hasOtherNames" : [ "Cashew Nut" ]
+    },
+    "Nigella Seeds" : {
+      "hasOtherNames" : [ "Leadee Seeds" ]
+    },
     "French Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Lima Bean Seeds" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Green" ],
@@ -4506,13 +3186,18 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Coconut Meat" : { },
-    "Rambutan Seeds" : { },
+    "Coconut Meat" : {
+      "hasOtherNames" : [ "Coconut" ]
+    },
+    "Rambutan Seeds" : {
+      "hasOtherNames" : [ "Rambutan" ]
+    },
     "Rice Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Red", "Brown", "Beige" ],
       "hasShape" : [ "Oval", "Round" ],
+      "hasOtherNames" : [ "Roasted Chickpeas", "Red Beans", "Chickpeas", "Roasted Red Beans" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4525,6 +3210,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Long", "Cylindrical" ],
+      "hasOtherNames" : [ "Water Caltrops" ],
       "canCook" : [ "Boiled", "Diced", "Friend", "Stir- Fried", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Green" ],
@@ -4532,15 +3218,24 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Vegetable" ]
     },
-    "Roasted Pigeon Peas" : { },
-    "White Beans" : { },
-    "Roasted Chickpeas" : { },
-    "Red Beans" : { },
+    "Roasted Pigeon Peas" : {
+      "hasOtherNames" : [ "Lablab Bean" ]
+    },
+    "White Beans" : {
+      "hasOtherNames" : [ "Nevy Bean" ]
+    },
+    "Roasted Chickpeas" : {
+      "hasOtherNames" : [ "Rice Bean" ]
+    },
+    "Red Beans" : {
+      "hasOtherNames" : [ "Rice Bean" ]
+    },
     "Peanut With Seed Coat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Fried Peanuts" ],
       "canCook" : [ "Roasted" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Salty" ],
@@ -4548,12 +3243,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Nut" ]
     },
-    "Canned Tofu" : { },
+    "Canned Tofu" : {
+      "hasOtherNames" : [ "Curd Cake" ]
+    },
     "Mungbean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Powdery", "Juicy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long", "Powdery" ],
+      "hasOtherNames" : [ "Green Bean Flour", "Raw Green Beans" ],
       "canCook" : [ "Boiled", "Fried", "Marinated", "Baked", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4561,27 +3259,39 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Flour", "Vegetable" ]
     },
-    "Scarlet Runner Beans" : { },
-    "Mung Bean Noodles" : { },
+    "Scarlet Runner Beans" : {
+      "hasOtherNames" : [ "Butterfly Pea" ]
+    },
+    "Mung Bean Noodles" : {
+      "hasOtherNames" : [ "Ginko" ]
+    },
     "Noodles" : {
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Long" ],
+      "hasOtherNames" : [ "Glass Noodles" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Noodle" ]
     },
-    "Boiled Horse Gram" : { },
-    "Lotus Seeds" : { },
-    "Buttered Cashew Nuts" : { },
+    "Boiled Horse Gram" : {
+      "hasOtherNames" : [ "Soybean" ]
+    },
+    "Lotus Seeds" : {
+      "hasOtherNames" : [ "Lotus" ]
+    },
+    "Buttered Cashew Nuts" : {
+      "hasOtherNames" : [ "Cashew Nut" ]
+    },
     "Soybean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Chewy", "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Brown", "White", "Yellow" ],
       "hasShape" : [ "Liquid", "Long", "Round" ],
+      "hasOtherNames" : [ "Boiled Horse Gram", "Roasted Yellow Lentils", "Soy Milk", "Yellow Lentils", "Horse Gram" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Lactonic", "Umami" ],
@@ -4589,12 +3299,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Dairy Substitute", "Legume" ]
     },
-    "Raw White Sesame Seeds" : { },
+    "Raw White Sesame Seeds" : {
+      "hasOtherNames" : [ "Sesame" ]
+    },
     "Curd Cake" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Silky", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed", "Sliced Sips" ],
+      "hasOtherNames" : [ "Canned Tofu", "Fermented Tofu" ],
       "canCook" : [ "Marinated", "Seasoned" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Lactonic", "Umami", "Sulfury" ],
@@ -4607,6 +3320,7 @@
       "hasTexture" : [ "Fibrous", "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Tubular" ],
+      "hasOtherNames" : [ "Galangal" ],
       "canCook" : [ "Roasted", "Baked", "Boilded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4614,16 +3328,27 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Spice" ]
     },
-    "Roasted Cashew Nuts" : { },
-    "Roasted Chestnuts" : { },
-    "Yellow Lentils" : { },
-    "Kaffir Lime Leaves" : { },
-    "Roasted White Sesame" : { },
+    "Roasted Cashew Nuts" : {
+      "hasOtherNames" : [ "Cashew Nut" ]
+    },
+    "Roasted Chestnuts" : {
+      "hasOtherNames" : [ "Bambara Groundnut" ]
+    },
+    "Yellow Lentils" : {
+      "hasOtherNames" : [ "Soybean" ]
+    },
+    "Kaffir Lime Leaves" : {
+      "hasOtherNames" : [ "Look Ka" ]
+    },
+    "Roasted White Sesame" : {
+      "hasOtherNames" : [ "Sesame" ]
+    },
     "Look Ka" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Juicy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Long" ],
+      "hasOtherNames" : [ "Kaffir Lime Leaves" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Terpenoid" ],
@@ -4636,6 +3361,7 @@
       "hasTexture" : [ "Silky", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Cubed", "Sliced Sips" ],
+      "hasOtherNames" : [ "Fermented Tofu" ],
       "canCook" : [ "Boiled", "Fried", "Marinated", "Stir- Fried", "Seasoned", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Salty" ],
@@ -4643,12 +3369,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Fermented Soy" ]
     },
-    "Roasted Yellow Lentils" : { },
+    "Roasted Yellow Lentils" : {
+      "hasOtherNames" : [ "Soybean" ]
+    },
     "Cowpea" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "White", "Black" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Raw Jobs Tears", "Roasted Black Beans", "Jobs Tears" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4656,13 +3385,18 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Vegetable", "Legume" ]
     },
-    "Coconut Sugar" : { },
-    "Red Speckled Kidney Beans" : { },
+    "Coconut Sugar" : {
+      "hasOtherNames" : [ "Sugar From Coconut" ]
+    },
+    "Red Speckled Kidney Beans" : {
+      "hasOtherNames" : [ "Red Kidney Bean" ]
+    },
     "Leadee Seeds" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Black" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Nigella Seeds" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4670,11 +3404,14 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Raw Scarlet Runner Beans" : { },
+    "Raw Scarlet Runner Beans" : {
+      "hasOtherNames" : [ "Butterfly Pea" ]
+    },
     "Butterfly Pea" : {
       "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Sliced Sips" ],
+      "hasOtherNames" : [ "Raw Scarlet Runner Beans", "Scarlet Runner Beans" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Floral" ],
@@ -4694,12 +3431,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Pigeon Peas" : { },
+    "Pigeon Peas" : {
+      "hasOtherNames" : [ "Lablab Bean" ]
+    },
     "Nevy Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "White Beans" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4707,13 +3447,18 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
-    "Boiled Lotus Seeds" : { },
-    "Water Caltrops" : { },
+    "Boiled Lotus Seeds" : {
+      "hasOtherNames" : [ "Lotus" ]
+    },
+    "Water Caltrops" : {
+      "hasOtherNames" : [ "Water Chesnut" ]
+    },
     "Soybean Curd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Silky", "Creamy" ],
       "hasColor" : [ "White", "Yellow", "Golden" ],
       "hasShape" : [ "Cubed", "Sliced Sips" ],
+      "hasOtherNames" : [ "Fried Tofu", "White Tofu", "Yellow Tofu" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Marinated", "Sauteed", "Stir- Fried", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Brown", "Lactonic" ],
@@ -4721,12 +3466,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Tofu" ]
     },
-    "Glass Noodles" : { },
+    "Glass Noodles" : {
+      "hasOtherNames" : [ "Noodles" ]
+    },
     "Raw Water Chesnut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Long", "Cylindrical" ],
+      "hasOtherNames" : [ "Raw Water Caltrops" ],
       "canCook" : [ "Sliced", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Green" ],
@@ -4739,6 +3487,7 @@
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Segmented", "Cylindrical", "Thin" ],
+      "hasOtherNames" : [ "Chestnut", "Look Kaw" ],
       "canCook" : [ "Minced", "Sliced", "Crushed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Zinc" ],
       "hasFlavor" : [ "Woody", "Astringent", "Spicy" ],
@@ -4750,6 +3499,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Black" ],
       "hasShape" : [ "Grainy" ],
+      "hasOtherNames" : [ "Black Sesame Seeds" ],
       "canCook" : [ "Chopped", "Fried", "Marinated", "Stir- Fried", "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Terpenoid" ],
@@ -4757,13 +3507,20 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Nut" ]
     },
-    "Salted Fried Peanuts" : { },
-    "Yellow Tofu" : { },
-    "Fried Tofu" : { },
+    "Salted Fried Peanuts" : {
+      "hasOtherNames" : [ "Peanut Without Seed Coat" ]
+    },
+    "Yellow Tofu" : {
+      "hasOtherNames" : [ "Soybean Curd" ]
+    },
+    "Fried Tofu" : {
+      "hasOtherNames" : [ "Soybean Curd" ]
+    },
     "Soy Bean" : {
       "hasBenefit" : [ "Culinary" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Wet Rotten Peanuts", "Rotten Peanuts" ],
       "canCook" : [ "Marinated", "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4771,14 +3528,21 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
-    "Peanuts" : { },
-    "Coconut Cream" : { },
-    "Green Bean Flour" : { },
+    "Peanuts" : {
+      "hasOtherNames" : [ "Sweet Pea" ]
+    },
+    "Coconut Cream" : {
+      "hasOtherNames" : [ "Milk Coconut" ]
+    },
+    "Green Bean Flour" : {
+      "hasOtherNames" : [ "Mungbean" ]
+    },
     "Jack Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Jackfruit Seeds" ],
       "canCook" : [ "Chopped", "Sliced" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4791,6 +3555,7 @@
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown", "Green", "Golden" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Roasted Pigeon Peas", "Pigeon Peas", "Fried Pigeon Peas" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4798,14 +3563,21 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Nut" ]
     },
-    "Black Beans" : { },
-    "Fermented Tofu" : { },
-    "Raw Peanuts" : { },
+    "Black Beans" : {
+      "hasOtherNames" : [ "Black Gram" ]
+    },
+    "Fermented Tofu" : {
+      "hasOtherNames" : [ "Curd Cake", "Soybean Paste" ]
+    },
+    "Raw Peanuts" : {
+      "hasOtherNames" : [ "Sweet Pea" ]
+    },
     "Black Gram" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Black" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Black Beans" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4813,12 +3585,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
-    "Horse Gram" : { },
+    "Horse Gram" : {
+      "hasOtherNames" : [ "Soybean" ]
+    },
     "Sesame" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "White", "Black" ],
       "hasShape" : [ "Grainy" ],
+      "hasOtherNames" : [ "Raw White Sesame Seeds", "Black Sesame Seeds", "Roasted White Sesame" ],
       "canCook" : [ "Roasted", "Fried", "Marinated", "Seasoned", "Raw", "Blanched", "Grounded", "Infused" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Woody" ],
@@ -4826,16 +3601,27 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Nut" ]
     },
-    "Winged Bean Seeds" : { },
-    "Fried Peanuts" : { },
-    "Young Coconut" : { },
-    "Roasted Black Beans" : { },
-    "Raw Water Caltrops" : { },
+    "Winged Bean Seeds" : {
+      "hasOtherNames" : [ "Winged Bean" ]
+    },
+    "Fried Peanuts" : {
+      "hasOtherNames" : [ "Peanut With Seed Coat" ]
+    },
+    "Young Coconut" : {
+      "hasOtherNames" : [ "Coconut" ]
+    },
+    "Roasted Black Beans" : {
+      "hasOtherNames" : [ "Cowpea" ]
+    },
+    "Raw Water Caltrops" : {
+      "hasOtherNames" : [ "Raw Water Chesnut" ]
+    },
     "Coconut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy", "Tender" ],
       "hasColor" : [ "White", "Green" ],
       "hasShape" : [ "Slices", "Cubed" ],
+      "hasOtherNames" : [ "Young Coconut", "Coconut Residue", "Coconut Meat" ],
       "canCook" : [ "Grated", "Chopped", "Sliced", "Blended", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4848,6 +3634,7 @@
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Rambutan Seeds" ],
       "canCook" : [ "Fresh", "Sliced", "Peeled" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
@@ -4855,12 +3642,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Soy Milk" : { },
+    "Soy Milk" : {
+      "hasOtherNames" : [ "Soybean" ]
+    },
     "Sugar From Coconut" : {
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Powdery" ],
+      "hasOtherNames" : [ "Coconut Sugar" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4868,14 +3658,21 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Sweetener" ]
     },
-    "Raw Green Beans" : { },
-    "Raw Jobs Tears" : { },
-    "White Tofu" : { },
+    "Raw Green Beans" : {
+      "hasOtherNames" : [ "Mungbean" ]
+    },
+    "Raw Jobs Tears" : {
+      "hasOtherNames" : [ "Cowpea" ]
+    },
+    "White Tofu" : {
+      "hasOtherNames" : [ "Soybean Curd" ]
+    },
     "Cashew Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Beige" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Buttered Cashew Nuts", "Cashew Nuts", "Roasted Cashew Nuts" ],
       "canCook" : [ "Fresh", "Roasted", "Boiled", "Fried", "Buttered", "Stir- Fried", "Peeled", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Woody", "Umami" ],
@@ -4888,6 +3685,7 @@
       "hasTexture" : [ "Crunchy", "Creamy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Peanuts", "Raw Peanuts" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4900,6 +3698,7 @@
       "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed", "Sliced Sips" ],
+      "hasOtherNames" : [ "Galangal" ],
       "canCook" : [ "Roasted", "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4907,12 +3706,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Spice" ]
     },
-    "Chestnuts" : { },
+    "Chestnuts" : {
+      "hasOtherNames" : [ "Bambara Groundnut" ]
+    },
     "Lotus" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy", "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Fox Nut Seeds", "Lotus Seeds", "Boiled Lotus Seeds" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -4920,12 +3722,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "Fox Nut Seeds" : { },
+    "Fox Nut Seeds" : {
+      "hasOtherNames" : [ "Lotus" ]
+    },
     "Bambara Groundnut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Creamy", "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Roasted Chestnuts", "Chestnuts" ],
       "canCook" : [ "Roasted", "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
@@ -4933,12 +3738,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
-    "Jobs Tears" : { },
+    "Jobs Tears" : {
+      "hasOtherNames" : [ "Cowpea" ]
+    },
     "Milk Coconut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "White" ],
       "hasShape" : [ "Liquid" ],
+      "hasOtherNames" : [ "Coconut Cream" ],
       "canCook" : [ "Raw" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Lactonic" ],
@@ -4946,12 +3754,15 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Dairy Substitute" ]
     },
-    "Roasted Red Beans" : { },
+    "Roasted Red Beans" : {
+      "hasOtherNames" : [ "Rice Bean" ]
+    },
     "Red Kidney Bean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Red Speckled Kidney Beans" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Simmered", "Grounded" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet" ],
@@ -4959,7 +3770,9 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
-    "Fried Pigeon Peas" : { }
+    "Fried Pigeon Peas" : {
+      "hasOtherNames" : [ "Lablab Bean" ]
+    }
   },
   "Vegetable" : {
     "Mung Bean Sprout" : {
@@ -5006,12 +3819,15 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Milk Wood" : { },
+    "Milk Wood" : {
+      "hasOtherNames" : [ "Eugenia" ]
+    },
     "Eugenia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
+      "hasOtherNames" : [ "Milk Wood" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
@@ -5077,6 +3893,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Hed Ta Loh" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Iodine" ],
       "hasFlavor" : [ "Terpenoid", "Umami" ],
@@ -5088,6 +3905,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Bbolete" ],
       "canCook" : [ "Grilled", "Boiled" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Woody", "Umami" ],
@@ -5132,6 +3950,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "White", "Cream" ],
       "hasShape" : [ "Oval" ],
+      "hasOtherNames" : [ "Indian Oyster" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -5164,6 +3983,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Black" ],
       "hasShape" : [ "Ear Shaped" ],
+      "hasOtherNames" : [ "Jews Ear" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
@@ -5252,6 +4072,7 @@
       "hasTexture" : [ "Juicy", "Tender" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Hed Saang" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasFlavor" : [ "Spicy", "Umami", "Bitter" ],
       "hasVitamin" : [ "Vitamin C", "Niacin" ],
@@ -5350,6 +4171,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Gold", "Yellow" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Golden Neddle" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Terpenoid", "Umami", "Sweet" ],
@@ -5488,8 +4310,12 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Betacarotene" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Hed Saang" : { },
-    "Jews Ear" : { },
+    "Hed Saang" : {
+      "hasOtherNames" : [ "Saang Mushroom" ]
+    },
+    "Jews Ear" : {
+      "hasOtherNames" : [ "Jews Ear Fresh Mushroom" ]
+    },
     "Big Tomato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
@@ -5567,7 +4393,9 @@
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein", "Dietary Fibre" ]
     },
-    "Barometer Earthstars" : { },
+    "Barometer Earthstars" : {
+      "hasOtherNames" : [ "Barometer Earthstars Mushroom" ]
+    },
     "Scented Star Jasmine Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
@@ -5672,6 +4500,7 @@
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Brown", "Green" ],
       "hasShape" : [ "Segmented", "Cylindrical", "Thin" ],
+      "hasOtherNames" : [ "Chestnut", "Look Kaw" ],
       "canCook" : [ "Minced", "Sliced", "Crushed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Zinc" ],
       "hasFlavor" : [ "Woody", "Astringent", "Spicy" ],
@@ -5857,6 +4686,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Shiitake" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
       "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -5995,7 +4825,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Hed Lom" : { },
+    "Hed Lom" : {
+      "hasOtherNames" : [ "Lom Mushroom" ]
+    },
     "Solanum" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crispy" ],
@@ -6007,7 +4839,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Bbolete" : { },
+    "Bbolete" : {
+      "hasOtherNames" : [ "Bbolete Mushroom" ]
+    },
     "Mango Ginger" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous" ],
@@ -6062,7 +4896,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Shiitake" : { },
+    "Shiitake" : {
+      "hasOtherNames" : [ "Shiitake Fresh Mushroom" ]
+    },
     "Sa Lare" : {
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Crispy" ],
@@ -6079,6 +4915,7 @@
       "hasTexture" : [ "Fibrous" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed", "Sliced Sips" ],
+      "hasOtherNames" : [ "Galangal" ],
       "canCook" : [ "Roasted", "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -6123,6 +4960,7 @@
       "hasTexture" : [ "Creamy", "Tender" ],
       "hasColor" : [ "Purple", "Green" ],
       "hasShape" : [ "Small", "Oval" ],
+      "hasOtherNames" : [ "Brinjal" ],
       "canCook" : [ "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Astringent", "Bitter" ],
@@ -6549,6 +5387,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Star Shaped", "Round" ],
+      "hasOtherNames" : [ "Barometer Earthstars" ],
       "canCook" : [ "Grilled", "Roasted" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Terpenoid", "Spicy" ],
@@ -6566,7 +5405,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Hed Ta Loh" : { },
+    "Hed Ta Loh" : {
+      "hasOtherNames" : [ "Ta Loh Mushroom" ]
+    },
     "Lasia" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
@@ -6598,7 +5439,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein", "Dietary Fibre" ]
     },
-    "Hed Kamin" : { },
+    "Hed Kamin" : {
+      "hasOtherNames" : [ "Hed Kamin Mushroom" ]
+    },
     "Bael Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
@@ -6626,6 +5469,7 @@
       "hasTexture" : [ "Fibrous", "Chewy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Tubular" ],
+      "hasOtherNames" : [ "Galangal" ],
       "canCook" : [ "Roasted", "Baked", "Boilded" ],
       "hasMineral" : [ "Iron" ],
       "hasFlavor" : [ "Sweet" ],
@@ -6649,6 +5493,7 @@
       "hasTexture" : [ "Leafy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
+      "hasOtherNames" : [ "Malabar" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasFlavor" : [ "Bitter", "Green" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
@@ -6812,6 +5657,7 @@
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Brown", "Gray" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Hed Lom" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Cooling", "Bitter", "Green" ],
@@ -6987,6 +5833,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown", "Yellow" ],
       "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Hed Kamin" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Woody", "Umami", "Bitter" ],
@@ -7048,12 +5895,15 @@
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Indian Oyster" : { },
+    "Indian Oyster" : {
+      "hasOtherNames" : [ "Indian Oyster Mushroom" ]
+    },
     "Malabar" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Slimy", "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Heart Shaped" ],
+      "hasOtherNames" : [ "Spinach" ],
       "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Astringent", "Green" ],
@@ -7137,7 +5987,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Brinjal" : { },
+    "Brinjal" : {
+      "hasOtherNames" : [ "Sparrow" ]
+    },
     "Pak Hawn Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
@@ -7224,7 +6076,9 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Golden Neddle" : { },
+    "Golden Neddle" : {
+      "hasOtherNames" : [ "Golden Neddle Mushroom" ]
+    },
     "Roselle Leaves" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
@@ -7657,7 +6511,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Crispy", "Firm" ],
-      "hasColor" : [ "Yellow", "Orange" ],
+      "hasColor" : [ "Yellow" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
@@ -7865,7 +6719,6 @@
     "Raw Orange Sweet Potato" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Orange" ],
       "hasShape" : [ "Tubular", "Cylindrical" ],
       "canCook" : [ "Boiled", "Diced", "Baked", "Sliced", "Mashed", "Steamed" ],
       "hasFlavor" : [ "Sweet" ],
