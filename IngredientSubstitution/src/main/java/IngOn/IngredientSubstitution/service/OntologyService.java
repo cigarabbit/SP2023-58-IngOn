@@ -68,23 +68,24 @@ public class OntologyService {
             // Not a class that is a type and not a type name
             if (checkSubclassType(className) && !isSubclassOfSpecificTypes(cls, ontology)) {
 
-                // Get equivalent classes of the subclass
                 Set<OWLClassExpression> equivalentClasses = cls.getEquivalentClasses(ontology);
 
-                for (OWLClassExpression equivalentClass : equivalentClasses) {
-                    if (equivalentClass instanceof OWLClass) {
-                        OWLClass equivalentCls = (OWLClass) equivalentClass;
-                        String equivalentClassName = getShortForm(equivalentCls);
-
-                        if (!equivalentClassName.isEmpty()) {
-                            System.out.println(className + ":   " + equivalentClassName);
-                        }
-
+                Set<String> equivalentClassNames = new HashSet<>();
+                for (OWLClassExpression expression : equivalentClasses) {
+                    if (expression instanceof OWLClass) {
+                        equivalentClassNames.add(getShortForm((OWLClass) expression));
                     }
+                }
+//                System.out.println(className + ": " + equivalentClasses);
+
+                HashMap<String, Set<String>> concept_val = retrieveConceptValues(ontology, cls);
+
+                if (!equivalentClasses.isEmpty()) {
+                    concept_val.put("hasOtherNames", equivalentClassNames);
                 }
 
                 // Store the returned value from retrieveConceptValues
-                conceptList.put(className, retrieveConceptValues(ontology, cls));
+                conceptList.put(className, concept_val);
             }
         }
 
@@ -188,7 +189,6 @@ public class OntologyService {
     }
 
     public static HashMap<String, Set<String>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
-//        OWLClass cls = ontology.getOWLOntologyManager().getOWLDataFactory().getOWLClass(IRI.create("http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#RawCricket"));
 
         HashMap<String, Set<String>> propertyList = new HashMap<>();
 
@@ -212,7 +212,6 @@ public class OntologyService {
                 }
             }
         }
-
 
         return propertyList;
     }

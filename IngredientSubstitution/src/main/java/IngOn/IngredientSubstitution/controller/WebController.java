@@ -70,6 +70,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin");
         HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit");
         HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook");
+        HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames");
 
         // TODO: hasType
 
@@ -89,6 +90,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         model.addAttribute("vitaProp", vitaProperties);
         model.addAttribute("beneProp", beneProperties);
         model.addAttribute("cookProp", cookProperties);
+        model.addAttribute("otherNames", namesProperties);
 
         return "ingredient";
     }
