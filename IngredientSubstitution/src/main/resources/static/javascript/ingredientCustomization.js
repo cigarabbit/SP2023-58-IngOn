@@ -1,11 +1,14 @@
 window.addEventListener('load', function () {
+    SetThaiName();
     sortTopics();
     retrieveData();
     changeColor();
 });
 
+// TODO: remove alternative names from sidebar topics initially
+
 var currentSortOrder = 'asc';
-var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp;
+var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp, otherNames;
 
 function sortTopics() {
     var sidebar = document.getElementById("sidebar-ingredient");
@@ -33,7 +36,7 @@ function filterProperty() {
 
 }
 
-function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures, benes, cooks) {
+function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures, benes, cooks, names) {
     foodGroup = group;
     colorProp = colors;
     flavorProp = flavors;
@@ -44,6 +47,28 @@ function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes,
     textureProp = textures;
     beneProp = benes;
     cookProp = cooks;
+    otherNames = names;
+}
+
+function SetThaiName() {
+    var sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
+
+    sidebarTopics.forEach(function(topicElement) {
+        var synNames = otherNames[topicElement.textContent];
+        var ThaiName = synNames;
+
+        if (synNames != undefined) {
+            if (synNames.length > 1) {
+                synNames = synNames.join(', ');
+                var synNameArray = synNames.split(', ');
+
+                ThaiName = synNameArray[synNameArray.length - 1].trim();
+            }
+            topicElement.textContent += ' (' + ThaiName + ')';
+
+        }
+
+    });
 }
 
 function retrieveData() {
@@ -73,6 +98,22 @@ function retrieveData() {
         var clickedTopic = event.target.textContent;
         contentHeader.textContent = clickedTopic;
 
+        var synName = otherNames[clickedTopic].join(', ');
+        var synNameArray = synName.split(', ');
+        var ThaiName = synNameArray[synNameArray.length - 1].trim();
+
+        if (synName != undefined && beneProp[synName] === undefined) { // Other names
+            contentHeader.append(', ');
+            contentHeader.append(synName);
+
+            sidebarTopics.forEach(function(topic) {
+                if (topic.textContent === synName) {
+                    topic.parentNode.removeChild(topic);
+                }
+            });
+
+        }
+
         var colors = colorProp[clickedTopic].join(', ');
         var flavors = flavorProp[clickedTopic].join(', ');
 
@@ -83,7 +124,12 @@ function retrieveData() {
             shapes = "No shapes available because it lacks standard recording methods.";
         }
 
-        var textures = textureProp[clickedTopic].join(', ');
+        var textures;
+        if (textureProp[clickedTopic] !== undefined) {
+            textures = textureProp[clickedTopic].join(', ');
+        } else {
+            textures = "No textures defined."
+        }
 
         var minerals;
         if (mineralProp[clickedTopic] !== undefined) {
