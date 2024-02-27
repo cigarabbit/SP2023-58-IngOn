@@ -5,8 +5,6 @@ window.addEventListener('load', function () {
     changeColor();
 });
 
-// TODO: remove alternative names from sidebar topics initially
-
 var currentSortOrder = 'asc';
 var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp, otherNames;
 
@@ -74,11 +72,13 @@ function SetThaiName() {
     });
 }
 
+// TODO: remove alternative names from sidebar topics initially
 function retrieveData() {
     var sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
     var contentHeader = document.querySelector('#ingredient-title');
 
     var DL_Display = document.querySelector('#DL_Syntax span');
+    var DL_Concept = document.querySelector('#DL_concept');
     var colorPropLi = document.querySelector('#propertyColor span');
     var flavorPropLi = document.querySelector('#propertyFlavor span');
     var shapePropLi = document.querySelector('#propertyShape span');
@@ -103,6 +103,8 @@ function retrieveData() {
 
         var clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
 
+        DL_Concept.textContent = clickedTopic;
+
         var synName;
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
@@ -114,9 +116,14 @@ function retrieveData() {
                     contentHeader.append(', ');
                     contentHeader.append(name);
 
+                    DL_Concept.append(' ≡ ');
+                    DL_Concept.append(name);
                 }
             }
         }
+
+        DL_Concept.append(' ⊑ ');
+        DL_Concept.append(foodGroup);
 
         var colors = colorProp[clickedTopic].join(', ');
         var flavors = flavorProp[clickedTopic].join(', ');
@@ -234,8 +241,9 @@ function retrieveData() {
     }
 }
 
+// TODO: add equivalent name in a syntax
 function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes) {
-    var syntax = conceptName + " ⊑ " + foodGroup;
+    var syntax = conceptName;
 
     function handleProperty(property, type) {
         if (property.includes(',')) {

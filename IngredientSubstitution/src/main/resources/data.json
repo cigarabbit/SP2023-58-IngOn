@@ -8364,10 +8364,10 @@
       "hasOtherNames" : [ "Salted Butter" ]
     },
     "นมพร่องมันเนยยูเอชที" : {
-      "hasOtherNames" : [ "U H T Low Fat Milk" ]
+      "hasOtherNames" : [ "UHT Low Fat Milk" ]
     },
     "นมเปรี้ยวยูเอชทีไขมันต่ำ" : {
-      "hasOtherNames" : [ "U H T Low Fat Drinking Yoghurt" ]
+      "hasOtherNames" : [ "UHT Low Fat Drinking Yoghurt" ]
     },
     "นมวัว" : {
       "hasOtherNames" : [ "Cow Milk" ]
@@ -8399,7 +8399,7 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "U H T Low Fat Drinking Yoghurt" : {
+    "UHT Low Fat Drinking Yoghurt" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
@@ -8487,7 +8487,7 @@
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "U H T Low Fat Milk" : {
+    "UHT Low Fat Milk" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
