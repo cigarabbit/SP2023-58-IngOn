@@ -144,6 +144,10 @@
     justify-content: center;
 }
 
+#DL_concept {
+    font-weight: bolder;
+}
+
 #foodtype-img {
     pointer-events: none;
     margin: auto;
