@@ -2657,10 +2657,16 @@
     },
     "Luem Pua Glutinous Rice" : {
       "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Chewy", "Sticky" ],
+      "hasColor" : [ "Purple", "Black" ],
+      "hasShape" : [ "Small", "Oval", "Short" ],
       "hasOtherNames" : [ "ข้าวลืมผัว" ],
+      "canCook" : [ "Boiled", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Zinc" ],
+      "hasFlavor" : [ "Lactonic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
+      "hasType" : [ "Seed" ]
     },
     "ข้าวโอ๊ตดิบ" : {
       "hasOtherNames" : [ "Oats" ]
@@ -3856,13 +3862,13 @@
     },
     "Soybean" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Fibrous", "Chewy", "Creamy", "Tender" ],
-      "hasColor" : [ "Brown", "Yellow" ],
-      "hasShape" : [ "Long", "Round" ],
-      "hasOtherNames" : [ "ถั่วแระ", "ถั่วเหลือง" ],
+      "hasTexture" : [ "Creamy", "Tender" ],
+      "hasColor" : [ "Yellow" ],
+      "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "ถั่วเหลือง" ],
       "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
       "hasFlavor" : [ "Umami" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Legume" ]
     },
@@ -3892,7 +3898,7 @@
       "hasOtherNames" : [ "Soybean Paste" ]
     },
     "ถั่วแระ" : {
-      "hasOtherNames" : [ "Soybean" ]
+      "hasOtherNames" : [ "Edamame" ]
     },
     "Chestnut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -4230,6 +4236,18 @@
     },
     "Lookpra" : {
       "hasOtherNames" : [ "Look Ka" ]
+    },
+    "Edamame" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Fibrous", "Chewy" ],
+      "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Long" ],
+      "hasOtherNames" : [ "ถั่วแระ" ],
+      "canCook" : [ "Boiled", "Fried", "Sauteed", "Stir- Fried", "Grounded" ],
+      "hasFlavor" : [ "Umami" ],
+      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
+      "hasType" : [ "Legume" ]
     },
     "Look Pra" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -5156,17 +5174,6 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Neem" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Cylindrical" ],
-      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Bitter", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "Red Sacred Basil" : {
       "hasOtherNames" : [ "Red Holy Basil" ]
     },
@@ -5568,17 +5575,6 @@
     },
     "เสม็ด" : {
       "hasOtherNames" : [ "Eugenia" ]
-    },
-    "Stanleys Watertub Tenders Tips" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Long", "Narrow" ],
-      "canCook" : [ "Fried", "Stir- Fried" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Bitter", "Green" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Celery" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -6255,17 +6251,6 @@
       "canCook" : [ "Fresh", "Fried", "Stir- Fried", "Pickled" ],
       "hasFlavor" : [ "Salty", "Sour" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Tender Tips Of Kra-don" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Tapered", "Thin" ],
-      "canCook" : [ "Boiled", "Fried", "Stir- Fried" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Acidic", "Green" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Cherry Tomato" : {
@@ -7097,17 +7082,6 @@
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Spicy" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Tender Tips Of Leadee" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Long", "Narrow" ],
-      "canCook" : [ "Boiled", "Fried", "Stir- Fried", "Blanched", "Steamed" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Zinc" ],
-      "hasFlavor" : [ "Umami", "Green" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ทองหลาง" : {
@@ -8354,10 +8328,10 @@
       "hasOtherNames" : [ "Salted Butter" ]
     },
     "นมพร่องมันเนยยูเอชที" : {
-      "hasOtherNames" : [ "UHT Low Fat Milk" ]
+      "hasOtherNames" : [ "U H T Low Fat Milk" ]
     },
     "นมเปรี้ยวยูเอชทีไขมันต่ำ" : {
-      "hasOtherNames" : [ "UHT Low Fat Drinking Yoghurt" ]
+      "hasOtherNames" : [ "U H T Low Fat Drinking Yoghurt" ]
     },
     "นมวัว" : {
       "hasOtherNames" : [ "Cow Milk" ]
@@ -8389,7 +8363,7 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "UHT Low Fat Drinking Yoghurt" : {
+    "U H T Low Fat Drinking Yoghurt" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
@@ -8477,7 +8451,7 @@
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "UHT Low Fat Milk" : {
+    "U H T Low Fat Milk" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
