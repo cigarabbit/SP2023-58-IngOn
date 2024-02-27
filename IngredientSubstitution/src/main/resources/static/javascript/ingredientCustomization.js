@@ -29,6 +29,7 @@ function sortTopics() {
         const itemName = item.textContent.replace(/\(.*?\)/g, '').trim();
         if (beneProp[itemName] !== undefined) { // Not a subclass
             list.appendChild(item);
+            console.log(itemName)
         }
     });
 

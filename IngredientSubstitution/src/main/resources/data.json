@@ -2656,6 +2656,7 @@
       "hasType" : [ "Seed" ]
     },
     "Luem Pua Glutinous Rice" : {
+      "hasBenefit" : [ "Culinary" ],
       "hasOtherNames" : [ "ข้าวลืมผัว" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Zinc" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
