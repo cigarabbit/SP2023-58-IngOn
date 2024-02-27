@@ -9,24 +9,31 @@ var currentSortOrder = 'asc';
 var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp, otherNames;
 
 function sortTopics() {
-    var sidebar = document.getElementById("sidebar-ingredient");
-    var list = sidebar.querySelector("ul");
-    var items = Array.from(list.getElementsByTagName("li"));
+    var sidebar = document.getElementById('sidebar-ingredient');
+    var list = sidebar.querySelector('ul');
+    var items = Array.from(list.getElementsByTagName('li'));
 
     items.sort(function (a, b) {
+        const nameA = a.textContent.replace(/\(.*?\)/g, '').trim();
+        const nameB = b.textContent.replace(/\(.*?\)/g, '').trim();
         if (currentSortOrder === 'asc') {
-            return a.textContent.localeCompare(b.textContent);
+            return nameA.localeCompare(nameB);
         } else {
-            return b.textContent.localeCompare(a.textContent);
+            return nameB.localeCompare(nameA);
         }
     });
 
     list.innerHTML = "";
+
     items.forEach(function (item) {
-        list.appendChild(item);
+        const itemName = item.textContent.replace(/\(.*?\)/g, '').trim();
+        if (beneProp[itemName] !== undefined) { // Not a subclass
+            list.appendChild(item);
+        }
     });
 
     currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+
 }
 
 function filterProperty() {
@@ -356,4 +363,8 @@ function contentHeaderColor(color) {
     });
 }
 
+function findIngredientFromCategory() {
+    var itemName = document.getElementById("search-query").value.toLowerCase();
 
+    console.log(itemName)
+}

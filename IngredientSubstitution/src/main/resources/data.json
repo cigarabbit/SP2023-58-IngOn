@@ -8249,17 +8249,6 @@
     "ต้นกระเทียม" : {
       "hasOtherNames" : [ "Garlic" ]
     },
-    "Coral" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Chewy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Flat", "Pointed", "Wide" ],
-      "canCook" : [ "Fresh", "Garnished" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Bitter", "Salty" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
-    },
     "Mega Neem" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
