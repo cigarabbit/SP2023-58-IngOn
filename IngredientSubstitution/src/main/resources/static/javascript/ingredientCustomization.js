@@ -50,24 +50,27 @@ function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes,
     otherNames = names;
 }
 
+function containsThai(text) {
+    const thaiRegex = /[\u0E00-\u0E7F]/; // Thai Unicode range
+    return thaiRegex.test(text);
+}
+
 function SetThaiName() {
     var sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
 
     sidebarTopics.forEach(function(topicElement) {
         var synNames = otherNames[topicElement.textContent];
-        var ThaiName = synNames;
 
-        if (synNames != undefined) {
-            if (synNames.length > 1) {
-                synNames = synNames.join(', ');
-                var synNameArray = synNames.split(', ');
+        if (synNames !== undefined) {
+            for (const index in synNames) {
+                const name = synNames[index];
 
-                ThaiName = synNameArray[synNameArray.length - 1].trim();
+                if (containsThai(name)) {
+                    topicElement.textContent += ' (' + name + ')';
+                }
             }
-            topicElement.textContent += ' (' + ThaiName + ')';
 
         }
-
     });
 }
 
@@ -95,23 +98,24 @@ function retrieveData() {
 
         event.target.classList.add('active-topic');
 
-        var clickedTopic = event.target.textContent;
-        contentHeader.textContent = clickedTopic;
+        var prev_clickedTopic = event.target.textContent;
+        contentHeader.textContent = prev_clickedTopic;
 
-        var synName = otherNames[clickedTopic].join(', ');
-        var synNameArray = synName.split(', ');
-        var ThaiName = synNameArray[synNameArray.length - 1].trim();
+        var clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
 
-        if (synName != undefined && beneProp[synName] === undefined) { // Other names
-            contentHeader.append(', ');
-            contentHeader.append(synName);
+        var synName;
+        if (otherNames[clickedTopic] != undefined) {
+            synName = otherNames[clickedTopic];
 
-            sidebarTopics.forEach(function(topic) {
-                if (topic.textContent === synName) {
-                    topic.parentNode.removeChild(topic);
+            for (const index in synName) {
+                const name = synName[index];
+
+                if (!containsThai(name) && beneProp[name] === undefined) { // Other names
+                    contentHeader.append(', ');
+                    contentHeader.append(name);
+
                 }
-            });
-
+            }
         }
 
         var colors = colorProp[clickedTopic].join(', ');
