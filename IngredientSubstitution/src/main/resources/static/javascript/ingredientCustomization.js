@@ -38,7 +38,7 @@ function sortTopics() {
 }
 
 function filterProperty() {
-    // Select properties they would like to find
+
 
 }
 
