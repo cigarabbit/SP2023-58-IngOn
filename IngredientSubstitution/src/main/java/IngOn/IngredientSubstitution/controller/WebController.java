@@ -14,6 +14,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 @Controller
 public class WebController {
 
@@ -98,6 +107,18 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     @GetMapping("/visualization")
     public String visualization(HttpSession session, Model model) {
         return "visualization";
+    }
+
+    @GetMapping("/data")
+    public ResponseEntity<String> getData() {
+        try {
+            Resource resource = new ClassPathResource("data.json");
+            String data = new String(Files.readAllBytes(Paths.get(resource.getURI())));
+            return ResponseEntity.ok().body(data);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error reading data.json");
+        }
     }
 
     @GetMapping("/error")
