@@ -295,9 +295,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงเขียวสะอาด" ],
-      "canCook" : [ "Fresh", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -308,9 +307,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long" ],
+      "hasShape" : [ "Long" ],
       "hasOtherNames" : [ "มะม่วงยายกล่ำ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -318,37 +316,37 @@
     },
     "Washington Red Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "แอปเปิ้ลแดงวอชิงตัน" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Yellow Watermelon" : {
-      "hasOtherNames" : [ "Yellow Watermelon Yellow-fleshed Watermelon", "แตงโมเหลือง" ]
+      "hasOtherNames" : [ "Yellow Watermelon Yellow-fleshed Watermelon" ]
     },
     "เงาะโรงเรียน" : {
       "hasOtherNames" : [ "Rong Rean Rambutan" ]
     },
     "Kluai Pisangsusu" : {
-      "hasOtherNames" : [ "กล้วยปิซังซูซู", "Pisangsusu Banana" ]
+      "hasOtherNames" : [ "Pisangsusu Banana" ]
     },
     "มะม่วงพราหมณ์" : {
       "hasOtherNames" : [ "Prarm Mango" ]
     },
     "กล้วยนางพญา" : {
-      "hasOtherNames" : [ "Kluai Nang Phaya", "Nang Phaya Banana" ]
+      "hasOtherNames" : [ "Nang Phaya Banana" ]
     },
     "Kim-ju Guava" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ฝรั่งกิมจู" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
@@ -359,10 +357,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "แคนตาลูปเนื้อเขียว" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -372,16 +369,15 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลูกหว้า" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะขามเทศ" : {
-      "hasOtherNames" : [ "Manila Tamarind", "Madras Thorn", "Madas Tamarind", "Kamachile" ]
+      "hasOtherNames" : [ "Madas Tamarind" ]
     },
     "องุ่นแดงนอก" : {
       "hasOtherNames" : [ "Grapes" ]
@@ -391,26 +387,24 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ชมพู่ทูลเกล้า" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยตะกุ่ย" : {
-      "hasOtherNames" : [ "Takhui Banana", "Kluai Takhui" ]
+      "hasOtherNames" : [ "Takhui Banana" ]
     },
     "Tub-tim-jun Rose Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red", "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ชมพู่ทับทิมจันทร์" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -422,15 +416,14 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงเขียวเสวยสุก" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Kluai Hak-muk" : {
-      "hasOtherNames" : [ "กล้วยหักมุก", "Hak-mook Banana" ]
+      "hasOtherNames" : [ "Hak-mook Banana" ]
     },
     "ส้มโอขาวน้ำผึ้ง" : {
       "hasOtherNames" : [ "Khaw-namhung Pomelo" ]
@@ -442,10 +435,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะขามป้อม", "Makham Pom" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sour" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -454,10 +446,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มโชกุน" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -466,25 +457,24 @@
       "hasOtherNames" : [ "Unripe Kaew Mango" ]
     },
     "Kluai Hin" : {
-      "hasOtherNames" : [ "กล้วยหิน", "Saba Banana", "กล้วยซาบา" ]
+      "hasOtherNames" : [ "Saba Banana" ]
     },
     "กล้วยน้ำเชียงราย" : {
-      "hasOtherNames" : [ "Kluai Nam-chiangrai", "Nam-chiangrai Banana" ]
+      "hasOtherNames" : [ "Nam-chiangrai Banana" ]
     },
     "Leb-muenang Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Leb-muenang", "กล้วยเล็บมือนาง" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวชะนี)" : {
-      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem And Chanee)" ]
+      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem  Chanee)" ]
     },
     "มะละกอฮาวาย" : {
       "hasOtherNames" : [ "Hawaiian Papaya" ]
@@ -493,30 +483,28 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Fruit", "Round" ],
-      "hasOtherNames" : [ "Marian Plum", "มังคุด", "มะยงชิด" ],
-      "canCook" : [ "Fresh" ],
+      "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Marian Plum", "มังคุด" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Loog-taw" : {
-      "hasOtherNames" : [ "ลูกท้อ", "Thai Peach" ]
+      "hasOtherNames" : [ "Thai Peach" ]
     },
     "Ma Yong Chid" : {
-      "hasOtherNames" : [ "Marian Plum", "มะยงชิด" ]
+      "hasOtherNames" : [ "Marian Plum" ]
     },
     "มะขามป้อม" : {
-      "hasOtherNames" : [ "Indian Gooseberry", "Makham Pom" ]
+      "hasOtherNames" : [ "Indian Gooseberry" ]
     },
     "Papaya" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะละกอ" ],
-      "canCook" : [ "Torn", "Fresh", "Mixed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -526,9 +514,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Meuang Phet Rose Apple", "ชมพู่เมืองเพชร", "Phet Chomphu" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -538,50 +525,58 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "ทุเรียนกระดุม" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
+    "Thai Ingredients-v4# Durian Paste( Long-stem  Chanee)" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
+      "hasColor" : [ "Green" ],
+      "hasShape" : [ "Oval", "Irregular" ],
+      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวชะนี)" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Sweet", "Pungent" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
     "แตงโมเหลือง" : {
-      "hasOtherNames" : [ "Yellow Watermelon", "Yellow Watermelon Yellow-fleshed Watermelon" ]
+      "hasOtherNames" : [ "Yellow Watermelon Yellow-fleshed Watermelon" ]
     },
     "Nom Sao Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยนมสาว", "กล้วยทองกำปั้น", "Kluai Nom Sao" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ละมุดสีดา" : {
-      "hasOtherNames" : [ "ละมุดไทย", "Si-da Sapodilla", "Thai Sapodilla" ]
+      "hasOtherNames" : [ "Si-da Sapodilla" ]
     },
     "Kamachile" : {
-      "hasOtherNames" : [ "Madas Tamarind", "มะขามเทศ" ]
+      "hasOtherNames" : [ "Madas Tamarind" ]
     },
     "มะละกอ" : {
       "hasOtherNames" : [ "Papaya" ]
     },
     "สละ" : {
-      "hasOtherNames" : [ "Slak Fruit", "Salacca Zalacca", "Salak" ]
+      "hasOtherNames" : [ "Salak" ]
     },
     "Watermelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "แตงโมเหยียบไม่แตก" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -597,27 +592,25 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยไข่พม่า", "Kluai Khai Phama" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Blended" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลูกจันทน์" : {
-      "hasOtherNames" : [ "จันทน์เทศ", "Nutmeg" ]
+      "hasOtherNames" : [ "Nutmeg" ]
     },
     "Silver Bluggoe" : {
-      "hasOtherNames" : [ "กล้วยหักมุก", "Hak-mook Banana" ]
+      "hasOtherNames" : [ "Hak-mook Banana" ]
     },
     "Salak Palm" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ระกำ" ],
-      "canCook" : [ "Fresh" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -626,10 +619,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลิ้นจี่สำเภาแก้ว" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -639,10 +631,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Batoko Plum", "Governors Plum", "ตะขบ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -652,27 +643,22 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "มะละกอฮอลแลนด์" ],
-      "canCook" : [ "Fresh", "Baked" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Betacarotene" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ทุเรียนน้ำ" : {
-      "hasOtherNames" : [ "ทุเรียนเทศ", "Soursop" ]
-    },
-    "เมล็ดมะม่วงหิมพานต์" : {
-      "hasOtherNames" : [ "Cashew Nut" ]
+      "hasOtherNames" : [ "Soursop" ]
     },
     "Nutmeg" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "จันทน์เทศ", "ลูกจันทน์" ],
-      "canCook" : [ "Fresh" ],
       "hasFlavor" : [ "Woody" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -681,10 +667,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มแก้ว" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -693,33 +678,31 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงแรด" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Leb-muenang" : {
-      "hasOtherNames" : [ "กล้วยเล็บมือนาง", "Leb-muenang Banana" ]
+      "hasOtherNames" : [ "Leb-muenang Banana" ]
     },
     "Star Fruit" : {
-      "hasOtherNames" : [ "Carambola", "มะเฟือง" ]
+      "hasOtherNames" : [ "Carambola" ]
     },
     "ส้ม" : {
       "hasOtherNames" : [ "Orange" ]
     },
     "Kluai Hom-short-body" : {
-      "hasOtherNames" : [ "Hom-short-body Banana", "กล้วยหอมผลสั้น" ]
+      "hasOtherNames" : [ "Hom-short-body Banana" ]
     },
     "Nung-klang-wan Mango" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงหนังกลางวัน" ],
-      "canCook" : [ "Fresh", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -729,9 +712,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงทองคำ" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -741,16 +723,15 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Hom", "กล้วยหอม", "Cavendish Banana" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยนาก" : {
-      "hasOtherNames" : [ "Nak Banana", "Kluai Nak" ]
+      "hasOtherNames" : [ "Nak Banana" ]
     },
     "ฝรั่งกิมจู" : {
       "hasOtherNames" : [ "Kim-ju Guava" ]
@@ -758,18 +739,14 @@
     "สัปปะรดศรีราชา" : {
       "hasOtherNames" : [ "Sri-ra-cha Pineapple" ]
     },
-    "Cashew" : {
-      "hasOtherNames" : [ "Cashew Nut" ]
-    },
     "Kinnaree Watermelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "แตงโมกินรี" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -779,10 +756,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Baked", "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สัปปะรดนางแล" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -791,9 +767,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Irregular", "Long" ],
+      "hasShape" : [ "Irregular", "Long" ],
       "hasOtherNames" : [ "ขนุนละมุด" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
@@ -803,24 +778,22 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงแก้วสุก" ],
-      "canCook" : [ "Fresh", "Diced", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Khai Banana" : {
-      "hasOtherNames" : [ "Lady Finger Banana", "กล้วยไข่" ]
+      "hasOtherNames" : [ "Lady Finger Banana" ]
     },
     "Bang-khunnon Pummelo" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มโอบางขุนนนท์" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -831,10 +804,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยหอมจำปา", "Kluai Hom-jumpa" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -844,54 +816,54 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Hin Banana", "กล้วยหิน", "Kluai Hin", "กล้วยซาบา" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะยงชิด" : {
-      "hasOtherNames" : [ "Ma Yong Chid", "Marian Plum", "Mangosteen" ]
+      "hasOtherNames" : [ "Marian Plum" ]
     },
     "Tang-tai" : {
-      "hasOtherNames" : [ "แตงไทย", "Musk Melon" ]
+      "hasOtherNames" : [ "Musk Melon" ]
     },
     "Madras Thorn" : {
-      "hasOtherNames" : [ "Madas Tamarind", "มะขามเทศ" ]
+      "hasOtherNames" : [ "Madas Tamarind" ]
     },
     "Phu-ket Pineapple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Baked", "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สัปปะรดภูเก็ต" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Thepparot" : {
-      "hasOtherNames" : [ "Thepparot Banana", "กล้วยเทพรส" ]
+      "hasOtherNames" : [ "Thepparot Banana" ]
+    },
+    "มะม่วงเขียวเสวยดิบ" : {
+      "hasOtherNames" : [ "Unripe Kiew-sa-weya Mango" ]
     },
     "Kak-dum Papaya" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะละกอแขกดำ" ],
-      "canCook" : [ "Fresh", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยน้ำว้าเงิน" : {
-      "hasOtherNames" : [ "Kluai Namwa-ngaen", "Namwa-ngaen Banana" ]
+      "hasOtherNames" : [ "Namwa-ngaen Banana" ]
     },
     "มะม่วงยายกล่ำ" : {
       "hasOtherNames" : [ "Yai-glam Mango" ]
@@ -903,9 +875,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ชมพู่นาค" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -918,17 +889,16 @@
       "hasOtherNames" : [ "Sai-nam-phung Orange" ]
     },
     "กล้วยน้ำว้า" : {
-      "hasOtherNames" : [ "Pisang Awak Banana", "Kluai Nam Wah", "Ducasse Banana", "Nam Wah Banana" ]
+      "hasOtherNames" : [ "Nam Wah Banana" ]
     },
     "Thepparot Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Thepparot", "กล้วยเทพรส" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -941,10 +911,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "Slak Fruit", "สละ", "Salacca Zalacca" ],
-      "canCook" : [ "Fresh", "Peeled" ],
-      "hasMineral" : [ "Sodium", "Iodine" ],
+      "hasMineral" : [ "Sodium", "lodine" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -954,10 +923,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "แอปเปิ้ลแดงฟูจิ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -970,10 +938,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Baked", "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สัปปะรดภูแล" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -982,65 +949,65 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เนื้อแพชชั่นฟรุท" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Namwa-ngaen" : {
-      "hasOtherNames" : [ "Namwa-ngaen Banana", "กล้วยน้ำว้าเงิน" ]
+      "hasOtherNames" : [ "Namwa-ngaen Banana" ]
     },
     "กล้วยพม่าแหกคุก" : {
-      "hasOtherNames" : [ "Phama-heak-kuk Banana", "Kluai Phama-heak-kuk" ]
+      "hasOtherNames" : [ "Phama-heak-kuk Banana" ]
     },
     "กล้วยหิน" : {
-      "hasOtherNames" : [ "Hin Banana", "Saba Banana", "Kluai Hin", "กล้วยซาบา" ]
+      "hasOtherNames" : [ "Saba Banana" ]
     },
     "แตงโมเหยียบไม่แตก" : {
       "hasOtherNames" : [ "Watermelon" ]
     },
     "ชมพู่แก้มแหม่ม" : {
-      "hasOtherNames" : [ "Chomphu Kaemmam", "Wax Jambu", "Java Apple" ]
+      "hasOtherNames" : [ "Java Apple" ]
     },
     "Kluai Tib-mukdahan" : {
-      "hasOtherNames" : [ "กล้วยตีบมุกดาหาร", "Tib-mukdahan Banana" ]
+      "hasOtherNames" : [ "Tib-mukdahan Banana" ]
     },
     "Pisang Awak Banana" : {
-      "hasOtherNames" : [ "กล้วยน้ำว้า", "Nam Wah Banana" ]
+      "hasOtherNames" : [ "Nam Wah Banana" ]
+    },
+    "s Eye Fruit" : {
+      "hasOtherNames" : [ "Longan" ]
     },
     "Red Dragon Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red", "White" ],
-      "hasShape" : [ "Spherical", "Fruit", "Round" ],
+      "hasShape" : [ "Spherical", "Round" ],
       "hasOtherNames" : [ "แก้วมังกรเนื้อชมพู" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยไข่" : {
-      "hasOtherNames" : [ "Khai Banana", "Kluai Khai", "Lady Finger Banana" ]
+      "hasOtherNames" : [ "Lady Finger Banana" ]
     },
     "ลูกพลัม" : {
-      "hasOtherNames" : [ "ลูกไหน", "Wild Cherry" ]
+      "hasOtherNames" : [ "Wild Cherry" ]
     },
     "มะเฟือง" : {
-      "hasOtherNames" : [ "Star Fruit", "Carambola" ]
+      "hasOtherNames" : [ "Carambola" ]
     },
     "Mun-khun-si Mango" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงมันขุนศรีบ้านแพ้ว", "มะม่วงลิ้นงูเห่า" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1049,10 +1016,10 @@
       "hasOtherNames" : [ "Bang-khunnon Pummelo" ]
     },
     "กล้วยไข่โนนสูง" : {
-      "hasOtherNames" : [ "Kluai Khai Nonsung", "Khai Nonsung Banana" ]
+      "hasOtherNames" : [ "Khai Nonsung Banana" ]
     },
     "Chomphu Sareak" : {
-      "hasOtherNames" : [ "Malay Apple", "ชมพู่สาแหรก" ]
+      "hasOtherNames" : [ "Malay Apple" ]
     },
     "ลิ้นจี่ฮงฮวย" : {
       "hasOtherNames" : [ "Hong-houy Litchi" ]
@@ -1061,29 +1028,28 @@
       "hasOtherNames" : [ "Khaw-tangkwa Pomelo" ]
     },
     "ลางสาด" : {
-      "hasOtherNames" : [ "Langsium", "Lancet", "Langsat" ]
+      "hasOtherNames" : [ "Langsat" ]
     },
     "Sawberry" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "สตรอว์เบอรี่" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Otaheite Apple" : {
-      "hasOtherNames" : [ "Hog Plum", "มะกอกฝรั่ง" ]
+      "hasOtherNames" : [ "Hog Plum" ]
     },
     "Kluai Nam Wah" : {
-      "hasOtherNames" : [ "กล้วยน้ำว้า", "Nam Wah Banana" ]
+      "hasOtherNames" : [ "Nam Wah Banana" ]
     },
     "กล้วยหอมทิพย์" : {
-      "hasOtherNames" : [ "Hom-thip Banana", "Kluai Hom-thip" ]
+      "hasOtherNames" : [ "Hom-thip Banana" ]
     },
     "แคนตาลูปเนื้อเหลือง" : {
       "hasOtherNames" : [ "Yellow-fleshed Cantaloupe" ]
@@ -1093,10 +1059,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "Star Fruit", "มะเฟือง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1105,21 +1070,20 @@
       "hasOtherNames" : [ "Ripe Kaew Mango" ]
     },
     "มะขามหวาน" : {
-      "hasOtherNames" : [ "Tamarind", "Sweet Tamarind" ]
+      "hasOtherNames" : [ "Sweet Tamarind" ]
     },
     "ลองกอง" : {
-      "hasOtherNames" : [ "Longkong", "Longan" ]
+      "hasOtherNames" : [ "Longkong" ]
     },
     "Kluai Takhui" : {
-      "hasOtherNames" : [ "Takhui Banana", "กล้วยตะกุ่ย" ]
+      "hasOtherNames" : [ "Takhui Banana" ]
     },
     "Gandaria" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะปรางสุก" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1132,7 +1096,7 @@
       "hasOtherNames" : [ "Jambolan" ]
     },
     "Olive" : {
-      "hasOtherNames" : [ "Hog Plum", "มะกอกฝรั่ง" ]
+      "hasOtherNames" : [ "Hog Plum" ]
     },
     "แก้วมังกรเนื้อขาว" : {
       "hasOtherNames" : [ "White Dragon Fruit" ]
@@ -1144,39 +1108,37 @@
       "hasOtherNames" : [ "Toon-klow Rose Apple" ]
     },
     "กล้วยทิพรส" : {
-      "hasOtherNames" : [ "Kluai Thipparot", "Thipparot Banana" ]
+      "hasOtherNames" : [ "Thipparot Banana" ]
     },
     "ส้มเขียวหวาน" : {
       "hasOtherNames" : [ "Tangerine" ]
     },
     "ทุเรียนก้านยาว" : {
-      "hasOtherNames" : [ "Long-stem Durian", "Gaan Yao Durian", "Kan-yow Durian" ]
+      "hasOtherNames" : [ "Kan-yow Durian" ]
     },
     "Java Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crisp" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Chomphu Kaemmam", "Wax Jambu", "ชมพู่แก้มแหม่ม" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Long-stem Durian" : {
-      "hasOtherNames" : [ "Kan-yow Durian", "ทุเรียนก้านยาว" ]
+      "hasOtherNames" : [ "Kan-yow Durian" ]
     },
     "Kluai Khai" : {
-      "hasOtherNames" : [ "Lady Finger Banana", "กล้วยไข่" ]
+      "hasOtherNames" : [ "Lady Finger Banana" ]
     },
     "Hog Plum" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Irregular", "Oblong" ],
+      "hasShape" : [ "Irregular", "Oblong" ],
       "hasOtherNames" : [ "Olive", "มะกอกฝรั่ง", "Otaheite Apple" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1186,9 +1148,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "Lychee", "ลิ้นจี่" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
@@ -1198,7 +1159,7 @@
       "hasOtherNames" : [ "Seedless Guava" ]
     },
     "Kluai Namwa-dang" : {
-      "hasOtherNames" : [ "Namwa-dang Banana", "กล้วยน้ำว้าไส้แดง" ]
+      "hasOtherNames" : [ "Namwa-dang Banana" ]
     },
     "พุทราไทย" : {
       "hasOtherNames" : [ "Thai Jujube" ]
@@ -1211,55 +1172,52 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Takhui", "กล้วยตะกุ่ย" ],
-      "canCook" : [ "Grilled", "Dipped", "Fresh", "Fried" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวหมอนทอง)" : {
-      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem And Mon Thong)" ]
+      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem  Mon Thong)" ]
     },
     "Batoko Plum" : {
-      "hasOtherNames" : [ "Ramontchi", "ตะขบ" ]
+      "hasOtherNames" : [ "Ramontchi" ]
     },
     "กล้วยปิซังซูซู" : {
-      "hasOtherNames" : [ "Kluai Pisangsusu", "Pisangsusu Banana" ]
+      "hasOtherNames" : [ "Pisangsusu Banana" ]
     },
     "Nang Jackfruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Irregular", "Long" ],
+      "hasShape" : [ "Irregular", "Long" ],
       "hasOtherNames" : [ "ขนุนหนัง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "แตงไทย" : {
-      "hasOtherNames" : [ "Tang-tai", "Thai Melon", "Musk Melon" ]
+      "hasOtherNames" : [ "Musk Melon" ]
     },
     "ลิ้นจี่" : {
-      "hasOtherNames" : [ "Litchi", "Lychee" ]
+      "hasOtherNames" : [ "Litchi" ]
     },
     "ฝรั่งกลมสาลี่" : {
       "hasOtherNames" : [ "Klom-sali Guava" ]
     },
     "กล้วยไข่พม่า" : {
-      "hasOtherNames" : [ "Kluai Khai Phama", "Khai Phama Banana" ]
+      "hasOtherNames" : [ "Khai Phama Banana" ]
     },
     "Durian Paste" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "ทุเรียนกวน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1270,10 +1228,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เชอร์รี่นอก", "Wild Cherry" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1283,10 +1240,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "แคนตาลูปเนื้อเหลือง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1295,29 +1251,27 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "ทุเรียนก้านยาวกวน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยหอม" : {
-      "hasOtherNames" : [ "Kluai Hom", "Cavendish Banana", "Hom Banana" ]
+      "hasOtherNames" : [ "Hom Banana" ]
     },
     "เชอร์รี่นอก" : {
-      "hasOtherNames" : [ "Cherry", "Wild Cherry" ]
+      "hasOtherNames" : [ "Cherry" ]
     },
     "Namphung Chinese Pear" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สลาลี่น้ำผึ้ง" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1330,26 +1284,24 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยนางพญา", "Kluai Nang Phaya" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยน้ำไทย" : {
-      "hasOtherNames" : [ "Kluai Nam-tai", "Nam-tai Banana" ]
+      "hasOtherNames" : [ "Nam-tai Banana" ]
     },
     "Sri-ra-cha Pineapple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Baked", "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สัปปะรดศรีราชา" ],
-      "canCook" : [ "Grilled", "Fresh", "Diced", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1358,9 +1310,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงพราหมณ์" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1370,9 +1321,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงแก้วดิบ" ],
-      "canCook" : [ "Fresh", "Grated", "Sliced" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Astringent", "Acidic", "Green" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1383,28 +1333,26 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Grainy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะละกอฮาวาย" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยน้ำ" : {
-      "hasOtherNames" : [ "Kluai Nam", "Nam Banana" ]
+      "hasOtherNames" : [ "Nam Banana" ]
     },
     "Ma Naw Haw Manao Mango" : {
-      "hasOtherNames" : [ "มะม่วงหาวมะนาวโห่", "Karanda" ]
+      "hasOtherNames" : [ "Karanda" ]
     },
     "Khaw-yai Pomelo" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "ส้มโอขาวใหญ่" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
@@ -1415,10 +1363,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "สาลี่หิมะ" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -1434,10 +1381,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Nga Chang", "กล้วยไข่งาช้าง" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1447,9 +1393,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ฝรั่งแป้นสีทอง" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
@@ -1459,7 +1404,7 @@
       "hasOtherNames" : [ "Kak-dum Papaya" ]
     },
     "กล้วยเล็บมือนาง" : {
-      "hasOtherNames" : [ "Kluai Leb-muenang", "Leb-muenang Banana" ]
+      "hasOtherNames" : [ "Leb-muenang Banana" ]
     },
     "แอปเปิ้ลแดงฟูจิ" : {
       "hasOtherNames" : [ "Red Apple" ]
@@ -1468,9 +1413,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "แพชชั่นฟรุทกวน" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin" ],
@@ -1481,10 +1425,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Nam-chiangrai", "กล้วยน้ำเชียงราย" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1497,19 +1440,18 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลิ้นจี่จักรพรรดิ์" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Sareak Malay Apple" : {
-      "hasOtherNames" : [ "Malay Apple", "ชมพู่สาแหรก" ]
+      "hasOtherNames" : [ "Malay Apple" ]
     },
     "มะม่วงหาวมะนาวโห่" : {
-      "hasOtherNames" : [ "Ma Naw Haw Manao Mango", "Karanda", "Carunda" ]
+      "hasOtherNames" : [ "Karanda" ]
     },
     "ขนุนจำปา" : {
       "hasOtherNames" : [ "Jampa Jackfruit" ]
@@ -1518,42 +1460,40 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เงาะ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Makham Pom" : {
-      "hasOtherNames" : [ "มะขามป้อม", "Indian Gooseberry" ]
+      "hasOtherNames" : [ "Indian Gooseberry" ]
     },
     "Langsium" : {
-      "hasOtherNames" : [ "Langsat", "ลางสาด" ]
+      "hasOtherNames" : [ "Langsat" ]
     },
     "มะม่วงอกร่อง" : {
       "hasOtherNames" : [ "Ok-rong Mango" ]
     },
     "Chomphu Mameaw" : {
-      "hasOtherNames" : [ "ชมพู่มะเหมี่ยว", "Mameaw Rose Apple" ]
+      "hasOtherNames" : [ "Mameaw Rose Apple" ]
     },
     "เนื้อแพชชั่นฟรุท" : {
       "hasOtherNames" : [ "Passion Fruit Pulp" ]
     },
     "น้อยหน่า" : {
-      "hasOtherNames" : [ "Sugar Apple", "Custard Apple" ]
+      "hasOtherNames" : [ "Sugar Apple" ]
     },
     "Kluai Hom-thip" : {
-      "hasOtherNames" : [ "Hom-thip Banana", "กล้วยหอมทิพย์" ]
+      "hasOtherNames" : [ "Hom-thip Banana" ]
     },
     "Chanee Durian" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "ทุเรียนชะนี" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1563,9 +1503,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Red Water Apple", "Wax Apple", "ชมพู่สีชาด" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1579,10 +1518,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลิ้นจี่ค่อม" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1598,40 +1536,37 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "องุ่นแดง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ละมุดพันธุ์มะกอก" : {
-      "hasOtherNames" : [ "ละมุดฝรั่ง", "Ma-kok Sapodilla" ]
+      "hasOtherNames" : [ "Ma-kok Sapodilla" ]
     },
     "Pisangsusu Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Pisangsusu", "กล้วยปิซังซูซู" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ชมพู่สาแหรก" : {
-      "hasOtherNames" : [ "Sareak Malay Apple", "Chomphu Sareak", "Malay Apple" ]
+      "hasOtherNames" : [ "Malay Apple" ]
     },
     "Nak Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Nak", "กล้วยนาก" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
@@ -1641,16 +1576,15 @@
       "hasOtherNames" : [ "Karabow Mango" ]
     },
     "Hin Banana" : {
-      "hasOtherNames" : [ "กล้วยหิน", "Saba Banana", "กล้วยซาบา" ]
+      "hasOtherNames" : [ "Saba Banana" ]
     },
     "Tangerine" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มเขียวหวาน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1660,59 +1594,56 @@
       "hasOtherNames" : [ "Holland Papaya" ]
     },
     "Cavendish Banana" : {
-      "hasOtherNames" : [ "กล้วยหอม", "Hom Banana" ]
+      "hasOtherNames" : [ "Hom Banana" ]
     },
     "Hom-short-body Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Hom-short-body", "กล้วยหอมผลสั้น" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Monkey Apple" : {
-      "hasOtherNames" : [ "Jujube", "พุทรา" ]
+      "hasOtherNames" : [ "Jujube" ]
     },
     "ลำใยกะโหลก" : {
       "hasOtherNames" : [ "Kaloke Longan" ]
     },
     "กล้วยนมสาว" : {
-      "hasOtherNames" : [ "Nom Sao Banana", "กล้วยทองกำปั้น", "Kluai Nom Sao" ]
+      "hasOtherNames" : [ "Nom Sao Banana" ]
     },
     "กล้วยหักมุกนวล" : {
-      "hasOtherNames" : [ "Hak-mook-nuan Banana", "Kluai Hak Muk Nuan" ]
+      "hasOtherNames" : [ "Hak-mook-nuan Banana" ]
     },
     "Mameaw Rose Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Chomphu Mameaw", "ชมพู่มะเหมี่ยว", "Mameaw" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Khai Nonsung" : {
-      "hasOtherNames" : [ "กล้วยไข่โนนสูง", "Khai Nonsung Banana" ]
+      "hasOtherNames" : [ "Khai Nonsung Banana" ]
     },
     "Slak Fruit" : {
-      "hasOtherNames" : [ "สละ", "Salak" ]
+      "hasOtherNames" : [ "Salak" ]
     },
     "Madas Tamarind" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "Manila Tamarind", "Madras Thorn", "Kamachile", "มะขามเทศ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1722,47 +1653,44 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มโอขาวแตงกวา" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Nam-chiangrai" : {
-      "hasOtherNames" : [ "Nam-chiangrai Banana", "กล้วยน้ำเชียงราย" ]
+      "hasOtherNames" : [ "Nam-chiangrai Banana" ]
     },
     "มังคุด" : {
       "hasOtherNames" : [ "Mangosteen" ]
     },
     "กล้วยเทพรส" : {
-      "hasOtherNames" : [ "Kluai Thepparot", "Thepparot Banana" ]
+      "hasOtherNames" : [ "Thepparot Banana" ]
     },
     "Black Grapes" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "องุ่นดำ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Tamarind" : {
-      "hasOtherNames" : [ "มะขามหวาน", "Sweet Tamarind" ]
+      "hasOtherNames" : [ "Sweet Tamarind" ]
     },
     "Hong-houy Litchi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "ลิ้นจี่ฮงฮวย" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -1772,10 +1700,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Namwa-ngaen", "กล้วยน้ำว้าเงิน" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -1785,12 +1712,22 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "White" ],
-      "hasShape" : [ "Spherical", "Fruit", "Round" ],
+      "hasShape" : [ "Spherical", "Round" ],
       "hasOtherNames" : [ "แก้วมังกรเนื้อขาว" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
+    },
+    "Thai Ingredients-v4# Durian Paste( Long-stem  Mon Thong)" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
+      "hasColor" : [ "Green" ],
+      "hasShape" : [ "Oval", "Irregular" ],
+      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวหมอนทอง)" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Sweet", "Pungent" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลิ้นจี่จักรพรรดิ์" : {
       "hasOtherNames" : [ "King Litchi" ]
@@ -1799,9 +1736,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะไฟ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1812,9 +1748,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Khai Nonsung", "กล้วยไข่โนนสูง" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Sliced" ],
       "hasMineral" : [ "Sodium", "Phosphorus", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
@@ -1828,9 +1763,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Phama-heak-kuk", "กล้วยพม่าแหกคุก" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
@@ -1841,10 +1775,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงน้ำดอกไม้" ],
-      "canCook" : [ "Fresh", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Copper", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1854,7 +1787,6 @@
       "hasTexture" : [ "Liquid" ],
       "hasColor" : [ "Green" ],
       "hasOtherNames" : [ "พุทราไทย" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1864,10 +1796,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ฝรั่งไร้เมล็ด" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1879,9 +1810,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "มะม่วงหาวมะนาวโห่", "Ma Naw Haw Manao Mango", "Carunda" ],
-      "canCook" : [ "Fresh", "Roasted" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
@@ -1891,9 +1821,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Monkey Apple", "พุทรา" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -1903,10 +1832,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มโอทองดี" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1918,38 +1846,24 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Tang-tai", "แตงไทย", "Thai Melon" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Thai Ingredients-v4# Durian Paste( Long-stem And Mon Thong)" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
-      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวหมอนทอง)" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "ลูกไหน" : {
-      "hasOtherNames" : [ "ลูกพลัม", "Wild Cherry" ]
+      "hasOtherNames" : [ "Wild Cherry" ]
     },
     "Hak-mook-nuan Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยหักมุกนวล", "Kluai Hak Muk Nuan" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -1958,29 +1872,27 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลำใยเบี้ยวเขียว" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Thipparot" : {
-      "hasOtherNames" : [ "กล้วยทิพรส", "Thipparot Banana" ]
+      "hasOtherNames" : [ "Thipparot Banana" ]
     },
     "กล้วยซาบา" : {
-      "hasOtherNames" : [ "Hin Banana", "กล้วยหิน", "Saba Banana", "Kluai Hin" ]
+      "hasOtherNames" : [ "Saba Banana" ]
     },
     "Hom Chinese Pear" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "สาลี่หอม" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -1990,9 +1902,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มสายน้ำผึ้ง" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2006,19 +1917,18 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยหอมทิพย์", "Kluai Hom-thip" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ชมพู่เมืองเพชร" : {
-      "hasOtherNames" : [ "Meuang Phet Rose Apple", "Phet Rose Apple", "Phet Chomphu" ]
+      "hasOtherNames" : [ "Phet Rose Apple" ]
     },
     "Salacca Zalacca" : {
-      "hasOtherNames" : [ "สละ", "Salak" ]
+      "hasOtherNames" : [ "Salak" ]
     },
     "เงาะสีชมพู" : {
       "hasOtherNames" : [ "Pink Rambutan" ]
@@ -2027,16 +1937,15 @@
       "hasOtherNames" : [ "Rambai" ]
     },
     "Kluai Hom-jumpa" : {
-      "hasOtherNames" : [ "Hom-jumpa Banana", "กล้วยหอมจำปา" ]
+      "hasOtherNames" : [ "Hom-jumpa Banana" ]
     },
     "Soursop" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "ทุเรียนน้ำ", "ทุเรียนเทศ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2046,24 +1955,22 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ชมพู่แขกดำ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Lychee" : {
-      "hasOtherNames" : [ "Litchi", "ลิ้นจี่" ]
+      "hasOtherNames" : [ "Litchi" ]
     },
     "Karabow Mango" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงคาราบาว" ],
-      "canCook" : [ "Fresh" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2072,16 +1979,15 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะขามหวาน", "Tamarind" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Thai Melon" : {
-      "hasOtherNames" : [ "แตงไทย", "Musk Melon" ]
+      "hasOtherNames" : [ "Musk Melon" ]
     },
     "แตงโมกินรี" : {
       "hasOtherNames" : [ "Kinnaree Watermelon" ]
@@ -2090,9 +1996,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงอกร่อง" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2103,10 +2008,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "Longan", "ลองกอง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2115,10 +2019,10 @@
       "hasOtherNames" : [ "Khaw-yai Pomelo" ]
     },
     "กล้วยหอมจำปา" : {
-      "hasOtherNames" : [ "Hom-jumpa Banana", "Kluai Hom-jumpa" ]
+      "hasOtherNames" : [ "Hom-jumpa Banana" ]
     },
     "Wax Apple" : {
-      "hasOtherNames" : [ "Rose Apple", "ชมพู่สีชาด" ]
+      "hasOtherNames" : [ "Rose Apple" ]
     },
     "มะม่วงพิมเสนมัน" : {
       "hasOtherNames" : [ "Pimsen-mun Mango" ]
@@ -2128,24 +2032,22 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลูกตาล" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Wax Jambu" : {
-      "hasOtherNames" : [ "ชมพู่แก้มแหม่ม", "Java Apple" ]
+      "hasOtherNames" : [ "Java Apple" ]
     },
     "Nam-tai Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยน้ำไทย", "Kluai Nam-tai" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
@@ -2157,35 +2059,33 @@
       "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "น้ำคั้นแพชชั่นฟรุท" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Manila Tamarind" : {
-      "hasOtherNames" : [ "Madas Tamarind", "มะขามเทศ" ]
+      "hasOtherNames" : [ "Madas Tamarind" ]
     },
     "พลับ" : {
       "hasOtherNames" : [ "Persimmon" ]
     },
     "Kluai Nak" : {
-      "hasOtherNames" : [ "Nak Banana", "กล้วยนาก" ]
+      "hasOtherNames" : [ "Nak Banana" ]
     },
     "Haew Mango" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "มะม่วงแห้วมัน" ],
-      "canCook" : [ "Fresh", "Blended" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Nam" : {
-      "hasOtherNames" : [ "กล้วยน้ำ", "Nam Banana" ]
+      "hasOtherNames" : [ "Nam Banana" ]
     },
     "ส้มโอทองดี" : {
       "hasOtherNames" : [ "Tong-dee Pummelo" ]
@@ -2194,10 +2094,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มเช้ง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Ash" ]
@@ -2209,10 +2108,9 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Hak-muk", "กล้วยหักมุก", "Silver Bluggoe" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2223,24 +2121,13 @@
     "Fuji Red Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
+      "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "แอปเปิ้ลแดงลายฟูจิ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Thai Ingredients-v4# Durian Paste( Long-stem And Chanee)" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
-      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวชะนี)" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะม่วงเขียวสะอาด" : {
@@ -2250,13 +2137,13 @@
       "hasOtherNames" : [ "Chinese Orange" ]
     },
     "Governors Plum" : {
-      "hasOtherNames" : [ "Ramontchi", "ตะขบ" ]
+      "hasOtherNames" : [ "Ramontchi" ]
     },
     "Carunda" : {
-      "hasOtherNames" : [ "มะม่วงหาวมะนาวโห่", "Karanda" ]
+      "hasOtherNames" : [ "Karanda" ]
     },
     "ตะขบ" : {
-      "hasOtherNames" : [ "Batoko Plum", "Governors Plum", "Ramontchi" ]
+      "hasOtherNames" : [ "Ramontchi" ]
     },
     "ทุเรียนกวน" : {
       "hasOtherNames" : [ "Durian Paste" ]
@@ -2265,39 +2152,37 @@
       "hasOtherNames" : [ "Hima Chinese Pear" ]
     },
     "Red Water Apple" : {
-      "hasOtherNames" : [ "Rose Apple", "ชมพู่สีชาด" ]
+      "hasOtherNames" : [ "Rose Apple" ]
     },
     "ชมพู่มะเหมี่ยว" : {
-      "hasOtherNames" : [ "Chomphu Mameaw", "Mameaw Rose Apple", "Mameaw" ]
+      "hasOtherNames" : [ "Mameaw Rose Apple" ]
     },
     "Kluai Hak Muk Nuan" : {
-      "hasOtherNames" : [ "กล้วยหักมุกนวล", "Hak-mook-nuan Banana" ]
+      "hasOtherNames" : [ "Hak-mook-nuan Banana" ]
     },
     "Thipparot Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยทิพรส", "Kluai Thipparot" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Gaan Yao Durian" : {
-      "hasOtherNames" : [ "Kan-yow Durian", "ทุเรียนก้านยาว" ]
+      "hasOtherNames" : [ "Kan-yow Durian" ]
     },
     "Yellow Watermelon Yellow-fleshed Watermelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "Yellow Watermelon", "แตงโมเหลือง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2312,9 +2197,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงพิมเสน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2330,24 +2214,22 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้มจีนไร้เมล็ด" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Lancet" : {
-      "hasOtherNames" : [ "Langsat", "ลางสาด" ]
+      "hasOtherNames" : [ "Langsat" ]
     },
     "Langsat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "Langsium", "Lancet", "ลางสาด" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2363,9 +2245,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ส้ม" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2375,16 +2256,13 @@
       "hasOtherNames" : [ "Passion Fruit Juice" ]
     },
     "ละมุดฝรั่ง" : {
-      "hasOtherNames" : [ "Ma-kok Sapodilla", "ละมุดพันธุ์มะกอก" ]
+      "hasOtherNames" : [ "Ma-kok Sapodilla" ]
     },
     "ราสเบอร์รี่" : {
       "hasOtherNames" : [ "Raspberry" ]
     },
     "กล้วยตีบมุกดาหาร" : {
-      "hasOtherNames" : [ "Kluai Tib-mukdahan", "Tib-mukdahan Banana" ]
-    },
-    "มะเม่วงเขียวเสวยดิบ" : {
-      "hasOtherNames" : [ "Unripe Kiew-sa-weya Mango" ]
+      "hasOtherNames" : [ "Tib-mukdahan Banana" ]
     },
     "องุ่นแดง" : {
       "hasOtherNames" : [ "Red Grapes" ]
@@ -2394,9 +2272,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เงาะโรงเรียน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin" ],
@@ -2407,16 +2284,15 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
-      "hasOtherNames" : [ "Cherry", "ลูกไหน", "เชอร์รี่นอก", "ลูกพลัม" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Cherry", "ลูกไหน", "ลูกพลัม" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Custard Apple" : {
-      "hasOtherNames" : [ "น้อยหน่า", "Sugar Apple" ]
+      "hasOtherNames" : [ "Sugar Apple" ]
     },
     "มะม่วงหนังกลางวัน" : {
       "hasOtherNames" : [ "Nung-klang-wan Mango" ]
@@ -2429,10 +2305,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Purple" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "Ma Yong Chid", "Mangosteen", "มะยงชิด" ],
-      "canCook" : [ "Fresh", "Garnished", "Blended" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2441,10 +2316,10 @@
       "hasOtherNames" : [ "Tub-tim-jun Rose Apple" ]
     },
     "พุทรา" : {
-      "hasOtherNames" : [ "Jujube", "Monkey Apple" ]
+      "hasOtherNames" : [ "Jujube" ]
     },
     "ละมุดไทย" : {
-      "hasOtherNames" : [ "Si-da Sapodilla", "ละมุดสีดา", "Thai Sapodilla" ]
+      "hasOtherNames" : [ "Si-da Sapodilla" ]
     },
     "สาลี่ก้านยาว" : {
       "hasOtherNames" : [ "Kanyaw Chinese Pear" ]
@@ -2454,10 +2329,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "องุ่นแดงนอก" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Betacarotene" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2467,9 +2341,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ละมุดไทย", "ละมุดสีดา", "Thai Sapodilla" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
@@ -2480,9 +2353,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Grainy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "Loog-taw", "ลูกท้อ" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
@@ -2492,9 +2364,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Pink" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เงาะสีชมพู" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
@@ -2504,17 +2375,16 @@
       "hasOtherNames" : [ "Thong-dum Mango" ]
     },
     "Meuang Phet Rose Apple" : {
-      "hasOtherNames" : [ "ชมพู่เมืองเพชร", "Phet Rose Apple" ]
+      "hasOtherNames" : [ "Phet Rose Apple" ]
     },
     "Khaw-namhung Pomelo" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Orange" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "ส้มโอขาวน้ำผึ้ง" ],
-      "canCook" : [ "Fresh", "Sliced", "Peeled" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Citrus", "Sweet" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2526,28 +2396,23 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Irregular" ],
+      "hasShape" : [ "Oval", "Irregular" ],
       "hasOtherNames" : [ "Long-stem Durian", "Gaan Yao Durian", "ทุเรียนก้านยาว" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยน้ำว้าไส้แดง" : {
-      "hasOtherNames" : [ "Namwa-dang Banana", "Kluai Namwa-dang" ]
-    },
-    "Dragons Eye Fruit" : {
-      "hasOtherNames" : [ "ลำใย", "Longan" ]
+      "hasOtherNames" : [ "Namwa-dang Banana" ]
     },
     "Luna Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ชำมะเลียง" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Salty" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ]
     },
@@ -2556,10 +2421,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยน้ำ", "Kluai Nam" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2569,24 +2433,22 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ทุเรียนหมอนทอง" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Chomphu Kaemmam" : {
-      "hasOtherNames" : [ "ชมพู่แก้มแหม่ม", "Java Apple" ]
+      "hasOtherNames" : [ "Java Apple" ]
     },
     "Ma-kok Sapodilla" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ละมุดฝรั่ง", "ละมุดพันธุ์มะกอก" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2597,10 +2459,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Red", "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยน้ำว้าไส้แดง", "Kluai Namwa-dang" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2609,34 +2470,32 @@
       "hasOtherNames" : [ "Passion Fruit Seeds" ]
     },
     "Mameaw" : {
-      "hasOtherNames" : [ "ชมพู่มะเหมี่ยว", "Mameaw Rose Apple" ]
+      "hasOtherNames" : [ "Mameaw Rose Apple" ]
     },
     "ชมพู่สีชาด" : {
-      "hasOtherNames" : [ "Red Water Apple", "Rose Apple", "Wax Apple" ]
+      "hasOtherNames" : [ "Rose Apple" ]
     },
     "Kanyaw Chinese Pear" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "สาลี่ก้านยาว" ],
-      "canCook" : [ "Fresh", "Sliced" ],
-      "hasMineral" : [ "Phosphorus", "Iodine" ],
+      "hasMineral" : [ "Phosphorus", "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ทุเรียนเทศ" : {
-      "hasOtherNames" : [ "ทุเรียนน้ำ", "Soursop" ]
+      "hasOtherNames" : [ "Soursop" ]
     },
     "Kalok Litchi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลิ้นจี่กะโหลดใบอ้อ" ],
-      "canCook" : [ "Fresh" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2645,29 +2504,27 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "มะม่วงพิมเสนมัน" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Khai Phama" : {
-      "hasOtherNames" : [ "กล้วยไข่พม่า", "Khai Phama Banana" ]
+      "hasOtherNames" : [ "Khai Phama Banana" ]
     },
     "Kluai Nang Phaya" : {
-      "hasOtherNames" : [ "กล้วยนางพญา", "Nang Phaya Banana" ]
+      "hasOtherNames" : [ "Nang Phaya Banana" ]
     },
     "Lady Finger Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Khai Banana", "Kluai Khai", "กล้วยไข่" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked", "Mashed" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2676,9 +2533,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "Sareak Malay Apple", "Chomphu Sareak", "ชมพู่สาแหรก" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2688,18 +2544,17 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ฝรั่งซันจู" ],
-      "canCook" : [ "Fresh" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กล้วยหอมผลสั้น" : {
-      "hasOtherNames" : [ "Kluai Hom-short-body", "Hom-short-body Banana" ]
+      "hasOtherNames" : [ "Hom-short-body Banana" ]
     },
     "ลูกท้อ" : {
-      "hasOtherNames" : [ "Loog-taw", "Thai Peach" ]
+      "hasOtherNames" : [ "Thai Peach" ]
     },
     "ชำมะเลียง" : {
       "hasOtherNames" : [ "Luna Nut" ]
@@ -2708,29 +2563,28 @@
       "hasOtherNames" : [ "Nang Jackfruit" ]
     },
     "Kluai Phama-heak-kuk" : {
-      "hasOtherNames" : [ "Phama-heak-kuk Banana", "กล้วยพม่าแหกคุก" ]
+      "hasOtherNames" : [ "Phama-heak-kuk Banana" ]
     },
     "มะม่วงมันขุนศรีบ้านแพ้ว" : {
-      "hasOtherNames" : [ "Mun-khun-si Mango", "มะม่วงลิ้นงูเห่า" ]
+      "hasOtherNames" : [ "Mun-khun-si Mango" ]
     },
     "ขนุนละมุด" : {
       "hasOtherNames" : [ "Lamud Jackfruit" ]
     },
     "จันทน์เทศ" : {
-      "hasOtherNames" : [ "Nutmeg", "ลูกจันทน์" ]
+      "hasOtherNames" : [ "Nutmeg" ]
     },
     "Ducasse Banana" : {
-      "hasOtherNames" : [ "กล้วยน้ำว้า", "Nam Wah Banana" ]
+      "hasOtherNames" : [ "Nam Wah Banana" ]
     },
     "Jampa Jackfruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Chewy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Irregular", "Long" ],
+      "hasShape" : [ "Irregular", "Long" ],
       "hasOtherNames" : [ "ขนุนจำปา" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2739,13 +2593,13 @@
       "hasOtherNames" : [ "Beawkeaw Longan" ]
     },
     "กล้วยทองกำปั้น" : {
-      "hasOtherNames" : [ "กล้วยนมสาว", "Nom Sao Banana", "Kluai Nom Sao" ]
+      "hasOtherNames" : [ "Nom Sao Banana" ]
     },
     "Thai Sapodilla" : {
-      "hasOtherNames" : [ "ละมุดไทย", "Si-da Sapodilla", "ละมุดสีดา" ]
+      "hasOtherNames" : [ "Si-da Sapodilla" ]
     },
     "Phet Chomphu" : {
-      "hasOtherNames" : [ "ชมพู่เมืองเพชร", "Phet Rose Apple" ]
+      "hasOtherNames" : [ "Phet Rose Apple" ]
     },
     "ส้มแก้ว" : {
       "hasOtherNames" : [ "Som-keaw Orange" ]
@@ -2755,25 +2609,23 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "องุ่นเขียว" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Nam-tai" : {
-      "hasOtherNames" : [ "กล้วยน้ำไทย", "Nam-tai Banana" ]
+      "hasOtherNames" : [ "Nam-tai Banana" ]
     },
     "Klom-sali Guava" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ฝรั่งกลมสาลี่" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2783,9 +2635,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Oval" ],
+      "hasShape" : [ "Oval" ],
       "hasOtherNames" : [ "ทุเรียนอีลวง" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Pungent" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
@@ -2798,27 +2649,25 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ลำใยกะโหลก" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลำใย" : {
-      "hasOtherNames" : [ "Dragons Eye Fruit", "Longan" ]
+      "hasOtherNames" : [ "Longan" ]
     },
     "มะกอกฝรั่ง" : {
-      "hasOtherNames" : [ "Olive", "Hog Plum", "Otaheite Apple" ]
+      "hasOtherNames" : [ "Hog Plum" ]
     },
     "Longan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Round" ],
-      "hasOtherNames" : [ "Longkong", "Dragons Eye Fruit", "ลำใย", "ลองกอง" ],
-      "canCook" : [ "Fresh" ],
+      "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "Dragon's Eye Fruit", "Longkong", "ลำใย" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2828,9 +2677,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "น้อยหน่า", "Custard Apple" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2846,32 +2694,30 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "กล้วยน้ำว้า", "Pisang Awak Banana", "Kluai Nam Wah", "Ducasse Banana" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะม่วงลิ้นงูเห่า" : {
-      "hasOtherNames" : [ "Mun-khun-si Mango", "มะม่วงมันขุนศรีบ้านแพ้ว" ]
+      "hasOtherNames" : [ "Mun-khun-si Mango" ]
     },
     "มะม่วงเขียวเสวยสุก" : {
       "hasOtherNames" : [ "Ripe Kiew-sa-weya Mango" ]
     },
     "กล้วยไข่งาช้าง" : {
-      "hasOtherNames" : [ "Nha Chang Banana", "Kluai Nga Chang" ]
+      "hasOtherNames" : [ "Nha Chang Banana" ]
     },
     "Torpedo Watermelon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Round" ],
+      "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "แตงโมตอปิโด" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2881,47 +2727,43 @@
     },
     "Cashew Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Creamy", "Juicy" ],
-      "hasColor" : [ "Beige", "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Oblong" ],
-      "hasOtherNames" : [ "เมล็ดมะม่วงหิมพานต์", "Cashew", "ผลมะม่วงหิมพานต์" ],
-      "canCook" : [ "Fresh", "Roasted", "Boiled", "Fried", "Stir- Fried", "Peeled", "Grounded" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Woody", "Umami" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
-      "hasType" : [ "Nut" ]
+      "hasTexture" : [ "Juicy" ],
+      "hasColor" : [ "Yellow" ],
+      "hasShape" : [ "Oblong" ],
+      "hasOtherNames" : [ "ผลมะม่วงหิมพานต์" ],
+      "hasMineral" : [ "Calcium", "Phosphorus" ],
+      "hasFlavor" : [ "Umami" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Hom" : {
-      "hasOtherNames" : [ "กล้วยหอม", "Hom Banana" ]
+      "hasOtherNames" : [ "Hom Banana" ]
     },
     "กล้วยหักมุก" : {
-      "hasOtherNames" : [ "Kluai Hak-muk", "Hak-mook Banana", "Silver Bluggoe" ]
+      "hasOtherNames" : [ "Hak-mook Banana" ]
     },
     "Persimmon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "พลับ" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Iodine" ],
+      "hasMineral" : [ "lodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Kluai Nga Chang" : {
-      "hasOtherNames" : [ "Nha Chang Banana", "กล้วยไข่งาช้าง" ]
+      "hasOtherNames" : [ "Nha Chang Banana" ]
     },
     "Tib-mukdahan Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Creamy" ],
       "hasColor" : [ "Yellow" ],
-      "hasShape" : [ "Fruit", "Long", "Curved" ],
+      "hasShape" : [ "Long", "Curved" ],
       "hasOtherNames" : [ "Kluai Tib-mukdahan", "กล้วยตีบมุกดาหาร" ],
-      "canCook" : [ "Grilled", "Fresh", "Baked" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -2930,17 +2772,16 @@
       "hasOtherNames" : [ "Namphung Chinese Pear" ]
     },
     "Kluai Nom Sao" : {
-      "hasOtherNames" : [ "กล้วยนมสาว", "Nom Sao Banana", "กล้วยทองกำปั้น" ]
+      "hasOtherNames" : [ "Nom Sao Banana" ]
     },
     "Unripe Kiew-sa-weya Mango" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
-      "hasOtherNames" : [ "มะเม่วงเขียวเสวยดิบ" ],
-      "canCook" : [ "Fresh", "Grated" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasShape" : [ "Oblong" ],
+      "hasOtherNames" : [ "มะม่วงเขียวเสวยดิบ" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Astringent", "Acidic", "Green" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2953,9 +2794,8 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Green" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "แอปเปิ้ลเขียว" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2966,10 +2806,9 @@
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Red" ],
-      "hasShape" : [ "Fruit", "Round" ],
+      "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ราสเบอร์รี่" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "lodine", "Iron", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Acidic", "Sweet" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
@@ -2978,9 +2817,8 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Fruit", "Oblong" ],
+      "hasShape" : [ "Oblong" ],
       "hasOtherNames" : [ "เมล็ดแพชชั่นฟรุท" ],
-      "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -3017,7 +2855,6 @@
     "Giant Tiger Prawn Head" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "หัวกุ้งกุลาดำ" ],
       "canCook" : [ "Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
@@ -3073,7 +2910,6 @@
     "Lanchester Fresh Water Prawn" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "กุ้งฝอย" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
@@ -3405,7 +3241,6 @@
     "Krill" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "Tiny Shrimp", "กุ้งเคย" ],
       "canCook" : [ "Boiled" ],
       "hasMineral" : [ "Phosphorus", "Iron", "Iodine" ],
@@ -3970,7 +3805,6 @@
     "Fermented Shrimp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "กุ้งหมัก", "กุ้งส้ม" ],
       "canCook" : [ "Seasoned" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
@@ -4152,7 +3986,6 @@
     "Giant Tiger Prawn" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "เนื้อกุ้งกุลาดำ" ],
       "canCook" : [ "Grilled", "Fried", "Stir- Fried", "Steamed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
@@ -4163,7 +3996,6 @@
     "Dried Shrimp" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Orange" ],
       "hasOtherNames" : [ "กุ้งตัวเล็กแห้ง" ],
       "canCook" : [ "Fried", "Stir- Fried", "Soaked" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
@@ -7003,9 +6835,6 @@
     "งาขาวคั่ว" : {
       "hasOtherNames" : [ "Roasted White Sesame" ]
     },
-    "เมล็ดมะม่วงหิมพานต์" : {
-      "hasOtherNames" : [ "Cashew Nut" ]
-    },
     "ถั่วแปะยีคั่ว" : {
       "hasOtherNames" : [ "Roasted Lablab Bean" ]
     },
@@ -7169,9 +6998,6 @@
     },
     "มะพร้าวอ่อน" : {
       "hasOtherNames" : [ "Young Coconut" ]
-    },
-    "Cashew" : {
-      "hasOtherNames" : [ "Cashew Nut" ]
     },
     "ถั่วเน่าเปียก" : {
       "hasOtherNames" : [ "Fermented Fresh Soybean" ]
@@ -7370,9 +7196,6 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
       "hasType" : [ "Seed" ]
     },
-    "ผลมะม่วงหิมพานต์" : {
-      "hasOtherNames" : [ "Cashew Nut" ]
-    },
     "ถั่วพุ่ม" : {
       "hasOtherNames" : [ "Black-eyed Pea" ]
     },
@@ -7403,19 +7226,6 @@
     },
     "ถั่วหรั่งคั่ว" : {
       "hasOtherNames" : [ "Roasted Bambara Groundnut" ]
-    },
-    "Cashew Nut" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy", "Creamy", "Juicy" ],
-      "hasColor" : [ "Beige", "Yellow" ],
-      "hasShape" : [ "Fruit", "Oval", "Oblong" ],
-      "hasOtherNames" : [ "เมล็ดมะม่วงหิมพานต์", "Cashew", "ผลมะม่วงหิมพานต์" ],
-      "canCook" : [ "Fresh", "Roasted", "Boiled", "Fried", "Stir- Fried", "Peeled", "Grounded" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Woody", "Umami" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
-      "hasType" : [ "Nut" ]
     },
     "Water Chestnuts" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -7724,7 +7534,7 @@
     "Champaca" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Velvety" ],
-      "hasColor" : [ "Yellow", "Orange" ],
+      "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Oval", "Oblong" ],
       "hasOtherNames" : [ "จำปานา" ],
       "canCook" : [ "Flavored" ],
@@ -8531,7 +8341,6 @@
     "Chebulic Marobalans" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Chewy" ],
-      "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "สมอไทย" ],
       "canCook" : [ "Boiled", "Dried", "Pickled" ],
@@ -8903,7 +8712,6 @@
     "Pumpkin Without Skin" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เนื้อฟักทอง" ],
       "canCook" : [ "Roasted", "Boiled", "Stewed" ],
@@ -9538,7 +9346,7 @@
     "Madan Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Yellow", "Orange" ],
+      "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Round" ],
       "hasOtherNames" : [ "ผลมะดัน" ],
       "canCook" : [ "Fresh", "Boiled", "Blended", "Pickled" ],
@@ -9601,7 +9409,6 @@
     "Carrot" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "Orange" ],
       "hasShape" : [ "Cylindrical" ],
       "hasOtherNames" : [ "แครอท" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir- Fried" ],
@@ -10286,7 +10093,6 @@
     "Pumpkin With Skin" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tougher" ],
-      "hasColor" : [ "Orange" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "เปลือกฟักทอง" ],
       "canCook" : [ "Roasted", "Boiled", "Stewed" ],
@@ -10509,7 +10315,7 @@
     "Sesbania" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy", "Tender" ],
-      "hasColor" : [ "Yellow", "Orange" ],
+      "hasColor" : [ "Yellow" ],
       "hasShape" : [ "Small", "Tubular", "Long" ],
       "hasOtherNames" : [ "แค", "โสน" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Sauteed", "Stir- Fried" ],
