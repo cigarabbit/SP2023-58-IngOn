@@ -1,86 +1,85 @@
-const data = {
-    "name": "Food Group",
-    "children": [{
-        "name": "Cereal"
-    }, {
-        "name": "Egg"
-    }, {
-        "name": "Fruit"
-    }, {
-        "name": "Insect"
-    }, {
-        "name": "Milk"
-    }, {
-        "name": "Meat, Poultry"
-    }, {
-        "name": "Pulse, Seed, Nut"
-    }, {
-        "name": "Shellfish"
-    }, {
-        "name": "Spice, Condiment"
-    }, {
-        "name": "Starchy Root, Tuber",
-        "children": [
-            {name: "Tester1"}
-        ]
-    }, {
-        "name": "Vegetable",
-        "children": [
-            {
-                name: "White Holy Basil",
-                children: [{
-                    name: "can cook",
-                    image: "https://img5.pic.in.th/file/secure-sv1/image735564af716a4b6e.md.png",
-                    children: [
-                        {name: "Fried", relationship: "forSome"},
-                        {name: "Stir-Fried", relationship: "forSome"}]
-                },{
-                    name: "has benefit",
-                    children: [
-                        {name: "Culinary", relationship: "forSome"},
-                        {name: "Health\nPotential", relationship: "forSome"}]
-                }, {
-                    name: "has color",
-                    children: [
-                        {name: "Green", relationship: "forSome"},
-                    ]
-                }, {
-                    name: "has flavor",
-                    children: [
-                        {name: "Sweet"},
-                        {name: "Astringent"}
-                    ]
-                }, {
-                    name: "has shape",
-                    children: [
-                        {name: "Broad"},
-                        {name: "Oval"}
-                    ]
-                }, {
-                    name: "has texture",
-                    children: [
-                        {name: "Tender", relationship: "forSome"}]
-                }, {
-                    name: "has nutrient",
-                    children: [
-                        {name: "Energy", relationship: "forSome"},
-                        {name: "Water", relationship: "forSome"}]
-                }]
-            }, {
-                name: "Pepper"
-            }
-        ]
+async function loadData() {
+    try {
+        const response = await fetch('/data');
+        // console.log(data);
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading data:', error);
     }
-    ]
 }
 
+let root;
 var zoom = d3.zoom()
     .scaleExtent([1 / 2, 8])
     .on('zoom', zoomed);
 
 let i = 0;
 
-const root = d3.hierarchy(data);
+async function processData() {
+    try {
+        const data = await loadData(); // Wait for the promise to resolve
+
+        // const henWhiteEgg = data["Egg"]["Hen White Egg"];
+
+        // Object.keys(henWhiteEgg).forEach(key => {
+        //     const values = henWhiteEgg[key];
+        //     console.log(`Values for ${key}:`, values);
+        //     values.forEach(value => {
+        //         console.log(value);
+        //     });
+        // });
+        const foodGroupNode = {
+            name: "Food Group",
+            children: [
+                // {
+                //     name: "Cereal",
+                //     children: Object.keys(data["Cereal"]).map(key => {
+                //         const cerealItem = data["Cereal"][key];
+                //         return {
+                //             name: key,
+                //             children: Object.keys(cerealItem).map(property => ({
+                //                 name: property,
+                //                 children: Object.keys(cerealItem[property]).map(value => ({
+                //                     name: value.values
+                //                 }))
+                //             }))
+                //         };
+                //     })
+                // },
+                {
+                    name: "Egg",
+                    children: Object.keys(data["Egg"]).map(key => {
+                        const eggItem = data["Egg"][key];
+                        return {
+                            name: key,
+                            children: Object.keys(eggItem).map(property => ({
+                                name: property,
+                                children: Array.isArray(eggItem[property]) ?
+                                    eggItem[property].map(value => ({ name: value })) :
+                                    Object.entries(eggItem[property]).map(([subprop, values]) => ({
+                                        name: subprop,
+                                        children: values.map(value => ({ name: value }))
+                                    }))
+                            }))
+                        };
+                    })
+                }
+            ]
+
+        };
+
+        root = d3.hierarchy(foodGroupNode);
+
+        // console.log(root)
+        update(root);
+    } catch (error) {
+        // Handle any errors that might occur during data loading or processing
+        console.error('Error processing data:', error);
+    }
+}
+
+processData();
+
 const transform = d3.zoomIdentity;
 let node, link;
 
@@ -93,7 +92,7 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(150,50)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(150))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(300))
     .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked);
@@ -122,7 +121,7 @@ window.addEventListener('load', function () {
         });
 })
 
-function update() {
+function update(root) {
     const nodes = flatten(root);
     const links = root.links();
     const shape = function(d) {
@@ -208,7 +207,6 @@ function update() {
     simulation.nodes(nodes);
     simulation.force('link').links(links);
     simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization))
-
 }
 
 function ticked() {
