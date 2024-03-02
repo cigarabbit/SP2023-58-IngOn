@@ -50,19 +50,18 @@ async function processData() {
                     name: "Egg",
                     children: Object.keys(data["Egg"]).map(key => {
                         const eggItem = data["Egg"][key];
-                        return {
-                            name: key,
-                            children: Object.keys(eggItem).map(property => ({
-                                name: property,
-                                children: Array.isArray(eggItem[property]) ?
-                                    eggItem[property].map(value => ({ name: value })) :
-                                    Object.entries(eggItem[property]).map(([subprop, values]) => ({
-                                        name: subprop,
-                                        children: values.map(value => ({ name: value }))
-                                    }))
-                            }))
-                        };
-                    })
+                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) {
+                            return {
+                                name: key,
+                                children: Object.keys(eggItem).map(property => ({
+                                    name: property,
+                                    children: eggItem[property].map(value => ({ name: value }))
+                                }))
+                            };
+                        } else {
+                            return null; 
+                        }
+                    }).filter(Boolean)
                 }
             ]
 
