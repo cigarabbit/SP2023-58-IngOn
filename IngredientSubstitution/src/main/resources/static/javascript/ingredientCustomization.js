@@ -29,7 +29,6 @@ function sortTopics() {
         const itemName = item.textContent.replace(/\(.*?\)/g, '').trim();
         if (beneProp[itemName] !== undefined) { // Not a subclass
             list.appendChild(item);
-            console.log(itemName)
         }
     });
 
@@ -80,7 +79,6 @@ function SetThaiName() {
     });
 }
 
-// TODO: remove alternative names from sidebar topics initially
 function retrieveData() {
     var sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
     var contentHeader = document.querySelector('#ingredient-title');
@@ -124,7 +122,7 @@ function retrieveData() {
                     contentHeader.append(', ');
                     contentHeader.append(name);
 
-                    DL_Concept.append(' ≡ ');
+                    DL_Concept.append(' ≡ '); // Display in a DL syntax
                     DL_Concept.append(name);
                 }
             }
@@ -249,7 +247,6 @@ function retrieveData() {
     }
 }
 
-// TODO: add equivalent name in a syntax
 function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes) {
     var syntax = conceptName;
 
