@@ -35,22 +35,24 @@ async function processData() {
                 //     name: "Cereal",
                 //     children: Object.keys(data["Cereal"]).map(key => {
                 //         const cerealItem = data["Cereal"][key];
-                //         return {
-                //             name: key,
-                //             children: Object.keys(cerealItem).map(property => ({
-                //                 name: property,
-                //                 children: Object.keys(cerealItem[property]).map(value => ({
-                //                     name: value.values
+                //         if ("hasBenefit" in cerealItem && cerealItem["hasBenefit"].length > 0) {
+                //             return {
+                //                 name: key,
+                //                 children: Object.keys(cerealItem).map(property => ({
+                //                     name: property,
+                //                     children: cerealItem[property].map(value => ({ name: value }))
                 //                 }))
-                //             }))
-                //         };
-                //     })
+                //             };
+                //         } else {
+                //             return null;
+                //         }
+                //     }).filter(Boolean)
                 // },
                 {
                     name: "Egg",
                     children: Object.keys(data["Egg"]).map(key => {
                         const eggItem = data["Egg"][key];
-                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) { // Only main concept has benefits
+                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) {
                             return {
                                 name: key,
                                 children: Object.keys(eggItem).map(property => ({
@@ -112,34 +114,10 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(150,50)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(300))
-    .force('charge', d3.forceManyBody().strength(-600).distanceMax(300))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(500))
+    .force('charge', d3.forceManyBody().strength(-650).distanceMax(500))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked);
-
-// window.addEventListener('load', function () {
-//     var nodes = d3.selectAll(".node");
-//
-//     nodes.style('opacity', function(node) {
-//         return node.depth > 1 ? '0' : '1';
-//     })
-//         .style('pointer-events', function(node) {
-//             return node.depth > 1 ? 'none' : 'all';
-//         })
-//
-//     var links = d3.selectAll(".link");
-//
-//     links.style('opacity', function(link) {
-//         if (link.source.depth > 1 || link.target.depth > 1) {
-//             return '0';
-//         } else {
-//             return '1';
-//         }
-//     })
-//         .style('pointer-events', function(link) {
-//             return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
-//         });
-// })
 
 function update(root) {
     const nodes = flatten(root);
@@ -316,7 +294,7 @@ function clicked(clickedNode) {
             if (node.depth < 3) {
                 return 'all';
             } else return 'none';
-        })
+        });
 
     links.style('opacity', function (link) {
         if (link.source === clickedNode || link.target === clickedNode) {
@@ -330,13 +308,24 @@ function clicked(clickedNode) {
         } else if (clickedNode.depth === 2) { // Ingredient selected
             if (link.source.depth === 0 && (link.target.depth === 1 && link.target === clickedNode.parent)) {
                 return '1'; // Display category
-            } if ((link.source === clickedNode && link.target.depth >= 3) ||
-                (link.target === clickedNode && link.source.depth >= 3)) {
-                return '1';
+            } if ( (link.source.depth === 3 && link.target.depth === 4) &&
+                (link.source.parent === clickedNode || link.target.parent === clickedNode)) {
+                return '1'; // Every property within an ingredient
             }
         }
         return '0';
     });
+
+    // linkForce.distance(function(link) {
+    //     if ((link.source.depth === 3 && link.target.depth === 4) &&
+    //         (link.source.parent === clickedNode || link.target.parent === clickedNode)) {
+    //         return 50;
+    //     } else {
+    //         return 100;
+    //     }
+    // });
+
+    simulation.alpha(1).restart();
 }
 
 const customColors = ['#4eb9f2', '#de67b1', '#f9e261', '#7800E1'];
@@ -490,8 +479,8 @@ function findNode() {
                 if (d.depth === 4) { // Properties
                     parentNode = d.parent;
                     rootNode = parentNode.parent;
-                    console.log('here', parentNode, rootNode)
                 }
+
                 focusNode(this);
                 zoomToFocused();
 
@@ -502,15 +491,16 @@ function findNode() {
         });
 
         links.style("opacity", function (d) {
-            if (d.source === rootNode && d.target === parentNode ||
-                d.source.data.name.toLowerCase() === itemName ||
+            if (d.source === rootNode && d.target === parentNode || d.source.data.name.toLowerCase() === itemName ||
                 d.target.data.name.toLowerCase() === itemName) {
                 return "1";
             } else {
                 return "0";
             }
         });
-    } else if (itemName == '') {
+    }
+
+    else if (itemName == '') {
         window.location.reload();
     }
 
