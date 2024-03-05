@@ -50,7 +50,7 @@ async function processData() {
                     name: "Egg",
                     children: Object.keys(data["Egg"]).map(key => {
                         const eggItem = data["Egg"][key];
-                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) {
+                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) { // Only main concept has benefits
                             return {
                                 name: key,
                                 children: Object.keys(eggItem).map(property => ({
@@ -59,7 +59,7 @@ async function processData() {
                                 }))
                             };
                         } else {
-                            return null; 
+                            return null;
                         }
                     }).filter(Boolean)
                 }
@@ -71,6 +71,27 @@ async function processData() {
 
         // console.log(root)
         update(root);
+
+        var nodes = d3.selectAll(".node");
+        var links = d3.selectAll(".link");
+
+        nodes.style('opacity', function(node) {
+            return node.depth > 1 ? '0' : '1';
+        })
+            .style('pointer-events', function(node) {
+                return node.depth > 1 ? 'none' : 'all';
+            })
+
+        links.style('opacity', function(link) {
+            if (link.source.depth > 1 || link.target.depth > 1) {
+                return '0';
+            } else {
+                return '1';
+            }
+        })
+            .style('pointer-events', function(link) {
+                return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
+            });
     } catch (error) {
         // Handle any errors that might occur during data loading or processing
         console.error('Error processing data:', error);
@@ -96,29 +117,29 @@ const simulation = d3.forceSimulation()
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
     .on('tick', ticked);
 
-window.addEventListener('load', function () {
-    var nodes = d3.selectAll(".node");
-
-    nodes.style('opacity', function(node) {
-        return node.depth > 1 ? '0' : '1';
-    })
-        .style('pointer-events', function(node) {
-            return node.depth > 1 ? 'none' : 'all';
-        })
-
-    var links = d3.selectAll(".link");
-
-    links.style('opacity', function(link) {
-        if (link.source.depth > 1 || link.target.depth > 1) {
-            return '0';
-        } else {
-            return '1';
-        }
-    })
-        .style('pointer-events', function(link) {
-            return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
-        });
-})
+// window.addEventListener('load', function () {
+//     var nodes = d3.selectAll(".node");
+//
+//     nodes.style('opacity', function(node) {
+//         return node.depth > 1 ? '0' : '1';
+//     })
+//         .style('pointer-events', function(node) {
+//             return node.depth > 1 ? 'none' : 'all';
+//         })
+//
+//     var links = d3.selectAll(".link");
+//
+//     links.style('opacity', function(link) {
+//         if (link.source.depth > 1 || link.target.depth > 1) {
+//             return '0';
+//         } else {
+//             return '1';
+//         }
+//     })
+//         .style('pointer-events', function(link) {
+//             return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
+//         });
+// })
 
 function update(root) {
     const nodes = flatten(root);
@@ -269,8 +290,6 @@ function clicked(clickedNode) {
         return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
     });
 
-    console.log(childrenNodes)
-
     if (!clickedNode.children) {
         clickedNode._children = clickedNode.children;
         clickedNode.children = null;
@@ -281,7 +300,6 @@ function clicked(clickedNode) {
 
     focusNode(this);
     zoomToFocused();
-
 
     nodes.style('opacity', function (node) {
         if (node.depth === 0 || node === clickedNode ||
@@ -311,9 +329,9 @@ function clicked(clickedNode) {
             }
         } else if (clickedNode.depth === 2) { // Ingredient selected
             if (link.source.depth === 0 && (link.target.depth === 1 && link.target === clickedNode.parent)) {
-                return '1';
-            }
-            if (clickedNode.children && link.source.depth === 3 || link.target.depth === 4) {
+                return '1'; // Display category
+            } if ((link.source === clickedNode && link.target.depth >= 3) ||
+                (link.target === clickedNode && link.source.depth >= 3)) {
                 return '1';
             }
         }
