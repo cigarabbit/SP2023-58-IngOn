@@ -38,3 +38,12 @@ input {
     stroke: black;
     stroke-width: 1px;
 }
+
+circle:hover {
+    opacity: 0.8;
+}
+
+.categorySelection {
+    margin-top: 75px;
+}
+

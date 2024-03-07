@@ -1,7 +1,6 @@
 async function loadData() {
     try {
         const response = await fetch('/data');
-        // console.log(data);
         return await response.json();
     } catch (error) {
         console.error('Error loading data:', error);
@@ -15,50 +14,25 @@ var zoom = d3.zoom()
 
 let i = 0;
 
-async function processData() {
-    try {
-        const data = await loadData(); // Wait for the promise to resolve
+function retrieveIngredients(data) {
+    const category_selected = document.querySelector('#category-viz').value;
+    let foodGroupNode;
 
-        // const henWhiteEgg = data["Egg"]["Hen White Egg"];
-
-        // Object.keys(henWhiteEgg).forEach(key => {
-        //     const values = henWhiteEgg[key];
-        //     console.log(`Values for ${key}:`, values);
-        //     values.forEach(value => {
-        //         console.log(value);
-        //     });
-        // });
-        const foodGroupNode = {
+    if (category_selected in data) {
+        foodGroupNode = {
             name: "Food Group",
             children: [
-                // {
-                //     name: "Cereal",
-                //     children: Object.keys(data["Cereal"]).map(key => {
-                //         const cerealItem = data["Cereal"][key];
-                //         if ("hasBenefit" in cerealItem && cerealItem["hasBenefit"].length > 0) {
-                //             return {
-                //                 name: key,
-                //                 children: Object.keys(cerealItem).map(property => ({
-                //                     name: property,
-                //                     children: cerealItem[property].map(value => ({ name: value }))
-                //                 }))
-                //             };
-                //         } else {
-                //             return null;
-                //         }
-                //     }).filter(Boolean)
-                // },
                 {
-                    name: "Egg",
-                    children: Object.keys(data["Egg"]).map(key => {
-                        const eggItem = data["Egg"][key];
-                        if ("hasBenefit" in eggItem && eggItem["hasBenefit"].length > 0) {
+                    name: category_selected,
+                    children: Object.keys(data[category_selected]).map(key => {
+                        const categoryItem = data[category_selected][key];
+                        if ("hasBenefit" in categoryItem && categoryItem["hasBenefit"].length > 0) {
                             return {
                                 name: key,
-                                children: Object.keys(eggItem).map(property => ({
+                                children: Object.keys(categoryItem).map(property => ({
                                     name: property,
-                                    children: eggItem[property].map(value => ({ name: value }))
-                                }))
+                                    children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({ name: value })) : null
+                                })).filter(Boolean)
                             };
                         } else {
                             return null;
@@ -66,12 +40,21 @@ async function processData() {
                     }).filter(Boolean)
                 }
             ]
-
         };
+    }
+
+    return foodGroupNode;
+
+}
+
+async function processData() {
+    try {
+        const data = await loadData(); // Wait for the promise to resolve
+        const foodGroupNode = retrieveIngredients(data)
 
         root = d3.hierarchy(foodGroupNode);
 
-        // console.log(root)
+        console.log(root)
         update(root);
 
         var nodes = d3.selectAll(".node");
@@ -100,8 +83,6 @@ async function processData() {
     }
 }
 
-processData();
-
 const transform = d3.zoomIdentity;
 let node, link;
 
@@ -114,10 +95,10 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(150,50)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(500))
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(350))
     .force('charge', d3.forceManyBody().strength(-650).distanceMax(500))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
-    .on('tick', ticked);
+
 
 function update(root) {
     const nodes = flatten(root);
@@ -150,6 +131,8 @@ function update(root) {
         }
     };
 
+    simulation.on('tick', ticked);
+
     // Update links
     link = svg.selectAll('.link')
         .data(links, function (d) { return d.target.id });
@@ -179,6 +162,16 @@ function update(root) {
         .style('opacity', 1)
         .style('pointer-events', nodePointer)
         .on('click', clicked)
+        .on("mouseover", function(d) {
+            d3.select("#tooltip")
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY - 28) + "px")
+                .style("display", "block")
+                .text('Test' + d.data.name);
+        })
+        .on("mouseout", function() {
+            d3.select("#tooltip").style("display", "none");
+        })
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
@@ -207,7 +200,9 @@ function update(root) {
     simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization))
 }
 
+
 function ticked() {
+
     link
         .attr('x1', function (d) { return d.source.x; })
         .attr('y1', function (d) { return d.source.y; })
@@ -315,15 +310,6 @@ function clicked(clickedNode) {
         }
         return '0';
     });
-
-    // linkForce.distance(function(link) {
-    //     if ((link.source.depth === 3 && link.target.depth === 4) &&
-    //         (link.source.parent === clickedNode || link.target.parent === clickedNode)) {
-    //         return 50;
-    //     } else {
-    //         return 100;
-    //     }
-    // });
 
     simulation.alpha(1).restart();
 }
@@ -457,7 +443,8 @@ function findNode() {
     var itemName = document.getElementById("targetNode").value.toLowerCase();
     var nodes = d3.selectAll(".node");
     var links = d3.selectAll(".link");
-    var relationshipList = ['can cook', 'has benefit', 'shape', 'flavor', 'nutrient', 'texture']
+    var relationshipList = ['can cook', 'has benefit', 'has shape', 'has flavor',
+        'has nutrient', 'has vitamin', 'has mineral', 'has sugar', 'has texture', 'has color']
     var isNotInRelationshipList = true;
 
     let parentNode, rootNode;
