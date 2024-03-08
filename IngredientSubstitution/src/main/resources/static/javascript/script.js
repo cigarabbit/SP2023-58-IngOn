@@ -15,8 +15,15 @@ var zoom = d3.zoom()
 let i = 0;
 
 function retrieveIngredients(data) {
-    const category_selected = document.querySelector('#category-viz').value;
-    let foodGroupNode;
+    const options = document.querySelector('#category-viz');
+
+    let category_selected, foodGroupNode;
+
+    if (options) {
+
+    }
+
+    console.log(category_selected)
 
     if (category_selected in data) {
         foodGroupNode = {
@@ -493,4 +500,3 @@ function findNode() {
 
 }
 
-update()
