@@ -13,14 +13,30 @@ var zoom = d3.zoom()
     .on('zoom', zoomed);
 
 let i = 0;
+let node, link;
+
+const transform = d3.zoomIdentity;
+const viewportWidth = window.innerWidth;
+const viewportHeight = window.innerHeight;
+
+const svg = d3.select('svg')
+    .call(zoom)
+    .append('g')
+    .attr('transform', 'translate(150,50)');
+
+const simulation = d3.forceSimulation()
+    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(350))
+    .force('charge', d3.forceManyBody().strength(-650).distanceMax(300))
+    .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
+
 
 function retrieveIngredients(data) {
-    const options = document.querySelector('#category-viz');
+    const options = document.querySelector('.categorySelection input[type="radio"]:checked');
 
     let category_selected, foodGroupNode;
 
     if (options) {
-
+        category_selected = options.value;
     }
 
     console.log(category_selected)
@@ -51,7 +67,6 @@ function retrieveIngredients(data) {
     }
 
     return foodGroupNode;
-
 }
 
 async function processData() {
@@ -61,7 +76,7 @@ async function processData() {
 
         root = d3.hierarchy(foodGroupNode);
 
-        console.log(root)
+        // console.log(root)
         update(root);
 
         var nodes = d3.selectAll(".node");
@@ -89,23 +104,6 @@ async function processData() {
         console.error('Error processing data:', error);
     }
 }
-
-const transform = d3.zoomIdentity;
-let node, link;
-
-const viewportWidth = window.innerWidth;
-const viewportHeight = window.innerHeight;
-
-const svg = d3.select('svg')
-    .call(zoom)
-    .append('g')
-    .attr('transform', 'translate(150,50)');
-
-const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(350))
-    .force('charge', d3.forceManyBody().strength(-650).distanceMax(500))
-    .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
-
 
 function update(root) {
     const nodes = flatten(root);
