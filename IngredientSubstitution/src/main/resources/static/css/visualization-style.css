@@ -61,7 +61,7 @@ table {
 
 #alphabetGroup {
     margin-top: 30px;
-    display: none;
+    display: block;
 }
 
 td {

@@ -1,4 +1,4 @@
-let clickedCell;
+// let clickedCell;
 
 function generateAlphabetTable(category) {
     var tableBody = document.getElementById("letterTableBody");
@@ -6,28 +6,53 @@ function generateAlphabetTable(category) {
 
     var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    if (category === 'Fruit') {
+    if (category === 'Cereal') {
+        letters = letters.replace(/[AEIKQTXZ]/g, '');
+    } else if (category === 'Egg') {
+        letters = letters.replace(/[ABEFIJKLNOPTUVXYZ]/g, '');
+    } else if (category === 'Fruit') {
+        letters = letters.replace(/[EQVXZ]/g, '');
+    } else if (category === 'Insect') {
+        letters = letters.replace(/[ABCEGHIJKLNOQSUVWXYZ]/g, '');
+    } else if (category === 'Milk') {
+        letters = letters.replace(/[ABDEFIJKLNOQRTVWXYZ]/g, '');
+    } else if (category === 'Meat_Poultry') {
+        letters = letters.replace(/[AEHIKLMNOUVWXYZ]/g, '');
+    } else if (category === 'Pulse_Seed_Nut') {
+        letters = letters.replace(/[AHIKNOQUVXYZ]/g, '');
+    } else if (category === 'Shellfish') {
+        letters = letters.replace(/[QUVXZ]/g, '');
+    } else if (category === 'Spice_Condiment') {
+        letters = letters.replace(/[AEFIJNOPQRTUVXYZ]/g, '');
+    } else if (category === 'StarchyRoot_Tuber') {
+        letters = letters.replace(/[ADEFGHIJKLMNOTUVWXYZ]/g, '');
+    }  else if (category === 'Vegetable') {
         letters = letters.replace(/[VXZ]/g, '');
     }
 
     var numRows = Math.ceil(letters.length / 6); // number of rows
 
-    for (var i = 0; i < numRows; i++) {
+    for (let i = 0; i < numRows; i++) {
         var row = document.createElement("tr");
 
-        for (var j = 0; j < 6; j++) {
+        for (let j = 0; j < 6; j++) {
             var index = i * 6 + j;
             if (index < letters.length) {
                 var cell = document.createElement("td");
                 cell.textContent = letters[index];
+
                 cell.addEventListener("click", function(event) {
-                    clickedCell = event.target.textContent;
-                    console.log(clickedCell)
-                    var cells = document.querySelectorAll("td");
-                    cells.forEach(function(cell) {
-                        cell.classList.remove("cell-active");
+                    let clickedCell = event.target;
+                    let alphabet = clickedCell.textContent;
+
+                    var allCells = document.querySelectorAll("td");
+                    allCells.forEach(cell => {
+                        cell.style.backgroundColor = '#FFFFFF';
                     });
-                    event.target.classList.add("cell-active");
+
+                    processData(alphabet);
+
+                    clickedCell.style.backgroundColor = '#5be166';
                 });
 
                 row.appendChild(cell);
@@ -39,34 +64,16 @@ function generateAlphabetTable(category) {
 }
 
 function displayAlphabetTable() {
-
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
-    let alphabetTable = document.getElementById('alphabetGroup');
 
     if (options) {
         let category = options.value;
 
         generateAlphabetTable(category);
-
-        alphabetTable.style.display = 'block';
     }
-
 }
-
-window.addEventListener("click", (event) => {
-   displayAlphabetTable()
-})
 
 ///////////// D3.js Visualization /////////////
-async function loadData() {
-    try {
-        const response = await fetch('/data');
-        return await response.json();
-    } catch (error) {
-        console.error('Error loading data:', error);
-    }
-}
-
 let root;
 var zoom = d3.zoom()
     .scaleExtent([1 / 2, 8])
@@ -91,8 +98,16 @@ const simulation = d3.forceSimulation()
     .force('charge', d3.forceManyBody().strength(-650).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
 
+async function loadData() {
+    try {
+        const response = await fetch('/data');
+        return await response.json();
+    } catch (error) {
+        console.error('Error loading data:', error);
+    }
+}
 
-function retrieveIngredients(data) {
+function retrieveIngredients(data, alphabet) {
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
     let category_selected, foodGroupNode;
 
@@ -100,7 +115,7 @@ function retrieveIngredients(data) {
         category_selected = options.value;
     }
 
-    console.log(category_selected)
+    console.log(alphabet)
 
     if (category_selected in data) {
         foodGroupNode = {
@@ -108,19 +123,21 @@ function retrieveIngredients(data) {
             children: [
                 {
                     name: category_selected,
-                    children: Object.keys(data[category_selected]).map(key => {
-                        const categoryItem = data[category_selected][key];
-                        if ("hasBenefit" in categoryItem && categoryItem["hasBenefit"].length > 0) {
-                            return {
-                                name: key,
-                                children: Object.keys(categoryItem).map(property => ({
-                                    name: property,
-                                    children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({name: value})) : null
-                                })).filter(Boolean)
-                            };
-                        } else {
-                            return null;
-                        }
+                    children: Object.keys(data[category_selected])
+                        .filter(key => key.startsWith(alphabet)) // filter with alphabet
+                        .map(key => {
+                            const categoryItem = data[category_selected][key];
+                            if ("hasBenefit" in categoryItem && categoryItem["hasBenefit"].length > 0) {
+                                return {
+                                    name: key,
+                                    children: Object.keys(categoryItem).map(property => ({
+                                        name: property,
+                                        children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({name: value})) : null
+                                    })).filter(Boolean)
+                                };
+                            } else {
+                                return null;
+                            }
                     }).filter(Boolean)
                 }
             ]
@@ -130,35 +147,35 @@ function retrieveIngredients(data) {
     return foodGroupNode;
 }
 
-async function processData() {
+async function processData(alphabet) {
     try {
         const data = await loadData(); // Wait for the promise to resolve
-        const foodGroupNode = retrieveIngredients(data)
+        const foodGroupNode = retrieveIngredients(data, alphabet);
 
         root = d3.hierarchy(foodGroupNode);
 
-        // console.log(root)
+        console.log(root)
         update(root);
 
         var nodes = d3.selectAll(".node");
         var links = d3.selectAll(".link");
 
         nodes.style('opacity', function (node) {
-            return node.depth > 1 ? '0' : '1';
+            return node.depth > 2 ? '0' : '1';
         })
             .style('pointer-events', function (node) {
-                return node.depth > 1 ? 'none' : 'all';
+                return node.depth > 2 ? 'none' : 'all';
             })
 
         links.style('opacity', function (link) {
-            if (link.source.depth > 1 || link.target.depth > 1) {
+            if (link.source.depth > 2 || link.target.depth > 2) {
                 return '0';
             } else {
                 return '1';
             }
         })
             .style('pointer-events', function (link) {
-                return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
+                return (link.source.depth > 2 || link.target.depth > 2) ? 'none' : 'all';
             });
     } catch (error) {
         // Handle any errors that might occur during data loading or processing
