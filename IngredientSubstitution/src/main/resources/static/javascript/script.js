@@ -1,3 +1,63 @@
+let clickedCell;
+
+function generateAlphabetTable(category) {
+    var tableBody = document.getElementById("letterTableBody");
+    tableBody.innerHTML = '';
+
+    var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    if (category === 'Fruit') {
+        letters = letters.replace(/[VXZ]/g, '');
+    }
+
+    var numRows = Math.ceil(letters.length / 6); // number of rows
+
+    for (var i = 0; i < numRows; i++) {
+        var row = document.createElement("tr");
+
+        for (var j = 0; j < 6; j++) {
+            var index = i * 6 + j;
+            if (index < letters.length) {
+                var cell = document.createElement("td");
+                cell.textContent = letters[index];
+                cell.addEventListener("click", function(event) {
+                    clickedCell = event.target.textContent;
+                    console.log(clickedCell)
+                    var cells = document.querySelectorAll("td");
+                    cells.forEach(function(cell) {
+                        cell.classList.remove("cell-active");
+                    });
+                    event.target.classList.add("cell-active");
+                });
+
+                row.appendChild(cell);
+            }
+        }
+
+        tableBody.appendChild(row);
+    }
+}
+
+function displayAlphabetTable() {
+
+    let options = document.querySelector('.categorySelection input[type="radio"]:checked');
+    let alphabetTable = document.getElementById('alphabetGroup');
+
+    if (options) {
+        let category = options.value;
+
+        generateAlphabetTable(category);
+
+        alphabetTable.style.display = 'block';
+    }
+
+}
+
+window.addEventListener("click", (event) => {
+   displayAlphabetTable()
+})
+
+///////////// D3.js Visualization /////////////
 async function loadData() {
     try {
         const response = await fetch('/data');
@@ -25,14 +85,15 @@ const svg = d3.select('svg')
     .attr('transform', 'translate(150,50)');
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) { return d.id; }).distance(350))
+    .force('link', d3.forceLink().id(function (d) {
+        return d.id;
+    }).distance(350))
     .force('charge', d3.forceManyBody().strength(-650).distanceMax(300))
     .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
 
 
 function retrieveIngredients(data) {
-    const options = document.querySelector('.categorySelection input[type="radio"]:checked');
-
+    let options = document.querySelector('.categorySelection input[type="radio"]:checked');
     let category_selected, foodGroupNode;
 
     if (options) {
@@ -54,7 +115,7 @@ function retrieveIngredients(data) {
                                 name: key,
                                 children: Object.keys(categoryItem).map(property => ({
                                     name: property,
-                                    children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({ name: value })) : null
+                                    children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({name: value})) : null
                                 })).filter(Boolean)
                             };
                         } else {
@@ -82,21 +143,21 @@ async function processData() {
         var nodes = d3.selectAll(".node");
         var links = d3.selectAll(".link");
 
-        nodes.style('opacity', function(node) {
+        nodes.style('opacity', function (node) {
             return node.depth > 1 ? '0' : '1';
         })
-            .style('pointer-events', function(node) {
+            .style('pointer-events', function (node) {
                 return node.depth > 1 ? 'none' : 'all';
             })
 
-        links.style('opacity', function(link) {
+        links.style('opacity', function (link) {
             if (link.source.depth > 1 || link.target.depth > 1) {
                 return '0';
             } else {
                 return '1';
             }
         })
-            .style('pointer-events', function(link) {
+            .style('pointer-events', function (link) {
                 return (link.source.depth > 1 || link.target.depth > 1) ? 'none' : 'all';
             });
     } catch (error) {
@@ -108,7 +169,7 @@ async function processData() {
 function update(root) {
     const nodes = flatten(root);
     const links = root.links();
-    const shape = function(d) {
+    const shape = function (d) {
         return d.depth === 3 ? 'line' : 'circle';
     };
     const dashDottedLine = function (d) {
@@ -128,7 +189,7 @@ function update(root) {
         }
     }
 
-    const distanceCustomization = function(d) {
+    const distanceCustomization = function (d) {
         if ((d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
             return 100;
         } else {
@@ -140,7 +201,9 @@ function update(root) {
 
     // Update links
     link = svg.selectAll('.link')
-        .data(links, function (d) { return d.target.id });
+        .data(links, function (d) {
+            return d.target.id
+        });
 
     link.exit().remove();
 
@@ -156,7 +219,9 @@ function update(root) {
 
     // Update nodes
     node = svg.selectAll('.node')
-        .data(nodes, function (d) { return d.id });
+        .data(nodes, function (d) {
+            return d.id
+        });
 
     node.exit().remove();
 
@@ -167,14 +232,14 @@ function update(root) {
         .style('opacity', 1)
         .style('pointer-events', nodePointer)
         .on('click', clicked)
-        .on("mouseover", function(d) {
+        .on("mouseover", function (d) {
             d3.select("#tooltip")
                 .style("left", (d3.event.pageX) + "px")
                 .style("top", (d3.event.pageY - 28) + "px")
                 .style("display", "block")
                 .text('Test' + d.data.name);
         })
-        .on("mouseout", function() {
+        .on("mouseout", function () {
             d3.select("#tooltip").style("display", "none");
         })
         .call(d3.drag()
@@ -182,7 +247,7 @@ function update(root) {
             .on('drag', dragged)
             .on('end', dragended))
 
-    nodeEnter.append(function(d) {
+    nodeEnter.append(function (d) {
         return document.createElementNS('http://www.w3.org/2000/svg', shape(d));
     })
         .attr('r', 20)
@@ -195,7 +260,9 @@ function update(root) {
         .attr('dx', 0)
         .style('fill', 'black')
         .style('text-anchor', 'middle')
-        .text(function (d) { return d.data.name; });
+        .text(function (d) {
+            return d.data.name;
+        });
 
     svg.selectAll('.node').raise();
 
@@ -209,13 +276,23 @@ function update(root) {
 function ticked() {
 
     link
-        .attr('x1', function (d) { return d.source.x; })
-        .attr('y1', function (d) { return d.source.y; })
-        .attr('x2', function (d) { return d.target.x; })
-        .attr('y2', function (d) { return d.target.y; })
+        .attr('x1', function (d) {
+            return d.source.x;
+        })
+        .attr('y1', function (d) {
+            return d.source.y;
+        })
+        .attr('x2', function (d) {
+            return d.target.x;
+        })
+        .attr('y2', function (d) {
+            return d.target.y;
+        })
 
     node
-        .attr('transform', function (d) { return `translate(${d.x}, ${d.y})` })
+        .attr('transform', function (d) {
+            return `translate(${d.x}, ${d.y})`
+        })
 }
 
 function focusNode(node) {
@@ -308,7 +385,8 @@ function clicked(clickedNode) {
         } else if (clickedNode.depth === 2) { // Ingredient selected
             if (link.source.depth === 0 && (link.target.depth === 1 && link.target === clickedNode.parent)) {
                 return '1'; // Display category
-            } if ( (link.source.depth === 3 && link.target.depth === 4) &&
+            }
+            if ((link.source.depth === 3 && link.target.depth === 4) &&
                 (link.source.parent === clickedNode || link.target.parent === clickedNode)) {
                 return '1'; // Every property within an ingredient
             }
@@ -330,46 +408,36 @@ function color(d) {
     }
     if (d.depth === 1) {
         return colors[d.parent.children.indexOf(d)];
-    }
-    else if (d.depth === 4) {
+    } else if (d.depth === 4) {
         if (d.data.name == "Green") {
             return '#49d354';
         } else if (d.data.name == "Red") {
             return '#a90e24';
         } else if (d.data.name == "Beige") {
             return '#dedec3';
-        }else if (d.data.name == "Black") {
+        } else if (d.data.name == "Black") {
             return '#000000';
-        }else if (d.data.name == "Brown") {
+        } else if (d.data.name == "Brown") {
             return '#56350e';
-        }else if (d.data.name == "Cream") {
+        } else if (d.data.name == "Cream") {
             return '#ded4c3';
-        }
-        else if (d.data.name == "Gold") {
+        } else if (d.data.name == "Gold") {
             return '#b28d1d';
-        }
-        else if (d.data.name == "Gray") {
+        } else if (d.data.name == "Gray") {
             return '#808080';
-        }
-        else if (d.data.name == "Pink") {
+        } else if (d.data.name == "Pink") {
             return '#FFB6C1';
-        }
-        else if (d.data.name == "Purple") {
+        } else if (d.data.name == "Purple") {
             return '#800080';
-        }
-        else if (d.data.name == "RedBrown") {
+        } else if (d.data.name == "RedBrown") {
             return '#A52A2A';
-        }
-        else if (d.data.name == "Silver") {
+        } else if (d.data.name == "Silver") {
             return '#C0C0C0';
-        }
-        else if (d.data.name == "Silver") {
+        } else if (d.data.name == "Silver") {
             return '#D2B48C';
-        }
-        else if (d.data.name == "White" || d.data.name == "Transparent") {
+        } else if (d.data.name == "White" || d.data.name == "Transparent") {
             return '#FFFFFF';
-        }
-        else if (d.data.name == "Yellow") {
+        } else if (d.data.name == "Yellow") {
             return '#FFFF00';
         }
     }
@@ -396,12 +464,14 @@ function dragended(d) {
 
 function flatten(root) {
     const nodes = []
+
     function recurse(node) {
         if (node.children) node.children.forEach(recurse)
         if (!node.id) node.id = ++i;
         else ++i;
         nodes.push(node)
     }
+
     recurse(root)
     return nodes
 }
@@ -490,9 +560,7 @@ function findNode() {
                 return "0";
             }
         });
-    }
-
-    else if (itemName == '') {
+    } else if (itemName == '') {
         window.location.reload();
     }
 

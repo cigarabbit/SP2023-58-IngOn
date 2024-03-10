@@ -87,65 +87,90 @@
     </nav>
     <!--Navbar-->
     <div class="container">
+        <div class="categorySelection">
+            <label>Choose a category: </label><br>
+            <input type="radio" id="category-cereal" name="category" value="Cereal" onclick="processData()" required>
+            <label for="category-cereal">Cereal</label><br>
+
+            <input type="radio" id="category-egg" name="category" value="Egg" onclick="processData()" required>
+            <label for="category-egg">Egg</label><br>
+
+            <input type="radio" id="category-fruit" name="category" value="Fruit" onclick="processData()" required>
+            <label for="category-fruit">Fruit</label><br>
+<!--            <div id="fruit-options" class="add_options">-->
+<!--                <input type="radio" id="fruit-option" name="vegetable-options[]" value="A_H" onclick="processData()">-->
+<!--                <label for="fruit-option">A - H</label><br>-->
+<!--                <input type="radio" id="fruit-option2" name="fruit-options[]" value="I_K" onclick="processData()">-->
+<!--                <label for="fruit-option2">I - K</label><br>-->
+<!--                <input type="radio" id="fruit-option3" name="fruit-options[]" value="L_N" onclick="processData()">-->
+<!--                <label for="fruit-option3">L -N</label><br>-->
+<!--                <input type="radio" id="fruit-option4" name="fruit-options[]" value="O_R" onclick="processData()">-->
+<!--                <label for="fruit-option4">O - R</label><br>-->
+<!--                <input type="radio" id="fruit-option5" name="fruit-options[]" value="S_Z" onclick="processData()">-->
+<!--                <label for="fruit-option5">S - Z</label><br>-->
+<!--            </div>-->
+
+            <input type="radio" id="category-insect" name="category" value="Insect" onclick="processData()" required>
+            <label for="category-insect">Insect</label><br>
+
+            <input type="radio" id="category-milk" name="category" value="Milk" onclick="processData()" required>
+            <label for="category-milk">Milk</label><br>
+
+            <input type="radio" id="category-meat-poultry" name="category" value="Meat_Poultry" onclick="processData()" required>
+            <label for="category-meat-poultry">Meat/Poultry</label><br>
+
+            <input type="radio" id="category-pulse-seed-nut" name="category" value="Pulse_Seed_Nut" onclick="processData()" required>
+            <label for="category-pulse-seed-nut">Pulse/Seed/Nut</label><br>
+
+            <input type="radio" id="category-shellfish" name="category" value="Shellfish" onclick="processData()" required>
+            <label for="category-shellfish">Shellfish</label><br>
+
+            <input type="radio" id="category-spice" name="category" value="Spice_Condiment" onclick="processData()" required>
+            <label for="category-spice">Spice</label><br>
+
+            <input type="radio" id="category-starchy-root-tuber" name="category" value="StarchyRoot_Tuber" onclick="processData()" required>
+            <label for="category-starchy-root-tuber">Starchy Root/Tuber</label><br>
+
+            <input type="radio" id="category-vegetable" name="category" value="Vegetable" onclick="displayOptions()" required>
+            <label for="category-vegetable">Vegetable</label><br>
+<!--            <div id="vegetable-options" class="add_options">-->
+<!--                <input type="radio" id="vegetable-option1" name="vegetable-options[]" value="A_B" onclick="processData()">-->
+<!--                <label for="vegetable-option1">A - B</label><br>-->
+<!--                <input type="radio" id="vegetable-option2" name="vegetable-options[]" value="C" onclick="processData()">-->
+<!--                <label for="vegetable-option2">C</label><br>-->
+<!--                <input type="radio" id="vegetable-option3" name="vegetable-options[]" value="D_I" onclick="processData()">-->
+<!--                <label for="vegetable-option3">D - I</label><br>-->
+<!--                <input type="radio" id="vegetable-option4" name="vegetable-options[]" value="J_O" onclick="processData()">-->
+<!--                <label for="vegetable-option4">J - O</label><br>-->
+<!--                <input type="radio" id="vegetable-option5" name="vegetable-options[]" value="P_R" onclick="processData()">-->
+<!--                <label for="vegetable-option5">P - R</label><br>-->
+<!--                <input type="radio" id="vegetable-option6" name="vegetable-options[]" value="S_U" onclick="processData()">-->
+<!--                <label for="vegetable-option6">S - U</label><br>-->
+<!--                <input type="radio" id="vegetable-option7" name="vegetable-options[]" value="W_Z" onclick="processData()">-->
+<!--                <label for="vegetable-option3">W - Z</label><br>-->
+<!--            </div>-->
+            <table id="alphabetGroup">
+                <thead>
+                <tr>
+
+                </tr>
+                </thead>
+                <tbody id="letterTableBody">
+                </tbody>
+            </table>
+
+        </div>
         <div class="row justify-content-center">
             <p id="header-visualization">Thai Ingredient Ontology Visualization</p>
-            <div class="col-md-2 categorySelection">
-                <label>Choose a category: </label><br>
-                <input type="radio" id="category-cereal" name="category" value="Cereal" onclick="processData()" required>
-                <label for="category-cereal">Cereal</label><br>
-
-                <input type="radio" id="category-egg" name="category" value="Egg" onclick="processData()" required>
-                <label for="category-egg">Egg</label><br>
-
-                <input type="radio" id="category-fruit" name="category" value="Fruit" onclick="processData()" required>
-                <label for="category-fruit">Fruit</label><br>
-
-                <input type="radio" id="category-insect" name="category" value="Insect" onclick="processData()" required>
-                <label for="category-insect">Insect</label><br>
-
-                <input type="radio" id="category-milk" name="category" value="Milk" onclick="processData()" required>
-                <label for="category-milk">Milk</label><br>
-
-                <input type="radio" id="category-meat-poultry" name="category" value="Meat_Poultry" onclick="processData()" required>
-                <label for="category-meat-poultry">Meat/Poultry</label><br>
-
-                <input type="radio" id="category-pulse-seed-nut" name="category" value="Pulse_Seed_Nut" onclick="processData()" required>
-                <label for="category-pulse-seed-nut">Pulse/Seed/Nut</label><br>
-
-                <input type="radio" id="category-shellfish" name="category" value="Shellfish" onclick="processData()" required>
-                <label for="category-shellfish">Shellfish</label><br>
-
-                <input type="radio" id="category-spice" name="category" value="Spice_Condiment" onclick="processData()" required>
-                <label for="category-spice">Spice</label><br>
-
-                <input type="radio" id="category-starchy-root-tuber" name="category" value="StarchyRoot_Tuber" onclick="processData()" required>
-                <label for="category-starchy-root-tuber">Starchy Root/Tuber</label><br>
-
-                <input type="radio" id="category-vegetable" name="category" value="Vegetable" onclick="processData()" required>
-                <label for="category-vegetable">Vegetable</label><br>
-            </div>
-            <div class="col-md-9">
-
+            <div class="col-md-11">
                 <svg id="svg-visualization"></svg>
             </div>
         </div>
     </div>
 
-<!--    <div class="help">-->
-<!--        <div class="popup">-->
-<!--            Each category consists of several ingredients with its properties. To represent an ontology visualization, each shape has its own meaning.-->
-<!--            <ul>-->
-<!--                <li>Circle refers to a concept</li>-->
-<!--                <li>Dash-dotted line refers to a relationship between its parent and children.</li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--        <div class="question">?</div>-->
-
-<!--    </div>-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="javascript/script.js"></script>
-
 </body>
 </html>
