@@ -3,11 +3,22 @@ body {
     height: 100vh;
 }
 
+.container {
+    width: 100vw;
+}
+
+.categorySelection {
+    left: 25px;
+    margin-top: 150px;
+    position: fixed;
+    width: fit-content;
+}
+
 #header-visualization {
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
-    margin-top: 70px;
+    margin-top: 80px;
     padding: 10px;
 }
 
@@ -43,7 +54,10 @@ circle:hover {
     opacity: 0.8;
 }
 
-.categorySelection {
-    /*margin-top: 75px;*/
+.add_options {
+    display: none;
+    margin-left: 15px;
 }
+
+
 

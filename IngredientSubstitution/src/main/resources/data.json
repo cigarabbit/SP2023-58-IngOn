@@ -326,7 +326,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Yellow Watermelon" : {
-      "hasOtherNames" : [ "Yellow Watermelon Yellow-fleshed Watermelon" ]
+      "hasOtherNames" : [ "Yellow-fleshed Watermelon" ]
     },
     "เงาะโรงเรียน" : {
       "hasOtherNames" : [ "Rong Rean Rambutan" ]
@@ -363,6 +363,17 @@
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
+    "Long-stem Durian Paste Mon Thong" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
+      "hasColor" : [ "Green" ],
+      "hasShape" : [ "Oval", "Irregular" ],
+      "hasOtherNames" : [ "ทุเรียนกวนก้านยาวหมอนทอง" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Sweet", "Pungent" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Jambolan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -473,9 +484,6 @@
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวชะนี)" : {
-      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem  Chanee)" ]
-    },
     "มะละกอฮาวาย" : {
       "hasOtherNames" : [ "Hawaiian Papaya" ]
     },
@@ -532,19 +540,8 @@
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Thai Ingredients-v4# Durian Paste( Long-stem  Chanee)" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวชะนี)" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "แตงโมเหลือง" : {
-      "hasOtherNames" : [ "Yellow Watermelon Yellow-fleshed Watermelon" ]
+      "hasOtherNames" : [ "Yellow-fleshed Watermelon" ]
     },
     "Nom Sao Banana" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -625,6 +622,9 @@
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin C", "Riboflavin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
+    "ทุเรียนกวนก้านยาวชะนี" : {
+      "hasOtherNames" : [ "Long-stem Durian Paste Chanee" ]
     },
     "Ramontchi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -980,9 +980,6 @@
     "Pisang Awak Banana" : {
       "hasOtherNames" : [ "Nam Wah Banana" ]
     },
-    "s Eye Fruit" : {
-      "hasOtherNames" : [ "Longan" ]
-    },
     "Red Dragon Fruit" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
@@ -1181,9 +1178,6 @@
       "hasFlavor" : [ "Sweet", "Estery" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวหมอนทอง)" : {
-      "hasOtherNames" : [ "Thai Ingredients-v4# Durian Paste( Long-stem  Mon Thong)" ]
     },
     "Batoko Plum" : {
       "hasOtherNames" : [ "Ramontchi" ]
@@ -1459,6 +1453,18 @@
     "ขนุนจำปา" : {
       "hasOtherNames" : [ "Jampa Jackfruit" ]
     },
+    "Yellow-fleshed Watermelon" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasSugar" : [ "Sugar" ],
+      "hasTexture" : [ "Creamy" ],
+      "hasColor" : [ "Green" ],
+      "hasShape" : [ "Oval", "Irregular" ],
+      "hasOtherNames" : [ "Yellow Watermelon", "แตงโมเหลือง" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Sweet", "Floral" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
     "Rambutan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
@@ -1717,17 +1723,6 @@
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
-    },
-    "Thai Ingredients-v4# Durian Paste( Long-stem  Mon Thong)" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "hasOtherNames" : [ "Thai Ingredients-v4#ทุเรียนกวน(ก้านยาวหมอนทอง)" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Pungent" ],
-      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลิ้นจี่จักรพรรดิ์" : {
       "hasOtherNames" : [ "King Litchi" ]
@@ -2175,18 +2170,6 @@
     "Gaan Yao Durian" : {
       "hasOtherNames" : [ "Kan-yow Durian" ]
     },
-    "Yellow Watermelon Yellow-fleshed Watermelon" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Creamy" ],
-      "hasColor" : [ "Green" ],
-      "hasShape" : [ "Oval", "Irregular" ],
-      "hasOtherNames" : [ "Yellow Watermelon", "แตงโมเหลือง" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "องุ่นเขียว" : {
       "hasOtherNames" : [ "Green Grapes" ]
     },
@@ -2296,6 +2279,17 @@
     },
     "Custard Apple" : {
       "hasOtherNames" : [ "Sugar Apple" ]
+    },
+    "Long-stem Durian Paste Chanee" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Creamy" ],
+      "hasColor" : [ "Green" ],
+      "hasShape" : [ "Oval", "Irregular" ],
+      "hasOtherNames" : [ "ทุเรียนกวนก้านยาวชะนี" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Sweet", "Pungent" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลำไย" : {
       "hasOtherNames" : [ "Longan" ]
@@ -2411,6 +2405,9 @@
     },
     "กล้วยน้ำว้าไส้แดง" : {
       "hasOtherNames" : [ "Namwa-dang Banana" ]
+    },
+    "Dragons Eye Fruit" : {
+      "hasOtherNames" : [ "Longan" ]
     },
     "Luna Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -2667,7 +2664,7 @@
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
-      "hasOtherNames" : [ "s Eye Fruit", "Longkong", "ลำไย" ],
+      "hasOtherNames" : [ "Longkong", "Dragons Eye Fruit", "ลำไย" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -2823,6 +2820,9 @@
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
+    "ทุเรียนกวนก้านยาวหมอนทอง" : {
+      "hasOtherNames" : [ "Long-stem Durian Paste Mon Thong" ]
     }
   },
   "Shellfish" : {
@@ -10906,10 +10906,10 @@
       "hasOtherNames" : [ "Salted Butter" ]
     },
     "นมพร่องมันเนยยูเอชที" : {
-      "hasOtherNames" : [ "U H T Low Fat Milk" ]
+      "hasOtherNames" : [ "UHT Low Fat Milk" ]
     },
     "นมเปรี้ยวยูเอชทีไขมันต่ำ" : {
-      "hasOtherNames" : [ "U H T Low Fat Drinking Yoghurt" ]
+      "hasOtherNames" : [ "UHT Low Fat Drinking Yoghurt" ]
     },
     "นมวัว" : {
       "hasOtherNames" : [ "Cow Milk" ]
@@ -10941,7 +10941,7 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "U H T Low Fat Drinking Yoghurt" : {
+    "UHT Low Fat Drinking Yoghurt" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
@@ -11029,7 +11029,7 @@
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "U H T Low Fat Milk" : {
+    "UHT Low Fat Milk" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Cholesterol" ],
       "hasTexture" : [ "Liquid", "Smooth", "Creamy" ],
