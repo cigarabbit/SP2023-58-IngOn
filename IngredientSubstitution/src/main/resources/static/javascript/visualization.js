@@ -1,10 +1,8 @@
-// let clickedCell;
-
 function generateAlphabetTable(category) {
-    var tableBody = document.getElementById("letterTableBody");
+    let tableBody = document.getElementById("letterTableBody");
     tableBody.innerHTML = '';
 
-    var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     if (category === 'Cereal') {
         letters = letters.replace(/[AEIKQTXZ]/g, '');
@@ -30,22 +28,22 @@ function generateAlphabetTable(category) {
         letters = letters.replace(/[VXZ]/g, '');
     }
 
-    var numRows = Math.ceil(letters.length / 6); // number of rows
+    let numRows = Math.ceil(letters.length / 6); // number of rows
 
     for (let i = 0; i < numRows; i++) {
-        var row = document.createElement("tr");
+        let row = document.createElement("tr");
 
         for (let j = 0; j < 6; j++) {
-            var index = i * 6 + j;
+            let index = i * 6 + j;
             if (index < letters.length) {
-                var cell = document.createElement("td");
+                let cell = document.createElement("td");
                 cell.textContent = letters[index];
 
                 cell.addEventListener("click", function(event) {
                     let clickedCell = event.target;
                     let alphabet = clickedCell.textContent;
 
-                    var allCells = document.querySelectorAll("td");
+                    let allCells = document.querySelectorAll("td");
                     allCells.forEach(cell => {
                         cell.style.backgroundColor = '#FFFFFF';
                     });
@@ -75,7 +73,7 @@ function displayAlphabetTable() {
 
 ///////////// D3.js Visualization /////////////
 let root;
-var zoom = d3.zoom()
+let zoom = d3.zoom()
     .scaleExtent([1 / 2, 8])
     .on('zoom', zoomed);
 
@@ -371,7 +369,7 @@ function clicked(clickedNode) {
 
     console.log(clickedNode.data.name);
 
-    if (clickedNode.data.name == 'Food Group') {
+    if (clickedNode.data.name === 'Food Group') {
         window.location.reload();
         return;
     }
@@ -472,7 +470,7 @@ function color(d) {
             return '#C0C0C0';
         } else if (d.data.name == "Silver") {
             return '#D2B48C';
-        } else if (d.data.name == "White" || d.data.name == "Transparent") {
+        } else if (d.data.name === "White" || d.data.name == "Transparent") {
             return '#FFFFFF';
         } else if (d.data.name == "Yellow") {
             return '#FFFF00';
@@ -568,7 +566,7 @@ function findNode() {
         }
     }
 
-    if (itemName != '' && isNotInRelationshipList) {
+    if (itemName !== '' && isNotInRelationshipList) {
         nodes.style("opacity", function (d) {
             var nodeName = d.data.name.toLowerCase();
             var distance = levenshteinDistance(nodeName, itemName);
