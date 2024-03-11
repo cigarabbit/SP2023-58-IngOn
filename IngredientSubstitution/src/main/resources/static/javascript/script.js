@@ -13,7 +13,7 @@ function generateAlphabetTable(category) {
     } else if (category === 'Fruit') {
         letters = letters.replace(/[EQVXZ]/g, '');
     } else if (category === 'Insect') {
-        letters = letters.replace(/[ABCEGHIJKLNOQSUVWXYZ]/g, '');
+        letters = letters.replace(/[ABCDEGHIJKLNOPQSUVWXYZ]/g, '');
     } else if (category === 'Milk') {
         letters = letters.replace(/[ABDEFIJKLNOQRTVWXYZ]/g, '');
     } else if (category === 'Meat_Poultry') {
@@ -23,9 +23,9 @@ function generateAlphabetTable(category) {
     } else if (category === 'Shellfish') {
         letters = letters.replace(/[QUVXZ]/g, '');
     } else if (category === 'Spice_Condiment') {
-        letters = letters.replace(/[AEFIJNOPQRTUVXYZ]/g, '');
+        letters = letters.replace(/[AEFHIJNOPQRTUVXYZ]/g, '');
     } else if (category === 'StarchyRoot_Tuber') {
-        letters = letters.replace(/[ADEFGHIJKLMNOTUVWXYZ]/g, '');
+        letters = letters.replace(/[ADEFGHIJKLMNOPQTUVWXYZ]/g, '');
     }  else if (category === 'Vegetable') {
         letters = letters.replace(/[VXZ]/g, '');
     }
@@ -83,21 +83,28 @@ let i = 0;
 let node, link;
 
 const transform = d3.zoomIdentity;
-const viewportWidth = window.innerWidth;
-const viewportHeight = window.innerHeight;
 
 const svg = d3.select('svg')
     .call(zoom)
     .append('g')
-    .attr('transform', 'translate(150,50)');
+
+const svgElement = document.querySelector('svg');
+const svgWidth = svgElement.getBoundingClientRect().width;
+const svgHeight = svgElement.getBoundingClientRect().height;
+
+const centerX = svgWidth / 2;
+const centerY = svgHeight / 2;
+
+svg.attr('transform', `translate(${centerX}, ${centerY})`);
 
 const simulation = d3.forceSimulation()
     .force('link', d3.forceLink().id(function (d) {
         return d.id;
     }).distance(350))
     .force('charge', d3.forceManyBody().strength(-650).distanceMax(300))
-    .force('center', d3.forceCenter(viewportWidth / 2, viewportHeight / 2))
+    .force('center', d3.forceCenter(0, 0))
 
+///////////// Data Preparation /////////////
 async function loadData() {
     try {
         const response = await fetch('/data');
@@ -114,8 +121,6 @@ function retrieveIngredients(data, alphabet) {
     if (options) {
         category_selected = options.value;
     }
-
-    console.log(alphabet)
 
     if (category_selected in data) {
         foodGroupNode = {
@@ -147,6 +152,35 @@ function retrieveIngredients(data, alphabet) {
     return foodGroupNode;
 }
 
+// function retrieveIngredient(category_selected, data, name) {
+//     let foodGroupNode = {
+//         name: "Food Group",
+//         children: [
+//             {
+//                 name: category_selected,
+//                 children: Object.keys(data[category_selected])
+//                     .filter(key => key.localeCompare(name) === 0) // match with name
+//                     .map(key => {
+//                         const categoryItem = data[category_selected][key];
+//                         if ("hasBenefit" in categoryItem && categoryItem["hasBenefit"].length > 0) {
+//                             return {
+//                                 name: key,
+//                                 children: Object.keys(categoryItem).map(property => ({
+//                                     name: property,
+//                                     children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({name: value})) : null
+//                                 })).filter(Boolean)
+//                             };
+//                         } else {
+//                             return null;
+//                         }
+//                     }).filter(Boolean)
+//             }
+//         ]
+//     };
+//
+//     return foodGroupNode;
+// }
+
 async function processData(alphabet) {
     try {
         const data = await loadData(); // Wait for the promise to resolve
@@ -154,7 +188,6 @@ async function processData(alphabet) {
 
         root = d3.hierarchy(foodGroupNode);
 
-        console.log(root)
         update(root);
 
         var nodes = d3.selectAll(".node");
@@ -177,11 +210,14 @@ async function processData(alphabet) {
             .style('pointer-events', function (link) {
                 return (link.source.depth > 2 || link.target.depth > 2) ? 'none' : 'all';
             });
+
     } catch (error) {
-        // Handle any errors that might occur during data loading or processing
         console.error('Error processing data:', error);
     }
 }
+
+
+///////////// Data Preparation /////////////
 
 function update(root) {
     const nodes = flatten(root);
@@ -208,9 +244,9 @@ function update(root) {
 
     const distanceCustomization = function (d) {
         if ((d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
-            return 100;
-        } else {
             return 150;
+        } else {
+            return 200;
         }
     };
 
@@ -249,16 +285,6 @@ function update(root) {
         .style('opacity', 1)
         .style('pointer-events', nodePointer)
         .on('click', clicked)
-        .on("mouseover", function (d) {
-            d3.select("#tooltip")
-                .style("left", (d3.event.pageX) + "px")
-                .style("top", (d3.event.pageY - 28) + "px")
-                .style("display", "block")
-                .text('Test' + d.data.name);
-        })
-        .on("mouseout", function () {
-            d3.select("#tooltip").style("display", "none");
-        })
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
@@ -286,12 +312,13 @@ function update(root) {
     // Update simulation with new nodes and links
     simulation.nodes(nodes);
     simulation.force('link').links(links);
-    simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization))
+    simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization));
+    simulation.on('tick', ticked);
+    simulation.alpha(1).restart();
 }
 
 
 function ticked() {
-
     link
         .attr('x1', function (d) {
             return d.source.x;
@@ -321,24 +348,16 @@ function zoomToFocused() {
     var focusedNode = d3.select('.focused').node();
 
     if (focusedNode) {
-        var rect_top = focusedNode.getBoundingClientRect().top;
+        var rect = focusedNode.getBoundingClientRect();
 
-        let translateX, translateY;
-
-        if (rect_top < 400) {
-            translateX = 100;
-            translateY = 300;
-        } else {
-            translateX = -100;
-            translateY = -300;
-        }
+        var translateX = svgWidth - (rect.x + rect.width / 2);
+        var translateY = svgHeight - (rect.y + rect.height / 2);
 
         var svg = d3.select('svg');
-
         var zoomScale = 1.1;
 
         svg.transition()
-            .duration(750)
+            .duration(600)
             .call(zoom.transform, d3.zoomIdentity
                 .translate(translateX, translateY)
                 .scale(zoomScale));
@@ -354,6 +373,7 @@ function clicked(clickedNode) {
 
     if (clickedNode.data.name == 'Food Group') {
         window.location.reload();
+        return;
     }
 
     var clickedNodeId = clickedNode.data.id; // Store the ID of the clicked node

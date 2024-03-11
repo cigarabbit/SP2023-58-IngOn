@@ -8,8 +8,8 @@ body {
 }
 
 .categorySelection {
-    left: 25px;
-    margin-top: 150px;
+    left: 20px;
+    margin-top: 250px;
     position: fixed;
     width: fit-content;
 }
@@ -74,15 +74,4 @@ td {
 td:hover {
     background-color: #dddddd;
 }
-
-.cell-active {
-    background-color: #5be166;
-}
-
-.add_options {
-    display: none;
-    margin-left: 15px;
-}
-
-
 
