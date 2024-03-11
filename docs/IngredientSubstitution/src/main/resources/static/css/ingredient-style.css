@@ -1,0 +1,170 @@
+.nav-item.active {
+    border-bottom: 2px solid darkgreen;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.custom-box {
+    padding: 20px;
+    border: 3px solid grey;
+    height: 85vh;
+}
+
+.custom-box.bg {
+    background-color: #f4f4f4;;
+}
+
+#sidebar-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d7d7d7;
+}
+
+#sidebar-title span {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#sidebar-title button {
+    width: 40px;
+    height: 60%;
+    border: 0;
+    background-color: #f4f4f4;
+}
+
+#sidebar-ingredient {
+    overflow-y: scroll;
+    height: 90%;
+    margin-left: 15px;
+}
+
+#sidebar-ingredient ul {
+    padding: 15px;
+    list-style-type: none;
+}
+
+#sidebar-ingredient a {
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar-ingredient a:hover {
+    background-color: #5be166;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.active-topic {
+    background-color: #F3B111;
+    border-radius: 5px;
+    width: max-content;
+}
+
+#content-category {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#foodGroupTitle {
+    font-size: small;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.vizButton {
+    background-color: lightslategray;
+    border-radius: 5px;
+    color: white;
+}
+
+#ingredient-title {
+    text-align: center;
+    width: 100%;
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#content {
+    height: 77%;
+    overflow-y: scroll;
+    padding: 0px 20px 0px 30px;
+    margin: auto;
+    text-align: justify;
+}
+
+.content-headerH2 {
+    font-size: 14px;
+    margin-top: 12px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.nutrient-composition {
+    padding-left: 20px;
+}
+
+.nutrient-composition ul {
+    list-style-type: none;
+}
+
+.nutrient-item {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 13px;
+    border: 3px solid #F3B111;
+    border-radius: 5px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.property-box {
+    display: block;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+#DL_Syntax span {
+    text-align: justify;
+    display: inline-block;
+    justify-content: center;
+}
+
+#DL_concept {
+    font-weight: bolder;
+}
+
+#foodtype-img {
+    pointer-events: none;
+    margin: auto;
+    max-width: 70%;
+    max-height: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-box.bg.sidebar {
+        height: 30vh;
+    }
+
+    #sidebar-ingredient {
+        height: 70%;
+    }
+
+    #content {
+        height: 70%;
+    }
+
+}

@@ -1,0 +1,24 @@
+.navbar-brand {
+    color: #006e2e;
+    font-weight: bolder;
+}
+
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+}
+
+.nav-item {
+    font-weight: bolder;
+}
+
+.nav-link:hover {
+    color: #006e2e;
+}
+
+.active {
+    border-bottom: 3px solid #006e2e;
+}
+

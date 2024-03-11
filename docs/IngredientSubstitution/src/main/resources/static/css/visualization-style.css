@@ -1,0 +1,77 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100vw;
+}
+
+.categorySelection {
+    left: 20px;
+    margin-top: 250px;
+    position: fixed;
+    width: fit-content;
+}
+
+#header-visualization {
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 80px;
+    padding: 10px;
+}
+
+#svg-visualization {
+    width: 100vw;
+    height: 75vh;
+}
+
+input {
+    text-align: center;
+}
+
+.node {
+    pointer-events: all;
+    cursor: pointer;
+    z-index: 1000;
+    stroke: black;
+}
+
+.focused circle {
+    stroke: #b90000;
+    stroke-width: 2px;
+    fill: rgb(255, 0, 0) !important;
+    transform: scale(2.5);
+}
+
+.focused text {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+circle:hover {
+    opacity: 0.8;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#alphabetGroup {
+    margin-top: 30px;
+    display: block;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    pointer-events: all;
+}
+
+td:hover {
+    background-color: #dddddd;
+}
+

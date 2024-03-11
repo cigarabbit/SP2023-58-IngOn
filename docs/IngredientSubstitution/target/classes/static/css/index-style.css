@@ -1,0 +1,84 @@
+.background-container.homepage {
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+}
+
+.row {
+    margin-top: 20vh;
+    margin-left: 60px;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    width: auto;
+}
+
+.section {
+    width: fit-content;
+}
+
+#search-button{
+    background-color: #006e2e;
+    border: #006e2e;
+    font-weight: bold;
+}
+
+#search-button:hover {
+    background-color: rgb(0, 177, 24);
+}
+
+.section-title {
+    color: #006e2e;
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    padding-bottom: 5%;
+}
+
+.props-img {
+    pointer-events: none;
+    width: fit-content;
+    height: 60vh;
+}
+
+.section-paragraph {
+    text-align: justify;
+    display: inline-block;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+    .row {
+        margin: auto;
+
+    }
+
+    .col-md-3 {
+        flex: 0 0 100%; /* Allow the column to take full width on smaller screens */
+        max-width: 100%;
+    }
+
+    .content {
+        margin-top: 10px;
+        width: auto;
+    }
+
+    .section {
+        width: auto;
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 1.2;
+        padding-bottom: 2%;
+    }
+
+    .section-paragraph {
+        font-size: 16px;
+        text-align: justify;
+        display: inline-block;
+    }
+}

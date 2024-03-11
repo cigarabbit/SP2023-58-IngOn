@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document | IngOn: Thai Ingredient Substitution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/doc-style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">IngOn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar5">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">INGREDIENT</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/ingredient?id=Cereal"> Cereal</a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Egg"> Egg </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Fruit"> Fruit </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Insect"> Insect </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Milk"> Milk </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Meat_Poultry"> Meat/Poultry </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Pulse_Seed_Nut"> Pulse/Seed/Nut </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Shellfish"> Shellfish </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Spice_Condiment"> Spice </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=StarchyRoot_Tuber"> Starchy Root/Tuber </a></li>
+                            <li><a class="dropdown-item" href="/ingredient?id=Vegetable"> Vegetable </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/visualization" class="nav-link">VISUALIZATION</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="/document" class="nav-link">DOCUMENT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/aboutus" class="nav-link">ABOUT US</a>
+                    </li>
+                </ul>
+                <form class="mx-2 my-auto d-inline" style="width: 50%;">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-right-0" placeholder="Search for ingredients...">
+                        <button class="btn btn-outline-secondary border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse mt-5">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3">
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                    <span><b>Document</b></span>
+                </a>
+<!--                <span>Properties Vocabulary</span>-->
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple" onclick="moveToTable('cooking')">
+                    <span>Cooking Vocabulary</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple" onclick="moveToTable('flavor')">
+                   <span>Flavor Vocabulary</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple" onclick="moveToTable('texture')">
+                    <span>Texture Vocabulary</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Sidebar -->
+    <div class="table-content">
+        <h1 id="cookingtype">Cooking Type</h1>
+        <div class="row justify-content-center">
+            <table class="table-deco" id="cookingtype-table">
+                <thead>
+                <tr>
+                    <th>Vocabulary</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Al Dente</td>
+                    <td>กึ่งสุกกึ่งดิบ</td>
+                </tr>
+                <tr>
+                    <td>Assembled</td>
+                    <td>นำมารวมกัน</td>
+                </tr>
+                <tr>
+                    <td>Baked</td>
+                    <td>อบ</td>
+                </tr>
+                <tr>
+                    <td>Blanched</td>
+                    <td>ลวก</td>
+                </tr>
+                <tr>
+                    <td>Blended</td>
+                    <td>ปั่น</td>
+                </tr>
+                <tr>
+                    <td>Boiled</td>
+                    <td>ต้ม</td>
+                </tr>
+                <tr>
+                    <td>Braised</td>
+                    <td>เคี่ยว</td>
+                </tr>
+                <tr>
+                    <td>Chopped</td>
+                    <td>สับ</td>
+                </tr>
+                <tr>
+                    <td>Cracked</td>
+                    <td>แบ่ง หรือ บด</td>
+                </tr>
+                <tr>
+                    <td>Crushed</td>
+                    <td>ตำ หรือ บด</td>
+                </tr>
+                <tr>
+                    <td>Diced</td>
+                    <td>หั่นเต๋า</td>
+                </tr>
+                <tr>
+                    <td>Dipped</td>
+                    <td>จุ่ม</td>
+                </tr>
+                <tr>
+                    <td>Drizzled</td>
+                    <td>ราด</td>
+                </tr>
+                <tr>
+                    <td>Dried</td>
+                    <td>ตากแห้ง</td>
+                </tr>
+                <tr>
+                    <td>Fresh</td>
+                    <td>สด</td>
+                </tr>
+                <tr>
+                    <td>Fried</td>
+                    <td>ทอด</td>
+                </tr>
+                <tr>
+                    <td>Garnished</td>
+                    <td>ตกแต่ง</td>
+                </tr>
+                <tr>
+                    <td>Glazed</td>
+                    <td>เคลือบ</td>
+                </tr>
+                <tr>
+                    <td>Grated</td>
+                    <td>ขูด</td>
+                </tr>
+                <tr>
+                    <td>Grilled</td>
+                    <td>ย่าง</td>
+                </tr>
+                <tr>
+                    <td>Grounded</td>
+                    <td>บด</td>
+                </tr>
+                <tr>
+                    <td>Infused</td>
+                    <td>อบ หรือ แช่</td>
+                </tr>
+                <tr>
+                    <td>Marinated</td>
+                    <td>หมัก</td>
+                </tr>
+                <tr>
+                    <td>Mashed</td>
+                    <td>บด</td>
+                </tr>
+                <tr>
+                    <td>Mixed</td>
+                    <td>ผสม</td>
+                </tr>
+                <tr>
+                    <td>Minced</td>
+                    <td>สับ</td>
+                </tr>
+                <tr>
+                    <td>Pan-fried</td>
+                    <td>ทอดด้วยน้ำมันเล็กน้อย</td>
+                </tr>
+                <tr>
+                    <td>Peeled</td>
+                    <td>ปลอกเปลือก</td>
+                </tr>
+                <tr>
+                    <td>Pickled</td>
+                    <td>ดอง</td>
+                </tr>
+                <tr>
+                    <td>Poached</td>
+                    <td>ลวก</td>
+                </tr>
+                <tr>
+                    <td>Pounded</td>
+                    <td>ตำ</td>
+                </tr>
+                <tr>
+                    <td>Raw</td>
+                    <td>ดิบ</td>
+                </tr>
+                <tr>
+                    <td>Reconstituted</td>
+                    <td>คืนรูป</td>
+                </tr>
+                <tr>
+                    <td>Rehydrated</td>
+                    <td>แช่น้ำ</td>
+                </tr>
+                <tr>
+                    <td>Roasted</td>
+                    <td>ย่าง</td>
+                </tr>
+                <tr>
+                    <td>Rubbed</td>
+                    <td>ถู</td>
+                </tr>
+                <tr>
+                    <td>Sauteed</td>
+                    <td>ผัด</td>
+                </tr>
+                <tr>
+                    <td>Scrambled</td>
+                    <td>กวน (ไข่)</td>
+                </tr>
+                <tr>
+                    <td>Shreded</td>
+                    <td>ฉีกฝอย</td>
+                </tr>
+                <tr>
+                    <td>Simmered</td>
+                    <td>เคี่ยว</td>
+                </tr>
+                <tr>
+                    <td>Sliced</td>
+                    <td>หั่น</td>
+                </tr>
+                <tr>
+                    <td>Soaked</td>
+                    <td>แช่</td>
+                </tr>
+                <tr>
+                    <td>Spread</td>
+                    <td>ทา</td>
+                </tr>
+                <tr>
+                    <td>Stewed</td>
+                    <td>ตุ๋น</td>
+                </tr>
+                <tr>
+                    <td>Stir-Fried</td>
+                    <td>ผัด</td>
+                </tr>
+                <tr>
+                    <td>Sprinkled</td>
+                    <td>โรย</td>
+                </tr>
+                <tr>
+                    <td>Steamed</td>
+                    <td>นึ่ง</td>
+                </tr>
+                <tr>
+                    <td>Thickened</td>
+                    <td>ทำให้ข้น</td>
+                </tr>
+                <tr>
+                    <td>Toasted</td>
+                    <td>อบกรอบ</td>
+                </tr>
+                <tr>
+                    <td>Torn</td>
+                    <td>ฉีก</td>
+                </tr>
+                <tr>
+                    <td>Wrapped</td>
+                    <td>ห่อ</td>
+                </tr>
+                <tr>
+                    <td>Zested</td>
+                    <td>ขูดผิว</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 id="flavor">Flavor</h1>
+        <div class="row justify-content-center">
+            <table class="table-deco" id="flavor-table">
+                <thead>
+                <tr>
+                    <th>Vocabulary</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Acidic</td>
+                    <td>เปรี้ยว</td>
+                </tr>
+                <tr>
+                    <td>Astringent</td>
+                    <td>ฝาด</td>
+                </tr>
+                <tr>
+                    <td>Bitter</td>
+                    <td>ขม</td>
+                </tr>
+                <tr>
+                    <td>Brown</td>
+                    <td>มีกลิ่นของน้ำตาลไหม้</td>
+                </tr>
+                <tr>
+                    <td>Cooling</td>
+                    <td>ทำให้รู้สึกเย็น</td>
+                </tr>
+                <tr>
+                    <td>Estery</td>
+                    <td>มีกลิ่นหอมของผลไม้หรือดอกไม้</td>
+                </tr>
+                <tr>
+                    <td>Floral</td>
+                    <td>มีกลิ่นหอมของดอกไม้</td>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                    <td>มีกลิ่นของผักสีเขียวหรือหญ้า</td>
+                </tr>
+                <tr>
+                    <td>Lactonic</td>
+                    <td>หวานมัน หรือ มีกลิ่นหอมของนม</td>
+                </tr>
+                <tr>
+                    <td>Pungent</td>
+                    <td>ฉุน หรือ เผ็ดร้อน</td>
+                </tr>
+                <tr>
+                    <td>Salty</td>
+                    <td>เค็ม</td>
+                </tr>
+                <tr>
+                    <td>Sour</td>
+                    <td>เปรี้ยว</td>
+                </tr>
+                <tr>
+                    <td>Spicy</td>
+                    <td>เผ็ด</td>
+                </tr>
+                <tr>
+                    <td>Sulfury</td>
+                    <td>มีกลิ่นของกำมะถัน</td>
+                </tr>
+                <tr>
+                    <td>Sweet</td>
+                    <td>หวาน</td>
+                </tr>
+                <tr>
+                    <td>Terpenoid</td>
+                    <td>มีกลิ่นหอมระเหย</td>
+                </tr>
+                <tr>
+                    <td>Umami</td>
+                    <td>กลมกล่อม</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <h1 id="texture">Texture</h1>
+        <div class="row justify-content-center">
+            <table class="table-deco" id="texture-table">
+                <thead>
+                <tr>
+                    <th>Vocabulary</th>
+                    <th>Meaning</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Brittle</td>
+                    <td>กรอบ</td>
+                </tr>
+                <tr>
+                    <td>Butter-like</td>
+                    <td>เนียนนุ่มเหมือนเนย</td>
+                </tr>
+                <tr>
+                    <td>Chewy</td>
+                    <td>เหนียว</td>
+                </tr>
+                <tr>
+                    <td>Creamy</td>
+                    <td>นุ่มละมุน</td>
+                </tr>
+                <tr>
+                    <td>Crunchy</td>
+                    <td>กรอบ</td>
+                </tr>
+                <tr>
+                    <td>Delicate</td>
+                    <td>ละเอียด</td>
+                </tr>
+                <tr>
+                    <td>Dense</td>
+                    <td>แน่น</td>
+                </tr>
+                <tr>
+                    <td>Fibrous</td>
+                    <td>มีเส้นใย</td>
+                </tr>
+                <tr>
+                    <td>Flaky</td>
+                    <td>เป็นขุย</td>
+                </tr>
+                <tr>
+                    <td>Fluffy</td>
+                    <td>ฟู</td>
+                </tr>
+                <tr>
+                    <td>Gelatinous</td>
+                    <td>เนื้อเจลลี่</td>
+                </tr>
+                <tr>
+                    <td>Grainy</td>
+                    <td>เป็นเม็ดเล็กๆ</td>
+                </tr>
+                <tr>
+                    <td>Gritty</td>
+                    <td>เป็นเม็ดทราย</td>
+                </tr>
+                <tr>
+                    <td>Juicy</td>
+                    <td>ฉ่ำ</td>
+                </tr>
+                <tr>
+                    <td>Leafy</td>
+                    <td>คล้ายใบ</td>
+                </tr>
+                <tr>
+                    <td>Liquid</td>
+                    <td>เหลว</td>
+                </tr>
+                <tr>
+                    <td>Melting</td>
+                    <td>ละลาย</td>
+                </tr>
+                <tr>
+                    <td>Mild</td>
+                    <td>ธรรมดา</td>
+                </tr>
+                <tr>
+                    <td>Powdery</td>
+                    <td>เป็นผง</td>
+                </tr>
+                <tr>
+                    <td>Silky</td>
+                    <td>เนียน</td>
+                </tr>
+                <tr>
+                    <td>Singy</td>
+                    <td>กรอบ</td>
+                </tr>
+                <tr>
+                    <td>Slippery</td>
+                    <td>ลื่น</td>
+                </tr>
+                <tr>
+                    <td>Smooth</td>
+                    <td>เรียบ</td>
+                </tr>
+                <tr>
+                    <td>Solid</td>
+                    <td>แข็ง</td>
+                </tr>
+                <tr>
+                    <td>Soft</td>
+                    <td>นุ่ม</td>
+                </tr>
+                <tr>
+                    <td>Sticky</td>
+                    <td>เหนียวเหนอะ</td>
+                </tr>
+                <tr>
+                    <td>Tender</td>
+                    <td>อ่อนนุ่ม หรือ ละมุน</td>
+                </tr>
+                <tr>
+                    <td>Tougher</td>
+                    <td>แข็ง</td>
+                </tr>
+                <tr>
+                    <td>Velvety</td>
+                    <td>นุ่มนนวล</td>
+                </tr>
+                <tr>
+                    <td>Watery</td>
+                    <td>แฉะ</td>
+                </tr>
+                <tr>
+                    <td>Woody</td>
+                    <td>แข็งเหมือนไม้</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+        function moveToTable(clickedEvent) {
+            let targetTable;
+
+            if (clickedEvent == 'cooking') {
+                targetTable = document.getElementById('cookingtype');
+            } else if (clickedEvent == 'flavor') {
+                targetTable = document.getElementById('flavor');
+            } else if (clickedEvent == 'texture') {
+                targetTable = document.getElementById('texture');
+            }
+
+            if (targetTable) {
+                targetTable.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            event.preventDefault();
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+</html>
