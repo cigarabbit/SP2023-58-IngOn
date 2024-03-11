@@ -98,9 +98,10 @@ svg.attr('transform', `translate(${centerX}, ${centerY})`);
 const simulation = d3.forceSimulation()
     .force('link', d3.forceLink().id(function (d) {
         return d.id;
-    }).distance(350))
-    .force('charge', d3.forceManyBody().strength(-650).distanceMax(300))
+    }).distance(200))
+    .force('charge', d3.forceManyBody().strength(-20))
     .force('center', d3.forceCenter(0, 0))
+    .force('collide',d3.forceCollide().radius(60).iterations(2));
 
 ///////////// Data Preparation /////////////
 async function loadData() {
@@ -112,6 +113,12 @@ async function loadData() {
     }
 }
 
+/**
+ * Retrieve ingredients from a specific category with alphabet initialization selection
+ * @param data
+ * @param alphabet
+ * @returns {{children: [{children: ({children: {children: *|null, name: *}[], name: *}|null)[], name}], name: string}}
+ */
 function retrieveIngredients(data, alphabet) {
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
     let category_selected, foodGroupNode;
