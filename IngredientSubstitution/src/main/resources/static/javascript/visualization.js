@@ -90,7 +90,7 @@ const svgElement = document.querySelector('svg');
 const svgWidth = svgElement.getBoundingClientRect().width;
 const svgHeight = svgElement.getBoundingClientRect().height;
 
-const centerX = svgWidth / 2;
+const centerX = (svgWidth - 500) / 2;
 const centerY = svgHeight / 2;
 
 svg.attr('transform', `translate(${centerX}, ${centerY})`);
@@ -98,8 +98,8 @@ svg.attr('transform', `translate(${centerX}, ${centerY})`);
 const simulation = d3.forceSimulation()
     .force('link', d3.forceLink().id(function (d) {
         return d.id;
-    }).distance(200))
-    .force('charge', d3.forceManyBody().strength(-20))
+    }).distance(50))
+    .force('charge', d3.forceManyBody().strength(-40))
     .force('center', d3.forceCenter(0, 0))
     .force('collide',d3.forceCollide().radius(60).iterations(2));
 
