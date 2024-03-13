@@ -1,4 +1,7 @@
 function generateAlphabetTable(category) {
+    let table = document.querySelector('#alphabetGroup');
+    table.style.display = 'block';
+
     let tableBody = document.getElementById("letterTableBody");
     tableBody.innerHTML = '';
 
@@ -91,7 +94,7 @@ const svgWidth = svgElement.getBoundingClientRect().width;
 const svgHeight = svgElement.getBoundingClientRect().height;
 
 const centerX = (svgWidth - 500) / 2;
-const centerY = svgHeight / 2;
+const centerY = (svgHeight + 100) / 2;
 
 svg.attr('transform', `translate(${centerX}, ${centerY})`);
 
@@ -239,10 +242,28 @@ function retrieveIngredientBySearch(data, name) {
     return foodGroupNode;
 }
 
+
+
 function searchNode() {
     let query = document.getElementById('targetNode').value;
+    if (query === '') {
+        window.location.reload();
+    } else if (query.length > 2){
+        processData(query, 'normal_search');
+    }
+}
 
-    processData(query, 'normal_search');
+function clearViz() {
+    let svg = d3.select("#visualization");
+    svg.selectAll("*").remove();
+
+    let radioButtons = document.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(radioButton => {
+        radioButton.checked = false;
+    });
+
+    let table = document.querySelector('#alphabetGroup');
+    table.style.display = 'none';
 }
 
 async function processData(name, type) {
