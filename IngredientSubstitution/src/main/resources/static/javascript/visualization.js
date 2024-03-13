@@ -48,7 +48,7 @@ function generateAlphabetTable(category) {
                         cell.style.backgroundColor = '#FFFFFF';
                     });
 
-                    processData(alphabet);
+                    processData(alphabet, 'category_selection');
 
                     clickedCell.style.backgroundColor = '#5be166';
                 });
@@ -119,7 +119,7 @@ async function loadData() {
  * @param alphabet
  * @returns {{children: [{children: ({children: {children: *|null, name: *}[], name: *}|null)[], name}], name: string}}
  */
-function retrieveIngredients(data, alphabet) {
+function retrieveAllIngredients(data, alphabet) {
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
     let category_selected, foodGroupNode;
 
@@ -157,39 +157,94 @@ function retrieveIngredients(data, alphabet) {
     return foodGroupNode;
 }
 
-// function retrieveIngredient(category_selected, data, name) {
-//     let foodGroupNode = {
-//         name: "Food Group",
-//         children: [
-//             {
-//                 name: category_selected,
-//                 children: Object.keys(data[category_selected])
-//                     .filter(key => key.localeCompare(name) === 0) // match with name
-//                     .map(key => {
-//                         const categoryItem = data[category_selected][key];
-//                         if ("hasBenefit" in categoryItem && categoryItem["hasBenefit"].length > 0) {
-//                             return {
-//                                 name: key,
-//                                 children: Object.keys(categoryItem).map(property => ({
-//                                     name: property,
-//                                     children: Array.isArray(categoryItem[property]) ? categoryItem[property].map(value => ({name: value})) : null
-//                                 })).filter(Boolean)
-//                             };
-//                         } else {
-//                             return null;
-//                         }
-//                     }).filter(Boolean)
-//             }
-//         ]
-//     };
-//
-//     return foodGroupNode;
-// }
+/**
+ * Find a category and a list of possible ingredient of the query.
+ * @param data
+ * @param query
+ * @returns {*[]}
+ */
+function matchIngredient(data, query) {
+    let listOfIngredients = [];
+    let curr_category;
 
-async function processData(alphabet) {
+    for (const category in data) {
+        for (const item in data[category]) {
+            if (item.toLowerCase().includes(query.toLowerCase())) {
+                curr_category = category
+                listOfIngredients.push(item); // Matched query and ingredients
+            }
+        }
+    }
+
+    listOfIngredients.push(curr_category);
+
+    return listOfIngredients;
+}
+
+function retrieveIngredientBySearch(data, name) {
+    let listOfIngredients = matchIngredient(data, name);
+    let category, foodGroupNode;
+
+    if (listOfIngredients !== null) {
+        category = listOfIngredients[listOfIngredients.length - 1];
+
+        listOfIngredients.pop(); // Remove category from a list of ingredients
+
+        let childrenNode = [];
+
+        for (const ingredient of listOfIngredients) {
+            let curr_searchItem = data[category][ingredient];
+
+            if (curr_searchItem) {
+                if ("hasBenefit" in curr_searchItem && curr_searchItem["hasBenefit"].length > 0) {
+                    const ingredientChildren = Object.keys(data[category])
+                        .filter(key => key.localeCompare(ingredient) === 0) // match with name
+                        .map(key => ({
+                            name: key,
+                            children: Object.keys(curr_searchItem).map(property => ({
+                                name: property,
+                                children: Array.isArray(curr_searchItem[property]) ? curr_searchItem[property].map(value => ({ name: value })) : null
+                            })).filter(Boolean)
+                        }));
+
+                    childrenNode.push(...ingredientChildren);
+                }
+            } else {
+                console.error(`Ingredient '${ingredient}' not found in categoryItem`);
+                return null;
+            }
+
+            foodGroupNode = {
+                name: "Food Group",
+                children: [
+                    {
+                        name: category,
+                        children: childrenNode
+                    }
+                ]
+            };
+        }
+    }
+
+    return foodGroupNode;
+}
+
+function searchNode() {
+    let query = document.getElementById('targetNode').value;
+
+    processData(query, 'normal_search');
+}
+
+async function processData(name, type) {
     try {
-        const data = await loadData(); // Wait for the promise to resolve
-        const foodGroupNode = retrieveIngredients(data, alphabet);
+        const data = await loadData();
+        let foodGroupNode;
+
+        if (type === 'category_selection') { // Select from category and alphabet
+            foodGroupNode = retrieveAllIngredients(data, name);
+        } else { // From a search bar
+            foodGroupNode = retrieveIngredientBySearch(data, name);
+        }
 
         root = d3.hierarchy(foodGroupNode);
 
