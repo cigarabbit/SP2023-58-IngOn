@@ -165,21 +165,34 @@ function retrieveAllIngredients(data, alphabet) {
  */
 function matchIngredient(data, query) {
     let listOfIngredients = [];
-    let curr_category;
+    let categoryCount = {}; // Track occurrence count of categories
 
     for (const category in data) {
         for (const item in data[category]) {
-            if (item.toLowerCase().includes(query.toLowerCase())) {
-                curr_category = category
-                listOfIngredients.push(item); // Matched query and ingredients
+            if (item.toLowerCase().includes(query.toLowerCase()) || query.toLowerCase().includes(item.toLowerCase())) {
+                const currCount = categoryCount[category] || 0;
+                categoryCount[category] = currCount + 1;
+                listOfIngredients.push({item, category}); // Store item along with its category
             }
         }
     }
 
-    listOfIngredients.push(curr_category);
+    let maxCount = 0;
+    let mostShownCategory;
+    for (const category in categoryCount) {
+        if (categoryCount[category] > maxCount) {
+            maxCount = categoryCount[category];
+            mostShownCategory = category;
+        }
+    }
 
+    listOfIngredients = listOfIngredients.filter(({category}) => category === mostShownCategory)
+        .map(({item}) => item);
+
+    listOfIngredients.push(mostShownCategory);
     return listOfIngredients;
 }
+
 
 function retrieveIngredientBySearch(data, name) {
     let listOfIngredients = matchIngredient(data, name);
@@ -209,9 +222,6 @@ function retrieveIngredientBySearch(data, name) {
 
                     childrenNode.push(...ingredientChildren);
                 }
-            } else {
-                console.error(`Ingredient '${ingredient}' not found in categoryItem`);
-                return null;
             }
 
             foodGroupNode = {
@@ -246,7 +256,9 @@ async function processData(name, type) {
             foodGroupNode = retrieveIngredientBySearch(data, name);
         }
 
-        root = d3.hierarchy(foodGroupNode);
+        if (foodGroupNode !== null) {
+            root = d3.hierarchy(foodGroupNode);
+        }
 
         update(root);
 
