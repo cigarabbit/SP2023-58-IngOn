@@ -27,23 +27,27 @@ body {
     height: 75vh;
 }
 
-#dropdownMenu {
+.custom-select {
     height: 100%;
     border: 1px solid #dee2e6;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 input {
-    text-align: center;
+    text-align: left;
 }
 
 .form-control {
     border-radius: 0;
 }
 
-#addedInputField {
+#addedInputField, #categoryField {
     display: none;
+}
+
+#addedInputField {
+    width: 55%;
 }
 
 .node {

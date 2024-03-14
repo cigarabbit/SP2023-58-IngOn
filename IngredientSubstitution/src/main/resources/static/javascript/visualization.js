@@ -65,25 +65,38 @@ function generateAlphabetTable(category) {
 }
 
 function displayAlphabetTable() {
-    let input = document.getElementById('targetNode');
+    let input_ingredient = document.getElementById('targetNode');
+    let input_property = document.getElementById('propertyNode');
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
 
     if (options) {
         let category = options.value;
 
-        input.value = '';
+        input_ingredient.value = '';
+
+        if (input_property) {
+            input_property.value = '';
+        }
+
         generateAlphabetTable(category);
     }
 }
 
 function addMoreInput() {
-    let property = document.getElementById('dropdownMenu').value;
-    let inputField = document.querySelector('#addedInputField');
+    let property = document.getElementById('propertyMenu').value;
+    let query = document.querySelector('#targetNode');
+    let propertyInputField = document.querySelector('#addedInputField');
+    let categoryDropDown = document.querySelector('#categoryField');
 
     if (property !== 'all') {
-        inputField.style.display = 'block';
+        query.style.display = 'none';
+
+        categoryDropDown.style.display = 'block';
+        propertyInputField.style.display = 'block';
     } else {
-        inputField.style.display = 'none';
+        query.style.display = 'block';
+        categoryDropDown.style.display = 'none';
+        propertyInputField.style.display = 'none';
     }
 }
 
@@ -255,13 +268,28 @@ function retrieveIngredientBySearch(data, name) {
     return foodGroupNode;
 }
 
+function retrieveIngredientByProperties(data, name, property_option) {
+
+}
+
 function searchNode() {
-    let dropdown_option = document.getElementById('dropdownMenu').value;
+    let property_option = document.getElementById('propertyMenu').value;
     let query = document.getElementById('targetNode').value;
+
     if (query === '') {
         window.location.reload();
-    } else if (query.length > 2){
-        processData(query, 'normal_search', dropdown_option);
+    }
+
+    if (query.length > 2){
+        if (property_option === 'all') {
+            processData(query, 'normal_search', property_option);
+        } else {
+            let input_property = document.getElementById('propertyNode').value;
+
+            if (query.length > 2 && input_property.length > 2) {
+                processData(query, 'normal_search', property_option);
+            }
+        }
     }
 }
 
@@ -278,15 +306,19 @@ function clearViz() {
     table.style.display = 'none';
 }
 
-async function processData(name, type, dropdown_option) {
+async function processData(name, type, property_option) {
     try {
         const data = await loadData();
         let foodGroupNode;
 
         if (type === 'category_selection') { // Select from category and alphabet
             foodGroupNode = retrieveAllIngredients(data, name);
-        } else if (dropdown_option === 'all') { // From a search bar
-            foodGroupNode = retrieveIngredientBySearch(data, name);
+        } else if (type === 'normal_search') {
+            if (property_option === 'all') { // From a search bar
+                foodGroupNode = retrieveIngredientBySearch(data, name);
+            } else {
+                foodGroupNode = retrieveIngredientByProperties(data, name, property_option);
+            }
         }
 
         if (foodGroupNode !== null) {
