@@ -65,12 +65,25 @@ function generateAlphabetTable(category) {
 }
 
 function displayAlphabetTable() {
+    let input = document.getElementById('targetNode');
     let options = document.querySelector('.categorySelection input[type="radio"]:checked');
 
     if (options) {
         let category = options.value;
 
+        input.value = '';
         generateAlphabetTable(category);
+    }
+}
+
+function addMoreInput() {
+    let property = document.getElementById('dropdownMenu').value;
+    let inputField = document.querySelector('#addedInputField');
+
+    if (property !== 'all') {
+        inputField.style.display = 'block';
+    } else {
+        inputField.style.display = 'none';
     }
 }
 
@@ -241,8 +254,6 @@ function retrieveIngredientBySearch(data, name) {
 
     return foodGroupNode;
 }
-
-
 
 function searchNode() {
     let dropdown_option = document.getElementById('dropdownMenu').value;

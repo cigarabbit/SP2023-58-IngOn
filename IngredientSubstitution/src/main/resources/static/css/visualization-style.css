@@ -38,6 +38,14 @@ input {
     text-align: center;
 }
 
+.form-control {
+    border-radius: 0;
+}
+
+#addedInputField {
+    display: none;
+}
+
 .node {
     pointer-events: all;
     cursor: pointer;
