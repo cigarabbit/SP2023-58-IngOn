@@ -27,6 +27,13 @@ body {
     height: 75vh;
 }
 
+#dropdownMenu {
+    height: 100%;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    border-radius: 5px;
+}
+
 input {
     text-align: center;
 }

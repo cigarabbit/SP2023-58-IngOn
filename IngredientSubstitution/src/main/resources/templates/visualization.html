@@ -118,12 +118,19 @@
             <p id="header-visualization">Thai Ingredient Ontology Visualization</p>
             <form class="mx-1 my-auto d-inline" style="width: 50%;">
                 <div class="input-group">
+                    <div class="input-group-dropdown">
+                        <select class="custom-select" id="dropdownMenu">
+                            <option value="all">All</option>
+                            <option value="option2">Cereal</option>
+                            <option value="option3"></option>
+                        </select>
+                    </div>
                     <input
                             type="text"
                             id="targetNode"
                             name="targetNode"
                             class="form-control"
-                            placeholder="Search here"
+                            placeholder="Enter an ingredient name or desired properties here"
                             aria-label="Search"
                             aria-describedby="search-addon"
                             oninput="searchNode()"

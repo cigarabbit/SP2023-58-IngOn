@@ -245,11 +245,12 @@ function retrieveIngredientBySearch(data, name) {
 
 
 function searchNode() {
+    let dropdown_option = document.getElementById('dropdownMenu').value;
     let query = document.getElementById('targetNode').value;
     if (query === '') {
         window.location.reload();
     } else if (query.length > 2){
-        processData(query, 'normal_search');
+        processData(query, 'normal_search', dropdown_option);
     }
 }
 
@@ -266,14 +267,14 @@ function clearViz() {
     table.style.display = 'none';
 }
 
-async function processData(name, type) {
+async function processData(name, type, dropdown_option) {
     try {
         const data = await loadData();
         let foodGroupNode;
 
         if (type === 'category_selection') { // Select from category and alphabet
             foodGroupNode = retrieveAllIngredients(data, name);
-        } else { // From a search bar
+        } else if (dropdown_option === 'all') { // From a search bar
             foodGroupNode = retrieveIngredientBySearch(data, name);
         }
 
