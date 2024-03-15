@@ -138,9 +138,13 @@
                             placeholder="Search for ingredients..."
                             aria-label="Search"
                             aria-describedby="search-addon"
-                            oninput="searchNode()"
+                            oninput="autoComplete()"
                             onclick="clearViz()"
                     />
+                    <button class="btn btn-outline-secondary border border-left-0" type="button" onclick="searchNode()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div id="suggestionList"></div>
                     <div id="categoryField">
                         <select class="custom-select" id="categoryMenu" onchange="addMoreInput()">
                             <option value="Cereal">Cereal</option>

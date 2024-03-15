@@ -100,38 +100,6 @@ function addMoreInput() {
     }
 }
 
-///////////// D3.js Visualization /////////////
-let root;
-let zoom = d3.zoom()
-    .scaleExtent([1 / 2, 8])
-    .on('zoom', zoomed);
-
-let i = 0;
-let node, link;
-
-const transform = d3.zoomIdentity;
-
-const svg = d3.select('svg')
-    .call(zoom)
-    .append('g')
-
-const svgElement = document.querySelector('svg');
-const svgWidth = svgElement.getBoundingClientRect().width;
-const svgHeight = svgElement.getBoundingClientRect().height;
-
-const centerX = (svgWidth - 500) / 2;
-const centerY = (svgHeight + 100) / 2;
-
-svg.attr('transform', `translate(${centerX}, ${centerY})`);
-
-const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) {
-        return d.id;
-    }).distance(50))
-    .force('charge', d3.forceManyBody().strength(-40))
-    .force('center', d3.forceCenter(0, 0))
-    .force('collide',d3.forceCollide().radius(60).iterations(2));
-
 ///////////// Data Preparation /////////////
 async function loadData() {
     try {
@@ -141,6 +109,130 @@ async function loadData() {
         console.error('Error loading data:', error);
     }
 }
+
+
+function clearSuggestions() {
+    const suggestionList = document.getElementById('suggestionList');
+    suggestionList.innerHTML = '';
+    suggestionList.style.display = 'none';
+}
+
+function clearViz() {
+    let svg = d3.select("#visualization");
+    svg.selectAll("*").remove();
+
+    let radioButtons = document.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach(radioButton => {
+        radioButton.checked = false;
+    });
+
+    let table = document.querySelector('#alphabetGroup');
+    table.style.display = 'none';
+}
+
+function searchNode() {
+    let property_option = document.getElementById('propertyMenu').value;
+    let query = document.getElementById('targetNode').value;
+
+    if (query === '') {
+        window.location.reload();
+    }
+
+    if (property_option === 'all') {
+        processData(query, 'normal_search', property_option);
+    } else {
+        let input_property = document.getElementById('propertyNode').value;
+
+        if (query.length > 2 && input_property.length > 2) {
+            processData(query, 'normal_search', property_option);
+        }
+    }
+}
+
+async function autoComplete() {
+    let query = document.getElementById('targetNode').value;
+    let suggestionList = document.getElementById('suggestionList');
+
+    suggestionList.innerHTML = '';
+
+    try {
+        const data = await loadData();
+        let groupedIngredients = groupIngredientsByCategory(data, query);
+
+        if (query.length > 1) {
+            for (let category in groupedIngredients) {
+                if (groupedIngredients.hasOwnProperty(category)) {
+                    let categoryListItem = document.createElement('li');
+                    categoryListItem.textContent = category;
+                    categoryListItem.style.fontWeight = 'bold';
+                    categoryListItem.style.borderBottom = '1px solid #dee2e6';
+                    categoryListItem.style.pointerEvents = 'none';
+
+                    suggestionList.appendChild(categoryListItem);
+
+                    // Categorize ingredients
+                    groupedIngredients[category].forEach(ingredient => {
+                        let listItem = document.createElement('li');
+                        listItem.textContent = ingredient.item;
+                        listItem.addEventListener('click', () => {
+                            handleSelection(ingredient);
+                        });
+
+                        suggestionList.appendChild(listItem);
+                    });
+                }
+            }
+
+            suggestionList.style.display = 'block';
+            suggestionList.style.border = '1px solid #dee2e6';
+        } else {
+            suggestionList.style.display = 'none';
+        }
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+function groupIngredientsByCategory(data, query) {
+    let matchedIngredients = matchIngredient(data, query);
+    let groupedIngredients = {};
+
+    matchedIngredients.forEach(ingredient => {
+        if (!groupedIngredients[ingredient.category]) {
+            groupedIngredients[ingredient.category] = [];
+        }
+        groupedIngredients[ingredient.category].push(ingredient);
+    });
+
+    return groupedIngredients;
+}
+
+
+function handleSelection(selectedOption) {
+    document.getElementById('targetNode').value = selectedOption.item;
+    clearSuggestions();
+}
+
+/**
+ * Find a category and a list of possible ingredient of the query.
+ * @param data
+ * @param query
+ * @returns {*[]}
+ */
+function matchIngredient(data, query) {
+    let listOfIngredients = [];
+
+    for (const category in data) {
+        for (const item in data[category]) {
+            if (item.toLowerCase().includes(query.toLowerCase()) || query.toLowerCase().includes(item.toLowerCase())) {
+                listOfIngredients.push({item, category}); // Store item along with its category
+            }
+        }
+    }
+
+    return listOfIngredients;
+}
+
 
 /**
  * Retrieve ingredients from a specific category with alphabet initialization selection
@@ -185,43 +277,6 @@ function retrieveAllIngredients(data, alphabet) {
 
     return foodGroupNode;
 }
-
-/**
- * Find a category and a list of possible ingredient of the query.
- * @param data
- * @param query
- * @returns {*[]}
- */
-function matchIngredient(data, query) {
-    let listOfIngredients = [];
-    let categoryCount = {}; // Track occurrence count of categories
-
-    for (const category in data) {
-        for (const item in data[category]) {
-            if (item.toLowerCase().includes(query.toLowerCase()) || query.toLowerCase().includes(item.toLowerCase())) {
-                const currCount = categoryCount[category] || 0;
-                categoryCount[category] = currCount + 1;
-                listOfIngredients.push({item, category}); // Store item along with its category
-            }
-        }
-    }
-
-    let maxCount = 0;
-    let mostShownCategory;
-    for (const category in categoryCount) {
-        if (categoryCount[category] > maxCount) {
-            maxCount = categoryCount[category];
-            mostShownCategory = category;
-        }
-    }
-
-    listOfIngredients = listOfIngredients.filter(({category}) => category === mostShownCategory)
-        .map(({item}) => item);
-
-    listOfIngredients.push(mostShownCategory);
-    return listOfIngredients;
-}
-
 
 function retrieveIngredientBySearch(data, name) {
     let listOfIngredients = matchIngredient(data, name);
@@ -272,40 +327,6 @@ function retrieveIngredientByProperties(data, name, property_option) {
 
 }
 
-function searchNode() {
-    let property_option = document.getElementById('propertyMenu').value;
-    let query = document.getElementById('targetNode').value;
-
-    if (query === '') {
-        window.location.reload();
-    }
-
-    if (query.length > 2){
-        if (property_option === 'all') {
-            processData(query, 'normal_search', property_option);
-        } else {
-            let input_property = document.getElementById('propertyNode').value;
-
-            if (query.length > 2 && input_property.length > 2) {
-                processData(query, 'normal_search', property_option);
-            }
-        }
-    }
-}
-
-function clearViz() {
-    let svg = d3.select("#visualization");
-    svg.selectAll("*").remove();
-
-    let radioButtons = document.querySelectorAll('input[type="radio"]');
-    radioButtons.forEach(radioButton => {
-        radioButton.checked = false;
-    });
-
-    let table = document.querySelector('#alphabetGroup');
-    table.style.display = 'none';
-}
-
 async function processData(name, type, property_option) {
     try {
         const data = await loadData();
@@ -324,6 +345,7 @@ async function processData(name, type, property_option) {
         if (foodGroupNode !== null) {
             root = d3.hierarchy(foodGroupNode);
         }
+
 
         update(root);
 
@@ -353,8 +375,39 @@ async function processData(name, type, property_option) {
     }
 }
 
-
 ///////////// Data Preparation /////////////
+
+///////////// D3.js Visualization /////////////
+let root;
+let zoom = d3.zoom()
+    .scaleExtent([1 / 2, 8])
+    .on('zoom', zoomed);
+
+let i = 0;
+let node, link;
+
+const transform = d3.zoomIdentity;
+
+const svg = d3.select('svg')
+    .call(zoom)
+    .append('g')
+
+const svgElement = document.querySelector('svg');
+const svgWidth = svgElement.getBoundingClientRect().width;
+const svgHeight = svgElement.getBoundingClientRect().height;
+
+const centerX = (svgWidth - 500) / 2;
+const centerY = (svgHeight + 100) / 2;
+
+svg.attr('transform', `translate(${centerX}, ${centerY})`);
+
+const simulation = d3.forceSimulation()
+    .force('link', d3.forceLink().id(function (d) {
+        return d.id;
+    }).distance(50))
+    .force('charge', d3.forceManyBody().strength(-40))
+    .force('center', d3.forceCenter(0, 0))
+    .force('collide',d3.forceCollide().radius(60).iterations(2));
 
 function update(root) {
     const nodes = flatten(root);
@@ -686,57 +739,5 @@ function levenshteinDistance(s1, s2) {
         }
     }
     return matrix[s2.length][s1.length];
-}
-
-function findNode() {
-    var itemName = document.getElementById("targetNode").value.toLowerCase();
-    var nodes = d3.selectAll(".node");
-    var links = d3.selectAll(".link");
-    var relationshipList = ['can cook', 'has benefit', 'has shape', 'has flavor',
-        'has nutrient', 'has vitamin', 'has mineral', 'has sugar', 'has texture', 'has color']
-    var isNotInRelationshipList = true;
-
-    let parentNode, rootNode;
-
-    for (var i = 0; i < relationshipList.length; i++) {
-        if (relationshipList[i].includes(itemName)) {
-            isNotInRelationshipList = false;
-            break;
-        }
-    }
-
-    if (itemName !== '' && isNotInRelationshipList) {
-        nodes.style("opacity", function (d) {
-            var nodeName = d.data.name.toLowerCase();
-            var distance = levenshteinDistance(nodeName, itemName);
-            var threshold = 2;
-
-            if (distance <= threshold || nodeName.includes(itemName) || d === parentNode || d === rootNode) {
-                if (d.depth === 4) { // Properties
-                    parentNode = d.parent;
-                    rootNode = parentNode.parent;
-                }
-
-                focusNode(this);
-                zoomToFocused();
-
-                return "1"; // Searched node
-            } else {
-                return "0";
-            }
-        });
-
-        links.style("opacity", function (d) {
-            if (d.source === rootNode && d.target === parentNode || d.source.data.name.toLowerCase() === itemName ||
-                d.target.data.name.toLowerCase() === itemName) {
-                return "1";
-            } else {
-                return "0";
-            }
-        });
-    } else if (itemName == '') {
-        window.location.reload();
-    }
-
 }
 

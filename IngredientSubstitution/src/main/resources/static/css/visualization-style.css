@@ -31,11 +31,33 @@ body {
     height: 100%;
     border: 1px solid #dee2e6;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 input {
     text-align: left;
+}
+
+
+#suggestionList {
+    width: max-content;
+    height: 39vh;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 121px;
+    overflow-y: scroll;
+    padding: 20px;
+    display: none;
+}
+
+#suggestionList li {
+    list-style-type: none;
+    padding: 3px;
+}
+
+#suggestionList li:hover {
+    background-color: #84c374;
 }
 
 .form-control {
