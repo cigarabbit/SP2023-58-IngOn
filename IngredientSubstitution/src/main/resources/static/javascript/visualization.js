@@ -90,6 +90,7 @@ function addMoreInput() {
 
     if (property !== 'all') {
         query.style.display = 'none';
+        clearSuggestions();
 
         categoryDropDown.style.display = 'block';
         propertyInputField.style.display = 'block';
