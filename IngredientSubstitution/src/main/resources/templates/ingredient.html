@@ -121,7 +121,7 @@
                             <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
                             <li id="propertyShape"><strong>Shape: <span></span></strong> </li>
                             <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
-                            <!--                        <li><strong><span th:if="$exists">Type: </span></strong> </li>-->
+                            <li id="propertyType"><strong>Type: <span></span></strong></li>
                         </ul>
                     </div>
                     <div>
@@ -138,6 +138,7 @@
                             <ul>
                                 <li id="propMineral"><Strong>Mineral: <div></div></Strong></li>
                                 <li id="propNutrient"><strong>Nutrient: <div></div></strong></li>
+                                <li id="propSugar"><strong>Sugar: <div></div></strong></li>
                                 <li id="propVitamin"><strong>Vitamin: <div></div></strong></li>
                             </ul>
 
@@ -174,6 +175,7 @@
     var flavorProp = /*[[${flavorProp}]]*/ [];
     var mineralProp = /*[[${mineralProp}]]*/ [];
     var nutriProp = /*[[${nutriProp}]]*/ [];
+    var sugarProp = /*[[${sugarProp}]]*/ [];
     var vitaProp = /*[[${vitaProp}]]*/ [];
     var shapeProp = /*[[${shapeProp}]]*/ [];
     var textureProp = /*[[${textureProp}]]*/ [];
@@ -181,8 +183,9 @@
     var cookProp = /*[[${cookProp}]]*/ [];
 
     var otherNames = /*[[${otherNames}]]*/ [];
+    var typeProp = /*[[${typeProp}]]*/ [];
 
-    setConceptList(group, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp, beneProp, cookProp, otherNames);
+    setConceptList(group, colorProp, flavorProp, mineralProp, nutriProp, sugarProp, vitaProp, shapeProp, textureProp, beneProp, cookProp, otherNames, typeProp);
 
     /*]]>*/
 </script>

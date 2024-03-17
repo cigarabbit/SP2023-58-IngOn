@@ -3,7 +3,6 @@ package IngOn.IngredientSubstitution.controller;
 import IngOn.IngredientSubstitution.service.DescriptionLogicDisplayService;
 import IngOn.IngredientSubstitution.service.OntologyConverter;
 import jakarta.servlet.http.HttpSession;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,9 +17,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 @Controller
@@ -76,12 +73,12 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, Set<String>> textureProperties = DescriptionLogicDisplayService.getProperties("hasTexture");
         HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral");
         HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient");
+        HashMap<String, Set<String>> sugarProp = DescriptionLogicDisplayService.getProperties("hasSugar");
         HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin");
         HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit");
         HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook");
         HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames");
-
-        // TODO: hasType
+        HashMap<String, Set<String>> typeProperties = DescriptionLogicDisplayService.getProperties("hasType");
 
         // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
 
@@ -96,10 +93,12 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         model.addAttribute("textureProp", textureProperties);
         model.addAttribute("mineralProp", mineralProperties);
         model.addAttribute("nutriProp", nutriProperties);
+        model.addAttribute("sugarProp", sugarProp);
         model.addAttribute("vitaProp", vitaProperties);
         model.addAttribute("beneProp", beneProperties);
         model.addAttribute("cookProp", cookProperties);
         model.addAttribute("otherNames", namesProperties);
+        model.addAttribute("typeProp", typeProperties);
 
         return "ingredient";
     }

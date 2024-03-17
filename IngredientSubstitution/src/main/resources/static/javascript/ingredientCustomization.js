@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 });
 
 var currentSortOrder = 'asc';
-var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, vitaProp, shapeProp, textureProp, otherNames;
+var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, sugarProp, vitaProp, shapeProp, textureProp, otherNames, typeProp;
 
 function sortTopics() {
     var sidebar = document.getElementById('sidebar-ingredient');
@@ -41,18 +41,20 @@ function filterProperty() {
 
 }
 
-function setConceptList(group, colors, flavors, minerals, nutris, vitas, shapes, textures, benes, cooks, names) {
+function setConceptList(group, colors, flavors, minerals, nutris, sugar, vitas, shapes, textures, benes, cooks, names, types) {
     foodGroup = group;
     colorProp = colors;
     flavorProp = flavors;
     mineralProp = minerals;
     nutriProp = nutris;
     vitaProp = vitas;
+    sugarProp = sugar;
     shapeProp = shapes;
     textureProp = textures;
     beneProp = benes;
     cookProp = cooks;
     otherNames = names;
+    typeProp = types;
 }
 
 function containsThai(text) {
@@ -89,9 +91,12 @@ function retrieveData() {
     var flavorPropLi = document.querySelector('#propertyFlavor span');
     var shapePropLi = document.querySelector('#propertyShape span');
     var texturePropLi = document.querySelector('#propertyTexture span');
+    var typePropLi = document.querySelector('#propertyType span');
+
 
     var mineralPropLi = document.querySelector('#propMineral div');
     var nutriPropLi = document.querySelector('#propNutrient div');
+    var sugarPropLi = document.querySelector('#propSugar div');
     var vitaPropLi = document.querySelector('#propVitamin div');
 
     var benePropLi = document.querySelector('#benefits');
@@ -148,6 +153,13 @@ function retrieveData() {
             textures = "No textures defined."
         }
 
+        var types;
+        if (typeProp[clickedTopic] !== undefined) {
+            types = typeProp[clickedTopic].join(', ');
+        } else {
+            types = "No types defined."
+        }
+
         var minerals;
         if (mineralProp[clickedTopic] !== undefined) {
             minerals = mineralProp[clickedTopic].join(', ');
@@ -162,6 +174,13 @@ function retrieveData() {
             nutris = "It does not have any nutrients.";
         }
 
+        var sugar;
+        if (sugarProp[clickedTopic] !== undefined) {
+            sugar = sugarProp[clickedTopic].join(', ');
+        } else {
+            sugar = "It does not have any sugars.";
+        }
+
         var vitas = vitaProp[clickedTopic].join(', ');
 
         var benes = beneProp[clickedTopic].join(', ');
@@ -173,15 +192,18 @@ function retrieveData() {
             cooks = "It does not have any cooking types.";
         }
 
-        var DLSyntax = getDLSyntax(clickedTopic, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes);
+        var DLSyntax = getDLSyntax(clickedTopic, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types);
 
         DL_Display.innerHTML = '';
         colorPropLi.innerHTML = '';
         flavorPropLi.innerHTML = '';
         shapePropLi.innerHTML = '';
         texturePropLi.innerHTML = '';
+        typePropLi.innerHTML = '';
+
         mineralPropLi.innerHTML = '';
         nutriPropLi.innerHTML = '';
+        sugarPropLi.innerHTML = '';
         vitaPropLi.innerHTML = '';
         benePropLi.innerHTML = '';
         cookPropLi.innerHTML = '';
@@ -218,6 +240,21 @@ function retrieveData() {
             nutriPropLi.appendChild(span);
         }
 
+        if (sugarProp[clickedTopic] !== undefined) {
+            sugarProp[clickedTopic].forEach(function(mineral) {
+                var span = document.createElement('span');
+                span.textContent = sugar;
+                span.classList.add('nutrient-item');
+
+                sugarPropLi.appendChild(span);
+            });
+        } else {
+            var span = document.createElement('span');
+            span.textContent = sugar;
+            span.classList.add('nutrient-item');
+
+            sugarPropLi.appendChild(span);
+        }
 
         vitaProp[clickedTopic].forEach(function(vita) {
             var span = document.createElement('span');
@@ -232,9 +269,9 @@ function retrieveData() {
         flavorPropLi.append(flavors);
         shapePropLi.append(shapes);
         texturePropLi.append(textures);
+        typePropLi.append(types);
         benePropLi.append(benes);
         cookPropLi.append(cooks);
-
     }
 
     sidebarTopics.forEach(function (topic) {
@@ -247,7 +284,7 @@ function retrieveData() {
     }
 }
 
-function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, vitas, benes) {
+function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types) {
     var syntax = conceptName;
 
     function handleProperty(property, type) {
@@ -269,7 +306,9 @@ function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, mine
     handleProperty(textures, 'hasTexture.');
     handleProperty(minerals, 'hasMineral.');
     handleProperty(nutris, 'hasNutrient.');
+    handleProperty(sugar, 'hasSugar.');
     handleProperty(vitas, 'hasVitamin.');
+    handleProperty(types, 'hasType.');
 
     return syntax;
 }
