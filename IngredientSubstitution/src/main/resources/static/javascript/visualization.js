@@ -90,6 +90,7 @@ function addMoreInput() {
 
     if (property !== 'all') {
         query.style.display = 'none';
+        query.value = '';
         clearSuggestions();
 
         categoryDropDown.style.display = 'block';
@@ -131,70 +132,119 @@ function clearViz() {
     table.style.display = 'none';
 }
 
-function searchNode() {
-    let property_option = document.getElementById('propertyMenu').value;
-    let query = document.getElementById('targetNode').value;
-
-    if (query === '') {
-        window.location.reload();
-    }
-
-    if (property_option === 'all') {
-        processData(query, 'normal_search', property_option);
-    } else {
-        let input_property = document.getElementById('propertyNode').value;
-
-        if (query.length > 2 && input_property.length > 2) {
-            processData(query, 'normal_search', property_option);
-        }
-    }
-}
-
 async function autoComplete() {
-    let query = document.getElementById('targetNode').value;
+    let query_all = document.getElementById('targetNode').value;
+    let query_prop = document.getElementById('propertyNode').value;
     let suggestionList = document.getElementById('suggestionList');
 
     suggestionList.innerHTML = '';
 
     try {
         const data = await loadData();
-        let groupedIngredients = groupIngredientsByCategory(data, query);
-        if (query.length === 0) {
-            window.location.reload();
-        }
-        else if (query.length > 1) {
-            for (let category in groupedIngredients) {
-                if (groupedIngredients.hasOwnProperty(category)) {
-                    let categoryListItem = document.createElement('li');
-                    categoryListItem.textContent = category;
-                    categoryListItem.style.fontWeight = 'bold';
-                    categoryListItem.style.borderBottom = '1px solid #dee2e6';
-                    categoryListItem.style.pointerEvents = 'none';
 
-                    suggestionList.appendChild(categoryListItem);
+        if (query_all) {
+            clearSuggestions();
 
-                    // Categorize ingredients
-                    groupedIngredients[category].forEach(ingredient => {
+            let groupedIngredients = groupIngredientsByCategory(data, query_all);
+            if (query_all.length > 1) {
+                for (let category in groupedIngredients) {
+                    if (groupedIngredients.hasOwnProperty(category)) {
+                        let categoryListItem = document.createElement('li');
+                        categoryListItem.textContent = category;
+                        categoryListItem.style.fontWeight = 'bold';
+                        categoryListItem.style.borderBottom = '1px solid #dee2e6';
+                        categoryListItem.style.pointerEvents = 'none';
+
+                        suggestionList.appendChild(categoryListItem);
+
+                        // Categorize ingredients
+                        groupedIngredients[category].forEach(ingredient => {
+                            let listItem = document.createElement('li');
+                            listItem.textContent = ingredient.item;
+                            listItem.addEventListener('click', () => {
+                                document.getElementById('targetNode').value = ingredient.item;
+                                handleSelection(ingredient);
+                            });
+
+                            suggestionList.appendChild(listItem);
+                        });
+
+                        suggestionList.style.display = 'block';
+                        suggestionList.style.border = '1px solid #dee2e6';
+                    }
+                }
+            } else {
+                suggestionList.style.display = 'none';
+            }
+        } else if (query_prop) {
+            if (query_prop.length > 1) {
+                let property_option = document.getElementById('propertyMenu').value;
+                let listOfProperties = getListOfProperties(property_option);
+
+                listOfProperties.forEach(property => {
+                    if (property.toLowerCase().includes(query_prop.toLowerCase())) {
                         let listItem = document.createElement('li');
-                        listItem.textContent = ingredient.item;
+                        listItem.textContent = property;
                         listItem.addEventListener('click', () => {
-                            handleSelection(ingredient);
+                            document.getElementById('propertyNode').value = property;
+                            handleSelection(property);
                         });
 
                         suggestionList.appendChild(listItem);
-                    });
+                    }
+                });
 
-                    suggestionList.style.display = 'block';
-                    suggestionList.style.border = '1px solid #dee2e6';
+                suggestionList.style.display = 'block';
+                suggestionList.style.border = '1px solid #dee2e6';
 
-                }
             }
-        } else {
-            suggestionList.style.display = 'none';
+
+        } else if (query_all.length === 0 || query_prop.length === 0) {
+            clearSuggestions();
         }
     } catch (e) {
         console.log(e);
     }
+}
+
+function getListOfProperties(property_option) {
+    let listOfProperties = [];
+    let properties = [];
+
+    if (property_option === 'hasBenefit') {
+        let benefits = ['Culinary', 'Health Potential'];
+        properties.push(...benefits);
+    } else if (property_option === 'canCook') {
+        let cookingMethods = [
+            'Al_Dente', 'Assembled', 'Baked', 'Blanched', 'Blended', 'Boiled',
+            'Braised', 'Buttered', 'Chopped', 'Cracked', 'Crushed', 'Diced', 'Dipped',
+            'Dried', 'Drizzled', 'Flavored', 'Fresh', 'Fried',
+            'Garnished', 'Glazed', 'Grated', 'Grilled', 'Grounded', 'Infused',
+            'Marinated', 'Mashed', 'Minced', 'Mixed', 'Pan-Fried', 'Peeled',
+            'Pickled', 'Poached', 'Pounded', 'Powdered', 'Raw', 'Reconstituted', 'Rehydrated',
+            'Roasted', 'Rubbed', 'Sauteed', 'Scrambled', 'Seasoned', 'Shreded',
+            'Simmered', 'Sliced', 'Soaked', 'Spread', 'Sprinkled', 'Steamed', 'Stewed',
+            'Stir-Fried', 'Terpenoid', 'Thickened', 'Toasted', 'Torn', 'Wrapped', 'Zested'
+        ];
+        properties.push(...cookingMethods);
+    } else if (property_option === 'hasColor') {
+        let colors = [
+            'Beige', 'Black', 'Blue', 'Brown', 'Colorful', 'Cream', 'Gold', 'Golden', 'Gray',
+            'Green', 'Pink', 'Purple', 'Red', 'RedBrown', 'Silver', 'Tan', 'Transparent', 'White', 'Yellow'
+        ];
+        properties.push(...colors);
+    } else if (property_option === 'hasTexture') {
+        let textures = [
+            'Brittle', 'Butter-like', 'Chewy', 'Creamy', 'Crisp', 'Crispy', 'Crunchy', 'Delicate',
+            'Dense', 'Fibrous', 'Firm', 'Flaky', 'Fluffy', 'Gelatinous', 'Grainy', 'Gritty', 'Juicy',
+            'Leafy', 'Liquid', 'Melting', 'Mild', 'Nutty', 'Powdery', 'Silky', 'Singy', 'Slimy',
+            'Slippery', 'Smooth', 'Soft', 'Solid', 'Sticky', 'Tender', 'Tougher', 'Velvety', 'Watery', 'Woody'
+        ];
+        properties.push(...textures);
+    }
+
+    listOfProperties.push(...properties);
+    return listOfProperties;
 }
 
 function groupIngredientsByCategory(data, query) {
@@ -213,10 +263,19 @@ function groupIngredientsByCategory(data, query) {
 
 
 function handleSelection(selectedOption) {
-    document.getElementById('targetNode').value = selectedOption.item;
+    let query_all = document.getElementById('targetNode').value;
+    let query_prop = document.getElementById('propertyNode').value;
+
     clearSuggestions();
 
-    processData(selectedOption, "normal_search", 'all');
+    if (query_all) {
+        processData(selectedOption, "normal_search", 'all');
+    } else if (query_prop) {
+        let property_option = document.getElementById('propertyMenu').value;
+
+        processData(selectedOption, 'normal_search', property_option);
+    }
+
 }
 
 /**
@@ -239,6 +298,27 @@ function matchIngredient(data, query) {
     return listOfIngredients;
 }
 
+function matchProperties(data, query, property) {
+    let listOfIngredients = [];
+    let category = document.getElementById('categoryMenu').value;
+
+    for (let item in data[category]) {
+        let currentItem = data[category][item];
+        let propertyValue = currentItem[property];
+
+        if (Array.isArray(propertyValue)) {
+            for (let i = 0; i < propertyValue.length; i++) {
+                let prop = propertyValue[i];
+                if (prop.toLowerCase().includes(query.toLowerCase()) || query.toLowerCase().includes(prop.toLowerCase())) {
+                        listOfIngredients.push(item); // Store item along with its category
+                }
+            }
+        }
+
+    }
+
+    return listOfIngredients;
+}
 
 /**
  * Retrieve ingredients from a specific category with alphabet initialization selection
@@ -285,7 +365,6 @@ function retrieveAllIngredients(data, alphabet) {
 }
 
 function retrieveIngredientBySearch(data, name) {
-    // let listOfIngredients = matchIngredient(data, name);
     let foodGroupNode;
     let category = name.category;
     let ingredient = name.item;
@@ -295,18 +374,9 @@ function retrieveIngredientBySearch(data, name) {
         for (let ingd in data[category]) {
             let curr_item = data[category][ingd];
             if (curr_item["hasBenefit"] && curr_item["hasOtherNames"] && curr_item["hasOtherNames"].includes(ingredient)) {
-                // ingredient = ingd;
-
                 search_ingredient = curr_item;
             }
         }
-    }
-
-    let otherNamesChildren = [];
-    if (data[category][ingredient]["hasOtherNames"]) {
-        otherNamesChildren = data[category][ingredient]["hasOtherNames"].map(otherName => ({
-            name: otherName
-        }));
     }
 
     foodGroupNode = {
@@ -335,52 +405,56 @@ function retrieveIngredientBySearch(data, name) {
             }
         ]
     }
-
-    // if (listOfIngredients !== null) {
-    //     category = listOfIngredients[listOfIngredients.length - 1];
-    //
-    //     listOfIngredients.pop(); // Remove category from a list of ingredients
-    //
-    //     let childrenNode = [];
-    //
-    //     for (const ingredient of listOfIngredients) {
-    //         let curr_searchItem = data[category][ingredient];
-    //
-    //         if (curr_searchItem) {
-    //             if ("hasBenefit" in curr_searchItem && curr_searchItem["hasBenefit"].length > 0) {
-    //                 const ingredientChildren = Object.keys(data[category])
-    //                     .filter(key => key.localeCompare(ingredient) === 0) // match with name
-    //                     .map(key => ({
-    //                         name: key,
-    //                         children: Object.keys(curr_searchItem).map(property => ({
-    //                             name: property,
-    //                             children: Array.isArray(curr_searchItem[property]) ? curr_searchItem[property].map(value => ({ name: value })) : null
-    //                         })).filter(Boolean)
-    //                     }));
-    //
-    //                 childrenNode.push(...ingredientChildren);
-    //             }
-    //         }
-    //
-    //         foodGroupNode = {
-    //             name: "Food Group",
-    //             children: [
-    //                 {
-    //                     name: category,
-    //                     children: childrenNode
-    //                 }
-    //             ]
-    //         };
-    //     }
-    // }
-
     return foodGroupNode;
 }
 
-function retrieveIngredientByProperties(data, name, property_option) {
+function retrieveIngredientByProperties(data, query_prop, property_option) {
+    let category = document.getElementById('categoryMenu').value;
+    let listOfIngredients = matchProperties(data, query_prop, property_option);
+    let ingredientChildren = [];
+    let foodGroupNode;
 
+    console.log(category)
+
+    if (Array.isArray(listOfIngredients)) {
+            for (let i = 0; i < listOfIngredients.length; i++) {
+                let ingredient = listOfIngredients[i];
+                let search_ingredient = data[category][ingredient]
+
+                console.log(search_ingredient)
+
+                let properties = Object.keys(search_ingredient).map(property => {
+                    if (property === "hasOtherNames") {
+                        return {
+                            name: property,
+                            children: search_ingredient[property].map(value => ({ name: value }))
+                        };
+                    } else {
+                        return {
+                            name: property,
+                            children: Array.isArray(search_ingredient[property]) ? search_ingredient[property].map(value => ({ name: value })) : null
+                        };
+                    }
+                });
+
+                ingredientChildren.push({
+                    name: ingredient,
+                    children: properties
+                });
+
+            }
+    }
+
+    foodGroupNode = {
+        name: "Food Group",
+        children: [{
+            name: category,
+            children: ingredientChildren
+        }]
+    }
+
+    return foodGroupNode;
 }
-
 async function processData(name, type, property_option) {
     try {
         const data = await loadData();

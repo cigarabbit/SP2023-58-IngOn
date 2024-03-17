@@ -121,14 +121,14 @@
                     <div class="input-group-dropdown">
                         <select class="custom-select" id="propertyMenu" onchange="addMoreInput()">
                             <option value="all">All</option>
-                            <option value="Benefit">Benefit</option>
-                            <option value="Color">Color</option>
-                            <option value="Cooking Type">Cooking Type</option>
-                            <option value="Mineral">Mineral</option>
-                            <option value="Nutrient">Nutrient</option>
-                            <option value="Shape">Shape</option>
-                            <option value="Texture">Texture</option>
-                            <option value="Vitamin">Vitamin</option>
+                            <option value="hasBenefit">Benefit</option>
+                            <option value="hasColor">Color</option>
+                            <option value="canCook">Cooking Type</option>
+                            <option value="hasMineral">Mineral</option>
+                            <option value="hasNutrient">Nutrient</option>
+                            <option value="hasShape">Shape</option>
+                            <option value="hasTexture">Texture</option>
+                            <option value="hasVitamin">Vitamin</option>
                         </select>
                     </div>
                     <input type="text"
@@ -165,7 +165,9 @@
                                id="propertyNode"
                                name="propertyNode"
                                class="form-control"
-                               placeholder="Properties...">
+                               placeholder="Search properties..."
+                               oninput="autoComplete()"
+                        />
                     </div>
                 </div>
             </form>
