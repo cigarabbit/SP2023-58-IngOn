@@ -158,8 +158,10 @@ async function autoComplete() {
     try {
         const data = await loadData();
         let groupedIngredients = groupIngredientsByCategory(data, query);
-
-        if (query.length > 1) {
+        if (query.length === 0) {
+            window.location.reload();
+        }
+        else if (query.length > 1) {
             for (let category in groupedIngredients) {
                 if (groupedIngredients.hasOwnProperty(category)) {
                     let categoryListItem = document.createElement('li');
@@ -212,6 +214,8 @@ function groupIngredientsByCategory(data, query) {
 function handleSelection(selectedOption) {
     document.getElementById('targetNode').value = selectedOption.item;
     clearSuggestions();
+
+    processData(selectedOption, "normal_search", 'all');
 }
 
 /**
@@ -280,46 +284,94 @@ function retrieveAllIngredients(data, alphabet) {
 }
 
 function retrieveIngredientBySearch(data, name) {
-    let listOfIngredients = matchIngredient(data, name);
-    let category, foodGroupNode;
+    // let listOfIngredients = matchIngredient(data, name);
+    let foodGroupNode;
+    let category = name.category;
+    let ingredient = name.item;
+    let search_ingredient = data[category][ingredient];
 
-    if (listOfIngredients !== null) {
-        category = listOfIngredients[listOfIngredients.length - 1];
+    if (search_ingredient["hasBenefit"] === undefined) {
+        for (let ingd in data[category]) {
+            let curr_item = data[category][ingd];
+            if (curr_item["hasBenefit"] && curr_item["hasOtherNames"] && curr_item["hasOtherNames"].includes(ingredient)) {
+                // ingredient = ingd;
 
-        listOfIngredients.pop(); // Remove category from a list of ingredients
-
-        let childrenNode = [];
-
-        for (const ingredient of listOfIngredients) {
-            let curr_searchItem = data[category][ingredient];
-
-            if (curr_searchItem) {
-                if ("hasBenefit" in curr_searchItem && curr_searchItem["hasBenefit"].length > 0) {
-                    const ingredientChildren = Object.keys(data[category])
-                        .filter(key => key.localeCompare(ingredient) === 0) // match with name
-                        .map(key => ({
-                            name: key,
-                            children: Object.keys(curr_searchItem).map(property => ({
-                                name: property,
-                                children: Array.isArray(curr_searchItem[property]) ? curr_searchItem[property].map(value => ({ name: value })) : null
-                            })).filter(Boolean)
-                        }));
-
-                    childrenNode.push(...ingredientChildren);
-                }
+                search_ingredient = curr_item;
             }
-
-            foodGroupNode = {
-                name: "Food Group",
-                children: [
-                    {
-                        name: category,
-                        children: childrenNode
-                    }
-                ]
-            };
         }
     }
+
+    let otherNamesChildren = [];
+    if (data[category][ingredient]["hasOtherNames"]) {
+        otherNamesChildren = data[category][ingredient]["hasOtherNames"].map(otherName => ({
+            name: otherName
+        }));
+    }
+
+    foodGroupNode = {
+        name: "Food Group",
+        children: [
+            {
+                name: category,
+                children: [
+                    {
+                    name: ingredient,
+                    children: Object.keys(search_ingredient)
+                        .map(property => {
+                            if (property === "hasOtherNames") {
+                                return {
+                                    name: property,
+                                    children: data[category][ingredient][property].map(value => ({ name: value }))
+                                };
+                            } else {
+                                return {
+                                    name: property,
+                                    children: Array.isArray(search_ingredient[property]) ? search_ingredient[property].map(value => ({ name: value })) : null
+                                };
+                            }
+                    })}
+                ].filter(Boolean)
+            }
+        ]
+    }
+
+    // if (listOfIngredients !== null) {
+    //     category = listOfIngredients[listOfIngredients.length - 1];
+    //
+    //     listOfIngredients.pop(); // Remove category from a list of ingredients
+    //
+    //     let childrenNode = [];
+    //
+    //     for (const ingredient of listOfIngredients) {
+    //         let curr_searchItem = data[category][ingredient];
+    //
+    //         if (curr_searchItem) {
+    //             if ("hasBenefit" in curr_searchItem && curr_searchItem["hasBenefit"].length > 0) {
+    //                 const ingredientChildren = Object.keys(data[category])
+    //                     .filter(key => key.localeCompare(ingredient) === 0) // match with name
+    //                     .map(key => ({
+    //                         name: key,
+    //                         children: Object.keys(curr_searchItem).map(property => ({
+    //                             name: property,
+    //                             children: Array.isArray(curr_searchItem[property]) ? curr_searchItem[property].map(value => ({ name: value })) : null
+    //                         })).filter(Boolean)
+    //                     }));
+    //
+    //                 childrenNode.push(...ingredientChildren);
+    //             }
+    //         }
+    //
+    //         foodGroupNode = {
+    //             name: "Food Group",
+    //             children: [
+    //                 {
+    //                     name: category,
+    //                     children: childrenNode
+    //                 }
+    //             ]
+    //         };
+    //     }
+    // }
 
     return foodGroupNode;
 }
@@ -559,7 +611,6 @@ function clicked(clickedNode) {
 
     var nodes = d3.selectAll(".node");
     var links = d3.selectAll(".link");
-
 
     if (clickedNode.data.name === 'Food Group') {
         window.location.reload();
