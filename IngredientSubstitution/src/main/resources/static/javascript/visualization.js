@@ -189,6 +189,8 @@ async function autoComplete() {
                 let property_option = document.getElementById('propertyMenu').value;
                 let listOfProperties = getListOfProperties(property_option);
 
+                suggestionList.style.display = 'none';
+
                 listOfProperties.forEach(property => {
                     if (property.toLowerCase().includes(query_prop.toLowerCase())) {
                         let listItem = document.createElement('li');
@@ -199,10 +201,12 @@ async function autoComplete() {
                         });
 
                         suggestionList.appendChild(listItem);
+
                         suggestionList.style.display = 'block';
                         suggestionList.style.border = '1px solid #dee2e6';
                     }
                 });
+
             } else {
                 suggestionList.style.display = 'none';
             }
