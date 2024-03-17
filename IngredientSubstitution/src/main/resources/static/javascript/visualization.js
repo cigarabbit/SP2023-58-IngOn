@@ -96,6 +96,10 @@ function addMoreInput() {
         categoryDropDown.style.display = 'block';
         propertyInputField.style.display = 'block';
     } else {
+        document.getElementById('propertyNode').value = '';
+
+        clearSuggestions();
+
         query.style.display = 'block';
         categoryDropDown.style.display = 'none';
         propertyInputField.style.display = 'none';
@@ -191,12 +195,10 @@ async function autoComplete() {
                         });
 
                         suggestionList.appendChild(listItem);
+                        suggestionList.style.display = 'block';
+                        suggestionList.style.border = '1px solid #dee2e6';
                     }
                 });
-
-                suggestionList.style.display = 'block';
-                suggestionList.style.border = '1px solid #dee2e6';
-
             }
 
         } else if (query_all.length === 0 || query_prop.length === 0) {
@@ -233,6 +235,43 @@ function getListOfProperties(property_option) {
             'Green', 'Pink', 'Purple', 'Red', 'RedBrown', 'Silver', 'Tan', 'Transparent', 'White', 'Yellow'
         ];
         properties.push(...colors);
+    } else if (property_option === 'hasFlavor') {
+        let flavors = [
+            'Acidic', 'Astringent', 'Bitter', 'Citrus', 'Cooling', 'Estery', 'Floral', 'Lactonic',
+            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami'
+        ];
+        properties.push(...flavors);
+    } else if (property_option === 'hasMineral') {
+        let minerals = [
+            'Calcium', 'Copper', 'Iodine', 'Iron', 'Magnesium', 'Phosphorus', 'Potassium', 'Sodium', 'Zinc'
+        ];
+        properties.push(...minerals);
+    } else if (property_option === 'hasNutrient') {
+        let nutrients = [
+            'Ash', 'Carbohydrate', 'DietaryFibre', 'Energy', 'Fat', 'Protein', 'Water'
+        ];
+        properties.push(...nutrients);
+    } else if (property_option === 'hasSugar') {
+        let sugar = [
+            'Sugar'
+        ];
+        properties.push(...sugar);
+    } else if (property_option === 'hasVitamin') {
+        let vitamins = [
+            'Betacarotene', 'Cholesterol', 'Niacin', 'Retinol', 'Riboflavin', 'Thiamin', 'VitaminA', 'VitaminC', 'VitaminE'
+        ];
+        properties.push(...vitamins);
+    } else if (property_option === 'hasShape') {
+        let shapes = [
+            'Broad', 'Bundle', 'Canopy', 'Cluster', 'Conical', 'Cubed', 'Curled', 'Curved',
+            'Cylindrical', 'EarShaped', 'Feathery', 'Flakes', 'Flat', 'HeartShaped', 'Irregular',
+            'LanceShaped', 'Lanceolate', 'Large', 'Line', 'Lobed', 'Long', 'Narrow', 'Oblong',
+            'Oval', 'OvateShaped', 'PearShaped', 'PodShaped', 'Pointed', 'Rectangular', 'Round',
+            'Segmented', 'Serrated', 'Short', 'Slender', 'SlicedSips', 'Slices', 'SlicesAndCarvings',
+            'Small', 'Spherical', 'Sprouted', 'Square', 'StarShaped', 'Starchy', 'Tall', 'Tapered',
+            'Tapering', 'Thin', 'Thread', 'Tubular', 'Wavy', 'Wide'
+        ];
+        properties.push(...shapes);
     } else if (property_option === 'hasTexture') {
         let textures = [
             'Brittle', 'Butter-like', 'Chewy', 'Creamy', 'Crisp', 'Crispy', 'Crunchy', 'Delicate',
@@ -277,6 +316,7 @@ function handleSelection(selectedOption) {
     }
 
 }
+
 
 /**
  * Find a category and a list of possible ingredient of the query.
@@ -414,14 +454,10 @@ function retrieveIngredientByProperties(data, query_prop, property_option) {
     let ingredientChildren = [];
     let foodGroupNode;
 
-    console.log(category)
-
     if (Array.isArray(listOfIngredients)) {
             for (let i = 0; i < listOfIngredients.length; i++) {
                 let ingredient = listOfIngredients[i];
                 let search_ingredient = data[category][ingredient]
-
-                console.log(search_ingredient)
 
                 let properties = Object.keys(search_ingredient).map(property => {
                     if (property === "hasOtherNames") {
