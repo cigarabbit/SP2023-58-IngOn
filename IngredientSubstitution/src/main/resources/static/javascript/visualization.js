@@ -106,6 +106,10 @@ function addMoreInput() {
     }
 }
 
+document.getElementById('categoryMenu').addEventListener('change', function() {
+    document.getElementById('propertyNode').value = '';
+});
+
 ///////////// Data Preparation /////////////
 async function loadData() {
     try {
@@ -199,8 +203,9 @@ async function autoComplete() {
                         suggestionList.style.border = '1px solid #dee2e6';
                     }
                 });
+            } else {
+                suggestionList.style.display = 'none';
             }
-
         } else if (query_all.length === 0 || query_prop.length === 0) {
             clearSuggestions();
         }
@@ -481,14 +486,15 @@ function retrieveIngredientByProperties(data, query_prop, property_option) {
             }
     }
 
-    foodGroupNode = {
-        name: "Food Group",
-        children: [{
-            name: category,
-            children: ingredientChildren
-        }]
+    if (ingredientChildren.length > 0) {
+        foodGroupNode = {
+            name: "Food Group",
+            children: [{
+                name: category,
+                children: ingredientChildren
+            }]
+        }
     }
-
     return foodGroupNode;
 }
 async function processData(name, type, property_option) {
@@ -506,33 +512,33 @@ async function processData(name, type, property_option) {
             }
         }
 
-        if (foodGroupNode !== null) {
+        if (foodGroupNode !== undefined) {
             root = d3.hierarchy(foodGroupNode);
-        }
+            update(root);
 
+            var nodes = d3.selectAll(".node");
+            var links = d3.selectAll(".link");
 
-        update(root);
-
-        var nodes = d3.selectAll(".node");
-        var links = d3.selectAll(".link");
-
-        nodes.style('opacity', function (node) {
-            return node.depth > 2 ? '0' : '1';
-        })
-            .style('pointer-events', function (node) {
-                return node.depth > 2 ? 'none' : 'all';
+            nodes.style('opacity', function (node) {
+                return node.depth > 2 ? '0' : '1';
             })
+                .style('pointer-events', function (node) {
+                    return node.depth > 2 ? 'none' : 'all';
+                })
 
-        links.style('opacity', function (link) {
-            if (link.source.depth > 2 || link.target.depth > 2) {
-                return '0';
-            } else {
-                return '1';
-            }
-        })
-            .style('pointer-events', function (link) {
-                return (link.source.depth > 2 || link.target.depth > 2) ? 'none' : 'all';
-            });
+            links.style('opacity', function (link) {
+                if (link.source.depth > 2 || link.target.depth > 2) {
+                    return '0';
+                } else {
+                    return '1';
+                }
+            })
+                .style('pointer-events', function (link) {
+                    return (link.source.depth > 2 || link.target.depth > 2) ? 'none' : 'all';
+                });
+        } else {
+            alert("No results found for your query.");
+        }
 
     } catch (error) {
         console.error('Error processing data:', error);
