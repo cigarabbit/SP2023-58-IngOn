@@ -180,11 +180,12 @@ async function autoComplete() {
 
                         suggestionList.appendChild(listItem);
                     });
+
+                    suggestionList.style.display = 'block';
+                    suggestionList.style.border = '1px solid #dee2e6';
+
                 }
             }
-
-            suggestionList.style.display = 'block';
-            suggestionList.style.border = '1px solid #dee2e6';
         } else {
             suggestionList.style.display = 'none';
         }
@@ -559,7 +560,6 @@ function clicked(clickedNode) {
     var nodes = d3.selectAll(".node");
     var links = d3.selectAll(".link");
 
-    console.log(clickedNode.data.name);
 
     if (clickedNode.data.name === 'Food Group') {
         window.location.reload();
@@ -571,6 +571,7 @@ function clicked(clickedNode) {
     var childrenNodes = rootNode.descendants().filter(function (d) {
         return d.depth > clickedNode.depth && d.parent && d.parent.data.id === clickedNodeId; // Filter children nodes of the clicked node
     });
+
 
     if (!clickedNode.children) {
         clickedNode._children = clickedNode.children;
@@ -705,39 +706,5 @@ function flatten(root) {
 
 function zoomed() {
     svg.attr('transform', d3.event.transform)
-}
-
-function levenshteinDistance(s1, s2) {
-    if (s1.length === 0) return s2.length;
-    if (s2.length === 0) return s1.length;
-
-    var matrix = [];
-
-    var i;
-    for (i = 0; i <= s2.length; i++) {
-        matrix[i] = [i];
-    }
-
-    var j;
-    for (j = 0; j <= s1.length; j++) {
-        matrix[0][j] = j;
-    }
-
-    for (i = 1; i <= s2.length; i++) {
-        for (j = 1; j <= s1.length; j++) {
-            if (s2.charAt(i - 1) === s1.charAt(j - 1)) {
-                matrix[i][j] = matrix[i - 1][j - 1];
-            } else {
-                matrix[i][j] = Math.min(
-                    matrix[i - 1][j - 1] + 1, // substitution
-                    Math.min(
-                        matrix[i][j - 1] + 1, // insertion
-                        matrix[i - 1][j] + 1
-                    )
-                ); // deletion
-            }
-        }
-    }
-    return matrix[s2.length][s1.length];
 }
 
