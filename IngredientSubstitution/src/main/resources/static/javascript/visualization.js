@@ -566,12 +566,10 @@ const centerY = (svgHeight + 100) / 2;
 svg.attr('transform', `translate(${centerX}, ${centerY})`);
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(function (d) {
-        return d.id;
-    }).distance(50))
-    .force('charge', d3.forceManyBody().strength(-40))
+    .force('link', d3.forceLink().distance(50))
+    .force('charge', d3.forceManyBody().strength(-200))
     .force('center', d3.forceCenter(0, 0))
-    .force('collide',d3.forceCollide().radius(60).iterations(2));
+    .force('collide',d3.forceCollide().radius(30).iterations(2));
 
 function update(root) {
     const nodes = flatten(root);
