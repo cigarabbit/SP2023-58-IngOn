@@ -139,6 +139,24 @@ function clearViz() {
     table.style.display = 'none';
 }
 
+/**
+ * Display all existing properties in each property list when the query bar is clicked.
+ */
+document.getElementById('propertyNode').addEventListener('click', function() {
+    let property_option = document.getElementById('propertyMenu').value;
+    let listOfProperties = getListOfProperties(property_option);
+    let suggestionList = document.getElementById('suggestionList');
+
+    clearAndPopulateSuggestionList(listOfProperties, suggestionList, (property) => {
+        document.getElementById('propertyNode').value = property;
+        handleSelection(property);
+    });
+});
+
+/**
+ * Display auto-complete when some alphabets are prompted.
+ * @returns {Promise<void>}
+ */
 async function autoComplete() {
     let query_all = document.getElementById('targetNode').value;
     let query_prop = document.getElementById('propertyNode').value;
@@ -156,24 +174,14 @@ async function autoComplete() {
             if (query_all.length > 1) {
                 for (let category in groupedIngredients) {
                     if (groupedIngredients.hasOwnProperty(category)) {
-                        let categoryListItem = document.createElement('li');
-                        categoryListItem.textContent = category;
-                        categoryListItem.style.fontWeight = 'bold';
-                        categoryListItem.style.borderBottom = '1px solid #dee2e6';
-                        categoryListItem.style.pointerEvents = 'none';
+                        let categoryListItem = createAndAppendListItem(category, suggestionList, true);
 
-                        suggestionList.appendChild(categoryListItem);
-
-                        // Categorize ingredients
                         groupedIngredients[category].forEach(ingredient => {
-                            let listItem = document.createElement('li');
-                            listItem.textContent = ingredient.item;
+                            let listItem = createAndAppendListItem(ingredient.item, suggestionList);
                             listItem.addEventListener('click', () => {
                                 document.getElementById('targetNode').value = ingredient.item;
                                 handleSelection(ingredient);
                             });
-
-                            suggestionList.appendChild(listItem);
                         });
 
                         suggestionList.style.display = 'block';
@@ -192,22 +200,16 @@ async function autoComplete() {
             if (query_prop.length >= 1) {
                 listOfProperties.forEach(property => {
                     if (property.toLowerCase().includes(query_prop.toLowerCase())) {
-                        let listItem = document.createElement('li');
-                        listItem.textContent = property;
+                        let listItem = createAndAppendListItem(property, suggestionList);
                         listItem.addEventListener('click', () => {
                             document.getElementById('propertyNode').value = property;
                             handleSelection(property);
                         });
-
-                        suggestionList.appendChild(listItem);
-
-                        suggestionList.style.display = 'block';
-                        suggestionList.style.border = '1px solid #dee2e6';
                     }
                 });
 
-            } else {
-                suggestionList.style.display = 'none';
+                suggestionList.style.display = 'block';
+                suggestionList.style.border = '1px solid #dee2e6';
             }
         } else if (query_all.length === 0 || query_prop.length === 0) {
             clearSuggestions();
@@ -216,26 +218,29 @@ async function autoComplete() {
         console.log(e);
     }
 }
-document.getElementById('propertyNode').addEventListener('click', function() {
-    let property_option = document.getElementById('propertyMenu').value;
-    let listOfProperties = getListOfProperties(property_option);
-    let suggestionList = document.getElementById('suggestionList');
 
+function createAndAppendListItem(text, parent, bold = false) {
+    let listItem = document.createElement('li');
+    listItem.textContent = text;
+    if (bold) listItem.style.fontWeight = 'bold';
+    listItem.style.borderBottom = '1px solid #dee2e6';
 
-    listOfProperties.forEach(property => {
-        let listItem = document.createElement('li');
-        listItem.textContent = property;
-        listItem.addEventListener('click', () => {
-            document.getElementById('propertyNode').value = property;
-            handleSelection(property);
-        });
+    parent.appendChild(listItem);
 
-        suggestionList.appendChild(listItem);
+    return listItem;
+}
 
-        suggestionList.style.display = 'block';
-        suggestionList.style.border = '1px solid #dee2e6';
+function clearAndPopulateSuggestionList(items, parent, clickHandler) {
+    parent.innerHTML = '';
+
+    items.forEach(item => {
+        let listItem = createAndAppendListItem(item, parent);
+        listItem.addEventListener('click', () => clickHandler(item));
     });
-});
+
+    parent.style.display = 'block';
+    parent.style.border = '1px solid #dee2e6';
+}
 
 function getListOfProperties(property_option) {
     let listOfProperties = [];
@@ -314,6 +319,12 @@ function getListOfProperties(property_option) {
     return listOfProperties;
 }
 
+/**
+ * Search for every ingredient from every category that matches a query.
+ * @param data
+ * @param query
+ * @returns {{}}
+ */
 function groupIngredientsByCategory(data, query) {
     let matchedIngredients = matchIngredient(data, query);
     let groupedIngredients = {};
@@ -328,7 +339,10 @@ function groupIngredientsByCategory(data, query) {
     return groupedIngredients;
 }
 
-
+/**
+ * Submit a query for a visualization.
+ * @param selectedOption
+ */
 function handleSelection(selectedOption) {
     let query_all = document.getElementById('targetNode').value;
     let query_prop = document.getElementById('propertyNode').value;
@@ -342,7 +356,6 @@ function handleSelection(selectedOption) {
 
         processData(selectedOption, 'normal_search', property_option);
     }
-
 }
 
 
