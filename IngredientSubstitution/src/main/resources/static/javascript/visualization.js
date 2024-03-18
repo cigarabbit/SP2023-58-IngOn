@@ -120,7 +120,6 @@ async function loadData() {
     }
 }
 
-
 function clearSuggestions() {
     const suggestionList = document.getElementById('suggestionList');
     suggestionList.innerHTML = '';
@@ -185,12 +184,12 @@ async function autoComplete() {
                 suggestionList.style.display = 'none';
             }
         } else if (query_prop) {
-            if (query_prop.length > 1) {
-                let property_option = document.getElementById('propertyMenu').value;
-                let listOfProperties = getListOfProperties(property_option);
+            let property_option = document.getElementById('propertyMenu').value;
+            let listOfProperties = getListOfProperties(property_option);
 
-                suggestionList.style.display = 'none';
+            suggestionList.style.display = 'none';
 
+            if (query_prop.length >= 1) {
                 listOfProperties.forEach(property => {
                     if (property.toLowerCase().includes(query_prop.toLowerCase())) {
                         let listItem = document.createElement('li');
@@ -217,6 +216,26 @@ async function autoComplete() {
         console.log(e);
     }
 }
+document.getElementById('propertyNode').addEventListener('click', function() {
+    let property_option = document.getElementById('propertyMenu').value;
+    let listOfProperties = getListOfProperties(property_option);
+    let suggestionList = document.getElementById('suggestionList');
+
+
+    listOfProperties.forEach(property => {
+        let listItem = document.createElement('li');
+        listItem.textContent = property;
+        listItem.addEventListener('click', () => {
+            document.getElementById('propertyNode').value = property;
+            handleSelection(property);
+        });
+
+        suggestionList.appendChild(listItem);
+
+        suggestionList.style.display = 'block';
+        suggestionList.style.border = '1px solid #dee2e6';
+    });
+});
 
 function getListOfProperties(property_option) {
     let listOfProperties = [];
