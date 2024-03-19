@@ -45,9 +45,9 @@ input {
     background-color: #ffffff;
     position: absolute;
     margin-top: 37px;
-    margin-left: 121px;
     overflow-y: scroll;
-    padding: 20px;
+    width: 100%;
+    padding: 15px;
     display: none;
 }
 
@@ -77,6 +77,10 @@ input {
     cursor: pointer;
     z-index: 1000;
     stroke: black;
+}
+
+.node text {
+    z-index: 10000;
 }
 
 .focused circle {
@@ -114,5 +118,52 @@ td {
 
 td:hover {
     background-color: #dddddd;
+}
+
+.legend-box {
+    position: fixed;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    top: 80px;
+    right: 25px;
+}
+
+.legend-item {
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.legend-color.purple {
+    background-color: #7800E1FF;
+}
+
+.legend-color.blue {
+    background-color: #00376b;
+}
+
+.legend-color.yellow {
+    background-color: #f9e261;
+}
+
+.legend-color.lightblue {
+    background-color: #4eb9f2;
+}
+
+.legend-line {
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 2px dashed black;
+    margin-right: 5px;
 }
 
