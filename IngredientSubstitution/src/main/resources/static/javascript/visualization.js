@@ -167,7 +167,7 @@ async function autoComplete() {
     try {
         const data = await loadData();
 
-        if (query_all) {
+        if (query_all) { // search for every ingredient
             clearSuggestions();
 
             let groupedIngredients = groupIngredientsByCategory(data, query_all);
@@ -191,7 +191,7 @@ async function autoComplete() {
             } else {
                 suggestionList.style.display = 'none';
             }
-        } else if (query_prop) {
+        } else if (query_prop) { // search for ingredients that match a given property in a specific category
             let property_option = document.getElementById('propertyMenu').value;
             let listOfProperties = getListOfProperties(property_option);
 
@@ -608,10 +608,10 @@ const centerY = (svgHeight + 100) / 2;
 svg.attr('transform', `translate(${centerX}, ${centerY})`);
 
 const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().distance(50))
+    .force('link', d3.forceLink().distance(150))
     .force('charge', d3.forceManyBody().strength(-200))
     .force('center', d3.forceCenter(0, 0))
-    .force('collide',d3.forceCollide().radius(30).iterations(2));
+    .force('collide',d3.forceCollide().radius(15).iterations(1));
 
 function update(root) {
     const nodes = flatten(root);
@@ -636,13 +636,13 @@ function update(root) {
         }
     }
 
-    const distanceCustomization = function (d) {
-        if ((d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
-            return 150;
-        } else {
-            return 200;
-        }
-    };
+    // const distanceCustomization = function (d) {
+    //     if ((d.source.depth === 3 && d.target.depth === 4) || (d.source.depth === 4 && d.target.depth === 3)) {
+    //         return 150;
+    //     } else {
+    //         return 200;
+    //     }
+    // };
 
     simulation.on('tick', ticked);
 
@@ -706,7 +706,6 @@ function update(root) {
     // Update simulation with new nodes and links
     simulation.nodes(nodes);
     simulation.force('link').links(links);
-    simulation.force('link', d3.forceLink(links).id(d => d.id).distance(distanceCustomization));
     simulation.on('tick', ticked);
     simulation.alpha(1).restart();
 }
@@ -909,4 +908,3 @@ function flatten(root) {
 function zoomed() {
     svg.attr('transform', d3.event.transform)
 }
-
