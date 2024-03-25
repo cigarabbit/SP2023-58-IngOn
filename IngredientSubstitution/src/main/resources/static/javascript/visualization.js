@@ -265,7 +265,7 @@ function getListOfProperties(property_option) {
     } else if (property_option === 'hasColor') {
         let colors = [
             'Beige', 'Black', 'Blue', 'Brown', 'Colorful', 'Cream', 'Gold', 'Golden', 'Gray',
-            'Green', 'Pink', 'Purple', 'Red', 'RedBrown', 'Silver', 'Tan', 'Transparent', 'White', 'Yellow'
+            'Green', 'Orange', 'Pink', 'Purple', 'Red', 'RedBrown', 'Silver', 'Tan', 'Transparent', 'White', 'Yellow'
         ];
         properties.push(...colors);
     } else if (property_option === 'hasFlavor') {
@@ -862,8 +862,8 @@ function color(d) {
             return '#A52A2A';
         } else if (d.data.name == "Silver") {
             return '#C0C0C0';
-        } else if (d.data.name == "Silver") {
-            return '#D2B48C';
+        } else if (d.data.name == "Orange") {
+            return '#ff6900';
         } else if (d.data.name === "White" || d.data.name == "Transparent") {
             return '#FFFFFF';
         } else if (d.data.name == "Yellow") {
