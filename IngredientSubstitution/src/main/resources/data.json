@@ -2870,7 +2870,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลานิล" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -2931,7 +2931,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาคู้", "ปลาจาระเม็ดน้ำจืด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin" ],
@@ -2955,7 +2955,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาตะโกก", "ปลาโจก" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
@@ -2979,7 +2979,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาทับทิม" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -2990,7 +2990,7 @@
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Yellow" ],
       "hasOtherNames" : [ "ปลาดุก" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3004,7 +3004,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาสูด", "ปลาสูบ" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
@@ -3021,7 +3021,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Red" ],
       "hasOtherNames" : [ "ปลาแดง" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -3033,7 +3033,7 @@
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasColor" : [ "Colorful" ],
       "hasOtherNames" : [ "ปลาน้ำดอกไม้" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
@@ -3046,7 +3046,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลากระบอก", "Mullet Fish" ],
-      "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Baked", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -3060,7 +3060,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาอีสร้อย", "ปลาหัวแข็ง" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3096,7 +3096,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
       "hasOtherNames" : [ "ปลาสวาย" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3160,7 +3160,7 @@
       "hasTexture" : [ "Chewy", "Firm" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาตะเพียน" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3174,7 +3174,7 @@
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาริวกิว" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3188,7 +3188,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาช่อน" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3256,7 +3256,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาหลดจุด" ],
-      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3267,7 +3267,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Transparent" ],
       "hasOtherNames" : [ "ปลาหมึกกระเป๋า" ],
-      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3278,7 +3278,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาสลิด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
@@ -3292,7 +3292,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลาบึก" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -3303,7 +3303,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Transparent" ],
       "hasOtherNames" : [ "ปลาซีกเดียว", "ปลาตาเดียว" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -3316,7 +3316,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
       "hasOtherNames" : [ "ปลาดอกหมาก" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3339,7 +3339,7 @@
       "hasTexture" : [ "Delicate", "Tender" ],
       "hasColor" : [ "Pink", "Green" ],
       "hasOtherNames" : [ "ปลาทูน่าในน้ำสลัด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasFlavor" : [ "Umami", "Acidic", "Sour" ],
       "hasVitamin" : [ "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -3378,7 +3378,7 @@
       "hasTexture" : [ "Chewy", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาหมอ" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -3395,7 +3395,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาแปป" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3420,7 +3420,7 @@
       "hasTexture" : [ "Tender", "Crispy" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาออดแอด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3431,7 +3431,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลากะพงขาว" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
@@ -3450,7 +3450,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาตาโต" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ]
     },
@@ -3465,7 +3465,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาแรด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3501,7 +3501,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาซาบะ" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -3515,7 +3515,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาช่อนทะล" ],
-      "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Baked", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3543,7 +3543,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Red" ],
       "hasOtherNames" : [ "ปลาอังเกย" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3568,7 +3568,7 @@
       "hasTexture" : [ "Flaky", "Butter-like" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาไหล" ],
-      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3579,7 +3579,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลาม้า" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3593,7 +3593,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาหางแข็ง" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3631,7 +3631,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปรากราย" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3645,7 +3645,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
       "hasOtherNames" : [ "ปลาโอ" ],
-      "canCook" : [ "Grilled", "Baked", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Baked", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -3684,7 +3684,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลาแขยง", "ปลากดทะเล" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin" ],
@@ -3753,7 +3753,7 @@
       "hasTexture" : [ "Nutty", "Crunchy" ],
       "hasColor" : [ "Colorful" ],
       "hasOtherNames" : [ "ปลาปีกไก่" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
@@ -3776,7 +3776,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาสีเขียด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3872,7 +3872,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาสลาด" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
@@ -3896,7 +3896,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
       "hasOtherNames" : [ "ปลายอน" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Sodium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin" ],
@@ -3907,7 +3907,7 @@
       "hasTexture" : [ "Flaky", "Firm" ],
       "hasColor" : [ "Red" ],
       "hasOtherNames" : [ "ปลาทู" ],
-      "canCook" : [ "Grilled", "Baked", "Raw", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Baked", "Raw", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Iodine" ],
       "hasFlavor" : [ "Umami", "Salty" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -3918,7 +3918,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Colorful" ],
       "hasOtherNames" : [ "ปลาเนื้ออ่อน" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -3928,7 +3928,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาเจ่า", "ปลาซิว" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -3971,7 +3971,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Silver" ],
       "hasOtherNames" : [ "ปลาสำลี" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin" ],
@@ -4031,7 +4031,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "White" ],
       "hasOtherNames" : [ "ปลาข้าวสาร" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -4053,7 +4053,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาลิ้นหมา" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
@@ -4064,7 +4064,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาเก๋า" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -4074,7 +4074,7 @@
       "hasTexture" : [ "Flaky", "Tender" ],
       "hasColor" : [ "Gray" ],
       "hasOtherNames" : [ "ปลาแป้น" ],
-      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried", "Pan-Fried" ],
       "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
@@ -4087,7 +4087,7 @@
     "อบเชย" : {
       "hasOtherNames" : [ "Cinnamon" ]
     },
-    "Chinese Five- Spice Blend" : {
+    "Chinese Five-Spice Blend" : {
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Powdery" ],
       "hasColor" : [ "Brown" ],
@@ -4178,7 +4178,7 @@
       "hasOtherNames" : [ "White Turmeric", "Mango Ginger" ]
     },
     "เครื่องแกงมัสมั่น" : {
-      "hasOtherNames" : [ "Matsaman", "Chilli Paste" ]
+      "hasOtherNames" : [ "Matsaman Chilli Paste", "Matsaman" ]
     },
     "Sweetened Fish Sauce" : {
       "hasOtherNames" : [ "น้ำบูดูหวาน", "Sweetened Budu" ]
@@ -4354,6 +4354,18 @@
     "ตะไคร้" : {
       "hasOtherNames" : [ "Lemon Grass" ]
     },
+    "Matsaman Chilli Paste" : {
+      "hasBenefit" : [ "Culinary" ],
+      "hasTexture" : [ "Gritty" ],
+      "hasColor" : [ "Red" ],
+      "hasOtherNames" : [ "เครื่องแกงมัสมั่น", "Matsaman" ],
+      "canCook" : [ "Fried", "Stir-Fried" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Spicy" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ],
+      "hasType" : [ "Paste" ]
+    },
     "Cumin Seeds" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
@@ -4380,7 +4392,7 @@
       "hasType" : [ "Sauce" ]
     },
     "พะโล้ผง" : {
-      "hasOtherNames" : [ "Chinese Five- Spice Blend" ]
+      "hasOtherNames" : [ "Chinese Five-Spice Blend" ]
     },
     "ยี่หร่าเมล็ด" : {
       "hasOtherNames" : [ "Cumin Seeds" ]
@@ -4454,7 +4466,7 @@
       "hasOtherNames" : [ "White Pepper" ]
     },
     "Matsaman" : {
-      "hasOtherNames" : [ "เครื่องแกงมัสมั่น", "Chilli Paste" ]
+      "hasOtherNames" : [ "Matsaman Chilli Paste", "เครื่องแกงมัสมั่น" ]
     },
     "ผักชีราก" : {
       "hasOtherNames" : [ "Coriander Roots" ]
@@ -4535,7 +4547,7 @@
       "hasBenefit" : [ "Culinary" ],
       "hasTexture" : [ "Gritty" ],
       "hasColor" : [ "Red" ],
-      "hasOtherNames" : [ "เครื่องแกงมัสมั่น", "Matsaman", "เครื่องแกงเผ็ด" ],
+      "hasOtherNames" : [ "เครื่องแกงเผ็ด" ],
       "canCook" : [ "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Spicy" ],
@@ -5836,7 +5848,7 @@
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
       "hasOtherNames" : [ "เนื้อสันใน" ],
-      "canCook" : [ "Grilled", "Roasted", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Roasted", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
@@ -6214,7 +6226,7 @@
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
       "hasOtherNames" : [ "สันในหมู" ],
-      "canCook" : [ "Grilled", "Roasted", "Fried", "Stir-Fried", "Pan- Fried" ],
+      "canCook" : [ "Grilled", "Roasted", "Fried", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
@@ -11242,9 +11254,9 @@
       "hasOtherNames" : [ "Sweetened Radish" ]
     },
     "มันตีนแรดดิบ" : {
-      "hasOtherNames" : [ "Raw Man- Tinrad" ]
+      "hasOtherNames" : [ "Raw Man-Tinrad" ]
     },
-    "Raw Man- Tinrad" : {
+    "Raw Man-Tinrad" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Starchy" ],
       "hasColor" : [ "Brown", "Beige" ],
@@ -11293,7 +11305,7 @@
       "hasOtherNames" : [ "Big Raw Hausa Potato" ]
     },
     "มันอ้นดิบ" : {
-      "hasOtherNames" : [ "Raw Man- Aon" ]
+      "hasOtherNames" : [ "Raw Man-Aon" ]
     },
     "มันสำปะหลังดิบ" : {
       "hasOtherNames" : [ "Raw Cassava" ]
@@ -11431,7 +11443,7 @@
     "เผือกดิบ" : {
       "hasOtherNames" : [ "Raw Taro" ]
     },
-    "Raw Man- Aon" : {
+    "Raw Man-Aon" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Fibrous", "Starchy" ],
       "hasColor" : [ "Brown", "Beige" ],
