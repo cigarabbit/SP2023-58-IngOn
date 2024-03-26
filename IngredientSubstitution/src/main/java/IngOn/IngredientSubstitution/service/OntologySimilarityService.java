@@ -9,10 +9,14 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
-    public static void main(String[] args) {
+
+    public static void init(String ingredientToCompare) throws FileNotFoundException {
+
         try {
-            String content = new Scanner(new File("src/main/resources/data.json")).useDelimiter("\\Z").next();
+            String content = new Scanner(new File("IngredientSubstitution/src/main/resources/data.json")).useDelimiter("\\Z").next();
+
             JSONObject jsonObject = new JSONObject(content);
+
             List<String> itemsList = new ArrayList<>();
 
             propertiesCategory(jsonObject, "Egg", itemsList);
@@ -27,17 +31,14 @@ public class OntologySimilarityService {
             propertiesCategory(jsonObject, "Milk", itemsList);
             propertiesCategory(jsonObject, "StarchyRoot_Tuber", itemsList);
 
-
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Enter the name of the ingredient you need to find a substitute: ");
-            String ingredientToCompare = scanner.nextLine();
             String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
-            findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
 
+            findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
 
     private static void propertiesCategory(JSONObject jsonObject, String category, List<String> itemsList) {
@@ -68,7 +69,7 @@ public class OntologySimilarityService {
             for (int i = 0; i < array.length(); i++) {
                 stringBuilder.append(array.getString(i));
                 if (i < array.length() - 1) {
-                    stringBuilder.append(", ");
+                    stringBuilder.append(" ");
                 }
             }
             stringBuilder.append(" ");
@@ -97,17 +98,23 @@ public class OntologySimilarityService {
     }
 
 
-    private static void findMostSimilarIngredients(String ingredientToCompare, String ingredientProp, List<String> itemsList) {
-        Map<String, Double> similarityMap = new HashMap<>();
+    private static HashMap<String, Double> findMostSimilarIngredients(String ingredientToCompare, String ingredientProp, List<String> itemsList) {
+        HashMap<String, Double> similarityMap = new HashMap<>();
 
         for (String item : itemsList) {
             String[] parts = item.split(" = ");
-            String ingredientName = parts[0];
-            if (!ingredientName.equals(ingredientToCompare)) {
-                double similarity = calculateCosineSimilarity(ingredientProp, item);
-                if (similarity > 0.0) {
-                    similarityMap.put(ingredientName, similarity);
+            // Check if parts array has at least two elements before accessing index 1
+            if (parts.length >= 2) {
+                String ingredientName = parts[0];
+                String ingredientPro = parts[1];
+                if (!ingredientName.equals(ingredientToCompare)) {
+                    double similarity = calculateCosineSimilarity(ingredientProp, ingredientPro);
+                    if (similarity > 0.0) {
+                        similarityMap.put(ingredientName, similarity);
+                    }
                 }
+            } else {
+                continue;
             }
         }
 
@@ -115,17 +122,19 @@ public class OntologySimilarityService {
         List<Map.Entry<String, Double>> sortedList = new ArrayList<>(similarityMap.entrySet());
         sortedList.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
-        // Display top 5 most similar ingredients
-        int count = 0;
-        for (Map.Entry<String, Double> entry : sortedList) {
-            if (count >= 5) {
-                break;
-            }
-            if (entry.getValue() > 0.0) {
-                System.out.println(entry.getKey() + ": " + entry.getValue());
-                count++;
-            }
-        }
+//        // Display top 5 most similar ingredients
+//        int count = 0;
+//        for (Map.Entry<String, Double> entry : sortedList) {
+//            if (count >= 5) {
+//                break;
+//            }
+//            if (entry.getValue() > 0.0) {
+//                System.out.println(entry.getKey() + ": " + entry.getValue());
+//                count++;
+//            }
+//        }
+
+        return similarityMap;
     }
 
     // Calculate the cosine similarity between two strings
@@ -133,8 +142,14 @@ public class OntologySimilarityService {
         List<CharSequence> terms1 = Arrays.asList(str1.toLowerCase().split("\\s+"));
         List<CharSequence> terms2 = Arrays.asList(str2.toLowerCase().split("\\s+"));
 
+        //System.out.print(terms1+"\n");
+        //System.out.print(terms2+"\n");
+
         Map<CharSequence, Integer> termFrequency1 = calculateTermFrequency(terms1);
         Map<CharSequence, Integer> termFrequency2 = calculateTermFrequency(terms2);
+
+        //System.out.print(termFrequency1+"\n");
+        //System.out.print(termFrequency2+"\n");
 
         CosineSimilarity cosineSimilarity = new CosineSimilarity();
         return cosineSimilarity.cosineSimilarity(termFrequency1, termFrequency2);
