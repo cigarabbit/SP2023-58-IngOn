@@ -9,6 +9,7 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/searchResult-style.css">
 </head>
 
 <body class="background-container homepage">
@@ -80,12 +81,32 @@
         </div>
     </div>
 </div>
+<hr id="page-divider">
 <div id="resultSection">
-    <ul>
-        <li th:each="entry : ${simResult}">
-            <span th:text="${entry.key}"></span> : <span th:text="${entry.value}"></span>
-        </li>
-    </ul>
+    <h2 id="resultHeader">List of Possible Substitutes for <span th:text="${ingredientQuery}"></span></h2>
+    <div class="col-md-10 mx-auto" id="resultBody">
+        <div id="sameCategory">
+            <h4 th:text="${categoryName}">CATEGORY</h4>
+            <hr>
+            <div class="col-md-3 mx-auto resultList">
+                <ul>
+                    <li th:each="entry : ${simResult}">
+                        <span th:text="${entry.key}"></span>
+                        <!--                    <span th:text="${entry.value}"></span>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="otherCategory">
+            <h4>CATEGORY</h4>
+            <hr>
+<!--            <ul class="resultList">-->
+<!--                <li>-->
+<!--                    <span th:text="${entry.key}"></span><span th:text="${entry.value}"></span>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </div>
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
