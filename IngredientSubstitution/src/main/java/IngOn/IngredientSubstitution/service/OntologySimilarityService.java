@@ -10,9 +10,11 @@ import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
 
-    public static void init(String ingredientToCompare) throws FileNotFoundException {
+    public static List<Map.Entry<String, Double>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
 
+        List<Map.Entry<String, Double>> similarityResult = null;
         try {
+            // src/main/resources/data.json
             String content = new Scanner(new File("IngredientSubstitution/src/main/resources/data.json")).useDelimiter("\\Z").next();
 
             JSONObject jsonObject = new JSONObject(content);
@@ -33,12 +35,14 @@ public class OntologySimilarityService {
 
             String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
 
-            findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
-
+            similarityResult = findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
+            
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
+        System.out.println(similarityResult);
+        return similarityResult;
     }
 
     private static void propertiesCategory(JSONObject jsonObject, String category, List<String> itemsList) {
@@ -98,7 +102,7 @@ public class OntologySimilarityService {
     }
 
 
-    private static HashMap<String, Double> findMostSimilarIngredients(String ingredientToCompare, String ingredientProp, List<String> itemsList) {
+    private static List<Map.Entry<String, Double>> findMostSimilarIngredients(String ingredientToCompare, String ingredientProp, List<String> itemsList) {
         HashMap<String, Double> similarityMap = new HashMap<>();
 
         for (String item : itemsList) {
@@ -134,7 +138,7 @@ public class OntologySimilarityService {
 //            }
 //        }
 
-        return similarityMap;
+        return sortedList;
     }
 
     // Calculate the cosine similarity between two strings
