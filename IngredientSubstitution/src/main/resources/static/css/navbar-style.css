@@ -3,6 +3,10 @@
     font-weight: bolder;
 }
 
+nav {
+    z-index: 1000;
+}
+
 .navbar {
     top: 0;
     position: fixed;
