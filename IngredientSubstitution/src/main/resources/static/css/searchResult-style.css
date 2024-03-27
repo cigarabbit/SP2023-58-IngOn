@@ -1,0 +1,22 @@
+#page-divider {
+    padding: 20px;
+    border-top: 3px solid #000000;
+}
+
+#resultSection {
+    padding: 20px;
+}
+
+#resultHeader {
+    text-align: center;
+    padding: 30px;
+    font-weight: bolder;
+}
+
+#resultBody {
+    width: 75%;
+}
+
+.resultList {
+    border: 2px solid grey;
+}
