@@ -2,14 +2,17 @@ package IngOn.IngredientSubstitution.controller;
 
 import IngOn.IngredientSubstitution.service.DescriptionLogicDisplayService;
 import IngOn.IngredientSubstitution.service.OntologyConverter;
+import IngOn.IngredientSubstitution.service.OntologySimilarityService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
@@ -37,7 +40,6 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
     @GetMapping("/")
-    @Cacheable
     public String homePage() {
         return "index";
     }
@@ -45,8 +47,8 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     @GetMapping("/ontology-manager")
     @Cacheable
     public String ontologyManager() {
-//        String directoryPath = "src/main/resources";
-        String directoryPath = "IngredientSubstitution/src/main/resources";
+        String directoryPath = "src/main/resources";
+//        String directoryPath = "IngredientSubstitution/src/main/resources";
         String fileName = "data.json";
 
         OntologyConverter.writeAllConceptNamesToFile(directoryPath, fileName);
@@ -104,7 +106,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     }
 
     @GetMapping("/visualization")
-    public String visualization(HttpSession session, Model model) {
+    public String visualization() {
         return "visualization";
     }
 
@@ -119,6 +121,23 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error reading data.json");
         }
     }
+
+    @GetMapping("/search")
+    public String showSearchPage() {
+        return "searchResult";
+    }
+
+    @PostMapping("/search")
+    public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model) throws FileNotFoundException {
+        List<Map.Entry<String, Double>> simResult = OntologySimilarityService.findSubstitution(ingredientToCompare);
+
+        model.asMap().clear();
+
+        model.addAttribute("simResult", simResult);
+        model.addAttribute("redirectToAnchor", true);
+        return "searchResult";
+    }
+
 
     @GetMapping("/error")
     public String errorPage() {
