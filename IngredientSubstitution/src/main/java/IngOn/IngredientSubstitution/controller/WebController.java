@@ -133,6 +133,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
         model.asMap().clear();
 
+        model.addAttribute("ingredientQuery", ingredientToCompare);
         model.addAttribute("simResult", simResult);
         model.addAttribute("redirectToAnchor", true);
         return "searchResult";

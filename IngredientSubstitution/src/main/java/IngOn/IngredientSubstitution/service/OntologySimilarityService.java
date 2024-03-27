@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
 
+    private List<Map.Entry<String, Double>> sameCategory;
+    private List<Map.Entry<String, Double>> otherCategory;
+
     public static List<Map.Entry<String, Double>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
 
         List<Map.Entry<String, Double>> similarityResult = null;
@@ -41,7 +44,7 @@ public class OntologySimilarityService {
             e.printStackTrace();
         }
 
-        System.out.println(similarityResult);
+//        System.out.println(similarityResult);
         return similarityResult;
     }
 
@@ -126,19 +129,16 @@ public class OntologySimilarityService {
         List<Map.Entry<String, Double>> sortedList = new ArrayList<>(similarityMap.entrySet());
         sortedList.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
-//        // Display top 5 most similar ingredients
-//        int count = 0;
-//        for (Map.Entry<String, Double> entry : sortedList) {
-//            if (count >= 5) {
-//                break;
-//            }
-//            if (entry.getValue() > 0.0) {
-//                System.out.println(entry.getKey() + ": " + entry.getValue());
-//                count++;
-//            }
-//        }
+        List<Map.Entry<String, Double>> filteredList = new ArrayList<>();
+        for (Map.Entry<String, Double> entry : sortedList) {
+            if (entry.getValue() > 0.75) {
+                filteredList.add(entry);
+            } else {
+                break;
+            }
+        }
 
-        return sortedList;
+        return filteredList;
     }
 
     // Calculate the cosine similarity between two strings
