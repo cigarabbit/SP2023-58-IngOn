@@ -1,0 +1,21 @@
+/** Auto-complete **/
+#suggestionList {
+    width: max-content;
+    height: 20vh;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 37px;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 15px;
+    display: none;
+}
+
+#suggestionList li {
+    list-style-type: none;
+    padding: 3px;
+}
+
+#suggestionList li:hover {
+    background-color: #84c374;
+}

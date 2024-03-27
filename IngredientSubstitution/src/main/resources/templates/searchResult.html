@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/searchResult-style.css">
+    <link rel="stylesheet" href="css/searchIngredient-style.css">
+    <script src="javascript/searchIngredient.js"></script>
 </head>
 
 <body class="background-container homepage">
@@ -66,10 +68,13 @@
                         </div>
                         <form class="input-group" id="search-form" action="/search" method="POST">
                             <input type="text" name="ingredient"
+                                   id="targetInput"
+                                   oninput="autoComplete()"
                                    class="form-control"
                                    placeholder="What kind of ingredient are you looking for?"
                                    aria-label="Search"
                                    aria-describedby="search-button">
+                            <div id="suggestionList"></div>
                             <button type="submit" class="btn btn-primary" id="search-button">Search</button>
                         </form>
                     </div>
@@ -84,27 +89,18 @@
 <hr id="page-divider">
 <div id="resultSection">
     <h2 id="resultHeader">List of Possible Substitutes for <span th:text="${ingredientQuery}"></span></h2>
-    <div class="col-md-10 mx-auto" id="resultBody">
+    <div id="resultBody">
         <div id="sameCategory">
             <h4 th:text="${categoryName}">CATEGORY</h4>
             <hr>
-            <div class="col-md-3 mx-auto resultList">
-                <ul>
-                    <li th:each="entry : ${simResult}">
-                        <span th:text="${entry.key}"></span>
-                        <!--                    <span th:text="${entry.value}"></span>-->
+            <div class="resultList">
+                <ol class="flex-container">
+                    <li th:each="entry : ${simResult}" class="flex-item">
+                        <span class="simResult-Ingredient" th:text="${entry.key}"></span>
+                        <button id="viewMoreBtn">View More...</button>
                     </li>
-                </ul>
+                </ol>
             </div>
-        </div>
-        <div id="otherCategory">
-            <h4>CATEGORY</h4>
-            <hr>
-<!--            <ul class="resultList">-->
-<!--                <li>-->
-<!--                    <span th:text="${entry.key}"></span><span th:text="${entry.value}"></span>-->
-<!--                </li>-->
-<!--            </ul>-->
         </div>
     </div>
 </div>

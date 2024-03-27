@@ -1,5 +1,4 @@
 #page-divider {
-    padding: 20px;
     border-top: 3px solid #000000;
 }
 
@@ -14,9 +13,40 @@
 }
 
 #resultBody {
-    width: 75%;
+    width: 100%;
+    margin: auto;
 }
 
-.resultList {
-    border: 2px solid grey;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.flex-item {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: left;
+    justify-content: flex-start;
+    border: 2px solid #dcdcde;
+    width: calc((100% / 3) - 150px);
+    height: max-content;
+}
+
+#viewMoreBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #515153;
+    background-color: #ffffff;
+    border: 2px solid #dcdcde;
+    border-radius: 5px;
+}
+
+.simResult-Ingredient {
+    font-weight: bold;
 }

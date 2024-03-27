@@ -9,6 +9,8 @@
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/searchIngredient-style.css">
+    <script src="javascript/searchIngredient.js"></script>
 </head>
 
 <body class="background-container homepage">
@@ -65,10 +67,13 @@
                         </div>
                         <form class="input-group" id="search-form" action="/search" method="POST">
                             <input type="text" name="ingredient"
+                                   id="targetInput"
+                                   oninput="autoComplete()"
                                    class="form-control"
                                    placeholder="What kind of ingredient are you looking for?"
                                    aria-label="Search"
                                    aria-describedby="search-button">
+                            <div id="suggestionList"></div>
                             <button type="submit" class="btn btn-primary" id="search-button">Search</button>
                         </form>
                     </div>
