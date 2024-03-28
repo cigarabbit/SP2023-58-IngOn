@@ -90,18 +90,18 @@
 <div id="resultSection">
     <h2 id="resultHeader">List of Possible Substitutes for <span th:text="${ingredientQuery}"></span></h2>
     <div id="resultBody">
-        <div id="sameCategory">
-            <h4 th:text="${categoryName}">CATEGORY</h4>
+<!--        <div id="sameCategory">-->
+<!--            <h4 th:text="${categoryName}">CATEGORY</h4>-->
             <hr>
             <div class="resultList">
                 <ol class="flex-container">
                     <li th:each="entry : ${simResult}" class="flex-item">
                         <span class="simResult-Ingredient" th:text="${entry.key}"></span>
-                        <button id="viewMoreBtn">View More...</button>
+                        <button id="viewMoreBtn">View More</button>
                     </li>
                 </ol>
             </div>
-        </div>
+<!--        </div>-->
     </div>
 </div>
 

@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('viewMoreBtn').addEventListener('click', () => {
+
+    })
+});
+
 async function loadData() {
     try {
         const response = await fetch('/data');
@@ -30,6 +36,7 @@ async function autoComplete() {
             })
 
             suggestionList.style.display = 'block';
+            suggestionList.style.zIndex = '1000';
             suggestionList.style.border = '1px solid #dee2e6';
         }
 

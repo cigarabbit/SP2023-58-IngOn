@@ -1,6 +1,5 @@
 /** Auto-complete **/
 #suggestionList {
-    width: max-content;
     height: 20vh;
     background-color: #ffffff;
     position: absolute;

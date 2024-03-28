@@ -37,6 +37,12 @@
     height: max-content;
 }
 
+.simResult-Ingredient {
+    display: flex;
+    font-weight: bold;
+    width: 65%;
+}
+
 #viewMoreBtn {
     position: absolute;
     bottom: 10px;
@@ -45,8 +51,6 @@
     background-color: #ffffff;
     border: 2px solid #dcdcde;
     border-radius: 5px;
+    width: fit-content;
 }
 
-.simResult-Ingredient {
-    font-weight: bold;
-}
