@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('viewMoreBtn').addEventListener('click', () => {
-
-    })
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     document.getElementById('viewMoreBtn').addEventListener('click', () => {
+//
+//     })
+// });
 
 async function loadData() {
     try {
@@ -22,14 +22,17 @@ async function autoComplete() {
     try {
         const data = await loadData();
 
+        if (query.length < 2) {
+            suggestionList.style.display = 'none';
+        }
         if (query.length >= 2) {
             let ingredientList = retrieveMatchIngredient(data, query);
 
             ingredientList.forEach(ingredient => {
-                let listItem = createAndAppendListItem(ingredient, suggestionList);
+                let listItem = createAndAppendListItem(ingredient.ingredient, suggestionList);
 
                 listItem.addEventListener('click', () => {
-                    document.getElementById('targetInput').value = ingredient;
+                    document.getElementById('targetInput').value = ingredient.ingredient;
 
                     suggestionList.style.display = 'none';
                 });
@@ -51,12 +54,31 @@ function retrieveMatchIngredient(data, query) {
 
     for (let category in data) {
         for (let ingredient in data[category]) {
-            if (ingredient.toLowerCase().includes(query))
-            ingredientList.push(ingredient);
+            if (ingredient.toLowerCase().includes(query)) {
+                let officialName = checkOfficialName(data, ingredient);
+
+                if (officialName) {
+                    ingredientList.push({ingredient: ingredient, officialName: officialName, category: category});
+                } else {
+                    ingredientList.push({ingredient: ingredient, category: category});
+                }
+            }
         }
     }
 
     return ingredientList;
+}
+
+
+function checkOfficialName(data, search_ingredient, category, query) {
+    if (search_ingredient["hasBenefit"] === undefined) {
+        for (let ingd in data[category]) {
+            let curr_item = data[category][ingd];
+            if (curr_item["hasBenefit"] && curr_item["hasOtherNames"] && curr_item["hasOtherNames"].includes(query)) {
+                return search_ingredient = curr_item;
+            }
+        }
+    }
 }
 
 function createAndAppendListItem(text, parent, bold = false) {
