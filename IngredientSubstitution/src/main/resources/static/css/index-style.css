@@ -12,7 +12,9 @@
 }
 
 .content {
-    width: auto;
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .section {
@@ -40,7 +42,7 @@
 
 .props-img {
     pointer-events: none;
-    width: fit-content;
+    /*width: fit-content;*/
     height: 60vh;
 }
 
