@@ -57,27 +57,25 @@
 </nav>
 <div class="container mt-3">
     <div class="row">
-        <div class="col-md-5">
-            <div class="content">
-                <div class="section">
-                    <div class="section-text">
-                        <h1 class="section-title">IngOn</h1>
-                        <h2>Don't have CARROT for your meal? Let's find your substitution ingredient!</h2>
-                        <div class="section-description">
-                            <p class="section-paragraph">We have more than 100 ingredients that can be found in Thailand to share with you, which consists of <b>11 main categories</b> based on food groups from the Bureau of Nutrition, Thailand. Find a substitution for your missing ingredients here!</p>
-                        </div>
-                        <form class="input-group" id="search-form" action="/search" method="POST">
-                            <input type="text" name="ingredient"
-                                   id="targetInput"
-                                   oninput="autoComplete()"
-                                   class="form-control"
-                                   placeholder="What kind of ingredient are you looking for?"
-                                   aria-label="Search"
-                                   aria-describedby="search-button">
-                            <div id="suggestionList"></div>
-                            <button type="submit" class="btn btn-primary" id="search-button">Search</button>
-                        </form>
+        <div class="col-md-5 content">
+            <div class="section">
+                <div class="section-text">
+                    <h1 class="section-title">IngOn</h1>
+                    <h2>Don't have CARROT for your meal? Let's find your substitution ingredient!</h2>
+                    <div class="section-description">
+                        <p class="section-paragraph">We have more than 100 ingredients that can be found in Thailand to share with you, which consists of <b>11 main categories</b> based on food groups from the Bureau of Nutrition, Thailand. Find a substitution for your missing ingredients here!</p>
                     </div>
+                    <form class="input-group" id="search-form" action="/search" method="POST">
+                        <input type="text" name="ingredient"
+                               id="targetInput"
+                               oninput="autoComplete()"
+                               class="form-control"
+                               placeholder="What kind of ingredient are you looking for?"
+                               aria-label="Search"
+                               aria-describedby="search-button">
+                        <div id="suggestionList"></div>
+                        <button type="submit" class="btn btn-primary" id="search-button">Search</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -88,7 +86,9 @@
 </div>
 <hr id="page-divider">
 <div id="resultSection">
-    <h2 id="resultHeader">List of Possible Substitutes for <span th:text="${ingredientQuery}"></span></h2>
+    <h2 id="resultHeader">List of Possible Substitutes for
+        <span th:text="${ingredientQuery}"></span>
+    </h2>
     <div id="resultBody">
 <!--        <div id="sameCategory">-->
 <!--            <h4 th:text="${categoryName}">CATEGORY</h4>-->
