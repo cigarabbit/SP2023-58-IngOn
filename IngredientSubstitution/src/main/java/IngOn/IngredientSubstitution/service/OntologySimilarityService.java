@@ -10,9 +10,6 @@ import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
 
-    private List<Map.Entry<String, Double>> sameCategory;
-    private List<Map.Entry<String, Double>> otherCategory;
-
     public static List<Map.Entry<String, Double>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
 
         List<Map.Entry<String, Double>> similarityResult = null;
@@ -36,9 +33,19 @@ public class OntologySimilarityService {
             propertiesCategory(jsonObject, "Milk", itemsList);
             propertiesCategory(jsonObject, "StarchyRoot_Tuber", itemsList);
 
-            String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
+//            String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
 
-            similarityResult = findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
+            List<String> matchingIngredientNames = findMatchingIngredientNames(ingredientToCompare, itemsList);
+            if (!matchingIngredientNames.isEmpty()) {
+                for (String matchingIngredient : matchingIngredientNames) {
+//                    System.out.println(matchingIngredient+":");
+                    String ingredientProperties = displayProperties(matchingIngredient, itemsList);
+                    similarityResult = findMostSimilarIngredients(matchingIngredient, ingredientProperties, itemsList);
+//                    System.out.println();
+                }
+            }
+
+//            similarityResult = findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
             
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -104,6 +111,20 @@ public class OntologySimilarityService {
         return properties.toString();
     }
 
+    private static List<String> findMatchingIngredientNames(String ingredientToCompare, List<String> itemsList) {
+        List<String> matchingIngredientNames = new ArrayList<>();
+
+        for (String item : itemsList) {
+            String[] parts = item.split(" = ");
+            if (parts.length >= 1) {
+                String ingredientName = parts[0];
+                if (ingredientName.toLowerCase().contains(ingredientToCompare.toLowerCase())) {
+                    matchingIngredientNames.add(ingredientName);
+                }
+            }
+        }
+        return matchingIngredientNames;
+    }
 
     private static List<Map.Entry<String, Double>> findMostSimilarIngredients(String ingredientToCompare, String ingredientProp, List<String> itemsList) {
         HashMap<String, Double> similarityMap = new HashMap<>();
