@@ -54,31 +54,13 @@ function retrieveMatchIngredient(data, query) {
 
     for (let category in data) {
         for (let ingredient in data[category]) {
-            if (ingredient.toLowerCase().includes(query)) {
-                let officialName = checkOfficialName(data, ingredient);
-
-                if (officialName) {
-                    ingredientList.push({ingredient: ingredient, officialName: officialName, category: category});
-                } else {
-                    ingredientList.push({ingredient: ingredient, category: category});
-                }
+            if (ingredient.toLowerCase().includes(query.toLowerCase())) {
+                ingredientList.push({ingredient: ingredient, category: category});
             }
         }
     }
 
     return ingredientList;
-}
-
-
-function checkOfficialName(data, search_ingredient, category, query) {
-    if (search_ingredient["hasBenefit"] === undefined) {
-        for (let ingd in data[category]) {
-            let curr_item = data[category][ingd];
-            if (curr_item["hasBenefit"] && curr_item["hasOtherNames"] && curr_item["hasOtherNames"].includes(query)) {
-                return search_ingredient = curr_item;
-            }
-        }
-    }
 }
 
 function createAndAppendListItem(text, parent, bold = false) {
