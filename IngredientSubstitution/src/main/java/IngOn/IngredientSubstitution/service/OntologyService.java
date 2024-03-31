@@ -221,4 +221,28 @@ public class OntologyService {
         return shortFormProvider.getShortForm(objectProperty);
     }
 
+    public static String findOfficialName(String ingredientName, HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts) {
+        for (Map.Entry<String, HashMap<String, HashMap<String, Set<String>>>> entry : concepts.entrySet()) {
+            String foodGroup = entry.getKey();
+            HashMap<String, HashMap<String, Set<String>>> conceptMap = entry.getValue();
+
+            if (conceptMap.containsKey(ingredientName)) {
+                HashMap<String, Set<String>> conceptValues = conceptMap.get(ingredientName);
+
+                if (conceptValues.containsKey("hasBenefit")) { // Official name
+                    return ingredientName;
+                } else {
+                    Set<String> otherNames = conceptValues.getOrDefault("hasOtherNames", new HashSet<>());
+                    for (String otherName : otherNames) {
+                        if (conceptMap.containsKey(otherName) && conceptMap.get(otherName).containsKey("hasBenefit")) {
+                            return otherName;
+                        }
+                    }
+                }
+            }
+        }
+        return ingredientName;
+    }
+
+
 }

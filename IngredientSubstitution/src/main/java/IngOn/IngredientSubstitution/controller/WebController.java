@@ -2,6 +2,7 @@ package IngOn.IngredientSubstitution.controller;
 
 import IngOn.IngredientSubstitution.service.DescriptionLogicDisplayService;
 import IngOn.IngredientSubstitution.service.OntologyConverter;
+import IngOn.IngredientSubstitution.service.OntologyService;
 import IngOn.IngredientSubstitution.service.OntologySimilarityService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.cache.annotation.Cacheable;
@@ -129,16 +130,17 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
     @PostMapping("/search")
     public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model) throws FileNotFoundException {
-        List<Map.Entry<String, Double>> simResult = OntologySimilarityService.findSubstitution(ingredientToCompare);
+        String officialName = OntologyService.findOfficialName(ingredientToCompare, concepts);
+        List<Map.Entry<String, Double>> simResult = OntologySimilarityService.findSubstitution(officialName);
 
         model.asMap().clear();
 
         model.addAttribute("ingredientQuery", ingredientToCompare);
         model.addAttribute("simResult", simResult);
         model.addAttribute("redirectToAnchor", true);
+
         return "searchResult";
     }
-
 
     @GetMapping("/error")
     public String errorPage() {
