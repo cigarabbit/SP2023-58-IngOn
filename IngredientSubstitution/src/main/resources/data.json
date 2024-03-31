@@ -579,7 +579,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "สตรอว์เบอรี่" : {
-      "hasOtherNames" : [ "Sawberry" ]
+      "hasOtherNames" : [ "Strawberry" ]
     },
     "ฝรั่งซันจู" : {
       "hasOtherNames" : [ "Sun-ju Guava" ]
@@ -1030,7 +1030,7 @@
     "ลางสาด" : {
       "hasOtherNames" : [ "Langsat" ]
     },
-    "Sawberry" : {
+    "Strawberry" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Juicy" ],
