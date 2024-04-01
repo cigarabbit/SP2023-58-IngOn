@@ -16,3 +16,12 @@
     width: 100%;
     margin: auto;
 }
+
+/* Description for list of possible substitutes in a partial search */
+#resultListSpan {
+    display: block;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
