@@ -130,18 +130,26 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
     @PostMapping("/search")
     public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model) throws FileNotFoundException {
-        String officialName = OntologyService.findOfficialName(ingredientToCompare, concepts);
-        List<Map.Entry<String, Double>> simResult = OntologySimilarityService.findSubstitution(officialName);
-
-        model.asMap().clear();
-
-        model.addAttribute("ingredientQuery", ingredientToCompare);
-        model.addAttribute("simResult", simResult);
-        model.addAttribute("redirectToAnchor", true);
-
+        findAndSetSimResult(ingredientToCompare, model);
         return "searchResult";
     }
 
+    @PostMapping("/processIngredient")
+    public String processIngredient(@RequestParam("selectedIngredient") String selectedIngredient, Model model) throws FileNotFoundException {
+        findAndSetSimResult(selectedIngredient, model);
+        return "searchResult";
+    }
+
+    public HashMap<String, List<Map.Entry<String, Double>>> findAndSetSimResult(String ingredient, Model model) throws FileNotFoundException {
+        String officialName = OntologyService.findOfficialName(ingredient, concepts);
+        HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
+
+        model.addAttribute("ingredientQuery", ingredient);
+        model.addAttribute("simResult", simResult);
+        model.addAttribute("redirectToAnchor", true);
+
+        return simResult;
+    }
     @GetMapping("/error")
     public String errorPage() {
         return "error";

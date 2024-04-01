@@ -10,9 +10,10 @@ import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
 
-    public static List<Map.Entry<String, Double>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
+    public static HashMap<String, List<Map.Entry<String, Double>>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
 
         List<Map.Entry<String, Double>> similarityResult = null;
+        HashMap<String, List<Map.Entry<String, Double>>> similarityResults = new HashMap<>();
         try {
             // src/main/resources/data.json
             String content = new Scanner(new File("IngredientSubstitution/src/main/resources/data.json")).useDelimiter("\\Z").next();
@@ -41,6 +42,7 @@ public class OntologySimilarityService {
 //                    System.out.println(matchingIngredient+":");
                     String ingredientProperties = displayProperties(matchingIngredient, itemsList);
                     similarityResult = findMostSimilarIngredients(matchingIngredient, ingredientProperties, itemsList);
+                    similarityResults.put(matchingIngredient, similarityResult);
 //                    System.out.println();
                 }
             }
@@ -51,8 +53,7 @@ public class OntologySimilarityService {
             e.printStackTrace();
         }
 
-//        System.out.println(similarityResult);
-        return similarityResult;
+        return similarityResults;
     }
 
     private static void propertiesCategory(JSONObject jsonObject, String category, List<String> itemsList) {
@@ -137,7 +138,7 @@ public class OntologySimilarityService {
                 String ingredientPro = parts[1];
                 if (!ingredientName.equals(ingredientToCompare)) {
                     double similarity = calculateCosineSimilarity(ingredientProp, ingredientPro);
-                    if (similarity > 0.0) {
+                    if (similarity > 0.00) {
                         similarityMap.put(ingredientName, similarity);
                     }
                 }
@@ -152,7 +153,7 @@ public class OntologySimilarityService {
 
         List<Map.Entry<String, Double>> filteredList = new ArrayList<>();
         for (Map.Entry<String, Double> entry : sortedList) {
-            if (entry.getValue() > 0.75) {
+            if (entry.getValue() > 0.85) {
                 filteredList.add(entry);
             } else {
                 break;
