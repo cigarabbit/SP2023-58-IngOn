@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+    initializeProperties(); // Property Filter
     SetThaiName();
     sortTopics();
     retrieveData();
@@ -7,6 +8,50 @@ window.addEventListener('load', function () {
 
 var currentSortOrder = 'asc';
 var foodGroup, colorProp, flavorProp, mineralProp, nutriProp, sugarProp, vitaProp, shapeProp, textureProp, otherNames, typeProp;
+
+function initializeProperties() {
+    let allCategories = document.querySelectorAll('.category');
+
+    allCategories.forEach((category, index) => {
+        let checkboxes = category.querySelectorAll('.checkbox-container');
+        if (checkboxes.length > 10) {
+            for (let i = 10; i < checkboxes.length; i++) {
+                checkboxes[i].style.display = 'none';
+            }
+
+            let viewMoreBtn = document.createElement('button');
+            viewMoreBtn.textContent = 'View More';
+            viewMoreBtn.setAttribute('onclick', `showMoreCheckboxes(${index})`);
+            viewMoreBtn.classList.add('view-more-btn');
+            category.appendChild(viewMoreBtn);
+        }
+
+    })
+}
+
+function showMoreCheckboxes(categoryIndex) {
+    let allCategories = document.querySelectorAll('.category');
+    allCategories.forEach((category, index) => {
+        let checkboxes = category.querySelectorAll('.checkbox-container');
+        if (index === categoryIndex) {
+            for (let i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].style.display = 'block';
+            }
+
+            category.querySelector('.view-more-btn').style.display = 'none';
+        } else {
+            for (let i = 10; i < checkboxes.length; i++) {
+                checkboxes[i].style.display = 'none';
+            }
+        }
+    });
+}
+
+
+function hideCheckbox(category) {
+    let checkboxContainer = document.querySelector('.' + category + '-container');
+    checkboxContainer.classList.toggle('hidden');
+}
 
 function sortTopics() {
     var sidebar = document.getElementById('sidebar-ingredient');
@@ -86,7 +131,7 @@ function retrieveData() {
     var contentHeader = document.querySelector('#ingredient-title');
 
     var DL_Display = document.querySelector('#DL_Syntax span');
-    var DL_Concept = document.querySelector('#DL_concept');
+    // var DL_Concept = document.querySelector('#DL_concept');
     var colorPropLi = document.querySelector('#propertyColor span');
     var flavorPropLi = document.querySelector('#propertyFlavor span');
     var shapePropLi = document.querySelector('#propertyShape span');
@@ -114,9 +159,9 @@ function retrieveData() {
 
         var clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
 
-        DL_Concept.textContent = clickedTopic;
+        let DL_Concept = clickedTopic;
+        let synName;
 
-        var synName;
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
 
@@ -127,14 +172,13 @@ function retrieveData() {
                     contentHeader.append(', ');
                     contentHeader.append(name);
 
-                    DL_Concept.append(' ≡ '); // Display in a DL syntax
-                    DL_Concept.append(name);
+                    DL_Concept += ' ≡ '; // Display in a DL syntax
+                    DL_Concept += name;
                 }
             }
         }
 
-        DL_Concept.append(' ⊑ ');
-        DL_Concept.append(foodGroup);
+        DL_Concept += ' ⊑ ' + foodGroup;
 
         var colors = colorProp[clickedTopic].join(', ');
         var flavors = flavorProp[clickedTopic].join(', ');
@@ -192,7 +236,7 @@ function retrieveData() {
             cooks = "It does not have any cooking types.";
         }
 
-        var DLSyntax = getDLSyntax(clickedTopic, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types);
+        var DLSyntax = getDLSyntax(DL_Concept, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types);
 
         DL_Display.innerHTML = '';
         colorPropLi.innerHTML = '';
@@ -284,9 +328,7 @@ function retrieveData() {
     }
 }
 
-function getDLSyntax(conceptName, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types) {
-    var syntax = conceptName;
-
+function getDLSyntax(syntax, cooks, colors, flavors, shapes, textures, minerals, nutris, sugar, vitas, benes, types) {
     function handleProperty(property, type) {
         if (property.includes(',')) {
             var propertyList = property.split(',');
