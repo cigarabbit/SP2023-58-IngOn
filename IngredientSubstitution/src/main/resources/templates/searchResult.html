@@ -97,7 +97,8 @@
         <div class="resultList">
             <ol class="flex-container">
                 <div th:if="${simResult.entrySet().size() > 1}">
-                    Your results are here, but please take a moment to provide us with more information by selecting any ingredients that are most similar to your desired ingredient.
+                    <span id="resultListSpan">Your results are here, but please take a moment to provide us with more
+                        information by selecting any ingredients that are most similar to your desired ingredient.</span>
                     <li th:each="entry : ${simResult.entrySet()}">
                         <button class="ingredientButton" th:text="${entry.key}">
                         </button>
