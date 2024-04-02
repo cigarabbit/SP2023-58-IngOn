@@ -142,6 +142,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
     public HashMap<String, List<Map.Entry<String, Double>>> findAndSetSimResult(String ingredient, Model model) throws FileNotFoundException {
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
+
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
 
         model.addAttribute("ingredientQuery", ingredient);

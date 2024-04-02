@@ -1,9 +1,23 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     document.getElementById('viewMoreBtn').addEventListener('click', () => {
-//
-//     })
-// });
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+}
+
+/** Data Retrieval **/
 async function loadData() {
     try {
         const response = await fetch('/data');
@@ -74,21 +88,58 @@ function createAndAppendListItem(text, parent, bold = false) {
     return listItem;
 }
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+function containsThai(text) {
+    const thaiRegex = /[\u0E00-\u0E7F]/; // Thai Unicode range
+    return thaiRegex.test(text);
 }
 
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('load', function () {
+    setThaiName();
+});
 
-function scrollFunction() {
-    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+async function setThaiName() {
+    let ingredientList = document.querySelectorAll('.substitution-key');
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
+    if (ingredientList) {
+        try {
+            const data = await loadData();
+
+            let ingredientTopic = document.getElementById('resultHeaderSpan');
+            let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
+
+            if (thaiTopic !== undefined) {
+                ingredientTopic.textContent += ' (' + thaiTopic + ')';
+            }
+
+            ingredientList.forEach(substitution => {
+                let englishName = substitution.textContent;
+                let thaiName = findThaiNameByEnglishName(data, englishName);
+
+                substitution.textContent += ' (' + thaiName + ')';
+            })
+
+        } catch (e) {
+            console.log(e);
+        }
+
     }
+}
+
+function findThaiNameByEnglishName(data, englishName) {
+        for (let category in data) {
+            for (let ingredient in data[category]) {
+                if (ingredient === englishName) {
+                    let curr_ingredient = data[category][ingredient];
+                    if ('hasOtherNames' in curr_ingredient) {
+                        let synName = curr_ingredient['hasOtherNames'];
+                        for (let eachName of synName) {
+                            if (containsThai(eachName)) {
+                                return eachName;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
 }

@@ -189,7 +189,6 @@ public class OntologyService {
     }
 
     public static HashMap<String, Set<String>> retrieveConceptValues(OWLOntology ontology, OWLClass cls) {
-
         HashMap<String, Set<String>> propertyList = new HashMap<>();
 
         for (OWLClassExpression superClass : cls.getSuperClasses(ontology)) {
@@ -243,6 +242,5 @@ public class OntologyService {
         }
         return ingredientName;
     }
-
 
 }

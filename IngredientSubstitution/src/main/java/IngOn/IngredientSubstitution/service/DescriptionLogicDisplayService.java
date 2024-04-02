@@ -29,6 +29,4 @@ public class DescriptionLogicDisplayService {
 
         return properties;
     }
-
-
 }
