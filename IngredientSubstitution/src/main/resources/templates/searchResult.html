@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/searchResult-style.css">
     <link rel="stylesheet" href="css/searchIngredient-style.css">
     <script src="javascript/searchIngredient.js"></script>
+    <script src="javascript/retrieveInformation.js"></script>
 </head>
 
 <body class="background-container homepage">
@@ -56,8 +57,8 @@
         </div>
     </div>
 </nav>
-<div class="container mt-3">
-    <div class="row">
+<div class="container mt-3 searchbar-index">
+    <div class="row" id="rowSearchBar-index">
         <div class="col-md-5 content">
             <div class="section">
                 <div class="section-text">
@@ -86,15 +87,18 @@
         </div>
     </div>
 </div>
-<hr id="page-divider">
-
+<!-- Result section -->
 <div id="resultSection">
     <h2 id="resultHeader">List of Possible Substitutes for
         <span th:text="${ingredientQuery}" id="resultHeaderSpan"></span>
     </h2>
+    <div th:if="${simResult.entrySet().size() == 1}">
+        <span id="simExplanation">Kindly be aware that the substitutes will be shown in order of their similarity, highest to lowest.</span>
+    </div>
     <div id="resultBody">
         <hr>
         <div class="resultList">
+            <!-- Partial search-->
             <div th:if="${simResult.entrySet().size() > 1}">
                 <span id="resultListSpan">Your results are here, but please take a moment to provide us with more
                     information by selecting any ingredients that are most similar to your desired ingredient.</span>
@@ -106,21 +110,18 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
+            <!-- Exact search-->
             <div th:unless="${simResult.entrySet().size() > 1}">
-                <li th:with="firstEntry=${simResult.entrySet().iterator().next()}">
-                    <div class="container">
-                        <div class="col-md-5">
+                <div class="container" id="resultContainer">
+                    <div class="row g-0">
+                        <div class="col-md-5 mx-auto">
                             <div class="custom-box bg sidebar">
                                 <div id="sidebar-title">
                                     <span>Ingredient List</span>
-                                    <button id="sort-button" onclick="sortTopics()">
-                                        <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png">
-                                    </button>
                                 </div>
                                 <div id="sidebar-ingredient">
-                                    <ul>
+                                    <ul th:with="firstEntry=${simResult.entrySet().iterator().next()}">
                                         <li th:each="substitution : ${firstEntry.value}">
                                             <a class="substitution-key" th:text="${substitution.key}"></a>
                                         </li>
@@ -128,11 +129,62 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-7 mx-auto">
+                            <div class="custom-box">
+                                <div id="head-content">
+                                    <div id="content-category">
+                                        <p id="foodGroupTitle"></p>
+                                        <button class="vizButton" onClick="">Visualization</button>
+                                    </div>
+                                    <h1 id="ingredient-title"></h1> <!-- Display selected ingredient name -->
+                                </div>
+                                <div id="content">
+                                    <div>
+                                        <h2 class="content-headerH2">PROPERTIES</h2>
+                                        <ul id="content-properties">
+                                            <li id="propertyColor">
+                                                <strong>Color: <span></span></strong>
+                                            </li>
+                                            <li id="propertyFlavor"><strong>Flavor: <span></span></strong></li>
+                                            <li id="propertyShape"><strong>Shape: <span></span></strong> </li>
+                                            <li id="propertyTexture"><strong>Texture: <span></span></strong> </li>
+                                            <li id="propertyType"><strong>Type: <span></span></strong></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h2 class="content-headerH2">BENEFITS</h2>
+                                        <div class="property-box" id="benefits"></div>
+                                    </div>
+                                    <div>
+                                        <h2 class="content-headerH2">COOKING TYPES</h2>
+                                        <div class="property-box" id="cooking-types"></div>
+                                    </div>
+                                    <div>
+                                        <h2 class="content-headerH2">NUTRIENT COMPOSITION</h2>
+                                        <div class="nutrient-composition">
+                                            <ul>
+                                                <li id="propMineral"><Strong>Mineral: <div></div></Strong></li>
+                                                <li id="propNutrient"><strong>Nutrient: <div></div></strong></li>
+                                                <li id="propSugar"><strong>Sugar: <div></div></strong></li>
+                                                <li id="propVitamin"><strong>Vitamin: <div></div></strong></li>
+                                            </ul>
+
+                                            <!--                        <div class="nutrient-item"></div>-->
+                                        </div>
+                                    </div>
+                                    <div id="DL_Syntax">
+                                        <h2 class="content-headerH2">DESCRIPTION LOGIC SYNTAX</h2><br>
+                                        <div id="DL_concept"></div>
+                                        <span></span>
+                                    </div>
+                                    <div id="category-imgbox">
+                                        <img id="foodtype-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </th:block>
-            </div>
-            <div th:if="${simResult.entrySet().size() == 0}">
-                We apologize, we cannot find substitutes for your ingredient.
+                </div>
             </div>
             <form id="ingredientForm" action="/processIngredient" method="post">
                 <input type="hidden" id="selectedIngredientInput" name="selectedIngredient" value="">
@@ -162,6 +214,28 @@
             document.getElementById("ingredientForm").submit();
         });
     });
+</script>
+<script th:inline="javascript">
+
+    /*<![CDATA[*/
+    var group = /*[[${foodGroup}]]*/ [];
+    var colorProp = /*[[${colorProp}]]*/ [];
+    var flavorProp = /*[[${flavorProp}]]*/ [];
+    var mineralProp = /*[[${mineralProp}]]*/ [];
+    var nutriProp = /*[[${nutriProp}]]*/ [];
+    var sugarProp = /*[[${sugarProp}]]*/ [];
+    var vitaProp = /*[[${vitaProp}]]*/ [];
+    var shapeProp = /*[[${shapeProp}]]*/ [];
+    var textureProp = /*[[${textureProp}]]*/ [];
+    var beneProp = /*[[${beneProp}]]*/ [];
+    var cookProp = /*[[${cookProp}]]*/ [];
+
+    var otherNames = /*[[${otherNames}]]*/ [];
+    var typeProp = /*[[${typeProp}]]*/ [];
+
+    setConceptList(group, colorProp, flavorProp, mineralProp, nutriProp, sugarProp, vitaProp, shapeProp, textureProp, beneProp, cookProp, otherNames, typeProp);
+
+    /*]]>*/
 </script>
 
 </body>
