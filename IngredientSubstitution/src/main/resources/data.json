@@ -8061,8 +8061,8 @@
     "กระโดนยอดอ่อน" : {
       "hasOtherNames" : [ "Kra-don Tender Tips" ]
     },
-    "มันปู" : {
-      "hasOtherNames" : [ "Young Mon Pu" ]
+    "ใบมันปู" : {
+      "hasOtherNames" : [ "Young Mon Pu Leave" ]
     },
     "Som Poi" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -9419,7 +9419,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Cylindrical" ],
-      "hasOtherNames" : [ "แครอท" ],
+      "hasOtherNames" : [ "แคร์รอต" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -10258,7 +10258,7 @@
     "ขนุนอ่อน" : {
       "hasOtherNames" : [ "Young Jackfruit" ]
     },
-    "แครอท" : {
+    "แคร์รอต" : {
       "hasOtherNames" : [ "Carrot" ]
     },
     "พริกจินดาเขียว" : {
@@ -10905,12 +10905,12 @@
       "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
-    "Young Mon Pu" : {
+    "Young Mon Pu Leave" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Broad", "Oval", "Heart Shaped" ],
-      "hasOtherNames" : [ "มันปู" ],
+      "hasOtherNames" : [ "ใบมันปู" ],
       "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Salty" ],
