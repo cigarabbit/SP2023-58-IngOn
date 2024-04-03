@@ -15,7 +15,7 @@ async function loadData() {
 
 async function setThaiName() {
     let sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
-    let ingredientList = document.querySelectorAll('.substitution-key');
+    let ingredientTopic = document.getElementById('resultHeaderSpan');
 
     if (sidebarTopics.length > 0) {
         sidebarTopics.forEach(function(topicElement) {
@@ -32,20 +32,27 @@ async function setThaiName() {
 
             }
         });
-    } else {
-        try {
-            const data = await loadData();
 
-            let ingredientTopic = document.getElementById('resultHeaderSpan');
-            let possibleIngredient = document.querySelectorAll('.ingredientButton');
 
-            if (ingredientTopic) {
+        if (ingredientTopic) {
+            try {
+                const data = await loadData();
+                
                 let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
 
                 if (thaiTopic !== undefined) {
                     ingredientTopic.textContent += ' (' + thaiTopic + ')';
                 }
+            } catch (e) {
+                console.log(e)
             }
+        }
+    } else {
+        try {
+            const data = await loadData();
+
+            let possibleIngredient = document.querySelectorAll('.ingredientButton');
+            let ingredientList = document.querySelectorAll('.substitution-key');
 
             if (possibleIngredient) {
                 possibleIngredient.forEach(button => {
