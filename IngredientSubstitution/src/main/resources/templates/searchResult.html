@@ -109,12 +109,26 @@
 
             </div>
             <div th:unless="${simResult.entrySet().size() > 1}">
-                <th:block th:with="firstEntry=${simResult.entrySet().iterator().next()}">
-                    <ol>
-                        <th:block th:each="substitution : ${firstEntry.value}">
-                            <li class="substitution-key" th:text="${substitution.key}"></li>
-                        </th:block>
-                    </ol>
+                <li th:with="firstEntry=${simResult.entrySet().iterator().next()}">
+                    <div class="container">
+                        <div class="col-md-5">
+                            <div class="custom-box bg sidebar">
+                                <div id="sidebar-title">
+                                    <span>Ingredient List</span>
+                                    <button id="sort-button" onclick="sortTopics()">
+                                        <img src="img/swap_vert_FILL0_wght400_GRAD0_opsz24.png">
+                                    </button>
+                                </div>
+                                <div id="sidebar-ingredient">
+                                    <ul>
+                                        <li th:each="substitution : ${firstEntry.value}">
+                                            <a class="substitution-key" th:text="${substitution.key}"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </th:block>
             </div>
             <div th:if="${simResult.entrySet().size() == 0}">
