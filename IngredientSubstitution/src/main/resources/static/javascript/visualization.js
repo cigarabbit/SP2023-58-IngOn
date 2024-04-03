@@ -1,3 +1,15 @@
+window.addEventListener('load', function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const params = {};
+
+    params.item = urlParams.get('queryName');
+    params.category = urlParams.get('category');
+
+    if (params) {
+        processData(params, 'normal_search', 'all');
+    }
+})
+
 function generateAlphabetTable(category) {
     let table = document.querySelector('#alphabetGroup');
     table.style.display = 'block';
@@ -447,9 +459,11 @@ function retrieveAllIngredients(data, alphabet) {
 
 function retrieveIngredientBySearch(data, name) {
     let foodGroupNode;
-    let category = name.category;
-    let ingredient = name.item;
-    let search_ingredient = data[category][ingredient];
+    let category, ingredient, search_ingredient;
+
+    category = name.category;
+    ingredient = name.item;
+    search_ingredient = data[category][ingredient];
 
     if (search_ingredient["hasBenefit"] === undefined) {
         for (let ingd in data[category]) {

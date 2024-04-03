@@ -148,6 +148,7 @@ function retrieveData () {
 
         let synName;
         let category = document.getElementById('foodGroupTitle');
+        let vizButton = document.querySelector('.vizButton');
 
         for (let ingredient in group) {
             if (ingredient === clickedTopic) {
@@ -157,6 +158,10 @@ function retrieveData () {
                 break;
             }
         }
+
+        vizButton.addEventListener('click', function () {
+            visualize(clickedTopic, category.innerHTML);
+        })
 
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
@@ -444,4 +449,8 @@ function contentHeaderColor(color) {
     [...content_headerH2].forEach(function(headerH2) {
         headerH2.style.backgroundColor = color;
     });
+}
+
+function visualize(name, category) {
+    window.location.href = `visualization?queryName=${encodeURIComponent(name)}&category=${encodeURIComponent(category)}`;
 }
