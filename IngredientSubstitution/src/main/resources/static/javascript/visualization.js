@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
     params.item = urlParams.get('queryName');
     params.category = urlParams.get('category');
 
-    if (params) {
+    if (params.item) {
         processData(params, 'normal_search', 'all');
     }
 })
