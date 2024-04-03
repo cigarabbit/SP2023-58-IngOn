@@ -17,7 +17,7 @@ async function setThaiName() {
     let sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
     let ingredientList = document.querySelectorAll('.substitution-key');
 
-    if (ingredientList.length === 0 && sidebarTopics.length > 0) {
+    if (sidebarTopics.length > 0) {
         sidebarTopics.forEach(function(topicElement) {
             let synNames = otherNames[topicElement.textContent];
 
