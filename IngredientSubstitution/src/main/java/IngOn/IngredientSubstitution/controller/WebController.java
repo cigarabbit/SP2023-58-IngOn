@@ -155,6 +155,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook", dataWithName);
         HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames", dataWithName);
         HashMap<String, Set<String>> typeProperties = DescriptionLogicDisplayService.getProperties("hasType", dataWithName);
+        HashMap<String, Set<String>> category = DescriptionLogicDisplayService.getProperties("isInCategory", dataWithName);
 
         // Properties
         model.addAttribute("colorProp", colorProperties);
@@ -169,7 +170,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         model.addAttribute("cookProp", cookProperties);
         model.addAttribute("otherNames", namesProperties);
         model.addAttribute("typeProp", typeProperties);
-
+        model.addAttribute("foodGroup", category);
 
         model.addAttribute("ingredientQuery", ingredient);
         model.addAttribute("simResult", simResult);

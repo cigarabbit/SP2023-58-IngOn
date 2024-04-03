@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
     setThaiName();
     retrieveData();
+    changeColor();
 });
 
 async function loadData() {
@@ -38,31 +39,38 @@ async function setThaiName() {
             let ingredientTopic = document.getElementById('resultHeaderSpan');
             let possibleIngredient = document.querySelectorAll('.ingredientButton');
 
-            let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
+            if (ingredientTopic) {
+                let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
 
-            if (thaiTopic !== undefined) {
-                ingredientTopic.textContent += ' (' + thaiTopic + ')';
+                if (thaiTopic !== undefined) {
+                    ingredientTopic.textContent += ' (' + thaiTopic + ')';
+                }
             }
 
-            possibleIngredient.forEach(button => {
-                let englishName = button.textContent;
-                let thaiName = findThaiNameByEnglishName(data, englishName);
+            if (possibleIngredient) {
+                possibleIngredient.forEach(button => {
+                    let englishName = button.textContent;
+                    let thaiName = findThaiNameByEnglishName(data, englishName);
 
-                if (thaiName !== undefined && !button.nextElementSibling.classList.contains('thai-name')) {
-                    button.setAttribute('data-thai-name', thaiName);
-                    button.insertAdjacentHTML('afterend', '<span class="thai-name"> (' + thaiName + ')</span>');
-                }
-            });
+                    if (thaiName !== undefined && !button.nextElementSibling.classList.contains('thai-name')) {
+                        button.setAttribute('data-thai-name', thaiName);
+                        button.insertAdjacentHTML('afterend', '<span class="thai-name"> (' + thaiName + ')</span>');
+                    }
+                });
+            }
 
-            ingredientList.forEach(substitution => {
-                let englishName = substitution.textContent;
-                let thaiName = findThaiNameByEnglishName(data, englishName);
+            if (ingredientTopic) {
+                ingredientList.forEach(substitution => {
+                    let englishName = substitution.textContent;
+                    let thaiName = findThaiNameByEnglishName(data, englishName);
 
-                if (thaiName !== undefined) {
-                    substitution.textContent += ' (' + thaiName + ')';
+                    if (thaiName !== undefined) {
+                        substitution.textContent += ' (' + thaiName + ')';
 
-                }
-            });
+                    }
+                });
+            }
+
         } catch (e) {
             console.log(e);
         }
@@ -126,7 +134,7 @@ function retrieveData () {
     var cookPropLi = document.querySelector('#cooking-types');
 
     function handleTopicClick(event) {
-        sidebarTopics.forEach(function (topic) {
+        sidebarTopics.forEach(topic => {
             topic.classList.remove('active-topic');
         });
 
@@ -138,8 +146,17 @@ function retrieveData () {
         let clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
         let DL_Concept = clickedTopic;
 
-
         let synName;
+        let category = document.getElementById('foodGroupTitle');
+
+        for (let ingredient in group) {
+            if (ingredient === clickedTopic) {
+                category.innerHTML = group[clickedTopic];
+                foodGroup = group[clickedTopic];
+                changeColor();
+                break;
+            }
+        }
 
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
@@ -337,4 +354,94 @@ function getDLSyntax(syntax, cooks, colors, flavors, shapes, textures, minerals,
     handleProperty(types, 'hasType.');
 
     return syntax;
+}
+
+function changeColor() {
+    let foodGroup = document.getElementById('foodGroupTitle');
+    let imgElement = document.getElementById('foodtype-img');
+
+    if (foodGroup && imgElement) {
+        var colorBase, colorSub;
+
+        foodGroup = foodGroup.textContent;
+
+        if (foodGroup === 'Cereal') {
+            colorBase = 'rgb(0, 55, 107)';
+            colorSub = 'rgb(0, 116, 217)';
+
+            imgElement.src = 'img/category/cereal.png';
+        } else if (foodGroup === 'Egg') {
+            colorBase = 'rgb(66, 118, 138)';
+            colorSub = 'rgb(106,176,201)';
+
+            imgElement.src = 'img/category/egg.png';
+        } else if (foodGroup === 'Fruit') {
+            colorBase = 'rgb(0, 158, 154)';
+            colorSub = 'rgb(110, 197, 193)';
+
+            imgElement.src = 'img/category/fruit.png';
+
+        } else if (foodGroup === 'Insect') {
+            colorBase = 'rgb(224, 131, 83)';
+            colorSub = 'rgb(232, 165, 132)';
+
+            imgElement.src = 'img/category/insect.png';
+        } else if (foodGroup === 'Milk') {
+            colorBase = 'rgb(216, 85, 58)';
+            colorSub = 'rgb(225, 122, 101)';
+
+            imgElement.src = 'img/category/milk.png';
+        } else if (foodGroup === 'Meat_Poultry') {
+            colorBase = 'rgb(251, 111, 146)';
+            colorSub = 'rgb(255, 143, 171)';
+
+            imgElement.src = 'img/category/meat.png';
+        } else if (foodGroup === 'Pulse_Seed_Nut') {
+            colorBase = 'rgb(161,29,51)';
+            colorSub = 'rgb(218, 30, 55)';
+
+            imgElement.src = 'img/category/Pulse_Seed_Nut.png';
+        } else if (foodGroup === 'Shellfish') {
+            colorBase = 'rgb(193, 163, 222)';
+            colorSub = 'rgb(201, 163, 205)';
+
+            imgElement.src = 'img/category/Shellfish.png';
+        } else if (foodGroup === 'Spice_Condiment') {
+            colorBase = 'rgb(191, 161, 61)';
+            colorSub = 'rgb(173, 159, 114)';
+
+            imgElement.src = 'img/category/Spice_Condiment.png';
+        } else if (foodGroup === 'StarchyRoot_Tuber') {
+            colorBase = 'rgb(0, 153, 77)';
+            colorSub = 'rgb(0, 179, 119)';
+
+            imgElement.src = 'img/category/StarchyRoot_Tuber.png';
+        } else if (foodGroup === 'Vegetable') {
+            colorBase = 'rgb(134, 55, 143)';
+            colorSub = 'rgb(188,94,199)';
+
+            imgElement.src = 'img/category/Vegetable.png';
+        }
+
+        headerColor(colorBase);
+        contentHeaderColor(colorSub);
+    }
+}
+
+function headerColor(color) {
+    var content_category = document.getElementById('foodGroupTitle');
+    var content_header = document.getElementById('ingredient-title');
+    content_category.style.backgroundColor = color;
+    content_category.style.color = '#ffffff';
+
+    content_header.style.backgroundColor = color;
+    content_header.style.color = '#ffffff';
+}
+
+function contentHeaderColor(color) {
+    var content_headerH2 = document.getElementsByClassName('content-headerH2');
+
+    [...content_headerH2].forEach(function(headerH2) {
+        headerH2.style.backgroundColor = color;
+    });
 }
