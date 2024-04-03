@@ -1,3 +1,7 @@
+window.addEventListener('load', function () {
+    setThaiName();
+});
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -88,58 +92,4 @@ function createAndAppendListItem(text, parent, bold = false) {
     return listItem;
 }
 
-function containsThai(text) {
-    const thaiRegex = /[\u0E00-\u0E7F]/; // Thai Unicode range
-    return thaiRegex.test(text);
-}
 
-window.addEventListener('load', function () {
-    setThaiName();
-});
-
-async function setThaiName() {
-    let ingredientList = document.querySelectorAll('.substitution-key');
-
-    if (ingredientList) {
-        try {
-            const data = await loadData();
-
-            let ingredientTopic = document.getElementById('resultHeaderSpan');
-            let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
-
-            if (thaiTopic !== undefined) {
-                ingredientTopic.textContent += ' (' + thaiTopic + ')';
-            }
-
-            ingredientList.forEach(substitution => {
-                let englishName = substitution.textContent;
-                let thaiName = findThaiNameByEnglishName(data, englishName);
-
-                substitution.textContent += ' (' + thaiName + ')';
-            })
-
-        } catch (e) {
-            console.log(e);
-        }
-
-    }
-}
-
-function findThaiNameByEnglishName(data, englishName) {
-        for (let category in data) {
-            for (let ingredient in data[category]) {
-                if (ingredient === englishName) {
-                    let curr_ingredient = data[category][ingredient];
-                    if ('hasOtherNames' in curr_ingredient) {
-                        let synName = curr_ingredient['hasOtherNames'];
-                        for (let eachName of synName) {
-                            if (containsThai(eachName)) {
-                                return eachName;
-                            }
-                        }
-                    }
-                }
-
-            }
-        }
-}
