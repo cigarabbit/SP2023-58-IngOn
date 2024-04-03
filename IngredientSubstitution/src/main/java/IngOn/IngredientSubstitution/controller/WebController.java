@@ -68,22 +68,18 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
         HashMap<String, HashMap<String, Set<String>>> conceptList = concepts.get(selectedId); // specific category
 
-        DescriptionLogicDisplayService.setConceptList(conceptList);
-
-        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getProperties("hasColor");
-        HashMap<String, Set<String>> flavorProperties = DescriptionLogicDisplayService.getProperties("hasFlavor");
-        HashMap<String, Set<String>> shapeProperties = DescriptionLogicDisplayService.getProperties("hasShape");
-        HashMap<String, Set<String>> textureProperties = DescriptionLogicDisplayService.getProperties("hasTexture");
-        HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral");
-        HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient");
-        HashMap<String, Set<String>> sugarProp = DescriptionLogicDisplayService.getProperties("hasSugar");
-        HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin");
-        HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit");
-        HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook");
-        HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames");
-        HashMap<String, Set<String>> typeProperties = DescriptionLogicDisplayService.getProperties("hasType");
-
-        // logger.info("Concept List: {}", Arrays.toString(formattedConceptList));
+        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getProperties("hasColor", conceptList);
+        HashMap<String, Set<String>> flavorProperties = DescriptionLogicDisplayService.getProperties("hasFlavor", conceptList);
+        HashMap<String, Set<String>> shapeProperties = DescriptionLogicDisplayService.getProperties("hasShape", conceptList);
+        HashMap<String, Set<String>> textureProperties = DescriptionLogicDisplayService.getProperties("hasTexture", conceptList);
+        HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral", conceptList);
+        HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient", conceptList);
+        HashMap<String, Set<String>> sugarProp = DescriptionLogicDisplayService.getProperties("hasSugar", conceptList);
+        HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin", conceptList);
+        HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit", conceptList);
+        HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook", conceptList);
+        HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames", conceptList);
+        HashMap<String, Set<String>> typeProperties = DescriptionLogicDisplayService.getProperties("hasType", conceptList);
 
         model.addAttribute("foodGroup", selectedId);
         model.addAttribute("conceptList", conceptList);
@@ -140,17 +136,58 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         return "searchResult";
     }
 
-    public HashMap<String, List<Map.Entry<String, Double>>> findAndSetSimResult(String ingredient, Model model) throws FileNotFoundException {
+    public void findAndSetSimResult(String ingredient, Model model) throws FileNotFoundException {
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
-
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
+        Set<String> resultList = retrieveKeysFromEntries(simResult);
+
+        HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(resultList, concepts);
+
+        HashMap<String, Set<String>> colorProperties = DescriptionLogicDisplayService.getProperties("hasColor", dataWithName);
+        HashMap<String, Set<String>> flavorProperties = DescriptionLogicDisplayService.getProperties("hasFlavor", dataWithName);
+        HashMap<String, Set<String>> shapeProperties = DescriptionLogicDisplayService.getProperties("hasShape", dataWithName);
+        HashMap<String, Set<String>> textureProperties = DescriptionLogicDisplayService.getProperties("hasTexture", dataWithName);
+        HashMap<String, Set<String>> mineralProperties = DescriptionLogicDisplayService.getProperties("hasMineral", dataWithName);
+        HashMap<String, Set<String>> nutriProperties = DescriptionLogicDisplayService.getProperties("hasNutrient", dataWithName);
+        HashMap<String, Set<String>> sugarProp = DescriptionLogicDisplayService.getProperties("hasSugar", dataWithName);
+        HashMap<String, Set<String>> vitaProperties = DescriptionLogicDisplayService.getProperties("hasVitamin", dataWithName);
+        HashMap<String, Set<String>> beneProperties = DescriptionLogicDisplayService.getProperties("hasBenefit", dataWithName);
+        HashMap<String, Set<String>> cookProperties = DescriptionLogicDisplayService.getProperties("canCook", dataWithName);
+        HashMap<String, Set<String>> namesProperties = DescriptionLogicDisplayService.getProperties("hasOtherNames", dataWithName);
+        HashMap<String, Set<String>> typeProperties = DescriptionLogicDisplayService.getProperties("hasType", dataWithName);
+
+        // Properties
+        model.addAttribute("colorProp", colorProperties);
+        model.addAttribute("flavorProp", flavorProperties);
+        model.addAttribute("shapeProp", shapeProperties);
+        model.addAttribute("textureProp", textureProperties);
+        model.addAttribute("mineralProp", mineralProperties);
+        model.addAttribute("nutriProp", nutriProperties);
+        model.addAttribute("sugarProp", sugarProp);
+        model.addAttribute("vitaProp", vitaProperties);
+        model.addAttribute("beneProp", beneProperties);
+        model.addAttribute("cookProp", cookProperties);
+        model.addAttribute("otherNames", namesProperties);
+        model.addAttribute("typeProp", typeProperties);
+
 
         model.addAttribute("ingredientQuery", ingredient);
         model.addAttribute("simResult", simResult);
         model.addAttribute("redirectToAnchor", true);
-
-        return simResult;
     }
+
+    public static Set<String> retrieveKeysFromEntries(HashMap<String, List<Map.Entry<String, Double>>> simResult) {
+        Set<String> keys = new HashSet<>();
+
+        for (List<Map.Entry<String, Double>> entryList : simResult.values()) {
+            for (Map.Entry<String, Double> entry : entryList) {
+                keys.add(entry.getKey());
+            }
+        }
+
+        return keys;
+    }
+
     @GetMapping("/error")
     public String errorPage() {
         return "error";
