@@ -6476,7 +6476,7 @@
       "hasOtherNames" : [ "Sweet Pea" ]
     },
     "เต้าหู้ขาว" : {
-      "hasOtherNames" : [ "Soybean Curd" ]
+      "hasOtherNames" : [ "White Soybean Curd" ]
     },
     "เนื้อมะพร้าว" : {
       "hasOtherNames" : [ "Coconut Meat" ]
@@ -6798,7 +6798,7 @@
     "ถั่วแระต้ม" : {
       "hasOtherNames" : [ "Boiled Soybean" ]
     },
-    "Soybean Curd" : {
+    "White Soybean Curd" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Silky", "Creamy" ],
       "hasColor" : [ "White" ],
@@ -7188,7 +7188,7 @@
       "hasOtherNames" : [ "Black Gram" ]
     },
     "White Tofu" : {
-      "hasOtherNames" : [ "Soybean Curd" ]
+      "hasOtherNames" : [ "White Soybean Curd" ]
     },
     "Mung Bean Flour" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
