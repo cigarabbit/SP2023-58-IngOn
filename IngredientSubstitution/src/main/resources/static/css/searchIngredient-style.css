@@ -18,3 +18,21 @@
 #suggestionList li:hover {
     background-color: #84c374;
 }
+
+#search-type {
+    background: none;
+    border: none;
+    color: #0070b7;
+    text-decoration: underline;
+}
+
+#property-form {
+    display: none;
+}
+
+.custom-select {
+    height: 100%;
+    border: 1px solid #dee2e6;
+    text-align: center;
+    border-radius: 0;
+}

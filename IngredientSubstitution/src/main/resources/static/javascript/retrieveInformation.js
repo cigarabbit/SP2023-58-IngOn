@@ -37,7 +37,6 @@ async function setThaiName() {
         if (ingredientTopic) {
             try {
                 const data = await loadData();
-                
                 let thaiTopic = findThaiNameByEnglishName(data, ingredientTopic.textContent);
 
                 if (thaiTopic !== undefined) {

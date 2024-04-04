@@ -7,6 +7,7 @@
     <title>IngOn: Thai Ingredient Substitution</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/searchIngredient-style.css">
@@ -65,17 +66,64 @@
                     <div class="section-description">
                         <p class="section-paragraph">We have more than 100 ingredients that can be found in Thailand to share with you, which consists of <b>11 main categories</b> based on food groups from the Bureau of Nutrition, Thailand. Find a substitution for your missing ingredients here!</p>
                     </div>
-                    <form class="input-group" id="search-form" action="/search" method="POST">
-                        <input type="text" name="ingredient"
-                               id="targetInput"
-                               oninput="autoComplete()"
-                               class="form-control"
-                               placeholder="What kind of ingredient are you looking for?"
-                               aria-label="Search"
-                               aria-describedby="search-button">
-                        <div id="suggestionList"></div>
-                        <button type="submit" class="btn btn-primary" id="search-button">Search</button>
-                    </form>
+                    <div id="search-box">
+                        <!-- Search by ingredient -->
+                        <form class="input-group" id="search-form" action="/search" method="POST">
+                            <input type="text" name="ingredient"
+                                   id="targetInput"
+                                   oninput="autoComplete()"
+                                   class="form-control"
+                                   placeholder="What kind of ingredient are you looking for?"
+                                   aria-label="Search"
+                                   aria-describedby="search-button">
+                            <div id="suggestionList"></div>
+                            <button type="submit" class="btn btn-primary search-button">Search</button>
+                        </form>
+                        <!-- Search by category and property-->
+                        <form class="input-group" id="property-form" action="/" method="POST">
+                            <div class="input-group-dropdown">
+                                <select class="custom-select" id="propertyMenu">
+                                    <option value="hasBenefit">Benefit</option>
+                                    <option value="hasColor">Color</option>
+                                    <option value="canCook">Cooking Type</option>
+                                    <option value="hasMineral">Mineral</option>
+                                    <option value="hasNutrient">Nutrient</option>
+                                    <option value="hasShape">Shape</option>
+                                    <option value="hasSugar">Sugar</option>
+                                    <option value="hasTexture">Texture</option>
+                                    <option value="hasVitamin">Vitamin</option>
+                                </select>
+                            </div>
+                            <div id="categoryField">
+                                <select class="custom-select" id="categoryMenu">
+                                    <option value="Cereal">Cereal</option>
+                                    <option value="Egg">Egg</option>
+                                    <option value="Fruit">Fruit</option>
+                                    <option value="Insect">Insect</option>
+                                    <option value="Milk">Milk</option>
+                                    <option value="Meat_Poultry">Meat/Poultry</option>
+                                    <option value="Pulse_Seed_Nut">Pulse/Seed/Nut</option>
+                                    <option value="Shellfish">Shellfish</option>
+                                    <option value="Spice_Condiment">Spice</option>
+                                    <option value="StarchyRoot_Tuber">Starchy Root/Tuber</option>
+                                    <option value="Vegetable">Vegetable</option>
+                                </select>
+                            </div>
+                            <div id="addedInputField">
+                                <input type="text"
+                                       id="propertyNode"
+                                       name="propertyNode"
+                                       class="form-control"
+                                       placeholder="Search properties..."
+                                       oninput="autoComplete()"
+                                />
+                            </div>
+                            <button class="btn btn-outline-secondary border border-left-0" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </form>
+                        <button id="search-type">Or do you want to search by a category and property?</button>
+                    </div>
                 </div>
             </div>
         </div>

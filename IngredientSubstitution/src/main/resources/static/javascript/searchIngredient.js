@@ -1,5 +1,21 @@
 window.addEventListener('load', function () {
     setThaiName();
+
+    let searchType = document.getElementById('search-type');
+    let searchForm = document.getElementById('search-form');
+    let propertyForm = document.getElementById('property-form');
+
+    searchType.addEventListener('click', function () {
+        if (searchType.textContent === 'Or do you want to search by a category and property?') {
+            searchForm.style.display = 'none';
+            propertyForm.style.display = 'flex';
+            searchType.innerHTML = 'Want to search by ingredient name?';
+        } else {
+            searchType.innerHTML = 'Or do you want to search by a category and property?';
+            searchForm.style.display = 'flex';
+            propertyForm.style.display = 'none';
+        }
+    })
 });
 
 function scrollToTop() {

@@ -224,13 +224,19 @@
     text-align: justify;
     display: inline-block;
     justify-content: center;
+    height: 2em;
 }
 
 #DL_concept {
     font-weight: bolder;
 }
 
-#foodtype-img {
+#category-imgbox {
+    display: flex;
+    justify-content: center;
+}
+
+img #foodtype-img {
     pointer-events: none;
     margin: auto;
     max-width: 70%;
