@@ -17,7 +17,6 @@ import java.util.*;
 @Service
 public class OntologyService {
     private static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> allConceptNames = new HashMap<>();
-    private static HashMap<String, HashMap<String, Set<String>>> conceptWithValues = new HashMap<>();
 
     private static String base_IRI = "http://www.semanticweb.org/acer/ontologies/2023/9/ThaiIngredients-v4#";
 
@@ -76,7 +75,6 @@ public class OntologyService {
                         equivalentClassNames.add(getShortForm((OWLClass) expression));
                     }
                 }
-//                System.out.println(className + ": " + equivalentClasses);
 
                 HashMap<String, Set<String>> concept_val = retrieveConceptValues(ontology, cls);
 
