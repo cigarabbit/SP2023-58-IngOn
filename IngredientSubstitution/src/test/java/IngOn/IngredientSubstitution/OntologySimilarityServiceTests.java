@@ -106,7 +106,7 @@ public class OntologySimilarityServiceTests {
     }
 
     /**
-     * A method to verify that the term frequency before calculating cosine similarity.
+     * A method to verify that the term frequency is computed correctly before calculating cosine similarity.
      */
     @Test
     public void testCalculateTermFrequency() {
@@ -148,6 +148,9 @@ public class OntologySimilarityServiceTests {
         assertEquals(expectedResult2, termFrequency2);
     }
 
+    /**
+     * A method to verify the cosine similarity computation of two ingredients.
+     */
     @Test
     public void testCalculateCosineSimilarity() {
         // Test Data
