@@ -174,12 +174,12 @@ public class OntologySimilarityService {
     }
 
     // Calculate the cosine similarity between two strings
-    private static double calculateCosineSimilarity(String str1, String str2) {
+    public static double calculateCosineSimilarity(String str1, String str2) {
         List<CharSequence> terms1 = tokenize(str1);
         List<CharSequence> terms2 = tokenize(str2);
 
-        System.out.print(terms1+"\n");
-        System.out.print(terms2+"\n");
+//        System.out.print(terms1+"\n");
+//        System.out.print(terms2+"\n");
 
         Map<CharSequence, Integer> termFrequency1 = calculateTermFrequency(terms1);
         Map<CharSequence, Integer> termFrequency2 = calculateTermFrequency(terms2);

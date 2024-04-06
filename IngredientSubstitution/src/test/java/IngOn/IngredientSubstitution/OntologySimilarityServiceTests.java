@@ -155,7 +155,19 @@ public class OntologySimilarityServiceTests {
 
     @Test
     public void testCalculateCosineSimilarity() {
+        // Test Data
+        String ingredient1 = "Krill";
+        List<String> matchingIngredients1 = OntologySimilarityService.findMatchingIngredientNames(ingredient1, ingredientList);
+        String ingredientProperties1 = OntologySimilarityService.displayProperties(matchingIngredients1.get(0), ingredientList);
 
+        String ingredient2 = "Julliens Mud Carp";
+        List<String> matchingIngredients = OntologySimilarityService.findMatchingIngredientNames(ingredient2, ingredientList);
+        String ingredientProperties2 = OntologySimilarityService.displayProperties(matchingIngredients.get(0), ingredientList);
+
+        double expectedResult = 0.9146591207600472;
+        double actualResult = OntologySimilarityService.calculateCosineSimilarity(ingredientProperties1, ingredientProperties2);
+
+        assertEquals(expectedResult, actualResult, 3);
     }
 
 }
