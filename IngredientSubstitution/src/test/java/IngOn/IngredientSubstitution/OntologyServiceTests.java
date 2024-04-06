@@ -18,12 +18,26 @@ public class OntologyServiceTests {
     //    private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
     private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
 
+    private OWLOntology createMockOWLOntology() {
+        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
+        OWLOntology ontology = null;
+        try {
+            ontology = manager.loadOntologyFromOntologyDocument(IRI.create(owlFile));
+
+        } catch (OWLOntologyCreationException e) {
+            e.printStackTrace();
+        }
+
+        return ontology;
+    }
+
     /**
      * A method to verify that it retrieves ingredients from ontology correctly.
      */
     @Test
     public void testRetrieveConceptName() {
 
+        // Arrangement
         OWLOntology ontology = createMockOWLOntology();
         String foodGroup = "Insect";
 
@@ -62,19 +76,6 @@ public class OntologyServiceTests {
         assertTrue(insectBenefits.contains("HealthPotential"));
         assertTrue(insectOtherNames.contains("ตั๊กแตนปาทังกาทอด"));
 
-    }
-
-    private OWLOntology createMockOWLOntology() {
-        OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-        OWLOntology ontology = null;
-        try {
-            ontology = manager.loadOntologyFromOntologyDocument(IRI.create(owlFile));
-
-        } catch (OWLOntologyCreationException e) {
-            e.printStackTrace();
-        }
-
-        return ontology;
     }
 
 }
