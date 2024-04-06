@@ -3,13 +3,8 @@ package IngOn.IngredientSubstitution;
 import static org.junit.Assert.*;
 
 import IngOn.IngredientSubstitution.service.OntologySimilarityService;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import org.apache.commons.text.similarity.CosineSimilarity;
 import java.util.*;
 
 public class OntologySimilarityServiceTests {
