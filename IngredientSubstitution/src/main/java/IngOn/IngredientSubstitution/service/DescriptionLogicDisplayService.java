@@ -58,21 +58,4 @@ public class DescriptionLogicDisplayService {
         return dataWithName;
     }
 
-    public static HashMap<String, Set<String>> getPropsByIngredientName(String type, HashMap<String, HashMap<String, Set<String>>> dataWithName) {
-        HashMap<String, Set<String>> properties = new HashMap<>();
-
-        for (Map.Entry<String, HashMap<String, Set<String>>> entry : dataWithName.entrySet()) {
-            String conceptName = entry.getKey();
-            HashMap<String, Set<String>> propertyMap = entry.getValue();
-
-            if (propertyMap.containsKey(type)) {
-                Set<String> propSet = propertyMap.get(type);
-
-                properties.put(conceptName, propSet);
-            }
-        }
-
-        return properties;
-    }
-
 }
