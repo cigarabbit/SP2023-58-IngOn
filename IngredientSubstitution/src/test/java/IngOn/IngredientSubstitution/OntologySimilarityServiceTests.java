@@ -153,19 +153,30 @@ public class OntologySimilarityServiceTests {
      */
     @Test
     public void testCalculateCosineSimilarity() {
-        // Test Data
+        // Test Data: Case 1 Krill & Julliens Mud Carp
         String ingredient1 = "Krill";
         List<String> matchingIngredients1 = OntologySimilarityService.findMatchingIngredientNames(ingredient1, ingredientList);
         String ingredientProperties1 = OntologySimilarityService.displayProperties(matchingIngredients1.get(0), ingredientList);
 
         String ingredient2 = "Julliens Mud Carp";
-        List<String> matchingIngredients = OntologySimilarityService.findMatchingIngredientNames(ingredient2, ingredientList);
-        String ingredientProperties2 = OntologySimilarityService.displayProperties(matchingIngredients.get(0), ingredientList);
+        List<String> matchingIngredients2 = OntologySimilarityService.findMatchingIngredientNames(ingredient2, ingredientList);
+        String ingredientProperties2 = OntologySimilarityService.displayProperties(matchingIngredients2.get(0), ingredientList);
 
-        double expectedResult = 0.9146591207600472;
-        double actualResult = OntologySimilarityService.calculateCosineSimilarity(ingredientProperties1, ingredientProperties2);
+        double expectedResult1 = 0.9146591207600472;
+        double actualResult1 = OntologySimilarityService.calculateCosineSimilarity(ingredientProperties1, ingredientProperties2);
 
-        assertEquals(expectedResult, actualResult, 3);
+        assertEquals(expectedResult1, actualResult1, 3);
+
+        // Test Data: Case 2 Krill & Abalone
+        String ingredient3 = "Abalone";
+        List<String> matchingIngredients3 = OntologySimilarityService.findMatchingIngredientNames(ingredient3, ingredientList);
+        String ingredientProperties3 = OntologySimilarityService.displayProperties(matchingIngredients3.get(0), ingredientList);
+
+        double expectedResult2 = 0.9095085938862486;
+        double actualResult2 = OntologySimilarityService.calculateCosineSimilarity(ingredientProperties1, ingredientProperties3);
+
+        assertEquals(expectedResult2, actualResult2, 3);
+
     }
 
 }
