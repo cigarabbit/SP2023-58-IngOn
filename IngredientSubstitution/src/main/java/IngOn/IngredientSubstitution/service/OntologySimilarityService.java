@@ -53,6 +53,7 @@ public class OntologySimilarityService {
             for (String matchingIngredient : matchingIngredientNames) {
 //              System.out.println(matchingIngredient+":");
                 String ingredientProperties = displayProperties(matchingIngredient, itemsList);
+//                System.out.println(ingredientProperties);
 
                 similarityResult = findMostSimilarIngredients(matchingIngredient, ingredientProperties, itemsList);
                 similarityResults.put(matchingIngredient, similarityResult);
@@ -104,7 +105,7 @@ public class OntologySimilarityService {
         return thaiPattern.matcher(str).find();
     }
 
-    private static String displayProperties(String ingredientName, List<String> itemsList) {
+    public static String displayProperties(String ingredientName, List<String> itemsList) {
         StringBuilder properties = new StringBuilder();
         boolean found = false;
         for (String item : itemsList) {
@@ -174,11 +175,11 @@ public class OntologySimilarityService {
 
     // Calculate the cosine similarity between two strings
     private static double calculateCosineSimilarity(String str1, String str2) {
-        List<CharSequence> terms1 = Arrays.asList(str1.toLowerCase().split("\\s+"));
-        List<CharSequence> terms2 = Arrays.asList(str2.toLowerCase().split("\\s+"));
+        List<CharSequence> terms1 = tokenize(str1);
+        List<CharSequence> terms2 = tokenize(str2);
 
-        //System.out.print(terms1+"\n");
-        //System.out.print(terms2+"\n");
+        System.out.print(terms1+"\n");
+        System.out.print(terms2+"\n");
 
         Map<CharSequence, Integer> termFrequency1 = calculateTermFrequency(terms1);
         Map<CharSequence, Integer> termFrequency2 = calculateTermFrequency(terms2);
@@ -191,11 +192,16 @@ public class OntologySimilarityService {
     }
 
     // Calculate the term frequency of terms in a list
-    private static Map<CharSequence, Integer> calculateTermFrequency(List<CharSequence> terms) {
+    public static Map<CharSequence, Integer> calculateTermFrequency(List<CharSequence> terms) {
         Map<CharSequence, Integer> termFrequency = new HashMap<>();
         for (CharSequence term : terms) {
             termFrequency.put(term, termFrequency.getOrDefault(term, 0) + 1);
         }
         return termFrequency;
+    }
+
+    // Tokenize given string into an array of terms
+    public static List<CharSequence> tokenize(String input) {
+        return Arrays.asList(input.toLowerCase().split("\\s+"));
     }
 }
