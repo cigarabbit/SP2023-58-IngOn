@@ -2,6 +2,7 @@ package IngOn.IngredientSubstitution.service;
 
 import org.apache.commons.text.similarity.CosineSimilarity;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -9,18 +10,16 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 public class OntologySimilarityService {
+//    private static final String FILE_PATH = "src/main/resources/data.json";
+    private static final String FILE_PATH = "IngredientSubstitution/src/main/resources/data.json";
 
-    public static HashMap<String, List<Map.Entry<String, Double>>> findSubstitution(String ingredientToCompare) throws FileNotFoundException {
+    public static List<String> setUp(String FILE_PATH) {
+        List<String> itemsList = new ArrayList<>();
 
-        List<Map.Entry<String, Double>> similarityResult = null;
-        HashMap<String, List<Map.Entry<String, Double>>> similarityResults = new HashMap<>();
         try {
-            // src/main/resources/data.json
-            String content = new Scanner(new File("IngredientSubstitution/src/main/resources/data.json")).useDelimiter("\\Z").next();
+            String content = new Scanner(new File(FILE_PATH)).useDelimiter("\\Z").next();
 
             JSONObject jsonObject = new JSONObject(content);
-
-            List<String> itemsList = new ArrayList<>();
 
             propertiesCategory(jsonObject, "Egg", itemsList);
             propertiesCategory(jsonObject, "Fruit", itemsList);
@@ -34,51 +33,60 @@ public class OntologySimilarityService {
             propertiesCategory(jsonObject, "Milk", itemsList);
             propertiesCategory(jsonObject, "StarchyRoot_Tuber", itemsList);
 
-//            String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
-
-            List<String> matchingIngredientNames = findMatchingIngredientNames(ingredientToCompare, itemsList);
-            if (!matchingIngredientNames.isEmpty()) {
-                for (String matchingIngredient : matchingIngredientNames) {
-//                    System.out.println(matchingIngredient+":");
-                    String ingredientProperties = displayProperties(matchingIngredient, itemsList);
-                    similarityResult = findMostSimilarIngredients(matchingIngredient, ingredientProperties, itemsList);
-                    similarityResults.put(matchingIngredient, similarityResult);
-//                    System.out.println();
-                }
-            }
-
-//            similarityResult = findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
-            
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException | JSONException e) {
             e.printStackTrace();
         }
+
+        return itemsList;
+    }
+
+    public static HashMap<String, List<Map.Entry<String, Double>>> findSubstitution(String ingredientToCompare) {
+
+        List<Map.Entry<String, Double>> similarityResult;
+        HashMap<String, List<Map.Entry<String, Double>>> similarityResults = new HashMap<>();
+
+        List<String> itemsList = setUp(FILE_PATH);
+//      String ingredientProperties = displayProperties(ingredientToCompare, itemsList);
+
+        List<String> matchingIngredientNames = findMatchingIngredientNames(ingredientToCompare, itemsList);
+        if (!matchingIngredientNames.isEmpty()) {
+            for (String matchingIngredient : matchingIngredientNames) {
+//              System.out.println(matchingIngredient+":");
+                String ingredientProperties = displayProperties(matchingIngredient, itemsList);
+
+                similarityResult = findMostSimilarIngredients(matchingIngredient, ingredientProperties, itemsList);
+                similarityResults.put(matchingIngredient, similarityResult);
+//              System.out.println();
+            }
+        }
+
+//      similarityResult = findMostSimilarIngredients(ingredientToCompare, ingredientProperties, itemsList);
 
         return similarityResults;
     }
 
-    private static void propertiesCategory(JSONObject jsonObject, String category, List<String> itemsList) {
+    private static void propertiesCategory(JSONObject jsonObject, String category, List<String> itemsList) throws JSONException {
         JSONObject categoryObject = jsonObject.getJSONObject(category);
-        for (String itemName : categoryObject.keySet()) {
-            if (containsThaiCharacters(itemName)) {
-                continue;
+
+        JSONArray keys = categoryObject.names();
+        if (keys != null) {
+            for (int i = 0; i < keys.length(); i++) {
+                String itemName = keys.getString(i);
+                if (containsThaiCharacters(itemName)) {
+                    continue;
+                }
+                JSONObject item = categoryObject.getJSONObject(itemName);
+                StringBuilder itemProperties = new StringBuilder();
+                itemProperties.append(itemName).append(" = ");
+                for (String s : Arrays.asList("hasBenefit", "hasSugar", "hasTexture", "hasColor", "hasShape", "hasMineral", "hasFlavor", "hasVitamin", "hasNutrient")) {
+                    addJSONArrayToString(item, s, itemProperties);
+                }
+                itemsList.add(itemProperties.toString());
             }
-            JSONObject item = categoryObject.getJSONObject(itemName);
-            StringBuilder itemProperties = new StringBuilder();
-            itemProperties.append(itemName).append(" = ");
-            addJSONArrayToString(item, "hasBenefit", itemProperties);
-            addJSONArrayToString(item, "hasSugar", itemProperties);
-            addJSONArrayToString(item, "hasTexture", itemProperties);
-            addJSONArrayToString(item, "hasColor", itemProperties);
-            addJSONArrayToString(item, "hasShape", itemProperties);
-            addJSONArrayToString(item, "hasMineral", itemProperties);
-            addJSONArrayToString(item, "hasFlavor", itemProperties);
-            addJSONArrayToString(item, "hasVitamin", itemProperties);
-            addJSONArrayToString(item, "hasNutrient", itemProperties);
-            itemsList.add(itemProperties.toString());
         }
     }
 
-    private static void addJSONArrayToString(JSONObject jsonObject, String key, StringBuilder stringBuilder) {
+    private static void addJSONArrayToString(JSONObject jsonObject, String key, StringBuilder stringBuilder) throws JSONException {
         if (jsonObject.has(key)) {
             JSONArray array = jsonObject.getJSONArray(key);
             for (int i = 0; i < array.length(); i++) {
@@ -112,7 +120,7 @@ public class OntologySimilarityService {
         return properties.toString();
     }
 
-    private static List<String> findMatchingIngredientNames(String ingredientToCompare, List<String> itemsList) {
+    public static List<String> findMatchingIngredientNames(String ingredientToCompare, List<String> itemsList) {
         List<String> matchingIngredientNames = new ArrayList<>();
 
         for (String item : itemsList) {
@@ -124,6 +132,7 @@ public class OntologySimilarityService {
                 }
             }
         }
+
         return matchingIngredientNames;
     }
 
