@@ -25,11 +25,11 @@ public class OntologySimilarityServiceTests {
     @Test
     public void testFindMatchingIngredientNames() {
         // Test Data
-        String ingredientToCompare = "Banana";
+        String ingredientToCompare1 = "Banana";
+        String ingredientToCompare2 = "Red Holy Basil";
 
         // Expected Results
-        List<String> expectedResults = new ArrayList<>();
-        expectedResults.addAll(Arrays.asList(
+        List<String> expectedResults1 = new ArrayList<>(Arrays.asList(
                 "Leb-muenang Banana", "Nom Sao Banana", "Khai Phama Banana", "Hom Banana", "Khai Banana", "Hom-jumpa Banana",
                 "Saba Banana", "Thepparot Banana", "Pisang Awak Banana", "Takhui Banana", "Nang Phaya Banana", "Nha Chang Banana",
                 "Nam-chiangrai Banana", "Pisangsusu Banana", "Nak Banana", "Hin Banana", "Cavendish Banana", "Hom-short-body Banana",
@@ -39,10 +39,15 @@ public class OntologySimilarityServiceTests {
                 "Young Banana Stem"
         ));
 
-        List<String> actualResults = new ArrayList<>();
-        actualResults = OntologySimilarityService.findMatchingIngredientNames(ingredientToCompare, ingredientList);
+        List<String> expectedResults2 = new ArrayList<>(Arrays.asList(
+                "Red Holy Basil"
+        ));
 
-        assertEquals(expectedResults, actualResults);
+        List<String> actualResults1 = OntologySimilarityService.findMatchingIngredientNames(ingredientToCompare1, ingredientList);
+        List<String> actualResults2 = OntologySimilarityService.findMatchingIngredientNames(ingredientToCompare2, ingredientList);
+
+        assertEquals(expectedResults1, actualResults1);
+        assertEquals(expectedResults2, actualResults2);
 
     }
 
