@@ -86,12 +86,14 @@
         </div>
     </div>
     <!-- Shape -->
-    <div class="row" >
+    <div class="row" th:if="${QueryhasShape != null or SelectedhasShape != null}">
         <div class="col-md-6">
             <div class="ingredient">
                 <div class="property-container">
                     <div class="shape-box">
-                        <strong>Shape:</strong> <span th:text="${QueryhasShape}"></span>
+                        <strong>Shape:</strong>
+                        <span th:if="${QueryhasShape != null}" th:text="${QueryhasShape}"></span>
+                        <span th:unless="${QueryhasShape != null}">No shapes available because it lacks standard recording methods.</span>
                     </div>
                 </div>
             </div>
@@ -100,19 +102,23 @@
             <div class="ingredient">
                 <div class="property-container">
                     <div class="shape-box">
-                        <strong>Shape:</strong> <span th:text="${SelectedhasShape}"></span>
+                        <strong>Shape:</strong>
+                        <span th:if="${SelectedhasShape != null}" th:text="${SelectedhasShape}"></span>
+                        <span th:unless="${SelectedhasShape != null}">No shapes available because it lacks standard recording methods.</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Cooking Methods -->
-    <div class="row">
+    <div class="row" th:if="${QuerycanCook != null or SelectedcanCook != null}">
         <div class="col-md-6">
             <div class="ingredient">
                 <div class="property-container">
                     <div class="cookingmethod-box">
-                        <strong>Cooking Methods:</strong> <span th:text="${QuerycanCook}"></span>
+                        <strong>Cooking Methods:</strong>
+                        <span th:if="${QuerycanCook != null}" th:text="${QuerycanCook}"></span>
+                        <span th:unless="${QuerycanCook != null}">It does not have any cooking methods.</span>
                     </div>
                 </div>
             </div>
@@ -121,7 +127,9 @@
             <div class="ingredient">
                 <div class="property-container">
                     <div class="cookingmethod-box">
-                        <strong>Cooking Methods:</strong> <span th:text="${SelectedcanCook}"></span>
+                        <strong>Cooking Methods:</strong>
+                        <span th:if="${SelectedcanCook != null}" th:text="${SelectedcanCook}"></span>
+                        <span th:unless="${SelectedcanCook != null}">It does not have any cooking methods.</span>
                     </div>
                 </div>
             </div>
