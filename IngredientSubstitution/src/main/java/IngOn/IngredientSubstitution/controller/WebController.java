@@ -22,6 +22,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import javax.sound.midi.SysexMessage;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 @Controller
@@ -125,20 +126,97 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     }
 
     @PostMapping("/search")
-    public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model) throws FileNotFoundException {
-        findAndSetSimResult(ingredientToCompare, model);
+    public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model, HttpSession session) throws FileNotFoundException {
+        findAndSetSimResult(ingredientToCompare, model, session);
         return "searchResult";
     }
 
     @PostMapping("/processIngredient")
-    public String processIngredient(@RequestParam("selectedIngredient") String selectedIngredient, Model model) throws FileNotFoundException {
-        findAndSetSimResult(selectedIngredient, model);
+    public String processIngredient(@RequestParam("selectedIngredient") String selectedIngredient, Model model, HttpSession session) throws FileNotFoundException {
+        findAndSetSimResult(selectedIngredient, model, session);
         return "searchResult";
     }
 
-    public void findAndSetSimResult(String ingredient, Model model) throws FileNotFoundException {
+    @GetMapping("/compare")
+    public String comparePage(@RequestParam(name = "queryName", required = false) String queryName,
+                              @RequestParam(name = "selected", required = false) String selected, Model model, HttpSession session) {
+        Object simResult = session.getAttribute("simResult");
+        String officialName = (String) session.getAttribute("officialName");
+        String[] specifiedProperties = {"hasColor", "hasFlavor", "hasShape", "hasTexture", "hasMineral", "hasNutrient",
+                "hasSugar", "hasVitamin", "hasBenefit", "canCook", "hasOtherNames", "hasType"};
+
+
+        double simVal = findSimValue(officialName, selected, simResult);
+
+        Set<String> ingredientList = Set.of(officialName, selected);
+
+        HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(ingredientList, concepts);
+
+        System.out.println(dataWithName);
+        model.addAttribute("officialName", officialName);
+        model.addAttribute("simVal", simVal);
+        model.addAttribute("selected", selected);
+
+        for (String ingredient : dataWithName.keySet()) {
+            HashMap<String, Set<String>> innerHashMap = dataWithName.get(ingredient);
+            String ingredientType;
+
+            if (ingredient == officialName) {
+                ingredientType = "query";
+            } else {
+                ingredientType = "select";
+            }
+
+
+            for (String ing : innerHashMap.keySet()) {
+                if (Arrays.asList(specifiedProperties).contains(ing)) {
+                    Set<String> attributeValues = innerHashMap.get(ing);
+
+                    addAttributesForIngredient(model, ingredientType, ing, attributeValues);
+                }
+            }
+        }
+
+        return "compare";
+    }
+
+    @GetMapping("/error")
+    public String errorPage() {
+        return "error";
+    }
+
+    public void addAttributesForIngredient(Model model, String ingredientType, String attributeName, Set<String> attributeValues) {
+        String attributeNamePrefix = ingredientType.equals("query") ? "Query" : "Selected";
+        String fullAttributeName = attributeNamePrefix + attributeName;
+
+        model.addAttribute(fullAttributeName, attributeValues);
+    }
+
+    public double findSimValue(String officialName, String selected, Object simResult) {
+        double simVal = 0.0;
+
+        if (simResult instanceof HashMap) {
+            HashMap<String, List<Map.Entry<String, Double>>> simResultMap = (HashMap<String, List<Map.Entry<String, Double>>>) simResult;
+            List<Map.Entry<String, Double>> entries = simResultMap.get(officialName);
+
+            for (Map.Entry<String, Double> entry : entries) {
+                if (entry.getKey().equals(selected)) {
+                    simVal = entry.getValue();
+                    break;
+                }
+            }
+        }
+
+        return simVal;
+    }
+
+    public void findAndSetSimResult(String ingredient, Model model, HttpSession session) {
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
+
+        session.setAttribute("simResult", simResult);
+        session.setAttribute("officialName", officialName);
+
         Set<String> resultList = retrieveKeysFromEntries(simResult);
 
         HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(resultList, concepts);
@@ -187,10 +265,5 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         }
 
         return keys;
-    }
-
-    @GetMapping("/error")
-    public String errorPage() {
-        return "error";
     }
 }

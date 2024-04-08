@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Comparison</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/compare-style.css">
+</head>
+<body>
+<div class="score-box" id="score-box">
+    <div class="score-container">
+        <p>Score match: <strong><span th:text="${simVal}"></span></strong></p>
+    </div>
+</div>
+<div class="container" id="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <h2 th:text="${officialName}"></h2>
+                <div class="property-container">
+                    <div class="othernames-box">
+                        <strong>Other Names:</strong> <span th:text="${QueryhasOtherNames}"></span>
+                    </div>
+                    <div class="color-box">
+                        <span class="color-circle purple"></span><span th:text="${QueryhasColor}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <h2 th:text="${selected}"></h2>
+                <div class="property-container">
+                    <div class="othernames-box">
+                        <strong>Other Names:</strong> <span th:text="${SelectedhasOtherNames}"></span>
+                    </div><br>
+                    <div class="color-box">
+                        <span class="color-circle green"></span><span th:text="${SelectedhasColor}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Flavor -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="flavor-box">
+                        <strong>Flavor:</strong> <span th:text="${QueryhasFlavor}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="flavor-box">
+                        <strong>Flavor:</strong> <span th:text="${SelectedhasFlavor}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Texture -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="texture-box">
+                        <strong>Texture:</strong> <span th:text="${QueryhasTexture}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="texture-box">
+                        <strong>Texture:</strong> <span th:text="${SelectedhasTexture}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Shape -->
+    <div class="row" >
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="shape-box">
+                        <strong>Shape:</strong> <span th:text="${QueryhasShape}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="shape-box">
+                        <strong>Shape:</strong> <span th:text="${SelectedhasShape}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cooking Methods -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="cookingmethod-box">
+                        <strong>Cooking Methods:</strong> <span th:text="${QuerycanCook}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="cookingmethod-box">
+                        <strong>Cooking Methods:</strong> <span th:text="${SelectedcanCook}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Benefit: -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="benefit-box">
+                        <strong>Benefit:</strong> <span th:text="${QueryhasBenefit}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="benefit-box">
+                        <strong>Benefit:</strong> <span th:text="${SelectedhasBenefit}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Minerals: -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="mineral-box">
+                        <strong>Minerals:</strong>
+                        <span th:text="${QueryhasMineral}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="mineral-box">
+                        <strong>Minerals:</strong> <span th:text="${SelectedhasMineral}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sugar  -->
+    <div class="row" th:if="${QueryhasSugar != null or SelectedhasSugar != null}">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="sugar-box">
+                        <strong>Sugar:</strong>
+                        <span th:if="${SelectedhasSugar != null}" th:text="${QueryhasSugar}"></span>
+                        <span th:unless="${QueryhasSugar != null}">It does not have any sugars.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="sugar-box">
+                        <strong>Sugar:</strong>
+                        <span th:if="${SelectedhasSugar != null}" th:text="${SelectedhasSugar}"></span>
+                        <span th:unless="${SelectedhasSugar != null}">It does not have any sugars.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vitamins: -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="vitamin-box">
+                        <strong>Vitamins:</strong> <span th:text="${QueryhasVitamin}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="vitamin-box">
+                        <strong>Vitamins:</strong> <span th:text="${SelectedhasVitamin}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nutrients: -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="nutrient-box">
+                        <strong>Nutrients:</strong> <span th:text="${QueryhasNutrient}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="ingredient">
+                <div class="property-container">
+                    <div class="nutrient-box">
+                        <strong>Nutrients:</strong> <span th:text="${SelectedhasNutrient}"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

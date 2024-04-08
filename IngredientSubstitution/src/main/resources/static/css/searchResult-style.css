@@ -165,10 +165,22 @@
     margin-top: 15px;
 }
 
-.vizButton {
+.headerButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.clickButton {
     background-color: lightslategray;
     border-radius: 5px;
     color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.clickButton:hover {
+    background-color: #80d0fa;
 }
 
 #ingredient-title {

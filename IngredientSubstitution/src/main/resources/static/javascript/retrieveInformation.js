@@ -119,6 +119,8 @@ function setConceptList(group, colors, flavors, minerals, nutris, sugar, vitas, 
     typeProp = types;
 }
 
+let clickedTopic;
+
 function retrieveData () {
     let sidebarTopics = document.querySelectorAll('#sidebar-ingredient ul li a');
     let contentHeader = document.querySelector('#ingredient-title');
@@ -149,12 +151,13 @@ function retrieveData () {
         let prev_clickedTopic = event.target.textContent;
         contentHeader.textContent = prev_clickedTopic;
 
-        let clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
+        clickedTopic = prev_clickedTopic.replace(/\(.*?\)/g, '').trim();
         let DL_Concept = clickedTopic;
 
         let synName;
         let category = document.getElementById('foodGroupTitle');
-        let vizButton = document.querySelector('.vizButton');
+        let vizButton = document.querySelector('#vizButton');
+        let compButton = document.querySelector('#compButton');
 
         for (let ingredient in group) {
             if (ingredient === clickedTopic) {
@@ -165,9 +168,19 @@ function retrieveData () {
             }
         }
 
+        // Visualize a clicked ingredient
         vizButton.addEventListener('click', function () {
             visualize(clickedTopic, category.innerHTML);
         })
+
+        // Compare a clicked ingredient with the search query
+        // compButton.addEventListener('click', function () {
+        //     let queryName = document.getElementById('resultHeaderSpan').innerHTML;
+        //     queryName = queryName.replace(/\(.*?\)/g, '');
+        //     console.log("Query Name:", clickedTopic);
+        //
+        //     displayCompareDetails(queryName, clickedTopic);
+        // })
 
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
@@ -335,6 +348,21 @@ function retrieveData () {
     }
 }
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    let compButton = document.querySelector('#compButton');
+    if (compButton) {
+        compButton.addEventListener('click', function() {
+            let queryName = document.getElementById('resultHeaderSpan').innerHTML;
+            queryName = queryName.replace(/\(.*?\)/g, '');
+
+            displayCompareDetails(queryName, clickedTopic);
+        });
+    } else {
+        console.error("Element with ID 'compButton' not found.");
+    }
+});
+
 function containsThai(text) {
     const thaiRegex = /[\u0E00-\u0E7F]/; // Thai Unicode range
     return thaiRegex.test(text);
@@ -459,4 +487,8 @@ function contentHeaderColor(color) {
 
 function visualize(name, category) {
     window.location.href = `visualization?queryName=${encodeURIComponent(name)}&category=${encodeURIComponent(category)}`;
+}
+
+function displayCompareDetails(query, selectedName) {
+    window.open(`/compare?queryName=${encodeURIComponent(query)}&selected=${encodeURIComponent(selectedName)}`, '_blank');
 }
