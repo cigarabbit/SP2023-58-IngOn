@@ -46,6 +46,10 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         return "index";
     }
 
+    /**
+     * Convert Ontology file to JSON file.
+     * @return
+     */
     @GetMapping("/ontology-manager")
     @Cacheable
     public String ontologyManager() {
@@ -64,6 +68,13 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     @GetMapping("/document")
     public String document() { return "document"; }
 
+    /**
+     * Ingredient page that displays each ingredient's details in each category.
+     * @param selectedId
+     * @param model
+     * @return
+     * @throws IOException
+     */
     @GetMapping("/ingredient")
     public String ingredient(@RequestParam("id") String selectedId, Model model) throws IOException {
 
@@ -108,6 +119,10 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         return "visualization";
     }
 
+    /**
+     * A URL to fetch data from JSON file.
+     * @return
+     */
     @GetMapping("/data")
     public ResponseEntity<String> getData() {
         try {
@@ -180,6 +195,10 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         return "compare";
     }
 
+    /**
+     * Handle error page
+     * @return
+     */
     @GetMapping("/error")
     public String errorPage() {
         return "error";

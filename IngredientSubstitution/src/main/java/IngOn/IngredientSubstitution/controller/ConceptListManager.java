@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * A class for handle ontology file in a part of converting to JSON file.
+ */
 public class ConceptListManager {
     private static HashMap<String, HashMap<String, HashMap<String, Set<String>>>> conceptList;
     private static final Logger logger = LoggerFactory.getLogger(WebController.class);
