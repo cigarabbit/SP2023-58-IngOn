@@ -73,14 +73,6 @@ body, html {
     margin-right: 5px;
 }
 
-.color-circle.purple {
-    background-color: purple;
-}
-
-.color-circle.green {
-    background-color: green;
-}
-
 .color-circle span {
     display: block;
     text-align: center;

@@ -7,6 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/compare-style.css">
+    <script src="javascript/ingredientCustomization.js"></script>
 </head>
 <body>
 <div class="score-box" id="score-box">
@@ -22,9 +23,9 @@
                 <div class="property-container">
                     <div class="othernames-box">
                         <strong>Other Names:</strong> <span th:text="${QueryhasOtherNames}"></span>
-                    </div>
-                    <div class="color-box">
-                        <span class="color-circle purple"></span><span th:text="${QueryhasColor}"></span>
+                    </div><br>
+                    <div class="color-box queryBox">
+                        <span id="colorQuery" th:text="${QueryhasColor}"></span>
                     </div>
                 </div>
             </div>
@@ -36,8 +37,8 @@
                     <div class="othernames-box">
                         <strong>Other Names:</strong> <span th:text="${SelectedhasOtherNames}"></span>
                     </div><br>
-                    <div class="color-box">
-                        <span class="color-circle green"></span><span th:text="${SelectedhasColor}"></span>
+                    <div class="color-box selectedBox">
+                        <span id="colorSelected" th:text="${SelectedhasColor}"></span>
                     </div>
                 </div>
             </div>
