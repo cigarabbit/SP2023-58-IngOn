@@ -5,17 +5,22 @@ window.addEventListener('load', function () {
     let searchForm = document.getElementById('search-form');
     let propertyForm = document.getElementById('property-form');
 
-    searchType.addEventListener('click', function () {
-        if (searchType.textContent === 'Or do you want to search by a category and property?') {
-            searchForm.style.display = 'none';
-            propertyForm.style.display = 'flex';
-            searchType.innerHTML = 'Want to search by ingredient name?';
-        } else {
-            searchType.innerHTML = 'Or do you want to search by a category and property?';
-            searchForm.style.display = 'flex';
-            propertyForm.style.display = 'none';
-        }
-    })
+    if (searchType) {
+        searchType.addEventListener('click', function () {
+            if (searchType.textContent === 'Or do you want to search by a category and property?') {
+                searchForm.style.display = 'none';
+                propertyForm.style.display = 'flex';
+                searchType.innerHTML = 'Want to search by ingredient name?';
+                clearSuggestions();
+            } else {
+                searchType.innerHTML = 'Or do you want to search by a category and property?';
+                searchForm.style.display = 'flex';
+                propertyForm.style.display = 'none';
+                clearSuggestions();
+            }
+        })
+    }
+
 });
 
 function scrollToTop() {
@@ -47,13 +52,11 @@ async function loadData() {
     }
 }
 
-/**
- * Suggestion List for query.
- * @returns {Promise<void>}
- */
-async function autoComplete() {
+async function autoCompleteSearch() {
+    let propertyForm = document.getElementById('property-form');
     let query = document.getElementById('targetInput').value;
     let suggestionList = document.getElementById('suggestionList');
+    let property_queryBar = document.getElementById('propertyNode');
 
     suggestionList.innerHTML = '';
 
@@ -63,22 +66,54 @@ async function autoComplete() {
         if (query.length < 2) {
             suggestionList.style.display = 'none';
         }
-        if (query.length >= 2) {
+        else if (query.length >= 2) {
             let ingredientList = retrieveMatchIngredient(data, query);
 
-            ingredientList.forEach(ingredient => {
-                let listItem = createAndAppendListItem(ingredient.ingredient, suggestionList);
+            if (ingredientList.length > 0) {
+                ingredientList.forEach(ingredient => {
+                    let listItem = createAndAppendListItem(ingredient.ingredient, suggestionList);
 
-                listItem.addEventListener('click', () => {
-                    document.getElementById('targetInput').value = ingredient.ingredient;
+                    listItem.addEventListener('click', () => {
+                        document.getElementById('targetInput').value = ingredient.ingredient;
 
-                    suggestionList.style.display = 'none';
-                });
-            })
+                        suggestionList.style.display = 'none';
+                    });
+                })
 
-            suggestionList.style.display = 'block';
-            suggestionList.style.zIndex = '1000';
-            suggestionList.style.border = '1px solid #dee2e6';
+                suggestionList.style.display = 'block';
+                suggestionList.style.zIndex = '1000';
+                suggestionList.style.border = '1px solid #dee2e6';
+            }
+        }
+
+        if (propertyForm.style.display === 'flex') {
+            let property_query = property_queryBar.value;
+            let property_option = document.getElementById('propertyMenu').value;
+            let listOfProperties = getListOfProperties(property_option);
+
+            clearSuggestions();
+
+            if (property_query.length >= 1) {
+                if (listOfProperties.length > 0) {
+                    listOfProperties.forEach(property => {
+                        if (property.toLowerCase().includes(property_query.toLowerCase())) {
+                            let listItem = createAndAppendListItem(property, suggestionList);
+
+                            suggestionList.style.display = 'block';
+                            suggestionList.style.zIndex = '1000';
+                            suggestionList.style.border = '1px solid #dee2e6';
+
+                            listItem.addEventListener('click', () => {
+                                document.getElementById('propertyNode').value = property;
+
+                                suggestionList.style.display = 'none';
+                            });
+                        } else {
+                            suggestionList.style.display = 'none';
+                        }
+                    });
+                }
+            }
         }
 
     } catch (e) {
@@ -112,6 +147,12 @@ function createAndAppendListItem(text, parent, bold = false) {
     return listItem;
 }
 
+function clearSuggestions() {
+    const suggestionList = document.getElementById('suggestionList');
+    suggestionList.innerHTML = '';
+    suggestionList.style.display = 'none';
+}
+
 function getListOfProperties(property_option) {
     let listOfProperties = [];
     let properties = [];
@@ -141,7 +182,7 @@ function getListOfProperties(property_option) {
     } else if (property_option === 'hasFlavor') {
         let flavors = [
             'Acidic', 'Astringent', 'Bitter', 'Citrus', 'Cooling', 'Estery', 'Floral', 'Lactonic',
-            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami'
+            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami', 'Mammal', 'Fowl'
         ];
         properties.push(...flavors);
     } else if (property_option === 'hasMineral') {
@@ -188,4 +229,5 @@ function getListOfProperties(property_option) {
     listOfProperties.push(...properties);
     return listOfProperties;
 }
+
 

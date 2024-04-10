@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/navbar-style.css">
     <link rel="stylesheet" href="css/aboutus-style.css">
+    <link rel="stylesheet" href="css/searchIngredient-style.css">
+    <script src="javascript/searchIngredient.js"></script>
+    <script src="javascript/retrieveInformation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         $(document).on("scroll", function() {
@@ -65,14 +68,64 @@
                     <a href="/aboutus" class="nav-link">ABOUT US</a>
                 </li>
             </ul>
-            <form class="mx-2 my-auto d-inline" style="width: 50%;">
-                <div class="input-group">
-                    <input type="text" class="form-control border border-right-0" placeholder="Search for ingredients...">
-                    <button class="btn btn-outline-secondary border border-left-0" type="button">
-                        <i class="fa fa-search"></i>
-                    </button>
-                </div>
-            </form>
+            <div id="search-box">
+                <!-- Search by ingredient -->
+                <form class="input-group" id="search-form" action="/searchByName" method="POST">
+                    <input type="text" name="ingredient"
+                           id="targetInput"
+                           oninput="autoCompleteSearch()"
+                           class="form-control"
+                           placeholder="What kind of ingredient are you looking for?"
+                           aria-label="Search"
+                           aria-describedby="search-button">
+                    <!--                            <div id="suggestionList"></div>-->
+                    <button type="submit" class="btn btn-primary search-button">Search</button>
+                </form>
+                <!-- Search by category and property-->
+                <!--                    <form class="input-group" id="property-form" action="/searchByProperty" method="POST">-->
+                <!--                        <div class="input-group-dropdown">-->
+                <!--                            <select class="custom-select" id="propertyMenu" name="propertyMenu">-->
+                <!--                                <option value="hasBenefit">Benefit</option>-->
+                <!--                                <option value="hasColor">Color</option>-->
+                <!--                                <option value="canCook">Cooking Type</option>-->
+                <!--                                <option value="hasMineral">Mineral</option>-->
+                <!--                                <option value="hasNutrient">Nutrient</option>-->
+                <!--                                <option value="hasShape">Shape</option>-->
+                <!--                                <option value="hasSugar">Sugar</option>-->
+                <!--                                <option value="hasTexture">Texture</option>-->
+                <!--                                <option value="hasVitamin">Vitamin</option>-->
+                <!--                            </select>-->
+                <!--                        </div>-->
+                <!--                        <div id="categoryField">-->
+                <!--                            <select class="custom-select" id="categoryMenu" name="categoryMenu">-->
+                <!--                                <option value="Cereal">Cereal</option>-->
+                <!--                                <option value="Egg">Egg</option>-->
+                <!--                                <option value="Fruit">Fruit</option>-->
+                <!--                                <option value="Insect">Insect</option>-->
+                <!--                                <option value="Milk">Milk</option>-->
+                <!--                                <option value="Meat_Poultry">Meat/Poultry</option>-->
+                <!--                                <option value="Pulse_Seed_Nut">Pulse/Seed/Nut</option>-->
+                <!--                                <option value="Shellfish">Shellfish</option>-->
+                <!--                                <option value="Spice_Condiment">Spice</option>-->
+                <!--                                <option value="StarchyRoot_Tuber">Starchy Root/Tuber</option>-->
+                <!--                                <option value="Vegetable">Vegetable</option>-->
+                <!--                            </select>-->
+                <!--                        </div>-->
+                <!--                        <div id="addedInputField">-->
+                <!--                            <input type="text"-->
+                <!--                                   id="propertyNode"-->
+                <!--                                   name="propertyNode"-->
+                <!--                                   class="form-control"-->
+                <!--                                   placeholder="Search properties..."-->
+                <!--                                   oninput="autoCompleteSearch()"-->
+                <!--                            />-->
+                <!--                        </div>-->
+                <!--                        <button class="btn btn-outline-secondary border border-left-0" type="submit">-->
+                <!--                            <i class="fa fa-search"></i>-->
+                <!--                        </button>-->
+                <!--                    </form>-->
+                <div id="suggestionList"></div>
+            </div>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

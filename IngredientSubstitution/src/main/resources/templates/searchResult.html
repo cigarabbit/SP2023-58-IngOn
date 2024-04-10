@@ -72,7 +72,7 @@
                         <form class="input-group" id="search-form" action="/searchByName" method="POST">
                             <input type="text" name="ingredient"
                                    id="targetInput"
-                                   oninput="autoComplete()"
+                                   oninput="autoCompleteSearch()"
                                    class="form-control"
                                    placeholder="What kind of ingredient are you looking for?"
                                    aria-label="Search"
@@ -116,7 +116,7 @@
                                        name="propertyNode"
                                        class="form-control"
                                        placeholder="Search properties..."
-                                       oninput="autoComplete()"
+                                       oninput="autoCompleteSearch()"
                                 />
                             </div>
                             <button class="btn btn-outline-secondary border border-left-0" type="submit">
