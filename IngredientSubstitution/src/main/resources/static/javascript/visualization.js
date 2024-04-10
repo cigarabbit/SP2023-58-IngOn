@@ -269,7 +269,7 @@ function getListOfProperties(property_option) {
             'Garnished', 'Glazed', 'Grated', 'Grilled', 'Grounded', 'Infused',
             'Marinated', 'Mashed', 'Minced', 'Mixed', 'Pan-Fried', 'Peeled',
             'Pickled', 'Poached', 'Pounded', 'Powdered', 'Raw', 'Reconstituted', 'Rehydrated',
-            'Roasted', 'Rubbed', 'Sauteed', 'Scrambled', 'Seasoned', 'Shreded',
+            'Roasted', 'Rubbed', 'Sauteed', 'Scrambled', 'Seasoned', 'Shredded',
             'Simmered', 'Sliced', 'Soaked', 'Spread', 'Sprinkled', 'Steamed', 'Stewed',
             'Stir-Fried', 'Terpenoid', 'Thickened', 'Toasted', 'Torn', 'Wrapped', 'Zested'
         ];
@@ -283,7 +283,7 @@ function getListOfProperties(property_option) {
     } else if (property_option === 'hasFlavor') {
         let flavors = [
             'Acidic', 'Astringent', 'Bitter', 'Citrus', 'Cooling', 'Estery', 'Floral', 'Lactonic',
-            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami'
+            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami', 'Mammal', 'Fowl'
         ];
         properties.push(...flavors);
     } else if (property_option === 'hasMineral') {
