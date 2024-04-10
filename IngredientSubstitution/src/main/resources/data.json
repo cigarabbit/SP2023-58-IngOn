@@ -5747,6 +5747,7 @@
       "hasOtherNames" : [ "เนื้อแพะ" ],
       "canCook" : [ "Grilled", "Roasted", "Stewed" ],
       "hasMineral" : [ "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc" ],
+      "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
@@ -5759,6 +5760,7 @@
       "hasOtherNames" : [ "หนูนา", "Field Mouse" ],
       "canCook" : [ "Grilled", "Roasted", "Stewed" ],
       "hasMineral" : [ "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5774,6 +5776,7 @@
       "hasOtherNames" : [ "สะโพกไก่ดำ" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5786,6 +5789,7 @@
       "hasOtherNames" : [ "เบคอน" ],
       "canCook" : [ "Grilled", "Fried", "Baked" ],
       "hasMineral" : [ "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5797,6 +5801,7 @@
       "hasShape" : [ "Cubed" ],
       "hasOtherNames" : [ "ปีกไก่บ้าน" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5807,7 +5812,7 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "สันคอหมู" ],
+      "hasOtherNames" : [ "Pork Blade Shoulder", "สันคอหมู" ],
       "canCook" : [ "Roasted", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
@@ -5826,6 +5831,7 @@
       "hasOtherNames" : [ "ผ้าขี้ริ้ววัว" ],
       "canCook" : [ "Boiled", "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -5834,7 +5840,7 @@
       "hasOtherNames" : [ "Bacon" ]
     },
     "เนื้อวัว" : {
-      "hasOtherNames" : [ "Beef Hump" ]
+      "hasOtherNames" : [ "Beef Hump", "Beef" ]
     },
     "Chicken Meat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -5844,6 +5850,7 @@
       "hasOtherNames" : [ "เนื้อไก่", "ไก่" ],
       "canCook" : [ "Grilled", "Roasted", "Boiled", "Fried", "Baked", "Braised", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Iodine" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
@@ -5854,6 +5861,7 @@
       "hasShape" : [ "Cubed" ],
       "hasOtherNames" : [ "Ground Lizard", "แย้" ],
       "canCook" : [ "Grilled", "Fried", "Stir-Fried" ],
+      "hasFlavor" : [ "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
     },
@@ -5865,6 +5873,7 @@
       "hasOtherNames" : [ "เหงือกวัว" ],
       "canCook" : [ "Boiled", "Raw" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -5880,6 +5889,7 @@
       "hasOtherNames" : [ "กึ๋นไก่บ้าน" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5898,6 +5908,7 @@
       "hasOtherNames" : [ "นกกระทา" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Baked", "Sauteed", "Stir-Fried" ],
       "hasMineral" : [ "Sodium", "Potassium", "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Poultry" ]
@@ -5923,6 +5934,7 @@
       "hasOtherNames" : [ "ปอดวัว" ],
       "canCook" : [ "Boiled", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -5938,6 +5950,7 @@
       "hasOtherNames" : [ "กระรอก" ],
       "canCook" : [ "Grilled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -5966,6 +5979,7 @@
       "hasOtherNames" : [ "ตับหมู" ],
       "canCook" : [ "Fried", "Sauteed", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -5977,7 +5991,7 @@
       "hasOtherNames" : [ "Black Chicken Breast" ]
     },
     "เนื้อสันใน" : {
-      "hasOtherNames" : [ "Beef" ]
+      "hasOtherNames" : [ "Beef Tenderloin", "Beef" ]
     },
     "เนื้อไก่" : {
       "hasOtherNames" : [ "Chicken Meat", "ไก่" ]
@@ -5998,6 +6012,7 @@
       "hasOtherNames" : [ "เลือดเป็ด" ],
       "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
+      "hasFlavor" : [ "Bitter" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
@@ -6007,11 +6022,12 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "เนื้อสันใน" ],
-      "canCook" : [ "Grilled", "Roasted", "Pan-Fried" ],
+      "hasOtherNames" : [ "เนื้อวัว", "เนื้อสันใน" ],
+      "canCook" : [ "Grilled", "Roasted", "Fried", "Braised", "Stir-Fried", "Pan-Fried", "Grounded" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
     },
     "เลือดหมู" : {
@@ -6031,6 +6047,7 @@
       "hasOtherNames" : [ "อกไก่ดำ" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6052,6 +6069,7 @@
       "hasOtherNames" : [ "ลูกอ๊อด", "ลูกฮวก" ],
       "canCook" : [ "Fried", "Sauteed", "Stir-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6064,6 +6082,7 @@
       "hasOtherNames" : [ "ปีกไก่ป่า" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6072,7 +6091,7 @@
       "hasOtherNames" : [ "Green Frog Meat" ]
     },
     "กระเพาะวัว" : {
-      "hasOtherNames" : [ "Cow Stomach" ]
+      "hasOtherNames" : [ "Beef Abomasum", "Cow Stomach" ]
     },
     "Black Chicken Gizzard" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -6082,6 +6101,7 @@
       "hasOtherNames" : [ "กึ๋นไก่ดำ" ],
       "canCook" : [ "Grilled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -6092,11 +6112,15 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Pink" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "กระเพระหมู" ],
+      "hasOtherNames" : [ "กระเพระหมู", "กระเพาะหมู" ],
       "canCook" : [ "Boiled", "Stewed" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
+    },
+    "เป็ด" : {
+      "hasOtherNames" : [ "เนื้อเป็ด", "Duck" ]
     },
     "Black Chicken Wing" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -6106,6 +6130,7 @@
       "hasOtherNames" : [ "ปีกไก่ดำ" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6113,15 +6138,19 @@
     "กระรอก" : {
       "hasOtherNames" : [ "Squirrel" ]
     },
+    "กระเพาะหมู" : {
+      "hasOtherNames" : [ "Pork Stomach" ]
+    },
     "Beef Tenderloin" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "เนื้อคอโหนกไหล่" ],
-      "canCook" : [ "Grilled", "Roasted", "Braised" ],
-      "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasOtherNames" : [ "เนื้อคอโหนกไหล่", "เนื้อสันใน" ],
+      "canCook" : [ "Grilled", "Roasted", "Braised", "Pan-Fried" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6133,6 +6162,7 @@
       "hasShape" : [ "Cubed" ],
       "hasOtherNames" : [ "สะโพกไก่บ้าน" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6144,7 +6174,7 @@
       "hasOtherNames" : [ "Black Chicken Drumstick" ]
     },
     "สันคอหมู" : {
-      "hasOtherNames" : [ "Pork Neck" ]
+      "hasOtherNames" : [ "Pork Blade Shoulder", "Pork Neck" ]
     },
     "สะโพกไก่ดำ" : {
       "hasOtherNames" : [ "Black Chicken Thigh" ]
@@ -6157,6 +6187,7 @@
       "hasOtherNames" : [ "น่องไก่ดำ" ],
       "canCook" : [ "Grilled", "Fried", "Baked", "Stir-Fried" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6169,6 +6200,7 @@
       "hasOtherNames" : [ "เนื้อเขียด" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6184,6 +6216,7 @@
       "hasOtherNames" : [ "กระบือ" ],
       "canCook" : [ "Grilled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
+      "hasFlavor" : [ "Bitter" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
@@ -6195,6 +6228,7 @@
       "hasOtherNames" : [ "ตับไก่" ],
       "canCook" : [ "Fried", "Sauteed", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
@@ -6210,6 +6244,7 @@
       "hasOtherNames" : [ "ปอดหมู" ],
       "canCook" : [ "Boiled", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -6225,6 +6260,7 @@
       "hasOtherNames" : [ "น่องไก่ป่า" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6235,10 +6271,26 @@
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Red" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "เนื้อวัว" ],
+      "hasOtherNames" : [ "เนื้อคอโหนกไหล่", "เนื้อวัว" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Braised", "Stir-Fried", "Grounded" ],
-      "hasMineral" : [ "Calcium" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
+      "hasType" : [ "Meat" ]
+    },
+    "Pork Blade Shoulder" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasSugar" : [ "Sugar" ],
+      "hasTexture" : [ "Tender" ],
+      "hasColor" : [ "Pink" ],
+      "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "สันคอหมู", "Pork Neck" ],
+      "canCook" : [ "Roasted", "Braised" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
     "เนื้อแพะ" : {
@@ -6255,6 +6307,7 @@
       "hasOtherNames" : [ "น่องไก่บ้าน" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6267,6 +6320,7 @@
       "hasOtherNames" : [ "อกไก่บ้าน" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6282,6 +6336,7 @@
       "hasOtherNames" : [ "เนื้อหมู" ],
       "canCook" : [ "Roasted", "Fried", "Braised", "Stir-Fried" ],
       "hasMineral" : [ "Calcium" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6294,6 +6349,7 @@
       "hasOtherNames" : [ "สะโพกไก่ป่า" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6306,6 +6362,7 @@
       "hasOtherNames" : [ "เลือดหมู" ],
       "canCook" : [ "Boiled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -6318,12 +6375,27 @@
       "hasOtherNames" : [ "อกไก่ป่า" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Fowl" ],
       "hasVitamin" : [ "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
     "ปอดหมู" : {
       "hasOtherNames" : [ "Pork Lung" ]
+    },
+    "Beef Abomasum" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasSugar" : [ "Sugar" ],
+      "hasTexture" : [ "Tender" ],
+      "hasColor" : [ "White" ],
+      "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "กระเพาะวัว" ],
+      "canCook" : [ "Boiled", "Stewed" ],
+      "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
+      "hasType" : [ "Organ Meat" ]
     },
     "เลือดเป็ด" : {
       "hasOtherNames" : [ "Duck Blood" ]
@@ -6352,6 +6424,7 @@
       "hasOtherNames" : [ "มันหมู" ],
       "canCook" : [ "Grilled", "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Fat" ]
     },
@@ -6364,6 +6437,7 @@
       "hasOtherNames" : [ "หนังหมู", "Pork Skin" ],
       "canCook" : [ "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6375,6 +6449,7 @@
       "hasShape" : [ "Liquid" ],
       "hasOtherNames" : [ "รกวัว" ],
       "canCook" : [ "Boiled" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -6388,6 +6463,7 @@
       "hasOtherNames" : [ "สันในหมู" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Stir-Fried", "Pan-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6406,12 +6482,13 @@
       "hasOtherNames" : [ "กบ" ],
       "canCook" : [ "Grilled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Iodine" ],
+      "hasFlavor" : [ "Terpenoid" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
     "เนื้อคอโหนกไหล่" : {
-      "hasOtherNames" : [ "Beef Tenderloin" ]
+      "hasOtherNames" : [ "Beef Tenderloin", "Beef Hump" ]
     },
     "กระบือ" : {
       "hasOtherNames" : [ "Buffalo" ]
@@ -6428,6 +6505,7 @@
       "hasOtherNames" : [ "ลำไส้วัว" ],
       "canCook" : [ "Boiled", "Sauteed", "Stewed" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
@@ -6445,20 +6523,22 @@
       "hasOtherNames" : [ "เลือดไก่" ],
       "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc" ],
+      "hasFlavor" : [ "Bitter", "Fowl" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Organ Meat" ]
     },
     "เนื้อเป็ด" : {
-      "hasOtherNames" : [ "Duck" ]
+      "hasOtherNames" : [ "Duck", "เป็ด" ]
     },
     "Duck" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Tender" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "เนื้อเป็ด" ],
+      "hasOtherNames" : [ "เนื้อเป็ด", "เป็ด" ],
       "canCook" : [ "Grilled", "Roasted", "Fried", "Braised", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Poultry" ]
@@ -6471,6 +6551,7 @@
       "hasOtherNames" : [ "เขียด" ],
       "canCook" : [ "Grilled", "Roasted", "Baked" ],
       "hasMineral" : [ "Phosphorus", "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
       "hasVitamin" : [ "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -6484,6 +6565,7 @@
       "hasOtherNames" : [ "เนื้อซี่โครงอ่อนหมู" ],
       "canCook" : [ "Grilled", "Roasted", "Braised" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
+      "hasFlavor" : [ "Mammal", "Umami" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
       "hasType" : [ "Meat" ]
@@ -7601,18 +7683,6 @@
     "แขนง" : {
       "hasOtherNames" : [ "Brussels Sprout" ]
     },
-    "Raw Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงดิบ" ],
-      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Betacarotene", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "มะเดื่อ" : {
       "hasOtherNames" : [ "Fig" ]
     },
@@ -7745,7 +7815,7 @@
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ผักกาดหอม" ],
-      "canCook" : [ "Fresh", "Shreded" ],
+      "canCook" : [ "Fresh", "Shredded" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Cooling", "Green" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -7834,6 +7904,9 @@
       "hasFlavor" : [ "Astringent", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
+    "Rough Giant Bamboo Shoot" : {
+      "hasOtherNames" : [ "Cultivaled Bamboo Shoot" ]
     },
     "พริกหวาน" : {
       "hasOtherNames" : [ "Bell Pepper" ]
@@ -8029,6 +8102,18 @@
     },
     "กระเทียม" : {
       "hasOtherNames" : [ "Garlic" ]
+    },
+    "Cultivaled Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "Rough Giant Bamboo Shoot", "หน่อไม้ไผ่ตง" ],
+      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
+      "hasMineral" : [ "Calcium" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กะหล่ำ" : {
       "hasOtherNames" : [ "Cauliflower" ]
@@ -8563,18 +8648,6 @@
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Astringent", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Boiled Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงต้ม" ],
-      "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Wildbetal Leafbush" : {
@@ -9381,7 +9454,7 @@
       "hasOtherNames" : [ "Creeping Water Primrose" ]
     },
     "หน่อไม้พันธุ์กิมซุงต้ม" : {
-      "hasOtherNames" : [ "Boiled Bamboo Shoot" ]
+      "hasOtherNames" : [ "Boiled Jinsong Bamboo Shoot" ]
     },
     "Purple Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -9629,18 +9702,6 @@
     },
     "ยอดผักฮ้วน" : {
       "hasOtherNames" : [ "Pak Hawn Tender Tips" ]
-    },
-    "Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้ไผ่ตง" ],
-      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
-      "hasMineral" : [ "Calcium" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ผักไผ่" : {
       "hasOtherNames" : [ "Ceylon Spinach" ]
@@ -10221,7 +10282,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "หน่อไม้ไผ่ตง" : {
-      "hasOtherNames" : [ "Bamboo Shoot" ]
+      "hasOtherNames" : [ "Cultivaled Bamboo Shoot" ]
     },
     "แมงลัก" : {
       "hasOtherNames" : [ "Lemon Basil" ]
@@ -10319,6 +10380,18 @@
     },
     "บวบหอม" : {
       "hasOtherNames" : [ "Sponge Gourd" ]
+    },
+    "Raw Jinsong Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงดิบ" ],
+      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried", "Sliced" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin C", "Betacarotene", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะตูมยอดอ่อน" : {
       "hasOtherNames" : [ "Bael Tender Tips" ]
@@ -10780,8 +10853,20 @@
     "ฟักเขียว" : {
       "hasOtherNames" : [ "Winter Melon" ]
     },
+    "Boiled Jinsong Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงต้ม" ],
+      "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
     "หน่อไม้พันธุ์กิมซุงดิบ" : {
-      "hasOtherNames" : [ "Raw Bamboo Shoot" ]
+      "hasOtherNames" : [ "Raw Jinsong Bamboo Shoot" ]
     },
     "ดอกผักติ้ว" : {
       "hasOtherNames" : [ "Pak Tew Flower" ]

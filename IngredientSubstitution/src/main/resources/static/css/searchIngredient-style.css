@@ -3,11 +3,22 @@
     height: 20vh;
     background-color: #ffffff;
     position: absolute;
-    margin-top: 37px;
+    margin-top: 0px;
     overflow-y: scroll;
-    width: 100%;
+    width: max-content;
     padding: 15px;
     display: none;
+    z-index: 1000;
+}
+
+.search-button{
+    background-color: #006e2e;
+    border: #006e2e;
+    font-weight: bold;
+}
+
+.search-button:hover {
+    background-color: rgb(0, 177, 24);
 }
 
 #suggestionList li {

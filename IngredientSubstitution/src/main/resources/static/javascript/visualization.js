@@ -269,7 +269,7 @@ function getListOfProperties(property_option) {
             'Garnished', 'Glazed', 'Grated', 'Grilled', 'Grounded', 'Infused',
             'Marinated', 'Mashed', 'Minced', 'Mixed', 'Pan-Fried', 'Peeled',
             'Pickled', 'Poached', 'Pounded', 'Powdered', 'Raw', 'Reconstituted', 'Rehydrated',
-            'Roasted', 'Rubbed', 'Sauteed', 'Scrambled', 'Seasoned', 'Shreded',
+            'Roasted', 'Rubbed', 'Sauteed', 'Scrambled', 'Seasoned', 'Shredded',
             'Simmered', 'Sliced', 'Soaked', 'Spread', 'Sprinkled', 'Steamed', 'Stewed',
             'Stir-Fried', 'Terpenoid', 'Thickened', 'Toasted', 'Torn', 'Wrapped', 'Zested'
         ];
@@ -283,7 +283,7 @@ function getListOfProperties(property_option) {
     } else if (property_option === 'hasFlavor') {
         let flavors = [
             'Acidic', 'Astringent', 'Bitter', 'Citrus', 'Cooling', 'Estery', 'Floral', 'Lactonic',
-            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami'
+            'Pungent', 'Salty', 'Sour', 'Spicy', 'Sulfury', 'Sweet', 'Tropical', 'Umami', 'Mammal', 'Fowl'
         ];
         properties.push(...flavors);
     } else if (property_option === 'hasMineral') {
@@ -457,6 +457,12 @@ function retrieveAllIngredients(data, alphabet) {
     return foodGroupNode;
 }
 
+/**
+ * Retrieve an ingredient's details by its name.
+ * @param data
+ * @param name
+ * @returns {{children: [{children: {children: ({children: *, name: *}|{children: *|null, name: *})[], name}[], name: (HTMLElement|*)}], name: string}}
+ */
 function retrieveIngredientBySearch(data, name) {
     let foodGroupNode;
     let category, ingredient, search_ingredient;
@@ -503,6 +509,13 @@ function retrieveIngredientBySearch(data, name) {
     return foodGroupNode;
 }
 
+/**
+ * Retrieve matching ingredients by using properties.
+ * @param data
+ * @param query_prop
+ * @param property_option
+ * @returns {{children: [{children: *[], name: *}], name: string}}
+ */
 function retrieveIngredientByProperties(data, query_prop, property_option) {
     let category = document.getElementById('categoryMenu').value;
     let listOfIngredients = matchProperties(data, query_prop, property_option);
@@ -547,6 +560,7 @@ function retrieveIngredientByProperties(data, query_prop, property_option) {
     }
     return foodGroupNode;
 }
+
 async function processData(name, type, property_option) {
     try {
         const data = await loadData();

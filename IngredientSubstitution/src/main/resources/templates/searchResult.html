@@ -69,10 +69,10 @@
                     </div>
                     <div id="search-box">
                         <!-- Search by ingredient -->
-                        <form class="input-group" id="search-form" action="/search" method="POST">
+                        <form class="input-group" id="search-form" action="/searchByName" method="POST">
                             <input type="text" name="ingredient"
                                    id="targetInput"
-                                   oninput="autoComplete()"
+                                   oninput="autoCompleteSearch()"
                                    class="form-control"
                                    placeholder="What kind of ingredient are you looking for?"
                                    aria-label="Search"
@@ -81,9 +81,9 @@
                             <button type="submit" class="btn btn-primary search-button">Search</button>
                         </form>
                         <!-- Search by category and property-->
-                        <form class="input-group" id="property-form" action="/" method="POST">
+                        <form class="input-group" id="property-form" action="/searchByProperty" method="POST">
                             <div class="input-group-dropdown">
-                                <select class="custom-select" id="propertyMenu">
+                                <select class="custom-select" id="propertyMenu" name="propertyMenu">
                                     <option value="hasBenefit">Benefit</option>
                                     <option value="hasColor">Color</option>
                                     <option value="canCook">Cooking Type</option>
@@ -96,7 +96,7 @@
                                 </select>
                             </div>
                             <div id="categoryField">
-                                <select class="custom-select" id="categoryMenu">
+                                <select class="custom-select" id="categoryMenu" name="categoryMenu">
                                     <option value="Cereal">Cereal</option>
                                     <option value="Egg">Egg</option>
                                     <option value="Fruit">Fruit</option>
@@ -116,10 +116,10 @@
                                        name="propertyNode"
                                        class="form-control"
                                        placeholder="Search properties..."
-                                       oninput="autoComplete()"
+                                       oninput="autoCompleteSearch()"
                                 />
                             </div>
-                            <button class="btn btn-outline-secondary border border-left-0" type="button">
+                            <button class="btn btn-outline-secondary border border-left-0" type="submit">
                                 <i class="fa fa-search"></i>
                             </button>
                         </form>
