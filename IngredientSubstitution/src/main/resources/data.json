@@ -7601,18 +7601,6 @@
     "แขนง" : {
       "hasOtherNames" : [ "Brussels Sprout" ]
     },
-    "Raw Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงดิบ" ],
-      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried", "Sliced" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Betacarotene", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
     "มะเดื่อ" : {
       "hasOtherNames" : [ "Fig" ]
     },
@@ -7745,7 +7733,7 @@
       "hasColor" : [ "Green" ],
       "hasShape" : [ "Oval", "Round" ],
       "hasOtherNames" : [ "ผักกาดหอม" ],
-      "canCook" : [ "Fresh", "Shreded" ],
+      "canCook" : [ "Fresh", "Shredded" ],
       "hasMineral" : [ "Calcium", "Phosphorus" ],
       "hasFlavor" : [ "Cooling", "Green" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
@@ -7834,6 +7822,9 @@
       "hasFlavor" : [ "Astringent", "Sweet" ],
       "hasVitamin" : [ "Vitamin E", "Vitamin C", "Riboflavin", "Niacin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
+    "Rough Giant Bamboo Shoot" : {
+      "hasOtherNames" : [ "Cultivaled Bamboo Shoot" ]
     },
     "พริกหวาน" : {
       "hasOtherNames" : [ "Bell Pepper" ]
@@ -8029,6 +8020,18 @@
     },
     "กระเทียม" : {
       "hasOtherNames" : [ "Garlic" ]
+    },
+    "Cultivaled Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "Rough Giant Bamboo Shoot", "หน่อไม้ไผ่ตง" ],
+      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
+      "hasMineral" : [ "Calcium" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "กะหล่ำ" : {
       "hasOtherNames" : [ "Cauliflower" ]
@@ -8563,18 +8566,6 @@
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Astringent", "Sour" ],
       "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
-    },
-    "Boiled Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงต้ม" ],
-      "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "Wildbetal Leafbush" : {
@@ -9381,7 +9372,7 @@
       "hasOtherNames" : [ "Creeping Water Primrose" ]
     },
     "หน่อไม้พันธุ์กิมซุงต้ม" : {
-      "hasOtherNames" : [ "Boiled Bamboo Shoot" ]
+      "hasOtherNames" : [ "Boiled Jinsong Bamboo Shoot" ]
     },
     "Purple Eggplant" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -9629,18 +9620,6 @@
     },
     "ยอดผักฮ้วน" : {
       "hasOtherNames" : [ "Pak Hawn Tender Tips" ]
-    },
-    "Bamboo Shoot" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Crunchy" ],
-      "hasColor" : [ "White", "Beige" ],
-      "hasShape" : [ "Cylindrical", "Conical" ],
-      "hasOtherNames" : [ "หน่อไม้ไผ่ตง" ],
-      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
-      "hasMineral" : [ "Calcium" ],
-      "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ผักไผ่" : {
       "hasOtherNames" : [ "Ceylon Spinach" ]
@@ -10221,7 +10200,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "หน่อไม้ไผ่ตง" : {
-      "hasOtherNames" : [ "Bamboo Shoot" ]
+      "hasOtherNames" : [ "Cultivaled Bamboo Shoot" ]
     },
     "แมงลัก" : {
       "hasOtherNames" : [ "Lemon Basil" ]
@@ -10319,6 +10298,18 @@
     },
     "บวบหอม" : {
       "hasOtherNames" : [ "Sponge Gourd" ]
+    },
+    "Raw Jinsong Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Crunchy" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงดิบ" ],
+      "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried", "Sliced" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin C", "Betacarotene", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะตูมยอดอ่อน" : {
       "hasOtherNames" : [ "Bael Tender Tips" ]
@@ -10780,8 +10771,20 @@
     "ฟักเขียว" : {
       "hasOtherNames" : [ "Winter Melon" ]
     },
+    "Boiled Jinsong Bamboo Shoot" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Tender" ],
+      "hasColor" : [ "White", "Beige" ],
+      "hasShape" : [ "Cylindrical", "Conical" ],
+      "hasOtherNames" : [ "หน่อไม้พันธุ์กิมซุงต้ม" ],
+      "canCook" : [ "Boiled", "Fried", "Stir-Fried" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Umami", "Sweet" ],
+      "hasVitamin" : [ "Vitamin C", "Riboflavin", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    },
     "หน่อไม้พันธุ์กิมซุงดิบ" : {
-      "hasOtherNames" : [ "Raw Bamboo Shoot" ]
+      "hasOtherNames" : [ "Raw Jinsong Bamboo Shoot" ]
     },
     "ดอกผักติ้ว" : {
       "hasOtherNames" : [ "Pak Tew Flower" ]
