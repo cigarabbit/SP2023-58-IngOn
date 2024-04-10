@@ -157,7 +157,6 @@ function retrieveData () {
         let synName;
         let category = document.getElementById('foodGroupTitle');
         let vizButton = document.querySelector('#vizButton');
-        let compButton = document.querySelector('#compButton');
 
         for (let ingredient in group) {
             if (ingredient === clickedTopic) {
@@ -172,15 +171,6 @@ function retrieveData () {
         vizButton.addEventListener('click', function () {
             visualize(clickedTopic, category.innerHTML);
         })
-
-        // Compare a clicked ingredient with the search query
-        // compButton.addEventListener('click', function () {
-        //     let queryName = document.getElementById('resultHeaderSpan').innerHTML;
-        //     queryName = queryName.replace(/\(.*?\)/g, '');
-        //     console.log("Query Name:", clickedTopic);
-        //
-        //     displayCompareDetails(queryName, clickedTopic);
-        // })
 
         if (otherNames[clickedTopic] != undefined) {
             synName = otherNames[clickedTopic];
@@ -245,7 +235,12 @@ function retrieveData () {
             sugar = "It does not have any sugars.";
         }
 
-        var vitas = vitaProp[clickedTopic].join(', ');
+        var vitas;
+        if (vitaProp[clickedTopic] !== undefined) {
+            vitas = vitaProp[clickedTopic].join(', ');
+        } else {
+            vitas = "It does not have any vitamins.";
+        }
 
         var benes = beneProp[clickedTopic].join(', ');
 
@@ -320,13 +315,21 @@ function retrieveData () {
             sugarPropLi.appendChild(span);
         }
 
-        vitaProp[clickedTopic].forEach(function(vita) {
+        if (vitaProp[clickedTopic] !== undefined) {
+            vitaProp[clickedTopic].forEach(function(vita) {
+                var span = document.createElement('span');
+                span.textContent = vita;
+                span.classList.add('nutrient-item');
+
+                vitaPropLi.appendChild(span);
+            });
+        } else {
             var span = document.createElement('span');
-            span.textContent = vita;
+            span.textContent = vitas;
             span.classList.add('nutrient-item');
 
             vitaPropLi.appendChild(span);
-        });
+        }
 
         DL_Display.append(DLSyntax);
         colorPropLi.append(colors);
@@ -348,7 +351,9 @@ function retrieveData () {
     }
 }
 
-
+/**
+ * Compare a query with given ingredient from list of substitutions.
+ */
 document.addEventListener('DOMContentLoaded', function() {
     let compButton = document.querySelector('#compButton');
     if (compButton) {
@@ -358,8 +363,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             displayCompareDetails(queryName, clickedTopic);
         });
-    } else {
-        console.error("Element with ID 'compButton' not found.");
     }
 });
 
