@@ -115,8 +115,12 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
     @PostMapping("/searchByName")
     public String computeSim(@RequestParam("ingredient") String ingredientToCompare, Model model, HttpSession session) {
-        findAndSetSimResult(ingredientToCompare, model, session);
-        return "searchResult";
+        if (findAndSetSimResult(ingredientToCompare, model, session)) {
+            return "searchResult";
+        } else {
+            model.addAttribute("errorMessage", "No such ingredient exists.");
+            return "index";
+        }
     }
 
     @GetMapping("/searchByProperty")
@@ -145,21 +149,31 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
         HashMap<String, HashMap<String, Set<String>>> matchingIngredientsData = DescriptionLogicDisplayService.getDataByIngredientName(listOfMatchingIngredients, concepts);
 
-        setAllPropertyModel(model, matchingIngredientsData);
+        if (matchingIngredientsData.isEmpty()) {
+            model.addAttribute("errorMessage", "No such ingredient exists.");
+            return "index";
+        } else {
+            setAllPropertyModel(model, matchingIngredientsData);
 
-        model.addAttribute("propertyQuery", propertyQuery);
-        model.addAttribute("foodGroup", category);
-        model.addAttribute("conceptList", matchingIngredientsData);
-        model.addAttribute("ingredientList", matchingIngredientsData.keySet());
-        model.addAttribute("redirectToAnchor", true);
+            model.addAttribute("propertyQuery", propertyQuery);
+            model.addAttribute("foodGroup", category);
+            model.addAttribute("conceptList", matchingIngredientsData);
+            model.addAttribute("ingredientList", matchingIngredientsData.keySet());
+            model.addAttribute("redirectToAnchor", true);
 
-        return "propertyResult";
+            return "propertyResult";
+
+        }
     }
 
     @PostMapping("/processIngredient")
     public String processIngredient(@RequestParam("selectedIngredient") String selectedIngredient, Model model, HttpSession session) {
-        findAndSetSimResult(selectedIngredient, model, session);
-        return "searchResult";
+        if (findAndSetSimResult(selectedIngredient, model, session)) {
+            return "searchResult";
+        } else {
+            model.addAttribute("errorMessage", "No such ingredient exists.");
+            return "index";
+        }
     }
 
     @GetMapping("/compare")
@@ -240,23 +254,30 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         return simVal;
     }
 
-    public void findAndSetSimResult(String ingredient, Model model, HttpSession session) {
+    public boolean findAndSetSimResult(String ingredient, Model model, HttpSession session) {
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
 
-        session.setAttribute("simResult", simResult);
-        session.setAttribute("officialName", officialName);
+        if (!simResult.isEmpty()) {
+            session.setAttribute("simResult", simResult);
+            session.setAttribute("officialName", officialName);
 
-        Set<String> resultList = retrieveKeysFromEntries(simResult);
+            Set<String> resultList = retrieveKeysFromEntries(simResult);
 
-        HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(resultList, concepts);
+            HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(resultList, concepts);
 
-        setAllPropertyModel(model, dataWithName);
+            setAllPropertyModel(model, dataWithName);
 
-        model.addAttribute("ingredientQuery", ingredient);
-        model.addAttribute("simResult", simResult);
+            model.addAttribute("ingredientQuery", ingredient);
+            model.addAttribute("simResult", simResult);
 
-        model.addAttribute("redirectToAnchor", true);
+            model.addAttribute("redirectToAnchor", true);
+
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     public void setAllPropertyModel(Model model, HashMap<String, HashMap<String, Set<String>>> dataWithName) {
