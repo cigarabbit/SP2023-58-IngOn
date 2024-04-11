@@ -171,13 +171,16 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
                 "hasSugar", "hasVitamin", "hasBenefit", "canCook", "hasOtherNames", "hasType"};
 
         double simVal = findSimValue(officialName, selected, simResult);
+        double simValPercentage = simVal * 100;
+        String formattedPercentage = String.format("%.2f", simValPercentage);
+        System.out.println(formattedPercentage);
 
         Set<String> ingredientList = Set.of(officialName, selected);
 
         HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(ingredientList, concepts);
 
         model.addAttribute("officialName", officialName);
-        model.addAttribute("simVal", simVal);
+        model.addAttribute("simVal", formattedPercentage);
         model.addAttribute("selected", selected);
 
         for (String ingredient : dataWithName.keySet()) {
