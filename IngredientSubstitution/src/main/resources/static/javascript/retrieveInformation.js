@@ -364,7 +364,19 @@ document.addEventListener('DOMContentLoaded', function() {
             displayCompareDetails(queryName, clickedTopic);
         });
     }
+
+    document.getElementById("viewMoreBtn").addEventListener("click", function() {
+        let span = document.getElementById("DL_conceptSpan");
+        span.classList.toggle("expanded");
+        if (span.classList.contains("expanded")) {
+            document.getElementById("viewMoreBtn").innerText = "View Less...";
+        } else {
+            document.getElementById("viewMoreBtn").innerText = "View More...";
+        }
+    });
 });
+
+
 
 function containsThai(text) {
     const thaiRegex = /[\u0E00-\u0E7F]/; // Thai Unicode range

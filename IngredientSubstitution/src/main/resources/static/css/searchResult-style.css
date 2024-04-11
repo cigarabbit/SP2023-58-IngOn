@@ -234,9 +234,12 @@
 
 #DL_Syntax span {
     text-align: justify;
-    display: inline-block;
+    display: none;
     justify-content: center;
-    height: 2em;
+}
+
+#DL_conceptSpan.expanded {
+    display: inline-block;
 }
 
 #DL_concept {
