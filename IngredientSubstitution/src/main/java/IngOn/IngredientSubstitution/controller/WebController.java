@@ -258,8 +258,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
 
-
-        if (!simResult.get(officialName).isEmpty()) {
+        if (!simResult.entrySet().isEmpty()) {
             session.setAttribute("simResult", simResult);
             session.setAttribute("officialName", officialName);
 
