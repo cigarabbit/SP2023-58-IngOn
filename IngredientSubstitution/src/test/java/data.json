@@ -2106,7 +2106,7 @@
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
-      "hasOtherNames" : [ "Longan", "ลองกอง" ],
+      "hasOtherNames" : [ "ลองกอง" ],
       "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Sweet", "Floral" ],
@@ -2410,7 +2410,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลำไย" : {
-      "hasOtherNames" : [ "Longan" ]
+      "hasOtherNames" : [ "Thai Longan" ]
     },
     "มะม่วงหนังกลางวัน" : {
       "hasOtherNames" : [ "Nung-klang-wan Mango" ]
@@ -2532,7 +2532,7 @@
       "hasOtherNames" : [ "Namwa-dang Banana" ]
     },
     "Dragons Eye Fruit" : {
-      "hasOtherNames" : [ "Longan" ]
+      "hasOtherNames" : [ "Thai Longan" ]
     },
     "Luna Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -2800,12 +2800,12 @@
     "มะกอกฝรั่ง" : {
       "hasOtherNames" : [ "Hog Plum" ]
     },
-    "Longan" : {
+    "Thai Longan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
       "hasShape" : [ "Round" ],
-      "hasOtherNames" : [ "Longkong", "Dragons Eye Fruit", "ลำไย" ],
+      "hasOtherNames" : [ "Dragons Eye Fruit", "ลำไย" ],
       "canCook" : [ "Fresh" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Floral" ],

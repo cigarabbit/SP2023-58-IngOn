@@ -2410,7 +2410,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "ลำไย" : {
-      "hasOtherNames" : [ "Longan" ]
+      "hasOtherNames" : [ "Thai Longan" ]
     },
     "มะม่วงหนังกลางวัน" : {
       "hasOtherNames" : [ "Nung-klang-wan Mango" ]
@@ -2532,7 +2532,7 @@
       "hasOtherNames" : [ "Namwa-dang Banana" ]
     },
     "Dragons Eye Fruit" : {
-      "hasOtherNames" : [ "Longan" ]
+      "hasOtherNames" : [ "Thai Longan" ]
     },
     "Luna Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -2800,7 +2800,7 @@
     "มะกอกฝรั่ง" : {
       "hasOtherNames" : [ "Hog Plum" ]
     },
-    "Longan" : {
+    "Thai Longan" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Juicy" ],
       "hasColor" : [ "Brown" ],
