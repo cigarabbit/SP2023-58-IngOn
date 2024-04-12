@@ -258,12 +258,31 @@
 
 <script>
     document.querySelectorAll('.ingredientButton').forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             let ingredient = button.textContent;
             document.getElementById("selectedIngredientInput").value = ingredient;
             document.getElementById("ingredientForm").submit();
         });
     });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
 </script>
 <script th:inline="javascript">
 
