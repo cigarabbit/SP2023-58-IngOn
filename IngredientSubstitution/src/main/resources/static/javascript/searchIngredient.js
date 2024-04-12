@@ -83,6 +83,8 @@ async function autoCompleteSearch() {
                 suggestionList.style.display = 'block';
                 suggestionList.style.zIndex = '1000';
                 suggestionList.style.border = '1px solid #dee2e6';
+            } else {
+                suggestionList.style.display = 'none';
             }
         }
 
@@ -93,28 +95,32 @@ async function autoCompleteSearch() {
 
             clearSuggestions();
 
-            if (property_query.length >= 1) {
-                if (listOfProperties.length > 0) {
-                    listOfProperties.forEach(property => {
-                        if (property.toLowerCase().includes(property_query.toLowerCase())) {
-                            let listItem = createAndAppendListItem(property, suggestionList);
+            if (property_query.length >= 1 && listOfProperties.length > 0) {
+                let matchedProperties = listOfProperties.filter(property =>
+                    property.toLowerCase().includes(property_query.toLowerCase()) || property_query.toLowerCase().includes(property.toLowerCase())
+                );
 
-                            suggestionList.style.display = 'block';
-                            suggestionList.style.zIndex = '1000';
-                            suggestionList.style.border = '1px solid #dee2e6';
+                if (matchedProperties.length > 0) {
+                    matchedProperties.forEach(property => {
+                        let listItem = createAndAppendListItem(property, suggestionList);
 
-                            listItem.addEventListener('click', () => {
-                                document.getElementById('propertyNode').value = property;
-
-                                suggestionList.style.display = 'none';
-                            });
-                        } else {
+                        listItem.addEventListener('click', () => {
+                            document.getElementById('propertyNode').value = property;
                             suggestionList.style.display = 'none';
-                        }
+                        });
                     });
+
+                    suggestionList.style.display = 'block';
+                    suggestionList.style.zIndex = '1000';
+                    suggestionList.style.border = '1px solid #dee2e6';
+                } else {
+                    suggestionList.style.display = 'none';
                 }
+            } else {
+                suggestionList.style.display = 'none';
             }
         }
+
 
     } catch (e) {
         console.log(e);
