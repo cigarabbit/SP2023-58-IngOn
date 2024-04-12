@@ -60,7 +60,7 @@
     "ไข่มดแดง" : {
       "hasOtherNames" : [ "Red Ant Egg" ]
     },
-    "Sour Egg" : {
+    "Normal Sour Egg" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Smooth", "Creamy" ],
       "hasColor" : [ "Red", "Brown" ],
@@ -182,7 +182,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "ไข่เปรี้ยว" : {
-      "hasOtherNames" : [ "Sour Egg" ]
+      "hasOtherNames" : [ "Normal Sour Egg" ]
     },
     "ไข่จระเข้" : {
       "hasOtherNames" : [ "Crocodile Egg" ]
