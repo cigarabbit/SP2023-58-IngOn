@@ -285,6 +285,12 @@
         }
     }
 </script>
+<script th:if="${errorMessage != null}" th:inline="javascript">
+    /*<![CDATA[*/
+    var errorMessage = /*[[${errorMessage}]]*/ [];
+
+    alert(errorMessage);
+</script>
 <script th:inline="javascript">
 
     /*<![CDATA[*/

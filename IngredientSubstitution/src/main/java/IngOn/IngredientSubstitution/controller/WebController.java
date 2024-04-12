@@ -118,7 +118,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         if (findAndSetSimResult(ingredientToCompare, model, session)) {
             return "searchResult";
         } else {
-            model.addAttribute("errorMessage", "No such ingredient exists.");
+            model.addAttribute("errorMessage", "No such ingredient or search result exists.");
             return "index";
         }
     }
@@ -150,7 +150,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, HashMap<String, Set<String>>> matchingIngredientsData = DescriptionLogicDisplayService.getDataByIngredientName(listOfMatchingIngredients, concepts);
 
         if (matchingIngredientsData.isEmpty()) {
-            model.addAttribute("errorMessage", "No such ingredient exists.");
+            model.addAttribute("errorMessage", "No such ingredient with that property exists.");
             return "index";
         } else {
             setAllPropertyModel(model, matchingIngredientsData);
