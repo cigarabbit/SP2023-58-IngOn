@@ -163,7 +163,7 @@ public class OntologySimilarityService {
 
         List<Map.Entry<String, Double>> filteredList = new ArrayList<>();
         for (Map.Entry<String, Double> entry : sortedList) {
-            if (entry.getValue() > 0.85) {
+            if (entry.getValue() >= 0.85) {
                 filteredList.add(entry);
             } else {
                 break;
