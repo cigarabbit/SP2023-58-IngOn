@@ -33,11 +33,45 @@ async function loadData() {
     }
 }
 
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.id === 'propertyMenu' ||
+        event.target && event.target.id === 'categoryMenu') {
+        clearSuggestions();
+    }
+
+    if (event.target && event.target.id === 'propertyNode') {
+        let propertyMenu = document.getElementById('propertyMenu');
+        let property_option = propertyMenu.value;
+        let listOfProperties = getListOfProperties(property_option);
+        let suggestionList = document.getElementById('suggestionList');
+
+        suggestionList.innerHTML = '';
+
+        clearSuggestions();
+
+        if (listOfProperties.length > 0) {
+            listOfProperties.forEach(property => {
+                let listItem = createAndAppendListItem(property, suggestionList);
+
+                listItem.addEventListener('click', () => {
+                    document.getElementById('propertyNode').value = property;
+                    suggestionList.style.display = 'none';
+                });
+            });
+
+            suggestionList.style.display = 'block';
+            suggestionList.style.zIndex = '1000';
+            suggestionList.style.border = '1px solid #dee2e6';
+        } else {
+            suggestionList.style.display = 'none';
+        }
+    }
+});
+
 async function autoCompleteSearch() {
     let propertyForm = document.getElementById('property-form');
     let query = document.getElementById('targetInput').value;
     let suggestionList = document.getElementById('suggestionList');
-    let property_queryBar = document.getElementById('propertyNode');
 
     suggestionList.innerHTML = '';
 
@@ -70,6 +104,7 @@ async function autoCompleteSearch() {
         }
 
         if (propertyForm.style.display === 'flex') {
+            let property_queryBar = document.getElementById('propertyNode');
             let property_query = property_queryBar.value;
             let property_option = document.getElementById('propertyMenu').value;
             let listOfProperties = getListOfProperties(property_option);
