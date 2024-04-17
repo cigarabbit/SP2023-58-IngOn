@@ -5744,7 +5744,7 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Rat" : {
+    "Field Rat" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasSugar" : [ "Sugar" ],
       "hasTexture" : [ "Tender" ],
@@ -5872,7 +5872,7 @@
       "hasType" : [ "Organ Meat" ]
     },
     "Field Mouse" : {
-      "hasOtherNames" : [ "Rat" ]
+      "hasOtherNames" : [ "Field Rat" ]
     },
     "Domestic Fowl Gizzard" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -6030,7 +6030,7 @@
       "hasOtherNames" : [ "Common Butterfly Lizard" ]
     },
     "หนูนา" : {
-      "hasOtherNames" : [ "Rat" ]
+      "hasOtherNames" : [ "Field Rat" ]
     },
     "Black Chicken Breast" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
