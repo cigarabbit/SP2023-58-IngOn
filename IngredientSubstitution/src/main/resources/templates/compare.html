@@ -159,13 +159,14 @@
         </div>
     </div>
     <!-- Minerals: -->
-    <div class="row">
+    <div class="row" th:if="${QueryhasMineral != null or SelectedhasMineral != null}">
         <div class="col-md-6">
             <div class="ingredient">
                 <div class="property-container">
                     <div class="mineral-box">
                         <strong>Minerals:</strong>
-                        <span th:text="${QueryhasMineral}"></span>
+                        <span th:if="${QueryhasMineral != null}" th:text="${QueryhasMineral}"></span>
+                        <span th:unless="${QueryhasMineral != null}">It does not have any minerals.</span>
                     </div>
                 </div>
             </div>
@@ -174,7 +175,9 @@
             <div class="ingredient">
                 <div class="property-container">
                     <div class="mineral-box">
-                        <strong>Minerals:</strong> <span th:text="${SelectedhasMineral}"></span>
+                        <strong>Minerals:</strong>
+                        <span th:if="${SelectedhasMineral != null}" th:text="${SelectedhasMineral}"></span>
+                        <span th:unless="${SelectedhasMineral != null}">It does not have any minerals.</span>
                     </div>
                 </div>
             </div>
@@ -187,7 +190,7 @@
                 <div class="property-container">
                     <div class="sugar-box">
                         <strong>Sugar:</strong>
-                        <span th:if="${SelectedhasSugar != null}" th:text="${QueryhasSugar}"></span>
+                        <span th:if="${QueryhasSugar != null}" th:text="${QueryhasSugar}"></span>
                         <span th:unless="${QueryhasSugar != null}">It does not have any sugars.</span>
                     </div>
                 </div>
