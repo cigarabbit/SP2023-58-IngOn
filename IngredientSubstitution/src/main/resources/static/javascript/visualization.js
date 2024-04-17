@@ -362,7 +362,7 @@ function handleSelection(selectedOption) {
     clearSuggestions();
 
     if (query_all) {
-        processData(selectedOption, "normal_search", 'all');
+        processData(selectedOption, 'normal_search', 'all');
     } else if (query_prop) {
         let property_option = document.getElementById('propertyMenu').value;
 

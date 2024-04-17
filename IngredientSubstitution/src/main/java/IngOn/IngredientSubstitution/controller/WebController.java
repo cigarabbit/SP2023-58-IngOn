@@ -118,7 +118,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         if (findAndSetSimResult(ingredientToCompare, model, session)) {
             return "searchResult";
         } else {
-            model.addAttribute("errorMessage", "No such ingredient exists.");
+            model.addAttribute("errorMessage", "No such ingredient or search result exists.");
             return "index";
         }
     }
@@ -150,7 +150,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         HashMap<String, HashMap<String, Set<String>>> matchingIngredientsData = DescriptionLogicDisplayService.getDataByIngredientName(listOfMatchingIngredients, concepts);
 
         if (matchingIngredientsData.isEmpty()) {
-            model.addAttribute("errorMessage", "No such ingredient exists.");
+            model.addAttribute("errorMessage", "No such ingredient with that property exists.");
             return "index";
         } else {
             setAllPropertyModel(model, matchingIngredientsData);
@@ -187,7 +187,6 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         double simVal = findSimValue(officialName, selected, simResult);
         double simValPercentage = simVal * 100;
         String formattedPercentage = String.format("%.2f", simValPercentage);
-        System.out.println(formattedPercentage);
 
         Set<String> ingredientList = Set.of(officialName, selected);
 
@@ -258,7 +257,7 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
         String officialName = OntologyService.findOfficialName(ingredient, concepts);
         HashMap<String, List<Map.Entry<String, Double>>> simResult = OntologySimilarityService.findSubstitution(officialName);
 
-        if (!simResult.entrySet().isEmpty()) {
+        if (simResult.size() > 0 || simResult.get(officialName) != null) {
             session.setAttribute("simResult", simResult);
             session.setAttribute("officialName", officialName);
 
@@ -266,18 +265,20 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
 
             HashMap<String, HashMap<String, Set<String>>> dataWithName = DescriptionLogicDisplayService.getDataByIngredientName(resultList, concepts);
 
-            setAllPropertyModel(model, dataWithName);
+            if (dataWithName.size() > 0) {
+                setAllPropertyModel(model, dataWithName);
 
-            model.addAttribute("ingredientQuery", ingredient);
-            model.addAttribute("simResult", simResult);
+                model.addAttribute("ingredientQuery", ingredient);
+                model.addAttribute("simResult", simResult);
 
-            model.addAttribute("redirectToAnchor", true);
+                model.addAttribute("redirectToAnchor", true);
 
-            return true;
-        } else {
-            return false;
+                return true;
+            }
+
         }
 
+        return false;
     }
 
     public void setAllPropertyModel(Model model, HashMap<String, HashMap<String, Set<String>>> dataWithName) {

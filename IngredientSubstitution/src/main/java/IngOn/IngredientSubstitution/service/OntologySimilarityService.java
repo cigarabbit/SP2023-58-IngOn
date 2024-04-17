@@ -145,9 +145,9 @@ public class OntologySimilarityService {
             // Check if parts array has at least two elements before accessing index 1
             if (parts.length >= 2) {
                 String ingredientName = parts[0];
-                String ingredientPro = parts[1];
+                String ingredientCompProp = parts[1];
                 if (!ingredientName.equals(ingredientToCompare)) {
-                    double similarity = calculateCosineSimilarity(ingredientProp, ingredientPro);
+                    double similarity = calculateCosineSimilarity(ingredientProp, ingredientCompProp);
                     if (similarity > 0.00) {
                         similarityMap.put(ingredientName, similarity);
                     }
@@ -163,7 +163,7 @@ public class OntologySimilarityService {
 
         List<Map.Entry<String, Double>> filteredList = new ArrayList<>();
         for (Map.Entry<String, Double> entry : sortedList) {
-            if (entry.getValue() > 0.85) {
+            if (entry.getValue() >= 0.85) {
                 filteredList.add(entry);
             } else {
                 break;

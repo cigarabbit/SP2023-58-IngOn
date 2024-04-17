@@ -23,25 +23,6 @@ window.addEventListener('load', function () {
 
 });
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollToTopBtn.style.display = "block";
-    } else {
-        scrollToTopBtn.style.display = "none";
-    }
-}
-
 /** Data Retrieval **/
 async function loadData() {
     try {
@@ -52,11 +33,45 @@ async function loadData() {
     }
 }
 
+document.addEventListener('click', function(event) {
+    if (event.target && event.target.id === 'propertyMenu' ||
+        event.target && event.target.id === 'categoryMenu') {
+        clearSuggestions();
+    }
+
+    if (event.target && event.target.id === 'propertyNode') {
+        let propertyMenu = document.getElementById('propertyMenu');
+        let property_option = propertyMenu.value;
+        let listOfProperties = getListOfProperties(property_option);
+        let suggestionList = document.getElementById('suggestionList');
+
+        suggestionList.innerHTML = '';
+
+        clearSuggestions();
+
+        if (listOfProperties.length > 0) {
+            listOfProperties.forEach(property => {
+                let listItem = createAndAppendListItem(property, suggestionList);
+
+                listItem.addEventListener('click', () => {
+                    document.getElementById('propertyNode').value = property;
+                    suggestionList.style.display = 'none';
+                });
+            });
+
+            suggestionList.style.display = 'block';
+            suggestionList.style.zIndex = '1000';
+            suggestionList.style.border = '1px solid #dee2e6';
+        } else {
+            suggestionList.style.display = 'none';
+        }
+    }
+});
+
 async function autoCompleteSearch() {
     let propertyForm = document.getElementById('property-form');
     let query = document.getElementById('targetInput').value;
     let suggestionList = document.getElementById('suggestionList');
-    let property_queryBar = document.getElementById('propertyNode');
 
     suggestionList.innerHTML = '';
 
@@ -83,38 +98,45 @@ async function autoCompleteSearch() {
                 suggestionList.style.display = 'block';
                 suggestionList.style.zIndex = '1000';
                 suggestionList.style.border = '1px solid #dee2e6';
+            } else {
+                suggestionList.style.display = 'none';
             }
         }
 
         if (propertyForm.style.display === 'flex') {
+            let property_queryBar = document.getElementById('propertyNode');
             let property_query = property_queryBar.value;
             let property_option = document.getElementById('propertyMenu').value;
             let listOfProperties = getListOfProperties(property_option);
 
             clearSuggestions();
 
-            if (property_query.length >= 1) {
-                if (listOfProperties.length > 0) {
-                    listOfProperties.forEach(property => {
-                        if (property.toLowerCase().includes(property_query.toLowerCase())) {
-                            let listItem = createAndAppendListItem(property, suggestionList);
+            if (property_query.length >= 1 && listOfProperties.length > 0) {
+                let matchedProperties = listOfProperties.filter(property =>
+                    property.toLowerCase().includes(property_query.toLowerCase()) || property_query.toLowerCase().includes(property.toLowerCase())
+                );
 
-                            suggestionList.style.display = 'block';
-                            suggestionList.style.zIndex = '1000';
-                            suggestionList.style.border = '1px solid #dee2e6';
+                if (matchedProperties.length > 0) {
+                    matchedProperties.forEach(property => {
+                        let listItem = createAndAppendListItem(property, suggestionList);
 
-                            listItem.addEventListener('click', () => {
-                                document.getElementById('propertyNode').value = property;
-
-                                suggestionList.style.display = 'none';
-                            });
-                        } else {
+                        listItem.addEventListener('click', () => {
+                            document.getElementById('propertyNode').value = property;
                             suggestionList.style.display = 'none';
-                        }
+                        });
                     });
+
+                    suggestionList.style.display = 'block';
+                    suggestionList.style.zIndex = '1000';
+                    suggestionList.style.border = '1px solid #dee2e6';
+                } else {
+                    suggestionList.style.display = 'none';
                 }
+            } else {
+                suggestionList.style.display = 'none';
             }
         }
+
 
     } catch (e) {
         console.log(e);

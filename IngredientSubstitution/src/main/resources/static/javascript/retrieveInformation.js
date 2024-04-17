@@ -365,15 +365,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    document.getElementById("viewMoreBtn").addEventListener("click", function() {
-        let span = document.getElementById("DL_conceptSpan");
-        span.classList.toggle("expanded");
-        if (span.classList.contains("expanded")) {
-            document.getElementById("viewMoreBtn").innerText = "View Less...";
-        } else {
-            document.getElementById("viewMoreBtn").innerText = "View More...";
-        }
-    });
+    let viewMoreButton = document.getElementById('viewMoreBtn');
+    if (viewMoreButton) {
+        viewMoreButton.addEventListener("click", function() {
+            let span = document.getElementById("DL_conceptSpan");
+            span.classList.toggle("expanded");
+            if (span.classList.contains("expanded")) {
+                document.getElementById("viewMoreBtn").innerText = "View Less...";
+            } else {
+                document.getElementById("viewMoreBtn").innerText = "View More...";
+            }
+        });
+    }
 });
 
 
