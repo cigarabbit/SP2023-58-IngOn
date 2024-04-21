@@ -9,7 +9,7 @@
       "canCook" : [ "Boiled", "Scrambled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
-      "hasVitamin" : ["Cholesterol", "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Hen White Egg" : {
@@ -21,7 +21,7 @@
       "canCook" : [ "Boiled", "Scrambled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol", "Vitamin A", "Riboflavin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "ไข่ขาวจระเข้" : {
@@ -36,7 +36,7 @@
       "canCook" : [ "Boiled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol", "Vitamin A", "Riboflavin", "Betacarotene", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Betacarotene", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Subteranean Ants Egg" : {
@@ -60,6 +60,9 @@
     "ไข่มดแดง" : {
       "hasOtherNames" : [ "Red Ant Egg" ]
     },
+    "ไข่ปลากระบอก" : {
+      "hasOtherNames" : [ "Mullet Roe" ]
+    },
     "Normal Sour Egg" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Smooth", "Creamy" ],
@@ -72,9 +75,6 @@
       "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
-    "ไข่ปลากระบอก" : {
-      "hasOtherNames" : [ "Mullet Roe" ]
-    },
     "Green Turtle Egg" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Liquid", "Delicate" ],
@@ -84,7 +84,7 @@
       "canCook" : [ "Poached" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Sweet", "Estery" ],
-      "hasVitamin" : [ "Cholesterol", "Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "ไข่แดงจระเข้" : {
@@ -196,7 +196,7 @@
       "canCook" : [ "Roasted", "Boiled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Umami" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "ไข่แดงเป็ด" : {
@@ -222,7 +222,7 @@
       "canCook" : [ "Fried", "Stir-Fried", "Scrambled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Iron", "Magnesium", "Copper", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Umami" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "ไข่แดงไก่" : {
@@ -252,7 +252,7 @@
       "canCook" : [ "Boiled" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Copper", "Potassium", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Umami" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Riboflavin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Carbohydrate", "Protein" ]
     },
     "Chicken Egg Tofu" : {
@@ -572,6 +572,18 @@
     },
     "Kamachile" : {
       "hasOtherNames" : [ "Madas Tamarind" ]
+    },
+    "Thai Longan" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasTexture" : [ "Juicy" ],
+      "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Round" ],
+      "hasOtherNames" : [ "ลำไย" ],
+      "canCook" : [ "Fresh" ],
+      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
+      "hasFlavor" : [ "Sweet", "Floral" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
     },
     "มะละกอ" : {
       "hasOtherNames" : [ "Papaya" ]
@@ -2532,7 +2544,7 @@
       "hasOtherNames" : [ "Namwa-dang Banana" ]
     },
     "Dragons Eye Fruit" : {
-      "hasOtherNames" : [ "Thai Longan" ]
+      "hasOtherNames" : [ "Longan" ]
     },
     "Luna Nut" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -2800,17 +2812,8 @@
     "มะกอกฝรั่ง" : {
       "hasOtherNames" : [ "Hog Plum" ]
     },
-    "Thai Longan" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasTexture" : [ "Juicy" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Round" ],
-      "hasOtherNames" : [ "Dragons Eye Fruit", "ลำไย" ],
-      "canCook" : [ "Fresh" ],
-      "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
-      "hasFlavor" : [ "Sweet", "Floral" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin C", "Riboflavin", "Betacarotene", "Niacin", "Thiamin" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein", "Dietary Fibre" ]
+    "Longan" : {
+      "hasOtherNames" : [ "Dragons Eye Fruit" ]
     },
     "Sugar Apple" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -5744,20 +5747,6 @@
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Protein" ],
       "hasType" : [ "Meat" ]
     },
-    "Field Rat" : {
-      "hasBenefit" : [ "Culinary", "Health Potential" ],
-      "hasSugar" : [ "Sugar" ],
-      "hasTexture" : [ "Tender" ],
-      "hasColor" : [ "Brown" ],
-      "hasShape" : [ "Cubed" ],
-      "hasOtherNames" : [ "หนูนา", "Field Mouse" ],
-      "canCook" : [ "Grilled", "Roasted", "Stewed" ],
-      "hasMineral" : [ "Iodine" ],
-      "hasFlavor" : [ "Umami" ],
-      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
-      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
-      "hasType" : [ "Meat" ]
-    },
     "ปีกไก่บ้าน" : {
       "hasOtherNames" : [ "Domestic Fowl Wing" ]
     },
@@ -6114,6 +6103,20 @@
     },
     "เป็ด" : {
       "hasOtherNames" : [ "เนื้อเป็ด", "Duck" ]
+    },
+    "Field Rat" : {
+      "hasBenefit" : [ "Culinary", "Health Potential" ],
+      "hasSugar" : [ "Sugar" ],
+      "hasTexture" : [ "Tender" ],
+      "hasColor" : [ "Brown" ],
+      "hasShape" : [ "Cubed" ],
+      "hasOtherNames" : [ "หนูนา", "Field Mouse" ],
+      "canCook" : [ "Grilled", "Roasted", "Stewed" ],
+      "hasMineral" : [ "Iodine" ],
+      "hasFlavor" : [ "Umami" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ],
+      "hasType" : [ "Meat" ]
     },
     "Black Chicken Wing" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
@@ -9254,7 +9257,9 @@
     "แตงกวาญี่ปุ่น" : {
       "hasOtherNames" : [ "Japanese Cucumber" ]
     },
-    "แคร์รอต" : { },
+    "แคร์รอต" : {
+      "hasOtherNames" : [ "Carrot" ]
+    },
     "Star Gooseberry Tender Tips" : {
       "hasBenefit" : [ "Culinary", "Health Potential" ],
       "hasTexture" : [ "Crunchy" ],
@@ -9647,7 +9652,7 @@
       "hasTexture" : [ "Crunchy" ],
       "hasColor" : [ "Orange" ],
       "hasShape" : [ "Cylindrical" ],
-      "hasOtherNames" : [ "แครอท" ],
+      "hasOtherNames" : [ "แคร์รอต" ],
       "canCook" : [ "Fresh", "Boiled", "Fried", "Stir-Fried" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
@@ -10486,9 +10491,6 @@
     "ขนุนอ่อน" : {
       "hasOtherNames" : [ "Young Jackfruit" ]
     },
-    "แครอท" : {
-      "hasOtherNames" : [ "Carrot" ]
-    },
     "พริกจินดาเขียว" : {
       "hasOtherNames" : [ "Green Chilli Pepper" ]
     },
@@ -11193,7 +11195,7 @@
       "hasOtherNames" : [ "โยเกิร์ตรสธรรมชาติ" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sour" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "นมชนิดเม็ด" : {
@@ -11207,7 +11209,7 @@
       "hasOtherNames" : [ "นมคน" ],
       "hasMineral" : [ "Calcium", "Sodium", "Phosphorus", "Magnesium", "Potassium", "Zinc" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "นมผง" : {
@@ -11239,7 +11241,7 @@
       "hasOtherNames" : [ "นมผง" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Salted Butter" : {
@@ -11250,7 +11252,7 @@
       "hasOtherNames" : [ "เนยชนิดเค็ม" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Sweet", "Salty" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "UHT Low Fat Drinking Yoghurt" : {
@@ -11261,7 +11263,7 @@
       "hasOtherNames" : [ "นมเปรี้ยวยูเอชทีไขมันต่ำ" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sour" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Riboflavin", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Cheddar Cheese" : {
@@ -11271,7 +11273,7 @@
       "hasOtherNames" : [ "เนยแข็งเชดดาร์" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Salty" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "นมคน" : {
@@ -11285,7 +11287,7 @@
       "hasOtherNames" : [ "นมเปรี้ยวพาสเจอร์ไรส์" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sour" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "นมแพะ" : {
@@ -11299,7 +11301,7 @@
       "hasOtherNames" : [ "นมวัว" ],
       "hasMineral" : [ "Calcium", "Sodium", "Magnesium", "Potassium", "Zinc", "Iodine" ],
       "hasFlavor" : [ "Lactonic", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Goat Milk" : {
@@ -11321,7 +11323,7 @@
       "hasOtherNames" : [ "นมพร่องมันเนยพาสเจอร์ไรส์" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Betacarotene", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "Milk Powder Non Fat" : {
@@ -11332,7 +11334,7 @@
       "hasOtherNames" : [ "นมผงขาดมันเนย" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Umami", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Riboflavin", "Niacin", "Thiamin" ],
+      "hasVitamin" : [ "Riboflavin", "Niacin", "Cholesterol", "Thiamin" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "UHT Low Fat Milk" : {
@@ -11343,7 +11345,7 @@
       "hasOtherNames" : [ "นมพร่องมันเนยยูเอชที" ],
       "hasMineral" : [ "Calcium", "Phosphorus", "Iron", "Iodine" ],
       "hasFlavor" : [ "Cooling", "Sweet" ],
-      "hasVitamin" : [ "Cholesterol","Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Thiamin", "Retinol" ],
+      "hasVitamin" : [ "Vitamin A", "Vitamin E", "Riboflavin", "Niacin", "Cholesterol", "Thiamin", "Retinol" ],
       "hasNutrient" : [ "Water", "Energy", "Ash", "Fat", "Carbohydrate", "Protein" ]
     },
     "เนยแข็งเชดดาร์" : {
