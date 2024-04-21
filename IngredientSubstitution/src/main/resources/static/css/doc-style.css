@@ -72,22 +72,24 @@ h1 {
     text-align: center;
 }
 
-
 .sidebar {
     position: fixed;
-    top: 15px;
-    left: 0;
-    padding: 58px 0 0;
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-    width: 15%;
-    z-index: 600;
-    background-color: #ffffff;
+    top: 150px;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #ffffff;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 991.98px) {
-    .sidebar {
-        width: 100%;
-    }
+.sidebarBtn {
+    margin-top: 100px;
+    position: fixed;
+    background-color: transparent;
+}
+
+.sidebar.active {
+    left: 0;
 }
 
 #sidebarMenu ul {
