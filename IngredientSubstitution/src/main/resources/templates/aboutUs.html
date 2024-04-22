@@ -13,22 +13,6 @@
     <script src="javascript/searchIngredient.js"></script>
     <script src="javascript/retrieveInformation.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        $(document).on("scroll", function() {
-            var pageTop = $(document).scrollTop();
-            var pageBottom = pageTop + $(window).height();
-            var tags = $(".tag");
-
-            for (var i = 0; i < tags.length; i++) {
-                var tag = tags[i];
-                if ($(tag).position().top < pageBottom) {
-                    $(tag).addClass("visible");
-                } else {
-                    $(tag).removeClass("visible");
-                }
-            }
-        });
-    </script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -141,20 +125,41 @@
         </div>
     </div>
 </nav>
-<div class="container mt-9 my-5">
-    <div class="row">
-        <section class="yellow"><h1>Motivation</h1>
-            <p>We are driven by a deep understanding of the importance of cooking and the necessity of sustenance.
-                We recognize the challenges that arise when certain ingredients are unavailable or unsuitable due to allergies or regional differences, especially in Thai cuisine. Traditional search engines often fall short in providing specific information about these unique and specialized ingredients. That's why we develop a web application that utilizes an ingredient ontology. This tool captures the relationships and properties of Thai ingredients, providing suitable substitutions without compromising on flavor, texture, or nutritional value. Our goal is to make cooking more accessible and enjoyable, while also reducing food waste. This is our motivation to make cooking more accessible, efficient, and enjoyable for everyone.</p>
-        </section>
+<body>
+<div class="row content">
+    <div class="col-md-4" style="overflow: hidden;">
+        <img id="largePic" src="img/aboutus-largepic.jpg" alt="Cooking Pan">
     </div>
-    <div class="row">
-        <section class="tag green"><h1>Web Description</h1>
-            <p>Our IngOn, proposes an innovative approach through the development of an ingredient ontology which is a structured knowledge base tailored to the nuances of Thai ingredients, utilizing Description Logics for precision. Our web application is designed to empower cooks of all levels, offering a user-friendly way that allows people who use the platform to navigate in our website in order to make their recipe customization easily based on dietary preferences and restrictions. By focusing on Thai local ingredients and their substitutions, our project aims to not only preserve the authenticity of dishes but also contribute to cost-effective and health-conscious culinary solutions.
-            </p>
-        </section>
+    <div class="col-md-8">
+        <div id="content1">
+            <div class="col-header"><h2><span style="color: rgb(0, 0, 0);">OUR</span>
+                <span style="color: #2E6D36;">MOTIVATION</span></h2>
+            </div>
+            <div class="col-content">
+                <span>We are driven by a deep understanding of the importance of cooking and the necessity of sustenance. We recognize the challenges that arise when certain ingredients are unavailable or unsuitable due to allergies or regional differences, especially in Thai cuisine. Traditional search engines often fall short in providing specific information about these unique and specialized ingredients. That's why we develop a web application that utilizes an ingredient ontology. This tool captures the relationships and properties of Thai ingredients, providing suitable substitutions without compromising on flavor, texture, or nutritional value. Our goal is to make cooking more accessible and enjoyable, while also reducing food waste. This is our motivation to make cooking more accessible, efficient, and enjoyable for everyone.</span>
+                <div class="col-img">
+                    <img src="img/smallpic1.jpg">
+                    <img src="img/smallpic2.jpg">
+                </div>
+            </div>
+        </div>
+        <div id="content2">
+            <div class="col-header"><h2><span style="color: rgb(0, 0, 0);">WEB</span>
+                <span style="color: #2E6D36;">DESCRIPTION</span></h2>
+            </div>
+            <div class="col-content">
+                <span>Our IngOn, proposes an innovative approach through the development of an ingredient ontology which is a structured knowledge base tailored to the nuances of Thai ingredients, utilizing Description Logics for precision. Our web application is designed to empower cooks of all levels, offering a user-friendly way that allows people who use the platform to navigate in our website in order to make their recipe customization easily based on dietary preferences and restrictions. By focusing on Thai local ingredients and their substitutions, our project aims to not only preserve the authenticity of dishes but also contribute to cost-effective and health-conscious culinary solutions.</span>
+            </div>
+        </div>
+
+
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 <p></p>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
