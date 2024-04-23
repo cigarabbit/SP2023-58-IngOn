@@ -269,14 +269,14 @@ function retrieveData () {
 
         if (mineralProp[clickedTopic] !== undefined) {
             mineralProp[clickedTopic].forEach(function(mineral) {
-                var span = document.createElement('span');
+                let span = document.createElement('span');
                 span.textContent = mineral;
                 span.classList.add('nutrient-item');
 
                 mineralPropLi.appendChild(span);
             });
         } else {
-            var span = document.createElement('span');
+            let span = document.createElement('span');
             span.textContent = minerals;
             span.classList.add('nutrient-item');
 
@@ -285,14 +285,14 @@ function retrieveData () {
 
         if (nutriProp[clickedTopic] !== undefined) {
             nutriProp[clickedTopic].forEach(function(nutri) {
-                var span = document.createElement('span');
+                let span = document.createElement('span');
                 span.textContent = nutri;
                 span.classList.add('nutrient-item');
 
                 nutriPropLi.appendChild(span);
             });
         } else {
-            var span = document.createElement('span');
+            let span = document.createElement('span');
             span.textContent = nutris;
             span.classList.add('nutrient-item');
 
@@ -301,14 +301,14 @@ function retrieveData () {
 
         if (sugarProp[clickedTopic] !== undefined) {
             sugarProp[clickedTopic].forEach(function(mineral) {
-                var span = document.createElement('span');
+                let span = document.createElement('span');
                 span.textContent = sugar;
                 span.classList.add('nutrient-item');
 
                 sugarPropLi.appendChild(span);
             });
         } else {
-            var span = document.createElement('span');
+            let span = document.createElement('span');
             span.textContent = sugar;
             span.classList.add('nutrient-item');
 
@@ -317,14 +317,14 @@ function retrieveData () {
 
         if (vitaProp[clickedTopic] !== undefined) {
             vitaProp[clickedTopic].forEach(function(vita) {
-                var span = document.createElement('span');
+                let span = document.createElement('span');
                 span.textContent = vita;
                 span.classList.add('nutrient-item');
 
                 vitaPropLi.appendChild(span);
             });
         } else {
-            var span = document.createElement('span');
+            let span = document.createElement('span');
             span.textContent = vitas;
             span.classList.add('nutrient-item');
 
