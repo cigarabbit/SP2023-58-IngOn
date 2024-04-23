@@ -22,6 +22,8 @@ body {
 .col-md-8 {
     margin-top: 80px;
     padding: 20px;
+    height: 89%;
+    overflow-y: scroll;
 }
 
 .col-header h3 {
