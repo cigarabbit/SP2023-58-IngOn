@@ -142,6 +142,8 @@ function retrieveData () {
     var cookPropLi = document.querySelector('#cooking-types');
 
     function handleTopicClick(event) {
+        event.preventDefault();
+        
         sidebarTopics.forEach(topic => {
             topic.classList.remove('active-topic');
         });
