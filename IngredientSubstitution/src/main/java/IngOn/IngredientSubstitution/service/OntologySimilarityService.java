@@ -1,17 +1,37 @@
 package IngOn.IngredientSubstitution.service;
 
+import jakarta.annotation.PostConstruct;
 import org.apache.commons.text.similarity.CosineSimilarity;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
 import java.util.regex.Pattern;
 
+@Component("OntologySimilarityService")
 public class OntologySimilarityService {
 //    private static final String FILE_PATH = "src/main/resources/data.json";
-    private static final String FILE_PATH = "IngredientSubstitution/src/main/resources/data.json";
+    private static String FILE_PATH;
+//        = "IngredientSubstitution/src/main/resources/data.json";
+
+    @Autowired
+    private Environment env;
+
+    @PostConstruct
+    public void init() {
+        String jsonFilePath = env.getProperty("json.filePath");
+        System.out.println(jsonFilePath);
+        if (jsonFilePath != null) {
+            FILE_PATH = jsonFilePath;
+        }
+
+    }
 
     public static List<String> setUp(String FILE_PATH) {
         List<String> itemsList = new ArrayList<>();

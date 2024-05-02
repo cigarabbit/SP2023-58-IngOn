@@ -12,8 +12,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 
@@ -22,20 +20,20 @@ import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import javax.sound.midi.SysexMessage;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
 @Controller
 public class WebController {
 
-private static final HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts;
-    static {
-        try {
-            concepts = OntologyConverter.readJSONfile();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+    private static final HashMap<String, HashMap<String, HashMap<String, Set<String>>>> concepts;
+        static {
+            try {
+                concepts = OntologyConverter.readJSONfile();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
         }
-    }
 
 //    private static final Logger logger = LoggerFactory.getLogger(WebController.class);
 
@@ -51,8 +49,8 @@ private static final HashMap<String, HashMap<String, HashMap<String, Set<String>
     @GetMapping("/ontology-manager")
     @Cacheable
     public String ontologyManager() {
-        String directoryPath = "src/main/resources";
-//        String directoryPath = "IngredientSubstitution/src/main/resources";
+//        String directoryPath = "src/main/resources";
+        String directoryPath = "IngredientSubstitution/src/main/resources";
         String fileName = "data.json";
 
         OntologyConverter.writeAllConceptNamesToFile(directoryPath, fileName);

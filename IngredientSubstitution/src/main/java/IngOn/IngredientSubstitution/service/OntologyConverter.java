@@ -4,15 +4,34 @@ import IngOn.IngredientSubstitution.controller.ConceptListManager;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import jakarta.annotation.PostConstruct;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
+@Component("OntologyConverter")
 public class OntologyConverter {
 //    private static final File owlFile = new File("./src/main/resources/ontology/ThaiIngredients-v4.owl");
-    private static final File owlFile = new File("C:\\Users\\Acer\\Documents\\GitHub\\ThaiLocalIngredients\\ThaiIngredients-v4.owl");
+    public static File owlFile;
+    public static String jsonFilePath;
+
+    @Autowired
+    private Environment env;
+
+    @PostConstruct
+    public void init() {
+        String owlFilePath = env.getProperty("ontology.filePath");
+        jsonFilePath = env.getProperty("json.filePath");
+
+        if (owlFilePath != null) {
+            owlFile = new File(owlFilePath);
+        }
+    }
 
     public static void writeAllConceptNamesToFile(String directoryPath, String fileName) {
         ObjectMapper objectMapper = new ObjectMapper();
@@ -21,51 +40,56 @@ public class OntologyConverter {
         File directory = new File(directoryPath);
         File file = new File(directory, fileName);
 
-        OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
-        ConceptListManager.loadConceptList(ontology);
+        if (owlFile != null && file.exists()) {
+            OWLOntology ontology = OntologyService.prepareOWLFile(owlFile);
+            ConceptListManager.loadConceptList(ontology);
 
-        HashMap<String, HashMap<String, HashMap<String, Set<String>>>> conceptList = ConceptListManager.getConceptList();
+            HashMap<String, HashMap<String, HashMap<String, Set<String>>>> conceptList = ConceptListManager.getConceptList();
 
-        HashMap<String, HashMap<String, HashMap<String, Set<String>>>> separatedKeysConceptList = new HashMap<>();
+            HashMap<String, HashMap<String, HashMap<String, Set<String>>>> separatedKeysConceptList = new HashMap<>();
 
-        for (Map.Entry<String, HashMap<String, HashMap<String, Set<String>>>> entry : conceptList.entrySet()) {
-            String outerKey = entry.getKey();
-            HashMap<String, HashMap<String, Set<String>>> innerMap = entry.getValue();
-            HashMap<String, HashMap<String, Set<String>>> separatedInnerMap = new HashMap<>();
+            for (Map.Entry<String, HashMap<String, HashMap<String, Set<String>>>> entry : conceptList.entrySet()) {
+                String outerKey = entry.getKey();
+                HashMap<String, HashMap<String, Set<String>>> innerMap = entry.getValue();
+                HashMap<String, HashMap<String, Set<String>>> separatedInnerMap = new HashMap<>();
 
-            for (Map.Entry<String, HashMap<String, Set<String>>> innerEntry : innerMap.entrySet()) {
-                String[] formattedInnerKeyArray = separateWord(Collections.singleton(innerEntry.getKey()));
-                String formattedInnerKey = String.join(" ", formattedInnerKeyArray);
+                for (Map.Entry<String, HashMap<String, Set<String>>> innerEntry : innerMap.entrySet()) {
+                    String[] formattedInnerKeyArray = separateWord(Collections.singleton(innerEntry.getKey()));
+                    String formattedInnerKey = String.join(" ", formattedInnerKeyArray);
 //                System.out.println(formattedInnerKey);
 
-                HashMap<String, Set<String>> propertyList = innerEntry.getValue();
-                HashMap<String, Set<String>> separatedPropertyList = new HashMap<>();
+                    HashMap<String, Set<String>> propertyList = innerEntry.getValue();
+                    HashMap<String, Set<String>> separatedPropertyList = new HashMap<>();
 
-                for (Map.Entry<String, Set<String>> propertyEntry : propertyList.entrySet()) {
-                    Set<String> conceptSet = propertyEntry.getValue();
-                    Set<String> formattedConcepts = new HashSet<>();
+                    for (Map.Entry<String, Set<String>> propertyEntry : propertyList.entrySet()) {
+                        Set<String> conceptSet = propertyEntry.getValue();
+                        Set<String> formattedConcepts = new HashSet<>();
 
-                    for (String concept : conceptSet) {
-                        String[] formattedWords = separateWord(Collections.singleton(concept));
-                        formattedConcepts.addAll(Arrays.asList(formattedWords));
+                        for (String concept : conceptSet) {
+                            String[] formattedWords = separateWord(Collections.singleton(concept));
+                            formattedConcepts.addAll(Arrays.asList(formattedWords));
+                        }
+
+                        separatedPropertyList.put(propertyEntry.getKey(), formattedConcepts);
                     }
 
-                    separatedPropertyList.put(propertyEntry.getKey(), formattedConcepts);
+                    separatedInnerMap.put(formattedInnerKey, separatedPropertyList);
                 }
 
-                separatedInnerMap.put(formattedInnerKey, separatedPropertyList);
+                separatedKeysConceptList.put(outerKey, separatedInnerMap);
             }
 
-            separatedKeysConceptList.put(outerKey, separatedInnerMap);
+            try {
+                objectMapper.writeValue(file, separatedKeysConceptList);
+                System.out.println("JSON data written to " + file.getAbsolutePath());
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.err.println("Error writing JSON data to " + file.getAbsolutePath());
+            }
+        } else {
+            System.err.println("Error file path " + file.getAbsolutePath());
         }
 
-        try {
-            objectMapper.writeValue(file, separatedKeysConceptList);
-            System.out.println("JSON data written to " + file.getAbsolutePath());
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.err.println("Error writing JSON data to " + file.getAbsolutePath());
-        }
     }
 
 
@@ -77,12 +101,14 @@ public class OntologyConverter {
         try {
             File jsonFile = new File("IngredientSubstitution/src/main/resources/data.json");
 //            File jsonFile = new File("src/main/resources/data.json");
-            concepts = objectMapper.readValue(jsonFile, new TypeReference<HashMap<String, HashMap<String, HashMap<String, Set<String>>>>>() {});
+
+            if (jsonFile != null) {
+                concepts = objectMapper.readValue(jsonFile, new TypeReference<HashMap<String, HashMap<String, HashMap<String, Set<String>>>>>() {});
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return concepts;
     }
 
