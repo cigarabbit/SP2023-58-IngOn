@@ -1,4 +1,4 @@
-# IngOn Web Applcation
+# SP2023-Ingon Web Applcation
 ***
 ## Pre-condition
 1. The computer system should have a Java Development Kit (JDK) [[Click here]](https://www.oracle.com/java/technologies/downloads/) as this web application is built on Java and integrated with Spring Framework.
